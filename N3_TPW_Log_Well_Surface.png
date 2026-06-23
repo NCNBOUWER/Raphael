@@ -1,0 +1,38 @@
+# NBT-003 — Claim Control Register
+
+Version: v1_1 governance build  
+Date: 2026-06-24
+
+| Term / Claim family | Allowed wording | Conditional wording | Prohibited wording | Current status |
+|---|---|---|---|---|
+| TPW | discrete probability-simplex framework | finite product-measure simplex model | universal physical law | ALLOWED |
+| Raphael Equations | equation-register and correspondence scaffold | proposed operators requiring audit | proven field equations | CONDITIONAL |
+| Gravity well | gravity-well analogy / log-density well | potential-like visualization after definition | physical gravity equivalence | ANALOGY ONLY |
+| Entropy hub | simplex entropy maximum under stated constraints | modal/entropy relation if formally proven | hub is uniquely proven universal attractor | OPEN |
+| Spiral | imposed traversal / visualization | intrinsic spiral if invariant theorem proven | necessary natural spiral law | VISUALIZATION ONLY |
+| Pilot wave | pilot-wave-inspired rendering | predictive pilot-wave method after backtesting | proven pilot-wave predictor | UNVALIDATED |
+| N-body | finite N-variable product-measure schema | physical N-body correspondence after mechanics proof | universal N-body mechanics | CONDITIONAL |
+| MMB / non-locality | hypothesis / observer aggregation model | formal information-theoretic theorem if proven | proof of non-local realism | HYPOTHESIS |
+| Scale-free isomorphism | structural analogy | isomorphism after bijection and preservation proofs | proven scale-free physical isomorphism | UNPROVEN |
+| ToE | not used in proof text | aspirational research context only | Theory of Everything proven | PROHIBITED |
+
+## Replacement phrasing
+
+Use:
+
+```text
+mathematical correspondence
+visual analogy
+finite product-measure generalization
+controlled hypothesis
+requires dimensional and empirical validation
+```
+
+Avoid:
+
+```text
+proves physics
+unifies all fields
+quantum gravity solved
+validated ToE
+```

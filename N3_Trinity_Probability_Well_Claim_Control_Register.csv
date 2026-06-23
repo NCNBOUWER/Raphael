@@ -1,0 +1,17 @@
+from fractions import Fraction
+import itertools, math, csv, json
+# Minimal reproduction skeleton. Full generated code is embedded in the artifact-generation transcript.
+def W(k): return 6-abs(7-k)
+rows=[]
+prob_sum=Fraction(0,1)
+for x1,x2,x3 in itertools.product(range(2,13), repeat=3):
+    jw=W(x1)*W(x2)*W(x3)
+    prob=Fraction(jw,36**3)
+    S=x1+x2+x3
+    p=[Fraction(x1,S), Fraction(x2,S), Fraction(x3,S)]
+    assert sum(p)==1
+    prob_sum += prob
+    rows.append((x1,x2,x3,jw,prob,p))
+assert len(rows)==1331
+assert prob_sum==1
+print("TPW validation passed:", len(rows), "states")

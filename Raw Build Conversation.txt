@@ -1,0 +1,10 @@
+Claim ID,Claim,Category,Status,Control note
+TPW-C001,"The 2d6 sum space has support {2,...,12} and weights W(k)=6-|7-k|.",Established mathematical theorem,Locked,Elementary enumeration; citation still required for publication packaging.
+TPW-C002,The TPW triple enumeration has 1331 normalized state rows.,Computed artifact result,Locked,Validated by TPW-001.
+TPW-C003,The joint probability mass over all 1331 rows sums to 1.,Computed artifact result,Locked,Validated exactly with rational arithmetic.
+TPW-C004,"The unique maximum probability state is (7,7,7).",Established mathematical theorem,Locked,Follows from independent product of single-die-sum weights.
+TPW-C005,All equal triples map to simplex centroid.,Established mathematical theorem,Locked,Geometric center ray; must not be conflated with probabilistic core.
+TPW-C006,The log-density field can be visualized as a finite probability well.,Visualization convention,Allowed with controls,Not a literal physical potential unless separately derived.
+TPW-C007,Spiral behavior is an ordering/parameterization construction.,Analogy / interpretation,Conditional,Not a general theorem over the raw state space.
+TPW-C008,TPW supports a Raphael correspondence mapping.,Speculative / deferred Raphael correspondence,Open,Requires canonical Raphael equation audit and separate derivation.
+TPW-C009,TPW proves quantum gravity or unification physics.,Speculative / deferred Raphael correspondence,Prohibited,Do not assert from current artifact chain.

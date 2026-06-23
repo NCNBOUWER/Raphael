@@ -1,0 +1,8 @@
+Citation ID,Topic,Needed source type,Status,Notes
+CIT-001,2d6 probability mass function,Probability textbook or official educational reference,Gap,Need exact bibliographic source.
+CIT-002,Kolmogorov probability axioms / closure,Primary or standard probability text,Gap,Needed for formal probability closure framing.
+CIT-003,Shannon entropy,Primary Shannon paper and/or standard information theory text,Gap,Needed for entropy proof appendix.
+CIT-004,Barycentric coordinates and ternary/simplex diagrams,Geometry/visualization source,Gap,Needed for ternary projection definitions.
+CIT-005,Compositional data analysis simplex geometry,Aitchison / CoDA references,Gap,Needed for normalized composition interpretation.
+CIT-006,Archimedean/logarithmic spiral definitions,Geometry reference,Gap,Needed only for constructed spiral demonstration.
+CIT-007,Log-density / negative log likelihood convention,Statistics/information theory reference,Gap,Needed for well-potential terminology control.

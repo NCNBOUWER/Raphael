@@ -1,0 +1,31 @@
+# NBT-002 — Citation Register
+
+Version: v1_1 governance build  
+Date: 2026-06-24
+
+This register records the citation targets required for publication-grade claim linkage. It does not mark page-specific support as complete unless an exact edition/page or section is entered.
+
+| Citation ID | Source / Author | Supports | Claim IDs | Page / Section status | Verification status |
+|---|---|---|---|---|---|
+| CIT-FELLER-001 | William Feller, *An Introduction to Probability Theory and Its Applications* | finite probability, dice distributions, product spaces | TPW-ENUM, TPW-PROB | PENDING exact edition/page | OPEN |
+| CIT-AIGNER-001 | Martin Aigner, combinatorics text reference | counting and finite enumeration | TPW-ENUM | PENDING exact edition/page | OPEN |
+| CIT-AITCHISON-001 | John Aitchison, compositional data/simplex reference | compositional/simplex interpretation | TPW-GEO | PENDING exact edition/page | OPEN |
+| CIT-COXETER-001 | H. S. M. Coxeter, simplex/regular polytope reference | barycentric/simplex geometry | TPW-GEO | PENDING exact edition/page | OPEN |
+| CIT-SHANNON-001 | Claude Shannon, entropy/information theory | entropy functional | RAP-ENT | PENDING exact paper/section | OPEN |
+| CIT-COVER-THOMAS-001 | Cover & Thomas, *Elements of Information Theory* | entropy theorem and maximum entropy background | RAP-ENT | PENDING exact edition/page | OPEN |
+| CIT-JAYNES-001 | E. T. Jaynes, maximum entropy reference | constrained maximum-entropy reasoning | RAP-ENT | PENDING exact edition/page | OPEN |
+| CIT-DUMMIT-FOOTE-001 | Dummit & Foote, algebra/group theory | permutation group/orbit language | TPW-SYM | PENDING exact edition/page | OPEN |
+| CIT-BUCKINGHAM-001 | Buckingham Pi theorem / dimensional analysis reference | dimensional audit method | RAP-002 | PENDING exact source/page | OPEN |
+| CIT-SUPPES-001 | Patrick Suppes, models/axiomatic method | theory/model governance | NBT-000 | PENDING exact edition/page | OPEN |
+| CIT-GOLDSTEIN-001 | Herbert Goldstein, mechanics reference | background only for mechanics terms | RAP-NBODY/RAP-GRAV | PENDING exact edition/page | BACKGROUND ONLY |
+| CIT-MACLANE-001 | Saunders Mac Lane, category/isomorphism reference | isomorphism discipline | RAP-SCALE | PENDING exact edition/page | OPEN |
+
+## Required next citation work
+
+For each final prose claim:
+
+```text
+Claim ID → Source → Edition → Page/Section → Support Type → Verification Status
+```
+
+Names alone do not proof-lock claims.
