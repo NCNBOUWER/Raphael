@@ -1,0 +1,16 @@
+{
+  "purpose": "Future controlled interface between this standalone N^3 TPW package and the complete private Raphael repository.",
+  "status": "placeholder_active",
+  "allowed_operations": [
+    "reference_private_equation_ids",
+    "map_tpw_support_claims",
+    "receive_external_validation_results",
+    "record_audit_status"
+  ],
+  "blocked_operations": [
+    "rewrite_raphael_equations",
+    "publish_private_equations_without_owner_signoff",
+    "promote_P5_physical_claims_to_proven"
+  ],
+  "future_update_rule": "Update this manifest before changing any integration code."
+}
