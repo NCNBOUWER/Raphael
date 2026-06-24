@@ -1,0 +1,12 @@
+{
+  "sum_state_rows": 1331,
+  "primitive_ordered_outcomes": 46656,
+  "probability_sum": "1",
+  "unique_mode": true,
+  "mode_states": [[7, 7, 7]],
+  "max_probability": "1/216",
+  "min_probability": "1/46656",
+  "min_probability_state_count": 8,
+  "test_command": "cd N^3/RUN/code && python3 -m py_compile geomatrix_master.py test_geomatrix_master.py && python3 test_geomatrix_master.py",
+  "test_result": "all geomatrix_master tests passed"
+}
