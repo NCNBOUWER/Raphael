@@ -1,0 +1,11 @@
+ID,Area,Task,Status,Priority,Owner,Evidence_File,Completion_Criteria,Notes
+T-001,Git,Replace temporary/stub README with WELCOME-driven public front door,Open,High,Assistant,WELCOME.md / START.html,"Root docs are clear, no version-title clutter remains",Direct main commit requested
+T-002,Git,Delete or archive old versioned files and ZIP artefacts from main,Open,High,Assistant,Git main tree,Only clean N^3 layout remains in main,"Preserve history via Git, not main clutter"
+T-003,Drive,Confirm final N^3 root has final clean package and older items outside publish view,Open,High,Owner,Google Drive N^3,Only final-facing materials visible in final folder,Older folders 1-3 remain reference/archive
+T-004,Proof,Owner review of finite product-mode proof wording,Open,High,Owner,RUN/proofs,No ambiguity between probability mode and barycentric centroid,
+T-005,Proof,Owner review of Gamma bridge wording,Open,High,Owner,RUN/proofs/Discrete_to_Continuous_Trajectory_Bridge.md,No wording implies direct proof of physical field equations,
+T-006,Raphael,Confirm private Raphael equation references are IDs/crosswalks only,Open,Critical,Owner,RUN/Raphael and INTERNAL/audit,No private equations are exposed or modified,
+T-007,Claims,Final scan for prohibited physical overclaims,Open,Critical,Joint,"WELCOME.md, Publications, INTERNAL/registers",ToE/quantum/gravity/N-body physics remain excluded or P5,
+T-008,Code,Run local validation commands,Open,Medium,Assistant,RUN/code,py_compile and unit tests pass,
+T-009,Fidelity,Confirm fidelity rating language,Open,Medium,Owner,Publications/FIDELITY_RATING.md,110% internal math rating not confused with empirical validation,
+T-010,Publication,Owner final sign-off before external scientific release,Open,Critical,Owner,Publications/PUBLISH_READINESS.md,No Critical/High open tasks remain,
