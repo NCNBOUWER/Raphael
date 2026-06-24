@@ -1,0 +1,30 @@
+{
+  "build": "N3_TPW_Raphael_v1_5_Final_PrePublish",
+  "status": "final pre-publish candidate; public release pending final sign-off",
+  "scope_lock": "TPW side-channel proof support; no Raphael equation rewrite",
+  "proof_safe_core": [
+    "2d6 count vector",
+    "1331 TPW states",
+    "46656 primitive outcomes",
+    "normalized product PMF",
+    "unique three-variable product mode (7,7,7)",
+    "finite N-variable mode (7,...,7)",
+    "convex trajectory bridge Gamma"
+  ],
+  "restricted_claims": [
+    "physical gravity equivalence",
+    "quantum phase proof",
+    "mechanical N-body dynamics",
+    "ToE proof",
+    "field-equation proof from dice alone"
+  ],
+  "final_candidate_files": [
+    "README.md",
+    "README_v1_5_FINAL_FIDELITY_EXPANSION_AESTHETIC.md",
+    "00_Canonical_Control/NBT-008_Final_Proof_Lock_Gate.md",
+    "09_Publication_Candidate/FINAL_PUBLISH_CANDIDATE_INDEX.md",
+    "09_Publication_Candidate/FINAL_PRE_PUBLISH_RELEASE_NOTES_v1_5.md",
+    "10_Internal_Proof_Passes/TPW_Raphael_Final_Fidelity_Expansion_Aesthetic_Pass_v1_5.md",
+    "11_Drive_Final_Build/DRIVE_FOLDER_2_FINAL_BUILD_NOTE.md"
+  ]
+}
