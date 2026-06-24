@@ -1,0 +1,21 @@
+{
+  "project": "N^3",
+  "package": "Trinity Probability Well / Raphael Support Layer",
+  "layout": "clean_publish",
+  "front_door": "WELCOME.md",
+  "startup": "START.html",
+  "open_tasks_xlsx": "INTERNAL/registers/OPEN_TASKS.xlsx",
+  "open_tasks_csv": "INTERNAL/registers/OPEN_TASKS.csv",
+  "publish_status": "owner_review_required_before_external_release",
+  "github_text_files_pushed": true,
+  "binary_workbook_in_local_package": true,
+  "validation": {
+    "sum_state_rows": 1331,
+    "primitive_ordered_outcomes": 46656,
+    "probability_sum": "1",
+    "unique_mode": "(7,7,7)",
+    "max_probability": "1/216",
+    "min_probability": "1/46656",
+    "minimum_corner_state_count": 8
+  }
+}
