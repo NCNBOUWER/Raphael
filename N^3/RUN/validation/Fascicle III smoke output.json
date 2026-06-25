@@ -1,0 +1,15 @@
+{
+  "claim_count": 4,
+  "closure_status": "internally_validated",
+  "domain_full_admissible": true,
+  "domain_full_missing": [],
+  "domain_partial_admissible": false,
+  "domain_partial_missing_count": 4,
+  "eml_boundary": "See EML#F for the external EML Function derivation-library/catalogue; do not import it as native GeoMatrices.",
+  "equation_count": 5,
+  "fidelity_100_100": 110,
+  "fidelity_120_single": 120,
+  "raphael_lite": "deferred",
+  "suite_call_count": 8,
+  "transport_equation": "EQ-DER-001"
+}
