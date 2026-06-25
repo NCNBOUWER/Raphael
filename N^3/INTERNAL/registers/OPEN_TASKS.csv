@@ -1,11 +1,21 @@
 ID,Area,Task,Status,Priority,Owner,Evidence_File,Completion_Criteria,Notes
-T-001,Git,Replace temporary/stub README with WELCOME-driven public front door,Open,High,Assistant,WELCOME.md / START.html,"Root docs are clear, no version-title clutter remains",Direct main commit requested
-T-002,Git,Delete or archive old versioned files and ZIP artefacts from main,Open,High,Assistant,Git main tree,Only clean N^3 layout remains in main,"Preserve history via Git, not main clutter"
+T-001,Git,Replace temporary/stub README with WELCOME-driven public front door,Complete,High,Assistant,WELCOME.md / START.html,"Root docs are clear, no version-title clutter remains",Completed in main tidy pass
+T-002,Git,Delete or archive old versioned files and ZIP artefacts from main,Complete,High,Assistant,Git main tree,Only clean N^3 layout remains in main,"Preserve history via Git, not main clutter"
 T-003,Drive,Confirm final N^3 root has final clean package and older items outside publish view,Open,High,Owner,Google Drive N^3,Only final-facing materials visible in final folder,Older folders 1-3 remain reference/archive
 T-004,Proof,Owner review of finite product-mode proof wording,Open,High,Owner,RUN/proofs,No ambiguity between probability mode and barycentric centroid,
 T-005,Proof,Owner review of Gamma bridge wording,Open,High,Owner,RUN/proofs/Discrete_to_Continuous_Trajectory_Bridge.md,No wording implies direct proof of physical field equations,
 T-006,Raphael,Confirm private Raphael equation references are IDs/crosswalks only,Open,Critical,Owner,RUN/Raphael and INTERNAL/audit,No private equations are exposed or modified,
 T-007,Claims,Final scan for prohibited physical overclaims,Open,Critical,Joint,"WELCOME.md, Publications, INTERNAL/registers",ToE/quantum/gravity/N-body physics remain excluded or P5,
-T-008,Code,Run local validation commands,Open,Medium,Assistant,RUN/code,py_compile and unit tests pass,
+T-008,Code,Run local validation commands,Complete,Medium,Assistant,RUN/code,py_compile and unit tests pass,Completed in prior clean publish pass; rerun before release if edited
 T-009,Fidelity,Confirm fidelity rating language,Open,Medium,Owner,Publications/FIDELITY_RATING.md,110% internal math rating not confused with empirical validation,
 T-010,Publication,Owner final sign-off before external scientific release,Open,Critical,Owner,Publications/PUBLISH_READINESS.md,No Critical/High open tasks remain,
+T-011,Terminology,Create shared terms registry for all fascicles,Complete,High,Assistant,INTERNAL/registers/Terms.md,Smoke tests can return concrete project terms instead of placeholders,Created for Fascicle II wake-up
+T-012,Naming,Correct EM Function references to EML Function and EML#F,Open,High,Joint,"Terms.md, workbooks, future Fascicle II files",No EM Function / EMFF / RFS leakage into EML Function scope,EML is third-party source/library domain
+T-013,Fascicle II,Build Omnicompounded Barycentric Well proof module,Open,Critical,Assistant,RUN/proofs/Fascicle II,OBW has definitions closure tests and failure conditions,Build mode next
+T-014,Fascicle II,Build Multi-Observer Multi-Function Breakdown proof module,Open,Critical,Assistant,RUN/proofs/Fascicle II,MMB has observer maps function maps and variance/error criteria,Build mode next
+T-015,Fascicle II,Build classical transport and covariant bridge module,Open,Critical,Assistant,RUN/proofs/Fascicle II,Discrete transport and classical correspondence boundaries are explicit,No physical field proof escalation
+T-016,Fascicle II,Create Fascicle II smoke-test harness using Terms registry,Open,High,Assistant,RUN/code,Calls return real objects for OBW MMB proof classes and Raphael/EML boundaries,No placeholders
+T-017,EML#F,Maintain EML Function as separate source folder and catalogue,Open,High,Owner,Google Drive EML#F,EML paper treated as external source not Raphael proof,Do not implement EML folder yet unless requested
+T-018,Raphael,Defer Raphael Lite build until Fascicles I-III complete,Open,High,Joint,RUN/Raphael / future Raphael_Physics,Raphael Lite scope waits for full fascicle merge,Raphael Suite terminology only
+T-019,Workbook,Edit Internal Master and Public workbooks in place without version proliferation,Open,High,Joint,"Raphael_Master_VR_Release.xlsx, Raphael_Public_Dossier_VR.xlsx, Romer_Internal_Advanced_Notebook_VR.xlsx",Open tasks and terms are reflected in workbook control surfaces,No new workbook versions unless explicitly required
+T-020,Build mode,Execute Fascicle II build after wake-up confirmation,Open,Critical,Assistant,"Terms.md, OPEN_TASKS.csv, project memory",Fascicle II files/code/proofs are built minimally and future-mergeable,Next active build task
