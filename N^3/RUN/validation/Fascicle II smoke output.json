@@ -1,0 +1,17 @@
+{
+  "bias_bound_6": 0.16666666666666666,
+  "centre3_near_zero": true,
+  "centre4_near_zero": true,
+  "closure_3": true,
+  "derivative_tangent": true,
+  "gamma_closed": true,
+  "mmb_closed": true,
+  "mode_probability": 0.004629629629629629,
+  "platonic_vertex_matrix": {
+    "Cube": {"dice_pairs": 8, "total_dice": 16, "vertices": 8},
+    "Dodecahedron": {"dice_pairs": 20, "total_dice": 40, "vertices": 20},
+    "Icosahedron": {"dice_pairs": 12, "total_dice": 24, "vertices": 12},
+    "Octahedron": {"dice_pairs": 6, "total_dice": 12, "vertices": 6},
+    "Tetrahedron": {"dice_pairs": 4, "total_dice": 8, "vertices": 4}
+  }
+}
