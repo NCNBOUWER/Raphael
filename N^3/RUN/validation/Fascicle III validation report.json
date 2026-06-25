@@ -1,0 +1,19 @@
+{
+  "build": "Fascicle III Raphael integration core",
+  "validation": "passed",
+  "commands": [
+    "python3 -m py_compile fascicle_iii_raphael_bridge.py test_fascicle_iii_raphael_bridge.py",
+    "python3 test_fascicle_iii_raphael_bridge.py",
+    "python3 fascicle_iii_raphael_bridge.py"
+  ],
+  "verified": {
+    "equation_registry_count": 5,
+    "claim_crosswalk_count": 4,
+    "raphael_lite": "deferred",
+    "eml_boundary": "external EML#F",
+    "domain_admissibility_rule": "requires all domain requirements",
+    "fidelity_100_100": "110",
+    "fidelity_120_single": "120"
+  },
+  "proof_boundary": "Raphael integration/crosswalk/falsification; no Raphael Lite runtime; empirical claims require external validation"
+}
