@@ -1,0 +1,25 @@
+{
+  "schema": "achilles_research_report_template_standard_v1",
+  "status": "active_template_source",
+  "sourceFiles": ["Base work document", "Testing and Research Base", "Testing and Research Expansive"],
+  "purpose": "Use the uploaded base, testing, and expansive report documents as the standard template source for dashboards, notebooks, dossiers, and print surfaces.",
+  "baseSections": ["Title", "Executive Summary", "Introduction", "Contents", "Body", "Conclusions", "Bibliography", "Index"],
+  "testingSections": ["Project Overview", "Methodology", "Results and Analysis", "Scientific Reporting", "Raw Data Index"],
+  "expandedSections": ["Executive Summary", "Project Overview", "Governance", "Methodology and Testing", "Quality and Risk", "Data Management", "Timeline and Deliverables", "Communication and Reporting", "Appendices", "Continuous Improvement"],
+  "dashboardTranslation": {
+    "Executive Summary": "top summary card",
+    "Contents": "navigation index",
+    "Methodology": "process pipeline",
+    "Results and Analysis": "charts tables and status grids",
+    "Quality and Risk": "claim gates and blocker matrix",
+    "Data Management": "source authority and raw data index",
+    "Timeline and Deliverables": "milestone status strip",
+    "Communication and Reporting": "owner decisions and reporting cadence",
+    "Appendices": "back matter and logs",
+    "Bibliography": "source reference table",
+    "Index": "search or index page"
+  },
+  "standardPageOrder": ["Purpose", "Source authority", "Executive summary or current state", "Navigation", "Method", "Results or status graphs", "Quality risk and blockers", "Data and source index", "Timeline and deliverables", "Owner decisions", "Next steps", "Files updated", "Consolidated log", "References", "Index"],
+  "rule": "Use compact dashboard sections for operational surfaces and the expanded section set for formal research investor testing and print outputs.",
+  "nextActions": ["Apply this template to workbook collapse plans", "Apply this template to route proof packets", "Use graph and timeline sections as dashboard sources", "Preserve logs references and raw data index in final pages"]
+}
