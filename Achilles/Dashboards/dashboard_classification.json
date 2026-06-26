@@ -1,0 +1,30 @@
+{
+  "schema": "achilles_dashboard_classification_v1",
+  "status": "active_classification_policy",
+  "purpose": "Classify landing dashboards across folders, workbooks, applications, projects, and function hierarchy.",
+  "dashboardOrders": [
+    {"order": 1, "name": "System landing dashboard", "scope": "highest-order ecosystem or folder family", "examples": ["Achilles", "Library", "LightSpeed", "Raphael", "Operations", "Investor"], "function": "navigation, package status, source authority, blockers, next actions"},
+    {"order": 2, "name": "Project landing dashboard", "scope": "project or program folder", "examples": ["Solar Hull", "RFS and EMFF", "Eco-X", "Terrestrial Development", "Inter-Planetary Supply Chain Systems"], "function": "project progress, claim gates, filesets, source references, open tasks"},
+    {"order": 3, "name": "Function landing dashboard", "scope": "function, lens, equation group, paradox, technology family, or workbook surface", "examples": ["EML", "MMB", "Paradoxes Solved", "Raphael Equations", "Raphael Natural Phenomena", "Hardware", "Mark", "Luke"], "function": "inputs, outputs, evidence class, dependencies, validation state"}
+  ],
+  "spreadsheetDashboardTypes": [
+    {"type": "Control dashboard", "use": "workbook status, owner, source authority, blockers, finalisation state"},
+    {"type": "Data dashboard", "use": "source rows, metrics, progress, and coverage"},
+    {"type": "Function dashboard", "use": "functions and lenses such as EML, MMB, Paradoxes Solved, Raphael Equations, Raphael Natural Phenomena"},
+    {"type": "Project dashboard", "use": "project current state, progress, claims, source files, next tasks"},
+    {"type": "Investor dashboard", "use": "tailored investor-facing summary independent from operational folders"},
+    {"type": "Archive dashboard", "use": "version collapse, extraction status, canonical-copy status, approval status"}
+  ],
+  "functionalHierarchy": {
+    "topScope": "Type 1 Kardashev readiness and stewardship scope",
+    "topFunctions": ["Inter-Planetary Supply Chain Systems", "Eco-X", "Terrestrial Development"],
+    "supplyChainSubfunctions": ["Hardware", "RFS and EMFF", "Solar Hull", "Mark", "Luke", "Digital Twin Suite"],
+    "raphaelSubfunctions": ["EML", "MMB", "Paradoxes Solved", "Raphael Equations", "Raphael Natural Phenomena"],
+    "rollupRule": "Lower-order function dashboards roll up to project dashboards; project dashboards roll up to system dashboards."
+  },
+  "googleEarthPlacement": {"folderClass": "Investor", "reason": "tailoring, excavation, build, and investor-facing spatial context independent from operations"},
+  "folderDashboardRule": "Create landing dashboards for the highest three folder or project orders where filesets are stable enough to navigate.",
+  "excelDashboardRule": "Each consolidated workbook should land on the appropriate dashboard type rather than a raw version tab. Logs remain at the back.",
+  "guardrails": ["review before public exposure", "avoid unsupported validation claims", "avoid duplicate dashboards", "link dashboards to source authority and OPEN_TASKS"],
+  "nextActions": ["Classify Data_Achilles_Dashboard_Code_Block_CL3_v0_1 as a reusable dashboard block", "Add dashboard class to workbook collapse plans", "Add dashboard map entries to the holistic package map", "Prepare route proof packets before public deployment"]
+}
