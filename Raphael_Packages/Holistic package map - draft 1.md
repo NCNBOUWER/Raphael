@@ -2,11 +2,11 @@
 
 Date: 26 June 2026
 
-Purpose: first package map built from current Git state, workbook register extraction, archive routing, and owner scope answers.
+Purpose: first package map built from current Git state, workbook register extraction, archive routing, owner scope answers, and LightSpeed landing-source registers.
 
 ## Operating rule
 
-Use current/canonical/save files as active. Analyse older items before archive closure. Do not delete without extraction and approval.
+Use current/canonical/save files as active. Analyse older items before archive closure. Do not delete without extraction and approval. Prefer real canonical build actions over producing parallel explanatory documents.
 
 ## Top-level current package families
 
@@ -18,9 +18,43 @@ Use current/canonical/save files as active. Analyse older items before archive c
 | Raphael_Physics | classic/current simulation package | complete in Git; Drive reconciliation pending |
 | Sheets / Workbooks | final print/publish/control surfaces | consolidation in progress |
 | Archive | preservation, extraction, deletion approval | active; no deletion candidates approved |
-| LightSpeed / CYC | web shell, route proof, LS Go and launch surfaces | active build / package-map pending |
+| LightSpeed / CYC | web shell, route proof, LS Go and launch surfaces | active build / landing config started |
 | Library | source authority, notebooks, dossier, schemas, digital twins | active build / package-map pending |
 | National Dossier | public-safe/government-review dossier lane | pending public-safe review |
+
+## Current landing build actions
+
+| Action | Canonical output | Status |
+|---|---|---|
+| Convert workbook route/component/graph intent into machine-readable config | `Achilles/Web/achilles_landing_config.json` | complete |
+| Use text wordmark until reviewed logo asset is confirmed | landing config brand policy | active |
+| Apply badge-led CL3 / human / review / source / blocked / proof-required language across landing surfaces | landing config documentTemplates and route components | active |
+| Keep node globe as static cluster legend unless privacy/claim proof is complete | landing config graph policy | active |
+| Keep Raphael panels proof/provenance gated and simulation-only until source/proof review | landing config route policy | active |
+
+## Landing page graph set
+
+| Graph / visual | Purpose | Source |
+|---|---|---|
+| Package status | show current package families and completion/blocker state | Holistic package map + OPEN_TASKS |
+| Route readiness | show LightSpeed/CYC route state, deploy state, claim gate, next action | LightSpeed `01_Page_Index` |
+| Achilles node globe / static cluster legend | show Achilles, LightSpeed, W1-W6, D1-D6, Raphael, CCC, SHFF, M1, digital twins, governance gates | LightSpeed `26_node_globe` |
+| Blocker matrix | show Drive, spreadsheet, transfer, deployment, checksum, deletion gates | OPEN_TASKS + ACR3 registers |
+| Transfer batches | show T1-T5 achilles.romer readiness | ACR3 `05_Transfer_To_Achilles` |
+
+## Document/template standard now applied
+
+All canonical package documents and future print/publish surfaces should use this section sequence unless a source-specific template overrides it:
+
+1. Purpose.
+2. Source authority.
+3. Current state.
+4. Completed.
+5. Blockers.
+6. Next steps.
+7. Owner decisions required.
+8. Files/registers updated.
+9. Consolidated log.
 
 ## Drive / workbook extracted lanes
 
@@ -48,11 +82,11 @@ Use current/canonical/save files as active. Analyse older items before archive c
 
 ## Next package-map inputs
 
-1. Row-level extraction from ACR3 registers.
-2. Drive folder desktop pass results.
-3. Workbook version-collapse outputs.
-4. Archive-data amalgamation from open chats/strings.
-5. Public/master/internal notebook consolidation.
+1. Drive folder desktop pass results.
+2. Workbook version-collapse outputs.
+3. Archive-data amalgamation from open chats/strings.
+4. Public/master/internal notebook consolidation.
+5. Real route/template assets generated from landing config.
 
 ## Current blockers
 
@@ -61,6 +95,7 @@ Use current/canonical/save files as active. Analyse older items before archive c
 - `achilles.romer` transfer not yet executed.
 - Vercel/public deployment needs project import/create after build checks.
 - ZIP authoritative-copy selection needs checksum or owner choice.
+- Reviewed logo asset not yet identified; use wordmark-only brand policy for now.
 
 ## Next output
 
@@ -70,4 +105,5 @@ Draft 2 should add:
 - final workbook tab collapse results;
 - source authority table;
 - publish/print file set by project;
-- deletion candidate list only after extraction.
+- deletion candidate list only after extraction;
+- generated route shell assets after reviewed route proof.
