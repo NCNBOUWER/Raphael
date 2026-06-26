@@ -1,0 +1,17 @@
+{
+  "schema": "neo_file_extension_queues_v1",
+  "status": "active_queue_scaffold",
+  "purpose": "Route incoming context and files by extension or type into canonical queues for LightSpeed to Raphael launch work.",
+  "queues": [
+    {"id": "assets_images", "extensions": ["png", "jpg", "jpeg", "ico", "svg", "webp"], "target": "brand and dashboard asset manifests", "files": ["Achilles/Brand/brand_asset_manifest.json", "Achilles/Brand/logo_policy.json"], "action": "register metadata, assign brand role, place durable binary when available"},
+    {"id": "documents", "extensions": ["pdf", "docx", "md", "txt"], "target": "templates reports protocols handoffs", "files": ["Achilles/Templates/research_report_template_standard.json", "Achilles/Control/Current chat canonical handoff - 2026-06-27.md"], "action": "extract sections and route into templates tasks maps or registers"},
+    {"id": "spreadsheets", "extensions": ["xlsx", "csv", "gsheet"], "target": "workbook collapse and dashboard landings", "files": ["Achilles/Workbooks/Workbook collapse controller.md", "Achilles/Dashboards/dashboard_classification.json"], "action": "inspect tabs, classify dashboard type, collapse versions, preserve logs"},
+    {"id": "archives", "extensions": ["zip", "7z", "tar", "gz"], "target": "ZIP Check and Archive", "files": ["Archive/ZIP authoritative copy rule.md", "Archive/Ready to archive.md"], "action": "inventory, inspect, compare, and classify canonical candidate or archive copy"},
+    {"id": "web_routes", "extensions": ["html", "css", "js", "json"], "target": "web route dashboards and proof packets", "files": ["Achilles/Web/achilles_landing_config.json", "Achilles/Web/route_proof_packet_templates.json"], "action": "validate route state, claim gate, component map and publish readiness"},
+    {"id": "code", "extensions": ["py", "ts", "tsx", "js", "json", "yaml", "yml"], "target": "code and validation queues", "files": ["Raphael_Physics", "EML#F", "N^3/RUN/code"], "action": "compile or test where possible and record source boundary"},
+    {"id": "geospatial", "extensions": ["kml", "kmz", "geojson"], "target": "Investor folder", "files": ["Achilles/Dashboards/dashboard_classification.json"], "action": "route to Investor dashboard rather than Operations by default"},
+    {"id": "agent_handoff", "extensions": ["md", "json", "csv"], "target": "Neo and agent distribution", "files": ["Neo/Neo launch scaffold.md", "Neo/Agents/agent_distribution_plan.json"], "action": "assign to Achilles Neo Library Route Workbook Archive Investor or future Z operator lane"}
+  ],
+  "rule": "Preserve source truth and route extracted content into the correct queue before any cleanup decision.",
+  "nextActions": ["Populate each queue from current Drive Git and file lists", "Generate dashboard-specific queue views", "Fold queue status into OPEN_TASKS or task deltas"]
+}
