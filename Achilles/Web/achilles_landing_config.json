@@ -5,118 +5,47 @@
     "LightSpeed_Web_Shell_Builder_CL3_v0_2",
     "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24",
     "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
-    "Achilles OPEN_TASKS.csv"
+    "Achilles OPEN_TASKS.csv",
+    "Achilles/Brand/logo_policy.json",
+    "Achilles/Dashboards/dashboard_classification.json"
   ],
   "brand": {
     "wordmark": "ACHILLES",
     "systemLine": "Cognigrex steady stream",
     "subtitle": "Controlled consolidation, source authority, and publish readiness",
-    "logoPolicy": "Use text wordmark until a reviewed logo asset is confirmed. Do not invent or embed a logo image without an approved asset reference.",
+    "logoPolicy": "Wordmark-only by default until owner confirms a reviewed logo asset. Logo decision questions are tracked in Achilles/Brand/logo_policy.json.",
     "visualTone": "technical, calm, dark-surface, badge-led, claim-gated",
     "brandNotes": [
       "Use consistent CL/gate/status badges across all documents and route shells.",
       "Prefer source authority and review state over decorative graphics.",
-      "Keep claim-sensitive surfaces visibly locked until reviewed."
+      "Keep claim-sensitive surfaces visibly locked until reviewed.",
+      "Use dashboard order classification for system, project, and function landings."
     ]
   },
+  "dashboardClassification": {
+    "source": "Achilles/Dashboards/dashboard_classification.json",
+    "highestOrders": ["system landing dashboard", "project landing dashboard", "function landing dashboard"],
+    "spreadsheetTypes": ["control", "data", "function", "project", "investor", "archive"],
+    "googleEarthPlacement": "Investor folder"
+  },
   "landingGraphs": [
-    {
-      "id": "graph_package_status",
-      "title": "Package status",
-      "type": "horizontal_bar",
-      "purpose": "Show current package families and whether they are complete, active, pending, or blocked.",
-      "source": "Holistic package map + OPEN_TASKS",
-      "publicSafe": true
-    },
-    {
-      "id": "graph_route_readiness",
-      "title": "Route readiness",
-      "type": "status_matrix",
-      "purpose": "Show LightSpeed / CYC routes, deploy state, claim gate, and next action.",
-      "source": "LightSpeed 01_Page_Index",
-      "publicSafe": "review-gated"
-    },
-    {
-      "id": "graph_node_globe",
-      "title": "Achilles node globe",
-      "type": "node_graph_or_static_cluster_legend",
-      "purpose": "Show Achilles, LightSpeed, W1-W6, D1-D6, Raphael, CCC, SHFF, M1, digital twin suite, and governance gates.",
-      "source": "LightSpeed 26_node_globe",
-      "publicSafe": "privacy_claim_proof_required"
-    },
-    {
-      "id": "graph_blocker_matrix",
-      "title": "Blocker matrix",
-      "type": "grid",
-      "purpose": "Show current blockers: Drive moves, spreadsheet mutation, transfer readiness, public deployment, checksum selection.",
-      "source": "OPEN_TASKS + ACR3 registers",
-      "publicSafe": true
-    },
-    {
-      "id": "graph_transfer_batches",
-      "title": "Transfer batches",
-      "type": "kanban_or_table",
-      "purpose": "Show T1-T5 transfer batches and readiness gates before achilles.romer handoff.",
-      "source": "ACR3 05_Transfer_To_Achilles",
-      "publicSafe": "internal_first"
-    }
+    {"id": "graph_package_status", "title": "Package status", "type": "horizontal_bar", "purpose": "Show current package families and whether they are complete, active, pending, or blocked.", "source": "Holistic package map + OPEN_TASKS", "publicSafe": true},
+    {"id": "graph_route_readiness", "title": "Route readiness", "type": "status_matrix", "purpose": "Show LightSpeed / CYC routes, deploy state, claim gate, and next action.", "source": "LightSpeed 01_Page_Index", "publicSafe": "review-gated"},
+    {"id": "graph_node_globe", "title": "Achilles node globe", "type": "node_graph_or_static_cluster_legend", "purpose": "Show Achilles, LightSpeed, W1-W6, D1-D6, Raphael, CCC, SHFF, M1, digital twin suite, and governance gates.", "source": "LightSpeed 26_node_globe", "publicSafe": "privacy_claim_proof_required"},
+    {"id": "graph_blocker_matrix", "title": "Blocker matrix", "type": "grid", "purpose": "Show current blockers: Drive moves, spreadsheet mutation, transfer readiness, public deployment, checksum selection.", "source": "OPEN_TASKS + ACR3 registers", "publicSafe": true},
+    {"id": "graph_transfer_batches", "title": "Transfer batches", "type": "kanban_or_table", "purpose": "Show T1-T5 transfer batches and readiness gates before achilles.romer handoff.", "source": "ACR3 05_Transfer_To_Achilles", "publicSafe": "internal_first"},
+    {"id": "graph_function_rollup", "title": "Function rollup", "type": "hierarchy_map", "purpose": "Show functions rolling up into projects and projects rolling up into system dashboards.", "source": "dashboard classification", "publicSafe": "review-gated"}
   ],
   "routes": [
-    {
-      "route": "/data/achilles",
-      "title": "Achilles Core Data Node",
-      "mode": "human dashboard",
-      "components": ["Hero Header", "Badge Stack", "MCP Status Panel", "Codex Status Panel", "Route Manifest Grid", "Blocker Grid", "Surface Map"],
-      "deployState": "ready for paste",
-      "claimGate": "review-required"
-    },
-    {
-      "route": "/ccc/test",
-      "title": "CCC Builder Shell",
-      "mode": "test route",
-      "components": ["CCC Route Nav", "CCC Layering UI", "Locked Actions Panel"],
-      "deployState": "ready for paste",
-      "claimGate": "wallet/token locked"
-    },
-    {
-      "route": "Raphael panels",
-      "title": "Raphael Engine Panels",
-      "mode": "model/proof-routing",
-      "components": ["Hero Header", "Badge Stack", "Raphael Panel", "Locked Actions Panel", "Deploy Log Block", "AI Oversight Queue"],
-      "deployState": "queued",
-      "claimGate": "simulation only / proof required / no validation claim"
-    },
-    {
-      "route": "node globe",
-      "title": "Achilles Node Globe",
-      "mode": "dashboard widget",
-      "components": ["Hero Header", "Badge Stack", "Node Globe", "Locked Actions Panel", "Deploy Log Block"],
-      "deployState": "queued",
-      "claimGate": "privacy and claim proof required"
-    }
+    {"route": "/data/achilles", "title": "Achilles Core Data Node", "mode": "system dashboard", "components": ["Hero Header", "Badge Stack", "MCP Status Panel", "Codex Status Panel", "Route Manifest Grid", "Blocker Grid", "Surface Map"], "deployState": "ready for paste", "claimGate": "review-required"},
+    {"route": "/ccc/test", "title": "CCC Builder Shell", "mode": "test route", "components": ["CCC Route Nav", "CCC Layering UI", "Locked Actions Panel"], "deployState": "ready for paste", "claimGate": "wallet/token locked"},
+    {"route": "Raphael panels", "title": "Raphael Engine Panels", "mode": "function dashboard", "components": ["Hero Header", "Badge Stack", "Raphael Panel", "Locked Actions Panel", "Deploy Log Block", "AI Oversight Queue"], "deployState": "queued", "claimGate": "simulation only / proof required / no validation claim"},
+    {"route": "node globe", "title": "Achilles Node Globe", "mode": "system dashboard widget", "components": ["Hero Header", "Badge Stack", "Node Globe", "Locked Actions Panel", "Deploy Log Block"], "deployState": "queued", "claimGate": "privacy and claim proof required"}
   ],
   "documentTemplates": {
-    "standardSections": [
-      "Purpose",
-      "Source authority",
-      "Current state",
-      "Completed",
-      "Blockers",
-      "Next steps",
-      "Owner decisions required",
-      "Files/registers updated",
-      "Consolidated log"
-    ],
+    "standardSections": ["Purpose", "Source authority", "Current state", "Completed", "Blockers", "Next steps", "Owner decisions required", "Files/registers updated", "Consolidated log"],
     "badges": ["CL3", "HUMAN", "REVIEW", "SOURCE", "BLOCKED", "PROOF REQUIRED", "PUBLIC-SAFE"],
     "logPolicy": "Retain consolidated logs at the back of workbooks and in final package documents. Do not delete version history until extraction and approval."
   },
-  "blockedActions": [
-    "unsupervised deletion",
-    "private node display before review",
-    "unsupported claim",
-    "validation implication without evidence",
-    "wallet/token/mint/payment/custody action",
-    "destructive Drive update without owner approval",
-    "unsourced constant/equation/scenario display"
-  ]
+  "blockedActions": ["unsupervised deletion", "private node display before review", "unsupported claim", "validation implication without evidence", "wallet/token/mint/payment/custody action", "destructive Drive update without owner approval", "unsourced constant/equation/scenario display"]
 }
