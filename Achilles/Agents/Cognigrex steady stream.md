@@ -8,18 +8,21 @@ Cognigrex is the distributed processing layer for distinct task streams that ret
 
 ## Current state
 
-This is a setup scaffold only. It does not start the deferred Z stack.
+This is an active setup scaffold. It does not start the deferred Z stack.
 
-## Stream lanes
+## Source-informed stream lanes
 
-| Lane | Function | Current status |
-|---|---|---|
-| Archive stream | inspect older files and extract useful context | pending |
-| Workbook stream | collapse versioned sheets into final unversioned pages | pending |
-| Drive stream | map current folders and manual desktop actions | active |
-| Git stream | update protocols, registers, maps, and reports | active |
-| Publish stream | prepare project-specific file sets and print surfaces | pending |
-| Agent stream | maintain Achilles Assistant Agent and task execution cadence | active |
+| Lane | Historical anchor | Function | Current status |
+|---|---|---|---|
+| W1 archive/source stream | Deposit Analysis | inspect old files, classify source value, extract missing context | pending |
+| W2 task execution stream | Luke II Catch / Hold | active tasks, blocked tasks, queued work, recent completions | active |
+| W3 technical stream | RFS & EMFF | historical technical stream; keep separate from EML#F naming | review |
+| W4 dependency stream | Supply Chain & Trajectory | handoffs, routing, dependency maps, throughput | pending |
+| W5 scheduling stream | Mission Planning GMAT | run windows, cadence, validation sequencing | active |
+| W6 dataspace stream | Asset Library Dataspace | source registry, normalization, QA, publish, pass-off packs | active |
+| Workbook stream | Sheets | collapse versioned pages into final unversioned pages and logs | pending |
+| Publish stream | Public/master/internal surfaces | project-specific file sets and print/publish outputs | pending |
+| Agent stream | Achilles AI | assistant-agent control cards, task execution cadence, retained state | active |
 
 ## Retained-state rule
 
@@ -31,6 +34,16 @@ Each stream should report:
 - canonical file updated;
 - unresolved items added to OPEN_TASKS.
 
+## Register discipline
+
+Every stream must prefer register output over memory. Use:
+
+- `OPEN_TASKS.csv` for unresolved work;
+- `Ready to archive.md` for items that need preservation/move;
+- `Ready to delete after extraction.md` only after extraction is complete;
+- package maps for final current/canonical locations;
+- workbook logs for consolidated sheet histories.
+
 ## Recovery rule
 
 After interruption, resume from the last valid state. Use a soft retained-state summary and continue with the next safe action.
@@ -40,3 +53,4 @@ After interruption, resume from the last valid state. Use a soft retained-state 
 - No secondary Z stack automation yet.
 - No unsupervised deletion.
 - No uncited factual claims.
+- Do not merge W3 RFS/EMFF terminology into EML#F.
