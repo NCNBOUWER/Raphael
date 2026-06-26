@@ -45,3 +45,7 @@ T-043,Archive,Create deletion approval register,Complete,Critical,Assistant,Arch
 T-044,Automation,Consolidate Achilles hourly check-in,Complete,High,Assistant,Automations,One Achilles continuity check operates hourly,Old duplicate hourly review disabled
 T-045,Automation,Create weekly deletion approval review,Complete,High,Assistant,Automations,Monday review summarizes deletion register and asks approval,No automatic deletion
 T-046,Archive,Run archive-data amalgamation from chats strings channels sheets and old folders,Pending,Critical,Joint,"Archive registers; Sheets; Drive; chat exports",All useful material extracted and unresolved items converted to OPEN_TASKS,Next major execution phase
+T-047,Achilles,Clarify protocol is living and expandable,Complete,High,Assistant,Achilles/Protocols/Achilles protocol living addendum.md,Protocol is not treated as hard final law,Created living addendum
+T-048,Achilles,Create scope expansion questionnaire,Complete,High,Assistant,Achilles/Protocols/Scope questionnaire.md,Owner can answer with quick multi-select letters,Created questionnaire and printed in chat
+T-049,Automation,Create daily Achilles consolidation block,Complete,High,Assistant,Automations,Daily consolidation checks active chats thought trains Drive Git workbooks and tasks,Created daily flexible automation
+T-050,Automation,Create weekly Achilles publish and scope review,Complete,High,Assistant,Automations,Weekly review checks publish print scope archive and next week plan,Created Friday flexible automation
