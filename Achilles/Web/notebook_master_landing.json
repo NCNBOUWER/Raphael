@@ -1,44 +1,39 @@
 {
   "schema": "achilles_notebook_master_landing_v1",
-  "status": "active_build_config",
+  "status": "active_build_config_with_source_mapping",
   "purpose": "Separate research, design, build, review, and print/publish notebooks so project work does not remain mixed across old sheets and chats.",
   "sourceAuthority": [
-    "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
-    "Achilles protocol",
-    "Scope questionnaire answers",
-    "OPEN_TASKS.csv"
+    {"title": "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02", "driveId": "1cYRuhbCG6E8yzPMD4CRdfFcweSLcZrESDMZalOqGYYA", "role": "landing and notebook expansion register"},
+    {"title": "Romer_EMASSC_LinkDrive_DataIndex_Workbook_v0_1", "driveId": "1VqclM3KypKoa_e8BbMPDeDVb6eVh5pX7UbDzOCL6fnE", "role": "registry and source route authority"},
+    {"title": "LightSpeed_Web_Shell_Builder_CL3_v0_2", "driveId": "1na5Y4MuwrOdLxub0teoS_hO5n9FmNXIIYPlVjYZk88k", "role": "route, component, and web shell design source"},
+    {"title": "Achilles protocol", "role": "living consolidation standard"},
+    {"title": "Scope questionnaire answers", "role": "owner scope and cadence defaults"},
+    {"title": "OPEN_TASKS.csv", "role": "execution queue"}
   ],
   "notebookFamilies": [
-    {"id": "research", "title": "Research notebooks", "use": "sources, evidence, context, and extracted thought trains"},
-    {"id": "design", "title": "Design notebooks", "use": "brand, templates, route layouts, visual systems, and interface rules"},
-    {"id": "build", "title": "Build notebooks", "use": "implementation state, package maps, configs, and test logs"},
-    {"id": "review", "title": "Review notebooks", "use": "claim gates, source authority, public-safe review, and owner decisions"},
-    {"id": "print_publish", "title": "Print and publish notebooks", "use": "final unversioned surfaces, back-matter logs, and release notes"}
+    {"id": "research", "title": "Research notebooks", "use": "sources, evidence, context, and extracted thought trains", "sourceFamilies": ["source PDFs", "Drive source references", "open chats", "archive records"]},
+    {"id": "design", "title": "Design notebooks", "use": "brand, templates, route layouts, visual systems, and interface rules", "sourceFamilies": ["LightSpeed component library", "landing config", "route shell sheets", "reviewed logo or wordmark policy"]},
+    {"id": "build", "title": "Build notebooks", "use": "implementation state, package maps, configs, and test logs", "sourceFamilies": ["Git configs", "validation reports", "Drive commit registers", "deployment readiness sheets"]},
+    {"id": "review", "title": "Review notebooks", "use": "claim gates, source authority, public-safe review, and owner decisions", "sourceFamilies": ["OPEN_TASKS", "claim gates", "source authority registers", "public-safe reviews"]},
+    {"id": "print_publish", "title": "Print and publish notebooks", "use": "final unversioned surfaces, back-matter logs, and release notes", "sourceFamilies": ["final workbook pages", "consolidated logs", "public dossier", "master release", "internal notebook"]}
   ],
-  "standardPageSections": [
-    "Purpose",
-    "Source authority",
-    "Current state",
-    "Completed",
-    "Blockers",
-    "Next steps",
-    "Owner decisions required",
-    "Files/registers updated",
-    "Consolidated log"
-  ],
+  "standardPageSections": ["Purpose", "Source authority", "Current state", "Completed", "Blockers", "Next steps", "Owner decisions required", "Files/registers updated", "Consolidated log"],
   "graphs": [
     {"id": "notebook_consolidation_status", "type": "status_grid", "purpose": "Show which notebook families have final unversioned pages and logs."},
-    {"id": "thought_train_routing", "type": "route_map", "purpose": "Show which thought trains are routed to docs, tasks, concept maps, or raw archive."}
+    {"id": "thought_train_routing", "type": "route_map", "purpose": "Show which thought trains are routed to docs, tasks, concept maps, or raw archive."},
+    {"id": "publish_surface_readiness", "type": "status_grid", "purpose": "Show public dossier, master release, internal notebook, and project-specific fileset readiness."}
   ],
   "guardrails": [
     "unresolved notes require task routing before version closure",
     "consolidated logs remain with each workbook or publish surface",
     "internal proof and empirical validation remain separate",
-    "secondary Z stack remains deferred"
+    "secondary Z stack remains deferred",
+    "prefer canonical notebook families over duplicate notebook files"
   ],
   "nextActions": [
     "Map current notebook and sheet pages into the five notebook families.",
     "Create final unversioned page names before mutating any spreadsheet tabs.",
-    "Move unresolved row items into OPEN_TASKS before version closure."
+    "Move unresolved row items into OPEN_TASKS before version closure.",
+    "Apply the standard page sections to public, master, internal, and project-specific publish filesets."
   ]
 }
