@@ -2,7 +2,7 @@
 
 Date: 26 June 2026
 
-Purpose: first package map built from current Git state, workbook register extraction, archive routing, owner scope answers, LightSpeed landing-source registers, dashboard classification, and archive/ZIP rules.
+Purpose: first package map built from current Git state, workbook register extraction, archive routing, owner scope answers, LightSpeed landing-source registers, dashboard classification, archive/ZIP rules, and supplied brand assets.
 
 ## Operating rule
 
@@ -28,12 +28,28 @@ Use current/canonical/save files as active. Analyse older items before archive c
 | Action | Canonical output | Status |
 |---|---|---|
 | Convert workbook route/component/graph intent into machine-readable config | `Achilles/Web/achilles_landing_config.json` | complete |
-| Use text wordmark until reviewed logo asset is confirmed | `Achilles/Brand/logo_policy.json` | owner decision pending |
+| Register supplied brand assets and palette | `Achilles/Brand/brand_asset_manifest.json` | complete |
+| Apply owner logo answers | `Achilles/Brand/logo_policy.json` | complete; supplied assets active |
 | Apply badge-led CL3 / human / review / source / blocked / proof-required language across landing surfaces | landing config documentTemplates and route components | active |
-| Keep node globe as static cluster legend unless privacy/claim proof is complete | landing config graph policy | active |
+| Keep node globe as Achilles identity artefact with source review gates | landing config graph policy | active |
 | Keep Raphael panels proof/provenance gated and simulation-only until source/proof review | landing config route policy | active |
 | Classify folder and workbook dashboards by system/project/function order | `Achilles/Dashboards/dashboard_classification.json` | complete |
 | Define ZIP authoritative-copy rule | `Archive/ZIP authoritative copy rule.md` | complete |
+| Convert uploaded base/testing documents into report template standard | `Achilles/Templates/research_report_template_standard.json` | complete |
+
+## Brand and asset routing
+
+| Surface | Asset source |
+|---|---|
+| Achilles | `Achilles.png` / node-globe visual identity |
+| Romer Industries | `Romer 1.PNG` and `Romer Industries Pallette.png` |
+| EMASSC | `dual.JPG` / EMASSC visual surface |
+| Eco-X | `Eco X.png` |
+| LightSpeed | `Lightspeed.ico` |
+| DeSporte | `DeSporte.ico` |
+| Function spectrum / Raphael lens visuals | `Colour Wheel Final.png` |
+
+The Achilles wordmark remains a fallback label/accessibility text, not the universal logo across all dashboards.
 
 ## Dashboard hierarchy
 
@@ -44,6 +60,18 @@ Use current/canonical/save files as active. Analyse older items before archive c
 | 3 | Function landing dashboard | Function/lens/equation/technology dashboard: EML, MMB, Paradoxes Solved, Raphael Equations, Raphael Natural Phenomena, Hardware, Mark, Luke |
 
 Workbook dashboards should land on control, data, function, project, investor, or archive dashboards. Logs remain at the back of the workbook.
+
+## Interactive dashboard requirements
+
+Every dashboard should include:
+
+1. source authority link or source ID;
+2. status and blocker badges;
+3. open task or next action panel;
+4. field-specific brand asset and palette;
+5. drilldown from system to project to function where applicable;
+6. filters, pivots, charts, slicers, or equivalent interaction in workbook dashboards;
+7. route state and claim gate in web dashboards.
 
 ## Functional rollup
 
@@ -60,7 +88,7 @@ Workbook dashboards should land on control, data, function, project, investor, o
 |---|---|---|
 | Package status | show current package families and completion/blocker state | Holistic package map + OPEN_TASKS |
 | Route readiness | show LightSpeed/CYC route state, deploy state, claim gate, next action | LightSpeed `01_Page_Index` |
-| Achilles node globe / static cluster legend | show Achilles, LightSpeed, W1-W6, D1-D6, Raphael, CCC, SHFF, M1, digital twins, governance gates | LightSpeed `26_node_globe` |
+| Achilles node globe / static cluster legend | show Achilles, LightSpeed, W1-W6, D1-D6, Raphael, CCC, SHFF, M1, digital twins, governance gates | LightSpeed `26_node_globe` + `Achilles.png` |
 | Blocker matrix | show Drive, spreadsheet, transfer, deployment, checksum, deletion gates | OPEN_TASKS + ACR3 registers |
 | Transfer batches | show T1-T5 achilles.romer readiness | ACR3 `05_Transfer_To_Achilles` |
 | Function rollup | show function-to-project-to-system hierarchy | Dashboard classification |
@@ -78,6 +106,8 @@ All canonical package documents and future print/publish surfaces should use thi
 7. Owner decisions required.
 8. Files/registers updated.
 9. Consolidated log.
+
+Formal research, testing, investor, and publish documents may use the expanded template sections from `Achilles/Templates/research_report_template_standard.json`.
 
 ## Drive / workbook extracted lanes
 
@@ -110,7 +140,7 @@ All canonical package documents and future print/publish surfaces should use thi
 - Spreadsheet mutation not yet performed.
 - `achilles.romer` transfer not yet executed.
 - Vercel/public deployment needs project import/create after build checks.
-- Reviewed logo asset not yet identified; wordmark-only policy remains active pending owner answers.
+- Binary brand assets are registered by uploaded path and metadata; durable Drive/Git asset placement remains pending.
 
 ## Next output
 
@@ -121,4 +151,5 @@ Draft 2 should add:
 - source authority table;
 - publish/print file set by project;
 - deletion candidate list only after extraction;
-- generated route shell assets after reviewed route proof.
+- generated route shell assets after reviewed route proof;
+- durable asset folder links after brand asset placement.
