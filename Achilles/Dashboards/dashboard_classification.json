@@ -1,7 +1,7 @@
 {
   "schema": "achilles_dashboard_classification_v1",
-  "status": "active_classification_policy",
-  "purpose": "Classify landing dashboards across folders, workbooks, applications, projects, and function hierarchy.",
+  "status": "active_interactive_classification_policy",
+  "purpose": "Classify and standardise functional interactive dashboards across folders, workbooks, applications, projects, and function hierarchy.",
   "dashboardOrders": [
     {"order": 1, "name": "System landing dashboard", "scope": "highest-order ecosystem or folder family", "examples": ["Achilles", "Library", "LightSpeed", "Raphael", "Operations", "Investor"], "function": "navigation, package status, source authority, blockers, next actions"},
     {"order": 2, "name": "Project landing dashboard", "scope": "project or program folder", "examples": ["Solar Hull", "RFS and EMFF", "Eco-X", "Terrestrial Development", "Inter-Planetary Supply Chain Systems"], "function": "project progress, claim gates, filesets, source references, open tasks"},
@@ -15,6 +15,22 @@
     {"type": "Investor dashboard", "use": "tailored investor-facing summary independent from operational folders"},
     {"type": "Archive dashboard", "use": "version collapse, extraction status, canonical-copy status, approval status"}
   ],
+  "interactiveRequirements": [
+    "dashboard must expose source authority links or source IDs",
+    "dashboard must show open tasks or next actions",
+    "dashboard must include blocker/status badges",
+    "dashboard must support drilldown from system to project to function where applicable",
+    "spreadsheet dashboards must use formulas, filters, pivots, charts, or slicer-equivalent structures rather than static title pages only",
+    "web dashboards must expose route state, claim gate, publish visibility, and last-updated metadata",
+    "investor dashboards must separate investor-safe summary from internal operations",
+    "archive dashboards must separate canonical candidate, archive copy, and duplicate-after-extraction states"
+  ],
+  "visualConsistency": {
+    "paletteSource": "Achilles/Brand/brand_asset_manifest.json",
+    "logoPolicy": "Achilles/Brand/logo_policy.json",
+    "fieldRule": "Use project-specific assets and palettes. Do not impose the Achilles wordmark across unrelated project dashboards.",
+    "coreBadges": ["CL3", "HUMAN", "REVIEW", "SOURCE", "BLOCKED", "PROOF REQUIRED", "PUBLIC-SAFE"]
+  },
   "functionalHierarchy": {
     "topScope": "Type 1 Kardashev readiness and stewardship scope",
     "topFunctions": ["Inter-Planetary Supply Chain Systems", "Eco-X", "Terrestrial Development"],
@@ -25,6 +41,6 @@
   "googleEarthPlacement": {"folderClass": "Investor", "reason": "tailoring, excavation, build, and investor-facing spatial context independent from operations"},
   "folderDashboardRule": "Create landing dashboards for the highest three folder or project orders where filesets are stable enough to navigate.",
   "excelDashboardRule": "Each consolidated workbook should land on the appropriate dashboard type rather than a raw version tab. Logs remain at the back.",
-  "guardrails": ["review before public exposure", "avoid unsupported validation claims", "avoid duplicate dashboards", "link dashboards to source authority and OPEN_TASKS"],
-  "nextActions": ["Classify Data_Achilles_Dashboard_Code_Block_CL3_v0_1 as a reusable dashboard block", "Add dashboard class to workbook collapse plans", "Add dashboard map entries to the holistic package map", "Prepare route proof packets before public deployment"]
+  "guardrails": ["review before public exposure", "avoid unsupported validation claims", "avoid duplicate dashboards", "link dashboards to source authority and OPEN_TASKS", "keep dashboards functional and field-specific"],
+  "nextActions": ["Classify Data_Achilles_Dashboard_Code_Block_CL3_v0_1 as a reusable dashboard block", "Add dashboard class to workbook collapse plans", "Add dashboard map entries to the holistic package map", "Prepare route proof packets before public deployment", "Bind uploaded brand assets to dashboard families"]
 }
