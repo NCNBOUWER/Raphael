@@ -1,0 +1,41 @@
+{
+  "schema": "achilles_route_proof_packet_templates_v1",
+  "status": "active_build_config",
+  "purpose": "Define route proof packet templates before route activation, paste tests, or public exposure.",
+  "sourceAuthority": [
+    "LightSpeed_Web_Shell_Builder_CL3_v0_2",
+    "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24",
+    "Achilles/Web/achilles_landing_config.json",
+    "Achilles OPEN_TASKS.csv"
+  ],
+  "packetTypes": [
+    {"id": "route_intake_packet", "title": "Route intake packet", "requiredFields": ["route", "title", "owner", "source authority", "intended audience", "claim sensitivity", "data sensitivity", "current deploy state"]},
+    {"id": "claim_gate_packet", "title": "Claim gate packet", "requiredFields": ["claim text", "source file", "evidence class", "review state", "allowed wording", "blocked wording", "public-safe decision"]},
+    {"id": "component_paste_packet", "title": "Component paste packet", "requiredFields": ["component name", "route target", "static fallback", "scripts required", "external dependencies", "manual paste notes", "rollback instruction"]},
+    {"id": "deployment_readiness_packet", "title": "Deployment readiness packet", "requiredFields": ["build check", "preview route", "known blockers", "privacy review", "source trace", "owner sign-off", "release decision"]},
+    {"id": "post_publish_audit_packet", "title": "Post-publish audit packet", "requiredFields": ["published route", "published date", "source version", "visual check", "link check", "claim check", "rollback status"]}
+  ],
+  "globalGuardrails": [
+    "route material is review-gated by default",
+    "static fallback is required for interactive components",
+    "unsupported validation claims stay blocked",
+    "private nodes and sensitive data stay hidden until reviewed",
+    "owner sign-off is required before public release",
+    "rollback instruction is required for each pasted component"
+  ],
+  "standardProofSequence": [
+    "intake",
+    "source authority check",
+    "claim gate check",
+    "privacy and data sensitivity check",
+    "static fallback check",
+    "manual paste or preview test",
+    "owner release decision",
+    "post-publish audit"
+  ],
+  "nextActions": [
+    "Generate markdown packet files from each packet type.",
+    "Attach packet IDs to route entries in the Achilles landing config.",
+    "Use packets before public deployment work."
+  ]
+}
