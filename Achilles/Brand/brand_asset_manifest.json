@@ -1,0 +1,41 @@
+{
+  "schema": "achilles_brand_asset_manifest_v1",
+  "status": "chat_uploaded_assets_registered_metadata_only",
+  "note": "Binary assets are currently referenced from the uploaded conversation files. Durable Drive/Git asset placement remains a separate action.",
+  "assets": [
+    {"name": "Romer Industries Pallette.png", "sandboxPath": "/mnt/data/Romer Industries Pallette.png", "role": "palette typography and colour source", "format": "PNG", "width": 1920, "height": 1080, "sha256_16": "bf096828b163b542", "dominantHex": ["#6aa387", "#164150", "#ba935a", "#f4e6bc", "#0b0e0f", "#ab3639", "#c9f099", "#233c47"]},
+    {"name": "Romer 1.PNG", "sandboxPath": "/mnt/data/Romer 1.PNG", "role": "Romer Industries logo", "format": "PNG", "width": 604, "height": 330, "sha256_16": "c410ae9b66086c0e", "dominantHex": ["#3a6370", "#265462", "#2e5a68", "#36606d", "#325d6b", "#2a5765", "#22505f", "#506f72"]},
+    {"name": "dual.JPG", "sandboxPath": "/mnt/data/dual.JPG", "role": "Romer / EMASSC dual visual", "format": "JPEG", "width": 1682, "height": 749, "sha256_16": "b2e23383e65b4c91", "dominantHex": ["#2b5866", "#3d5d65", "#161920", "#245361", "#962315", "#92a78c", "#32242b", "#4c6564"]},
+    {"name": "Colour Wheel Final.png", "sandboxPath": "/mnt/data/Colour Wheel Final.png", "role": "system function spectrum / colour-wheel visual", "format": "JPEG", "width": 1024, "height": 1024, "sha256_16": "1c35b87c73b9a075", "dominantHex": ["#16101f", "#4a7589", "#4a323b", "#b77b64", "#7fc0bf", "#e5cc90", "#8e3d40", "#1f3956"]},
+    {"name": "DeSporte.ico", "sandboxPath": "/mnt/data/DeSporte.ico", "role": "DeSporte icon", "format": "ICO", "width": 256, "height": 256, "sha256_16": "e0c6bf2897a28e74", "dominantHex": ["#010815", "#1d2019", "#193642", "#473d18", "#655f31", "#c7a53b", "#02162e", "#0a1821"]},
+    {"name": "Lightspeed.ico", "sandboxPath": "/mnt/data/Lightspeed.ico", "role": "LightSpeed icon", "format": "ICO", "width": 256, "height": 256, "sha256_16": "0fd8f1f302205352", "dominantHex": ["#07120e", "#f3b830", "#562f33", "#0a2646", "#a8502e", "#c0782c", "#22272a", "#424a46"]},
+    {"name": "Achilles.png", "sandboxPath": "/mnt/data/Achilles.png", "role": "Achilles node-globe icon identity", "format": "PNG", "width": 96, "height": 96, "sha256_16": "4f6e390cc9d004f2", "dominantHex": ["#182a26", "#769c90", "#02060a", "#283f34", "#b5d3c4", "#5c7055", "#315e58", "#0c1710"]},
+    {"name": "Eco X.png", "sandboxPath": "/mnt/data/Eco X.png", "role": "Eco-X visual identity", "format": "PNG", "width": 1920, "height": 1080, "sha256_16": "3230279e6d7e391c", "dominantHex": ["#e7b073", "#226856", "#edd49e", "#183837", "#02242c", "#85a477", "#a3cf9a", "#8f7a56"]}
+  ],
+  "paletteAliases": {
+    "dark": "#0b0e0f",
+    "secondary": "#164150",
+    "classic_teal": "#226856",
+    "grey_blue": "#4a7589",
+    "true_grey": "#769c90",
+    "tan_highlight": "#e5cc90",
+    "gold": "#c7a53b",
+    "hard_red": "#962315",
+    "green_glow": "#a3cf9a",
+    "box_highlight": "#1f3956"
+  },
+  "routing": {
+    "Achilles": "Achilles.png and node-globe motif",
+    "Romer Industries": "Romer 1.PNG and Romer Industries Pallette.png",
+    "EMASSC": "dual.JPG and palette-derived spectrum treatment",
+    "Eco-X": "Eco X.png",
+    "LightSpeed": "Lightspeed.ico",
+    "DeSporte": "DeSporte.ico",
+    "Function spectrum": "Colour Wheel Final.png"
+  },
+  "nextActions": [
+    "Place the binary assets into a durable Drive/Git asset folder.",
+    "Bind dashboard components to these asset roles instead of generic wordmarks.",
+    "Generate public/private variants only after surface review."
+  ]
+}
