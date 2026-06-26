@@ -1,0 +1,72 @@
+{
+  "schema": "achilles_digital_twin_landing_docs_v1",
+  "status": "active_build_config",
+  "purpose": "Prepare per-system digital twin landing documents with explicit display limits, source authority, and claim gates before any public or route-level exposure.",
+  "sourceAuthority": [
+    "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
+    "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24",
+    "Achilles OPEN_TASKS.csv",
+    "Raphael_Packages/Holistic package map - draft 1.md"
+  ],
+  "systems": [
+    {
+      "id": "shff",
+      "title": "SHFF digital twin landing doc",
+      "displayState": "review_required",
+      "allowedDisplay": ["purpose", "source authority", "status badge", "non-sensitive concept summary", "blocked actions"],
+      "claimGate": "no validation implication without reviewed evidence"
+    },
+    {
+      "id": "mark_luke",
+      "title": "Mark Luke landing doc",
+      "displayState": "review_required",
+      "allowedDisplay": ["purpose", "source authority", "status badge", "review queue"],
+      "claimGate": "private/person-related details require owner review before display"
+    },
+    {
+      "id": "rfs_emff",
+      "title": "RFS / EMFF historical technical stream landing doc",
+      "displayState": "internal_reference",
+      "allowedDisplay": ["scope boundary", "historical reference", "terminology warning", "archive routing"],
+      "claimGate": "must not merge into EML#F external scope"
+    },
+    {
+      "id": "intersol",
+      "title": "InterSol landing doc",
+      "displayState": "public_safe_review_required",
+      "allowedDisplay": ["platform purpose", "capability lane", "public-safe summary", "blockers"],
+      "claimGate": "national dossier wording review before publication"
+    },
+    {
+      "id": "m1",
+      "title": "M1 concept panel landing doc",
+      "displayState": "simulation_only",
+      "allowedDisplay": ["concept role", "simulation status", "source links", "blocked claims"],
+      "claimGate": "simulation-only until empirical support is separately recorded"
+    }
+  ],
+  "standardSections": [
+    "Purpose",
+    "Source authority",
+    "Current state",
+    "Allowed display",
+    "Blocked display",
+    "Claim gate",
+    "Next steps",
+    "Owner decisions required",
+    "Consolidated log"
+  ],
+  "blockedDisplay": [
+    "private node data",
+    "personal details without owner review",
+    "unsupported validation or empirical proof claims",
+    "wallet token custody or payment actions",
+    "unsourced constants equations or scenarios",
+    "deletion or archive disposal instructions"
+  ],
+  "nextActions": [
+    "Create one markdown landing doc per system from this config.",
+    "Attach source references only after each source file is inspected.",
+    "Keep all unresolved display questions in OPEN_TASKS until owner review."
+  ]
+}
