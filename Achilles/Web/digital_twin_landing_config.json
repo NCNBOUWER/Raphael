@@ -1,0 +1,43 @@
+{
+  "schema": "achilles_digital_twin_landing_v1",
+  "status": "active_build_config",
+  "purpose": "Create a claim-gated landing map for the current digital twin workbook suite, using current Drive evidence and preserving review boundaries.",
+  "sourceAuthority": [
+    {"title": "ACHILLES_Digital_Twin_Suite_Master_Index_v0_1.xlsx", "driveId": "1o0tn0y4npmUPobVjuzsBPyXANK_6_Ryv", "role": "suite master index"},
+    {"title": "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02", "driveId": "1cYRuhbCG6E8yzPMD4CRdfFcweSLcZrESDMZalOqGYYA", "role": "future landing register"},
+    {"title": "LightSpeed_Web_Shell_Builder_CL3_v0_2", "driveId": "1na5Y4MuwrOdLxub0teoS_hO5n9FmNXIIYPlVjYZk88k", "role": "route and component shell source"}
+  ],
+  "twins": [
+    {"id": "solar_hull", "title": "Solar Hull", "driveId": "1H2rSOdBTLKJMFdGykFmU0G9A2fPGbR7Q", "posture": "development scaffold / validation-gated", "landingCard": "Solar Hull digital twin", "publicRule": "no certified performance claim"},
+    {"id": "free_flow_batteries", "title": "Free Flow Batteries", "driveId": "1DzVG1xAJH_UHsFjUXGocbViJDNDn53Qo", "posture": "controlled model and evidence scaffold", "landingCard": "Free Flow Batteries digital twin", "publicRule": "no hazardous construction or performance claim"},
+    {"id": "free_flow_solenoid_stack", "title": "Free Flow Solenoid Stack", "driveId": "1vxWhIHsIPIpkGn6Y_OjOxhpGkB43Q1tw", "posture": "prototype-pathway / synthetic values only", "landingCard": "Solenoid stack twin", "publicRule": "no deployment or validated engineering claim"},
+    {"id": "rfs_emff", "title": "RFS & EMFF", "driveId": "1YDs4fjNZgzDAB1LJcf7xT9N-bywD4Qgf", "posture": "internal/prototype only", "landingCard": "RFS and EMFF test sandbox", "publicRule": "do not imply validated extraction"},
+    {"id": "mark_iii", "title": "Mark III", "driveId": "1-6Jxye14_pQICcu_WxFmZIxnE2pDfHS2", "posture": "controlled digital twin workbook", "landingCard": "Mark III digital twin", "publicRule": "review maturity before public summary"},
+    {"id": "luke_lukeii_apostle", "title": "Luke / Luke II / Apostle", "driveId": "1BGwPdfafqVKwh3AS5fwvkhIImBmfPdMU", "posture": "functional scaffold / synthetic values only", "landingCard": "Toroidal EMF twin", "publicRule": "not a validated engineering design"},
+    {"id": "maglev_lukeiv", "title": "Mag-Lev / Luke IV", "driveId": "1j1xu8MZF5MCDCGeVSDChvIMn6U21xJoJ", "posture": "known / inferred / target separated", "landingCard": "Mag-Lev / Luke IV twin", "publicRule": "no site, permit, safety, capture, or deployment claim"},
+    {"id": "second_cycle", "title": "Second Cycle", "driveId": "1TWpEaBMRdIBBryyoVhERQ1LQv3dFhbeg", "posture": "conceptual / prototype-pathway scaffold", "landingCard": "Second Cycle water-interface twin", "publicRule": "no weather-control, reef-recovery, carbon-credit, or water-quality outcome claim"}
+  ],
+  "landingSections": [
+    {"id": "suite_overview", "title": "Suite overview", "components": ["Hero Header", "Badge Stack", "Surface Map", "Digital twin coverage grid"]},
+    {"id": "twin_cards", "title": "Twin cards", "components": ["Dataspace Card", "Locked Actions Panel", "Source authority chip"]},
+    {"id": "claim_gates", "title": "Claim gates", "components": ["Blocked actions panel", "Public posture badge", "Evidence gap list"]},
+    {"id": "next_tests", "title": "Next tests", "components": ["Open tasks", "Sensor schema", "Validation log placeholder"]}
+  ],
+  "graphs": [
+    {"id": "digital_twin_status_grid", "type": "status_grid", "purpose": "Show each twin, posture, source workbook, and public rule."},
+    {"id": "claim_gate_matrix", "type": "matrix", "purpose": "Show blocked claims and evidence requirements by twin."},
+    {"id": "test_readiness", "type": "kanban", "purpose": "Show scaffolded, queued, reviewed, and evidence-backed stages."}
+  ],
+  "guardrails": [
+    "digital twins are evidence-gated workbooks unless otherwise proven",
+    "synthetic values must be labelled as synthetic",
+    "public views require claim badges and source posture",
+    "no deployment, validation, approval, commercial-performance, safety, weather, or environmental outcome claim without evidence"
+  ],
+  "nextActions": [
+    "Search for any remaining suite members not yet mapped.",
+    "Create per-twin landing cards from source workbook metadata.",
+    "Connect digital twin config into Library Master Landing.",
+    "Route unresolved validation or public-posture issues into OPEN_TASKS."
+  ]
+}
