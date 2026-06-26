@@ -1,0 +1,26 @@
+{
+  "schema": "neo_agent_distribution_plan_v1",
+  "status": "scaffold_active_not_full_launch",
+  "purpose": "Define the current agent distribution pattern for canonical file-set launch from LightSpeed through Raphael.",
+  "activeNow": [
+    {"agent": "Achilles", "role": "active orchestrator and task executor", "cadence": "existing active automations"},
+    {"agent": "Cognigrex", "role": "steady-stream lane model inside Achilles", "cadence": "via Achilles tasks"}
+  ],
+  "nextLayer": [
+    {"agent": "Neo", "role": "future high-frequency stewardship and distribution layer", "targetCadence": "12 daily check-ins / every 2 hours", "activation": "requires automation slot or account limit change"}
+  ],
+  "futureSubagents": [
+    {"agent": "Archive", "role": "archive extraction and ZIP canonical-candidate review", "targetCadence": "future 2 daily check-ins"},
+    {"agent": "Workbook", "role": "version collapse and dashboard landing application", "targetCadence": "future 2 daily check-ins"},
+    {"agent": "Route", "role": "route proof packets and static interactive page elements", "targetCadence": "future 2 daily check-ins"},
+    {"agent": "Investor", "role": "investor dashboards, Google Earth and spatial tailoring", "targetCadence": "future 2 daily check-ins"},
+    {"agent": "Brand", "role": "asset placement and field-specific dashboard branding", "targetCadence": "future 2 daily check-ins"}
+  ],
+  "zStackScaffold": {
+    "status": "not_active",
+    "operators": ["Trinity", "Neo", "Architect", "TheConstruct", "Morpheus", "Oracle", "Smith", "Merovingian"],
+    "rule": "Do not activate Z stack operators until separately approved."
+  },
+  "handoffRule": "Every agent receives only its current queue, source authority, blockers, and next action. Shared state returns through OPEN_TASKS, task deltas, archive registers, dashboard configs, and package maps.",
+  "nextActions": ["Keep Achilles active", "Use Achilles prompts to execute Neo-prep until a new automation slot is available", "Populate future subagent queues before activation"]
+}
