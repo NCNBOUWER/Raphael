@@ -1,33 +1,43 @@
 {
   "schema": "achilles_library_master_landing_v1",
-  "status": "active_build_config",
+  "status": "active_build_config_with_drive_mapping",
   "purpose": "Connect workbooks, dossiers, schemas, digital twins, source-authority records, and archive registers into one navigable Library landing surface.",
   "sourceAuthority": [
-    "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
-    "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24",
-    "Romer_EMASSC_LinkDrive_DataIndex_Workbook_v0_1",
-    "Achilles OPEN_TASKS.csv"
+    {"title": "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02", "driveId": "1cYRuhbCG6E8yzPMD4CRdfFcweSLcZrESDMZalOqGYYA", "role": "future landing, library, notebook expansion register"},
+    {"title": "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24", "driveId": "19p3Oo6dovuS46DC3LYESRNxd25Sc7C7q0SdSTo944ZA", "role": "workbook finalisation and transfer control"},
+    {"title": "Romer_EMASSC_LinkDrive_DataIndex_Workbook_v0_1", "driveId": "1VqclM3KypKoa_e8BbMPDeDVb6eVh5pX7UbDzOCL6fnE", "role": "canonical library / operations / dataspace index"},
+    {"title": "ACHILLES_Digital_Twin_Suite_Master_Index_v0_1.xlsx", "driveId": "1o0tn0y4npmUPobVjuzsBPyXANK_6_Ryv", "role": "digital twin suite master index"},
+    {"title": "Achilles_Romer_Drive_Commit_Register_CL3_2026_05_27", "driveId": "1hIllmfq1JxbVP7mWcBIMQTgfnEjeg-EZpcTGFB_8F90", "role": "manual placement and commit register"}
   ],
   "sections": [
-    {"id": "source_authority", "title": "Source authority", "cards": ["Library / Operations + DataSpace", "Source references", "Canonical register map", "Archive extraction state"]},
+    {"id": "source_authority", "title": "Source authority", "cards": ["Library / Operations + DataSpace", "Source references", "Canonical register map", "Archive extraction state", "LinkDrive data index"]},
     {"id": "dossiers", "title": "Dossiers", "cards": ["National commitments dossier compact memory pack", "National commitments final elevation pass", "Public-safe review gate"]},
     {"id": "schemas_and_seeds", "title": "Schemas and seeds", "cards": ["Raphael schema seed pack", "W1-W6 dataspace contracts", "Route proof packet templates"]},
-    {"id": "digital_twins", "title": "Digital twins", "cards": ["SHFF display rules", "M1 concept panels", "Per-system digital twin landing docs"]},
-    {"id": "archive_and_zip_check", "title": "Archive and ZIP check", "cards": ["Ready to archive", "Ready to delete after extraction", "Authoritative ZIP copy selection"]}
+    {"id": "digital_twins", "title": "Digital twins", "cards": ["ACHILLES Digital Twin Suite Master Index", "Solar Hull", "Free Flow Batteries", "Free Flow Solenoid Stack", "RFS & EMFF", "Mark III", "Luke / Luke II / Apostle", "Mag-Lev / Luke IV", "Second Cycle", "SHFF display rules", "M1 concept panels"]},
+    {"id": "archive_and_zip_check", "title": "Archive and ZIP check", "cards": ["Ready to archive", "Ready to delete after extraction", "Authoritative ZIP copy selection", "duplicate package checksum"]}
   ],
   "graphs": [
     {"id": "library_source_coverage", "type": "status_grid", "purpose": "Show which source families have active canonical homes and which are pending inspection."},
-    {"id": "archive_extraction_state", "type": "table", "purpose": "Show archive, extracted, pending review, and approval-gated states."}
+    {"id": "archive_extraction_state", "type": "table", "purpose": "Show archive, extracted, pending review, and approval-gated states."},
+    {"id": "digital_twin_coverage", "type": "status_grid", "purpose": "Show digital twin workbooks, claim posture, and next action by twin family."}
+  ],
+  "canonicalRoutes": [
+    {"route": "/registry", "source": "Romer_EMASSC_LinkDrive_DataIndex_Workbook_v0_1", "use": "package manifest and route authority"},
+    {"route": "/library/digital-twins", "source": "ACHILLES_Digital_Twin_Suite_Master_Index_v0_1.xlsx", "use": "digital twin suite navigation"},
+    {"route": "/library/national-dossier", "source": "national commitments dossier workbooks", "use": "public-safe dossier lane"},
+    {"route": "/library/archive", "source": "Archive registers", "use": "archive extraction and deletion approval state"}
   ],
   "guardrails": [
     "review archive material before closure",
     "preserve older duplicates until extraction is recorded",
     "review public dossier wording before publication",
-    "keep historical technical stream terms separate from EML#F"
+    "keep historical technical stream terms separate from EML#F",
+    "do not present digital twin workbooks as validated engineering designs unless evidence is present"
   ],
   "nextActions": [
-    "Inspect LinkDrive data index metadata and route active entries into the package map.",
-    "Locate Raphael schema seed pack and SHFF display rules.",
-    "Prepare Library landing copy from current canonical registers only."
+    "Inspect LinkDrive data index tabs and route active entries into the holistic package map.",
+    "Locate Raphael schema seed pack and SHFF display rules for exact canonical placement.",
+    "Prepare Library landing copy from current canonical registers only.",
+    "Create digital twin landing config from the suite index and found twin workbooks."
   ]
 }
