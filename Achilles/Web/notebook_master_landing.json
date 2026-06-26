@@ -1,0 +1,44 @@
+{
+  "schema": "achilles_notebook_master_landing_v1",
+  "status": "active_build_config",
+  "purpose": "Separate research, design, build, review, and print/publish notebooks so project work does not remain mixed across old sheets and chats.",
+  "sourceAuthority": [
+    "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
+    "Achilles protocol",
+    "Scope questionnaire answers",
+    "OPEN_TASKS.csv"
+  ],
+  "notebookFamilies": [
+    {"id": "research", "title": "Research notebooks", "use": "sources, evidence, context, and extracted thought trains"},
+    {"id": "design", "title": "Design notebooks", "use": "brand, templates, route layouts, visual systems, and interface rules"},
+    {"id": "build", "title": "Build notebooks", "use": "implementation state, package maps, configs, and test logs"},
+    {"id": "review", "title": "Review notebooks", "use": "claim gates, source authority, public-safe review, and owner decisions"},
+    {"id": "print_publish", "title": "Print and publish notebooks", "use": "final unversioned surfaces, back-matter logs, and release notes"}
+  ],
+  "standardPageSections": [
+    "Purpose",
+    "Source authority",
+    "Current state",
+    "Completed",
+    "Blockers",
+    "Next steps",
+    "Owner decisions required",
+    "Files/registers updated",
+    "Consolidated log"
+  ],
+  "graphs": [
+    {"id": "notebook_consolidation_status", "type": "status_grid", "purpose": "Show which notebook families have final unversioned pages and logs."},
+    {"id": "thought_train_routing", "type": "route_map", "purpose": "Show which thought trains are routed to docs, tasks, concept maps, or raw archive."}
+  ],
+  "guardrails": [
+    "unresolved notes require task routing before version closure",
+    "consolidated logs remain with each workbook or publish surface",
+    "internal proof and empirical validation remain separate",
+    "secondary Z stack remains deferred"
+  ],
+  "nextActions": [
+    "Map current notebook and sheet pages into the five notebook families.",
+    "Create final unversioned page names before mutating any spreadsheet tabs.",
+    "Move unresolved row items into OPEN_TASKS before version closure."
+  ]
+}
