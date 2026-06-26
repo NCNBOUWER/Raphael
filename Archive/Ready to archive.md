@@ -12,7 +12,7 @@ Rule: preserve these items. Move them into Archive first, then run archive-data 
 | Archived duplicate - Raphael folder - 2026-06-25 0157 | `1mUIyR38XtYg9WwfjeqY5rqCqqfiAIM-u` | Older duplicate Raphael folder. | Ready for desktop archive move |
 | Archived duplicate - Raphael folder - 2026-06-24 | `1ovk0wYtHzgMXIVsxDAqTT2fUsXqSjAha` | Older duplicate Raphael folder. | Ready for desktop archive move |
 | Old Raphael Physics | `1QNB1rGd631KQwqksuSnQbXEnvFWYWCQD` | Old classic Raphael Physics folder already under Archive. | Extraction pending |
-| Duplicate ZIP packages | `ZIP Check / duplicate package copies` | Workbook registers direct duplicate packages into ZIP Check for checksum and authoritative-copy selection. | Ready for ZIP Check archive/quarantine; checksum pending |
+| Duplicate ZIP packages | `ZIP Check / duplicate package copies` | Workbook registers direct duplicate packages into ZIP Check for checksum and authoritative-copy selection. | Classify under `Archive/ZIP authoritative copy rule.md`; checksum/extraction pending |
 | Copy of Pantry Sales Tracker 2026.xlsx | `Copy of Pantry Sales Tracker 2026.xlsx` | Non-core launch file; should not remain in launch root or Temporary Drives root. | Ready for archive/quarantine outside launch root |
 
 ## Move-ready but not archive candidates
@@ -24,6 +24,7 @@ These are not archive candidates yet. They should be moved to their active desti
 - Terminal Codex Validation Prompt to Agents/Neo or Agents/Codex.
 - UI Build CoRunner Prompt to Agents/Athene or Agents/UI_CoRunner.
 - National commitments dossier materials to Library/National_Dossier and relevant agent execution plan folders.
+- Google Earth materials to Investor folder, not Operations, because they support tailoring, excavation, build, and investor-facing spatial context.
 
 ## Search-required candidates
 
@@ -35,6 +36,10 @@ These need location/search before archive or canonical placement:
 ## Intake rule
 
 When Achilles finds a stale version, duplicate folder, old chat export, old workbook copy, or superseded package, append it here with a human-readable name, ID/path, reason, extraction state, and required owner action.
+
+## ZIP rule
+
+ZIPs are handled under `Archive/ZIP authoritative copy rule.md`. They may be canonical candidates, archive copies, or duplicates after extraction. No ZIP is deleted until extracted, compared, routed into the canonical fileset, and approved in the weekly deletion review.
 
 ## Desktop action
 
