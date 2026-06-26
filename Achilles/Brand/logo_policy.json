@@ -1,25 +1,38 @@
 {
   "schema": "achilles_logo_policy_v1",
-  "status": "owner_decision_pending",
-  "defaultPolicy": "wordmark_only_until_reviewed_asset_confirmed",
+  "status": "owner_answered_asset_set_supplied",
+  "defaultPolicy": "use_project_specific_supplied_assets_and_node_globe_for_achilles",
+  "ownerAnswers": {
+    "LQ1_wordmark_default_all_dashboards": "No",
+    "LQ2_cognigrex_line_under_wordmark": "No",
+    "LQ3_keep_all_logo_assets_private_until_public_asset_approval": "No",
+    "LQ4_open_motif": "Node globe landing-page artefact and Achilles visual identity, using the attached Achilles logo/artifact. Project-specific logos for Romer Industries, EMASSC, Raphael, DeSporte, LightSpeed, Eco-X and related surfaces are supplied in the current asset set."
+  },
   "definition": {
+    "achillesPrimaryIdentity": "node_globe_landing_artifact_plus_attached_achilles_asset",
     "wordmark": "ACHILLES",
+    "wordmarkUse": "fallback label or accessibility text, not the universal logo across every dashboard",
     "systemLine": "Cognigrex steady stream",
-    "fallbackUse": "Use text wordmark and badge stack across web, Drive, workbook, dashboard, and package surfaces until a reviewed logo asset is confirmed.",
-    "approvedAssetRequirement": "A logo may be embedded only after the asset source, ownership/use right, intended surface, and public/private visibility are confirmed.",
+    "systemLineUse": "metadata/supporting text only; do not place directly under the primary Achilles logo by default",
+    "assetSet": "Current chat-uploaded brand assets and palette are the active design source until moved into a durable Drive/Git asset folder.",
+    "approvedAssetRequirement": "Use project-specific supplied assets where their intended brand is clear. For public release, record the asset file, intended surface, visibility, and owner approval state before publication.",
     "blocked": [
       "invented logo asset",
-      "unreviewed image as official logo",
-      "public use of private/internal symbol before owner review",
-      "logo variant without source path or asset ID"
+      "single universal Achilles wordmark over all project dashboards",
+      "unreviewed claim-sensitive public use",
+      "logo variant without source path or asset record"
     ]
   },
-  "currentQuestions": [
-    {"id": "LQ1", "type": "yes_no", "question": "Should Achilles use the text wordmark ACHILLES as the default logo across all dashboards until a reviewed image asset is confirmed?"},
-    {"id": "LQ2", "type": "yes_no", "question": "Should the Cognigrex steady stream line appear directly under the Achilles wordmark on primary landing/dashboard surfaces?"},
-    {"id": "LQ3", "type": "yes_no", "question": "Should logo/image assets remain private/internal until a specific public-facing asset is owner-approved?"},
-    {"id": "LQ4", "type": "open", "question": "What visual motif should guide the eventual reviewed Achilles logo: shield, spear, node-globe, geometric lens, classical/Greek, industrial systems, or another direction?"}
-  ],
+  "brandAssetRoles": {
+    "Romer Industries Pallette.png": "palette and typography/color source",
+    "Romer 1.PNG": "Romer Industries logo asset",
+    "dual.JPG": "Romer / EMASSC dual visual source",
+    "Colour Wheel Final.png": "system colour-wheel / function-spectrum visual source",
+    "DeSporte.ico": "DeSporte icon asset",
+    "Lightspeed.ico": "LightSpeed icon asset",
+    "Achilles.png": "Achilles node-globe/icon identity source",
+    "Eco X.png": "Eco-X visual identity source"
+  },
   "applicationTargets": [
     "Achilles landing config",
     "Library Master Landing",
@@ -27,6 +40,13 @@
     "Digital Twin Landing",
     "Route Proof Packets",
     "Workbook dashboards",
-    "Folder dashboards"
+    "Folder dashboards",
+    "Investor dashboards"
+  ],
+  "nextActions": [
+    "Move supplied brand assets into a durable asset folder when Drive/Git binary placement is available.",
+    "Attach each dashboard family to its corresponding brand asset role.",
+    "Use Achilles.png/node-globe motif for Achilles dashboard identity.",
+    "Use Romer/EMASSC/Raphael/Eco-X/DeSporte/LightSpeed assets only on their corresponding surfaces."
   ]
 }
