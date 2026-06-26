@@ -1,0 +1,33 @@
+{
+  "schema": "achilles_library_master_landing_v1",
+  "status": "active_build_config",
+  "purpose": "Connect workbooks, dossiers, schemas, digital twins, source-authority records, and archive registers into one navigable Library landing surface.",
+  "sourceAuthority": [
+    "ACR3_Future_Landing_Library_Notebook_Expansion_Register_2026_06_02",
+    "ACR3_Raphael_LightSpeed_Workbook_Finalisation_Register_2026_06_24",
+    "Romer_EMASSC_LinkDrive_DataIndex_Workbook_v0_1",
+    "Achilles OPEN_TASKS.csv"
+  ],
+  "sections": [
+    {"id": "source_authority", "title": "Source authority", "cards": ["Library / Operations + DataSpace", "Source references", "Canonical register map", "Archive extraction state"]},
+    {"id": "dossiers", "title": "Dossiers", "cards": ["National commitments dossier compact memory pack", "National commitments final elevation pass", "Public-safe review gate"]},
+    {"id": "schemas_and_seeds", "title": "Schemas and seeds", "cards": ["Raphael schema seed pack", "W1-W6 dataspace contracts", "Route proof packet templates"]},
+    {"id": "digital_twins", "title": "Digital twins", "cards": ["SHFF display rules", "M1 concept panels", "Per-system digital twin landing docs"]},
+    {"id": "archive_and_zip_check", "title": "Archive and ZIP check", "cards": ["Ready to archive", "Ready to delete after extraction", "Authoritative ZIP copy selection"]}
+  ],
+  "graphs": [
+    {"id": "library_source_coverage", "type": "status_grid", "purpose": "Show which source families have active canonical homes and which are pending inspection."},
+    {"id": "archive_extraction_state", "type": "table", "purpose": "Show archive, extracted, pending review, and approval-gated states."}
+  ],
+  "guardrails": [
+    "review archive material before closure",
+    "preserve older duplicates until extraction is recorded",
+    "review public dossier wording before publication",
+    "keep historical technical stream terms separate from EML#F"
+  ],
+  "nextActions": [
+    "Inspect LinkDrive data index metadata and route active entries into the package map.",
+    "Locate Raphael schema seed pack and SHFF display rules.",
+    "Prepare Library landing copy from current canonical registers only."
+  ]
+}
