@@ -1,0 +1,32 @@
+{
+  "schema": "achilles_logo_policy_v1",
+  "status": "owner_decision_pending",
+  "defaultPolicy": "wordmark_only_until_reviewed_asset_confirmed",
+  "definition": {
+    "wordmark": "ACHILLES",
+    "systemLine": "Cognigrex steady stream",
+    "fallbackUse": "Use text wordmark and badge stack across web, Drive, workbook, dashboard, and package surfaces until a reviewed logo asset is confirmed.",
+    "approvedAssetRequirement": "A logo may be embedded only after the asset source, ownership/use right, intended surface, and public/private visibility are confirmed.",
+    "blocked": [
+      "invented logo asset",
+      "unreviewed image as official logo",
+      "public use of private/internal symbol before owner review",
+      "logo variant without source path or asset ID"
+    ]
+  },
+  "currentQuestions": [
+    {"id": "LQ1", "type": "yes_no", "question": "Should Achilles use the text wordmark ACHILLES as the default logo across all dashboards until a reviewed image asset is confirmed?"},
+    {"id": "LQ2", "type": "yes_no", "question": "Should the Cognigrex steady stream line appear directly under the Achilles wordmark on primary landing/dashboard surfaces?"},
+    {"id": "LQ3", "type": "yes_no", "question": "Should logo/image assets remain private/internal until a specific public-facing asset is owner-approved?"},
+    {"id": "LQ4", "type": "open", "question": "What visual motif should guide the eventual reviewed Achilles logo: shield, spear, node-globe, geometric lens, classical/Greek, industrial systems, or another direction?"}
+  ],
+  "applicationTargets": [
+    "Achilles landing config",
+    "Library Master Landing",
+    "Notebook Master Landing",
+    "Digital Twin Landing",
+    "Route Proof Packets",
+    "Workbook dashboards",
+    "Folder dashboards"
+  ]
+}
