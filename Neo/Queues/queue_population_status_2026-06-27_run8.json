@@ -1,0 +1,43 @@
+{
+  "schema": "neo_queue_population_status_v1",
+  "date": "2026-06-27",
+  "runLabel": "achilles_continuity_run_8",
+  "status": "active_status_snapshot_no_deletes",
+  "sourceFilesReviewed": [
+    "N^3/INTERNAL/registers/OPEN_TASKS.csv",
+    "Neo/Queues/file_extension_queues.json",
+    "Achilles/Dashboards/dashboard_classification.json",
+    "Achilles/Tasks/Task delta - canonical handoff and Neo scaffold.md",
+    "Achilles/Tasks/Task delta - Raphael source and component packets - 2026-06-27.md"
+  ],
+  "driveSourcesObserved": [
+    {"title": "ACR3 Chat Closure Handoff to Neo and Achilles 2026-06-27", "queue": "documents, agent_handoff", "action": "extract closure context into canonical handoff/task registers only"},
+    {"title": "ACR3_Hotdogg3211_Drive_Alignment_Map_TEMP_TO_ACHILLES_2026_06_24", "queue": "spreadsheets, archives", "action": "use as Drive staging and movement authority; no deletes"},
+    {"title": "Achilles Current Task Register", "queue": "documents, agent_handoff", "action": "reconcile ACT items with Git OPEN_TASKS during safe mutation"},
+    {"title": "Achilles Archive Extraction Register Current", "queue": "archives", "action": "preserve extraction-first register as source"},
+    {"title": "Achilles Delete Candidate Register Current", "queue": "archives", "action": "retain empty/approval-required delete posture"},
+    {"title": "ZIP Check", "queue": "archives", "action": "inventory and checksum/select authoritative copies before archive/delete decisions"},
+    {"title": "ACR3_COMP1_Drive_Orchestration_Execution_Register_2026_06_09", "queue": "spreadsheets, agent_handoff", "action": "retain Temporary Drives placement state including Google Earth folder recognition"}
+  ],
+  "queueStatus": [
+    {"id": "assets_images", "state": "pending_durable_binary_placement", "nextAction": "bind project-specific assets to dashboard families"},
+    {"id": "documents", "state": "active", "nextAction": "route closure handoff and canonical maps into task deltas/registers"},
+    {"id": "spreadsheets", "state": "active_pending_mutation", "nextAction": "apply dashboard classification to workbook collapse plans"},
+    {"id": "archives", "state": "active_preservation_first", "nextAction": "inventory ZIP Check and classify canonical candidate/archive copy/duplicate-after-extraction"},
+    {"id": "web_routes", "state": "active", "nextAction": "generate Raphael per-route deployment readiness instances"},
+    {"id": "code", "state": "boundary_guarded", "nextAction": "validate only within project source boundaries; keep EML#F external"},
+    {"id": "geospatial", "state": "investor_scoped", "nextAction": "create Investor dashboard handling for Google Earth material"},
+    {"id": "agent_handoff", "state": "neo_scaffolded", "nextAction": "keep Achilles active and Neo folded until automation slot available"}
+  ],
+  "guardrails": {
+    "deletePolicy": "no deletion without extraction, archive classification, and owner approval",
+    "zStack": "secondary Z stack operators inactive",
+    "emlf": "external",
+    "raphaelLite": "deferred",
+    "n3": "GeoMatrices",
+    "googleEarth": "Investor"
+  },
+  "followUpFiles": [
+    "Achilles/Tasks/OPEN_TASKS reconciliation patch - 2026-06-27 run 8.md"
+  ]
+}
