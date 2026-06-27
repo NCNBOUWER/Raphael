@@ -36,6 +36,23 @@
     "googleEarthPlacement": "Investor folder",
     "interactiveRequirement": "Every dashboard must include source authority, status/blocker badges, drilldown or filter path, open-task/next-action panel, and field-specific branding."
   },
+  "routeProofPackets": {
+    "source": "Achilles/Web/route_proof_packet_templates.json",
+    "folder": "Achilles/Web/Route proof packets",
+    "standardSequence": [
+      "route_intake_packet",
+      "claim_gate_packet",
+      "component_paste_packet",
+      "deployment_readiness_packet",
+      "post_publish_audit_packet"
+    ],
+    "guardrails": [
+      "Use packets before public deployment work.",
+      "Static fallback is required for interactive components.",
+      "Owner sign-off is required before public release.",
+      "Any failed post-publish check becomes an OPEN_TASKS item or task delta entry."
+    ]
+  },
   "landingGraphs": [
     {"id": "graph_package_status", "title": "Package status", "type": "horizontal_bar", "interaction": "click-through to package map and task rows", "purpose": "Show current package families and whether they are complete, active, pending, or blocked.", "source": "Holistic package map + OPEN_TASKS", "publicSafe": true},
     {"id": "graph_route_readiness", "title": "Route readiness", "type": "status_matrix", "interaction": "filter by route, deploy state, claim gate, and next action", "purpose": "Show LightSpeed / CYC routes, deploy state, claim gate, and next action.", "source": "LightSpeed 01_Page_Index", "publicSafe": "review-gated"},
@@ -45,10 +62,10 @@
     {"id": "graph_function_rollup", "title": "Function rollup", "type": "hierarchy_map", "interaction": "system to project to function drilldown", "purpose": "Show functions rolling up into projects and projects rolling up into system dashboards.", "source": "dashboard classification", "publicSafe": "review-gated"}
   ],
   "routes": [
-    {"route": "/data/achilles", "title": "Achilles Core Data Node", "mode": "system dashboard", "brandAsset": "Achilles.png", "components": ["Hero Header", "Badge Stack", "MCP Status Panel", "Codex Status Panel", "Route Manifest Grid", "Blocker Grid", "Surface Map"], "deployState": "ready for paste", "claimGate": "review-required"},
-    {"route": "/ccc/test", "title": "CCC Builder Shell", "mode": "test route", "brandAsset": "Lightspeed.ico", "components": ["CCC Route Nav", "CCC Layering UI", "Locked Actions Panel"], "deployState": "ready for paste", "claimGate": "wallet/token locked"},
-    {"route": "Raphael panels", "title": "Raphael Engine Panels", "mode": "function dashboard", "brandAsset": "Colour Wheel Final.png", "components": ["Hero Header", "Badge Stack", "Raphael Panel", "Locked Actions Panel", "Deploy Log Block", "AI Oversight Queue"], "deployState": "queued", "claimGate": "simulation only / proof required / no validation claim"},
-    {"route": "node globe", "title": "Achilles Node Globe", "mode": "system dashboard widget", "brandAsset": "Achilles.png", "components": ["Hero Header", "Badge Stack", "Node Globe", "Locked Actions Panel", "Deploy Log Block"], "deployState": "queued", "claimGate": "privacy and claim proof required"}
+    {"route": "/data/achilles", "title": "Achilles Core Data Node", "mode": "system dashboard", "brandAsset": "Achilles.png", "components": ["Hero Header", "Badge Stack", "MCP Status Panel", "Codex Status Panel", "Route Manifest Grid", "Blocker Grid", "Surface Map"], "deployState": "ready for paste", "claimGate": "review-required", "proofPackets": ["route_intake_packet", "claim_gate_packet", "component_paste_packet", "deployment_readiness_packet", "post_publish_audit_packet"]},
+    {"route": "/ccc/test", "title": "CCC Builder Shell", "mode": "test route", "brandAsset": "Lightspeed.ico", "components": ["CCC Route Nav", "CCC Layering UI", "Locked Actions Panel"], "deployState": "ready for paste", "claimGate": "wallet/token locked", "proofPackets": ["route_intake_packet", "claim_gate_packet", "component_paste_packet", "deployment_readiness_packet", "post_publish_audit_packet"]},
+    {"route": "Raphael panels", "title": "Raphael Engine Panels", "mode": "function dashboard", "brandAsset": "Colour Wheel Final.png", "components": ["Hero Header", "Badge Stack", "Raphael Panel", "Locked Actions Panel", "Deploy Log Block", "AI Oversight Queue"], "deployState": "queued", "claimGate": "simulation only / proof required / no validation claim", "proofPackets": ["route_intake_packet", "claim_gate_packet", "component_paste_packet", "deployment_readiness_packet", "post_publish_audit_packet"]},
+    {"route": "node globe", "title": "Achilles Node Globe", "mode": "system dashboard widget", "brandAsset": "Achilles.png", "components": ["Hero Header", "Badge Stack", "Node Globe", "Locked Actions Panel", "Deploy Log Block"], "deployState": "queued", "claimGate": "privacy and claim proof required", "proofPackets": ["route_intake_packet", "claim_gate_packet", "component_paste_packet", "deployment_readiness_packet", "post_publish_audit_packet"]}
   ],
   "documentTemplates": {
     "standardSections": ["Purpose", "Source authority", "Current state", "Completed", "Blockers", "Next steps", "Owner decisions required", "Files/registers updated", "Consolidated log"],
