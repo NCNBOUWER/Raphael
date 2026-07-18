@@ -1,0 +1,11 @@
+Candidate_ID,Candidate,Current_Authority,Provenance_Status,Useful_Content_Extracted,Comparison_Status,Archive_Status,Deletion_Status,Owner_Approval,Required_Action,Notes
+ARC-001,OPEN_TASKS.xlsx copy created 2026-06-24,Historical extraction input,KNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Extract unique unresolved rows into CORE then compare against second copy,Do not treat as canonical
+ARC-002,OPEN_TASKS.xlsx copy created 2026-06-25,Historical extraction input,KNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Extract unique unresolved rows into CORE then compare against first copy,Possible duplicate metadata timestamp
+ARC-003,Legacy ACR and Achilles task registers,Historical extraction input,PARTIAL,PARTIAL,NOT_STARTED,HOLD,PROHIBITED,NO,Extract unique decisions dependencies and unresolved tasks into CORE,Retain source links
+ARC-004,Route task delta documents,Historical support material,KNOWN,PARTIAL,NOT_STARTED,HOLD,PROHIBITED,NO,Compare against completed route packet and component paste packet set,Archive only after completeness proof
+ARC-005,Superseded workbook versions represented in Type1 Archive Map,Workbook lineage source,KNOWN,PARTIAL,INTERNAL_MAP_EXISTS,HOLD,PROHIBITED,NO,Verify Archive Map and Source Register coverage before Drive move,Richest proofed source remains current
+ARC-006,Duplicate ZIP packages,Unclassified package sources,UNKNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Extract inventory checksum and compare contents,No ZIP deletion before assimilation
+ARC-007,Historical Raphael folders,Unclassified historical sources,UNKNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Inventory and extract unique content before archive move,Manual Drive operation required
+ARC-008,Historical Raphael_Physics folders,Unclassified historical sources,UNKNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Compare against current independent Raphael_Physics package,Do not merge into GeoMatrices
+ARC-009,Historical EML#F folders,External package lineage,UNKNOWN,NO,NOT_STARTED,HOLD,PROHIBITED,NO,Compare while preserving external package boundary,Do not absorb into GeoMatrices
+ARC-010,Raphael Lite materials,Deferred package lineage,KNOWN,NO,DEFERRED,HOLD,PROHIBITED,NO,Retain without active implementation,Package remains deferred
