@@ -1,0 +1,45 @@
+{
+  "schema": "raphael_package_boundary_manifest_v1",
+  "asOf": "2026-07-18",
+  "authority": "Achilles governance under CORE canonical operations routing",
+  "rules": {
+    "sourceTruth": "Prefer the newest complete source while retaining provenance and unresolved deltas.",
+    "archive": "Extract useful material and archive before any deletion consideration.",
+    "deletion": "No deletion without comparison evidence and owner approval.",
+    "publicRelease": "Claim-gated and owner-release-gated."
+  },
+  "packages": [
+    {
+      "id": "N3",
+      "canonicalName": "GeoMatrices",
+      "state": "current",
+      "boundary": "internal Raphael equations package",
+      "mergePolicy": "Do not revert to historical N^3 naming as canonical."
+    },
+    {
+      "id": "EMLF",
+      "canonicalName": "EML#F",
+      "state": "external",
+      "boundary": "independent external package",
+      "mergePolicy": "Do not absorb into GeoMatrices."
+    },
+    {
+      "id": "RAPHAEL_PHYSICS",
+      "canonicalName": "Raphael_Physics",
+      "state": "current_independent",
+      "boundary": "independent classical/current physics package",
+      "mergePolicy": "Compare historical sources but do not collapse into GeoMatrices or EML#F."
+    },
+    {
+      "id": "RAPHAEL_LITE",
+      "canonicalName": "Raphael Lite",
+      "state": "deferred",
+      "boundary": "retained deferred package",
+      "mergePolicy": "No active implementation or migration until owner reactivation."
+    }
+  ],
+  "unresolved": [
+    "Classify the LightSpeed mirror as merge source, linked authority, or external operational repository.",
+    "Complete extraction comparison before moving historical package folders to archive."
+  ]
+}
