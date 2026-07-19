@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "project_id": "ECOX-OPC-0001",
+  "name": "EcoX Ocean Plastic Coordination & Restoration",
+  "status": "canonical_build_candidate",
+  "build_date": "2026-07-19",
+  "owner": "Römer Industries / EcoX",
+  "purpose": "Coordinate existing ocean-plastic operators, data providers, outreach partners and processing pathways so each can operate with higher collective efficiency and measurable impact.",
+  "ninety_day_success_gate": {
+    "target": 3,
+    "unit": "high_value_operator_alignments",
+    "evidence": [
+      "signed NDA or equivalent",
+      "documented exploration scope",
+      "accountable contact pathway"
+    ]
+  },
+  "digital_twin_relationship": {
+    "type": "project_specific",
+    "template_sources": [
+      "existing Römer and EcoX digital twin conventions"
+    ],
+    "overarching_suite_state": "pending_acceptance",
+    "activation_rule": "Do not count as an active Römer master-suite twin before independent acceptance."
+  },
+  "cognigrex_definition": "The emergent coordinated intelligence and throughput of biological and non-biological participants, systems, assets and role-specific Intelligences working toward a shared objective.",
+  "front_facing_intelligence": {
+    "object_id": "ECOX-OPC-INT-0001",
+    "working_name": "EcoX Intelligent Agent",
+    "authority": "read_only_non_executing"
+  },
+  "workbook": {
+    "file_name": "EcoX_Ocean_Restoration_Cognigrex_Digital_Twin_Workbook_v1_0.xlsx",
+    "sha256": "f32be5bd846c4d5c81985ae9813cb09e61e6c974a5efdeb317895f1b38f504b5",
+    "sheet_count": 52
+  },
+  "generated_at": "2026-07-19T07:49:27.739442+00:00"
+}
