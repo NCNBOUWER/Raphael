@@ -1,0 +1,26 @@
+schema_version: "1.0"
+object_id: ECOX-OPC-MOD-0002
+status: draft
+method: deterministic_ensemble
+state_equation:
+  effective_velocity: current + windage * wind + stokes_drift
+parameters:
+  windage:
+    default: 0.015
+    initial_test_range: [0.0, 0.05]
+    evidence_state: target
+  current_weight: 1.0
+  stokes_weight: 1.0
+  horizontal_diffusion_m2_s:
+    default: 10.0
+    evidence_state: target
+controls:
+  - shorten_horizon_when_confidence_below_threshold
+  - calibrate_by_debris_class
+  - preserve_source_and_parameter_versions
+validation:
+  baseline: persistence
+  metrics:
+    - median_position_error_km
+    - skill_vs_persistence
+    - cluster_hit_rate
