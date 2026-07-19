@@ -1,11 +1,16 @@
 # Changelog
 
+## 1.1 — 2026-07-19
+
+- Added page-specific control for every operational workbook page.
+- Added priority implementation, data and outreach/governance partner briefs.
+- Added API proof plan, event taxonomy and data dictionary.
+- Added access/authority matrix, decision log and evidence-claim register.
+- Added twelve acceptance and release gates.
+- Expanded collaborator, mission, safety and FMEA population.
+- Applied white-on-azure high-visibility presentation rules.
+- Kept master-suite integration pending.
+
 ## 1.0 — 2026-07-19
 
-- Established project identity `ECOX-OPC-0001`.
-- Established project-specific twin identity `ECOX-OPC-DTS-0001`.
-- Defined Cognigrex as the complete coordinated system, not a singular AI.
-- Defined the 90-day gate of three high-value operator alignments.
-- Added twelve candidate collaboration applications.
-- Added event, mission, partner, governance, cluster, prediction, ecological-safety, processing and integration structures.
-- Set overarching Römer twin integration state to pending acceptance.
+- Established the project-specific digital twin control workbook and Git-native source baseline.
