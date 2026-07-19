@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "twin_id": "ECOX-OPC-DTS-0001",
+  "project_id": "ECOX-OPC-0001",
+  "integration_state": "pending",
+  "workbook_sha256": "f32be5bd846c4d5c81985ae9813cb09e61e6c974a5efdeb317895f1b38f504b5",
+  "artifacts": [
+    {"artifact_id":"TWIN-001","artifact":"Canonical workbook","format":"XLSX","canonical_path":"workbooks/EcoX_Ocean_Restoration_Cognigrex_Digital_Twin_Workbook_v1_0.xlsx","purpose":"Human and computational control plane","required":"Yes","current_state":"Built","acceptance_gate":"Founder review","master_integration":"Pending"},
+    {"artifact_id":"TWIN-002","artifact":"Project manifest","format":"JSON","canonical_path":"manifest/project.json","purpose":"Project identity and boundaries","required":"Yes","current_state":"Specified","acceptance_gate":"Schema validation","master_integration":"Pending"},
+    {"artifact_id":"TWIN-003","artifact":"Twin manifest","format":"JSON","canonical_path":"manifest/twin_manifest.json","purpose":"Package index and checksums","required":"Yes","current_state":"Specified","acceptance_gate":"Schema validation","master_integration":"Pending"},
+    {"artifact_id":"TWIN-004","artifact":"Object manifests","format":"JSON","canonical_path":"objects/{object_id}.json","purpose":"One manifest per object","required":"Yes","current_state":"Specified","acceptance_gate":"Completeness","master_integration":"Pending"},
+    {"artifact_id":"TWIN-005","artifact":"Register exports","format":"CSV/JSON","canonical_path":"data/registers/","purpose":"Machine-readable registers","required":"Yes","current_state":"Specified","acceptance_gate":"Reconciliation","master_integration":"Pending"},
+    {"artifact_id":"TWIN-006","artifact":"Cluster configuration","format":"YAML/JSON","canonical_path":"models/cluster_engine.yaml","purpose":"Clustering rules and weights","required":"Yes","current_state":"Specified","acceptance_gate":"Backtest","master_integration":"Pending"},
+    {"artifact_id":"TWIN-007","artifact":"Prediction configuration","format":"YAML/JSON","canonical_path":"models/prediction.yaml","purpose":"Drift and confidence model","required":"Yes","current_state":"Specified","acceptance_gate":"Backtest","master_integration":"Pending"},
+    {"artifact_id":"TWIN-008","artifact":"Source registry","format":"CSV/JSON","canonical_path":"data/source_registry.csv","purpose":"APIs, licences and cadence","required":"Yes","current_state":"Built","acceptance_gate":"Source verification","master_integration":"Pending"},
+    {"artifact_id":"TWIN-009","artifact":"Event schema","format":"JSON Schema","canonical_path":"schemas/event.schema.json","purpose":"Event-driven spine","required":"Yes","current_state":"Specified","acceptance_gate":"Schema tests","master_integration":"Pending"},
+    {"artifact_id":"TWIN-010","artifact":"Mission schema","format":"JSON Schema","canonical_path":"schemas/mission.schema.json","purpose":"Bidding, voting and outcomes","required":"Yes","current_state":"Specified","acceptance_gate":"Schema tests","master_integration":"Pending"},
+    {"artifact_id":"TWIN-011","artifact":"Partner protocol","format":"MD/PDF","canonical_path":"protocols/partner_protocol.md","purpose":"Federation standard","required":"Yes","current_state":"Built","acceptance_gate":"Legal/partner review","master_integration":"Pending"},
+    {"artifact_id":"TWIN-012","artifact":"Evidence index","format":"CSV/JSON","canonical_path":"evidence/index.csv","purpose":"Claims, methods and outcomes","required":"Yes","current_state":"Specified","acceptance_gate":"Oracle reconciliation","master_integration":"Pending"},
+    {"artifact_id":"TWIN-013","artifact":"Public interface package","format":"Web/JSON","canonical_path":"apps/public_interface/","purpose":"Read-only interface","required":"Later","current_state":"Planned","acceptance_gate":"Security and claim gate","master_integration":"Pending"},
+    {"artifact_id":"TWIN-014","artifact":"Backup/checksum manifest","format":"CSV/JSON","canonical_path":"backup/checksums.csv","purpose":"Integrity and archive control","required":"Yes","current_state":"Specified","acceptance_gate":"Checksum test","master_integration":"Pending"},
+    {"artifact_id":"TWIN-015","artifact":"Master-suite update package","format":"JSON/CSV/XLSX","canonical_path":"integration/romer_master_update/","purpose":"Post-acceptance integration","required":"Later","current_state":"Blocked until acceptance","acceptance_gate":"Acceptance gate","master_integration":"Pending"}
+  ],
+  "generated_at": "2026-07-19T07:49:27.739442+00:00"
+}
