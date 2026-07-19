@@ -1,0 +1,30 @@
+schema_version: "1.0"
+object_id: ECOX-OPC-MOD-0001
+status: draft
+purpose: >
+  Convert heterogeneous observations and forecast fields into simplified,
+  ranked spatiotemporal ocean-plastic clusters and operational zones.
+inputs:
+  currents: [copernicus_marine, hycom, oscar]
+  atmosphere: [noaa_gfs]
+  waves: [copernicus_marine, open_meteo_prototype]
+  plastic_observations: [noaa_ncei_microplastics, operator_nodes]
+priority_weights:
+  plastic_likelihood: 0.25
+  macro_or_gear_score: 0.20
+  ecological_harm_risk: 0.20
+  operator_access: 0.15
+  model_agreement: 0.10
+  data_freshness: 0.10
+controls:
+  - source_freshness_gate
+  - model_agreement_gate
+  - evidence_state_separation
+outputs:
+  - cluster_json
+  - cluster_geojson
+  - mission_candidates
+acceptance:
+  - backtest_completed
+  - confidence_decomposition_reported
+  - no_unsupported_performance_claims
