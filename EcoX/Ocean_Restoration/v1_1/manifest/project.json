@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.1",
+  "project_id": "ECOX-OPC-0001",
+  "twin_id": "ECOX-OPC-DTS-0001",
+  "name": "EcoX Ocean Plastic Coordination & Restoration",
+  "status": "consolidated_expansion_candidate",
+  "workbook": {
+    "file_name": "EcoX_Ocean_Restoration_Cognigrex_Digital_Twin_Workbook_v1_1.xlsx",
+    "version": "1.1",
+    "sha256": "ae09e73d11e162ae040632d2e5375445df5e44ab83e02eaf13d5fff608fd681f",
+    "sheet_count": 61
+  },
+  "success_gate": {
+    "target": 3,
+    "measure": "high_value_operator_alignments",
+    "scope_tracks": [
+      "implementation",
+      "production data",
+      "outreach and governance"
+    ]
+  },
+  "master_suite_integration": {
+    "state": "pending",
+    "blocking_gate": "GATE-012",
+    "rule": "Integration occurs only after independent project-twin acceptance."
+  },
+  "presentation_standard": {
+    "classic_azure": "#163442",
+    "dark_navy": "#0B1F2A",
+    "frozen_rose": "#C58A9D",
+    "dark_surface_text": "#FFFFFF",
+    "rule": "Dark/classic Römer azure surfaces use white text."
+  },
+  "generated_at": "2026-07-19T16:30:48.928070+00:00"
+}
