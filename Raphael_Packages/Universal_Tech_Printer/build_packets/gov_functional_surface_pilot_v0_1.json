@@ -1,0 +1,40 @@
+{
+  "artifact_id": "UTP-PACKET-GOV-SURFACE-001",
+  "version": "0.1",
+  "audience": "government/infrastructure",
+  "title": "2–3 Layer Functional Road/Building Surface Pilot Packet",
+  "catalogue_refs": [
+    "PT-056",
+    "PT-057",
+    "PT-059",
+    "PT-015",
+    "PT-018..024",
+    "UTP-NEW-NEUTRALS-001"
+  ],
+  "objective": "Pilot a maintainable multifunction surface stack while keeping conventional protective performance separable from experimental sensing/energy/resonant features.",
+  "default_stack": [
+    "L0 substrate preparation / adhesion neutral",
+    "L1 protective structural/base coating",
+    "L2 optional function layer: sensing / conductive / thermal / optical / communications geometry",
+    "L3 environmental/hermetic topcoat where required"
+  ],
+  "pilot_measures": [
+    "adhesion",
+    "wear",
+    "water ingress",
+    "electrical isolation/conductivity as applicable",
+    "thermal response",
+    "sensor drift",
+    "repairability",
+    "ecotoxicity/emissions",
+    "cost/maintenance"
+  ],
+  "geospatial_biofeedback_boundary": "Any geospatial or biofeedback claim must name sensor input, measurable physical mechanism, actuator/output, control law, exposure pathway and falsification test; otherwise keep it as a frontier hypothesis.",
+  "governance": [
+    "asset-owner approval",
+    "standards/compliance review",
+    "public-data/privacy boundary",
+    "maintenance/inspection plan",
+    "no safety-critical automated control without independent authority"
+  ]
+}
