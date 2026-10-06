@@ -1,0 +1,151 @@
+{
+  "artifact_id": "UTP-GEN-PRIORITIES-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Universal Printer Generation Priorities and Reproductive Capability Graph",
+  "correction": "Generation-1 is itself the first universal technology printer. RGB/light emission, energy storage, conductance, passive electronics, sensing, actuation, environment control and an active switching/logic route are G1 acceptance functions, although performance and local-material provenance may initially be below mature commercial equivalents.",
+  "universal_function_basis": [
+    "STRUCTURE",
+    "CONDUCTOR",
+    "DIELECTRIC",
+    "RESISTOR",
+    "CAPACITOR",
+    "INDUCTOR_COIL",
+    "ENERGY_STORAGE",
+    "LIGHT_EMITTER",
+    "SENSOR",
+    "ACTUATOR",
+    "FLUID_GAS_ROUTING",
+    "SEAL_PRESSURE_BOUNDARY",
+    "RF_ANTENNA",
+    "THERMAL_FUNCTION",
+    "ACTIVE_SWITCH_LOGIC",
+    "COMPUTE_INTERFACE",
+    "METROLOGY_CALIBRATION"
+  ],
+  "process_grammar": [
+    {
+      "op": "ADD",
+      "meaning": "deposit compatible feed/material into region"
+    },
+    {
+      "op": "MIX",
+      "meaning": "combine metered feeds before placement"
+    },
+    {
+      "op": "DILUTE",
+      "meaning": "reduce selected functional phase concentration by adding compatible carrier/base while maintaining declared total-flow/geometry constraint"
+    },
+    {
+      "op": "GRADIENT",
+      "meaning": "spatially vary feed/material composition over path/layer/volume"
+    },
+    {
+      "op": "INFILTRATE",
+      "meaning": "introduce liquid/gas/reactive phase into porous or printed region"
+    },
+    {
+      "op": "EVAPORATE_DEGAS",
+      "meaning": "remove volatile carrier/solvent or trapped gas under bounded thermal/pressure conditions"
+    },
+    {
+      "op": "CURE",
+      "meaning": "UV/visible/thermal/chemical solidification within material-specific limits"
+    },
+    {
+      "op": "SINTER_ANNEAL",
+      "meaning": "densify/transform material with localized or global energy treatment"
+    },
+    {
+      "op": "PLATE_DEPOSIT_FILM",
+      "meaning": "add thin conductive/functional film by qualified electrodeposition/vapor/fine-deposition route"
+    },
+    {
+      "op": "REMOVE_PATTERN",
+      "meaning": "mill/ablate/etch only through a material/process-specific qualified removal module"
+    },
+    {
+      "op": "DOPE_FUNCTIONALIZE",
+      "meaning": "add scarce functional species to abundant carrier at controlled low fraction; requires material-specific evidence"
+    },
+    {
+      "op": "STRETCH_PRELOAD",
+      "meaning": "apply controlled strain during cure/cooling when validated"
+    },
+    {
+      "op": "POLARIZE_MAGNETIZE",
+      "meaning": "apply electric/magnetic conditioning when material requires it"
+    },
+    {
+      "op": "FILL",
+      "meaning": "meter gas/liquid/electrolyte into cavity or porous region"
+    },
+    {
+      "op": "EVACUATE",
+      "meaning": "reduce cavity/chamber pressure to process target"
+    },
+    {
+      "op": "SEAL",
+      "meaning": "close pressure/fluid/electrical boundary after preclosure verification"
+    },
+    {
+      "op": "TEST",
+      "meaning": "measure function before burial/overbuild"
+    },
+    {
+      "op": "REPAIR",
+      "meaning": "remove/rework failed region within bounded service geometry"
+    }
+  ],
+  "priority_sequence": [
+    {
+      "priority": 1,
+      "id": "P1-PRINTER-MU",
+      "objective": "Printer-1 fabricates and commissions a smaller, higher-finesse universal printer of the same functional class.",
+      "outputs": [
+        "smaller sealed/local-environment process volume",
+        "higher-resolution motion/tooling",
+        "post-mix/dilution feed control",
+        "fine conductor/dielectric/passive printing",
+        "RGB/light-emission route",
+        "battery/energy-storage route",
+        "active-switch/logic route or seed-die integration until printed switch route qualifies",
+        "metrology and tool calibration",
+        "its own control/power/environment interfaces"
+      ],
+      "rationale": "Printer-μ becomes both a self-reproduction proof and a precision manufacturing instrument for upgrading its parent."
+    },
+    {
+      "priority": 2,
+      "id": "P2-PARENT-UPGRADE-AND-PRINTER2",
+      "objective": "Printer-μ and Printer-1 cooperatively fabricate higher-finesse toolheads, sensors, manifolds, electronics, bearings/interfaces and calibration artifacts to upgrade Printer-1 and then build Printer-2 at the original scale.",
+      "dependency": "P1 commissioned and cross-calibrated",
+      "outcome": "two same-scale compatible printers plus one micro/finesse printer, with increased printable fraction, lower seed dependence and improved precision."
+    },
+    {
+      "priority": 3,
+      "id": "P3-ROAMING-PAIR",
+      "objective": "The printer family fabricates the first tethered/free-range mobile UTP agents able to cooperate on structures exceeding any chamber.",
+      "outputs": [
+        "mobile base/anchoring system",
+        "one or more dexterous print/manipulation arms",
+        "local feed intake and material passport station",
+        "mobile environment bubble/shroud",
+        "power/data tether or local power module",
+        "shared coordinate frame and multi-agent scheduler",
+        "inspection/repair capability"
+      ],
+      "outcome": "scalable on-site construction/manufacturing in terrestrial, lunar, orbital or asteroid environments."
+    }
+  ],
+  "reproduction_metrics": {
+    "mass_fraction": "fraction of child-machine mass fabricated by parent family",
+    "part_fraction": "fraction of child unique parts fabricated",
+    "function_fraction": "fraction of required functional basis reproducible",
+    "critical_dependency_fraction": "fraction of single-point critical items still imported",
+    "energy_fraction": "fraction of child manufacturing energy sourced locally",
+    "material_fraction": "fraction of child material mass locally sourced/recycled",
+    "calibration_independence": "fraction of metrology/calibration chain reproducible without external lab",
+    "note": "A printer can be fully functioning while still seed-dependent. Self-reproduction completeness is measured continuously rather than as a binary claim."
+  }
+}
