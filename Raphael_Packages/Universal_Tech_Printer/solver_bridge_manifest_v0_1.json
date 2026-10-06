@@ -1,0 +1,199 @@
+{
+  "artifact_id": "UTP-SOLVERS-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Universal Tech Printer Solver Bridge Manifest",
+  "purpose": "route each build region to the least-complex adequate solver while retaining traditional benchmark and high-fidelity escalation paths",
+  "raphael_existing": {
+    "classic_runtime": [
+      {
+        "path": "Raphael_Physics/raphael_equations.py",
+        "class": "surrogate helper",
+        "authority": "explicitly not physical proof"
+      },
+      {
+        "path": "Raphael_Physics/Simulations/simulation_controller.py",
+        "class": "classic simulation dispatcher",
+        "kinds": [
+          "atomic",
+          "galactic",
+          "stellar",
+          "fractal",
+          "quantum",
+          "cosmic"
+        ]
+      },
+      {
+        "path": "Raphael_Physics/natural_phenomena/time_dynamics.py",
+        "class": "synthetic/classic dynamics helpers"
+      },
+      {
+        "path": "N^3/RUN/code/fascicle_ii_geomatrices.py",
+        "class": "proof-safe closure/geometry/transport representation"
+      },
+      {
+        "path": "N^3/RUN/code/fascicle_iii_raphael_bridge.py",
+        "class": "Raphael claim/equation/fidelity crosswalk"
+      }
+    ],
+    "drive_json_library": [
+      "constants",
+      "atomic",
+      "molecular",
+      "relative",
+      "planetary",
+      "stellar",
+      "cosmic",
+      "galactic",
+      "quantum",
+      "consolidating"
+    ],
+    "legacy_calculator_bridge": [
+      "orbital",
+      "magnetostatics",
+      "energy",
+      "launch",
+      "fluid",
+      "interactive",
+      "structural",
+      "thermal"
+    ],
+    "gmat": "trajectory/scheduling bridge; separate from material/process multiphysics"
+  },
+  "solver_tiers": [
+    {
+      "tier": "S0",
+      "name": "analytic regression",
+      "uses": [
+        "Hagen-Poiseuille",
+        "1D conduction",
+        "parallel-plate capacitance",
+        "ideal solenoid",
+        "steady diffusion"
+      ],
+      "purpose": "unit/sign/order-of-magnitude checks"
+    },
+    {
+      "tier": "S1",
+      "name": "reduced-order / ODE / circuit",
+      "uses": [
+        "lumped thermal",
+        "RC/RLC",
+        "reduced reaction",
+        "empirical constitutive"
+      ],
+      "purpose": "fast planning/control"
+    },
+    {
+      "tier": "S2",
+      "name": "1D/2D continuum",
+      "uses": [
+        "FD/FV/FE reduced domains"
+      ],
+      "purpose": "coupon and interface models"
+    },
+    {
+      "tier": "S3",
+      "name": "3D multiphysics",
+      "uses": [
+        "CFD",
+        "FEM",
+        "EM",
+        "phase field",
+        "electrochemistry",
+        "plasma/semiconductor device"
+      ],
+      "purpose": "high-fidelity bounded region"
+    },
+    {
+      "tier": "S4",
+      "name": "coupled digital twin / experimental assimilation",
+      "uses": [
+        "in-situ sensing",
+        "parameter estimation",
+        "uncertainty update"
+      ],
+      "purpose": "validated operational envelope"
+    }
+  ],
+  "routing_rules": [
+    "start with S0/S1 comparator whenever a closed-form/reduced benchmark exists",
+    "promote fidelity only when residual, regime, geometry, coupling or risk justifies it",
+    "never use a Raphael surrogate helper as a replacement for a conventional domain solver",
+    "cross-solver agreement is corroboration only when assumptions and numerical independence are explicit",
+    "hardware control consumes validated reduced models/envelopes, not unconstrained high-level semantic output"
+  ],
+  "external_solver_slots": [
+    {
+      "domain": "CFD/heat/species",
+      "interfaces": [
+        "mesh",
+        "materials",
+        "BCs",
+        "sources",
+        "time controls",
+        "field outputs"
+      ]
+    },
+    {
+      "domain": "structural/FEM",
+      "interfaces": [
+        "mesh",
+        "constitutive",
+        "loads",
+        "contacts",
+        "thermal strain",
+        "failure outputs"
+      ]
+    },
+    {
+      "domain": "EM",
+      "interfaces": [
+        "geometry",
+        "conductivity/permittivity/permeability",
+        "sources",
+        "frequency/time",
+        "field/force outputs"
+      ]
+    },
+    {
+      "domain": "phase-field/chemistry",
+      "interfaces": [
+        "free-energy model",
+        "mobility",
+        "reaction kinetics",
+        "initial/boundary states"
+      ]
+    },
+    {
+      "domain": "electrochemistry",
+      "interfaces": [
+        "species",
+        "transport",
+        "electrode kinetics",
+        "electrical/thermal coupling"
+      ]
+    },
+    {
+      "domain": "semiconductor",
+      "interfaces": [
+        "band/material parameters",
+        "doping",
+        "contacts",
+        "optical/recombination",
+        "thermal"
+      ]
+    },
+    {
+      "domain": "plasma",
+      "interfaces": [
+        "gas species/cross-sections",
+        "pressure",
+        "electrodes",
+        "reactions",
+        "radiation",
+        "surface interactions"
+      ]
+    }
+  ]
+}
