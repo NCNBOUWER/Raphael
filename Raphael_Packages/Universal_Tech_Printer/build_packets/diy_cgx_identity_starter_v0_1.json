@@ -1,0 +1,39 @@
+{
+  "artifact_id": "UTP-PACKET-DIY-CGX-001",
+  "version": "0.1",
+  "audience": "DIY/school",
+  "title": "CGX Identity + Functional-Material Starter Packet",
+  "catalogue_refs": [
+    "PT-001",
+    "PT-011",
+    "PT-012",
+    "PT-013",
+    "PT-014",
+    "PT-018",
+    "PT-039",
+    "PT-044",
+    "UTP-CGX-OBJECT-IDENTITY-001"
+  ],
+  "objective": "Build low-voltage benign coupons demonstrating structure, conductor, resistor/heater, capacitor geometry, coil/antenna geometry, simple sensing, optical geometry and a passive CGX identity marker.",
+  "boundaries": [
+    "no high-voltage plasma work",
+    "no reactive/toxic semiconductor chemistry",
+    "no pressure vessel beyond benign low-differential demonstration hardware",
+    "material substitutions must retain supplier safety data and test-before-use"
+  ],
+  "helper_flow": [
+    "choose function",
+    "list tools/materials",
+    "show evidence tier",
+    "print/assemble coupon",
+    "measure expected quantity",
+    "attach identity record",
+    "emit DBR snapshot"
+  ],
+  "outputs": [
+    "physical coupon set",
+    "measurement table",
+    "CGX object manifest",
+    "repair/recycle note"
+  ]
+}
