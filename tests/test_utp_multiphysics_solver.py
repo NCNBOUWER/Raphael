@@ -1,7 +1,15 @@
 import math
 import unittest
 
-from Raphael_Packages.Universal_Tech_Printer.benchmark_solvers import (\n    capacitor_energy_j,\n    hagen_poiseuille_delta_p,\n    ideal_long_solenoid_b_t,\n    parallel_plate_capacitance,\n    steady_conduction_heat_rate,\n    steady_fick_flux_mol_m2_s,\n)\nfrom Raphael_Packages.Universal_Tech_Printer.utp_multiphysics_solver import (
+from Raphael_Packages.Universal_Tech_Printer.benchmark_solvers import (
+    capacitor_energy_j,
+    hagen_poiseuille_delta_p,
+    ideal_long_solenoid_b_t,
+    parallel_plate_capacitance,
+    steady_conduction_heat_rate,
+    steady_fick_flux_mol_m2_s,
+)
+from Raphael_Packages.Universal_Tech_Printer.utp_multiphysics_solver import (
     BuildNode,
     boltzmann_weights,
     compare_traditional_hybrid,
@@ -26,8 +34,13 @@ class UTPMultiphysicsTests(unittest.TestCase):
 
     def test_dimensionless_groups(self):
         g = dimensionless_groups(
-            rho=1000.0, velocity=1.0, length=0.01, viscosity=0.001,
-            diffusivity=1e-9, surface_tension=0.07, mean_free_path=1e-7
+            rho=1000.0,
+            velocity=1.0,
+            length=0.01,
+            viscosity=0.001,
+            diffusivity=1e-9,
+            surface_tension=0.07,
+            mean_free_path=1e-7,
         )
         self.assertTrue(math.isclose(g["Re"], 10000.0))
         self.assertTrue(g["Pe"] > 0)
@@ -59,6 +72,17 @@ class UTPMultiphysicsTests(unittest.TestCase):
         )
         self.assertTrue(math.isclose(out["parts"], 0.5))
         self.assertTrue(math.isclose(out["repairability"], 0.5))
+
+    def test_closed_form_benchmarks(self):
+        dp = hagen_poiseuille_delta_p(1e-3, 1.0, 1e-6, 0.01)
+        self.assertGreater(dp, 0.0)
+        q = steady_conduction_heat_rate(10.0, 0.01, 20.0, 0.1)
+        self.assertTrue(math.isclose(q, 20.0))
+        c = parallel_plate_capacitance(8.8541878128e-12, 0.01, 1e-3)
+        self.assertGreater(c, 0.0)
+        self.assertGreater(capacitor_energy_j(c, 10.0), 0.0)
+        self.assertGreater(ideal_long_solenoid_b_t(1000.0, 1.0), 0.0)
+        self.assertGreater(steady_fick_flux_mol_m2_s(1e-9, 100.0, 1e-3), 0.0)
 
 
 if __name__ == "__main__":
