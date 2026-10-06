@@ -1,0 +1,170 @@
+{
+  "artifact_id": "UTP-NEW-NEUTRALS-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Solid-State New Neutrals — Functional Intermediary Layer Taxonomy",
+  "definition": "A neutral is a deliberately inserted intermediary material/geometry region whose primary role is to isolate, reference, return, spread, shield, buffer, seal or condition interactions between active/structural functions. 'Neutral' means interface/control function, not physically inert.",
+  "classes": [
+    {
+      "id": "N-POWER-REF",
+      "name": "power return/reference",
+      "functions": [
+        "return current",
+        "reference potential",
+        "fault path"
+      ],
+      "primitive_links": [
+        "PT-011",
+        "PT-017"
+      ]
+    },
+    {
+      "id": "N-DIEL",
+      "name": "dielectric isolation",
+      "functions": [
+        "electrical isolation",
+        "field shaping",
+        "capacitor spacing"
+      ],
+      "primitive_links": [
+        "PT-013",
+        "PT-016"
+      ]
+    },
+    {
+      "id": "N-EMI",
+      "name": "EMI/RF shield-ground",
+      "functions": [
+        "shielding",
+        "ground plane",
+        "controlled return"
+      ],
+      "primitive_links": [
+        "PT-010",
+        "PT-015"
+      ]
+    },
+    {
+      "id": "N-MAG",
+      "name": "magnetic flux return/yoke",
+      "functions": [
+        "field shaping",
+        "flux closure"
+      ],
+      "primitive_links": [
+        "PT-014",
+        "PT-024",
+        "PT-025"
+      ]
+    },
+    {
+      "id": "N-THERM-SPREAD",
+      "name": "thermal spreader",
+      "functions": [
+        "lateral heat transport",
+        "hotspot reduction"
+      ],
+      "primitive_links": [
+        "PT-008"
+      ]
+    },
+    {
+      "id": "N-THERM-BREAK",
+      "name": "thermal break",
+      "functions": [
+        "thermal isolation",
+        "gradient control"
+      ],
+      "primitive_links": [
+        "PT-009"
+      ]
+    },
+    {
+      "id": "N-CHEM",
+      "name": "chemical/diffusion barrier",
+      "functions": [
+        "prevent species migration",
+        "protect incompatible layers"
+      ],
+      "primitive_links": [
+        "PT-005",
+        "PT-047",
+        "PT-048"
+      ]
+    },
+    {
+      "id": "N-GALV",
+      "name": "galvanic isolation layer",
+      "functions": [
+        "separate dissimilar conductors",
+        "electrochemical isolation"
+      ],
+      "primitive_links": [
+        "PT-005",
+        "PT-011",
+        "PT-013"
+      ]
+    },
+    {
+      "id": "N-COMPLY",
+      "name": "strain/compliance interlayer",
+      "functions": [
+        "CTE mismatch relief",
+        "vibration/strain decoupling"
+      ],
+      "primitive_links": [
+        "PT-002",
+        "PT-019"
+      ]
+    },
+    {
+      "id": "N-HERM",
+      "name": "hermetic/environmental barrier",
+      "functions": [
+        "gas/moisture/dust exclusion",
+        "encapsulation"
+      ],
+      "primitive_links": [
+        "PT-005",
+        "PT-006",
+        "PT-010"
+      ]
+    },
+    {
+      "id": "N-OPT",
+      "name": "optical buffer/reflector/cladding",
+      "functions": [
+        "optical isolation",
+        "reflection",
+        "waveguide boundary"
+      ],
+      "primitive_links": [
+        "PT-039"
+      ]
+    },
+    {
+      "id": "N-FLUID",
+      "name": "fluid/gas boundary/reference volume",
+      "functions": [
+        "process separation",
+        "pressure reference",
+        "metered void"
+      ],
+      "primitive_links": [
+        "PT-006",
+        "PT-007"
+      ]
+    }
+  ],
+  "stacking_rule": "Active function layers may only touch directly where chemistry, thermal cycle, electrochemical potential, stress, field and serviceability compatibility are qualified. Otherwise insert an explicit neutral/interface class.",
+  "coating_application": {
+    "road_or_building_example": [
+      "substrate prep/adhesion neutral",
+      "protective/base structural layer",
+      "optional conductive/sensor/thermal/optical functional layer",
+      "environmental/hermetic neutral topcoat"
+    ],
+    "boundary": "Geospatial, resonant or biofeedback behavior must identify the measured physical variable, transfer function, sensor/actuator path and control law before being treated as more than a hypothesis."
+  },
+  "eco_rule": "Circular/recovered feed may populate a neutral or active layer only after identity, contamination, emissions/ecotoxicity, process compatibility and coupon evidence are acceptable."
+}
