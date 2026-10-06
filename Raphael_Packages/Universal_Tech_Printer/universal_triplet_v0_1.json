@@ -1,0 +1,69 @@
+{
+  "artifact_id": "UTP-UNIVERSAL-TRIPLET-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Filespace × Dataspace × Solid-State Universal Triplet",
+  "layers": [
+    {
+      "id": "U-FILESPACE",
+      "role": "durable meaning and build definition",
+      "contains": [
+        "geometry/CAD",
+        "recipes",
+        "source authority",
+        "equations",
+        "schemas",
+        "BOMs",
+        "software",
+        "tests",
+        "evidence locators",
+        "supersession",
+        "interfaces"
+      ],
+      "cgx_binding": "immutable/versioned artifacts + semantic IDs"
+    },
+    {
+      "id": "U-DATASPACE",
+      "role": "live state and relationships",
+      "contains": [
+        "telemetry",
+        "uncertainty",
+        "material inventories",
+        "node availability",
+        "task state",
+        "calibration",
+        "environment",
+        "resource flows",
+        "performance history"
+      ],
+      "cgx_binding": "live graph/twin state with DBR snapshots"
+    },
+    {
+      "id": "U-SOLIDSTATE",
+      "role": "physical functional body",
+      "contains": [
+        "material composition field",
+        "geometry/topology",
+        "void/free-space field",
+        "embedded conductors/dielectrics",
+        "sensors/actuators",
+        "energy/storage",
+        "communication interfaces",
+        "identity markings"
+      ],
+      "cgx_binding": "physical node represented by stable identity + measured twin"
+    }
+  ],
+  "working_term": {
+    "name": "solid-state new neutral",
+    "status": "user-origin working term / definition still evolving",
+    "bounded_definition": "a common physical substrate/body representation in which local material, geometry, interfaces and voids are compiled into different functions rather than assembled exclusively as discrete boxed components"
+  },
+  "closure_loop": "filespace intent → dataspace solve/state → solid-state build → measured dataspace → receipted filespace",
+  "snapshots": {
+    "prebuild": "source+BOM+geometry+process+evidence ceiling hash",
+    "inprocess": "layer/region telemetry and deviations",
+    "postbuild": "as-built geometry/material/process/electrical/thermal/functional state",
+    "service": "degradation/repair/recycle history"
+  }
+}
