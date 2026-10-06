@@ -1,0 +1,152 @@
+{
+  "artifact_id": "UTP-DEVICES-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Functional Device Archetypes for Recursive Printing",
+  "devices": [
+    {
+      "id": "DEV-MPLASMA-RGB",
+      "name": "Microplasma / discharge pixel",
+      "not_equivalent_to": "semiconductor LED",
+      "requires": [
+        "dielectric cavity",
+        "electrodes",
+        "controlled gas/pressure",
+        "drive circuitry",
+        "optical output route or phosphor",
+        "seal/leak verification"
+      ],
+      "kernels": [
+        "K-PLASMA",
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-RADIATION"
+      ],
+      "environment": "ENV-2",
+      "maturity": "research/device-specific"
+    },
+    {
+      "id": "DEV-LED",
+      "name": "Semiconductor LED",
+      "requires": [
+        "semiconductor layer system",
+        "carrier injection junction/heterostructure",
+        "contacts",
+        "recombination/band model",
+        "thermal extraction",
+        "optical/encapsulation stack"
+      ],
+      "kernels": [
+        "K-SEMI",
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-RADIATION"
+      ],
+      "environment": "process-specific, likely controlled",
+      "maturity": "advanced process; not reduced to gas cavity"
+    },
+    {
+      "id": "DEV-RES",
+      "name": "Printed resistor/heater",
+      "requires": [
+        "resistive material",
+        "contacts",
+        "geometry",
+        "thermal path"
+      ],
+      "kernels": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "environment": "ENV-0/1/2 process dependent"
+    },
+    {
+      "id": "DEV-CAP",
+      "name": "Embedded capacitor",
+      "requires": [
+        "conductor A",
+        "dielectric gap/layer",
+        "conductor B",
+        "field/breakdown model",
+        "test access"
+      ],
+      "kernels": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "environment": "vacuum optional, not definition"
+    },
+    {
+      "id": "DEV-BATT",
+      "name": "Embedded electrochemical cell",
+      "requires": [
+        "anode",
+        "cathode",
+        "electrolyte or solid ion conductor",
+        "separator/isolation",
+        "current collectors",
+        "thermal/safety",
+        "service/end-of-life"
+      ],
+      "kernels": [
+        "K-NP",
+        "K-BV",
+        "K-SPECIES",
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "environment": "ENV-2 or separately qualified sealed construction"
+    },
+    {
+      "id": "DEV-SENSOR",
+      "name": "Embedded sensor",
+      "requires": [
+        "transduction material/geometry",
+        "reference/calibration",
+        "routing/readout",
+        "thermal/process survival"
+      ],
+      "kernels": [
+        "device-specific",
+        "K-ENERGY",
+        "K-MECH and/or K-MAXWELL"
+      ]
+    },
+    {
+      "id": "DEV-GASCELL",
+      "name": "Controlled gas/vacuum functional cell",
+      "requires": [
+        "pressure boundary",
+        "port/fill/evacuation route",
+        "seal",
+        "gas/material compatibility",
+        "leak/outgassing evidence"
+      ],
+      "kernels": [
+        "K-FLUID-MASS",
+        "K-ENERGY",
+        "optional K-PLASMA"
+      ],
+      "note": "vacuum is isolation/field environment, not generic damping"
+    },
+    {
+      "id": "DEV-CIRCUIT",
+      "name": "Printed/embedded circuit region",
+      "requires": [
+        "conductors",
+        "dielectrics",
+        "vias/interfaces",
+        "passives/active service islands",
+        "EMI/thermal design",
+        "test points"
+      ],
+      "kernels": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-SEMI when active semiconductor is printed"
+      ]
+    }
+  ],
+  "serviceability_rule": "life-limited/high-value/high-complexity active components default to replaceable/serviceable islands until deep embedment reliability is proven"
+}
