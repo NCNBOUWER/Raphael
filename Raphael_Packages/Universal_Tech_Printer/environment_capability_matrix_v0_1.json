@@ -1,0 +1,94 @@
+{
+  "artifact_id": "UTP-ENV-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Printer Environment Capability Matrix",
+  "environments": [
+    {
+      "id": "ENV-0",
+      "name": "OPEN",
+      "controls": [
+        "ambient only",
+        "local extraction optionally"
+      ],
+      "supports": [
+        "structural routes compatible with ambient",
+        "machining",
+        "inspection",
+        "cold placement",
+        "selected coatings/polymers"
+      ],
+      "blocks_without_local_isolation": [
+        "vacuum process",
+        "controlled reactive gas",
+        "contamination-critical semiconductor",
+        "sealed-cell fill before closure"
+      ],
+      "principle": "limited process set, not zero capability"
+    },
+    {
+      "id": "ENV-1",
+      "name": "LOCAL_SHROUD",
+      "controls": [
+        "local inert/reactive atmosphere",
+        "O2/moisture",
+        "fume/solvent capture",
+        "local thermal"
+      ],
+      "supports": [
+        "shielded fusion",
+        "sensitive functional deposition",
+        "controlled cure/reaction"
+      ]
+    },
+    {
+      "id": "ENV-2",
+      "name": "SEALED_MICROCHAMBER",
+      "controls": [
+        "gas identity",
+        "pressure",
+        "low pressure/vacuum after evacuation",
+        "local chemistry"
+      ],
+      "supports": [
+        "microplasma/discharge cell",
+        "sealed gas sensor",
+        "sensitive reaction",
+        "electrochemical cell",
+        "vacuum/low-pressure cavity"
+      ]
+    },
+    {
+      "id": "ENV-3",
+      "name": "MACRO_CHAMBER",
+      "controls": [
+        "whole-part atmosphere/pressure/temperature"
+      ],
+      "supports": [
+        "processes requiring global uniform environmental control"
+      ],
+      "cost": "high"
+    },
+    {
+      "id": "ENV-4",
+      "name": "MOBILE_BUBBLE",
+      "controls": [
+        "robot-local enclosure/shroud/feed/metrology"
+      ],
+      "supports": [
+        "macro/in-situ work in locally controlled zones"
+      ],
+      "principle": "local microclimate moves with print head/robot"
+    }
+  ],
+  "closure_sequence": [
+    "print cavity/ports",
+    "clean/inspect",
+    "insert electrodes/functions",
+    "test preclosure",
+    "fill or evacuate to target condition",
+    "seal",
+    "leak/electrical/optical verification"
+  ],
+  "scheduling_rule": "future operations may not exceed existing region thermal/chemical/pressure/field/contamination budgets"
+}
