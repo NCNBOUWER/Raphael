@@ -1,7 +1,7 @@
 import math
 import unittest
 
-from Raphael_Packages.Universal_Tech_Printer.utp_multiphysics_solver import (
+from Raphael_Packages.Universal_Tech_Printer.benchmark_solvers import (\n    capacitor_energy_j,\n    hagen_poiseuille_delta_p,\n    ideal_long_solenoid_b_t,\n    parallel_plate_capacitance,\n    steady_conduction_heat_rate,\n    steady_fick_flux_mol_m2_s,\n)\nfrom Raphael_Packages.Universal_Tech_Printer.utp_multiphysics_solver import (
     BuildNode,
     boltzmann_weights,
     compare_traditional_hybrid,
