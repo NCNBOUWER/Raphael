@@ -1,0 +1,108 @@
+{
+  "artifact_id": "UTP-CGX-IDENTITY-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX-Native Universal Printer Identity and Handshake",
+  "authority_boundary": "candidate Frontier semantic object; does not mutate Cognigrex.cgx or durable domain child carriers",
+  "semantic_model": {
+    "node_id_pattern": "cgx:utp:<family>:<serial>",
+    "preferred_uri_pattern": "cgx://romer.industries/romer/utp/<family>/<serial>",
+    "parents": [
+      "cgx:root:cognigrex",
+      "cgx:domain:romer"
+    ],
+    "related_domains": [
+      "cgx:domain:eco",
+      "cgx:domain:lightspeed",
+      "cgx:domain:emassc"
+    ],
+    "rule": "printer identity is a federated child/node identity, not a replacement master"
+  },
+  "node_manifest_required": [
+    "node_id",
+    "serial",
+    "hardware_revision",
+    "software_revision",
+    "capability_manifest_hash",
+    "tool_manifest",
+    "material_feed_manifest",
+    "environment_manifest",
+    "calibration_state",
+    "safety_envelope",
+    "local_horizon_profile",
+    "power_state",
+    "compute_profile",
+    "task_queue",
+    "twin_snapshot",
+    "evidence_receipts",
+    "dbr_pointer",
+    "source_authority_pointer",
+    "parent_relations",
+    "network_interfaces",
+    "last_verified_state"
+  ],
+  "compute_layers": [
+    {
+      "id": "C0-RT",
+      "name": "deterministic machine control",
+      "responsibilities": [
+        "motion loops",
+        "tool timing",
+        "pressure/current/temperature limits",
+        "E-stop/interlock handling"
+      ],
+      "constraint": "must remain locally executable and safety-bounded without network access"
+    },
+    {
+      "id": "C1-EDGE",
+      "name": "local CGX node runtime",
+      "responsibilities": [
+        "capability advertisement",
+        "job packet validation",
+        "local twin",
+        "material ledger",
+        "inspection aggregation",
+        "bounded scheduling",
+        "offline safe continuation"
+      ],
+      "note": "does not require smartphone-class dense compute if the task/control stack is distributed and compiled"
+    },
+    {
+      "id": "C2-NETWORK",
+      "name": "Cognigrex / LightSpeed federation",
+      "responsibilities": [
+        "heavy planning",
+        "cross-node optimization",
+        "Raphael comparison",
+        "portfolio/resource routing",
+        "source retrieval",
+        "global evidence reconciliation",
+        "model updates"
+      ],
+      "rule": "bind to live runtime; do not duplicate authoritative network state into every printer"
+    }
+  ],
+  "handshake": [
+    "HELLO: identity + hardware/software revision + authority pointers",
+    "CAPABILITY: tools/processes/materials/environments/metrology + validity envelopes",
+    "HORIZON: local resources/energy/environment/connectivity/governance constraints",
+    "STATE: calibration/power/material/tool/maintenance/safety state",
+    "TASK_OFFER: required function, geometry, evidence tier and delivery constraints",
+    "PLAN_RECEIPT: compiled BuildNode DAG + source hashes + accepted limits",
+    "EXEC_RECEIPT: deterministic execution trace + raw evidence locators",
+    "VERIFY: measured function + uncertainty + residual/falsifier state",
+    "DBR_COMMIT: snapshot/provenance receipt for reconciliation",
+    "HANDOFF: child/sibling node state transfer when work migrates"
+  ],
+  "physical_identity_options": [
+    "human-readable serial/QR/DataMatrix printed into shell",
+    "RFID/NFC or printed antenna identity where suitable",
+    "cryptographic secure-element/root candidate when security class requires it",
+    "material/process passport linked to logical CGX identity"
+  ],
+  "smartphone_equivalence_boundary": {
+    "statement": "Functional equivalence is separated from semiconductor-density equivalence.",
+    "example": "A phone-like object may provide display, storage, sensing, communications, control and UI using larger/distributed printed functions plus modest edge compute and CGX network services.",
+    "constraint": "Claims of iPhone-class local compute, size, efficiency or semiconductor density require corresponding semiconductor hardware evidence and are not implied by the UTP architecture."
+  }
+}
