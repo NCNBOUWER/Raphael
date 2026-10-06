@@ -1,0 +1,97 @@
+{
+  "schema": "CGX-HANDSHAKE-RECEIPT/0.1",
+  "receipt_id": "PRINTER-1-PLAN-HANDSHAKE-20261007-01",
+  "node_id": "cgx:object:romer:utp:printer-1-plan",
+  "mode": "SCHEMA_DRY_RUN / NO_PHYSICAL_ACTUATION",
+  "steps": [
+    {
+      "step": "HELLO",
+      "status": "PASS",
+      "payload": [
+        "node_id",
+        "serial",
+        "identity_state",
+        "parent_relations"
+      ],
+      "note": "digital planning identity only"
+    },
+    {
+      "step": "CAPABILITY",
+      "status": "PASS_WITH_OPEN_GATES",
+      "payload": [
+        "required_function_basis",
+        "tool/material/environment requirements"
+      ],
+      "note": "zero physical qualified functions advertised"
+    },
+    {
+      "step": "HORIZON",
+      "status": "PASS_WITH_ASSUMPTION",
+      "payload": [
+        "H-TERR-SITE"
+      ],
+      "note": "planning context; exact site/resource state unresolved"
+    },
+    {
+      "step": "STATE",
+      "status": "PASS",
+      "payload": [
+        "NOT_CALIBRATED",
+        "NO_PHYSICAL_MACHINE",
+        "UNASSIGNED power"
+      ],
+      "note": "explicit non-readiness"
+    },
+    {
+      "step": "TASK_OFFER",
+      "status": "PASS",
+      "payload": [
+        "derive physical BOM/process DAG",
+        "G1 coupon tree"
+      ],
+      "note": "planning tasks only"
+    },
+    {
+      "step": "PLAN_RECEIPT",
+      "status": "PASS",
+      "payload": [
+        "catalogue",
+        "projection",
+        "new neutrals",
+        "build packets"
+      ],
+      "note": "digital planning sources bound"
+    },
+    {
+      "step": "EXEC_RECEIPT",
+      "status": "NOT_RUN",
+      "payload": [],
+      "note": "no physical execution"
+    },
+    {
+      "step": "VERIFY",
+      "status": "NOT_RUN",
+      "payload": [],
+      "note": "no measured physical output"
+    },
+    {
+      "step": "DBR_COMMIT",
+      "status": "PASS_DIGITAL_SNAPSHOT",
+      "payload": [
+        "intent snapshot",
+        "source hashes"
+      ],
+      "note": "records planning state only"
+    },
+    {
+      "step": "HANDOFF",
+      "status": "PASS",
+      "payload": [
+        "Frontier handoff"
+      ],
+      "note": "may be consumed by later physical build lane"
+    }
+  ],
+  "overall": "PASS AS DIGITAL/SCHEMA HANDSHAKE ONLY",
+  "physical_readiness": "NOT ESTABLISHED"
+}
