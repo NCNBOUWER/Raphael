@@ -1,0 +1,78 @@
+{
+  "artifact_id": "UTP-CGX-OBJECT-IDENTITY-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX-Native Physical Object Identity Contract",
+  "purpose": "Generalize the printer-node identity into a reusable lifecycle identity for physical products, infrastructure elements, tools, coatings, devices, vehicles and outpost modules when persistent state/control/maintenance/provenance warrants it.",
+  "identity_rule": {
+    "pattern": "cgx:object:<domain>:<family>:<serial>",
+    "examples": [
+      "cgx:object:eco:sensor-heater:<serial>",
+      "cgx:object:romer:printer:<serial>",
+      "cgx:object:romer:mark-sector:<serial>",
+      "cgx:object:infrastructure:coating-zone:<serial>"
+    ],
+    "not_everything_needs_identity": "Disposable/static objects may remain catalogue/build records only. Promote to a persistent node when live state, maintenance, provenance, resource ledger, control, safety, public asset management or inter-node interaction benefits from identity."
+  },
+  "three_planes": {
+    "filespace": [
+      "source refs",
+      "design/geometry",
+      "BOM/feed recipes",
+      "process DAG",
+      "tests",
+      "supersession",
+      "immutable receipts"
+    ],
+    "dataspace": [
+      "telemetry",
+      "material state",
+      "calibration",
+      "resource flows",
+      "maintenance",
+      "uncertainty",
+      "tasks",
+      "performance history"
+    ],
+    "solid_state": [
+      "material/geometry/void/interface/function field",
+      "physical ports",
+      "service boundaries",
+      "identity marker",
+      "measured twin link"
+    ]
+  },
+  "compute_profiles": [
+    {
+      "id": "CP0-PASSIVE",
+      "description": "no local compute; identity via printed code/RFID/NFC/passive resonator; state interpreted externally"
+    },
+    {
+      "id": "CP1-TINY",
+      "description": "ultra-low-power sensing/state/handshake controller only"
+    },
+    {
+      "id": "CP2-EDGE",
+      "description": "modest local CGX twin/scheduling/validation"
+    },
+    {
+      "id": "CP3-FEDERATED",
+      "description": "heavy reasoning delegated to Cognigrex/LightSpeed/Raphael federation"
+    }
+  ],
+  "equivalence_rule": "A physical object can be functionally phone-like, machine-like or infrastructure-like without reproducing commercial SoC transistor density. The .cgx identity binds distributed function and network reasoning; it does not create missing physical compute.",
+  "minimal_handshake": [
+    "HELLO",
+    "CAPABILITY",
+    "HORIZON",
+    "STATE",
+    "TASK_OFFER",
+    "PLAN_RECEIPT",
+    "EXEC_RECEIPT",
+    "VERIFY",
+    "DBR_COMMIT",
+    "HANDOFF"
+  ],
+  "offline_rule": "Safety and required deterministic control remain local; network loss must degrade to declared safe/local capability rather than undefined behavior.",
+  "authority": "Frontier semantic object only until consumed by normal audited .cgx promotion."
+}
