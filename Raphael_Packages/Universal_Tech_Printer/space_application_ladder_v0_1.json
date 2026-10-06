@@ -1,0 +1,124 @@
+{
+  "artifact_id": "UTP-SPACE-APPLICATIONS-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Universal Printer Application Ladder — Mark / Luke / Interplanetary Infrastructure",
+  "common_primitives": [
+    "beam/shell/lattice",
+    "pressure/fluid channel",
+    "conductor/bus/coil/antenna",
+    "dielectric/barrier",
+    "sensor/receiver/transmitter",
+    "actuator/motor interface",
+    "energy storage and power conversion interface",
+    "optical/emitter surface",
+    "thermal path/radiator",
+    "seal/joint/service port",
+    "compute/control interface"
+  ],
+  "use_case_families": [
+    {
+      "id": "UC-PRINTER-FAMILY",
+      "priority": 1,
+      "applications": [
+        "Printer-μ",
+        "Printer-2",
+        "roaming printer pair/team"
+      ],
+      "reason": "maximizes recursive manufacturing capacity before consuming capacity on end products"
+    },
+    {
+      "id": "UC-MARK",
+      "applications": [
+        "Mark integrated functional bodies",
+        "replacement shells/structures",
+        "sensor/field-control layers",
+        "fluid/gas/thermal zones",
+        "repair and remanufacture"
+      ],
+      "local_resource_leverage": "high for structural/conductive/ceramic mass; specialty electronics/functional dopants localize to small regions"
+    },
+    {
+      "id": "UC-LUKE",
+      "applications": [
+        "large receiving/handling/relay structures",
+        "beams/trusses",
+        "power buses/coils",
+        "radiators",
+        "docking/service structures",
+        "resource processing/manufacturing interfaces"
+      ],
+      "manufacturing_mode": "printer family + roaming agents + cooperative carry classes C2-C5"
+    },
+    {
+      "id": "UC-RESOURCE-NODE",
+      "applications": [
+        "beneficiation",
+        "refining",
+        "stock bins",
+        "feed formulation",
+        "gas/volatile recovery",
+        "recycling"
+      ],
+      "reason": "turns heterogeneous local material into bounded printer feed"
+    },
+    {
+      "id": "UC-POWER",
+      "applications": [
+        "solar arrays",
+        "wire/cabling",
+        "batteries/storage",
+        "power conditioning housings",
+        "thermal/radiator structures"
+      ],
+      "evidence_anchor": "NASA current lunar ISRU work demonstrates integrated production of silicon solar cells, aluminum wire, oxygen, iron and slag from regolith simulant in lunar-like conditions"
+    },
+    {
+      "id": "UC-COMMS-SENSING",
+      "applications": [
+        "antennas",
+        "receivers/transmitters",
+        "sensor networks",
+        "optical beacons",
+        "navigation aids",
+        "distributed environmental monitoring"
+      ],
+      "geometry_note": "many RF/sensor functions change primarily through geometry/topology once conductor/dielectric/active interface primitives exist"
+    },
+    {
+      "id": "UC-TRANSPORT",
+      "applications": [
+        "rover/rail/maglev structural elements",
+        "road/pad/foundation",
+        "guideway/power distribution",
+        "stations/shelters",
+        "public-transport infrastructure"
+      ],
+      "cross_domain": "same structural/power/sensing/control primitives apply on Earth, Moon and Mars with different environment/material envelopes"
+    },
+    {
+      "id": "UC-PLANETARY-DEFENSE",
+      "applications": [
+        "distributed observation/sensor infrastructure",
+        "communications/relay",
+        "inspection spacecraft structures",
+        "mission-specific kinetic-deflection spacecraft structures/support hardware where independently designed and authorized"
+      ],
+      "boundary": "UTP supplies manufacturing capacity; trajectory-deflection system design and mission authority remain separate safety/governance disciplines"
+    },
+    {
+      "id": "UC-HABITAT-SCIENCE",
+      "applications": [
+        "shielding",
+        "berms",
+        "pressure-shell support",
+        "lab fixtures",
+        "sample handling",
+        "dust mitigation",
+        "science instruments",
+        "repair parts"
+      ]
+    }
+  ],
+  "expansion_logic": "printer capability grows by closing primitive-function and resource-feed gaps; end-use diversity comes from recombination rather than building a separate manufacturing stack for each application"
+}
