@@ -1,0 +1,169 @@
+{
+  "artifact_id": "UTP-SPACE-BOOTSTRAP-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Universal Printer Family — Space Bootstrap / Mark / Luke Manufacturing Architecture",
+  "bootstrap_stack": [
+    {
+      "order": 0,
+      "node": "POWER_COMMS_CONTROL",
+      "role": "initial carried power, compute, navigation, communications and deterministic safety"
+    },
+    {
+      "order": 1,
+      "node": "PRINTER_FAMILY",
+      "role": "Printer-1/Printer-2/Printer-μ or space-adapted descendants; fabricate tools, passives, structures and child printers"
+    },
+    {
+      "order": 2,
+      "node": "RESOURCE_FRONT_END",
+      "role": "capture/excavate, classify, magnetic/electrostatic/RFS/EMFF candidate beneficiation, dust control"
+    },
+    {
+      "order": 3,
+      "node": "REFINERY",
+      "role": "extract metals, silicon/mineral/glass fractions, oxygen/volatiles; assay and stock"
+    },
+    {
+      "order": 4,
+      "node": "FEED_FORMULATION",
+      "role": "convert local bulk + recycled stock + carried specialty concentrates into printer-qualified feed passports"
+    },
+    {
+      "order": 5,
+      "node": "ROAMING_AGENTS",
+      "role": "mobile/tethered local-environment printers for structures exceeding chamber envelope"
+    },
+    {
+      "order": 6,
+      "node": "MARK_LUKE_INFRASTRUCTURE",
+      "role": "fabricate/repair mission hardware and larger infrastructure from common functional primitives"
+    }
+  ],
+  "bootstrap_priority": [
+    "reproduce printer capability first",
+    "increase power generation/distribution",
+    "increase resource throughput/stock diversity",
+    "increase mobility and cooperative carry capacity",
+    "then scale Mark/Luke/end-use infrastructure"
+  ],
+  "local_mass_first_rule": "allocate local material preferentially to high-mass structure, shielding, conductors, thermal mass, glass/ceramics and simple mechanical components; allocate scarce carried concentrates to low-mass/high-function voxels until local purity and synthesis routes close the gap",
+  "resource_to_system_examples": [
+    {
+      "resource": "lunar Fe/metal-rich fraction",
+      "systems": [
+        "printer frame/tool bodies",
+        "Mark/Luke structure",
+        "rail/guide/fastener stock",
+        "shield/support hardware"
+      ]
+    },
+    {
+      "resource": "lunar Al",
+      "systems": [
+        "power distribution",
+        "wire/bus",
+        "radiator/light structure",
+        "antenna candidates"
+      ]
+    },
+    {
+      "resource": "lunar Si + glass/mineral fraction",
+      "systems": [
+        "solar-cell feed after purity qualification",
+        "glass/dielectric",
+        "optical/thermal layers",
+        "ceramic structures"
+      ]
+    },
+    {
+      "resource": "oxygen",
+      "systems": [
+        "life support/process commodity",
+        "oxidizer/chemical feed where mission permits",
+        "thermal/chemical processing"
+      ]
+    },
+    {
+      "resource": "asteroid Ni-Fe",
+      "systems": [
+        "structural feed",
+        "magnetic/field components after alloying",
+        "machine stock"
+      ]
+    },
+    {
+      "resource": "carbonaceous water/carbon/minerals",
+      "systems": [
+        "water/process fluid",
+        "carbon functional feed candidates",
+        "electrochemical/chemical stocks after purification"
+      ]
+    },
+    {
+      "resource": "recycled fleet material",
+      "systems": [
+        "replacement structure",
+        "feedstock",
+        "repair patches",
+        "tooling"
+      ]
+    }
+  ],
+  "application_growth": [
+    {
+      "stage": "A",
+      "name": "self/manufacturing",
+      "examples": [
+        "child printers",
+        "toolheads",
+        "refinery parts",
+        "spares"
+      ]
+    },
+    {
+      "stage": "B",
+      "name": "power/comms/logistics",
+      "examples": [
+        "solar arrays",
+        "cabling",
+        "battery banks",
+        "antennas",
+        "relay structures",
+        "depots"
+      ]
+    },
+    {
+      "stage": "C",
+      "name": "Mark/Luke operational hardware",
+      "examples": [
+        "integrated functional bodies",
+        "station/truss/receiving/service elements",
+        "repair/remanufacture"
+      ]
+    },
+    {
+      "stage": "D",
+      "name": "surface/orbital infrastructure",
+      "examples": [
+        "roads",
+        "pads",
+        "berms",
+        "rails/guideways",
+        "habitat support",
+        "science nodes",
+        "transport systems"
+      ]
+    },
+    {
+      "stage": "E",
+      "name": "distributed resilience",
+      "examples": [
+        "planetary-defense sensing/relay/manufacturing support",
+        "public-transport/infrastructure variants",
+        "ecological/terrestrial deployment variants"
+      ]
+    }
+  ],
+  "governance": "End-use design authority remains with the relevant Mark/Luke/infrastructure/safety owner; UTP is a manufacturing capability, not autonomous authority to deploy high-consequence systems."
+}
