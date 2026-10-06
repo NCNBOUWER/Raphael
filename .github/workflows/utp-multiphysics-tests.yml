@@ -1,0 +1,28 @@
+name: UTP Multiphysics Tests
+
+on:
+  pull_request:
+    paths:
+      - "Raphael_Packages/Universal_Tech_Printer/**"
+      - "tests/test_utp_multiphysics_solver.py"
+      - ".github/workflows/utp-multiphysics-tests.yml"
+  push:
+    branches:
+      - "feature/universal-tech-printer-multiphysics-20261006"
+    paths:
+      - "Raphael_Packages/Universal_Tech_Printer/**"
+      - "tests/test_utp_multiphysics_solver.py"
+      - ".github/workflows/utp-multiphysics-tests.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile UTP package
+        run: python -m compileall Raphael_Packages/Universal_Tech_Printer tests/test_utp_multiphysics_solver.py
+      - name: Run UTP tests
+        run: python -m unittest tests.test_utp_multiphysics_solver -v
