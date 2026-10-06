@@ -1,0 +1,164 @@
+{
+  "artifact_id": "UTP-PORTFOLIO-CONVERGENCE-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX Universal Triplet Portfolio Convergence Map",
+  "universal_triplet": [
+    "filespace",
+    "dataspace",
+    "solid-state"
+  ],
+  "portfolio_relations": [
+    {
+      "domain": "Cognigrex/.cgx",
+      "role": "identity/semantic graph/source authority/snapshots/DBR/federation"
+    },
+    {
+      "domain": "LightSpeed",
+      "role": "operator runtime, local orchestration, tool/app/provider integration; bind live runtime rather than duplicate"
+    },
+    {
+      "domain": "Raphael",
+      "role": "equation/solver comparison, observer/closure/falsification layer above conventional domain physics"
+    },
+    {
+      "domain": "Römer-Grex",
+      "role": "research, systems integration, interplanetary supply-chain and UTP/Mark/Luke orchestration"
+    },
+    {
+      "domain": "Eco-Grex",
+      "role": "ecological sensing, cleanup, circular material qualification, contamination/biosecurity gates"
+    },
+    {
+      "domain": "EMASSC",
+      "role": "IP/authority boundary and systems governance per existing canon"
+    },
+    {
+      "domain": "Operations",
+      "role": "mission/logistics/resource/customer/outreach execution and receipts"
+    },
+    {
+      "domain": "Solar Hull",
+      "role": "specialized graded structural/thermal/optical/PV skin application of UTP primitives"
+    },
+    {
+      "domain": "Free Flow",
+      "role": "battery/capacitor/coil/power/field component application of UTP primitives"
+    },
+    {
+      "domain": "RFS/EMFF",
+      "role": "candidate resource beneficiation/field interaction processes, evidence-gated against conventional baselines"
+    },
+    {
+      "domain": "InterSol",
+      "role": "future distributed workforce/service/manufacturing/outpost coordination context"
+    },
+    {
+      "domain": "Socie-Civil / Type-1",
+      "role": "public-benefit, equitable access, infrastructure, governance, workforce and civic deployment context"
+    },
+    {
+      "domain": "Type-2 frontier",
+      "role": "long-horizon energy/material/ecological closure objective; planning only until evidence supports progression"
+    }
+  ],
+  "representative_showcase": [
+    {
+      "id": "SHOW-01",
+      "name": "CGX-native phone-like solid-state object",
+      "demonstrates": [
+        "display",
+        "battery",
+        "antenna",
+        "sensors",
+        "speaker/actuator",
+        "UI",
+        "modest edge compute",
+        "CGX node identity"
+      ],
+      "boundary": "function-equivalent showcase, not iPhone compute-density/performance equivalence"
+    },
+    {
+      "id": "SHOW-02",
+      "name": "Eco-Grex circular sensor/heater",
+      "demonstrates": [
+        "recovered graphene or other qualified circular conductor",
+        "sensor",
+        "heater",
+        "material passport",
+        "recovery loop"
+      ]
+    },
+    {
+      "id": "SHOW-03",
+      "name": "2–3 layer infrastructure coating coupon",
+      "demonstrates": [
+        "base protection",
+        "functional sensing/thermal/optical layer",
+        "top environmental layer"
+      ],
+      "frontier_note": "geospatial/biofeedback/resonant claims require explicit operational definitions and measured mechanism before promotion"
+    },
+    {
+      "id": "SHOW-04",
+      "name": "Printer-mu",
+      "demonstrates": [
+        "self-reproduction",
+        "CGX identity",
+        "same universal function basis at smaller scale",
+        "parent calibration/upgrade"
+      ]
+    },
+    {
+      "id": "SHOW-05",
+      "name": "Roaming UTP pair",
+      "demonstrates": [
+        "shared frame",
+        "local process bubble",
+        "cooperative load/process scheduling",
+        "site-scale construction/repair"
+      ]
+    },
+    {
+      "id": "SHOW-06",
+      "name": "Local-resource outpost bootstrap",
+      "demonstrates": [
+        "resource assay",
+        "beneficiation/refining",
+        "feed passport",
+        "printer replication",
+        "power/comms",
+        "cleanup/stewardship"
+      ]
+    }
+  ],
+  "frontier_scenario": {
+    "id": "SCN-UTP-3MIII-MV-ASSET-NODE",
+    "description": "User-proposed future scenario: three Mark III-class resource acquisition units supported by Mark V tagging/survey assets feed a UTP/resource node that grows local Cognigrex manufacturing and debris/environmental stewardship capability.",
+    "status": "FRONTIER SCENARIO ONLY — does not supersede current Mission-1 canonical hardware/vehicle baseline",
+    "gates": [
+      "Mark III/Mark V physical qualification",
+      "resource-body rights/mission authority",
+      "resource yield and handling evidence",
+      "printer/refinery qualification",
+      "debris/planetary-protection governance",
+      "mission economics/funding"
+    ]
+  },
+  "civilization_path": [
+    "repair/reuse/local production",
+    "regional circular manufacturing and resilient infrastructure",
+    "Type-1-scale energy/material/data coordination",
+    "planetary cleanup/stewardship and off-world resource substitution",
+    "multi-node interplanetary industrial ecology",
+    "Type-2 frontier only after energy/ecological/governance evidence supports it"
+  ],
+  "anti_monopoly_guardrails": [
+    "open/interoperable build/material/passport schemas where safe",
+    "federated node identities and local safe-state operation",
+    "third-party/community/government/business build routes",
+    "right-to-exit/fork and provider substitution",
+    "separate stewardship/assurance from commercial optimization",
+    "public-benefit and ecological metrics alongside throughput/revenue"
+  ]
+}
