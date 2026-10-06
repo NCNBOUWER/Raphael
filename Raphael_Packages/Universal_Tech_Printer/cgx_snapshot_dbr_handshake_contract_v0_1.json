@@ -1,0 +1,171 @@
+{
+  "artifact_id": "UTP-CGX-DBR-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX Physical Node Snapshot / DBR / Handshake Contract",
+  "purpose": "Make a physical UTP or printed solid-state object a programmable, interconnectable .cgx node whose declared capability can be reproduced, compared, repaired and transferred without embedding the whole Cognigrex corpus locally.",
+  "identity_rule": "stable node identity persists across software/model updates; capability and evidence state are versioned snapshots, not identity replacements",
+  "layers": {
+    "C0": "deterministic safety/motion/process control remains local and independently bounded",
+    "C1": "local CGX edge identity/twin/material/evidence/task state",
+    "C2": "Cognigrex/LightSpeed/Raphael federation provides heavy planning, portfolio routing and cross-node reconciliation when connected"
+  },
+  "snapshot_types": [
+    {
+      "id": "SNAP-INTENT",
+      "when": "before compile",
+      "required": [
+        "node_id",
+        "project_id",
+        "catalogue/function refs",
+        "requirements",
+        "local_horizon",
+        "source_authority",
+        "evidence_ceiling"
+      ]
+    },
+    {
+      "id": "SNAP-PLAN",
+      "when": "after compile before actuation",
+      "required": [
+        "geometry_hash",
+        "BOM/feed_hash",
+        "process_DAG_hash",
+        "tool_manifest_hash",
+        "environment_sequence",
+        "energy/thermal budget",
+        "safety envelope",
+        "acceptance tests",
+        "falsifiers"
+      ]
+    },
+    {
+      "id": "SNAP-EXEC",
+      "when": "during execution",
+      "required": [
+        "operation_id",
+        "controller revision",
+        "tool state",
+        "feed lot/passport",
+        "environment state",
+        "telemetry locator",
+        "deviation events"
+      ]
+    },
+    {
+      "id": "SNAP-ASBUILT",
+      "when": "after build",
+      "required": [
+        "as_built_geometry/material state",
+        "electrical/thermal/mechanical/optical/chemical test state as applicable",
+        "uncertainty",
+        "deviations",
+        "repairability/service ports",
+        "residual risks"
+      ]
+    },
+    {
+      "id": "SNAP-SERVICE",
+      "when": "through life",
+      "required": [
+        "inspection",
+        "degradation",
+        "repair",
+        "software revision",
+        "material recovery/recycle history",
+        "capability changes"
+      ]
+    },
+    {
+      "id": "SNAP-HANDOFF",
+      "when": "task/node transfer",
+      "required": [
+        "last_verified_state",
+        "open tasks",
+        "held gates",
+        "authority pointers",
+        "evidence locators",
+        "receiving node ack"
+      ]
+    }
+  ],
+  "dbr_record": {
+    "required": [
+      "dbr_id",
+      "node_id",
+      "snapshot_id",
+      "timestamp",
+      "parent_snapshot_hash",
+      "source_authority_hashes",
+      "capability_manifest_hash",
+      "hardware_revision",
+      "software_revision",
+      "local_horizon_id",
+      "geometry_or_object_refs",
+      "material_passports",
+      "process_receipts",
+      "test_receipts",
+      "uncertainty_state",
+      "gate_state",
+      "supersession_state",
+      "signing_or_integrity_receipt"
+    ],
+    "rule": "DBR records provenance/state transitions; it does not by itself certify physical performance."
+  },
+  "handshake": [
+    {
+      "step": "HELLO",
+      "payload": "identity, revisions, authority roots, network/security class"
+    },
+    {
+      "step": "CAPABILITY",
+      "payload": "qualified functions/tools/materials/environments/metrology with validity envelopes"
+    },
+    {
+      "step": "HORIZON",
+      "payload": "local materials, energy, ecology, governance, gravity/environment, latency and human support"
+    },
+    {
+      "step": "STATE",
+      "payload": "calibration, maintenance, power, feeds, tools, safety and current jobs"
+    },
+    {
+      "step": "TASK_OFFER",
+      "payload": "required function/geometry/evidence/deadline/resource constraints"
+    },
+    {
+      "step": "PLAN_RECEIPT",
+      "payload": "compiled DAG, hashes, expected resource use, acceptance/falsification tests"
+    },
+    {
+      "step": "EXEC_RECEIPT",
+      "payload": "deterministic execution trace + raw evidence locators"
+    },
+    {
+      "step": "VERIFY",
+      "payload": "measured function, uncertainty, residuals and pass/repair/reject state"
+    },
+    {
+      "step": "DBR_COMMIT",
+      "payload": "immutable transition receipt and twin update"
+    },
+    {
+      "step": "HANDOFF",
+      "payload": "bounded state transfer with receiving acknowledgement"
+    }
+  ],
+  "object_identity": {
+    "rule": "printed technology may itself become a .cgx node when persistent state/control/maintenance benefit justifies it; passive parts may instead inherit a parent object's material/process passport",
+    "examples": [
+      "Printer-mu",
+      "roaming UTP",
+      "phone-like functional object",
+      "Mark subsystem",
+      "Eco sensing node",
+      "resource/refinery module",
+      "infrastructure sensor/coating node"
+    ]
+  },
+  "compute_boundary": "Functional equivalence is a graph-of-functions requirement. A phone-equivalent CGX object can distribute display/storage/sensing/comms/control across printed geometry plus modest edge compute/network services; it need not reproduce smartphone SoC density unless that density is itself a requirement.",
+  "safety": "Semantic/AI layers may compile and reason; hard interlocks and hazardous process limits remain deterministic/local."
+}
