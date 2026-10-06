@@ -54,5 +54,20 @@ class UTPObjectPortfolioExtensionTests(unittest.TestCase):
         self.assertIn("no high-voltage plasma", b)
         self.assertIn("no reactive/toxic semiconductor", b)
 
+    def test_planned_printer_node_does_not_claim_physical_readiness(self):
+        d = load("nodes/printer1_planned_node_v0_1.json")
+        self.assertEqual(d["identity_state"], "PLANNED_DIGITAL_NODE / NO_PHYSICAL_MACHINE")
+        self.assertEqual(d["capability_manifest"]["current_physical_qualified_functions"], [])
+        self.assertIn("NOT_ESTABLISHED", d["safety_envelope"])
+
+    def test_printer_handshake_is_schema_only(self):
+        d = load("nodes/printer1_schema_handshake_v0_1.json")
+        self.assertIn("NO_PHYSICAL_ACTUATION", d["mode"])
+        self.assertEqual(d["physical_readiness"], "NOT ESTABLISHED")
+        exec_step = next(x for x in d["steps"] if x["step"] == "EXEC_RECEIPT")
+        verify_step = next(x for x in d["steps"] if x["step"] == "VERIFY")
+        self.assertEqual(exec_step["status"], "NOT_RUN")
+        self.assertEqual(verify_step["status"], "NOT_RUN")
+
 if __name__ == "__main__":
     unittest.main()
