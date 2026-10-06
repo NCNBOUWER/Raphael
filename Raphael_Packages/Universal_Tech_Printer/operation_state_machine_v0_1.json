@@ -1,0 +1,256 @@
+{
+  "artifact_id": "UTP-OPS-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Universal Tech Printer Manufacturing Operation State Machine",
+  "states": [
+    {
+      "id": "O00",
+      "name": "INTENT",
+      "inputs": [
+        "functional requirements",
+        "geometry/evidence context"
+      ],
+      "outputs": [
+        "objective vector",
+        "hard constraints"
+      ]
+    },
+    {
+      "id": "O01",
+      "name": "SOURCE_BIND",
+      "inputs": [
+        "materials",
+        "equations",
+        "device/process sources"
+      ],
+      "outputs": [
+        "source hashes",
+        "authority/evidence ceiling"
+      ],
+      "fail": "HOLD"
+    },
+    {
+      "id": "O02",
+      "name": "DECOMPOSE",
+      "inputs": [
+        "objective vector"
+      ],
+      "outputs": [
+        "recursive BuildNode graph",
+        "ports/interfaces"
+      ]
+    },
+    {
+      "id": "O03",
+      "name": "REGIME_SELECT",
+      "inputs": [
+        "state scales",
+        "dimensionless groups",
+        "device class"
+      ],
+      "outputs": [
+        "active kernels",
+        "solver tier"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "INTERACTION_COMPILE",
+      "inputs": [
+        "nodes",
+        "interfaces",
+        "fields"
+      ],
+      "outputs": [
+        "self/pair graph",
+        "candidate higher-order hyperedges"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "TRADITIONAL_COMPARE",
+      "inputs": [
+        "same requirements"
+      ],
+      "outputs": [
+        "traditional baseline metrics",
+        "hybrid candidate metrics"
+      ],
+      "rule": "no universal score without declared weights"
+    },
+    {
+      "id": "O06",
+      "name": "ENVIRONMENT_ASSIGN",
+      "inputs": [
+        "process chemistry",
+        "gas/pressure",
+        "thermal/contamination limits"
+      ],
+      "outputs": [
+        "ENV-0..4 assignments",
+        "keep-outs"
+      ]
+    },
+    {
+      "id": "O07",
+      "name": "MATERIAL_FEED_SOLVE",
+      "inputs": [
+        "target local composition/function",
+        "feed library",
+        "substrate dilution",
+        "thermal history"
+      ],
+      "outputs": [
+        "feasible feed/process packet"
+      ],
+      "fail": "REJECT_INFEASIBLE"
+    },
+    {
+      "id": "O08",
+      "name": "SCHEDULE",
+      "inputs": [
+        "thermal/chemical/field budgets",
+        "serviceability",
+        "closure dependencies"
+      ],
+      "outputs": [
+        "partial-order build schedule"
+      ]
+    },
+    {
+      "id": "O09",
+      "name": "AGENT_ALLOCATE",
+      "inputs": [
+        "schedule",
+        "tools",
+        "robot states",
+        "local source intake"
+      ],
+      "outputs": [
+        "agent/tool ownership",
+        "common-frame plan"
+      ]
+    },
+    {
+      "id": "O10",
+      "name": "PREVERIFY",
+      "inputs": [
+        "analytic/reduced benchmarks",
+        "simulations",
+        "FMEA",
+        "safety limits"
+      ],
+      "outputs": [
+        "allowed process envelope"
+      ],
+      "fail": "HOLD"
+    },
+    {
+      "id": "O11",
+      "name": "EXECUTE_REGION",
+      "inputs": [
+        "deterministic machine packet"
+      ],
+      "outputs": [
+        "deposited/inserted/processed region",
+        "raw telemetry"
+      ],
+      "controller": "local deterministic"
+    },
+    {
+      "id": "O12",
+      "name": "INSPECT",
+      "inputs": [
+        "raw telemetry",
+        "metrology/NDE/electrical/chemical/leak data"
+      ],
+      "outputs": [
+        "measured state",
+        "residual map"
+      ]
+    },
+    {
+      "id": "O13",
+      "name": "ORDER_GATE",
+      "inputs": [
+        "pair prediction",
+        "measured/high-fidelity state"
+      ],
+      "outputs": [
+        "PASS_PAIR|PROMOTE_HIGHER_ORDER|REJECT_MODEL|REQUEST_EVIDENCE"
+      ]
+    },
+    {
+      "id": "O14",
+      "name": "REPAIR_OR_CONTINUE",
+      "inputs": [
+        "acceptance state"
+      ],
+      "outputs": [
+        "repair packet|next region|reject article"
+      ]
+    },
+    {
+      "id": "O15",
+      "name": "CAVITY_CLOSE",
+      "inputs": [
+        "preclosure test",
+        "gas/fill/evacuation state",
+        "seal process"
+      ],
+      "outputs": [
+        "sealed cavity receipt"
+      ],
+      "only_if": [
+        "all buried functions pretested"
+      ]
+    },
+    {
+      "id": "O16",
+      "name": "FINAL_VERIFY",
+      "inputs": [
+        "full article state"
+      ],
+      "outputs": [
+        "bounded acceptance evidence",
+        "remaining gates"
+      ]
+    },
+    {
+      "id": "O17",
+      "name": "CGX_EMIT",
+      "inputs": [
+        "geometry/process/raw evidence/model state"
+      ],
+      "outputs": [
+        "filespace manifest",
+        "dataspace state",
+        "digital twin delta"
+      ]
+    },
+    {
+      "id": "O18",
+      "name": "LIFECYCLE",
+      "inputs": [
+        "service/recovery/recycle plan"
+      ],
+      "outputs": [
+        "inspection/service/recovery state"
+      ]
+    }
+  ],
+  "recursive_rule": "O02..O16 may execute recursively for child BuildNodes before parent closure",
+  "macro_rule": "multiple agents may execute O11 concurrently only when global thermal/field/vibration/contamination/collision constraints permit",
+  "local_source_rule": "roaming agents may characterize/refine local source material, but material authority begins at assay/passport and qualified process window, not source identity",
+  "runtime_boundary": "Cognigrex/Raphael plans, compares and updates evidence; deterministic local controllers own robot/laser/arc/HV/current/pressure/thermal/chemical safety",
+  "stop_conditions": [
+    "unknown source authority",
+    "infeasible composition/process",
+    "thermal budget violation",
+    "unsafe environment",
+    "unbounded interaction residual",
+    "failed leak/electrical/NDE test",
+    "out-of-distribution controller state"
+  ]
+}
