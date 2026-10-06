@@ -1,0 +1,85 @@
+{
+  "artifact_id": "UTP-AI-HELPER-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX Build Helper / DIY-to-Government Interface",
+  "surfaces": [
+    {
+      "id": "S-DIY",
+      "audience": "individual/maker/school",
+      "mode": "guided build + simple language + mandatory safety/skill/tool checks"
+    },
+    {
+      "id": "S-SME",
+      "audience": "small business",
+      "mode": "cost/BOM/throughput/maintenance/quality workflow"
+    },
+    {
+      "id": "S-INDUSTRY",
+      "audience": "industrial operator",
+      "mode": "process capability, QA, traceability, integration and production scheduling"
+    },
+    {
+      "id": "S-GOV",
+      "audience": "government/municipal/infrastructure",
+      "mode": "requirements, compliance, public-benefit, procurement evidence and lifecycle"
+    },
+    {
+      "id": "S-RESEARCH",
+      "audience": "university/lab",
+      "mode": "experimental design, uncertainty, falsifiers, datasets and publication-ready provenance"
+    },
+    {
+      "id": "S-ECO",
+      "audience": "cleanup/nonprofit/community",
+      "mode": "local-material assessment, ecological gates, volunteer-safe tasks and public education"
+    },
+    {
+      "id": "S-OUTPOST",
+      "audience": "InterSol/remote/space operations",
+      "mode": "resource inventory, seed dependence, repair/reproduction and latency-tolerant procedures"
+    }
+  ],
+  "interaction_flow": [
+    "state desired function/outcome",
+    "identify local horizon and available printer/tools/materials",
+    "select catalogue item or decompose novel function into primitives",
+    "show evidence/readiness and seed dependencies before build",
+    "choose objectives: low-cost / local-only / eco-first / lightweight / repairable / precision / throughput",
+    "generate candidate geometry/material/process DAG",
+    "run compatibility/safety/evidence gates",
+    "emit build packet + DIY assembly packet + test packet",
+    "compile machine-executable job only after gates pass",
+    "inspect and compare expected vs measured",
+    "write snapshot/DBR receipt and update node capability if independently justified"
+  ],
+  "build_packet_schema": [
+    "project_id",
+    "cgx_node_id",
+    "catalogue_refs",
+    "geometry_refs",
+    "BOM/feed refs",
+    "material basis and units",
+    "process operations",
+    "environment sequence",
+    "tool sequence",
+    "energy/thermal budgets",
+    "dependency graph",
+    "safety requirements",
+    "evidence ceiling",
+    "acceptance/falsification tests",
+    "repair/recycle plan",
+    "provenance hashes"
+  ],
+  "AI_boundary": [
+    "helper may plan, explain, compare and compile",
+    "hard machine interlocks remain deterministic/local",
+    "hazardous/high-energy/high-pressure/reactive chemistry routes require qualified module and appropriate competent review",
+    "unknown/unsupported material substitutions are surfaced as experiments, not silently accepted"
+  ],
+  "portfolio_delivery_model": {
+    "status": "candidate organizational pattern, not incorporated governance",
+    "pattern": "small accountable professional core + paid/benefit-bearing contributors and volunteers for bounded safe work + research/education/community partners",
+    "rule": "legal, employment, insurance, volunteer, IP, export-control and public-safety requirements remain jurisdiction-specific"
+  }
+}
