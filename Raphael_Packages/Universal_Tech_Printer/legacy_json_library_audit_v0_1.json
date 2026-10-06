@@ -1,0 +1,168 @@
+{
+  "artifact_id": "UTP-RAPHAEL-JSON-AUDIT-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "source_folder_id": "1Al3PinRcb8_vJKr5i4VrTS2Ci0wBKgPS",
+  "rule": "source bytes remain immutable; runtime adapter may produce normalized derivatives only with source hash + transformation receipt",
+  "files": [
+    {
+      "name": "constants.json",
+      "sha256": "4adee03d3fd1c08f41ca4b8073a4ac1a6562eaa66f82ef3acd62b355f18b7907",
+      "strict_json": "FAIL",
+      "issue": "C-style comments, e.g. /* === SI-defining === */",
+      "runtime_state": "SOURCE_ONLY / NORMALIZATION_REQUIRED"
+    },
+    {
+      "name": "atomic.json",
+      "sha256": "9a5f7da4822f90a4961b4465e371163b18ea2e4d7bba28fa72e89c23448b9093",
+      "strict_json": "FAIL",
+      "issue": "non-JSON unary-plus numeric literals in arrays, e.g. [+3,+5]",
+      "runtime_state": "SOURCE_ONLY / NORMALIZATION_REQUIRED"
+    },
+    {
+      "name": "molecular.json",
+      "sha256": "4ed69cb6f2074aea4be86aa84beb014a887e78ef20d7eaf337330070328adfe4",
+      "strict_json": "PASS",
+      "top_keys": [
+        "meta",
+        "schema",
+        "species",
+        "external_references"
+      ],
+      "runtime_state": "SCHEMA/CONTENT VALIDATION STILL REQUIRED"
+    },
+    {
+      "name": "relative.json",
+      "sha256": "2e74e473723d9dff30c96f2eb56912e83b8ded59b02ffa236aa74299814ffa5e",
+      "strict_json": "PASS",
+      "top_keys": [
+        "meta",
+        "schema",
+        "media",
+        "derived",
+        "functions",
+        "drag",
+        "transport",
+        "atmo_models",
+        "water_EOS",
+        "terrain",
+        "limitations",
+        "external_references"
+      ],
+      "runtime_state": "CANDIDATE ADAPTER SOURCE"
+    },
+    {
+      "name": "planetary.json",
+      "sha256": "c76818f4330b980fc0f719bb9b61562daa14aed2340c56451cd2d39ca2ab81e7",
+      "strict_json": "FAIL",
+      "issue": "multiple top-level JSON objects concatenated; second object begins after first close",
+      "runtime_state": "SOURCE_ONLY / DOCUMENT-SPLIT REQUIRED"
+    },
+    {
+      "name": "stellar.json",
+      "sha256": "89dc124148498ea6c2b8e42910423cb119bf6a936b8669d29a4cff56d7784b72",
+      "strict_json": "PASS",
+      "runtime_state": "SCHEMA/CONTENT VALIDATION STILL REQUIRED"
+    },
+    {
+      "name": "cosmic.json",
+      "sha256": "b0e01cfb381dde8d342672c86bac4281621f51dfb7b3dce6315845df1c857f47",
+      "strict_json": "PASS",
+      "runtime_state": "SCHEMA/CONTENT VALIDATION STILL REQUIRED"
+    },
+    {
+      "name": "galactic.json",
+      "sha256": "85b799d7d8858d80df1688d4a6e1f656b97656c23d91ca525981ccf4cbfb992c",
+      "strict_json": "PASS",
+      "runtime_state": "SCHEMA/CONTENT VALIDATION STILL REQUIRED"
+    },
+    {
+      "name": "quantum.json",
+      "sha256": "87f93fc9872467496e623683f1abb017d639c959866a85f7e0f676d2eb312ce8",
+      "strict_json": "FAIL",
+      "issue": "JavaScript expressions inside JSON values, e.g. Math.sqrt(...)",
+      "runtime_state": "SOURCE_ONLY / EXPRESSION NORMALIZATION REQUIRED"
+    },
+    {
+      "name": "consolidating.json",
+      "sha256": "0f24b61418ab35f2de5103608d80344b6a843e02ba2d7e3d70349685895a923a",
+      "strict_json": "PASS",
+      "top_keys": [
+        "meta",
+        "math_primitives",
+        "fields",
+        "equations",
+        "numerics",
+        "io_contracts",
+        "presets",
+        "redundant_inclusions"
+      ],
+      "runtime_state": "ARCHITECTURE SOURCE / EQUATION-LEVEL VALIDATION REQUIRED"
+    }
+  ],
+  "observed_consolidating_content": {
+    "fluid": [
+      "continuity",
+      "momentum",
+      "energy"
+    ],
+    "field_families": [
+      "quantum_wavefunction",
+      "qg_term",
+      "coherence_4D",
+      "expansive_5D",
+      "electromagnetism",
+      "fluid",
+      "gravity",
+      "radiative",
+      "thermodynamics",
+      "particles"
+    ],
+    "numerics": [
+      "FD",
+      "FV",
+      "FEM",
+      "Spectral",
+      "RK",
+      "Magnus",
+      "Symplectic",
+      "AMR",
+      "CG",
+      "GMRES"
+    ],
+    "warning": "manifest enumerates solver families; it does not prove a complete validated implementation of each solver"
+  },
+  "observed_relative_content": {
+    "fluid_functions": [
+      "speed_of_sound",
+      "ideal_air_density",
+      "Sutherland viscosity",
+      "water Andrade viscosity",
+      "Reynolds number",
+      "quadratic drag",
+      "Stokes drag",
+      "terminal settling",
+      "sphere Cd correlation",
+      "flat-plate friction"
+    ],
+    "transport": [
+      "gas diffusion",
+      "Sherwood correlations",
+      "Dittus-Boelter",
+      "Sieder-Tate"
+    ],
+    "limitations": [
+      "continuum/Knudsen limit",
+      "correlation validity",
+      "roughness/contamination/compressibility",
+      "regime limits"
+    ]
+  },
+  "next_actions": [
+    "write lossless normalization receipts for the four non-strict files",
+    "validate units/symbols/references against canonical equations manifest",
+    "cross-check duplicate/contradictory records across libraries",
+    "bind each usable function to UTP kernel + validity envelope",
+    "retain unverified/source-only expressions as non-executable"
+  ]
+}
