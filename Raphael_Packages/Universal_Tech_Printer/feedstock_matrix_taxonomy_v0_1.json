@@ -1,0 +1,246 @@
+{
+  "artifact_id": "UTP-FEEDS-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Post-Mix Feed / Functional Matrix Taxonomy",
+  "parameterization": {
+    "base_variables": [
+      "matrix material",
+      "functional filler family",
+      "filler volume or mass fraction",
+      "particle/fibre aspect ratio",
+      "binder/solvent fraction",
+      "viscosity/shear response",
+      "cure mechanism",
+      "thermal budget",
+      "electrical/thermal/optical target",
+      "substrate compatibility"
+    ],
+    "concentration_policy": "store formulations as bounded sweep variables and validated windows, not universal recipes",
+    "generic_sweep_bands_vol_fraction": [
+      {
+        "id": "F0",
+        "band": "0–5 vol%",
+        "role": "neat matrix / trace additive / rheology modifier"
+      },
+      {
+        "id": "F1",
+        "band": "5–15 vol%",
+        "role": "light functional loading / onset studies"
+      },
+      {
+        "id": "F2",
+        "band": "15–30 vol%",
+        "role": "intermediate functional composite"
+      },
+      {
+        "id": "F3",
+        "band": "30–50 vol%",
+        "role": "high-solids functional composite where rheology permits"
+      },
+      {
+        "id": "F4",
+        "band": ">50 vol%",
+        "role": "paste/high-packing system; separately qualify extrusion, voids, percolation and cure"
+      }
+    ],
+    "warning": "mass % and volume % are not interchangeable; every material record must identify basis and densities"
+  },
+  "feed_families": [
+    {
+      "id": "FM-STRUCT-POLY",
+      "matrix": [
+        "thermoplastic",
+        "thermoset/UV resin",
+        "silicone/elastomer"
+      ],
+      "fillers": [
+        "short fibre",
+        "mineral/ceramic",
+        "hollow/cellular"
+      ],
+      "functions": [
+        "structure",
+        "flexure",
+        "sealing",
+        "sacrificial support"
+      ],
+      "baseline": "yes"
+    },
+    {
+      "id": "FM-COND-METAL",
+      "matrix": [
+        "printable binder/vehicle"
+      ],
+      "fillers": [
+        "silver/copper/other qualified conductive metal"
+      ],
+      "functions": [
+        "conductors",
+        "electrodes",
+        "pads",
+        "antennas"
+      ],
+      "baseline": "yes",
+      "postprocess": [
+        "thermal/photonic/local sinter"
+      ]
+    },
+    {
+      "id": "FM-COND-CARBON",
+      "matrix": [
+        "polymer/ink binder"
+      ],
+      "fillers": [
+        "graphite",
+        "carbon black",
+        "graphene-family qualified forms"
+      ],
+      "functions": [
+        "resistor",
+        "heater",
+        "ESD",
+        "sensor electrode",
+        "conductive composite"
+      ],
+      "baseline": "yes"
+    },
+    {
+      "id": "FM-DIEL",
+      "matrix": [
+        "polymer",
+        "ceramic-filled polymer",
+        "glass/ceramic paste"
+      ],
+      "fillers": [
+        "silica/alumina/BN or other qualified insulating filler"
+      ],
+      "functions": [
+        "dielectric",
+        "insulation",
+        "gas/chemical barrier",
+        "thermal tuning"
+      ],
+      "baseline": "yes"
+    },
+    {
+      "id": "FM-THERM",
+      "matrix": [
+        "polymer/ceramic carrier"
+      ],
+      "fillers": [
+        "alumina",
+        "boron nitride",
+        "other electrically insulating thermal filler"
+      ],
+      "functions": [
+        "heat spreader",
+        "thermal via",
+        "insulating heat path"
+      ],
+      "baseline": "yes"
+    },
+    {
+      "id": "FM-MAG",
+      "matrix": [
+        "polymer/ceramic carrier"
+      ],
+      "fillers": [
+        "ferrite or qualified magnetic powder"
+      ],
+      "functions": [
+        "inductor core",
+        "magnetic sensor/actuator region",
+        "EMI component"
+      ],
+      "baseline": "later"
+    },
+    {
+      "id": "FM-OPT",
+      "matrix": [
+        "transparent/opaque binder",
+        "glass/ceramic carrier"
+      ],
+      "fillers": [
+        "phosphor",
+        "pigment",
+        "scattering particles"
+      ],
+      "functions": [
+        "RGB conversion",
+        "reflector",
+        "diffuser",
+        "absorber"
+      ],
+      "baseline": "yes for low-risk optical formulations"
+    },
+    {
+      "id": "FM-ELECTRODE",
+      "matrix": [
+        "printable binder"
+      ],
+      "fillers": [
+        "electrochemically active material + conductor"
+      ],
+      "functions": [
+        "battery/supercapacitor electrode"
+      ],
+      "baseline": "specialist"
+    },
+    {
+      "id": "FM-ELECTROLYTE",
+      "matrix": [
+        "gel/polymer/solid ion conductor"
+      ],
+      "fillers": [
+        "material-specific salt/ceramic phase"
+      ],
+      "functions": [
+        "ionic transport"
+      ],
+      "baseline": "specialist and sealed"
+    },
+    {
+      "id": "FM-SEMI",
+      "matrix": [
+        "material-specific printable semiconductor carrier"
+      ],
+      "fillers": [
+        "oxide/organic/other validated semiconductor system"
+      ],
+      "functions": [
+        "thin-film transistor/photodiode/PV"
+      ],
+      "baseline": "specialist; not generic"
+    },
+    {
+      "id": "FM-SACRIFICIAL",
+      "matrix": [
+        "water/solvent/thermal removable support or mechanically removed material"
+      ],
+      "fillers": [],
+      "functions": [
+        "temporary cavity",
+        "channel",
+        "overhang",
+        "internal mandrel"
+      ],
+      "baseline": "yes after compatibility test"
+    }
+  ],
+  "process_variables": [
+    "nozzle diameter / deposition width",
+    "layer thickness",
+    "feed pressure/flow",
+    "arm velocity/acceleration",
+    "mix ratio and mixing residence time",
+    "substrate temperature",
+    "local gas composition/pressure",
+    "UV/visible/IR/laser dose or thermal profile",
+    "mechanical strain/preload during cure",
+    "interlayer delay",
+    "surface activation/roughness",
+    "post-cure/sinter condition",
+    "inspection acceptance before burial"
+  ]
+}
