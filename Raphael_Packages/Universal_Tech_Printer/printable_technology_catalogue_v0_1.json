@@ -1,0 +1,2548 @@
+{
+  "artifact_id": "UTP-CATALOGUE-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Solid-State Printable Technology Catalogue — Umbrella-Class Plan",
+  "scope_note": "Complete at umbrella/function-class planning level; not an exhaustive chemistry/SKU/device-design library. Every class expands into material- and geometry-specific recipes with independent evidence.",
+  "evidence_scale": {
+    "E0": "concept/corpus hypothesis",
+    "E1": "external analogue or bounded source evidence",
+    "E2": "digital/analytic or established manufacturing primitive evidence",
+    "E3": "bench/known component-family evidence",
+    "E4": "integrated prototype evidence required",
+    "E5": "qualified operational evidence required"
+  },
+  "diy_levels": {
+    "L1": "basic safe maker/education",
+    "L2": "maker with measurement and supervised process",
+    "L3": "advanced workshop / trained operator",
+    "L4": "specialist lab / engineering controls",
+    "L5": "professional multidisciplinary / regulated or high-consequence system"
+  },
+  "items": [
+    {
+      "id": "PT-001",
+      "category": "Structure",
+      "name": "Beam / lattice / shell",
+      "functions": [
+        "load path",
+        "enclosure"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "MINERAL",
+        "METAL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "topology/section/lattice density",
+      "compute": "none",
+      "diy": "L1",
+      "horizons": [
+        "TERR",
+        "ORBIT",
+        "LUNAR",
+        "MARS",
+        "ASTEROID"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "Mark",
+        "Luke",
+        "infrastructure"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-002",
+      "category": "Structure",
+      "name": "Compliant flexure / spring",
+      "functions": [
+        "elastic return",
+        "joint"
+      ],
+      "ops": [
+        "ADD",
+        "STRETCH_PRELOAD",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "METAL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "beam thickness/length/preload",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "TERR",
+        "ORBIT"
+      ],
+      "evidence": "E1",
+      "status": "G1",
+      "links": [
+        "printer",
+        "robotics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-003",
+      "category": "Mechanism",
+      "name": "Gear / cam / pulley",
+      "functions": [
+        "transmission",
+        "timing"
+      ],
+      "ops": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "METAL"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "tooth/profile geometry",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "TERR",
+        "LUNAR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "printer",
+        "robotics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-004",
+      "category": "Mechanism",
+      "name": "Bearing/bushing interface",
+      "functions": [
+        "rotation",
+        "low-friction support"
+      ],
+      "ops": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "INFILTRATE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "METAL",
+        "LUBRICANT-SEED"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "clearance/surface finish",
+      "compute": "none",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "ORBIT",
+        "LUNAR"
+      ],
+      "evidence": "E1",
+      "status": "G1-SEED",
+      "links": [
+        "printer",
+        "roaming"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-005",
+      "category": "Boundary",
+      "name": "Seal / gasket",
+      "functions": [
+        "fluid seal",
+        "gas seal",
+        "dust barrier"
+      ],
+      "ops": [
+        "ADD",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "ELASTOMER",
+        "DIEL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "compression profile/contact",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "chamber",
+        "battery",
+        "Mark"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-006",
+      "category": "Boundary",
+      "name": "Pressure/vacuum cavity",
+      "functions": [
+        "gas cell",
+        "vacuum gap",
+        "pressure reservoir"
+      ],
+      "ops": [
+        "ADD",
+        "EVACUATE",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "DIEL",
+        "METAL"
+      ],
+      "env": [
+        "REDUCED-P",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "wall/cavity/port geometry",
+      "compute": "low",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "ORBIT",
+        "LUNAR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "RGB",
+        "battery",
+        "thermal"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-007",
+      "category": "Fluidics",
+      "name": "Fluid/gas manifold",
+      "functions": [
+        "routing",
+        "mixing",
+        "cooling",
+        "process gas"
+      ],
+      "ops": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "FILL",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "METAL",
+        "DIEL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "channel network",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "printer",
+        "Mark",
+        "Eco"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-008",
+      "category": "Thermal",
+      "name": "Heat spreader / radiator",
+      "functions": [
+        "heat transport",
+        "radiation"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "THERM",
+        "METAL",
+        "CARBON"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "area/thickness/fins",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "electronics",
+        "Solar Hull",
+        "Luke"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-009",
+      "category": "Thermal",
+      "name": "Thermal insulation / break",
+      "functions": [
+        "thermal isolation"
+      ],
+      "ops": [
+        "ADD",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "DIEL",
+        "POROUS/MINERAL"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "porosity/thickness/voids",
+      "compute": "none",
+      "diy": "L1",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "battery",
+        "habitat",
+        "printer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-010",
+      "category": "Shielding",
+      "name": "EMI / optical / dust shield",
+      "functions": [
+        "shielding",
+        "surface protection"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "CARBON",
+        "MINERAL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "mesh/layer/skin",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E1",
+      "status": "G1",
+      "links": [
+        "electronics",
+        "Mark",
+        "infrastructure"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-011",
+      "category": "Electrical",
+      "name": "Conductor / bus / trace",
+      "functions": [
+        "power",
+        "signal",
+        "electrode"
+      ],
+      "ops": [
+        "ADD",
+        "MIX",
+        "DILUTE",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "COND-CARBON",
+        "WIRE"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "cross-section/path",
+      "compute": "none",
+      "diy": "L1",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "all electronics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-012",
+      "category": "Electrical",
+      "name": "Resistor / heater",
+      "functions": [
+        "resistance",
+        "heating"
+      ],
+      "ops": [
+        "ADD",
+        "MIX",
+        "GRADIENT",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-CARBON",
+        "RESISTIVE-METAL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "length/area/composition",
+      "compute": "low",
+      "diy": "L1",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "sensors",
+        "thermal",
+        "process"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-013",
+      "category": "Electrical",
+      "name": "Capacitor",
+      "functions": [
+        "charge storage",
+        "filtering",
+        "timing"
+      ],
+      "ops": [
+        "ADD",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "DIEL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "electrode area/gap/layers",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "electronics",
+        "Free Flow"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-014",
+      "category": "Electrical",
+      "name": "Inductor / transformer / coil",
+      "functions": [
+        "inductance",
+        "field",
+        "power conversion"
+      ],
+      "ops": [
+        "ADD",
+        "WIRE",
+        "POLARIZE_MAGNETIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "MAG"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "turns/core/spacing",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "Free Flow",
+        "RFS/EMFF",
+        "motors"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-015",
+      "category": "RF",
+      "name": "Antenna / transmission line / resonator",
+      "functions": [
+        "receive",
+        "transmit",
+        "couple",
+        "sense"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "DIEL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "electromagnetic topology",
+      "compute": "moderate",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "comms",
+        "RFID",
+        "Mark"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-016",
+      "category": "Electrical",
+      "name": "Contact / connector / pad",
+      "functions": [
+        "service connection",
+        "chip attach"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "contact geometry/surface",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "hybrid electronics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-017",
+      "category": "Protection",
+      "name": "Printed fuse / current limiter",
+      "functions": [
+        "fault isolation"
+      ],
+      "ops": [
+        "ADD",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "RESISTIVE"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "neck/path geometry",
+      "compute": "low",
+      "diy": "L3",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "G1-R&D",
+      "links": [
+        "power"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-018",
+      "category": "Sensor",
+      "name": "Temperature sensor",
+      "functions": [
+        "temperature"
+      ],
+      "ops": [
+        "ADD",
+        "TEST"
+      ],
+      "feeds": [
+        "RESISTIVE",
+        "SEMI-SEED"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "resistive junction geometry",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "printer",
+        "Eco",
+        "Mark"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-019",
+      "category": "Sensor",
+      "name": "Strain / force sensor",
+      "functions": [
+        "strain",
+        "load"
+      ],
+      "ops": [
+        "ADD",
+        "STRETCH_PRELOAD",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-CARBON",
+        "RESISTIVE"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "serpentine/gauge geometry",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "structural health"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-020",
+      "category": "Sensor",
+      "name": "Pressure / capacitive sensor",
+      "functions": [
+        "pressure",
+        "touch"
+      ],
+      "ops": [
+        "ADD",
+        "SEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "DIEL",
+        "ELASTOMER"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "membrane/capacitor geometry",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "TERR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "UI",
+        "fluidics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-021",
+      "category": "Sensor",
+      "name": "Humidity / gas sensor",
+      "functions": [
+        "humidity",
+        "gas indicator"
+      ],
+      "ops": [
+        "ADD",
+        "FUNCTIONALIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "CARBON",
+        "SEMI/ACTIVE-SEED"
+      ],
+      "env": [
+        "AIR",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "exposed functional area",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "MARS"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Eco",
+        "habitat"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-022",
+      "category": "Sensor",
+      "name": "Electrochemical water-quality sensor",
+      "functions": [
+        "conductivity",
+        "electrochemical analyte sensing"
+      ],
+      "ops": [
+        "ADD",
+        "FUNCTIONALIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "GRAPHENE",
+        "COND-METAL",
+        "CHEM-SEED"
+      ],
+      "env": [
+        "WET-LOCAL"
+      ],
+      "geometry": "electrode geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "OCEAN"
+      ],
+      "evidence": "E2",
+      "status": "G1-ECO",
+      "links": [
+        "Eco-Grex"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-023",
+      "category": "Sensor",
+      "name": "Optical / photodetector interface",
+      "functions": [
+        "light sensing"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "SEMI-SEED",
+        "COND-METAL"
+      ],
+      "env": [
+        "DRY-INERT",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "junction/optical window",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "comms",
+        "Solar Hull"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-024",
+      "category": "Sensor",
+      "name": "Magnetic / field sensor interface",
+      "functions": [
+        "field sensing"
+      ],
+      "ops": [
+        "ADD",
+        "POLARIZE_MAGNETIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "MAG",
+        "COND",
+        "SEMI-SEED"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "coil/core/sensor geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "RFS/EMFF"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-025",
+      "category": "Actuator",
+      "name": "Solenoid",
+      "functions": [
+        "linear actuation",
+        "valve"
+      ],
+      "ops": [
+        "ADD",
+        "WIRE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "MAG",
+        "STRUCT"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "coil/core/plunger",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "printer",
+        "Mark"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-026",
+      "category": "Actuator",
+      "name": "Motor / stator-rotor assembly",
+      "functions": [
+        "rotation"
+      ],
+      "ops": [
+        "ADD",
+        "WIRE",
+        "POLARIZE_MAGNETIZE",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "MAG",
+        "STRUCT"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "pole/coil/bearing geometry",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR",
+        "LUNAR"
+      ],
+      "evidence": "E1",
+      "status": "G1-SEED",
+      "links": [
+        "printer",
+        "roaming"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-027",
+      "category": "Actuator",
+      "name": "Voice-coil / linear EM actuator",
+      "functions": [
+        "precision motion"
+      ],
+      "ops": [
+        "ADD",
+        "WIRE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-METAL",
+        "MAG"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "coil/gap geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "micro-printer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-028",
+      "category": "Actuator",
+      "name": "Pneumatic / hydraulic actuator",
+      "functions": [
+        "linear/rotary motion"
+      ],
+      "ops": [
+        "ADD",
+        "SEAL",
+        "FILL",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "ELASTOMER",
+        "METAL"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "chamber/piston/channel geometry",
+      "compute": "low",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "macro printers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-029",
+      "category": "Actuator",
+      "name": "Compliant / electrothermal actuator",
+      "functions": [
+        "small motion"
+      ],
+      "ops": [
+        "ADD",
+        "STRETCH_PRELOAD",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT-POLY",
+        "RESISTIVE"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "flexure/heater geometry",
+      "compute": "low",
+      "diy": "L3",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "micro robotics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-030",
+      "category": "Actuator",
+      "name": "Piezo / dielectric-elastomer actuator",
+      "functions": [
+        "fine motion"
+      ],
+      "ops": [
+        "ADD",
+        "POLARIZE_MAGNETIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "SPECIALTY-ACTIVE"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "electrode/active-layer geometry",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "FRONTIER",
+      "links": [
+        "micro robotics"
+      ],
+      "notes": "material-specific qualification required"
+    },
+    {
+      "id": "PT-031",
+      "category": "Energy",
+      "name": "Battery cell",
+      "functions": [
+        "energy storage"
+      ],
+      "ops": [
+        "ADD",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "ELECTRODE",
+        "ELECTROLYTE",
+        "DIEL",
+        "COND"
+      ],
+      "env": [
+        "DRY-INERT",
+        "WET-LOCAL"
+      ],
+      "geometry": "layer/cavity/current collector",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "Free Flow",
+        "printer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-032",
+      "category": "Energy",
+      "name": "Supercapacitor",
+      "functions": [
+        "power buffering",
+        "energy storage"
+      ],
+      "ops": [
+        "ADD",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "CARBON/GRAPHENE",
+        "ELECTROLYTE",
+        "COND"
+      ],
+      "env": [
+        "DRY-INERT",
+        "WET-LOCAL"
+      ],
+      "geometry": "high-area electrode/separator",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E1",
+      "status": "G1-R&D",
+      "links": [
+        "Free Flow"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-033",
+      "category": "Energy",
+      "name": "Photovoltaic layer/device",
+      "functions": [
+        "power generation"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "CURE",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "SEMI",
+        "COND",
+        "OPT"
+      ],
+      "env": [
+        "DRY-INERT",
+        "REDUCED-P",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "junction/layer/optical geometry",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR",
+        "ORBIT",
+        "LUNAR",
+        "MARS"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Solar Hull"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-034",
+      "category": "Energy",
+      "name": "Inductive power transfer",
+      "functions": [
+        "wireless power"
+      ],
+      "ops": [
+        "ADD",
+        "WIRE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND",
+        "MAG",
+        "DIEL"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "coupled coils",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "printer docking"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-035",
+      "category": "Energy",
+      "name": "Thermoelectric generator/cooler",
+      "functions": [
+        "heat-to-electric",
+        "thermal pumping"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "SPECIALTY-TE"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "junction array",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR",
+        "SPACE"
+      ],
+      "evidence": "E1",
+      "status": "FRONTIER",
+      "links": [
+        "thermal"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-036",
+      "category": "Display",
+      "name": "RGB gas-discharge pixel",
+      "functions": [
+        "RGB emission",
+        "display"
+      ],
+      "ops": [
+        "ADD",
+        "FILL",
+        "EVACUATE",
+        "SEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "COND",
+        "DIEL",
+        "PHOSPHOR",
+        "NOBLE-GAS"
+      ],
+      "env": [
+        "NOBLE-LOCAL"
+      ],
+      "geometry": "electrode/cavity/phosphor geometry",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR",
+        "SPACE"
+      ],
+      "evidence": "E1",
+      "status": "G1-R&D",
+      "links": [
+        "UI",
+        "beacons"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-037",
+      "category": "Display",
+      "name": "Electroluminescent thin-film element",
+      "functions": [
+        "light emission"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "EL-MATERIAL",
+        "COND",
+        "DIEL"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "layer geometry",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "UI"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-038",
+      "category": "Display",
+      "name": "Hybrid semiconductor LED",
+      "functions": [
+        "light emission"
+      ],
+      "ops": [
+        "ADD",
+        "PICK_PLACE",
+        "TEST"
+      ],
+      "feeds": [
+        "LED-SEED",
+        "COND",
+        "OPT"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "thermal/optical/contact geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E3",
+      "status": "G1-SEED",
+      "links": [
+        "UI",
+        "lighting"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-039",
+      "category": "Optics",
+      "name": "Waveguide / diffuser / reflector",
+      "functions": [
+        "route/shape light"
+      ],
+      "ops": [
+        "ADD",
+        "CURE",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "OPT",
+        "DIEL"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "index/roughness/topology",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "display",
+        "sensing"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-040",
+      "category": "Compute",
+      "name": "Printed thin-film transistor / active switch",
+      "functions": [
+        "switch",
+        "amplify"
+      ],
+      "ops": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "FUNCTIONALIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "SEMI",
+        "COND",
+        "DIEL"
+      ],
+      "env": [
+        "DRY-INERT",
+        "REDUCED-P",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "gate/channel/contact geometry",
+      "compute": "moderate",
+      "diy": "L5",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "G1-R&D",
+      "links": [
+        "control"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-041",
+      "category": "Compute",
+      "name": "Printed simple logic / oscillator",
+      "functions": [
+        "logic",
+        "timing"
+      ],
+      "ops": [
+        "ADD",
+        "TEST"
+      ],
+      "feeds": [
+        "PT-040 stack",
+        "R/C"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "circuit topology",
+      "compute": "moderate",
+      "diy": "L5",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E0",
+      "status": "FRONTIER",
+      "links": [
+        "child printer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-042",
+      "category": "Compute",
+      "name": "Printed memory candidate",
+      "functions": [
+        "state storage"
+      ],
+      "ops": [
+        "ADD",
+        "FUNCTIONALIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "SPECIALTY-SEMI/MEMRISTIVE"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "cell array",
+      "compute": "moderate",
+      "diy": "L5",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E0",
+      "status": "FRONTIER",
+      "links": [
+        "control"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-043",
+      "category": "Compute",
+      "name": "Hybrid compute island",
+      "functions": [
+        "dense compute",
+        "networking",
+        "security"
+      ],
+      "ops": [
+        "ADD",
+        "PICK_PLACE",
+        "WIRE/ATTACH",
+        "TEST"
+      ],
+      "feeds": [
+        "SEED-DIE",
+        "COND",
+        "DIEL",
+        "THERM"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "chip nest/interconnect/thermal path",
+      "compute": "high",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E3",
+      "status": "G1-SEED",
+      "links": [
+        "CGX node",
+        "LightSpeed"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-044",
+      "category": "Comms",
+      "name": "RFID / NFC identity node",
+      "functions": [
+        "identity",
+        "short-range communication",
+        "sensing"
+      ],
+      "ops": [
+        "ADD",
+        "PICK_PLACE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND",
+        "DIEL",
+        "IC-SEED optional"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "coil/antenna geometry",
+      "compute": "low-moderate",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "CGX identity"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-045",
+      "category": "Comms",
+      "name": "RF transceiver body/interface",
+      "functions": [
+        "transmit",
+        "receive"
+      ],
+      "ops": [
+        "ADD",
+        "PICK_PLACE",
+        "TEST"
+      ],
+      "feeds": [
+        "COND",
+        "DIEL",
+        "RF-SEED"
+      ],
+      "env": [
+        "DRY-INERT"
+      ],
+      "geometry": "antenna/feed/filter/shield",
+      "compute": "high",
+      "diy": "L4",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1-SEED",
+      "links": [
+        "Mark",
+        "printer mesh"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-046",
+      "category": "Comms",
+      "name": "Optical / IR link",
+      "functions": [
+        "data",
+        "beacon"
+      ],
+      "ops": [
+        "ADD",
+        "PICK_PLACE",
+        "TEST"
+      ],
+      "feeds": [
+        "OPT",
+        "LED/PD-SEED",
+        "COND"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "optical path/alignment",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "inter-node"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-047",
+      "category": "Environment",
+      "name": "Filter / membrane module",
+      "functions": [
+        "particle/liquid/gas separation"
+      ],
+      "ops": [
+        "ADD",
+        "INFILTRATE",
+        "TEST"
+      ],
+      "feeds": [
+        "POROUS",
+        "MEMBRANE-SEED"
+      ],
+      "env": [
+        "AIR",
+        "WET-LOCAL"
+      ],
+      "geometry": "pore/channel geometry",
+      "compute": "low",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "OCEAN",
+        "MARS"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Eco",
+        "resource"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-048",
+      "category": "Environment",
+      "name": "Catalytic/reactive surface",
+      "functions": [
+        "reaction",
+        "remediation"
+      ],
+      "ops": [
+        "ADD",
+        "FUNCTIONALIZE",
+        "TEST"
+      ],
+      "feeds": [
+        "CATALYST-SEED",
+        "STRUCT"
+      ],
+      "env": [
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "surface area/support",
+      "compute": "moderate",
+      "diy": "L4",
+      "horizons": [
+        "TERR",
+        "SPACE"
+      ],
+      "evidence": "E1",
+      "status": "FRONTIER",
+      "links": [
+        "Eco",
+        "ISRU"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-049",
+      "category": "Lab",
+      "name": "Microfluidic lab / assay cartridge",
+      "functions": [
+        "sample routing",
+        "mixing",
+        "measurement"
+      ],
+      "ops": [
+        "ADD",
+        "SEAL",
+        "FILL",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "DIEL",
+        "SENSOR-SEED"
+      ],
+      "env": [
+        "AIR",
+        "WET-LOCAL"
+      ],
+      "geometry": "channel/valve/chamber geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "assay",
+        "Eco",
+        "ISRU"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-050",
+      "category": "Water",
+      "name": "Water-quality / treatment node",
+      "functions": [
+        "sense",
+        "filter",
+        "dose/route"
+      ],
+      "ops": [
+        "ADD",
+        "FILL",
+        "TEST"
+      ],
+      "feeds": [
+        "PT-022",
+        "PT-047",
+        "STRUCT"
+      ],
+      "env": [
+        "WET-LOCAL"
+      ],
+      "geometry": "modular manifold",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "OCEAN"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Eco-Grex"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-051",
+      "category": "Tooling",
+      "name": "Post-mix nozzle / mixer head",
+      "functions": [
+        "mix",
+        "deposit",
+        "dilute",
+        "gradient"
+      ],
+      "ops": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "SEAL",
+        "METAL"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "mixer/nozzle channels",
+      "compute": "low",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "UTP"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-052",
+      "category": "Tooling",
+      "name": "Pump / valve / manifold module",
+      "functions": [
+        "meter",
+        "switch flow"
+      ],
+      "ops": [
+        "ADD",
+        "SEAL",
+        "ACTUATE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "ELASTOMER",
+        "ACTUATOR"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "flow geometry",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "UTP",
+        "resource"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-053",
+      "category": "Robotics",
+      "name": "Gripper / end effector",
+      "functions": [
+        "grip",
+        "place",
+        "tool exchange"
+      ],
+      "ops": [
+        "ADD",
+        "ACTUATE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "ELASTOMER",
+        "ACTUATOR"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "finger/interface geometry",
+      "compute": "moderate",
+      "diy": "L2",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "Printer-mu",
+        "roaming"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-054",
+      "category": "Metrology",
+      "name": "Calibration artefact / probe fixture",
+      "functions": [
+        "calibrate",
+        "measure"
+      ],
+      "ops": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "COND",
+        "OPT"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "fiducial/reference geometry",
+      "compute": "low",
+      "diy": "L1",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E3",
+      "status": "G1",
+      "links": [
+        "CGX verification"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-055",
+      "category": "Printer",
+      "name": "Child printer skeleton and tool bus",
+      "functions": [
+        "manufacture",
+        "self-reproduction"
+      ],
+      "ops": [
+        "ADD",
+        "ASSEMBLE",
+        "CALIBRATE",
+        "TEST"
+      ],
+      "feeds": [
+        "PT-001..054 as required"
+      ],
+      "env": [
+        "MULTI"
+      ],
+      "geometry": "recursive BuildNode graph",
+      "compute": "high",
+      "diy": "L5",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1-PRIMARY",
+      "links": [
+        "Printer-mu",
+        "Printer-2"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-056",
+      "category": "Coating",
+      "name": "Road/guideway functional coating",
+      "functions": [
+        "marking",
+        "sensing",
+        "thermal/optical/energy candidate"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "MINERAL/POLY",
+        "OPT",
+        "COND optional"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "2–3 layer coating stack",
+      "compute": "low-moderate",
+      "diy": "L2",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "infrastructure",
+        "Eco"
+      ],
+      "notes": "active energy/sensing layers require separately qualified materials"
+    },
+    {
+      "id": "PT-057",
+      "category": "Coating",
+      "name": "Building functional coating",
+      "functions": [
+        "weather barrier",
+        "thermal/optical",
+        "sensor/energy candidate"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "POLY/MINERAL",
+        "OPT",
+        "COND optional"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "multilayer skin",
+      "compute": "low-moderate",
+      "diy": "L2",
+      "horizons": [
+        "TERR",
+        "MARS"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "housing",
+        "Eco"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-058",
+      "category": "Skin",
+      "name": "Solar Hull / structural photovoltaic skin",
+      "functions": [
+        "structure",
+        "power",
+        "thermal",
+        "shield/optical"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "COND",
+        "DIEL",
+        "SEMI/PV",
+        "OPT"
+      ],
+      "env": [
+        "DRY-INERT",
+        "LOCAL-SHROUD"
+      ],
+      "geometry": "graded multilayer surface",
+      "compute": "moderate",
+      "diy": "L5",
+      "horizons": [
+        "TERR",
+        "SPACE"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Solar Hull",
+        "Mark"
+      ],
+      "notes": "structural blend and PV efficiency remain separately qualified"
+    },
+    {
+      "id": "PT-059",
+      "category": "Skin",
+      "name": "Structural-health sensor skin",
+      "functions": [
+        "strain",
+        "temperature",
+        "damage indication"
+      ],
+      "ops": [
+        "ADD",
+        "GRADIENT",
+        "TEST"
+      ],
+      "feeds": [
+        "COND-CARBON",
+        "DIEL",
+        "SENSOR"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "distributed serpentine/network",
+      "compute": "moderate",
+      "diy": "L3",
+      "horizons": [
+        "ALL"
+      ],
+      "evidence": "E2",
+      "status": "G1",
+      "links": [
+        "Mark",
+        "roads",
+        "buildings"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-060",
+      "category": "Circular Feed",
+      "name": "Recovered polymer feed",
+      "functions": [
+        "structure",
+        "support"
+      ],
+      "ops": [
+        "SORT",
+        "CLEAN",
+        "COMPOUND",
+        "TEST"
+      ],
+      "feeds": [
+        "ECO-POLY"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "material not device geometry",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "TERR",
+        "OCEAN"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Eco-Grex"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-061",
+      "category": "Circular Feed",
+      "name": "Recovered graphene conductive feed",
+      "functions": [
+        "conductor",
+        "heater",
+        "sensor electrode"
+      ],
+      "ops": [
+        "RECOVER",
+        "FORMULATE",
+        "ADD",
+        "TEST"
+      ],
+      "feeds": [
+        "ECO-GRAPHENE"
+      ],
+      "env": [
+        "AIR",
+        "DRY-INERT"
+      ],
+      "geometry": "material not device geometry",
+      "compute": "none",
+      "diy": "L3",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "Eco-Grex",
+        "electronics"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-062",
+      "category": "Circular Feed",
+      "name": "Mineral/regolith composite feed",
+      "functions": [
+        "structure",
+        "dielectric",
+        "thermal mass"
+      ],
+      "ops": [
+        "CLASSIFY",
+        "MIX",
+        "ADD",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "feeds": [
+        "MINERAL/REGOLITH"
+      ],
+      "env": [
+        "AIR",
+        "SPACE-LOCAL"
+      ],
+      "geometry": "particle/binder/lattice",
+      "compute": "none",
+      "diy": "L3",
+      "horizons": [
+        "TERR",
+        "LUNAR",
+        "MARS",
+        "ASTEROID"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "ISRU",
+        "MMPACT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-063",
+      "category": "Circular Feed",
+      "name": "Bio-derived binder/carrier",
+      "functions": [
+        "binder",
+        "temporary/sacrificial",
+        "composite carrier"
+      ],
+      "ops": [
+        "FORMULATE",
+        "MIX",
+        "CURE",
+        "TEST"
+      ],
+      "feeds": [
+        "BIO"
+      ],
+      "env": [
+        "AIR"
+      ],
+      "geometry": "material not device geometry",
+      "compute": "none",
+      "diy": "L2",
+      "horizons": [
+        "TERR"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Eco-Grex"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-064",
+      "category": "Space",
+      "name": "Regolith structural element",
+      "functions": [
+        "pad",
+        "berm",
+        "wall",
+        "shield"
+      ],
+      "ops": [
+        "CLASSIFY",
+        "ADD/SINTER",
+        "TEST"
+      ],
+      "feeds": [
+        "REGOLITH"
+      ],
+      "env": [
+        "LUNAR/MARS LOCAL"
+      ],
+      "geometry": "macro geometry",
+      "compute": "low",
+      "diy": "L4",
+      "horizons": [
+        "LUNAR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "MMPACT",
+        "outpost"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-065",
+      "category": "Space",
+      "name": "Locally refined metal wire/truss",
+      "functions": [
+        "structure",
+        "conductance"
+      ],
+      "ops": [
+        "REFINE",
+        "FORM",
+        "ADD/WIRE",
+        "TEST"
+      ],
+      "feeds": [
+        "LOCAL-METAL"
+      ],
+      "env": [
+        "SPACE-LOCAL"
+      ],
+      "geometry": "wire/truss geometry",
+      "compute": "low",
+      "diy": "L4",
+      "horizons": [
+        "LUNAR",
+        "ASTEROID"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "Mark",
+        "Luke"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-066",
+      "category": "Space",
+      "name": "Shield / berm / landing-pad construction",
+      "functions": [
+        "protection",
+        "infrastructure"
+      ],
+      "ops": [
+        "ADD",
+        "SINTER",
+        "TEST"
+      ],
+      "feeds": [
+        "REGOLITH/MINERAL"
+      ],
+      "env": [
+        "SPACE-LOCAL"
+      ],
+      "geometry": "macro civil geometry",
+      "compute": "low",
+      "diy": "L4",
+      "horizons": [
+        "LUNAR",
+        "MARS"
+      ],
+      "evidence": "E2",
+      "status": "EXTENSION",
+      "links": [
+        "outpost"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-067",
+      "category": "Resource",
+      "name": "Beneficiation/refinery machine parts",
+      "functions": [
+        "sort",
+        "move",
+        "process resource"
+      ],
+      "ops": [
+        "ADD",
+        "ASSEMBLE",
+        "TEST"
+      ],
+      "feeds": [
+        "STRUCT",
+        "COND",
+        "DIEL",
+        "ACTUATOR"
+      ],
+      "env": [
+        "SPACE-LOCAL"
+      ],
+      "geometry": "equipment geometry",
+      "compute": "moderate",
+      "diy": "L5",
+      "horizons": [
+        "LUNAR",
+        "ASTEROID",
+        "MARS"
+      ],
+      "evidence": "E1",
+      "status": "EXTENSION",
+      "links": [
+        "ISRU"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-068",
+      "category": "Römer",
+      "name": "Mark integrated functional body",
+      "functions": [
+        "resource acquisition",
+        "sensing",
+        "power",
+        "comms",
+        "field/thermal/fluid"
+      ],
+      "ops": [
+        "COMPILE_MULTIPHYSICS",
+        "ADD",
+        "ASSEMBLE",
+        "TEST"
+      ],
+      "feeds": [
+        "MULTI"
+      ],
+      "env": [
+        "MISSION-SPECIFIC"
+      ],
+      "geometry": "integrated body",
+      "compute": "high",
+      "diy": "L5",
+      "horizons": [
+        "ORBIT",
+        "LUNAR",
+        "ASTEROID",
+        "INTERPLANETARY"
+      ],
+      "evidence": "E0",
+      "status": "FRONTIER",
+      "links": [
+        "Mark III"
+      ],
+      "notes": "system readiness remains separate from primitive manufacturability"
+    },
+    {
+      "id": "PT-069",
+      "category": "Römer",
+      "name": "Luke / InterSol support module",
+      "functions": [
+        "receive",
+        "service",
+        "power",
+        "comms",
+        "manufacturing"
+      ],
+      "ops": [
+        "COMPILE_MULTIPHYSICS",
+        "ADD",
+        "ASSEMBLE",
+        "TEST"
+      ],
+      "feeds": [
+        "MULTI"
+      ],
+      "env": [
+        "MISSION-SPECIFIC"
+      ],
+      "geometry": "large modular structure",
+      "compute": "high",
+      "diy": "L5",
+      "horizons": [
+        "ORBIT",
+        "INTERPLANETARY"
+      ],
+      "evidence": "E0",
+      "status": "FRONTIER",
+      "links": [
+        "Luke",
+        "InterSol"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "PT-070",
+      "category": "Printer",
+      "name": "Roaming/mobile UTP",
+      "functions": [
+        "on-site manufacture",
+        "repair",
+        "construction"
+      ],
+      "ops": [
+        "ADD",
+        "ASSEMBLE",
+        "CALIBRATE",
+        "HANDSHAKE",
+        "TEST"
+      ],
+      "feeds": [
+        "MULTI"
+      ],
+      "env": [
+        "MOBILE-BUBBLE"
+      ],
+      "geometry": "mobile robot + tool/local environment",
+      "compute": "high",
+      "diy": "L5",
+      "horizons": [
+        "TERR",
+        "OCEAN",
+        "LUNAR",
+        "MARS",
+        "ASTEROID"
+      ],
+      "evidence": "E1",
+      "status": "P3",
+      "links": [
+        "UTP",
+        "infrastructure"
+      ],
+      "notes": ""
+    }
+  ],
+  "coverage_rule": "Novel requests should first be decomposed into catalogue functions + process verbs + local-horizon constraints. Add a new umbrella class only when the function cannot be represented without hiding a materially different physics/process/safety regime."
+}
