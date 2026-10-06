@@ -16,8 +16,8 @@
       "name": "atomic.json",
       "sha256": "9a5f7da4822f90a4961b4465e371163b18ea2e4d7bba28fa72e89c23448b9093",
       "strict_json": "FAIL",
-      "issue": "non-JSON unary-plus numeric literals in arrays, e.g. [+3,+5]",
-      "runtime_state": "SOURCE_ONLY / NORMALIZATION_REQUIRED"
+      "issue": "multiple non-JSON defects: unary-plus numeric literals; missing separator before Z=41 object; later '__' delimiters / concatenated fragments around references/meta",
+      "runtime_state": "SOURCE_ONLY / STRUCTURAL RECOVERY + NORMALIZATION REQUIRED"
     },
     {
       "name": "molecular.json",
@@ -164,5 +164,11 @@
     "cross-check duplicate/contradictory records across libraries",
     "bind each usable function to UTP kernel + validity envelope",
     "retain unverified/source-only expressions as non-executable"
-  ]
+  ],
+  "normalization_probe": {
+    "constants": "deterministic comment removal yields strict JSON in probe; derivative not committed as source replacement",
+    "quantum": "deterministic evaluation of literal Math.sqrt(number) expressions yields strict JSON in probe; semantic review still required",
+    "planetary": "JSONDecoder raw multi-document probe finds 2 top-level documents; must be split with provenance",
+    "atomic": "simple sanitation remains insufficient because source has additional structural corruption/delimiters; requires bounded record recovery and independent validation"
+  }
 }
