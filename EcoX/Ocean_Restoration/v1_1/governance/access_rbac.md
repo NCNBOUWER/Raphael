@@ -1,0 +1,15 @@
+# Role-Based Access and Authority Matrix
+
+| Role ID | Role | Read Public | Read Controlled | Read Confidential | Write Workbook | Write Git | Create Mission | Submit Bid | Cast Vote | Approve Contract | Execute Operation | Publish | Administer IDs | Data Scope | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RBAC-001 | Founder / Accountable Authority | Yes | Yes | Yes | Yes | Approve | Yes | Conditional | Yes | Yes | Conditional | Yes | Yes | All project | Final authority subject to legal/entity governance. |
+| RBAC-002 | Neo Oversight Intelligence | Yes | Yes | Metadata only unless authorised | Controlled | Create PR / reconcile | Recommend | No | No | No | No | No | Validate | System health + manifests | Cannot replace accountable human authority. |
+| RBAC-003 | Oracle Evidence Intelligence | Yes | Yes | Evidence as authorised | Controlled evidence fields | Create PR / evidence | No | No | No | No | No | Gate only | Validate | Evidence and publication | Read-only evidence posture where possible. |
+| RBAC-004 | Architect Operations Intelligence | Yes | Yes | Mission-confidential | Mission fields | Create PR / registers | Yes | No | No | No | No | No | No | Missions, availability, OKRs | Awards require authority/contract controls. |
+| RBAC-005 | Construct Model Intelligence | Yes | Model/data controlled | No partner-confidential unless required | Model fields | Create PR / models | Recommend candidate | No | No | No | No | No | No | Data/models | Model outputs labelled by evidence state. |
+| RBAC-006 | Governance Intelligence | Yes | Yes | Decision-confidential | Governance fields | Create PR / governance | Open decision | No | Calculate only | Prepare | No | No | No | Weights/decisions | Transparent calculation; accountable authority signs. |
+| RBAC-007 | Partner Representative Intelligence | Approved public | Partner-scoped | Own organisation only | No | Partner API/approved contribution | No | Yes | Yes if seated | No | No | No | No | Own node/missions | One representative role per collaborator as configured. |
+| RBAC-008 | Operator Human / Team | Approved public | Assigned mission | Own confidential mission data | No | Approved telemetry only | No | Yes | Conditional | No | Yes within contract | No | No | Own assets/missions | Retains internal operational control. |
+| RBAC-009 | Ecology / Technical Specialist | Yes | Assigned evidence | Review-specific | Review fields | Review contribution | Safety recommendation | No | Conditional advisory | No | No | No | No | Assigned domain | Can place safety review/hold under approved policy. |
+| RBAC-010 | EcoX Intelligent Agent | Approved public | Approved collaborator view | No | No | No | No | No | No | No | No | No | No | Oracle-approved index | Read-only and non-executing. |
+| RBAC-011 | Public User | Yes | No | No | No | No | No | No | No | No | No | No | No | Published aggregates | No access to live sensitive routes or protected partner data. |

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://romer.industries/schemas/ecox-opc/event.schema.json",
+  "title": "EcoX OPC Event",
+  "type": "object",
+  "required": ["event_id", "event_type", "occurred_at", "source_object_id", "evidence_state", "payload"],
+  "properties": {
+    "event_id": {"type": "string", "pattern": "^EVT-[A-Z0-9-]+$"},
+    "event_type": {"type": "string"},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "received_at": {"type": "string", "format": "date-time"},
+    "source_object_id": {"type": "string"},
+    "target_object_ids": {"type": "array", "items": {"type": "string"}},
+    "evidence_state": {"enum": ["Known", "Inferred", "Simulated", "Target", "Unverified"]},
+    "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_id": {"type": "string"},
+        "source_url": {"type": ["string", "null"]},
+        "licence": {"type": ["string", "null"]},
+        "checksum": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "payload": {"type": "object"}
+  },
+  "additionalProperties": false
+}
