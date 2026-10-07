@@ -14,6 +14,9 @@ class UTPNextGatePlanTests(unittest.TestCase):
         self.assertEqual(set(d["three_planes"]), {"filespace", "dataspace", "solid_state"})
         self.assertIn("READ_IDENTITY", d["process_sequence"])
         self.assertIn("READBACK_RECEIPT", d["process_sequence"])
+        self.assertEqual(d["selection"]["selected_route_id"], "SH01-ID-A")
+        self.assertIn("NOT_EXECUTED", d["selection"]["status"])
+        self.assertIn("energized electrical measurement", d["selection"]["measurement_schema"]["excluded_for_first_route"])
 
     def test_printer_mu_dag_covers_declared_basis(self):
         d = load("printer_mu_dependency_dag_v0_1.json")
