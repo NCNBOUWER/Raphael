@@ -1,0 +1,186 @@
+{
+  "artifact_id": "UTP-SH01-IDENTITY-COUPON-PLAN-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "SH-01 CGX Identity Coupon — Benign Physical Proof Plan",
+  "showcase_ref": "SH-01",
+  "build_ref": "BUILD-062",
+  "state": "DIGITAL_BUILD_AND_TEST_PLAN / PHYSICAL_EXECUTION_NOT_RUN",
+  "objective": "Prove that a benign physical coupon can carry a stable CGX object identity, bind that identity to a filespace snapshot and dataspace measurement record, and complete a readback/DBR cycle without granting actuation or physical-readiness authority.",
+  "evidence_boundary": [
+    "This plan is not a physical test result.",
+    "Passing identity/readback does not qualify unrelated printed electronics, pressure, high-voltage, chemical, orbital or mission functions.",
+    "A passive identity endpoint does not imply smartphone-class onboard compute.",
+    "No durable .cgx carrier promotion is created by this plan."
+  ],
+  "actor_mode": "DIY/education-safe planning baseline; professional review if materials/processes depart from benign low-energy route",
+  "horizon": "H-TERR-SITE / exact site and resource state to be resolved at execution",
+  "cgx_identity": {
+    "planned_object_id": "cgx:object:romer:utp:sh01-coupon-001",
+    "compute_profile": "CP0-PASSIVE preferred; CP1-TINY optional only if a separately sourced benign seed device is intentionally included",
+    "parent_relations": [
+      "cgx:root:cognigrex",
+      "cgx:domain:romer"
+    ],
+    "semantic_owner": "Römer/Cognigrex lineage; identity alone creates no execution authority"
+  },
+  "three_planes": {
+    "filespace": [
+      "object identity and revision",
+      "coupon geometry reference",
+      "material/feed passport references",
+      "process record",
+      "measurement schema",
+      "source/evidence refs",
+      "authority ceiling"
+    ],
+    "dataspace": [
+      "identity readback event",
+      "continuity/resistance or other selected benign sensor measurement",
+      "timestamped operator/test state",
+      "hash/readback receipt",
+      "DBR snapshot"
+    ],
+    "solid_state": [
+      "benign structural substrate",
+      "identity marker region",
+      "optional conductive trace/antenna geometry",
+      "optional dielectric/isolation region",
+      "optional passive resistive/sensor trace",
+      "service/readback region"
+    ]
+  },
+  "identity_route_options": [
+    {
+      "id": "SH01-ID-A",
+      "route": "visual machine-readable marker",
+      "examples": [
+        "QR/DataMatrix or equivalent stable optical marker"
+      ],
+      "seed_dependency": "none beyond ordinary print/mark capability",
+      "boundary": "proves physical-to-digital identity association only"
+    },
+    {
+      "id": "SH01-ID-B",
+      "route": "printed antenna/contact geometry plus qualified passive/seed identification element",
+      "seed_dependency": "explicit seed device may remain imported",
+      "boundary": "seed device provenance and reader compatibility must be recorded; printed geometry alone is not cryptographic assurance"
+    }
+  ],
+  "minimum_function_stack": [
+    {
+      "id": "SH01-F1",
+      "function": "structure",
+      "catalogue_refs": [
+        "PT-001"
+      ],
+      "neutral_refs": [
+        "N-COMPLY"
+      ],
+      "state": "PLANNED"
+    },
+    {
+      "id": "SH01-F2",
+      "function": "identity marker",
+      "catalogue_refs": [
+        "PT-044"
+      ],
+      "neutral_refs": [],
+      "state": "PLANNED"
+    },
+    {
+      "id": "SH01-F3",
+      "function": "optional conductor/antenna",
+      "catalogue_refs": [
+        "PT-011",
+        "PT-015"
+      ],
+      "neutral_refs": [
+        "N-DIEL",
+        "N-EMI"
+      ],
+      "state": "OPTIONAL / PLANNED"
+    },
+    {
+      "id": "SH01-F4",
+      "function": "optional passive sensor/resistive trace",
+      "catalogue_refs": [
+        "PT-012",
+        "PT-018"
+      ],
+      "neutral_refs": [
+        "N-POWER-REF",
+        "N-DIEL"
+      ],
+      "state": "OPTIONAL / PLANNED"
+    },
+    {
+      "id": "SH01-F5",
+      "function": "environmental protection",
+      "catalogue_refs": [
+        "PT-005",
+        "PT-010"
+      ],
+      "neutral_refs": [
+        "N-HERM"
+      ],
+      "state": "OPTIONAL / PLANNED"
+    }
+  ],
+  "process_sequence": [
+    "SOURCE_BIND",
+    "ASSIGN_COUPON_OBJECT_ID",
+    "SELECT_BENIGN_SUBSTRATE_AND_MARKER_ROUTE",
+    "RECORD_MATERIAL_PASSPORTS",
+    "FABRICATE_OR_MARK_COUPON",
+    "PREVERIFY_VISUAL_AND_DIMENSIONAL_STATE",
+    "MEASURE_SELECTED_PASSIVE_QUANTITY_IF_PRESENT",
+    "READ_IDENTITY",
+    "RESOLVE_FILESYSTEM_RECORD_BY_ID",
+    "COMPARE_EXPECTED_AND_OBSERVED_IDENTITY_HASH",
+    "WRITE_TEST_RECEIPT",
+    "READBACK_RECEIPT",
+    "COMMIT_DBR_SNAPSHOT_TO_FRONTIER_ONLY",
+    "REVIEW_FOR_ANY_LATER_PROMOTION"
+  ],
+  "acceptance_gates": [
+    {
+      "id": "SH01-G1",
+      "gate": "identity uniqueness",
+      "pass": "read physical marker and resolve exactly one planned object record"
+    },
+    {
+      "id": "SH01-G2",
+      "gate": "filespace binding",
+      "pass": "object/revision/source hashes match expected manifest"
+    },
+    {
+      "id": "SH01-G3",
+      "gate": "dataspace receipt",
+      "pass": "test/measurement event references same object ID and immutable source snapshot"
+    },
+    {
+      "id": "SH01-G4",
+      "gate": "physical traceability",
+      "pass": "coupon material/process lot or source record is attributable"
+    },
+    {
+      "id": "SH01-G5",
+      "gate": "readback",
+      "pass": "receipt is re-read and exact identity/hash fields match"
+    },
+    {
+      "id": "SH01-G6",
+      "gate": "authority ceiling",
+      "pass": "record explicitly remains passive/benign and advertises no untested actuation or manufacturing capability"
+    }
+  ],
+  "stop_conditions": [
+    "ambiguous or duplicated identity",
+    "source/hash mismatch",
+    "unknown material provenance where it affects safe handling or test interpretation",
+    "unexpected energized behavior",
+    "attempt to treat identity success as physical qualification beyond the coupon"
+  ],
+  "next_physical_output": "One benign SH-01 coupon plus identity/readback/measurement/DBR receipt after BouwerBase or equivalent approved execution surface is available."
+}
