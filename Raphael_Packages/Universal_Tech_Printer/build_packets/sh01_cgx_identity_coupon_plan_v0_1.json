@@ -1,7 +1,7 @@
 {
   "artifact_id": "UTP-SH01-IDENTITY-COUPON-PLAN-001",
-  "version": "0.1",
-  "date": "2026-10-07",
+  "version": "0.2",
+  "date": "2026-10-08",
   "title": "SH-01 CGX Identity Coupon — Benign Physical Proof Plan",
   "showcase_ref": "SH-01",
   "build_ref": "BUILD-062",
@@ -182,5 +182,52 @@
     "unexpected energized behavior",
     "attempt to treat identity success as physical qualification beyond the coupon"
   ],
-  "next_physical_output": "One benign SH-01 coupon plus identity/readback/measurement/DBR receipt after BouwerBase or equivalent approved execution surface is available."
+  "next_physical_output": "One benign SH-01 coupon plus identity/readback/measurement/DBR receipt after BouwerBase or equivalent approved execution surface is available.",
+  "selection": {
+    "status": "SELECTED_FOR_FIRST_PHYSICAL_PROOF / NOT_EXECUTED",
+    "selected_route_id": "SH01-ID-A",
+    "rationale": [
+      "lowest-consequence route proving physical-object identity without energized function",
+      "no seed electronics, RF function or active device required for the first proof",
+      "separates filespace/dataspace/DBR correctness from later functional-material qualification",
+      "SH01-ID-B remains a later escalation only after Route A identity/readback acceptance passes"
+    ],
+    "substrate_selection_rule": "Use a benign, nonconductive, mechanically stable substrate already on hand or from ordinary qualified stock. Bind the exact material identity, supplier/source and lot or traceable source record at execution; do not infer chemistry, durability or environmental qualification from the generic selection.",
+    "marker_selection_rule": "Use QR, DataMatrix or equivalent optical machine-readable marking that carries only the object identifier and/or a non-secret immutable manifest reference. Exact symbology, scale and marking process are selected only after a bounded print/readability check on the actual execution surface.",
+    "measurement_schema": {
+      "required": [
+        "physical marker read success/fail",
+        "resolved object_id",
+        "coupon geometry or dimensional reference",
+        "substrate/source record reference",
+        "expected immutable manifest hash/reference",
+        "observed/resolved manifest hash/reference",
+        "timestamp and execution-surface identifier",
+        "test receipt identifier/hash",
+        "receipt readback result"
+      ],
+      "optional": [
+        "pre/post coupon image evidence",
+        "reader/application identifier",
+        "ambient conditions when relevant to marker readability or substrate state"
+      ],
+      "excluded_for_first_route": [
+        "energized electrical measurement",
+        "RF performance",
+        "cryptographic device-attestation claim",
+        "actuation or manufacturing-capability claim"
+      ]
+    },
+    "immutable_manifest_fields": [
+      "object_id",
+      "revision",
+      "route_id",
+      "geometry_ref",
+      "material_source_refs",
+      "process_record_ref",
+      "evidence_ceiling",
+      "source_authority_pointer"
+    ],
+    "execution_gate": "BouwerBase or another approved execution surface must be online and pass current host/source/runtime readback before the physical coupon is created or its DBR receipt is promoted beyond Frontier."
+  }
 }
