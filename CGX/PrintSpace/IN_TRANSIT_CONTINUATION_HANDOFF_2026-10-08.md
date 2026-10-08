@@ -86,6 +86,12 @@
 - A founder gate remains open on naming Mark-to-Mark regeneration an explicit measured PoC demonstrator.
 - Aesthetic choices cannot compromise a project's defined performance envelope, such as useful solar-energy conversion; product identity and visual style remain individually controlled.
 
+## Princeception update — 8 October 2026
+- **Approved scope:** A Pro printer may contain fixed and mobile micro-printers plus replaceable, repurposable component trays carrying qualified chips, gyroscopes or other parts. Sourcing decisions compare energy, time, difficulty and verified quality with direct printing, while preserving all-component direct-print research separately.
+- **Nested atmospheres:** Include independently controlled process chambers inside a sealed outer printing session when different processes require different gas/pressure/environment envelopes. Concurrent sub-printing and protected transfer into a larger assembly are design targets, not verified printer or chemistry operations.
+- **Single session:** Preserve the continuously sealed outer boundary even when multiple internal modules manufacture subassemblies. Internal barriers, purges and transfers must be independently qualified.
+- **Next open gate:** Common swappable docking/interface contracts for trays, fixed/micro/roving printers and inner chambers, without imposing aesthetics or unsafe universal gas/power compatibility. See [Bootstrap charter](BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md).
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
