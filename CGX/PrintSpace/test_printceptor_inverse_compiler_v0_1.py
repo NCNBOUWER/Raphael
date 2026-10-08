@@ -70,6 +70,14 @@ class InverseTreeTest(unittest.TestCase):
         self.assertFalse(a["single_sealed_session_qualified"])
         self.assertFalse(a["source_qualified"])
 
+    def test_no_capability_label_blockers_does_not_hide_sourcing_or_safety(self):
+        a = evaluate(self.d, "K-FDM-PEN-ARM", "PC-ARM-PEN-DEMO")
+        self.assertTrue(a["no_missing_capability_label_does_not_mean_build_ready"])
+        self.assertTrue(a["unverified_sourced_parts"])
+        self.assertTrue(a["critical_physical_safety_holds"])
+        self.assertFalse(a["source_qualified"])
+        self.assertFalse(a["single_sealed_session_qualified"])
+
     def test_donor_hardware_and_non_equivalent_nozzles_are_unverified(self):
         nodes = {x["id"]: x for x in self.d["components"]}
         self.assertEqual(
