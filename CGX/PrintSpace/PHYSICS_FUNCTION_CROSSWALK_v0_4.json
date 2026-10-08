@@ -30,7 +30,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-002",
@@ -49,7 +50,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-003",
@@ -67,7 +69,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-004",
@@ -84,7 +87,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-005",
@@ -100,7 +104,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-006",
@@ -118,7 +123,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-007",
@@ -140,7 +146,13 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "technology_id": "PT-008",
@@ -158,7 +170,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-009",
@@ -176,7 +189,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-010",
@@ -194,7 +208,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-011",
@@ -214,7 +229,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-012",
@@ -233,7 +249,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-013",
@@ -251,7 +268,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-014",
@@ -270,7 +288,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-015",
@@ -288,7 +311,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-016",
@@ -305,7 +332,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-017",
@@ -323,7 +351,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-018",
@@ -343,7 +372,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-019",
@@ -360,7 +390,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-020",
@@ -379,7 +410,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-021",
@@ -397,7 +429,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-022",
@@ -417,7 +450,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-023",
@@ -434,7 +468,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-024",
@@ -451,7 +486,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-025",
@@ -470,7 +506,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-026",
@@ -492,7 +533,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-027",
@@ -512,7 +558,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-028",
@@ -533,7 +584,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
     },
     {
       "technology_id": "PT-029",
@@ -552,7 +608,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-030",
@@ -571,7 +628,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-031",
@@ -590,7 +648,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "technology_id": "PT-032",
@@ -609,7 +671,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "technology_id": "PT-033",
@@ -628,7 +694,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-034",
@@ -646,7 +717,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-035",
@@ -666,7 +741,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-036",
@@ -686,7 +766,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "technology_id": "PT-037",
@@ -704,7 +788,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-038",
@@ -722,7 +807,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-039",
@@ -740,7 +826,10 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-040",
@@ -758,7 +847,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-041",
@@ -777,7 +867,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-042",
@@ -797,7 +888,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-043",
@@ -817,7 +909,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-044",
@@ -834,7 +927,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-045",
@@ -851,7 +948,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-046",
@@ -868,7 +969,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-047",
@@ -888,7 +990,13 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "technology_id": "PT-048",
@@ -908,7 +1016,10 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
     },
     {
       "technology_id": "PT-049",
@@ -929,7 +1040,14 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-054"
+      ]
     },
     {
       "technology_id": "PT-050",
@@ -949,7 +1067,13 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-054"
+      ]
     },
     {
       "technology_id": "PT-051",
@@ -966,7 +1090,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     },
     {
       "technology_id": "PT-052",
@@ -987,7 +1115,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
     },
     {
       "technology_id": "PT-053",
@@ -1005,7 +1138,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-054",
@@ -1024,7 +1158,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-055",
@@ -1044,7 +1179,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-056",
@@ -1063,7 +1203,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-057",
@@ -1082,7 +1223,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-058",
@@ -1101,7 +1243,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-059",
@@ -1121,7 +1268,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-060",
@@ -1139,7 +1287,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-061",
@@ -1157,7 +1306,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-062",
@@ -1175,7 +1325,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-063",
@@ -1192,7 +1347,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-064",
@@ -1211,7 +1367,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-065",
@@ -1230,7 +1391,11 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-066",
@@ -1249,7 +1414,8 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-067",
@@ -1271,7 +1437,13 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-054"
+      ]
     },
     {
       "technology_id": "PT-068",
@@ -1293,7 +1465,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "technology_id": "PT-069",
@@ -1313,7 +1490,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "technology_id": "PT-070",
@@ -1332,7 +1514,12 @@
       "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     }
   ],
   "geometry_bindings": [
@@ -1347,7 +1534,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-002",
@@ -1360,7 +1548,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-003",
@@ -1373,7 +1562,13 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-051"
+      ]
     },
     {
       "geometry_id": "PS-GEO-004",
@@ -1386,7 +1581,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-005",
@@ -1399,7 +1597,11 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-006",
@@ -1412,7 +1614,11 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-007",
@@ -1424,7 +1630,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-008",
@@ -1436,7 +1643,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-009",
@@ -1448,7 +1656,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-010",
@@ -1460,7 +1671,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-011",
@@ -1473,7 +1687,11 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "geometry_id": "PS-GEO-012",
@@ -1485,7 +1703,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "geometry_id": "PS-GEO-013",
@@ -1498,7 +1719,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-014",
@@ -1511,7 +1733,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-015",
@@ -1524,7 +1747,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-016",
@@ -1537,7 +1761,12 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "geometry_id": "PS-GEO-017",
@@ -1550,7 +1779,13 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "geometry_id": "PS-GEO-018",
@@ -1562,7 +1797,12 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
     },
     {
       "geometry_id": "PS-GEO-019",
@@ -1574,7 +1814,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "geometry_id": "PS-GEO-020",
@@ -1585,7 +1828,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "geometry_id": "PS-GEO-021",
@@ -1597,7 +1843,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
     },
     {
       "geometry_id": "PS-GEO-022",
@@ -1609,7 +1858,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-023",
@@ -1622,7 +1872,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-024",
@@ -1634,7 +1885,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-025",
@@ -1646,7 +1898,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "geometry_id": "PS-GEO-026",
@@ -1659,7 +1914,10 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
     },
     {
       "geometry_id": "PS-GEO-027",
@@ -1671,7 +1929,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-028",
@@ -1685,7 +1944,12 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
     },
     {
       "geometry_id": "PS-GEO-029",
@@ -1699,7 +1963,8 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-030",
@@ -1711,7 +1976,14 @@
       "representative_only": true,
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-058"
+      ]
     }
   ],
   "environment_bindings": [
@@ -1723,7 +1995,10 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-002",
@@ -1734,7 +2009,10 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-003",
@@ -1745,7 +2023,10 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-004",
@@ -1758,7 +2039,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-005",
@@ -1771,7 +2057,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-006",
@@ -1782,7 +2073,10 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-007",
@@ -1793,7 +2087,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-008",
@@ -1804,7 +2102,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-009",
@@ -1816,7 +2118,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-010",
@@ -1827,7 +2134,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-011",
@@ -1838,7 +2149,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-012",
@@ -1849,7 +2164,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-013",
@@ -1862,7 +2181,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-014",
@@ -1875,7 +2199,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-015",
@@ -1885,7 +2214,10 @@
       ],
       "model_gap": "Contact electrification and tribology need specialist constitutive model",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-016",
@@ -1895,7 +2227,10 @@
       ],
       "model_gap": "Piezoelectric constitutive tensor and poling history required",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-017",
@@ -1908,7 +2243,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-018",
@@ -1919,7 +2259,10 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-019",
@@ -1929,7 +2272,10 @@
       ],
       "model_gap": "Acoustic wave equation and boundary impedance model required",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-050"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-020",
@@ -1942,7 +2288,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-021",
@@ -1953,7 +2304,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-022",
@@ -1967,7 +2323,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-023",
@@ -1978,7 +2339,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-024",
@@ -1989,7 +2355,10 @@
       ],
       "model_gap": "Spectral attenuation and particle transport require dedicated radiation model",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-025",
@@ -2001,7 +2370,12 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "opportunity_id": "PS-OPP-026",
@@ -2012,7 +2386,11 @@
       ],
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     }
   ],
   "material_route_bindings": [
@@ -2038,7 +2416,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-001-BA",
@@ -2062,7 +2446,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-002-AB",
@@ -2089,7 +2479,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059",
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-002-BA",
@@ -2116,7 +2514,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-003-AB",
@@ -2141,7 +2547,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-003-BA",
@@ -2166,7 +2578,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-004-AB",
@@ -2192,7 +2610,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-004-BA",
@@ -2218,7 +2643,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-005-AB",
@@ -2244,7 +2676,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-005-BA",
@@ -2270,7 +2709,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-006-AB",
@@ -2296,7 +2742,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-006-BA",
@@ -2322,7 +2775,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-007-AB",
@@ -2348,7 +2808,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-007-BA",
@@ -2374,7 +2841,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-008-AB",
@@ -2400,7 +2874,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-008-BA",
@@ -2426,7 +2907,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-009-AB",
@@ -2452,7 +2940,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-009-BA",
@@ -2478,7 +2973,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-010-AB",
@@ -2504,7 +3006,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-010-BA",
@@ -2530,7 +3039,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-011-AB",
@@ -2555,7 +3071,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-011-BA",
@@ -2580,7 +3103,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "route_id": "PS-MR-012-AB",
@@ -2605,7 +3135,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-012-BA",
@@ -2630,7 +3166,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-013-AB",
@@ -2655,7 +3197,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     },
     {
       "route_id": "PS-MR-013-BA",
@@ -2680,7 +3228,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-053"
+      ]
     },
     {
       "route_id": "PS-MR-014-AB",
@@ -2707,7 +3261,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-014-BA",
@@ -2734,7 +3296,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059",
+        "PS-EQ-055",
+        "PS-EQ-056"
+      ]
     },
     {
       "route_id": "PS-MR-015-AB",
@@ -2759,7 +3329,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "route_id": "PS-MR-015-BA",
@@ -2784,7 +3361,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-016-AB",
@@ -2810,7 +3394,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "route_id": "PS-MR-016-BA",
@@ -2836,7 +3426,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-017-AB",
@@ -2864,7 +3460,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-017-BA",
@@ -2892,7 +3497,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "route_id": "PS-MR-018-AB",
@@ -2920,7 +3534,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-018-BA",
@@ -2948,7 +3571,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "route_id": "PS-MR-019-AB",
@@ -2970,7 +3602,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-019-BA",
@@ -2992,7 +3629,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-020-AB",
@@ -3014,7 +3656,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-020-BA",
@@ -3036,7 +3683,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-021-AB",
@@ -3061,7 +3713,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-053"
+      ]
     },
     {
       "route_id": "PS-MR-021-BA",
@@ -3086,7 +3744,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
     },
     {
       "route_id": "PS-MR-022-AB",
@@ -3113,7 +3777,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-022-BA",
@@ -3140,7 +3811,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-023-AB",
@@ -3167,7 +3845,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-023-BA",
@@ -3194,7 +3879,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-024-AB",
@@ -3220,7 +3912,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-024-BA",
@@ -3246,7 +3943,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-025-AB",
@@ -3272,7 +3974,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-025-BA",
@@ -3298,7 +4005,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-026-AB",
@@ -3325,7 +4037,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-026-BA",
@@ -3352,7 +4070,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-027-AB",
@@ -3377,7 +4101,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "route_id": "PS-MR-027-BA",
@@ -3402,7 +4133,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-028-AB",
@@ -3428,7 +4166,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-028-BA",
@@ -3454,7 +4200,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-029-AB",
@@ -3476,7 +4230,11 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-029-BA",
@@ -3498,7 +4256,11 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-030-AB",
@@ -3523,7 +4285,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-056",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-030-BA",
@@ -3548,7 +4315,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-056"
+      ]
     },
     {
       "route_id": "PS-MR-031-AB",
@@ -3576,7 +4348,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
     },
     {
       "route_id": "PS-MR-031-BA",
@@ -3604,7 +4385,16 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-032-AB",
@@ -3631,7 +4421,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059",
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-032-BA",
@@ -3658,7 +4456,15 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-033-AB",
@@ -3684,7 +4490,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     },
     {
       "route_id": "PS-MR-033-BA",
@@ -3710,7 +4522,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-034-AB",
@@ -3735,7 +4553,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-055",
+        "PS-EQ-059",
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-034-BA",
@@ -3760,7 +4584,13 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057",
+        "PS-EQ-055",
+        "PS-EQ-059"
+      ]
     },
     {
       "route_id": "PS-MR-035-AB",
@@ -3785,7 +4615,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-035-BA",
@@ -3810,7 +4645,12 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
     },
     {
       "route_id": "PS-MR-036-AB",
@@ -3835,7 +4675,14 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
     },
     {
       "route_id": "PS-MR-036-BA",
@@ -3860,7 +4707,32 @@
       ],
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
-      "production_approved": false
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
     }
-  ]
+  ],
+  "scale_extension": {
+    "equation_count": 12,
+    "ids": [
+      "PS-EQ-048",
+      "PS-EQ-049",
+      "PS-EQ-050",
+      "PS-EQ-051",
+      "PS-EQ-052",
+      "PS-EQ-053",
+      "PS-EQ-054",
+      "PS-EQ-055",
+      "PS-EQ-056",
+      "PS-EQ-057",
+      "PS-EQ-058",
+      "PS-EQ-059"
+    ],
+    "note": "Dimensionless and scale indicators are comparisons, not qualified hardware performance"
+  }
 }
