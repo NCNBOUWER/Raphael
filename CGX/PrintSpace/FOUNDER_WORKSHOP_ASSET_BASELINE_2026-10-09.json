@@ -1,0 +1,147 @@
+{
+  "schema": "cgx.printspace.founder_workshop_asset_baseline.v0.1",
+  "record_date": "2026-10-09",
+  "status": "FOUNDER_CONFIRMED_PARTIAL_INVENTORY",
+  "authority": "owner-declared availability only; not third-party verified functionality, manufacturer specs or exact accessories",
+  "source": "founder in-chat update: no current printer or pen; rotary tool Dremel 4300 and some components on hand; small workbench/workspace can be setup or built with first purchase",
+  "goal": "First minimal working FDM workshop, incremental moving arm from printed parts, then dual-arm PrintCeptor safely and Butter Bot first sealed integrated article",
+  "items": [
+    {
+      "id": "OWN-ROT-4300",
+      "label": "Dremel 4300 corded rotary tool",
+      "category": "finishing-drill-grind",
+      "ownership": "OWNED_CONFIRMED",
+      "operational_state": "NOT_INDEPENDENTLY_TESTED",
+      "condition": "UNKNOWN",
+      "manufacturer_spec_ref": "https://shop.dremel.com/products/dremel-4300-rotary-tool-kit",
+      "capabilities": [
+        "MANUAL_FINISH",
+        "MANUAL_CUT",
+        "MANUAL_DRILL_WITH_CORRECT_ACCESSORIES"
+      ],
+      "safety": "Hand operation as currently intended; automated spindle mounting unsupported without guards/control and qualification",
+      "incremental_purchase_aud": 0,
+      "already_owned_value_aud": null,
+      "accessories_present": []
+    },
+    {
+      "id": "INV-FDM",
+      "label": "FDM 3D printer",
+      "category": "printer",
+      "ownership": "NOT_OWNED_CONFIRMED",
+      "operational_state": "NOT_PRESENT",
+      "candidate_first_purchase": true,
+      "incremental_purchase_aud": null
+    },
+    {
+      "id": "INV-PEN",
+      "label": "3D pen",
+      "category": "extrusion-donor",
+      "ownership": "NOT_OWNED_CONFIRMED",
+      "operational_state": "NOT_PRESENT",
+      "candidate_first_purchase": false,
+      "alternatives": [
+        "repurpose used pen if safe",
+        "purpose-built compatible hotend/extruder may outperform purchased pen"
+      ],
+      "incremental_purchase_aud": null
+    },
+    {
+      "id": "INV-OTHER",
+      "label": "Various other components",
+      "category": "mixed",
+      "ownership": "ON_HAND_REPORTED_UNITEMIZED",
+      "operational_state": "UNVERIFIED",
+      "qty": null,
+      "part_numbers": [],
+      "counted_as_available_to_solver": false,
+      "incremental_purchase_aud": null
+    },
+    {
+      "id": "WS-BENCH",
+      "label": "Small workbench and defined workshop zone",
+      "category": "workspace",
+      "ownership": "SETUP_OR_BUILD_POSSIBLE",
+      "operational_state": "NOT_CONFIRMED_BUILT",
+      "candidate_action": "measure available area, assess stability, clearance, electrical capacity, hot-end fire controls, ventilation, dust isolation, emergency access",
+      "dimensions_mm": null,
+      "incremental_purchase_aud": null
+    },
+    {
+      "id": "INV-INSTRUMENTS",
+      "label": "Calipers, multimeter, PPE, thermal instrumentation, controllers, servos, bearings, fixings",
+      "category": "required-checklist",
+      "ownership": "UNKNOWN_MAY_BE_IN_OTHER_COMPONENTS",
+      "operational_state": "UNVERIFIED",
+      "counted_as_available_to_solver": false,
+      "incremental_purchase_aud": null
+    }
+  ],
+  "current_verified_owned_capability_labels": [
+    "MANUAL_FINISH"
+  ],
+  "limits": "Current owned items cannot manufacture FDM parts or execute moving-arm control; printed parts remain future conditional options.",
+  "first_printer_candidate_options": [
+    {
+      "id": "FDM-ENDERV3SE",
+      "model": "Creality Ender-3 V3 SE",
+      "snapshot_aud": 259,
+      "source": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+      "build_volume_mm": [
+        220,
+        220,
+        250
+      ],
+      "reference_type": "manufacturer price and manufacturer manual",
+      "reason": "Cost-first mainstream supported FDM; suited to initial polymer gripper and frame-component trials",
+      "purchase_state": "NOT_ORDERED"
+    },
+    {
+      "id": "FDM-A1MINI",
+      "model": "Bambu Lab A1 mini",
+      "snapshot_aud": 329,
+      "source": "https://au.store.bambulab.com/products/a1-mini",
+      "build_volume_mm": [
+        180,
+        180,
+        180
+      ],
+      "reference_type": "manufacturer AU online listing; verify live purchase price",
+      "reason": "More integrated beginner platform but less build volume for long robotic arm links",
+      "purchase_state": "NOT_ORDERED"
+    },
+    {
+      "id": "FDM-A1",
+      "model": "Bambu Lab A1",
+      "snapshot_aud": 429,
+      "source": "https://3dbro.com.au/pages/bambu-lab-price-list-australia",
+      "build_volume_mm": [
+        256,
+        256,
+        256
+      ],
+      "reference_type": "September 30 2026 AU reseller price list and Bambu manufacturer dimensions",
+      "reason": "Larger functional part envelope and more automated calibration; reserve if budget supports",
+      "purchase_state": "NOT_ORDERED"
+    }
+  ],
+  "first_purchase_strategy": {
+    "round_0": "Measure/photograph and identify on-hand components, workbench position, safe power/ventilation and Dremel bits; prevent duplication.",
+    "round_1": "Buy or restore exactly one tested functional FDM printer, the minimum suitable filament, calibration/measurement and applicable safety supplies not already owned.",
+    "round_2": "Print non-safety-critical fixture, Dremel tool rack, arm prototype links and registration jigs; measure and keep failure DBRs.",
+    "round_3": "Acquire/repurpose motors, controllers, rated power and sensors only after geometry and torque/load calculations; perform low-energy no-heat arm trials.",
+    "round_4": "Evaluate independent hotend purchase vs disassembly/repurposing of an affordable pen using measured heater/thermal sensor/continuous-duty and regulation; don't buy both without benefit.",
+    "round_5": "Safe arm extrusion proof, second arm, tool exchange and eventually professionally engineered sealed process chamber. Butter Bot full sealed build is later."
+  },
+  "compaction_dbr_note": "Existing CGX per-device/family record, not a new asset authority; first workshop receipt remains D0 founder declaration until independent equipment identification.",
+  "uncertainties": [
+    "actual total spend ceiling",
+    "which 'some components' and quantities exist",
+    "Dremel 4300 precise kit/attachments and condition",
+    "bench power/dimensions and environmental ventilation",
+    "preference cost-first Ender vs larger A1 vs secondhand functional option",
+    "printable material choices, humidity, storage",
+    "actual motor/controller inventory"
+  ],
+  "no_automatic_purchase_or_actuation": true
+}
