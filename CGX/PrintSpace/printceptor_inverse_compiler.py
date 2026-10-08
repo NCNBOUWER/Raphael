@@ -95,8 +95,17 @@ def evaluate(data, kit_id="K-FDM", goal="BB-FINAL", priority="sourcing"):
     } for n in ordered if route_options[n]["safety"] in ("CRITICAL", "SECURITY")]
     counts = Counter(route_options[n]["selected"]["route"] for n in ordered)
     known_priced = sum(item["aud"] for item in kit["known_price_observations"])
+    acquisition_state = kit.get("acquisition_state", "GENERIC_SCENARIO_ASSUMPTIONS")
+    inventory_based = bool(kit.get("inventory_link"))
     return {
         "goal": goal, "kit": kit_id, "priority": priority, "status": "CANDIDATE_ONLY_NO_HARDWARE_PROOF",
+        "kit_acquisition_state": acquisition_state,
+        "inventory_baseline": kit.get("inventory_link"),
+        "post_purchase_capabilities_are_not_currently_installed": acquisition_state.startswith("POST_"),
+        "assumed_inventory_is_not_verified": not inventory_based,
+        "known_price_excludes_previously_owned_dremel_4300": inventory_based,
+        "quoted_tool_items_not_yet_purchased": [q["label"] for q in kit["known_price_observations"]] if acquisition_state.startswith("POST_") else [],
+
         "single_sealed_session_qualified": False,
         "source_qualified": False,
         "tool_prices_aud_observed_sum_not_total_project_cost": round(known_priced, 2),
