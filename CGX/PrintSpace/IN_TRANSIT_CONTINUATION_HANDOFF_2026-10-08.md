@@ -3,6 +3,9 @@
 **Scope:** Read-only mobile/LS GO handoff for continuing the existing Cognigrex/Raphael/PrintSpace engineering corpus.  
 **Authority:** Draft, owner review. NOT a promotion of physical, root/security, civil, aerospace or regulated hardware readiness.
 
+## Current superseding founder direction (2026-10-09)
+This is an older historical handoff. **Do not use any earlier parallel-first-physical-build or first-Princeception-Printer-μ ordering in place of the newer founder decision.** The current primary physical sequence is Bootstrap PrintCeptor safely manually assembled and partially self-expanded → Butter Bot first complete sealed-session print → university/industry collaborators → PrintCeptor A refined successor → state pilot then broader sales. Dynamic secondary internal bays begin from **one open large chamber**, not permanent 3-bay furniture. For CGX/CCC/CYC community rights, local/family DBR policy, primary chamber safety and source CAD rights see [the 2026-10-09 founder overlay](PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md). This cross-reference does not assert physical build completion.
+
 ## Start here
 - [PrintSpace PR #6](https://github.com/NCNBOUWER/Raphael/pull/6), existing review branch `docs/cgx-printspace-capability-first-2026-10-08`. **Always re-read head SHA**, not this document's creation SHA.
 - [All 80 products, 9 Grex domains](CROSS_GREX_PRODUCT_ATLAS_v0_5.json) · [Grex group taxonomy and 17 process profiles](PRODUCT_ATLAS_TAXONOMY_v0_5.json).
