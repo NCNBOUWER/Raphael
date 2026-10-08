@@ -39,10 +39,19 @@
 - **Safety:** chemical/thermal/electrical/pressure hazards, fire, oxygen-displacement and implosion/overpressure are independently engineered, regulated and licensed when required. Colour codes and software cannot replace engineered containment; remote operation and production activation remain held.
 - **Marketing evidence:** "fully 4D-capable," "self-printing printer" and "certified for vacuum/pressure/gas" are withheld until individual end-to-end acceptance and regulatory evidence exist.
 
-## Suggested founder gate (UNANSWERED)
-**Bootstrap expansion sourcing:** Can the smallest sold 4D printer use independently sourced and safety-rated nonprintable items (controller, seals, pressure-rated components, gas controls, pump, electronics) in its self-expansion pathway, while attempting to print all components as separate R&D targets? Recommendation YES: an achievable safe bootstrap pathway without false complete self-replication claims.
-- YES: design reversible, traceable hybrid expansion with strict function-qualification and BOM provenance.
-- NO: require all replacement hardware be directly printed before self-expansion is claimed; the programme remains R&D until the unsupported functions are qualified. Either answer preserves all mandatory 4D capability targets.
+## Princeception — founder-defined printer family
+**Approved direction:** Princeception is the informal name for a printer making a printer, including its supporting printable parts and recursive modules. Full non-software component printability is a research ambition, not a validated current capability. Qualified purchased parts remain permitted during prototyping.
+
+Initial private offerings: **Everyday**, a basic expandable unit, and **Pro**, a fuller-capability unit with a mini-printer inside the primary printer so components can be fabricated concurrently. A larger outer chamber could contain multiple smaller printers; five was illustrative, not a specified unit count.
+
+Classification dimensions are independent: fixed/in-situ or traversing machine movement; chambered, non-chambered or removable process arrangement; terrestrial or specialised environment; personal or tailored scale/application. An enclosed nested print process still follows the single-session rule: do not open the outer boundary during manufacture.
+
+Validate shared staging, coordinate frames, concurrent scheduling, vibration, access and material budgets; no nested machine or self-replication proof is yet claimed.
+
+**Open founder gate:** May Pro mini-printers maintain separately controlled atmospheres within the sealed outer chamber? Recommendation: yes as an engineered option; physical qualification remains separate.
+
+## Approved kit details
+Use appropriately qualified sourced items where direct printing is not proven, and include necessary protective hardware for supported functions. A per-component startup handshake reports supported capabilities and bounded modes. A guided educational journey is optional; custom variants remain valid when they operate within demonstrated limits. Unverified high-risk modes remain unavailable until qualified.
 
 ## Source links
 - [2026-10-08 station/enclosure decision](SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md)
