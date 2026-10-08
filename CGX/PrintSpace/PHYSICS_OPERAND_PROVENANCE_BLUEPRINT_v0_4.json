@@ -1,0 +1,2702 @@
+{
+  "schema": "cgx.printspace.physics_operand_provenance_blueprint.v0.4",
+  "id": "CGX-F4D-PHYSINPUT-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "equations": "CGX-F4D-EQN-20261008",
+  "material_property_slots": "CGX-F4D-MATPROP-20261008",
+  "description": "Each equation operand requires a calibrated measurement, justified source-derived quantity, geometry, operating-state measurement, or explicitly scoped constant. Empty numeric values remain null by design.",
+  "equation_count": 59,
+  "operand_count": 172,
+  "unresolved_domain_assignments": [
+    {
+      "eq": "PS-EQ-042",
+      "sym": "mass"
+    },
+    {
+      "eq": "PS-EQ-044",
+      "sym": "mass"
+    }
+  ],
+  "missing_material_property_definitions": [
+    {
+      "symbol": "strain",
+      "unit": "1",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "molar_mass",
+      "unit": "kg/mol",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "density_difference",
+      "unit": "kg/m**3",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "contact_angle",
+      "unit": "rad",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "seebeck",
+      "unit": "V/K",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "specific_heat",
+      "unit": "J/(kg*K)",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    },
+    {
+      "symbol": "convective_coefficient",
+      "unit": "W/(m**2*K)",
+      "status": "DATA_CAPTURE_GAP_NOT_FILLED"
+    }
+  ],
+  "assumption": "Material property aliases are discovery candidates only and may require transformations and regimes. Specific heat or interfacial tension must not be synthesized from unrelated slots.",
+  "entries": [
+    {
+      "equation_id": "PS-EQ-001",
+      "inputs": [
+        {
+          "symbol": "resistivity",
+          "unit": "Ohm*m",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "resistivity",
+            "bulk_electrical_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-002",
+      "inputs": [
+        {
+          "symbol": "current",
+          "unit": "A",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "resistance",
+          "unit": "Ohm",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-003",
+      "inputs": [
+        {
+          "symbol": "power",
+          "unit": "W",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "power_draw"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "duration",
+          "unit": "s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-004",
+      "inputs": [
+        {
+          "symbol": "eps_r",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "relative_permittivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "gap",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-005",
+      "inputs": [
+        {
+          "symbol": "capacitance",
+          "unit": "F",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "voltage",
+          "unit": "V",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [
+            "voltage_nominal"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-006",
+      "inputs": [
+        {
+          "symbol": "inductance",
+          "unit": "H",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "capacitance",
+          "unit": "F",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-007",
+      "inputs": [
+        {
+          "symbol": "mu_r",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "relative_permeability"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "turns",
+          "unit": "1",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "current",
+          "unit": "A",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-008",
+      "inputs": [
+        {
+          "symbol": "mu_r",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "relative_permeability"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "turns",
+          "unit": "1",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-009",
+      "inputs": [
+        {
+          "symbol": "thermal_conductivity",
+          "unit": "W/(m*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-010",
+      "inputs": [
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "thermal_conductivity",
+          "unit": "W/(m*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-011",
+      "inputs": [
+        {
+          "symbol": "expansion_coefficient",
+          "unit": "1/K",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_expansion_coefficient",
+            "coefficient_thermal_expansion"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-012",
+      "inputs": [
+        {
+          "symbol": "young_modulus",
+          "unit": "Pa",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "elastic_modulus",
+            "gel_elastic_modulus"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "strain",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-013",
+      "inputs": [
+        {
+          "symbol": "force",
+          "unit": "N",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "young_modulus",
+          "unit": "Pa",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "elastic_modulus",
+            "gel_elastic_modulus"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-014",
+      "inputs": [
+        {
+          "symbol": "radius",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_pressure",
+          "unit": "Pa",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "dynamic_viscosity",
+          "unit": "Pa*s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "dynamic_viscosity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-015",
+      "inputs": [
+        {
+          "symbol": "density",
+          "unit": "kg/m**3",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "velocity",
+          "unit": "m/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "diameter",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "dynamic_viscosity",
+          "unit": "Pa*s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "dynamic_viscosity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-016",
+      "inputs": [
+        {
+          "symbol": "diffusivity",
+          "unit": "m**2/s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "nutrient_diffusivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_concentration",
+          "unit": "mol/m**3",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-017",
+      "inputs": [
+        {
+          "symbol": "molar_flux",
+          "unit": "mol/(m**2*s)",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-018",
+      "inputs": [
+        {
+          "symbol": "molar_mass",
+          "unit": "kg/mol",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "efficiency",
+          "unit": "1",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "current",
+          "unit": "A",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "duration",
+          "unit": "s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "charge_number",
+          "unit": "1",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-019",
+      "inputs": [
+        {
+          "symbol": "moles",
+          "unit": "mol",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "volume",
+          "unit": "m**3",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-020",
+      "inputs": [
+        {
+          "symbol": "density",
+          "unit": "kg/m**3",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "gravity",
+          "unit": "m/s**2",
+          "source_class": "environment_gravity_profile",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "height",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-021",
+      "inputs": [
+        {
+          "symbol": "density_difference",
+          "unit": "kg/m**3",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "gravity",
+          "unit": "m/s**2",
+          "source_class": "environment_gravity_profile",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "surface_tension",
+          "unit": "N/m",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [
+            "interfacial_tension"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-022",
+      "inputs": [
+        {
+          "symbol": "surface_tension",
+          "unit": "N/m",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [
+            "interfacial_tension"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "contact_angle",
+          "unit": "rad",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "radius",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-023",
+      "inputs": [
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "diffusivity",
+          "unit": "m**2/s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "nutrient_diffusivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-024",
+      "inputs": [
+        {
+          "symbol": "permeability",
+          "unit": "mol/(m*s*Pa)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "water_vapour_transmission"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_pressure",
+          "unit": "Pa",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "thickness",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-025",
+      "inputs": [
+        {
+          "symbol": "thermal_resistance",
+          "unit": "K/W",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "thermal_resistance_junction_case"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "thermal_capacitance",
+          "unit": "J/K",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-026",
+      "inputs": [
+        {
+          "symbol": "voltage",
+          "unit": "V",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [
+            "voltage_nominal"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "charge",
+          "unit": "C",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "electrode_areal_capacity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-027",
+      "inputs": [
+        {
+          "symbol": "seebeck",
+          "unit": "V/K",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-028",
+      "inputs": [
+        {
+          "symbol": "voltage",
+          "unit": "V",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [
+            "voltage_nominal"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "internal_resistance",
+          "unit": "Ohm",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "internal_resistance"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-029",
+      "inputs": [
+        {
+          "symbol": "irradiance",
+          "unit": "W/m**2",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-030",
+      "inputs": [
+        {
+          "symbol": "irradiance",
+          "unit": "W/m**2",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "conversion_efficiency",
+          "unit": "1",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-031",
+      "inputs": [
+        {
+          "symbol": "force",
+          "unit": "N",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "lever_arm",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-032",
+      "inputs": [
+        {
+          "symbol": "torque",
+          "unit": "N*m",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "angular_speed",
+          "unit": "rad/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-033",
+      "inputs": [
+        {
+          "symbol": "delta_pressure",
+          "unit": "Pa",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "area",
+          "unit": "m**2",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-034",
+      "inputs": [
+        {
+          "symbol": "delta_pressure",
+          "unit": "Pa",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "volume_flow",
+          "unit": "m**3/s",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-035",
+      "inputs": [
+        {
+          "symbol": "mass_a",
+          "unit": "kg",
+          "source_class": "feedstock_mass_balance",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "fraction_a",
+          "unit": "1",
+          "source_class": "feedstock_composition",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "mass_b",
+          "unit": "kg",
+          "source_class": "feedstock_mass_balance",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "fraction_b",
+          "unit": "1",
+          "source_class": "feedstock_composition",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-036",
+      "inputs": [
+        {
+          "symbol": "mass_a",
+          "unit": "kg",
+          "source_class": "feedstock_mass_balance",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "density_a",
+          "unit": "kg/m**3",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "mass_b",
+          "unit": "kg",
+          "source_class": "feedstock_mass_balance",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "density_b",
+          "unit": "kg/m**3",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-037",
+      "inputs": [
+        {
+          "symbol": "tx_power",
+          "unit": "W",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "tx_gain",
+          "unit": "1",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "rx_gain",
+          "unit": "1",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "wavelength",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "range",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-038",
+      "inputs": [
+        {
+          "symbol": "wavelength",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-039",
+      "inputs": [
+        {
+          "symbol": "incident_power",
+          "unit": "W",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "attenuation",
+          "unit": "1/m",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "optical_attenuation_coefficient"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-040",
+      "inputs": [
+        {
+          "symbol": "sheet_resistance",
+          "unit": "Ohm",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "sheet_resistance"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "width",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-041",
+      "inputs": [
+        {
+          "symbol": "alpha_a",
+          "unit": "1/K",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_expansion_coefficient",
+            "coefficient_thermal_expansion"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "alpha_b",
+          "unit": "1/K",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_expansion_coefficient",
+            "coefficient_thermal_expansion"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-042",
+      "inputs": [
+        {
+          "symbol": "mass",
+          "unit": "kg",
+          "source_class": "DOMAIN_ASSIGNMENT_REVIEW",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "specific_heat",
+          "unit": "J/(kg*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "delta_temperature",
+          "unit": "K",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 1,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-043",
+      "inputs": [
+        {
+          "symbol": "energy",
+          "unit": "J",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [
+            "usable_energy"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "volume",
+          "unit": "m**3",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-044",
+      "inputs": [
+        {
+          "symbol": "mass",
+          "unit": "kg",
+          "source_class": "DOMAIN_ASSIGNMENT_REVIEW",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "gravity",
+          "unit": "m/s**2",
+          "source_class": "environment_gravity_profile",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "height",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 1,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-045",
+      "inputs": [
+        {
+          "symbol": "charge_number",
+          "unit": "1",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "moles",
+          "unit": "mol",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-046",
+      "inputs": [
+        {
+          "symbol": "surface_tension",
+          "unit": "N/m",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [
+            "interfacial_tension"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "density_difference",
+          "unit": "kg/m**3",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "gravity",
+          "unit": "m/s**2",
+          "source_class": "environment_gravity_profile",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-047",
+      "inputs": [
+        {
+          "symbol": "turns",
+          "unit": "1",
+          "source_class": "module_or_interface_calibration",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "flux_change",
+          "unit": "Wb",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "duration",
+          "unit": "s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-048",
+      "inputs": [
+        {
+          "symbol": "velocity",
+          "unit": "m/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "diffusivity",
+          "unit": "m**2/s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "nutrient_diffusivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-049",
+      "inputs": [
+        {
+          "symbol": "dynamic_viscosity",
+          "unit": "Pa*s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "dynamic_viscosity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "velocity",
+          "unit": "m/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "surface_tension",
+          "unit": "N/m",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [
+            "interfacial_tension"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-050",
+      "inputs": [
+        {
+          "symbol": "density",
+          "unit": "kg/m**3",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "velocity",
+          "unit": "m/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "surface_tension",
+          "unit": "N/m",
+          "source_class": "material_interface_characterisation",
+          "candidate_measurement_properties": [
+            "interfacial_tension"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-051",
+      "inputs": [
+        {
+          "symbol": "thermal_diffusivity",
+          "unit": "m**2/s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_conductivity",
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "duration",
+          "unit": "s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-052",
+      "inputs": [
+        {
+          "symbol": "convective_coefficient",
+          "unit": "W/(m**2*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "thermal_conductivity",
+          "unit": "W/(m*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-053",
+      "inputs": [
+        {
+          "symbol": "mean_free_path",
+          "unit": "m",
+          "source_class": "gas_pressure_composition_derived",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-054",
+      "inputs": [
+        {
+          "symbol": "flow_timescale",
+          "unit": "s",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "reaction_timescale",
+          "unit": "s",
+          "source_class": "composition_reaction",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-055",
+      "inputs": [
+        {
+          "symbol": "mu_r",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "relative_permeability"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "electrical_conductivity",
+          "unit": "S/m",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "electrical_conductivity",
+            "bulk_electrical_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "velocity",
+          "unit": "m/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-056",
+      "inputs": [
+        {
+          "symbol": "magnetic_field",
+          "unit": "T",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "electrical_conductivity",
+          "unit": "S/m",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "electrical_conductivity",
+            "bulk_electrical_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "dynamic_viscosity",
+          "unit": "Pa*s",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "dynamic_viscosity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-057",
+      "inputs": [
+        {
+          "symbol": "debye_length",
+          "unit": "m",
+          "source_class": "electrolyte_concentration_derived",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "length",
+          "unit": "m",
+          "source_class": "geometry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-058",
+      "inputs": [
+        {
+          "symbol": "thermal_conductivity",
+          "unit": "W/(m*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "thermal_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "density",
+          "unit": "kg/m**3",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "density"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "specific_heat",
+          "unit": "J/(kg*K)",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    },
+    {
+      "equation_id": "PS-EQ-059",
+      "inputs": [
+        {
+          "symbol": "resistivity",
+          "unit": "Ohm*m",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "resistivity",
+            "bulk_electrical_conductivity"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "mu_r",
+          "unit": "1",
+          "source_class": "material_characterisation",
+          "candidate_measurement_properties": [
+            "relative_permeability"
+          ],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        },
+        {
+          "symbol": "angular_speed",
+          "unit": "rad/s",
+          "source_class": "process_telemetry",
+          "candidate_measurement_properties": [],
+          "source_status": "SOURCE_EVIDENCE_REQUIRED",
+          "numeric_value": null,
+          "measured_uncertainty": null,
+          "instrument_receipt_id": null,
+          "lot_or_specimen_id": null,
+          "validated_range": null
+        }
+      ],
+      "unresolved_source_count": 0,
+      "all_numeric_inputs_provenanced": false,
+      "authorisation": false
+    }
+  ],
+  "physical_test_count": 0,
+  "production_approved": false
+}
