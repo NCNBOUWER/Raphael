@@ -92,6 +92,13 @@
 - **Single session:** Preserve the continuously sealed outer boundary even when multiple internal modules manufacture subassemblies. Internal barriers, purges and transfers must be independently qualified.
 - **Next open gate:** Common swappable docking/interface contracts for trays, fixed/micro/roving printers and inner chambers, without imposing aesthetics or unsafe universal gas/power compatibility. See [Bootstrap charter](BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md).
 
+## Per-printer CGX identity and offline controller — founder approved
+- Every printer has a distinct device identity and local deterministic controller. An offline classical printer works within its measured available capability; no AI or cloud account is needed for core functionality.
+- AI assistance, remote synchronisation, roaming equipment, additional toolkits and nested micro-printers are selectable configurations, not mandatory common hardware. A minimal safe seed and a completed printer are both purchase routes.
+- Physical compatibility is determined by device-specific documented modules, limits and interfaces. Do not require identical units or one mandatory shared docking connector. Interlocks operate locally and remain effective without cloud services.
+- **Open founder gate:** local ownership of capability, configuration and production records by default, with cloud synchronisation only by affirmative opt-in.
+- Do not confuse the per-machine CGX identity proposal with permission to edit or promote CGX RootAuthority or change live runtime security.
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
