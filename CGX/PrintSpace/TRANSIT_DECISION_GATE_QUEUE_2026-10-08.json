@@ -215,6 +215,13 @@
       "recommendation": "Log every sourced/printed part swap into device history/DBR; target requalification to actual impact and equivalence. Do not require blanket full requalification for specification-equivalent noncritical replacements. Keep retention/cache-clear release policy open.",
       "basis": "Founder 2026-10-08 acrylic example and DBR receipt history instruction",
       "reversible": true
+    },
+    {
+      "id": "D23",
+      "status": "FOUNDER_CONFIRMED",
+      "recommendation": "Treat reset history as per-printer CGX policy. For networked devices offer a choice between local clearing and consolidating existing Digitally Backed Receipts into one network-held DBR; local-only records may be lost. DBI was not a separate concept.",
+      "basis": "Founder spoken correction 2026-10-08",
+      "reversible": true
     }
   ],
   "gates": [
@@ -409,7 +416,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "On cache-clear or factory reset, should each printer clear user-specific preferences and disposable caches while retaining the minimum non-personal manufacturing/safety/service DBR history bound to the machine (with owner-controlled export and privacy/legal retention rules)?",
+    "active_founder_question": "For networked printers choosing one compact DBR handoff, should the printer verify that the network has accepted the receipt before clearing local history?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -601,6 +608,13 @@
       "trace": "Printer CGX device history/DBR receipt chain should provide current configuration, substitutions, component material provenance where necessary, process and function history, repairs, adjustments and source of evidence.",
       "cache": "Cache clearing is contemplated but its exact effect on durable receipts, personal data and owner/transfer records is not yet authorised; physical safety logs and legally required trace cannot be silently lost.",
       "no_implementation_claim": "Founder scope only; no validated on-device DBR integration, audit retention or secure storage attested."
+    },
+    "cgx_device_reset_retention_founder_direction": {
+      "state": "FOUNDER_CONFIRMED_2026-10-08",
+      "local_mode": "A printer using local storage alone may lose its DBR history when its only storage is cleared.",
+      "network_mode": "On a smart network, the owner is prompted to either clear its records or compact several Digitally Backed Receipts into a single DBR handoff held on the network.",
+      "terminology": "DBR means Digitally Backed Receipt; DBI in the voice transcript was a mispronunciation and is not a separate proposed format.",
+      "constraints": "Network handoff, integrity verification, privacy permissions and any mandatory retention still need implementation and separate owner approval."
     }
   }
 }
