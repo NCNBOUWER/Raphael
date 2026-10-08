@@ -222,6 +222,13 @@
       "recommendation": "Treat reset history as per-printer CGX policy. For networked devices offer a choice between local clearing and consolidating existing Digitally Backed Receipts into one network-held DBR; local-only records may be lost. DBI was not a separate concept.",
       "basis": "Founder spoken correction 2026-10-08",
       "reversible": true
+    },
+    {
+      "id": "D24",
+      "status": "FOUNDER_APPROVED_INTERNAL_ACK_AND_LIVE_RETRY",
+      "recommendation": "DBR compaction and handoff verification are internal automated steps. Only release local DBR history after persistent network acknowledgement/integrity readback; otherwise hold data locally and keep live queued handoff retrying until successful with no fabricated sync claim. Surface actionable failure where needed.",
+      "basis": "Founder spoken 2026-10-08 00:55:23–00:55:49",
+      "reversible": true
     }
   ],
   "gates": [
@@ -296,9 +303,9 @@
       "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links. Define per-device cached vs durable DBR data, an append-only service/configuration change record, risk-classified equivalence checks and safety-bounded requalification for swapped components. Distinguish independent nested printer CGX individual from outer parent hierarchy.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links. Define per-device cached vs durable DBR data, an append-only service/configuration change record, risk-classified equivalence checks and safety-bounded requalification for swapped components. Distinguish independent nested printer CGX individual from outer parent hierarchy. Model internal durable DBR compaction handoff with network integrity/readback acknowledgment, retry-safe persistent outbox, idempotent retry semantics and local-history clearance guarded by verified success.",
       "execution": "MANUAL",
-      "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer. No unverified acrylic/window substitution may silently enlarge or preserve vacuum/pressure ratings; engineering qualification still required.",
+      "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer. No unverified acrylic/window substitution may silently enlarge or preserve vacuum/pressure ratings; engineering qualification still required. Network DBR transfer and clearing are not implemented or released by this owner-review document.",
       "priority": "P1",
       "closed": false,
       "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
@@ -416,8 +423,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "For networked printers choosing one compact DBR handoff, should the printer verify that the network has accepted the receipt before clearing local history?",
-    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
+    "active_founder_question": "Next chat execution/release gate: Which existing canonical CGX DBR contract defines one compact network receipt's completeness proof, source lineage and acknowledgements? Read upstream DBR/COIN owners before implementing adapters. This is an engineering owner/source gate, not another immediate founder yes/no.",
+    "active_founder_question_state": "OWNER_SOURCE_REVIEW_PENDING_NOT_FOUNDER_INPUT",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -610,11 +617,17 @@
       "no_implementation_claim": "Founder scope only; no validated on-device DBR integration, audit retention or secure storage attested."
     },
     "cgx_device_reset_retention_founder_direction": {
-      "state": "FOUNDER_CONFIRMED_2026-10-08",
+      "state": "FOUNDER_APPROVED_TRANSFER_HANDSHAKE_2026-10-08",
       "local_mode": "A printer using local storage alone may lose its DBR history when its only storage is cleared.",
       "network_mode": "On a smart network, the owner is prompted to either clear its records or compact several Digitally Backed Receipts into a single DBR handoff held on the network.",
       "terminology": "DBR means Digitally Backed Receipt; DBI in the voice transcript was a mispronunciation and is not a separate proposed format.",
-      "constraints": "Network handoff, integrity verification, privacy permissions and any mandatory retention still need implementation and separate owner approval."
+      "constraints": "Network handoff, integrity verification, privacy permissions and any mandatory retention still need implementation and separate owner approval.",
+      "success_rule": "If compacting multiple DBRs to one network DBR, printer internally validates network acceptance and durable receipt integrity before clearing local history. Routine success is automatic and need not display a confirmation.",
+      "failure_rule": "On unsuccessful acceptance, preserve local DBRs and maintain a LIVE_PENDING network handoff. Retry automatically when a network becomes available, using a persistent local outbox and restart-resumable idempotent transaction until a verified receipt acknowledgement arrives. Do not clear local history until verified completion.",
+      "offline_limit": "If network is unreachable, transfer cannot occur; locally queue the handoff and retry on connectivity restoration. Do not claim that data has reached network without accepted provider receipt.",
+      "error_visibility": "Ordinary retries and successful completion should not interrupt user with prompts; material prolonged failure, inability to retain local receipts, security issues, or user-requested diagnostic status must remain inspectable and surfaced when necessary.",
+      "safe_architecture": "Candidate state machine: LOCAL_PREPARED -> SUBMIT_PENDING/RETRY -> NETWORK_ACK_PENDING -> VERIFIED_NETWORK_DBR -> LOCAL_CLEAR_ELIGIBLE; any failure preserves prior locally verified data and returns to pending without losing sequence/lineage. Verification should bind digest, child receipt count/IDs, destination and commit acknowledgement, subject to privacy/retention policy.",
+      "implementation_hold": "Requirements only: no network transfer agent, compaction algorithm, integrity receipt validator, scheduler, deletion code, physical system, or CGX root schema is deployed by this commit."
     }
   }
 }
