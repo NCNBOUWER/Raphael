@@ -75,8 +75,9 @@ def enumerate_orders(stages, max_orders=128):
     """Enumerate bounded topological orders; does not silently assert exhaustiveness."""
     ids = sorted(stages)
     orders = []
+    # Read one sentinel beyond the caller's cap to report truncation exactly.
     def visit(prefix, completed):
-        if len(orders) >= max_orders:
+        if len(orders) > max_orders:
             return
         if len(prefix) == len(ids):
             orders.append(list(prefix))
@@ -87,8 +88,8 @@ def enumerate_orders(stages, max_orders=128):
     visit([], set())
     if not orders:
         raise ValueError("Dependency graph has a cycle or cannot be scheduled")
-    truncated = len(orders) == max_orders
-    return orders, truncated
+    truncated = len(orders) > max_orders
+    return orders[:max_orders], truncated
 
 
 def evaluate_order(contract, stages, features, pairs, order):
