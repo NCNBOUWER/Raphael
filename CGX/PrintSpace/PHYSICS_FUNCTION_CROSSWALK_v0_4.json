@@ -290,8 +290,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -313,7 +311,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -508,8 +505,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -535,8 +530,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -560,8 +553,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -719,7 +710,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -827,9 +817,7 @@
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-040",
@@ -929,7 +917,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -950,7 +937,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -1392,10 +1378,7 @@
       "source_authority": "UTP-CATALOGUE-001",
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "technology_id": "PT-066",
@@ -1467,8 +1450,6 @@
       "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -1599,7 +1580,6 @@
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -1616,7 +1596,6 @@
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -1689,7 +1668,6 @@
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -1704,9 +1682,7 @@
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-013",
@@ -1899,9 +1875,7 @@
       "requires_geometry_specific_FEM_or_full_field_model": true,
       "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "geometry_id": "PS-GEO-026",
@@ -2165,10 +2139,7 @@
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-013",
@@ -2183,8 +2154,6 @@
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -2215,9 +2184,7 @@
       "model_gap": "Contact electrification and tribology need specialist constitutive model",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-016",
@@ -2228,9 +2195,7 @@
       "model_gap": "Piezoelectric constitutive tensor and poling history required",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-051"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-017",
@@ -2260,9 +2225,7 @@
       "model_gap": null,
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-019",
@@ -2273,9 +2236,7 @@
       "model_gap": "Acoustic wave equation and boundary impedance model required",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-050"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-020",
@@ -2356,9 +2317,7 @@
       "model_gap": "Spectral attenuation and particle transport require dedicated radiation model",
       "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-051"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "opportunity_id": "PS-OPP-025",
@@ -2420,8 +2379,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2450,8 +2408,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2483,10 +2440,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059",
-        "PS-EQ-053",
-        "PS-EQ-057"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2516,12 +2470,9 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2551,8 +2502,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2582,8 +2532,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2615,7 +2564,6 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -2645,7 +2593,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -2680,9 +2627,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-053",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2711,8 +2656,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058"
@@ -2747,7 +2690,6 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -2777,7 +2719,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -2813,7 +2754,6 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -2843,7 +2783,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -2879,7 +2818,6 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -2909,7 +2847,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -2944,9 +2881,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-053",
-        "PS-EQ-057"
+        "PS-EQ-058"
       ]
     },
     {
@@ -2975,8 +2910,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058"
@@ -3011,7 +2944,6 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -3041,7 +2973,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -3075,8 +3006,6 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -3105,8 +3034,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052"
@@ -3137,9 +3064,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -3168,10 +3092,7 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-059",
-        "PS-EQ-053",
-        "PS-EQ-057"
+        "PS-EQ-059"
       ]
     },
     {
@@ -3199,10 +3120,9 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
         "PS-EQ-048",
-        "PS-EQ-054"
+        "PS-EQ-054",
+        "PS-EQ-057"
       ]
     },
     {
@@ -3232,8 +3152,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-048",
         "PS-EQ-054",
-        "PS-EQ-057",
-        "PS-EQ-053"
+        "PS-EQ-057"
       ]
     },
     {
@@ -3263,8 +3182,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052",
@@ -3301,9 +3218,7 @@
         "PS-EQ-051",
         "PS-EQ-052",
         "PS-EQ-058",
-        "PS-EQ-059",
-        "PS-EQ-055",
-        "PS-EQ-056"
+        "PS-EQ-059"
       ]
     },
     {
@@ -3331,8 +3246,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059",
         "PS-EQ-051",
         "PS-EQ-052"
@@ -3365,8 +3278,6 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -3395,12 +3306,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-059",
-        "PS-EQ-051",
-        "PS-EQ-052"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-016-BA",
@@ -3427,12 +3333,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-051",
-        "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-017-AB",
@@ -3717,8 +3618,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-048",
         "PS-EQ-054",
-        "PS-EQ-057",
-        "PS-EQ-053"
+        "PS-EQ-057"
       ]
     },
     {
@@ -3746,10 +3646,9 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
         "PS-EQ-048",
-        "PS-EQ-054"
+        "PS-EQ-054",
+        "PS-EQ-057"
       ]
     },
     {
@@ -3781,9 +3680,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-053",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -3815,8 +3712,6 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059",
         "PS-EQ-058"
       ]
     },
@@ -3849,9 +3744,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-053",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -3883,8 +3776,6 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059",
         "PS-EQ-058"
       ]
     },
@@ -4040,9 +3931,7 @@
       "production_approved": false,
       "scale_regime_equation_ids": [
         "PS-EQ-051",
-        "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059"
+        "PS-EQ-052"
       ]
     },
     {
@@ -4073,9 +3962,7 @@
       "production_approved": false,
       "scale_regime_equation_ids": [
         "PS-EQ-051",
-        "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059"
+        "PS-EQ-052"
       ]
     },
     {
@@ -4231,10 +4118,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-029-BA",
@@ -4257,10 +4141,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-030-AB",
@@ -4287,8 +4168,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-056",
         "PS-EQ-059"
       ]
     },
@@ -4317,9 +4196,7 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-059",
-        "PS-EQ-056"
+        "PS-EQ-059"
       ]
     },
     {
@@ -4425,10 +4302,7 @@
       "scale_regime_equation_ids": [
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059",
-        "PS-EQ-053",
-        "PS-EQ-057"
+        "PS-EQ-058"
       ]
     },
     {
@@ -4458,12 +4332,9 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
         "PS-EQ-051",
         "PS-EQ-052",
-        "PS-EQ-058",
-        "PS-EQ-059"
+        "PS-EQ-058"
       ]
     },
     {
@@ -4491,12 +4362,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-059",
-        "PS-EQ-051",
-        "PS-EQ-052"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-033-BA",
@@ -4523,12 +4389,7 @@
       "source_material_pair": "CGX-F4D-MATROUTES-20261008",
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
-      "scale_regime_equation_ids": [
-        "PS-EQ-051",
-        "PS-EQ-052",
-        "PS-EQ-053",
-        "PS-EQ-059"
-      ]
+      "scale_regime_equation_ids": []
     },
     {
       "route_id": "PS-MR-034-AB",
@@ -4555,10 +4416,7 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-055",
-        "PS-EQ-059",
-        "PS-EQ-053",
-        "PS-EQ-057"
+        "PS-EQ-059"
       ]
     },
     {
@@ -4586,9 +4444,6 @@
       "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
       "production_approved": false,
       "scale_regime_equation_ids": [
-        "PS-EQ-053",
-        "PS-EQ-057",
-        "PS-EQ-055",
         "PS-EQ-059"
       ]
     },
@@ -4733,6 +4588,6 @@
       "PS-EQ-058",
       "PS-EQ-059"
     ],
-    "note": "Dimensionless and scale indicators are comparisons, not qualified hardware performance"
+    "note": "Only potential regime screens conditional on active process physics; no scalar similarity group is imposed on unrelated optics, acoustic, solids or chemistry. Empty list signals full-native-kernel model instead."
   }
 }
