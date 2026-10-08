@@ -2,6 +2,9 @@
 **Date:** 2026-10-08 Australia/Brisbane. **Authority:** PrintSpace PR #6 OWNER-REVIEW DERIVATIVE, not production canon, machine authorisation or merged source.
 **Naming:** PrintCeptor = founder's proper machine name; Printception = recursive manufacturing concept; Printer-1/Bootstrap = historical aliases. Stable machine identities are retained. `PRINTCEPTOR-PC-Q01` must not be confused with the older separate `PC-01` hardware/BOM component labels in Cognigrex workbooks.
 
+## Founder update superseding this dated intake (2026-10-09)
+The **current controlling answer** is [PrintCeptor phase order and CCC/CYC handoff](PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md). All eight PC gates received further founder input. Of special importance, **PC-Q06 now specifies an ordered initial physical build: Bootstrap PrintCeptor → safe self-printed upgrades → Butter Bot FIRST integrated print → collaborators → PrintCeptor A**; the older table's parallel-physical-demo phrase is **superseded**. PC-Q03 now explicitly uses one open main chamber with dynamically partitioned bays. Historical PC ledger preserved below for provenance, not operative phase ordering.
+
 ## Founder gate ledger
 | Gate | Outcome | Remaining independent acceptance |
 |---|---|---|
