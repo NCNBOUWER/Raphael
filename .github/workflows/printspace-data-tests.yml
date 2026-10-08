@@ -25,4 +25,4 @@ jobs:
         run: python -m compileall -q CGX/PrintSpace
       - name: Validate all existing route and populated data tests
         working-directory: CGX/PrintSpace
-        run: python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py
+        run: python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py test_dimensioned_equation_engine_v0_4.py
