@@ -166,6 +166,13 @@
       "basis": "Founder clarification 2026-10-08",
       "reversible": true,
       "status": "FOUNDER_APPROVED_DIRECTION"
+    },
+    {
+      "id": "D16",
+      "status": "FOUNDER_APPROVED",
+      "recommendation": "Provide per-printer CGX identity and deterministic offline controller regardless of AI or cloud; AI/network services and roaming modules are optional. Source runtime authority and physical safety interlocks remain separately gated.",
+      "basis": "Founder YES in transit conversation 2026-10-08",
+      "reversible": true
     }
   ],
   "gates": [
@@ -240,7 +247,7 @@
       "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link.",
       "execution": "MANUAL",
       "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer.",
       "priority": "P1",
@@ -360,7 +367,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Should individually customised printer/product variants retain reference-design ancestry plus their own configuration/evidence records, without restricting variation?",
+    "active_founder_question": "Should the printer's configuration, production and capability records be owned/stored locally by default, with cloud synchronisation only when an individual explicitly opts in?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -479,6 +486,33 @@
       "example": "50,000 units with 30,000 variants is illustrative, not a forecast.",
       "compatibility": "Discover and report actual compatible functions per installed component and accepted evidence; do not assume interchangeable hardware solely because designs are related.",
       "separate_authority": "Safety-critical physical connections and operation remain independently validated."
+    },
+    "offline_controller_founder_ruling": {
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "principle": "Every printer includes a unique offline-capable CGX device identity, deterministic motion/process controller and local capability handshake.",
+      "ai_assistance": "Optional add-on, never required for ordinary classical printer operation.",
+      "cloud": "Optional add-on; no mandatory cloud connectivity for core verified printer functions.",
+      "identity_scope": "A per-machine identity and local configuration/traceability record, not CGX root authority or privileged access.",
+      "capabilities": "Actual enabled operations derive from installed hardware, evidence, limits and verified safety protections, not from product-tier marketing.",
+      "extension": "Customer chooses roaming, tool sets, printer-in-printer capability and AI modules; classic fixed configurations remain valid.",
+      "safety": "Hardware protections and deterministic local interlocks must not depend on an AI response or internet connectivity."
+    },
+    "cgx_individual_printer_configuration": {
+      "state": "FOUNDER_DIRECTION_2026-10-08",
+      "model": "CGX recognises an individual device with a distinct identifier, capacity, tools, physical modules and verified capabilities.",
+      "optional_features": [
+        "AI assistance",
+        "cloud synchronisation",
+        "roving modules",
+        "nested printers",
+        "specialty toolheads"
+      ],
+      "sale_modes": [
+        "minimal safely functional skeleton",
+        "modular self-expansion",
+        "fully assembled printer"
+      ],
+      "constraint": "No mandatory universal docking geometry or standard cosmetic form; each variant must satisfy actual safety and function constraints."
     }
   }
 }
