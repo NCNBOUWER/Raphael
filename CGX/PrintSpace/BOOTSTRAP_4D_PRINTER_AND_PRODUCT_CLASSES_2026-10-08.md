@@ -73,6 +73,15 @@ Validate shared staging, coordinate frames, concurrent scheduling, vibration, ac
 ## Approved kit details
 Use appropriately qualified sourced items where direct printing is not proven, and include necessary protective hardware for supported functions. A per-component startup handshake reports supported capabilities and bounded modes. A guided educational journey is optional; custom variants remain valid when they operate within demonstrated limits. Unverified high-risk modes remain unavailable until qualified.
 
+## CGX universal-technology and definition reconciliation — review-only
+The universal printer's aspiration covers **technology physically permitted by natural laws**. This is an architectural R&D scope rather than evidence that any current printer can fabricate every technology. Every actual unit's capability handshake and claim must remain bounded by demonstrated feedstocks, tooling, chambers, component inserts, qualification, safety controls and allowed process states. Mandatory design research does not mean all optional modules are installed on every consumer configuration.
+
+A printer's installed passive components may be local children referring to **global CGX metric/material/component family definitions**. A bolt type's own full CGX description can coexist with its appearance in many printer BOMs without turning each physical bolt into an independent digital individual. Model type, unit/lot instance, and the digital machine identity separately. Preserve SI dimensions, epistemic state, source authority and original lineage rather than overwriting historical definitions by timestamp.
+
+Reconcile across known CGX workbooks and canonical rules by comparing evidence, actual logical compatibility, physics assumptions and owner authority. Hybridise when consistent, preserve unresolved alternatives and request owner review when inconsistent. See the source-linked reconciliation in [PrintSpace transit handoff](IN_TRANSIT_CONTINUATION_HANDOFF_2026-10-08.md).
+
+**Open release gate:** Require evidence-based, per-capability claims for actual products even while universal technology remains the long-range R&D objective. No printer qualification or software runtime promotion is implied by this proposal.
+
 ## Source links
 - [2026-10-08 station/enclosure decision](SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md)
 - [2026-10-08 founder Butter Bot scope](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md)
