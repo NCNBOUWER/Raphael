@@ -97,6 +97,13 @@
       "artifact": "CGX-F4D-COUPONS-20261008",
       "path": "COUPON_QUALIFICATION_QUEUE_v0_3.json",
       "records": 72
+    },
+    {
+      "artifact": "CGX-F4D-MATERIAL-MATRIX-20261008",
+      "path": "MATERIAL_PAIRWISE_INDEX_v0_3.csv",
+      "records": 3481,
+      "curated_routes": 72,
+      "family_class_inherited_only": 3409
     }
   ],
   "evidence_policy": {
@@ -113,7 +120,8 @@
     "material_pair_physical_qualification_count": 0,
     "shopfloor_instruction_authority": false,
     "provenance_rule": "Every material property needs measured value, units, uncertainty, temperature/regime, specimen geometry, feedstock lot, device calibration, date and attributable source",
-    "state_rule": "All v0.3 records are provisional, no demonstrated 4D printer capability inferred"
+    "state_rule": "All v0.3 records are provisional, no demonstrated 4D printer capability inferred",
+    "material_matrix_physical_qualification_count": 0
   },
   "qa_tests": [
     "test_multistage_route_planner.py",
