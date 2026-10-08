@@ -423,8 +423,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Next chat execution/release gate: Which existing canonical CGX DBR contract defines one compact network receipt's completeness proof, source lineage and acknowledgements? Read upstream DBR/COIN owners before implementing adapters. This is an engineering owner/source gate, not another immediate founder yes/no.",
-    "active_founder_question_state": "OWNER_SOURCE_REVIEW_PENDING_NOT_FOUNDER_INPUT",
+    "active_founder_question": "After confirming source-owner DBR receipt contract, should a network-compacted DBR by default preserve recoverable historical payloads, or should it be proof-only with explicit loss of original payloads?",
+    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -627,7 +627,15 @@
       "offline_limit": "If network is unreachable, transfer cannot occur; locally queue the handoff and retry on connectivity restoration. Do not claim that data has reached network without accepted provider receipt.",
       "error_visibility": "Ordinary retries and successful completion should not interrupt user with prompts; material prolonged failure, inability to retain local receipts, security issues, or user-requested diagnostic status must remain inspectable and surfaced when necessary.",
       "safe_architecture": "Candidate state machine: LOCAL_PREPARED -> SUBMIT_PENDING/RETRY -> NETWORK_ACK_PENDING -> VERIFIED_NETWORK_DBR -> LOCAL_CLEAR_ELIGIBLE; any failure preserves prior locally verified data and returns to pending without losing sequence/lineage. Verification should bind digest, child receipt count/IDs, destination and commit acknowledgement, subject to privacy/retention policy.",
-      "implementation_hold": "Requirements only: no network transfer agent, compaction algorithm, integrity receipt validator, scheduler, deletion code, physical system, or CGX root schema is deployed by this commit."
+      "implementation_hold": "Requirements only: no network transfer agent, compaction algorithm, integrity receipt validator, scheduler, deletion code, physical system, or CGX root schema is deployed by this commit.",
+      "source_contract_reconciliation": {
+        "status": "SOURCE_CROSSWALK_WRITTEN_DBROG_2026-10-08_OWNER_ACCEPTANCE_OPEN",
+        "file": "DBR_COMPACTION_LIVE_HANDOFF_SOURCE_CROSSWALK_2026-10-08.md",
+        "findings": "Existing CGX source documentation binds Object ID, State Root, DBR Root, event head and significant checkpoints; offline replicas reconcile roots/ancestry. A network compact DBR must not claim it can restore data absent from its closure.",
+        "source_owners": "DBR/CGX Filespace, LightSpeed transport/outbox, Achilles privacy/retention, PrintSpace consumer",
+        "runtime_status": "NOT_IMPLEMENTED_NOT_QUALIFIED",
+        "next_founder_gate": "Default single DBR: recoverable archive vs proof-only summary; owner acceptance of concrete wire format remains separate."
+      }
     }
   }
 }
