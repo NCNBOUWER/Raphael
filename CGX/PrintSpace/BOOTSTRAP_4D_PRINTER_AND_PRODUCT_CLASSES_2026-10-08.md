@@ -64,7 +64,9 @@ Validate shared staging, coordinate frames, concurrent scheduling, vibration, ac
 
 **Shared information substrate:** Model printers and parts using CGX-linked identities and relationships (parent, child, sibling/variant, assembly membership and upgrades), with versioned links into workspaces, dataspaces and filespaces. The objective is compatibility of *information and reasoning*, not compulsory uniform hardware, appearance, connectors or feature packages. A printer lacking AI, roaming or a specialised module retains a defined upgrade pathway.
 
-**Identity granularity — next founder gate:** Should each manufactured/installed component have a persistent CGX lineage record, with unique unit IDs where practicable and batch/lot identity where individual tracking is unnecessary, without requiring electronics on passive parts? This would support recovery, upgrades, provenance and cross-printer learning.
+**Founder correction — CGX individuals versus passive children (2026-10-08):** A CGX individual is a digital/filespace representation of an electronic machine or subsystem within Cognigrex, with parent, child and sibling relationships. A passive screw, bolt, nut or structural region is a **child component** of the relevant CGX individual, **not** a mandatory independently identified CGX individual. Such child records may still hold part number, quantity, placement, lot/material passport, repair and end-of-life evidence, under the appropriate parent identity. A CGX identity file never substitutes for deterministic embedded control and safety interlocks.
+
+**Next founder decision — independent nested identity:** Where a mini-printer is an independently functional electronic machine, should its CGX individual identity remain intact when integrated into a parent printer, rather than being absorbed into the parent's identity? Recommendation: retain its own identity and link assembly membership dynamically; passive children stay nested under their parent.
 
 **Unanswered separately:** Default local ownership/storage versus opt-in cloud synchronisation has not yet been expressly approved; preserve as a separate data-governance question.
 
