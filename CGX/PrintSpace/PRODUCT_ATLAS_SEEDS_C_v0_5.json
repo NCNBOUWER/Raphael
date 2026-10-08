@@ -628,7 +628,8 @@
         "PT-013",
         "PT-018",
         "PT-039",
-        "PT-054"
+        "PT-054",
+        "PT-036"
       ],
       "profile": "gas",
       "goal": [
@@ -637,7 +638,8 @@
       "gaps": [
         "outgassing",
         " hermetic lifecycle",
-        " gas safety"
+        " gas safety",
+        "investigational gas-discharge behavior requires specialist controls"
       ],
       "hybrid": [
         "vacuum pump",
@@ -665,7 +667,8 @@
         "PT-039",
         "PT-040",
         "PT-041",
-        "PT-042"
+        "PT-042",
+        "PT-037"
       ],
       "profile": "micro",
       "goal": [
