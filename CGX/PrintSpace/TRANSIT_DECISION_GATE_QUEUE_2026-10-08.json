@@ -82,13 +82,13 @@
     },
     {
       "id": "D02",
-      "recommendation": "Quantify Butter Bot and benign protected-conductor coupon before dependent space or home-product proofs",
-      "basis": "Measurable, reusable lower-consequence primitives",
+      "recommendation": "BB01 known-geometry printer/component interoperability demonstrator, BB02 modularisation, BB03 informed integration, further versions permitted, unversioned Butter Bot only when integrated end state is qualified. All components remain print research targets.",
+      "basis": "Founder decision recorded 2026-10-08; previously assumed butter-delivery benchmark expressly rejected.",
       "reversible": true
     },
     {
       "id": "D03",
-      "recommendation": "Hybrid insert active IC, secure element and protected batteries until appropriate printing evidence exists",
+      "recommendation": "Use sourced active IC, secure element, protected battery, conventional actuator/electronics only as traceable interim reference/control, while separately researching printing routes for EVERY part. Purchased parts do not satisfy the final fully printed objective.",
       "basis": "Function first with qualified supplier modules",
       "reversible": true
     },
@@ -179,12 +179,12 @@
     },
     {
       "id": "G07",
-      "title": "Butter Bot BB01 complete quantitative contract",
+      "title": "Butter Bot printer-first full-component reference programme",
       "owner": "Römer-Grex+Raphael",
       "state": "OPEN",
-      "acceptance": "Specify object mass/distance, target force and speed, joints, actuator sizing, sensors, battery and duty cycle, thermal and safety envelope, acceptance measurements",
+      "acceptance": "Map known BB01 geometry and every functional component, interfaces and measured test criteria; BB02 recursive modularity; BB03 integrated candidate; prove end-to-end multi-process printing in one session before final unversioned Butter Bot claim. Define printed versus reference bought-in parts explicitly.",
       "execution": "DESIGN",
-      "hold": "Hybrid MCU/motor/battery until proven as printable",
+      "hold": "No butter-delivery benchmark, no lab-arm redesign, no claims that active components or a single-session print have been qualified. Physical printer command remains held.",
       "priority": "P1",
       "closed": false
     },
@@ -277,5 +277,19 @@
       "closed": false
     }
   ],
-  "evidence_caveat": "Schema/test/CI are software evidence; local checkout proof must be read back after write; never treat physical tests as complete based on software."
+  "evidence_caveat": "Schema/test/CI are software evidence; local checkout proof must be read back after write; never treat physical tests as complete based on software.",
+  "founder_decision_reference": "BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md",
+  "butter_bot_founder_direction": {
+    "state": "CONFIRMED_BY_FOUNDER_2026-10-08",
+    "primary_goal": "Qualify a printer/process system capable of fabricating the entire simple known-geometry Butter Bot in one manufacturing session, attempting printable pathways for every component.",
+    "development_sequence": "BB01 baseline component/geometry compatibility; BB02 recursive modularisation; BB03 informed integrated refinement; more iterations as needed; only qualified endpoint receives unversioned Butter Bot name.",
+    "not_objectives": [
+      "Butter delivery as R&D success benchmark",
+      "Fixed-base bench-assistant design as BB01 starting target"
+    ],
+    "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
+    "active_founder_question": "Define the single print session: one automated manufacturing job with multihead, stage changes, in-situ processing and no manual assembly; interim auto-placed manufactured components are research controls not fully printed final qualification.",
+    "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
+    "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority."
+  }
 }
