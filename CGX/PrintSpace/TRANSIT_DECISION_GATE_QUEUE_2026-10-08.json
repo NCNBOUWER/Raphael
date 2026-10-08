@@ -159,6 +159,13 @@
       "recommendation": "Princeception printer-to-printer and nested manufacturing. Pro supports internal micro-printers; source trays and replaceable component magazines; fixed/micro/roving functions; independent inner atmosphere zones. Preserve safety and source evidence holds.",
       "basis": "Founder transit clarification 2026-10-08; Bootstrap charter",
       "reversible": true
+    },
+    {
+      "id": "D15",
+      "recommendation": "Permit mass-customised variants from shared starting designs; no compulsory universal physical dock, cosmetic uniformity or forced configuration. Share information through capability negotiation and traceable provenance.",
+      "basis": "Founder clarification 2026-10-08",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_DIRECTION"
     }
   ],
   "gates": [
@@ -353,7 +360,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Should a common mechanical/digital docking contract be used for part trays, fixed/roving/micro-printer modules and isolated inner process chambers, with separately rated connections for gas/pressure/power as needed?",
+    "active_founder_question": "Should individually customised printer/product variants retain reference-design ancestry plus their own configuration/evidence records, without restricting variation?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -465,6 +472,13 @@
       "evidence": "Chemistry, differential environments, pressure, actuation, contamination, energy, schedule, geometry and safety unverified; proof required.",
       "source": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
     },
-    "prior_mark_regeneration_gate": "NOT_ACCEPTED_AS_A_DISTINCT_MANDATORY_POC; preserve as circularity research candidate. Founder redirected discussion toward Princeception."
+    "prior_mark_regeneration_gate": "NOT_ACCEPTED_AS_A_DISTINCT_MANDATORY_POC; preserve as circularity research candidate. Founder redirected discussion toward Princeception.",
+    "customer_variation": {
+      "state": "FOUNDER_DIRECTION_2026-10-08",
+      "decision": "No compulsory universal docking or identical finished units; individual buyers can derive distinct aesthetic and functional configurations from an originating reference design.",
+      "example": "50,000 units with 30,000 variants is illustrative, not a forecast.",
+      "compatibility": "Discover and report actual compatible functions per installed component and accepted evidence; do not assume interchangeable hardware solely because designs are related.",
+      "separate_authority": "Safety-critical physical connections and operation remain independently validated."
+    }
   }
 }
