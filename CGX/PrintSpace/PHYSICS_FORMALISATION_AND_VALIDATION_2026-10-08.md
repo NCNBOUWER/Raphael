@@ -81,7 +81,7 @@ The v0.4 engine intentionally **does not** infer material properties from the 53
 ## References (method and constants, not generic process recipe endorsements)
 - NIST/CODATA: https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022
 - NIST AM metadata acquisition: https://www.nist.gov/publications/additive-manufacturing-data-and-metadata-acquisition-general-practice
-- NIST AM dataset registration + uncertainty: https://www.nist.gov/publications/fully-registered-situ-and-ex-situ-dataset-metal-powder-fusion-additive
+- NIST AM dataset registration + uncertainty: https://www.nist.gov/publications/fully-registered-situ-and-ex-situ-dataset-metal-powder-bed-fusion-additive
 - NIST AM-Bench: https://www.nist.gov/programs-projects/metrology-am-model-validation
 
 All formula results and datasets are **non-actuating** candidate analyses. `production_approved=false` is required across v0.4.
