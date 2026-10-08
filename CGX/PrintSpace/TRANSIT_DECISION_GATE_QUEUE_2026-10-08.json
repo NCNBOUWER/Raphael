@@ -180,6 +180,13 @@
       "recommendation": "Use a lightweight discoverable CGX skeleton defining machine/model, user-selected identity, capabilities and family relationships; avoid mandatory heavyweight OS, AI or network. Integrate CGX data/file/workspaces through compatible, sourced references; leave deterministic safety controller separate.",
       "basis": "Founder transit correction 2026-10-08",
       "reversible": true
+    },
+    {
+      "id": "D18",
+      "status": "FOUNDER_CORRECTED_IDENTITY_SCOPE",
+      "recommendation": "CGX digital individuals represent electronic machines/subsystems; passive fasteners, structural parts and non-electronic elements are child components under their owning CGX individual, not independently created CGX individuals. Preserve component passports as needed without inflating identity scope.",
+      "basis": "Founder explicit correction in transit 2026-10-08",
+      "reversible": true
     }
   ],
   "gates": [
@@ -374,7 +381,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Should each added or manufactured physical component have traceable CGX identity/lineage (individual ID when practical, batch/lot record otherwise), without requiring on-component electronics?",
+    "active_founder_question": "If a nested micro-printer is a separately functional electronic machine, should its CGX individual identity remain independent when it joins a parent printer, while passive components remain child records?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -522,14 +529,15 @@
       "constraint": "No mandatory universal docking geometry or standard cosmetic form; each variant must satisfy actual safety and function constraints."
     },
     "cgx_skeleton_device_substrate": {
-      "state": "FOUNDER_CONFIRMED_DESIGN_DIRECTION_2026-10-08",
+      "state": "FOUNDER_CORRECTED_2026-10-08",
       "record": "A discoverable lightweight CGX machine skeleton/manifest identifying what a device is, its label/name and intended configuration, without requiring Windows, a heavyweight OS, AI or internet services.",
       "setup": "Assign a base/model identity at manufacture or from open skeleton schematics; invite the user to personalise its name and select desired features at setup.",
       "hierarchy": "Machine and hardware components share a known CGX information substrate with parent, child and sibling links comparable to the existing workbook/LightSpeed organisation; expandability is not contingent on an optional module being installed.",
       "cross_spaces": "Link identities/capabilities to workspaces, dataspaces and filespaces with evidence references, revision history and owner-controlled information exchange.",
       "physical_control": "Deterministic control firmware/runtime remains necessary for real actuators and safety interlocks; CGX skeleton is not in itself an actuator driver, replacement for needed embedded software, or permission to change root authority.",
-      "modularity": "Component may be passive; external manifest/lot reference can describe it without forcing its own compute or network interface. Unique ID per component vs batch-level ID awaits founder gate.",
-      "source_scope": "PrintSpace owner-level design record only. No change to cognigrex.root.json, existing CGX schema, runtime or other owner-managed workbooks."
+      "modularity": "Founder rejected a separate CGX individual identity for each passive physical component. Electronic hardware may be represented as CGX digital individuals; nuts, screws, bolts, printed brackets and other non-electronic parts are child components of the owning CGX individual, with attributes and optional material passports/lot provenance inside the parent's hierarchy. No separate independent CGX entity is required.",
+      "source_scope": "PrintSpace owner-level design record only. No change to cognigrex.root.json, existing CGX schema, runtime or other owner-managed workbooks.",
+      "ontological_clarification": "CGX is the digital entity/filespace representation of a Cognigrex individual (analogised by founder to biological individuals within Cognigrex). The physical machine and electronic equipment are represented as digital individuals with families/relationships, while passive parts are nested structural or BOM children. Do not equate a CGX file record with electronic hardware's control firmware."
     },
     "data_sovereignty_founder_gate": "Still unapproved: local-first record ownership and cloud sync opt-in; not decided by skeleton clarification alone."
   }
