@@ -18,12 +18,20 @@
 - Use source-preserving CAD and physics comparisons. All SI values and measured material properties require sources and uncertainty; unknown stays null. Maintain the existing 531 blank material-property slot baseline unless independently evidenced.
 - Keep physical experiment/operator safety, Printer-1 activation, specialised chemistry, battery, root promotion, production release, PR merges and publication behind their existing independent gates.
 
-## Next founder gate: meaning of 'one print session'
-**Proposed, NOT YET APPROVED:** A single automated manufacturing job may use multiple printheads, material changes, in-situ processing, curing, automatic repositioning and tooling without manual component assembly. Interim prototypes may automatically insert externally made parts during one job, but such parts must remain explicitly classified as transitional substitutes and **do not qualify as a wholly printed final Butter Bot**. Confirm or change this definition before elevating it to an accepted machine requirement.
+## Founder-confirmed manufacturing-session boundary (2026-10-08)
+**ACCEPTED:** A *single print session* is one automated manufacturing cycle in which the **outer controlled process enclosure is not opened or de-sealed** between initiation and completion. Opening it for manual rotation, manual assembly, servicing or repositioning breaks the single-session claim.
+- **Permitted within the sealed run:** separate compartment/sub-build fabrication, different toolheads, in-situ processing, automated rotation/repositioning, and robotic pick-and-place/assembly of components and subassemblies.
+- **Pre-staged inputs:** materials, tools and currently non-printable components (for example, a semiconductor chip) may be staged on accessible shelves, magazines or other internal tool/part-access systems before the cycle. The robot may pick and integrate them without operator intervention or breaking the outer enclosure seal. The design should scale beyond Butter Bot to other objects/products.
+- **Not yet authorised as equivalent:** opening the main process door mid-cycle; manually moving an in-progress assembly out for processing and returning it; treating externally sourced parts as if they were additively fabricated.
+- **Terminology and distinct evidence:** 'single-session sealed fabrication and automated integration' can succeed with fully traceable pre-staged sourced parts. 'All components directly printed' is a separate, progressively researched/qualified capability target, **not a precondition for a completed single-session assembled Butter Bot**. Each part's manufacturing provenance remains explicit.
+- **Future engineering options, not yet founder rulings:** sealed transfer airlocks or post-start replenishment are candidates only if the outer process environment remains sealed and accepted safety controls validate the transfer; no such installation/operation is implied.
+
+## Next founder gate — sealed-cycle functional verification
+**PROPOSED, NOT YET APPROVED:** Require the Butter Bot to complete an in-enclosure powered self-test (electrical continuity/isolation as applicable, processor boot, sensor/actuator basic functionality and fail-safe response) **before the sealed session ends**. Full behavioural tuning, extended endurance testing and educational software iterations can continue later. This determines whether in-chamber safe test fixtures and interfaces are fundamental printer requirements.
 
 ## Decision evidence and unresolved questions
 - Founder confirmed: use Butter Bot as geometric/component manufacturing test case; aim to print *all* components and eventually a full Butter Bot in a single print session; the specialist lab-assistant derivative is later.
 - Founder rejected: butter-delivery performance as the development mission; BB01 as a fixed-base desk assistant; restricting print ambition to currently printable components.
 - Founder confirmed BB iteration progression, with BB03 an intended integration stage but not guaranteed final.
 - No local printer command, chemistry qualification, firmware release, physical test or owner authority was granted by this conversation.
-- Open question: exact formal constraints defining one print session and permissible transitional automated placement.
+- Session enclosure rule resolved by founder: maintain main sealed boundary, with robotic internal retrieval and automated integration of pre-staged components. Open question: whether powered functional self-test is required before opening the completed cycle.
