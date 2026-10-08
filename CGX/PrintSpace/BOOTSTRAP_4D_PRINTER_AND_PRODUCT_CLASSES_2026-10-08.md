@@ -56,7 +56,11 @@ Validate shared staging, coordinate frames, concurrent scheduling, vibration, ac
 - **Coupled integration:** Reserve slots, datum references, pick-and-place reach, feed transfer and process-isolation allowances. Evaluate chemical cross-contamination, heat transfer, pressure/vacuum loads, vibration, motion envelopes, electrical isolation and concurrent power budgets. A semi-permeable wall does not automatically provide gas containment or safe species separation.
 - **Evidence:** Compare multi-printer yield/time/cost with a single build head. Keep printed and sourced provenance separately recorded. No actual multi-zone environment, LED print or energy-storage print is claimed.
 
-**Next founder gate, OPEN:** Adopt a common modular docking contract for interchangeable part trays, fixed micro-printers, roving printers and inner process chambers, while allowing application-specific media and qualified isolation where necessary? Recommendation: yes; common interfaces are a reusable capability, not a compulsory common visual identity or universal process qualification.
+**Founder correction — individual designs:** A shared physical dock is not compulsory. Each purchased skeleton can be customised by function, appearance and equipment. Actual compatibility is assessed per device and module. Reference design ancestry may inform variants without requiring identical products.
+
+**Approved offline core:** Every printer has its own local CGX device identity, deterministic controller and startup capability handshake. Classical printing requires neither AI assistance nor cloud access. Roving units, nested micro-printers, specialised tools, AI and online services remain selectable. A minimal skeleton may be sold for safe incremental expansion; a fully assembled configuration is also available as a product direction. Safety controls and permitted operating modes remain local and independent of remote services.
+
+**Next gate, unanswered:** Are device configuration, capability and manufacturing records stored under local ownership by default, with cloud synchronisation by explicit opt-in only?
 
 ## Approved kit details
 Use appropriately qualified sourced items where direct printing is not proven, and include necessary protective hardware for supported functions. A per-component startup handshake reports supported capabilities and bounded modes. A guided educational journey is optional; custom variants remain valid when they operate within demonstrated limits. Unverified high-risk modes remain unavailable until qualified.
