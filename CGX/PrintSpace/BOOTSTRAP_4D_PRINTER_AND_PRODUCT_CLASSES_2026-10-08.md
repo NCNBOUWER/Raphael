@@ -60,7 +60,13 @@ Validate shared staging, coordinate frames, concurrent scheduling, vibration, ac
 
 **Approved offline core:** Every printer has its own local CGX device identity, deterministic controller and startup capability handshake. Classical printing requires neither AI assistance nor cloud access. Roving units, nested micro-printers, specialised tools, AI and online services remain selectable. A minimal skeleton may be sold for safe incremental expansion; a fully assembled configuration is also available as a product direction. Safety controls and permitted operating modes remain local and independent of remote services.
 
-**Next gate, unanswered:** Are device configuration, capability and manufacturing records stored under local ownership by default, with cloud synchronisation by explicit opt-in only?
+**CGX discoverable skeleton — founder direction (2026-10-08):** Each printer and kit starts with a lightweight, discoverable CGX definition of its model/identity, label, capacity, installed functions and desired expansions. It does not require Windows, a heavyweight application OS, network, or AI. Initial provisioning supplies a model-level name and purpose; setup permits optional user renaming, feature and build-path choices. A firmware/embedded-control layer still performs physical machine control and local interlocks; a passive description file cannot replace that runtime.
+
+**Shared information substrate:** Model printers and parts using CGX-linked identities and relationships (parent, child, sibling/variant, assembly membership and upgrades), with versioned links into workspaces, dataspaces and filespaces. The objective is compatibility of *information and reasoning*, not compulsory uniform hardware, appearance, connectors or feature packages. A printer lacking AI, roaming or a specialised module retains a defined upgrade pathway.
+
+**Identity granularity — next founder gate:** Should each manufactured/installed component have a persistent CGX lineage record, with unique unit IDs where practicable and batch/lot identity where individual tracking is unnecessary, without requiring electronics on passive parts? This would support recovery, upgrades, provenance and cross-printer learning.
+
+**Unanswered separately:** Default local ownership/storage versus opt-in cloud synchronisation has not yet been expressly approved; preserve as a separate data-governance question.
 
 ## Approved kit details
 Use appropriately qualified sourced items where direct printing is not proven, and include necessary protective hardware for supported functions. A per-component startup handshake reports supported capabilities and bounded modes. A guided educational journey is optional; custom variants remain valid when they operate within demonstrated limits. Unverified high-risk modes remain unavailable until qualified.
