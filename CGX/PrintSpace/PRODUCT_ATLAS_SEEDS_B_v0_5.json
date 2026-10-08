@@ -1,0 +1,931 @@
+{
+  "schema": "cgx.printspace.product_seeds.v0.5",
+  "segment": "B",
+  "state": "ARCHITECTURAL_CANDIDATE",
+  "products": [
+    {
+      "category": "backend",
+      "id": "FB-01",
+      "name": "CGX home set-top node",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-013",
+        "PT-015",
+        "PT-043",
+        "PT-044",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Offline CGX identity",
+        " filespace",
+        " dataspace",
+        " control"
+      ],
+      "gaps": [
+        "software security",
+        " device handshake"
+      ],
+      "hybrid": [
+        "CPU",
+        "RAM",
+        "SSD",
+        "radio",
+        "PSU"
+      ],
+      "measures": [
+        "offline",
+        "integrity",
+        "uptime"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-02",
+      "name": "Router and local mesh gateway",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-015",
+        "PT-016",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Route trusted device traffic"
+      ],
+      "gaps": [
+        "RF certification",
+        " secure boot"
+      ],
+      "hybrid": [
+        "SoC",
+        "radio",
+        "power module"
+      ],
+      "measures": [
+        "throughput",
+        "packet loss",
+        "security"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-03",
+      "name": "High capacity host node",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-016",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Simulations",
+        " local inference",
+        " storage"
+      ],
+      "gaps": [
+        "thermal",
+        " data reliability"
+      ],
+      "hybrid": [
+        "CPU",
+        "GPU",
+        "RAM",
+        "NVMe",
+        "PSU"
+      ],
+      "measures": [
+        "compute",
+        "faults",
+        "cooling"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-04",
+      "name": "SAI public edge terminal",
+      "tech_ids": [
+        "PT-001",
+        "PT-015",
+        "PT-018",
+        "PT-043",
+        "PT-044",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Bounded inference",
+        " public service"
+      ],
+      "gaps": [
+        "privacy",
+        " accountable policy",
+        " access"
+      ],
+      "hybrid": [
+        "CPU",
+        "storage",
+        "secure controller"
+      ],
+      "measures": [
+        "audit",
+        "offline",
+        "integrity"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-05",
+      "name": "SAI private personal node",
+      "tech_ids": [
+        "PT-001",
+        "PT-015",
+        "PT-018",
+        "PT-031",
+        "PT-043",
+        "PT-044"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Encrypted personal tasks and files"
+      ],
+      "gaps": [
+        "consent",
+        " key isolation",
+        " retention"
+      ],
+      "hybrid": [
+        "secure element",
+        "processor",
+        "storage"
+      ],
+      "measures": [
+        "privacy",
+        "recovery",
+        "revocation"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-06",
+      "name": "SAI government audit node",
+      "tech_ids": [
+        "PT-001",
+        "PT-015",
+        "PT-043",
+        "PT-044",
+        "PT-045",
+        "PT-054"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Controlled government records and reporting"
+      ],
+      "gaps": [
+        "jurisdiction",
+        " assurance",
+        " access"
+      ],
+      "hybrid": [
+        "HSM",
+        "secure storage",
+        "CPU"
+      ],
+      "measures": [
+        "audit",
+        "access",
+        "recovery"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-07",
+      "name": "SAI defence infrastructure node",
+      "tech_ids": [
+        "PT-001",
+        "PT-010",
+        "PT-015",
+        "PT-043",
+        "PT-044",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Isolated defensive operations data and health"
+      ],
+      "gaps": [
+        "strict authorisation",
+        " isolation"
+      ],
+      "hybrid": [
+        "trusted processor",
+        "secure module",
+        "radio"
+      ],
+      "measures": [
+        "segmentation",
+        "safe state",
+        "logging"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-08",
+      "name": "Resilient relay gateway",
+      "tech_ids": [
+        "PT-001",
+        "PT-015",
+        "PT-023",
+        "PT-043",
+        "PT-045",
+        "PT-046"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Latency and loss-tolerant communications"
+      ],
+      "gaps": [
+        "spectrum",
+        " timing",
+        " radiation where relevant"
+      ],
+      "hybrid": [
+        "transceiver",
+        "clock",
+        "processor"
+      ],
+      "measures": [
+        "link budget",
+        "uptime",
+        "recovery"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-09",
+      "name": "Microgrid dispatch and safety node",
+      "tech_ids": [
+        "PT-011",
+        "PT-012",
+        "PT-013",
+        "PT-018",
+        "PT-031",
+        "PT-034",
+        "PT-043"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Measure and regulate local energy systems"
+      ],
+      "gaps": [
+        "grid compliance",
+        " power isolation"
+      ],
+      "hybrid": [
+        "metering IC",
+        "processor",
+        "contactors"
+      ],
+      "measures": [
+        "energy balance",
+        "trip",
+        "logging"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "backend",
+      "id": "FB-10",
+      "name": "LightSpeed GO mobile gateway",
+      "tech_ids": [
+        "PT-001",
+        "PT-015",
+        "PT-023",
+        "PT-031",
+        "PT-043",
+        "PT-044",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Device pairing and operator-confirmed CGX access"
+      ],
+      "gaps": [
+        "OS permissions",
+        " revocation",
+        " integrity"
+      ],
+      "hybrid": [
+        "mobile SoC",
+        "secure store",
+        "radio"
+      ],
+      "measures": [
+        "pairing",
+        "consent",
+        "offline"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-01",
+      "name": "Acoustic ecology faux habitat surrogate",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-039",
+        "PT-046",
+        "PT-059"
+      ],
+      "profile": "surface",
+      "goal": [
+        "Research sound propagation without live faunal manipulation"
+      ],
+      "gaps": [
+        "animal welfare",
+        " study permits",
+        " acoustic claims"
+      ],
+      "hybrid": [
+        "optional transducer",
+        "logger"
+      ],
+      "measures": [
+        "frequency response",
+        "disturbance",
+        "weather"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-02",
+      "name": "Artificial nesting / roost module",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-009",
+        "PT-018",
+        "PT-059"
+      ],
+      "profile": "surface",
+      "goal": [
+        "Species-specific habitat and temperature monitoring"
+      ],
+      "gaps": [
+        "species needs",
+        " toxicity",
+        " ventilation"
+      ],
+      "hybrid": [
+        "optional temperature logger"
+      ],
+      "measures": [
+        "internal climate",
+        "uptake",
+        "survival"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-03",
+      "name": "Bioacoustic recorder node",
+      "tech_ids": [
+        "PT-001",
+        "PT-018",
+        "PT-023",
+        "PT-031",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "audio",
+      "goal": [
+        "Record non-invasive wildlife acoustic baselines"
+      ],
+      "gaps": [
+        "privacy",
+        " classification error"
+      ],
+      "hybrid": [
+        "microphone",
+        "processor",
+        "radio",
+        "cell"
+      ],
+      "measures": [
+        "noise floor",
+        "drift",
+        "provenance"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-04",
+      "name": "Water-quality sensing cell",
+      "tech_ids": [
+        "PT-007",
+        "PT-018",
+        "PT-021",
+        "PT-022",
+        "PT-043",
+        "PT-049",
+        "PT-050"
+      ],
+      "profile": "habitat",
+      "goal": [
+        "Measure field chemistry and water temperature"
+      ],
+      "gaps": [
+        "electrode fouling",
+        " calibration",
+        " biosecurity"
+      ],
+      "hybrid": [
+        "electrode readout",
+        "processor"
+      ],
+      "measures": [
+        "accuracy",
+        "leak",
+        "cleaning"
+      ],
+      "opportunity": [
+        "electrical_potential"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-05",
+      "name": "Cleanup sorting and feed node",
+      "tech_ids": [
+        "PT-001",
+        "PT-018",
+        "PT-023",
+        "PT-043",
+        "PT-044",
+        "PT-060",
+        "PT-061"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Identify recovered stock and qualify recycled feed"
+      ],
+      "gaps": [
+        "contamination",
+        " purity",
+        " sorting confidence"
+      ],
+      "hybrid": [
+        "sensors",
+        "processor",
+        "sorter"
+      ],
+      "measures": [
+        "yield",
+        "purity",
+        "traceability"
+      ],
+      "opportunity": [
+        "recycling_purity"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-06",
+      "name": "EcoX tree provenance and seed cradle",
+      "tech_ids": [
+        "PT-001",
+        "PT-044",
+        "PT-047",
+        "PT-063"
+      ],
+      "profile": "habitat",
+      "goal": [
+        "Document tree identity and protected propagules"
+      ],
+      "gaps": [
+        "biosecurity",
+        " permits",
+        " seed suitability"
+      ],
+      "hybrid": [
+        "NFC tag",
+        "optional logger"
+      ],
+      "measures": [
+        "germination",
+        "identity",
+        "durability"
+      ],
+      "opportunity": [
+        "biological_viability"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-07",
+      "name": "Wetland acoustic baffle and sensors",
+      "tech_ids": [
+        "PT-001",
+        "PT-009",
+        "PT-021",
+        "PT-023",
+        "PT-039",
+        "PT-059"
+      ],
+      "profile": "surface",
+      "goal": [
+        "Measure and reduce disruptive noise"
+      ],
+      "gaps": [
+        "habitat displacement",
+        " hydrology"
+      ],
+      "hybrid": [
+        "acoustic sensor",
+        "water probe"
+      ],
+      "measures": [
+        "before after",
+        "species response"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-08",
+      "name": "Soil and moisture field monitoring",
+      "tech_ids": [
+        "PT-018",
+        "PT-021",
+        "PT-022",
+        "PT-043",
+        "PT-044",
+        "PT-050"
+      ],
+      "profile": "habitat",
+      "goal": [
+        "Measure water and soil change"
+      ],
+      "gaps": [
+        "probe drift",
+        " soil exposure"
+      ],
+      "hybrid": [
+        "sensor",
+        "MCU",
+        "radio"
+      ],
+      "measures": [
+        "accuracy",
+        "durability",
+        "retrieval"
+      ],
+      "opportunity": [
+        "humidity_gradient"
+      ]
+    },
+    {
+      "category": "eco",
+      "id": "FE-09",
+      "name": "Fauna-safe remediation rover",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-018",
+        "PT-023",
+        "PT-026",
+        "PT-043",
+        "PT-047",
+        "PT-053"
+      ],
+      "profile": "fluid",
+      "goal": [
+        "Inspect and selectively collect litter"
+      ],
+      "gaps": [
+        "fauna detection",
+        " waste hazards"
+      ],
+      "hybrid": [
+        "camera",
+        "actuators",
+        "compute",
+        "cell"
+      ],
+      "measures": [
+        "false picks",
+        "recovery",
+        "disturbance"
+      ],
+      "opportunity": [
+        "recycling_purity"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-01",
+      "name": "M1 elevated modular deck unit",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-010",
+        "PT-011",
+        "PT-015",
+        "PT-018",
+        "PT-019",
+        "PT-056",
+        "PT-059"
+      ],
+      "profile": "civil",
+      "goal": [
+        "Raised deck",
+        " sensing",
+        " service routing"
+      ],
+      "gaps": [
+        "structural compliance",
+        " load",
+        " fire"
+      ],
+      "hybrid": [
+        "certified beams",
+        "monitoring node"
+      ],
+      "measures": [
+        "FEM",
+        "fatigue",
+        "thermal",
+        "noise"
+      ],
+      "opportunity": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-02",
+      "name": "M1 acoustic roadway barrier",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-009",
+        "PT-010",
+        "PT-018",
+        "PT-039",
+        "PT-056"
+      ],
+      "profile": "civil",
+      "goal": [
+        "Noise mitigation with measured band response"
+      ],
+      "gaps": [
+        "acoustic proof",
+        " fauna effects",
+        " weather"
+      ],
+      "hybrid": [
+        "optional logger",
+        "mounts"
+      ],
+      "measures": [
+        "insertion loss",
+        "SPL",
+        "aging"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-03",
+      "name": "Coomera and Logan river nodes",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-008",
+        "PT-011",
+        "PT-018",
+        "PT-019",
+        "PT-052",
+        "PT-059"
+      ],
+      "profile": "civil",
+      "goal": [
+        "River-crossing structural and water interfaces"
+      ],
+      "gaps": [
+        "flood",
+        " scour",
+        " corrosion"
+      ],
+      "hybrid": [
+        "structural bearings",
+        "sensors"
+      ],
+      "measures": [
+        "hydraulics",
+        "deflection",
+        "fatigue"
+      ],
+      "opportunity": [
+        "fluidic_pressure_difference"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-04",
+      "name": "Solar shoulder misting and runoff",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-011",
+        "PT-018",
+        "PT-021",
+        "PT-033",
+        "PT-050",
+        "PT-052"
+      ],
+      "profile": "civil",
+      "goal": [
+        "Harvest and route water",
+        " photovoltaic support"
+      ],
+      "gaps": [
+        "water safety",
+        " maintenance",
+        " road risk"
+      ],
+      "hybrid": [
+        "PV module",
+        "pumps",
+        "sensors"
+      ],
+      "measures": [
+        "flow",
+        "power",
+        "quality"
+      ],
+      "opportunity": [
+        "fluidic_pressure_difference"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-05",
+      "name": "Rail and guideway sensing coating",
+      "tech_ids": [
+        "PT-011",
+        "PT-015",
+        "PT-018",
+        "PT-019",
+        "PT-024",
+        "PT-056",
+        "PT-059"
+      ],
+      "profile": "civil",
+      "goal": [
+        "Distributed rail stress and communications"
+      ],
+      "gaps": [
+        "EMC",
+        " track specification"
+      ],
+      "hybrid": [
+        "logger",
+        "radio",
+        "bonding"
+      ],
+      "measures": [
+        "strain",
+        "uptime",
+        "signal"
+      ],
+      "opportunity": [
+        "residual_stress_preload"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-06",
+      "name": "Emergency resilience microfactory",
+      "tech_ids": [
+        "PT-001",
+        "PT-003",
+        "PT-005",
+        "PT-011",
+        "PT-044",
+        "PT-051",
+        "PT-054",
+        "PT-055",
+        "PT-070"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Make authorised emergency spares"
+      ],
+      "gaps": [
+        "regulated parts",
+        " material supply"
+      ],
+      "hybrid": [
+        "machinery",
+        "metrology"
+      ],
+      "measures": [
+        "fit",
+        "response time",
+        "quality"
+      ],
+      "opportunity": [
+        "recycling_purity"
+      ]
+    },
+    {
+      "category": "civil",
+      "id": "FC-07",
+      "name": "Functional building skin",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-009",
+        "PT-010",
+        "PT-011",
+        "PT-018",
+        "PT-021",
+        "PT-057",
+        "PT-059"
+      ],
+      "profile": "civil",
+      "goal": [
+        "Protection",
+        " sensing",
+        " thermal control"
+      ],
+      "gaps": [
+        "building standards",
+        " weather",
+        " fire"
+      ],
+      "hybrid": [
+        "sensors",
+        "power inserts"
+      ],
+      "measures": [
+        "lifetime",
+        "thermal",
+        "alerts"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    }
+  ]
+}
