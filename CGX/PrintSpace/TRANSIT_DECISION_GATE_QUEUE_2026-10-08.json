@@ -194,6 +194,27 @@
       "recommendation": "Do not collapse reusable CGX type definitions into installed hardware children. Reconcile global definitions with local references and source-owner evidence; 'universal technology' is unbounded R&D target within physical laws, versus test-bounded manufacturing claims.",
       "basis": "Founder 2026-10-08 correction plus 2026-09-21 CGX migration strategy (non-canonical), sampled Romer/Systems/Operations workbook control and evidence tabs.",
       "reversible": true
+    },
+    {
+      "id": "D20",
+      "status": "FOUNDER_APPROVED_RELEASE_PRINCIPLE",
+      "recommendation": "4D universal technology research covers physically possible, stimulus-responsive and embedded functional products; externally advertised printability must be evidenced per process, part and operating window. Preserve terrestrial New Neutrals taxonomy as a referenced label pending source confirmation.",
+      "basis": "Founder YES + clarification 2026-10-08",
+      "reversible": true
+    },
+    {
+      "id": "D21",
+      "status": "FOUNDER_APPROVED_NESTED_CGX_RELATION",
+      "recommendation": "Nested independently functional printer can be a CGX individual linked as a child assembly of outer printer. Global component families remain separate type definitions, passive installed parts are child records; no forced unique topology.",
+      "basis": "Founder YES 2026-10-08",
+      "reversible": true
+    },
+    {
+      "id": "D22",
+      "status": "FOUNDER_APPROVED_RISK_BASED_CHANGE_LOGGING",
+      "recommendation": "Log every sourced/printed part swap into device history/DBR; target requalification to actual impact and equivalence. Do not require blanket full requalification for specification-equivalent noncritical replacements. Keep retention/cache-clear release policy open.",
+      "basis": "Founder 2026-10-08 acrylic example and DBR receipt history instruction",
+      "reversible": true
     }
   ],
   "gates": [
@@ -268,9 +289,9 @@
       "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links. Define per-device cached vs durable DBR data, an append-only service/configuration change record, risk-classified equivalence checks and safety-bounded requalification for swapped components. Distinguish independent nested printer CGX individual from outer parent hierarchy.",
       "execution": "MANUAL",
-      "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer.",
+      "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer. No unverified acrylic/window substitution may silently enlarge or preserve vacuum/pressure ratings; engineering qualification still required.",
       "priority": "P1",
       "closed": false,
       "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
@@ -370,7 +391,7 @@
       "title": "Owner review / production / release decision",
       "owner": "EMASSC+Achilles",
       "state": "HELD_AUTHORITY",
-      "acceptance": "Explicit code ownership, independent safety/physical evidence, rollback/receipt and acceptance before any merge, production or publicity",
+      "acceptance": "Explicit code ownership, independent safety/physical evidence, rollback/receipt and acceptance before any merge, production or publicity Verify claimed per-product 4D response under measured stimuli and actual machine process coverage; keep universal research remit separate from market capability claims.",
       "execution": "MANUAL",
       "hold": "No public claims, production commands, root promotion or unreviewed merges",
       "priority": "P0",
@@ -388,7 +409,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Approve release rule: universal technology is a research/design scope, while individual printer/product manufacturing capabilities and public claims require application-specific verified evidence and safety/owner approval?",
+    "active_founder_question": "On cache-clear or factory reset, should each printer clear user-specific preferences and disposable caches while retaining the minimum non-personal manufacturing/safety/service DBR history bound to the machine (with owner-controlled export and privacy/legal retention rules)?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -562,6 +583,24 @@
       "boundedness": "Selected-source reconciliation only; entire corpus and all workbook logic gates have NOT been exhaustively audited. No CGX root schema, runtime, upstream UTP/PMX, or other owner's Drive workbook altered.",
       "owner_handoff": "IN_TRANSIT_CONTINUATION_HANDOFF_2026-10-08.md"
     },
-    "nested_printer_identity_gate": "Deferred, not answered, by global CGX family/definition scope correction. Preserve without forcing an independent identity."
+    "nested_printer_identity_gate": "FOUNDER_YES_2026-10-08: nested functionally capable mini-printers may hold their own CGX digital individual within the parent printer's assembly hierarchy, analogised to the role of a nut/bolt; do not infer compulsory universal independent network access, top-level authority or physical modular connector.",
+    "universal_release_principle": {
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "universal": "Any technology consistent with applicable physical laws remains an R&D/manufacturing ambition, not a current claim of ability.",
+      "what_4d_means": "Printed 3D objects with environmental/stimulus-driven state or property changes over time; embedded functional and solid-state/wearable technology part of the proposed process remit. Time-dependent behaviour requires measured stimulus-response qualification.",
+      "public_claim_rule": "Only state as printable/produced/certified the specific combinations of material, tool, environment, process, part and quality actually verified. Preserve pending ambitions without advertising them as demonstrated.",
+      "naming": "Founder references established 'New Neutrals' label for terrestrial/non-primary interplanetary supply-chain technologies (examples: wearable glasses and road paint); confirm actual source spelling and owning taxonomy before canonical promotion.",
+      "cross_domain": "Mark/Luke and interplanetary systems retain owner-specific scope, product identities and separate engineering proof.",
+      "safety": "No physical printer operating authorisation or qualification implied."
+    },
+    "component_replacement_and_dbr": {
+      "state": "FOUNDER_APPROVED_PRINCIPLE_2026-10-08",
+      "log_every_change": true,
+      "replace_rule": "A like-for-like replacement of a non-critical item with equivalent specification and verified condition is logged; full system requalification is not automatic.",
+      "qualification_trigger": "Changed functional/safety/material/geometry/process conditions, unknown equivalence, hazard-critical containment, adverse wear, sensor/calibration drift, firmware/energy/pressure/thermal variation or owner-qualification policy trigger appropriate targeted checks.",
+      "trace": "Printer CGX device history/DBR receipt chain should provide current configuration, substitutions, component material provenance where necessary, process and function history, repairs, adjustments and source of evidence.",
+      "cache": "Cache clearing is contemplated but its exact effect on durable receipts, personal data and owner/transfer records is not yet authorised; physical safety logs and legally required trace cannot be silently lost.",
+      "no_implementation_claim": "Founder scope only; no validated on-device DBR integration, audit retention or secure storage attested."
+    }
   }
 }
