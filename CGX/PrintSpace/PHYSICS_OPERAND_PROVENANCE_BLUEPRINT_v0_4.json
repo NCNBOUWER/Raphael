@@ -7,16 +7,7 @@
   "description": "Each equation operand requires a calibrated measurement, justified source-derived quantity, geometry, operating-state measurement, or explicitly scoped constant. Empty numeric values remain null by design.",
   "equation_count": 59,
   "operand_count": 172,
-  "unresolved_domain_assignments": [
-    {
-      "eq": "PS-EQ-042",
-      "sym": "mass"
-    },
-    {
-      "eq": "PS-EQ-044",
-      "sym": "mass"
-    }
-  ],
+  "unresolved_domain_assignments": [],
   "missing_material_property_definitions": [
     {
       "symbol": "strain",
@@ -1896,7 +1887,7 @@
         {
           "symbol": "mass",
           "unit": "kg",
-          "source_class": "DOMAIN_ASSIGNMENT_REVIEW",
+          "source_class": "measured_specimen_mass",
           "candidate_measurement_properties": [],
           "source_status": "SOURCE_EVIDENCE_REQUIRED",
           "numeric_value": null,
@@ -1930,7 +1921,7 @@
           "validated_range": null
         }
       ],
-      "unresolved_source_count": 1,
+      "unresolved_source_count": 0,
       "all_numeric_inputs_provenanced": false,
       "authorisation": false
     },
@@ -1974,7 +1965,7 @@
         {
           "symbol": "mass",
           "unit": "kg",
-          "source_class": "DOMAIN_ASSIGNMENT_REVIEW",
+          "source_class": "measured_specimen_mass",
           "candidate_measurement_properties": [],
           "source_status": "SOURCE_EVIDENCE_REQUIRED",
           "numeric_value": null,
@@ -2008,7 +1999,7 @@
           "validated_range": null
         }
       ],
-      "unresolved_source_count": 1,
+      "unresolved_source_count": 0,
       "all_numeric_inputs_provenanced": false,
       "authorisation": false
     },
