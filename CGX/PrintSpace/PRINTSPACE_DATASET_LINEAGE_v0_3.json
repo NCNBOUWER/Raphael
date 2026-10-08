@@ -124,6 +124,13 @@
       "records": 198,
       "domains": 4,
       "physical_validation": 0
+    },
+    {
+      "artifact": "CGX-F4D-PHYSINPUT-20261008",
+      "path": "PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json",
+      "records": 172,
+      "equations": 59,
+      "recorded_numeric_values": 0
     }
   ],
   "evidence_policy": {
@@ -145,10 +152,14 @@
     "material_property_slots_waiting_for_measurement": 531,
     "analytic_screeners": 59,
     "qualified_screeners": 0,
-    "equation_validation": "SI dimension checks + synthetic analytical fixtures only; real material properties remain unpopulated"
+    "equation_validation": "SI dimension checks + synthetic analytical fixtures only; real material properties remain unpopulated",
+    "operand_requirements": 172,
+    "operand_measurements_populated": 0,
+    "property_schema_gaps": 7
   },
   "qa_tests": [
     "test_multistage_route_planner.py",
-    "test_printspace_population_v0_3.py"
+    "test_printspace_population_v0_3.py",
+    "test_dimensioned_equation_engine_v0_4.py"
   ]
 }
