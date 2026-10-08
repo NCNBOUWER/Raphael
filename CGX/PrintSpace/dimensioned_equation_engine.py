@@ -131,8 +131,8 @@ def load_catalogue(path=None):
 
 def validate_catalogue(catalog):
     eqs=catalog["models"]
-    if len(eqs)!=47 or len({x["id"] for x in eqs})!=len(eqs):
-        raise ValueError("Expected 47 distinct equation models")
+    if len(eqs)!=59 or len({x["id"] for x in eqs})!=len(eqs):
+        raise ValueError("Expected 59 distinct equation models")
     constants=catalog["constants"]
     for k,data in constants.items():
         if k not in ("pi","c_light","R_gas","F_const","eps0","mu0"):
@@ -172,11 +172,16 @@ def evaluate(equation_id,inputs,catalogue=None):
         if k in ("area","radius","length","thickness","gap","width","diameter","volume","range",
                  "dynamic_viscosity","diffusivity","thermal_conductivity","young_modulus",
                  "internal_resistance","resistance","density_a","density_b","charge_number",
-                 "surface_tension","density_difference","permeability"):
+                 "surface_tension","density_difference","permeability","resistivity",
+                 "thermal_diffusivity","flow_timescale","reaction_timescale",
+                 "electrical_conductivity","specific_heat","angular_speed","mu_r",
+                 "thermal_capacitance","thermal_resistance"):
             if v<=0:
                 raise ValueError("Positive input required: "+k)
         if k in ("efficiency","conversion_efficiency","fraction_a","fraction_b") and not 0<=v<=1:
             raise ValueError("Fraction/efficiency must be in [0,1]")
+        if k in ("convective_coefficient","mean_free_path") and v<0:
+            raise ValueError("Nonnegative value required: "+k)
         if k=="temperature" and v<=0:
             raise ValueError("Absolute temperature must be positive Kelvin")
         if k=="gravity" and v<0:
