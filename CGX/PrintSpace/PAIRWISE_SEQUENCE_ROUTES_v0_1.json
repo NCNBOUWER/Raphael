@@ -11,11 +11,11 @@
     "ordered_pairs": 196
   },
   "route_classes": {
-    "C": "shared_window_candidate",
     "S": "sequenced_candidate",
     "T": "managed_transition",
     "M": "modular_insert",
-    "R": "research_direct_route"
+    "R": "research_direct_route",
+    "P": "shared_window_candidate"
   },
   "global_gates": [
     "Safety gate is not tradeable against throughput or cost",
@@ -116,7 +116,7 @@
       "pair_id": "PS-PAIR-MT-MT",
       "from": "MT",
       "to": "MT",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -464,7 +464,7 @@
       "pair_id": "PS-PAIR-CR-CR",
       "from": "CR",
       "to": "CR",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -814,7 +814,7 @@
       "pair_id": "PS-PAIR-TP-TP",
       "from": "TP",
       "to": "TP",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -1146,7 +1146,7 @@
       "pair_id": "PS-PAIR-RS-RS",
       "from": "RS",
       "to": "RS",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -1477,7 +1477,7 @@
       "pair_id": "PS-PAIR-EL-EL",
       "from": "EL",
       "to": "EL",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -1814,7 +1814,7 @@
       "pair_id": "PS-PAIR-CI-CI",
       "from": "CI",
       "to": "CI",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -2155,7 +2155,7 @@
       "pair_id": "PS-PAIR-DE-DE",
       "from": "DE",
       "to": "DE",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -2491,7 +2491,7 @@
       "pair_id": "PS-PAIR-MG-MG",
       "from": "MG",
       "to": "MG",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -2826,7 +2826,7 @@
       "pair_id": "PS-PAIR-OP-OP",
       "from": "OP",
       "to": "OP",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -3168,7 +3168,7 @@
       "pair_id": "PS-PAIR-FL-FL",
       "from": "FL",
       "to": "FL",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -3527,7 +3527,7 @@
       "pair_id": "PS-PAIR-EC-EC",
       "from": "EC",
       "to": "EC",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
@@ -3877,8 +3877,8 @@
       "pair_id": "PS-PAIR-SC-SC",
       "from": "SC",
       "to": "SC",
-      "route_class": "C",
-      "route_label": "shared_window_candidate",
+      "route_class": "M",
+      "route_label": "modular_insert",
       "directional": true,
       "production_approved": false,
       "physical_evidence": "NOT_ASSESSED_FOR_SPECIFIC_RECIPE",
@@ -3887,12 +3887,12 @@
         "Resolve exact feedstock lots and process temperatures; no family-level production approval",
         "Verify geometry, contact topology, loads and tolerance stack",
         "Verify surface cleanliness, adhesion/chemical compatibility and service-life ageing",
-        "Demonstrate overlapping process and atmosphere windows; control feed switching/cross contamination",
-        "Electrical insulation, contact resistance, EMI/ESD as relevant; functional electrical test"
+        "Electrical insulation, contact resistance, EMI/ESD as relevant; functional electrical test",
+        "Integrate independently manufactured qualified module; test connectors and module-level safety"
       ],
       "fallback_routes": [
-        "Single-cell multi-feed deposition after recipe qualification",
-        "Sequence via pause-clean-resume if co-processing window fails"
+        "Separate manufacture and precision placement",
+        "Low-energy overmould/encapsulation within module operating envelope"
       ]
     },
     {
@@ -4228,8 +4228,8 @@
       "pair_id": "PS-PAIR-BT-BT",
       "from": "BT",
       "to": "BT",
-      "route_class": "C",
-      "route_label": "shared_window_candidate",
+      "route_class": "M",
+      "route_label": "modular_insert",
       "directional": true,
       "production_approved": false,
       "physical_evidence": "NOT_ASSESSED_FOR_SPECIFIC_RECIPE",
@@ -4238,13 +4238,13 @@
         "Resolve exact feedstock lots and process temperatures; no family-level production approval",
         "Verify geometry, contact topology, loads and tolerance stack",
         "Verify surface cleanliness, adhesion/chemical compatibility and service-life ageing",
-        "Demonstrate overlapping process and atmosphere windows; control feed switching/cross contamination",
         "Electrical insulation, contact resistance, EMI/ESD as relevant; functional electrical test",
-        "No direct uncontrolled thermal, mechanical, charging or chemical process on a qualified cell; serviceable protection"
+        "No direct uncontrolled thermal, mechanical, charging or chemical process on a qualified cell; serviceable protection",
+        "Integrate independently manufactured qualified module; test connectors and module-level safety"
       ],
       "fallback_routes": [
-        "Single-cell multi-feed deposition after recipe qualification",
-        "Sequence via pause-clean-resume if co-processing window fails"
+        "Separate manufacture and precision placement",
+        "Low-energy overmould/encapsulation within module operating envelope"
       ]
     },
     {
@@ -4594,7 +4594,7 @@
       "pair_id": "PS-PAIR-BV-BV",
       "from": "BV",
       "to": "BV",
-      "route_class": "C",
+      "route_class": "P",
       "route_label": "shared_window_candidate",
       "directional": true,
       "production_approved": false,
