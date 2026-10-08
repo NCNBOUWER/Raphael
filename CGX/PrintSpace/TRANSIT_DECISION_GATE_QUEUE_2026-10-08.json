@@ -97,6 +97,19 @@
       "recommendation": "Keep Mobile/LSGO in display, analysis and owner review; physical OS/managing authority held",
       "basis": "Android/PWA source evidence is not platform-attested permission",
       "reversible": true
+    },
+    {
+      "id": "D06",
+      "recommendation": "Co-develop the sealed multi-process station and instrumented motion testbed with shared kinematic/structural datums; study layered environmental isolation and vibration transmission; retain safety and owner holds.",
+      "basis": "Founder approval 2026-10-08, see SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md",
+      "reversible": true
+    },
+    {
+      "id": "D07",
+      "recommendation": "Proposed staged environment: first-gen outer sealed near-ambient nonreactive build, reserve independently rated and verified vacuum/pressure-controlled modules for later.",
+      "basis": "Founder decision requested; pressure and dynamic loads not specified; no physical chamber authorisation.",
+      "reversible": true,
+      "status": "AWAITING_FOUNDER_DECISION"
     }
   ],
   "gates": [
@@ -186,7 +199,8 @@
       "execution": "DESIGN",
       "hold": "No unsealed operator repositioning in a claimed one-session build; do not misrepresent pre-staged chips as directly printed. No butter-delivery benchmark, no lab-arm redesign, no physical actuation authority from documentation.",
       "priority": "P1",
-      "closed": false
+      "closed": false,
+      "owner_review_companion": "SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md"
     },
     {
       "id": "G08",
@@ -288,7 +302,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Must the completed robot pass an in-enclosure powered functional self-test before the sealed manufacturing cycle ends, or can powered commissioning begin after removal?",
+    "active_founder_question": "Approve first-generation sealed near-ambient, nonreactive envelope with future separately qualified vacuum/pressure-controlled modules, rather than requiring vacuum/controlled-pressure inner chamber in the first-generation core?",
     "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -306,6 +320,15 @@
       ],
       "provenance_requirement": "Keep direct-printed content separate from vendor-made or preloaded components; a sealed one-session complete Butter Bot need not be composed of 100% directly printed parts, but all-component printing research remains in scope.",
       "cross_product": "Design automated tooling/component-access interface for wider product families, not only Butter Bot."
+    },
+    "dual_track_station_and_motion": {
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "decision": "Develop sealed multi-process printer station and motion/kinematics testbed concurrently, hybridising results into one scalable print station.",
+      "design_candidate": "Secondary internal isolation/process region concept analogous in purpose to multilayer window structures; functions/loads/safety/pressures not yet selected or qualified.",
+      "mechanical_priority": "Measure and minimise actuator reaction-force transfer, tool vibration, structural resonance, datum drift and settling time.",
+      "enclosure": "Maintain sealed outer chamber throughout cycle; internal robotic tool swaps/pick-place and external digital communications through appropriately sealed feedthroughs permitted.",
+      "source_file": "SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md",
+      "physical_authority": "HOLD"
     }
   }
 }
