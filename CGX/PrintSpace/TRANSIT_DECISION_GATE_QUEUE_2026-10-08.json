@@ -860,6 +860,32 @@
       "First self-printed grips/parts != complete universal printer self-replication",
       "Never bypass local C0/interlocks/qualifications",
       "No root or other branch mutation"
-    ]
+    ],
+    "co_running_topology_alignment_20261009": {
+      "state": "PRINTSPACE_CONSUMER_BOUND_SOURCE_OWNER_FRONTIERS_OPEN",
+      "projection": "PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json",
+      "tests": "test_printceptor_cgx_frontier_projection.py",
+      "source_handoff": "IN_TRANSIT_CONTINUATION_HANDOFF_2026-10-08.md",
+      "atlas_current_archetypes": 411,
+      "source_statement": "Drive canon, LightSpeed Git implementation mirror, Raphael UTP PR5 and Post-Mix PR11 remain independent source owners. LightSpeed PR123/126/127 merged; PrintSpace PR6 still review. Older 407 projection is not current.",
+      "local_root_s92": "READ_ONLY_CONFIRMED",
+      "local_lightspeed_main": "4819e5f1b1ecff388621d74778987e4c52e3e079",
+      "local_root_checkout_pointer": "d35e74c2561d957559ed5dbd16cd1148e491691c",
+      "root_pointer_resolution": "OPEN_NEO_R2_ACHILLES_ONLY",
+      "side_chat_rule": "No chat-by-chat automatic memory as canonical; persist and verify source-owner revisions/receipts; user query hydrates smallest permitted dependency cone and escalates only when task/physics/evidence requires.",
+      "operational_action": "REVIEW_ONLY_NO_NEW_HOUR_QUEUE_OR_MERGE",
+      "target_existing_gates": [
+        "G00",
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G14",
+        "G15"
+      ]
+    }
   }
 }
