@@ -111,6 +111,19 @@
       "records": 531,
       "measured_value_count": 0,
       "distinct_property_types": 110
+    },
+    {
+      "artifact": "CGX-F4D-EQN-20261008",
+      "path": "PHYSICAL_EQUATION_CATALOGUE_v0_4.json",
+      "records": 59,
+      "physical_validation": 0
+    },
+    {
+      "artifact": "CGX-F4D-PHYSCROSS-20261008",
+      "path": "PHYSICS_FUNCTION_CROSSWALK_v0_4.json",
+      "records": 198,
+      "domains": 4,
+      "physical_validation": 0
     }
   ],
   "evidence_policy": {
@@ -129,7 +142,10 @@
     "provenance_rule": "Every material property needs measured value, units, uncertainty, temperature/regime, specimen geometry, feedstock lot, device calibration, date and attributable source",
     "state_rule": "All v0.3 records are provisional, no demonstrated 4D printer capability inferred",
     "material_matrix_physical_qualification_count": 0,
-    "material_property_slots_waiting_for_measurement": 531
+    "material_property_slots_waiting_for_measurement": 531,
+    "analytic_screeners": 59,
+    "qualified_screeners": 0,
+    "equation_validation": "SI dimension checks + synthetic analytical fixtures only; real material properties remain unpopulated"
   },
   "qa_tests": [
     "test_multistage_route_planner.py",
