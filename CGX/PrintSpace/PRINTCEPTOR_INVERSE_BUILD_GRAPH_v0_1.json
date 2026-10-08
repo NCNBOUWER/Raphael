@@ -12,7 +12,7 @@
   },
   "method": {
     "node_semantics": "product/component AND needs + route OR options",
-    "choice_semantics": "PRINT / HYBRID / REUSE / BUY / HAND / ASSEMBLE / QUALIFY",
+    "choice_semantics": "PRINT / HYBRID / REUSE / BUY / HAND / ASSEMBLE / QUALIFY; SALVAGE and REUSE donor routes evaluated under per-component qualification; HAND requires operator, never counts as autonomous",
     "optimization": "Never report cheapest fully qualified route while variable costs, tool ownership, physical evidence and operating limitations unknown.",
     "risk": "Unqualified active electronics, high pressure/vacuum, protected power, hot appliances and certified safety equipment are not automatically printable.",
     "origin": "reverse from BB-FINAL and PC0-4D through identified sourced/printed components"
@@ -142,6 +142,56 @@
       "actual_ownership": "UNVERIFIED",
       "physical_qualification": "NONE_INFERRED",
       "autonomous_single_session": "ARCHITECTURE_ONLY"
+    },
+    {
+      "id": "K-FDM-PEN-ARM",
+      "name": "Entry FDM + dismantled 3D pen candidate + printed single robotic arm",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT"
+      ],
+      "known_price_observations": [
+        {
+          "label": "Creality Ender-3 V3 SE entry FDM example",
+          "aud": 259,
+          "url": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+          "observed_date": "2026-10-09",
+          "note": "observed listing, price/availability variable"
+        },
+        {
+          "label": "Jaycar 3D pen example",
+          "aud": 79.95,
+          "url": "https://www.jaycar.com.au/high-temp-pla-3d-pen-kit/p/TL4582",
+          "observed_date": "2026-10-09",
+          "note": "pen example only; no compatibility claim"
+        },
+        {
+          "label": "Rotary tool example",
+          "aud": 54.98,
+          "url": "https://www.bunnings.com.au/products/tools/tool-accessories/woodworking-rotary/rotary-tools/corded-rotary-tools",
+          "observed_date": "2026-10-09",
+          "note": "manual finishing; not rated automated spindle"
+        }
+      ],
+      "unpriced_dependencies": [
+        "filament/spool",
+        "pen replacement hotend or actual pen retrofit measurements",
+        "bench supply/insulation/wiring",
+        "one servo/stepper with feedback or guarded joint actuator",
+        "drivers/controller rated to motor and pen",
+        "thermal probe, over-temperature cutoff and hardware e-stop",
+        "bearings/shaft/fasteners",
+        "limit sensors and guard",
+        "basic electrical meter/PPE",
+        "heat safe pen mount",
+        "source manual licensing/warranty conditions",
+        "sourced-rated wiring and connectors"
+      ],
+      "actual_ownership": "UNVERIFIED",
+      "physical_qualification": "NONE_INFERRED",
+      "autonomous_single_session": "NO; a single-arm bench demonstrator even if motorised is not a dual-arm sealed PrintCeptor"
     }
   ],
   "components": [
@@ -1009,6 +1059,183 @@
           "cost_aud": null
         }
       ]
+    },
+    {
+      "id": "PC-PEN-HEAD",
+      "name": "Repurposed 3D pen extrusion head with measured thermal/electrical interface",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "SALVAGE",
+          "requires": [
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "existing pen or donor hotend, thermal fuse/sensor",
+            "matched isolated supply/controller, rated filament path"
+          ],
+          "technical_note": "Remove unnecessary hand-grip parts only after verifying heater, thermistor, voltage/current, nozzle, continuous duty, thermal runaway protection, firmware compatibility; never connect unknown pen to raw MCU motor output.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "commercial rated hotend/extruder, compatible thermistor/heater, feeder and temperature controller"
+          ],
+          "technical_note": "Likely simpler or cheaper than converting an unsuitable pen; retain as equal design option.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "commercial extruder heater block and closed-loop safety controller"
+          ],
+          "technical_note": "Print only cold-side mount/duct/handle, not hot heatbreak, heater safety parts or nozzle for unverified high temperatures.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-ARM-ONE",
+      "name": "First mechanically moving single arm and FDM-printed linkages",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "joint motors, bearings, mechanical limit stops, feedback encoders, isolated drive, controller"
+          ],
+          "technical_note": "Printed linkages/kinematic datums followed by unloaded and then guarded low-energy tests; mechanically one arm, not 2-arm universal printer.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "tested second-hand CNC/robot axis with real limits and motor datasheet"
+          ],
+          "technical_note": "Reuse of rated axes may be more efficient; verify play, bearing wear, torque, travel, control and wiring.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "ready-made low-energy training robot arm or linear stage"
+          ],
+          "technical_note": "Preserve higher-price but lower integration-risk alternative.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-ARM-PEN-DEMO",
+      "name": "First mounted pen-controlled arm (pre-PrintCeptor learning node)",
+      "group": "product",
+      "needs": [
+        "PC-ARM-ONE",
+        "PC-PEN-HEAD",
+        "PC-C0",
+        "PC-SENS"
+      ],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "ASSEMBLE",
+          "requires": [
+            "FDM_POLYMER",
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "qualified thermal controller, guarded bench and force/temperature sensors"
+          ],
+          "technical_note": "Parent combine arm, pen, deterministic controller; no auto actuation until commissioning; NOT autonomous sealed Butter Bot.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-GEAR-DONOR",
+      "name": "Disassembled second-hand machine donor inventory",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "SALVAGE",
+          "requires": [
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "source printer/CNC/appliance with identified rated components"
+          ],
+          "technical_note": "Candidate harvest: stepper, linear rail, limit switch, bearing, fan, cable-chain, chassis; log condition, cost, lot, known provenance.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "new verified motion components"
+          ],
+          "technical_note": "When donor uncertainties or refurbishment exceed saved cost, buy traceable rated items.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-TRANSFER-ASSORT",
+      "name": "General retail/discount store reusable generic hardware",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "noncritical fasteners, storage tubs, bins, hand tools, cable ties, clamps, trays"
+          ],
+          "technical_note": "Low-price purpose-agnostic mechanical parts. Geometry/grade/temperature/flammability unknown unless verified; no pressure/electrical/safety rating inferred.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "tested clean existing hardware"
+          ],
+          "technical_note": "Cost-avoidance first for low-risk fixtures, labels and organisation only.",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
     }
   ],
   "first_goal": "Build qualified manual PC0 seed and print noncritical mechanical tool components; Butter Bot first full integrated 4D candidate after independently commissioned chamber and automated handling.",
@@ -1018,5 +1245,51 @@
     "butterbot": "Public djnugent/ButterBot CAD not confirmed licensed for redistributable/commercial derivative; request author consent",
     "lego": "LEGO Ideas terms restrict AI-generated/AI-assisted submissions and assign rights; do not publish AI-derived PrintCeptor designs there without independent compliance and rights review."
   },
-  "automated_session": "K-PEN/K-FDM/K-ROBOT require manual transfers; K-PC0 is ONLY conceptual, not operating certified printer; none are proven to complete Butter Bot in one sealed session."
+  "automated_session": "K-PEN/K-FDM/K-ROBOT require manual transfers; K-PC0 is ONLY conceptual, not operating certified printer; none are proven to complete Butter Bot in one sealed session.",
+  "first_purchase_salvage_lens_v0_2": {
+    "state": "ADDITIVE_FOUNDER_INSTRUCTION_2026-10-09",
+    "principles": [
+      "shop physical requirements before marketed industry or device category",
+      "measure interface: geometry+material+thermal+electrical+life+sterility where applicable",
+      "prefer already owned/second-hand/generic goods if qualified for intended role",
+      "print the arm linkages/tool mounts using purchased FDM, repurpose pen ONLY if engineering and safety checks support; commercial hotend remains alternative",
+      "first unit can be one-arm low-energy learning demonstrator, not a fully 4D PrintCeptor or Butter Bot qualified line",
+      "preserve every buy/reuse/print/salvage option and its rejected reason; log revision to DBR once execution occurs",
+      "cheap motor from a donor is not automatically rated for the desired torque or containment use",
+      "do not bypass e-stops/over-temp/grounding, battery protection, regulated equipment or OEM safe control to save money"
+    ],
+    "procurement_priority": [
+      "1 Inventory personal/second-hand usable equipment and data/specs before shopping",
+      "2 Acquire minimum dependable FDM build capability if none exists (pricing is quote only)",
+      "3 Make low-risk mechanical fixtures and first joint shell",
+      "4 Choose qualified motion kit/driver/controller, preferably reusable only with measured ratings",
+      "5 Select pen disassembly path vs sourced hotend based on electrical, thermal, duty-cycle and cost proof",
+      "6 Assemble guarded low-energy one-arm prototype; control before heated deposit",
+      "7 Add camera/limits/calibration; prove cold reach, then thermal extrusion in guarded cell",
+      "8 Transfer measured evidence and substitute further parts; two-arm/control chamber later as separate safe milestones"
+    ],
+    "industrial_context_equivalence": {
+      "rule": "Industry shopfront labels do NOT determine technical equality",
+      "positive_example": "A generic food/cooking nozzle and industrial polymer extrusion nozzle may share outer thread geometry and be candidates after measured material/thermal/flow compatibility",
+      "non_equivalence": "A nozzle visually like one sold for medical/hospital use is not thereby sterile, biocompatible, traceable, validated for patient contact or medically approved; never use in clinical care without applicable regulatory qualification."
+    },
+    "secondhand_grade": [
+      "SC1 noncritical fixtures/racks/shelves — dimensional and hygiene inspection",
+      "SC2 functional motors/rails/low-voltage hardware — serial/datasheet, wear, electrical and performance tests",
+      "SC3 safety-critical power, pressure windows/valves, batteries, high voltage, medical/bio — new/qualified or professional recertification; cannot self-declare equivalent"
+    ],
+    "software_modification": "owner-authorized firmware/software may be modified in a controlled bench with backup/rollback and permission, but physical hardware limits and protective functions cannot be defeated by software",
+    "cost_model": {
+      "new_purchase_aud": null,
+      "used_purchase_aud": null,
+      "postage_aud": null,
+      "consumables_aud": null,
+      "refurbishment_labour_aud": null,
+      "engineering_risk_aud": null,
+      "test_evidence_cost_aud": null,
+      "waste_aud": null,
+      "all_in_total_aud": null,
+      "reason": "Do not estimate total with missing parts or infer technical compatibility."
+    }
+  }
 }
