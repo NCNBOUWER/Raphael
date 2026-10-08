@@ -21,7 +21,7 @@ class DimensionalEquationTests(unittest.TestCase):
 
     def test_all_equation_dimensions(self):
         self.assertTrue(validate_catalogue(self.registry))
-        self.assertEqual(len(self.registry["models"]),47)
+        self.assertEqual(len(self.registry["models"]),59)
 
     def test_canonical_constants_explicit(self):
         cs=self.registry["constants"]
@@ -108,6 +108,37 @@ class DimensionalEquationTests(unittest.TestCase):
                 self.assertFalse(entry["production_approved"])
         self.assertEqual({x["technology_id"] for x in m["technology_bindings"]},
                          {f"PT-{n:03d}" for n in range(1,71)})
+
+    def test_similarity_scaling_for_terrestrial_and_orbital_cells(self):
+        pe=evaluate("PS-EQ-048",dict(velocity=0.1,length=0.001,diffusivity=1e-9))["value"]
+        self.assertAlmostEqual(pe,100000)
+        ca=evaluate("PS-EQ-049",dict(dynamic_viscosity=0.001,velocity=0.1,surface_tension=0.07))["value"]
+        self.assertAlmostEqual(ca,0.001/0.07*0.1)
+        we=evaluate("PS-EQ-050",dict(density=1000,velocity=0.1,length=0.001,surface_tension=0.07))["value"]
+        self.assertAlmostEqual(we,1000*.1**2*.001/.07)
+        kn=evaluate("PS-EQ-053",dict(mean_free_path=1e-7,length=1e-6))["value"]
+        self.assertAlmostEqual(kn,0.1)
+        da=evaluate("PS-EQ-054",dict(flow_timescale=2.,reaction_timescale=1.))["value"]
+        self.assertAlmostEqual(da,2.)
+
+    def test_thermal_diffusivity_and_similarity(self):
+        alpha=evaluate("PS-EQ-058",dict(thermal_conductivity=0.2,density=1000,specific_heat=4000))["value"]
+        self.assertAlmostEqual(alpha,5e-8)
+        fo=evaluate("PS-EQ-051",dict(thermal_diffusivity=alpha,duration=10,length=0.001))["value"]
+        self.assertAlmostEqual(fo,0.5)
+        bi=evaluate("PS-EQ-052",dict(convective_coefficient=10,length=.01,thermal_conductivity=.2))["value"]
+        self.assertAlmostEqual(bi,0.5)
+
+    def test_skin_depth_and_magnetofluid_similarity(self):
+        sd=evaluate("PS-EQ-059",dict(resistivity=1.7e-8,mu_r=1.,angular_speed=2*math.pi*1e6))["value"]
+        self.assertGreater(sd,0)
+        self.assertLess(sd,0.001)
+        rm=evaluate("PS-EQ-055",dict(mu_r=1.,electrical_conductivity=5.8e7,velocity=0.1,length=0.01))["value"]
+        self.assertGreater(rm,0)
+        ha=evaluate("PS-EQ-056",dict(magnetic_field=.1,length=.01,electrical_conductivity=1e6,dynamic_viscosity=.001))["value"]
+        self.assertAlmostEqual(ha,0.1*.01*math.sqrt(1e9))
+        debye=evaluate("PS-EQ-057",dict(debye_length=1e-8,length=1e-6))["value"]
+        self.assertAlmostEqual(debye,0.01)
 
     def test_qualified_properties_still_unset(self):
         self.assertEqual(sum(len(x["measured_material_properties"]) for x in self.materials["materials"]),0)
