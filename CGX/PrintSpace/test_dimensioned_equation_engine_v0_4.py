@@ -140,6 +140,27 @@ class DimensionalEquationTests(unittest.TestCase):
         debye=evaluate("PS-EQ-057",dict(debye_length=1e-8,length=1e-6))["value"]
         self.assertAlmostEqual(debye,0.01)
 
+    def test_scale_binding_vectors_are_typed_and_non_approved(self):
+        valid={x["id"] for x in self.registry["models"]}
+        scale=set(f"PS-EQ-{i:03d}" for i in range(48,60))
+        for group in ("technology_bindings","geometry_bindings",
+                      "environment_bindings","material_route_bindings"):
+            for rec in self.cross[group]:
+                entries=rec.get("scale_regime_equation_ids")
+                self.assertIsNotNone(entries)
+                self.assertTrue(set(entries)<=valid)
+                self.assertTrue(set(entries)<=scale)
+                self.assertFalse(rec["production_approved"])
+
+    def test_complete_kernel_reference_naming(self):
+        known={"K-CLOSURE","K-FLUID-MASS","K-FLUID-MOM","K-ENERGY","K-SPECIES",
+               "K-MAXWELL","K-NP","K-BV","K-CH","K-AC","K-MECH","K-SEMI",
+               "K-PLASMA","K-RADIATION","K-FREEENERGY","K-RAPHAEL-OBW",
+               "K-EML-CANDIDATE"}
+        for eq in self.registry["models"]:
+            self.assertTrue(set(eq["utp_kernel_ids"])<=known)
+            self.assertFalse(eq["production_approved"])
+
     def test_qualified_properties_still_unset(self):
         self.assertEqual(sum(len(x["measured_material_properties"]) for x in self.materials["materials"]),0)
         self.assertTrue(all(x["process_window"] is None for x in self.materials["materials"]))
