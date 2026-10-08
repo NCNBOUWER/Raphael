@@ -9,6 +9,7 @@
 - [220 open qualifications](CROSS_GREX_GAP_REGISTER_v0_5.json) · [70 reusable PT primitives](CROSS_GREX_SHARED_PRIMITIVES_v0_5.json).
 - [40/40 GitHub-hosted tests at earlier checked head](../../.github/workflows/printspace-data-tests.yml), subject to fresh workflow readback at resumed head.
 - [Machine-readable owner decision queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json), 16 gates, unchanged authority.
+- [Butter Bot founder mission correction and print-session decision](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md): authoritative clarification of this handoff's older illustrative BB01/task phrasing.
 - [Read-only product comparator](cross_grex_atlas_compiler.py): `--product FO-01 --mode both`, `--product FU-01 --mode top`, `--compare FU-01 FB-01`.
 
 ## System boundaries and source ancestry
@@ -29,7 +30,7 @@
 - Candidate logic: `CAN IF(function | material, geometry, environment, process schedule, equipment, evidence)`. Search enabling conditions before dismissing functions, while preserving conservation laws, physical risk and verification.
 
 ## Read-only mobile continuation questions (suitable while travelling)
-**Q1 — What do we want to achieve?** Traverse 80 products by group; for each define must-have functions, optional functions, lifetime, scale, environment, lifecycle/reuse, material/geometric interfaces and quantitative acceptance.
+**Q1 — What do we want to achieve?** For Butter Bot, first develop printer capability to fabricate the complete known-geometry robotic article in one session, including print-path research for *every* part; BB01 integration, BB02 modularity, BB03 informed integration and further iterations as required. Butter delivery is not the R&D acceptance mission. For the other 79 candidate products, define functions, lifetime, scale, environmental and quantitative acceptance independently.
 **Q2 — What common components can be reused?** Start with PT-001 structure, PT-043 compute islands, PT-011 traces and PT-018 temperature sensing. Compare FO-01 Butter Bot, FU-01 phone, FE-03 acoustic logger and FB-01 local CGX host; distinguish common functional type from part-level physical interoperability.
 **Q3 — What is missing to manufacture?** Convert 220 draft gaps into acceptance thresholds, source-dependent material/feedstock measurements, build-cell configurations, staged coupon controls, owner decision, safety and test receipts.
 
@@ -40,14 +41,14 @@
 - **G02** verify upstream PR #5/#11 and provider heads against current PrintSpace references; do not merge owner branches as a shortcut.
 
 ### 1. Measurable independent proof
-- **G07 BB01 Butter Bot**: select payload, travel, grasp geometry, centre of mass, speed, motor/gear torque and stall-current, power/battery runtime, temperature, contact safety, vision/firmware, repeated failure-stop tests. Draw FBD, circuit/thermal model, select qualified inserts, then generate BOM and CAD parametric quantities. Candidate first: chassis → flexure → conductors → dielectric → magnetic region → active electronics → protected battery (verify EVERY earlier region against later processes).
+- **G07 Butter Bot printer-first demonstrator**: use the simple known Butter Bot geometry as a full-component manufacturing target, NOT a butter-delivery challenge and NOT a purpose-built lab assistant. BB01 baseline component/compatibility mapping, BB02 modularisation, BB03 informed integration, with any further versions permitted. Every part is a printable R&D target; conventional motors, semiconductors and protected batteries are interim comparator controls only. Map dimensions, functional modules, material/process paths, print-environment transitions, integrated tests and unsolved evidence. The *final* goal is one complete Butter Bot from one print session; exact allowed automated processing/placement remains an OPEN founder definition gate. Read [founder decisions](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
 - **G04/G03/G05**: resolve 59-screen input sources; fill 531 lot-specific material properties from validated sources; design the first controlled directional X→Y/X←Y coupons and three-region cumulative-damage checks. Early tractable candidates: printed polymer + conductor, conductor + dielectric, removable support + sealed channel, safe electronics placement. Do not use chemical battery formation, microplasma, live bioink or high-power EM apparatus as amateur bench shortcuts.
 - **G06 Printer-1**: actual equipment inventory, safe controlled-atmosphere availability, isolation, calibration, qualified human operator and fail-safe before any actuation.
 
 ### 2. Parallel operational domains
 - **Wearables**: watch/ring/glasses/neckline, ergonomic RF detuning, skin chemistry, optics/eye and battery risk.
 - **Usable**: phone, screen, laptop, speaker, camera and environmental tools; default to separately sourced semiconductor SoC, display, sensor and protected battery, printed structural/conductor/antenna/insulation where qualified.
-- **Operable**: BB01, coffee appliance, rover, arm, cobot; food/electrical/steam/motion safeguards.
+- **Operable**: Butter Bot is the printer-capability and full-component manufacturing test article, not a bench-arm or butter-delivery benchmark; specialist lab-assistant robotics is a later derivative. Other products include coffee appliance, rover, arm, cobot; food/electrical/steam/motion safeguards remain independent.
 - **Backend / SAI**: routers, CPU/GPU host, public/private/government/defensive edge, secure elements, consent/offline/attestation. Real Android/PWA management and non-loopback second-device execution require separate evidence; light UI/source validation is not the same thing.
 - **Eco-Grex**: acoustic faux habitat/nest, bioacoustic recorder, water/soil probes, EcoX seed tracking, circular sorting, non-invasive fauna remediation. Compare authentic natural acoustic baselines and animal responses, subject to ethics/permits; no behavioural claims from simulated geometry alone.
 - **Römer / EMASSC**: Mark 1P/III/V, RFS/EMFF, Solar Hull, Free Flow, Luke II/IV, InterSol, Mission-1 capsule, ISRU resource beneficiation, space service and habitat panels. Reserve physical energy/power/thermal/structural proof and mission authority; novel electromagnetic claims are hypotheses until controlled experiments.
@@ -68,7 +69,7 @@
 
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
-- D02: first full quantitative demonstrator = BB01. First material coupons = low-energy polymer/conductor/dielectric + sealed gas feature, under controlled professional setup.
+- D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
 - D03: active semiconductor, secure element, camera/display and protected battery = hybrid inserts until direct manufacturing is independently proven.
 - D04: mobile node read/reason/review as feasible; local host-dependent and physical claims HOLD until host and OS evidence is present.
 - D05: exploit dissimilar material/environment interfaces when *CAN IF* conditions are satisfied; do not invert candidate hypotheses into physical permissions.
