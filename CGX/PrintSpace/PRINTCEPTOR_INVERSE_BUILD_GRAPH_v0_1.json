@@ -1,0 +1,1022 @@
+{
+  "schema": "cgx.printspace.inverse_build_graph.v0.1",
+  "recorded_at": "2026-10-09",
+  "status": "REVIEW_ONLY_NO_HARDWARE_OR_BUILD_QUALIFIED",
+  "identity": "PrintCeptor/Printception; independent route choices retain provenance and negative test history",
+  "upstream": {
+    "utp": "Raphael PR5 UTP-DESKTOP-001 17 G1 targets",
+    "postmix": "Data PR11 PMX-MAT-001 feeds and nonlinear processing",
+    "cgx": "LightSpeed CGX hydration projection and Drive-owned 411 archetype atlas",
+    "sharing": "CGX Filespace/CCC/CYC rights signed package and DBR",
+    "host": "LightSpeed C0 physical control owner"
+  },
+  "method": {
+    "node_semantics": "product/component AND needs + route OR options",
+    "choice_semantics": "PRINT / HYBRID / REUSE / BUY / HAND / ASSEMBLE / QUALIFY",
+    "optimization": "Never report cheapest fully qualified route while variable costs, tool ownership, physical evidence and operating limitations unknown.",
+    "risk": "Unqualified active electronics, high pressure/vacuum, protected power, hot appliances and certified safety equipment are not automatically printable.",
+    "origin": "reverse from BB-FINAL and PC0-4D through identified sourced/printed components"
+  },
+  "starter_kits": [
+    {
+      "id": "K-PEN",
+      "name": "Pen + hand rotary + construction kit",
+      "capabilities": [
+        "HAND_EXTRUDE",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT"
+      ],
+      "known_price_observations": [
+        {
+          "label": "PLA 3D pen",
+          "aud": 79.95,
+          "url": "https://www.jaycar.com.au/high-temp-pla-3d-pen-kit/p/TL4582",
+          "observed_date": "2026-10-09"
+        },
+        {
+          "label": "rotary tool",
+          "aud": 54.98,
+          "url": "https://www.bunnings.com.au/products/tools/tool-accessories/woodworking-rotary/rotary-tools/corded-rotary-tools",
+          "observed_date": "2026-10-09"
+        }
+      ],
+      "unpriced_dependencies": [
+        "plastic stock",
+        "construction bricks/fixtures",
+        "PPE"
+      ],
+      "actual_ownership": "UNVERIFIED",
+      "physical_qualification": "NONE_INFERRED",
+      "autonomous_single_session": "NO"
+    },
+    {
+      "id": "K-FDM",
+      "name": "Entry FDM + rotary",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT"
+      ],
+      "known_price_observations": [
+        {
+          "label": "Creality Ender-3 V3 SE",
+          "aud": 259,
+          "url": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+          "observed_date": "2026-10-09"
+        },
+        {
+          "label": "rotary tool",
+          "aud": 54.98,
+          "url": "https://www.bunnings.com.au/products/tools/tool-accessories/woodworking-rotary/rotary-tools/corded-rotary-tools",
+          "observed_date": "2026-10-09"
+        }
+      ],
+      "unpriced_dependencies": [
+        "filament",
+        "fasteners",
+        "PPE"
+      ],
+      "actual_ownership": "UNVERIFIED",
+      "physical_qualification": "NONE_INFERRED",
+      "autonomous_single_session": "NO"
+    },
+    {
+      "id": "K-ROBOT",
+      "name": "FDM + bought control/actuation/sensors",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT",
+        "LOW_VOLTAGE_CONTROL",
+        "SERVO_MOTION",
+        "METROLOGY"
+      ],
+      "known_price_observations": [
+        {
+          "label": "Creality Ender-3 V3 SE",
+          "aud": 259,
+          "url": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+          "observed_date": "2026-10-09"
+        },
+        {
+          "label": "rotary tool",
+          "aud": 54.98,
+          "url": "https://www.bunnings.com.au/products/tools/tool-accessories/woodworking-rotary/rotary-tools/corded-rotary-tools",
+          "observed_date": "2026-10-09"
+        }
+      ],
+      "unpriced_dependencies": [
+        "MCU",
+        "motors/servos",
+        "meter",
+        "camera",
+        "driver",
+        "qualified power"
+      ],
+      "actual_ownership": "UNVERIFIED",
+      "physical_qualification": "NONE_INFERRED",
+      "autonomous_single_session": "NO"
+    },
+    {
+      "id": "K-PC0",
+      "name": "Aspirational integrated PrintCeptor seed",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT",
+        "LOW_VOLTAGE_CONTROL",
+        "SERVO_MOTION",
+        "METROLOGY",
+        "PICK_PLACE_CANDIDATE",
+        "SEALED_SESSION_CANDIDATE",
+        "CONTROLLED_DEPOSITION_CANDIDATE"
+      ],
+      "known_price_observations": [],
+      "unpriced_dependencies": [
+        "all real equipment and physical qualifications"
+      ],
+      "actual_ownership": "UNVERIFIED",
+      "physical_qualification": "NONE_INFERRED",
+      "autonomous_single_session": "ARCHITECTURE_ONLY"
+    }
+  ],
+  "components": [
+    {
+      "id": "PC-FRAME",
+      "name": "machine datum and frame",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "REUSE",
+          "requires": [
+            "MANUAL_ASSEMBLY"
+          ],
+          "external_seed_components": [
+            "verified frame/rail"
+          ],
+          "technical_note": "stiffness metrology",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "mechanical inserts"
+          ],
+          "technical_note": "non-rated structural fixtures only",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "extrusion/fabricated frame"
+          ],
+          "technical_note": "source tolerances",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-CRADLE",
+      "name": "arm mounting cradle",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "rated fasteners"
+          ],
+          "technical_note": "verify deflection and fatigue",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "machined cradle"
+          ],
+          "technical_note": "rated load path",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-ARMS",
+      "name": "two articulated print/handling arms",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "SERVO_MOTION"
+          ],
+          "external_seed_components": [
+            "motors/bearings/drivers/encoders"
+          ],
+          "technical_note": "printed linkages need loads test",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "qualified actuated arms"
+          ],
+          "technical_note": "separate safety/controller",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-TOOL",
+      "name": "automatic exchange gripper/tool interface",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "SERVO_MOTION"
+          ],
+          "external_seed_components": [
+            "coupler, tool actuation"
+          ],
+          "technical_note": "test retention and alignment",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "machine toolchanger"
+          ],
+          "technical_note": "sourced seed",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-C0",
+      "name": "deterministic controller and physical interlocks",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "MCU, approved drivers, e-stop, limit circuits"
+          ],
+          "technical_note": "CGX file never substitutes firmware",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [],
+          "external_seed_components": [
+            "qualified donor controller"
+          ],
+          "technical_note": "test isolation/firmware",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-SENS",
+      "name": "camera/probe and calibration sensors",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "VISUAL_INSPECT"
+          ],
+          "external_seed_components": [
+            "camera, calibrated sensor"
+          ],
+          "technical_note": "print mounts, not measurement electronics",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "calibrated metrology"
+          ],
+          "technical_note": "test against standards",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-FEED",
+      "name": "separate material/spool service cavity",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "valves and auto-feed hardware"
+          ],
+          "technical_note": "print non-rated guides only",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "material service cell"
+          ],
+          "technical_note": "feed/contamination tests",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-BAY",
+      "name": "temporary internal partition and floor insert",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "tested seal elements"
+          ],
+          "technical_note": "secondary low-risk enclosure candidate",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "qualified barrier/panel"
+          ],
+          "technical_note": "rating by test",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-CHAMBER",
+      "name": "primary rated environmental enclosure",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "independently engineered pressure window/shell"
+          ],
+          "technical_note": "pressure/vacuum/gas certification not print inferred",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [],
+          "external_seed_components": [
+            "certified inspected industrial chamber"
+          ],
+          "technical_note": "engineering acceptance",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-GAS",
+      "name": "vacuum/gas/pressure plant",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "qualified pump, isolation, valves, gas sensors, vent"
+          ],
+          "technical_note": "professional qualification",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-FINE",
+      "name": "fine direct-write functional feed",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "qualified PMX material, precision pump/head"
+          ],
+          "technical_note": "not semiconductor factory",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "commercial tested fine depositor"
+          ],
+          "technical_note": "measured coupon window",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC-ROTARY",
+      "name": "safe controlled machine finishing head",
+      "group": "printceptor",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "MANUAL_FINISH"
+          ],
+          "external_seed_components": [
+            "rated spindle, guarding, controller"
+          ],
+          "technical_note": "hand rotary tool is NOT automatic milling",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "qualified CNC head"
+          ],
+          "technical_note": "separate enclosure and dust control",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-SHELL",
+      "name": "Butter Bot shell/head and body",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "qualified filament"
+          ],
+          "technical_note": "geometry and heat fit",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "HAND",
+          "requires": [
+            "HAND_EXTRUDE"
+          ],
+          "external_seed_components": [
+            "plastic stock"
+          ],
+          "technical_note": "manual, not autonomous",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "made body"
+          ],
+          "technical_note": "sourced",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-TRACKS",
+      "name": "drive tracks, sprockets and support shafts",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "tracks, shafts, bearings"
+          ],
+          "technical_note": "tribology test",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "matched drivetrain"
+          ],
+          "technical_note": "source",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-NECK",
+      "name": "pulley, cable, neck structure",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "cable, metal pins, bearings"
+          ],
+          "technical_note": "torque/tension and tipping test",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "machined neck"
+          ],
+          "technical_note": "source",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-HANDS",
+      "name": "small jointed arms/claws",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "joint pins"
+          ],
+          "technical_note": "measured fit",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "HAND",
+          "requires": [
+            "HAND_EXTRUDE",
+            "MANUAL_FINISH"
+          ],
+          "external_seed_components": [
+            "plastic stock"
+          ],
+          "technical_note": "educational route only",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "robot arm shell"
+          ],
+          "technical_note": "source",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-ACT",
+      "name": "2 tracked actuators + 3 servos",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "2 track motors, 2 shoulders, 1 neck servo"
+          ],
+          "technical_note": "5 actuators per source",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [],
+          "external_seed_components": [
+            "tested donor motors"
+          ],
+          "technical_note": "unknown wear",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-LOGIC",
+      "name": "motor drives and MCU/programmed control",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "MCU, drivers, firmware"
+          ],
+          "technical_note": "printed housing not active IC",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [],
+          "external_seed_components": [
+            "compatible low voltage controller"
+          ],
+          "technical_note": "verified bus and code",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-ENERGY",
+      "name": "protected power supply",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "protected tested battery or supply"
+          ],
+          "technical_note": "no unproven home-manufactured cells",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "REUSE",
+          "requires": [],
+          "external_seed_components": [
+            "approved qualified power source"
+          ],
+          "technical_note": "safety tests",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-VOICE",
+      "name": "speaker/LED and control wiring",
+      "group": "butterbot",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "LED, audio, wiring and tested driver"
+          ],
+          "technical_note": "print enclosure/traces after proof",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "qualified low voltage module"
+          ],
+          "technical_note": "source",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "BB-FINAL",
+      "name": "Butter Bot full assembled powered article",
+      "group": "product",
+      "needs": [
+        "BB-SHELL",
+        "BB-TRACKS",
+        "BB-NECK",
+        "BB-HANDS",
+        "BB-ACT",
+        "BB-LOGIC",
+        "BB-ENERGY",
+        "BB-VOICE"
+      ],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "ASSEMBLE",
+          "requires": [
+            "SEALED_SESSION_CANDIDATE",
+            "PICK_PLACE_CANDIDATE"
+          ],
+          "external_seed_components": [],
+          "technical_note": "safe in-chamber power-on verification, no outer-opening",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC0-SEED",
+      "name": "Bootstrap manually assembled baseline",
+      "group": "product",
+      "needs": [
+        "PC-FRAME",
+        "PC-CRADLE",
+        "PC-ARMS",
+        "PC-TOOL",
+        "PC-C0",
+        "PC-SENS",
+        "PC-FEED"
+      ],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "ASSEMBLE",
+          "requires": [
+            "LOW_VOLTAGE_CONTROL",
+            "SERVO_MOTION",
+            "METROLOGY"
+          ],
+          "external_seed_components": [],
+          "technical_note": "not 17 G1 complete",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "PC0-4D",
+      "name": "Full controlled multi-process 4D PrintCeptor target",
+      "group": "product",
+      "needs": [
+        "PC0-SEED",
+        "PC-BAY",
+        "PC-CHAMBER",
+        "PC-GAS",
+        "PC-FINE",
+        "PC-ROTARY"
+      ],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "QUALIFY",
+          "requires": [
+            "SEALED_SESSION_CANDIDATE",
+            "CONTROLLED_DEPOSITION_CANDIDATE"
+          ],
+          "external_seed_components": [],
+          "technical_note": "17 G1 functions and intrinsic 4D material response separately proven",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "HT-JIG",
+      "name": "CGX-identifiable passive jig/workbench fixture",
+      "group": "hypertech",
+      "needs": [],
+      "safety": "NORMAL",
+      "options": [
+        {
+          "mode": "PRINT",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "printed QR or optional NFC"
+          ],
+          "technical_note": "passive component reference",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "HAND",
+          "requires": [
+            "HAND_EXTRUDE"
+          ],
+          "external_seed_components": [
+            "label"
+          ],
+          "technical_note": "manual geometry unverified",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "HT-USB",
+      "name": "CGX PC network onboarding USB adapter",
+      "group": "hypertech",
+      "needs": [],
+      "safety": "SECURITY",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "commercial USB device+authorized signed host agent"
+          ],
+          "technical_note": "3D printed case does not grant access",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "supported USB bridge+consented host agent"
+          ],
+          "technical_note": "not universal USB trust",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "HT-PUSH",
+      "name": "external UI button/knob actuator",
+      "group": "hypertech",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER",
+            "SERVO_MOTION"
+          ],
+          "external_seed_components": [
+            "controller, sensor, isolated motor"
+          ],
+          "technical_note": "user-authorized; no hot/unsafe commands",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        },
+        {
+          "mode": "BUY",
+          "requires": [],
+          "external_seed_components": [
+            "rated external interaction tool"
+          ],
+          "technical_note": "capacity handshake",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "HT-CHARGE",
+      "name": "compatibility-gated wireless charge retrofit",
+      "group": "hypertech",
+      "needs": [],
+      "safety": "CRITICAL",
+      "options": [
+        {
+          "mode": "HYBRID",
+          "requires": [
+            "FDM_POLYMER"
+          ],
+          "external_seed_components": [
+            "approved interoperable receiver/regulator"
+          ],
+          "technical_note": "measured W, heating, EMC, Qi fit",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    },
+    {
+      "id": "HT-WORKSPACE",
+      "name": "CGX aware assisted bench",
+      "group": "hypertech",
+      "needs": [
+        "HT-JIG",
+        "HT-USB"
+      ],
+      "safety": "SECURITY",
+      "options": [
+        {
+          "mode": "ASSEMBLE",
+          "requires": [
+            "LOW_VOLTAGE_CONTROL"
+          ],
+          "external_seed_components": [
+            "authorized local host/permissions"
+          ],
+          "technical_note": "manual safe task automation only",
+          "evidence": "CANDIDATE_ONLY",
+          "cost_aud": null
+        }
+      ]
+    }
+  ],
+  "first_goal": "Build qualified manual PC0 seed and print noncritical mechanical tool components; Butter Bot first full integrated 4D candidate after independently commissioned chamber and automated handling.",
+  "reproducibility": "All route alternatives remain in graph with separate reasoning notes; no deletion on selected route; see evaluation script and DBR handoff.",
+  "pricing": "AUD quoted retailer snapshots for starting tools only; exclude tax changes/shipping/consumables and all unsourced parts; do not infer complete BOM costs.",
+  "external_source_rights": {
+    "butterbot": "Public djnugent/ButterBot CAD not confirmed licensed for redistributable/commercial derivative; request author consent",
+    "lego": "LEGO Ideas terms restrict AI-generated/AI-assisted submissions and assign rights; do not publish AI-derived PrintCeptor designs there without independent compliance and rights review."
+  },
+  "automated_session": "K-PEN/K-FDM/K-ROBOT require manual transfers; K-PC0 is ONLY conceptual, not operating certified printer; none are proven to complete Butter Bot in one sealed session."
+}
