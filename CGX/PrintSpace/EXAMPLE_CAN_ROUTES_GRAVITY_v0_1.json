@@ -1,0 +1,56 @@
+{
+  "document_id": "CGX-F4D-CAP-20261008",
+  "version": "0.1",
+  "functional_contract_id": "CGX-PRINT-FUNCTIONAL-OBJECT",
+  "comparison": "Distinct environmental opportunity routes, not mutually exclusive negative constraints",
+  "routes": [
+    {
+      "route_id": "CGX-GRAVITY-1G",
+      "can_state": "CAN-3",
+      "environment": "terrestrial gravitational acceleration with controlled orientation",
+      "can_if": [
+        "qualified printer",
+        "compatible feedstock",
+        "gravimetric flow and settling modeled",
+        "metrology acceptance passed"
+      ],
+      "enabled_functions": [
+        "gravity-assisted feed",
+        "drainage",
+        "sedimentation",
+        "surface leveling"
+      ],
+      "tests": [
+        "material flow",
+        "dimensional metrology",
+        "layer integrity"
+      ],
+      "approved_for_execution": false
+    },
+    {
+      "route_id": "CGX-GRAVITY-MICROG",
+      "can_state": "CAN-4",
+      "environment": "in-situ microgravity with controlled residual acceleration and containment",
+      "can_if": [
+        "closed or captured feedstock handling",
+        "qualified non-gravity fluid transport",
+        "thermal management",
+        "particle/debris control",
+        "orbital or equivalent verified evidence"
+      ],
+      "enabled_functions": [
+        "weak-sag shaping in qualified materials",
+        "on-demand local manufacturing",
+        "alternative scaffold requirements"
+      ],
+      "tests": [
+        "transport stability",
+        "particle containment",
+        "dimensional metrology",
+        "failure recovery"
+      ],
+      "approved_for_execution": false
+    }
+  ],
+  "not_equivalent": "Reduced gravity changes some processes and requires a different validated route; the same functional contract may resolve to either."
+}
