@@ -99,6 +99,14 @@
 - **Open founder gate:** local ownership of capability, configuration and production records by default, with cloud synchronisation only by affirmative opt-in.
 - Do not confuse the per-machine CGX identity proposal with permission to edit or promote CGX RootAuthority or change live runtime security.
 
+## Founder correction — CGX identity is a discoverable skeleton, not a compulsory full OS
+- Printer- or user-provisioned CGX device skeleton/manifest identifies the model, intended function, initial label, individual chosen name, installed toolkit and capability profile. It is readable and expandable even when AI, roaming hardware or cloud networking are absent.
+- Keep a lean deterministic firmware/process-control layer to move actuators, manage sensors and enforce safety; a CGX manifest is a file/information contract, not a substitute for essential embedded control code.
+- CGX serves as a common *information substrate* spanning the machine, components and its family/variant hierarchy, with typed source links between workspaces, dataspaces and filespaces. Parent, child and sibling relationships preserve origins, upgrades and independently chosen configurations without mandating identical hardware.
+- A future physical component may have a CGX-associated record even if that part has no onboard electronics. Distinguish per-unit from batch-based record granularity by the next owner decision.
+- **Next founder gate:** track each physical module or printed component by unit ID where practical, or batch/lot where adequate, including parent-child lineage and evidence links. **Unresolved separately:** default data ownership/local storage and cloud opt-in.
+- PrintSpace only records intended interfaces; it does not create/alter actual CGX canonical schema or RootAuthority or activate any device.
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
