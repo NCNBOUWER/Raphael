@@ -8,7 +8,7 @@ Enumerate every ordered X→Y family transition and discover route(s) using co-p
 ## Route legend
 | Code | Meaning | Default action |
 |---|---|---|
-| C | Shared-window candidate; same family is NOT automatically qualified | Find overlapping environment/feed/process and test coupons |
+| P | Shared-window candidate; same family is NOT automatically qualified | Find overlapping environment/feed/process and test coupons |
 | S | Sequential candidate in one compatible process family | Cure/cool/clean X; then deposit Y and qualify interface |
 | T | Transition needed (process, material interlayer, atmosphere or spatial isolation) | Compare interlayer, purge, local activation, stage split or chamber move |
 | M | Modular integration | Print/obtain module separately and insert/overmould within module limits |
@@ -37,20 +37,20 @@ Every cell is unqualified until a process passport, material passports, coupon, 
 ## Directional cross-compatibility matrix — all 196 ordered family pairs
 | X first ↓ / Y second → |MT|CR|TP|RS|EL|CI|DE|MG|OP|FL|EC|SC|BT|BV|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|**MT**|C|T|T|T|T|T|T|T|T|T|T|M|M|M|
-|**CR**|T|C|T|T|T|T|T|T|T|T|T|M|M|M|
-|**TP**|T|T|C|S|S|S|S|S|T|S|T|M|M|T|
-|**RS**|T|T|S|C|S|S|S|S|S|S|T|M|M|T|
-|**EL**|T|T|S|S|C|S|S|S|T|S|T|M|M|T|
-|**CI**|T|T|S|S|S|C|S|S|S|S|T|M|M|T|
-|**DE**|T|T|S|S|S|S|C|S|S|S|T|M|M|T|
-|**MG**|T|T|S|S|S|S|S|C|T|S|T|M|M|T|
-|**OP**|T|T|T|S|T|S|S|T|C|T|T|M|M|T|
-|**FL**|T|T|S|S|S|S|S|S|T|C|T|M|M|T|
-|**EC**|R|R|T|T|T|T|T|T|T|T|C|M|M|T|
-|**SC**|R|R|T|T|T|T|T|T|M|T|M|C|M|M|
-|**BT**|R|R|M|M|M|M|M|M|M|M|M|M|C|M|
-|**BV**|R|R|T|T|T|T|T|T|T|T|T|M|M|C|
+|**MT**|P|T|T|T|T|T|T|T|T|T|T|M|M|M|
+|**CR**|T|P|T|T|T|T|T|T|T|T|T|M|M|M|
+|**TP**|T|T|P|S|S|S|S|S|T|S|T|M|M|T|
+|**RS**|T|T|S|P|S|S|S|S|S|S|T|M|M|T|
+|**EL**|T|T|S|S|P|S|S|S|T|S|T|M|M|T|
+|**CI**|T|T|S|S|S|P|S|S|S|S|T|M|M|T|
+|**DE**|T|T|S|S|S|S|P|S|S|S|T|M|M|T|
+|**MG**|T|T|S|S|S|S|S|P|T|S|T|M|M|T|
+|**OP**|T|T|T|S|T|S|S|T|P|T|T|M|M|T|
+|**FL**|T|T|S|S|S|S|S|S|T|P|T|M|M|T|
+|**EC**|R|R|T|T|T|T|T|T|T|T|P|M|M|T|
+|**SC**|R|R|T|T|T|T|T|T|M|T|M|M|M|M|
+|**BT**|R|R|M|M|M|M|M|M|M|M|M|M|M|M|
+|**BV**|R|R|T|T|T|T|T|T|T|T|T|M|M|P|
 
 **Interpretation:** Read a row as X already processed, then the column as Y next. Codes are proposed routing defaults only; e.g. TP→MT is T and often better reversed or separated because of thermal history, whereas MT→TP is also T but may be achieved via heat-first/cool-then-polymer. Specific composition and thermal history may change either classification. The full machine-readable ordered-pair catalog is `PAIRWISE_SEQUENCE_ROUTES_v0_1.json`.
 
@@ -82,7 +82,7 @@ Every cell is unqualified until a process passport, material passports, coupon, 
 0. FUNCTION CONTRACT: target function, outputs, loads, environmental service, replaceability and end-of-life.
 1. FEEDSTOCK/TOOL PASSPORT: exact chemistry/lot, purity, storage, rheology, cure/sinter, machine/calibration/cleanliness, uncertainty.
 2. TOPOLOGY & INTERFACE: touching / embedded / bonded / insulated / free-moving / graded / optically coupled / fluidically connected; each relation differs.
-3. WINDOW SEARCH: shared-window C; then low-impact sequential S; then environmental/interface transition T; then module M; investigation R. Do not prioritise a route over safety.
+3. WINDOW SEARCH: shared-window P; then low-impact sequential S; then environmental/interface transition T; then module M; investigation R. Do not prioritise a route over safety.
 4. DIRECTED PROCESS GRAPH: evaluate every order X→Y and Y→X, dependencies, support removals, chamber transitions and head-clearance limits; include nonadjacent cumulative damage.
 5. PROCESS EXECUTION: atmosphere, thermal budget, purge/dry/cure, protective sealing, selective activation, tool changes, contamination-controlled handovers.
 6. IN-PROCESS TESTS: dimension, conductivity, insulation, adhesion, porosity, phase, humidity, leak, particle/bio containment and process telemetry where relevant.
