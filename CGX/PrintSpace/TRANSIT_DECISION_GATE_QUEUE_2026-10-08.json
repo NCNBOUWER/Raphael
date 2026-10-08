@@ -187,6 +187,13 @@
       "recommendation": "CGX digital individuals represent electronic machines/subsystems; passive fasteners, structural parts and non-electronic elements are child components under their owning CGX individual, not independently created CGX individuals. Preserve component passports as needed without inflating identity scope.",
       "basis": "Founder explicit correction in transit 2026-10-08",
       "reversible": true
+    },
+    {
+      "id": "D19",
+      "status": "FOUNDER_CLARIFIED_AND_CORPUS_SAMPLED",
+      "recommendation": "Do not collapse reusable CGX type definitions into installed hardware children. Reconcile global definitions with local references and source-owner evidence; 'universal technology' is unbounded R&D target within physical laws, versus test-bounded manufacturing claims.",
+      "basis": "Founder 2026-10-08 correction plus 2026-09-21 CGX migration strategy (non-canonical), sampled Romer/Systems/Operations workbook control and evidence tabs.",
+      "reversible": true
     }
   ],
   "gates": [
@@ -351,9 +358,9 @@
       "title": "80-product portfolio coverage and shared modules",
       "owner": "PrintSpace owners",
       "state": "OPEN",
-      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification. Record Everyday/Pro differentiated printer features and comparative sourcing versus micro-printing with provenance and whole-system resource efficiency.",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification. Record Everyday/Pro differentiated printer features and comparative sourcing versus micro-printing with provenance and whole-system resource efficiency. Resolve semantic type-versus-instance/CGX individual conflicts using source provenance and receiving owner review; do not rank authority by date. Distinguish physically lawful universal technology design scope from evidenced manufacture per product/device/process.",
       "execution": "DESIGN",
-      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence.",
+      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence. Public universal capability claims remain held until verified per feature and configuration.",
       "priority": "P2",
       "closed": false,
       "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
@@ -381,7 +388,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "If a nested micro-printer is a separately functional electronic machine, should its CGX individual identity remain independent when it joins a parent printer, while passive components remain child records?",
+    "active_founder_question": "Approve release rule: universal technology is a research/design scope, while individual printer/product manufacturing capabilities and public claims require application-specific verified evidence and safety/owner approval?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -539,6 +546,22 @@
       "source_scope": "PrintSpace owner-level design record only. No change to cognigrex.root.json, existing CGX schema, runtime or other owner-managed workbooks.",
       "ontological_clarification": "CGX is the digital entity/filespace representation of a Cognigrex individual (analogised by founder to biological individuals within Cognigrex). The physical machine and electronic equipment are represented as digital individuals with families/relationships, while passive parts are nested structural or BOM children. Do not equate a CGX file record with electronic hardware's control firmware."
     },
-    "data_sovereignty_founder_gate": "Still unapproved: local-first record ownership and cloud sync opt-in; not decided by skeleton clarification alone."
+    "data_sovereignty_founder_gate": "Still unapproved: local-first record ownership and cloud sync opt-in; not decided by skeleton clarification alone.",
+    "cgx_family_and_universal_technology_reconciliation": {
+      "state": "FOUNDER_CLARIFICATION_WITH_SAMPLED_CORPUS_REVIEW_2026-10-08",
+      "definition_scope": "CGX global families define metrics, units, fastener types and technology classes as reusable referenced semantic objects, including passive items. A printer's CGX instance contains installed components as children/references. An independently functional machine identity is distinct from a reusable type record.",
+      "no_date_priority": "Newer document is not presumed truer. Check meaning, authoritative owner, source quality, model state, evidence, conditions, equations and SI dimensions; hybridise genuinely compatible aspects and hold irreducible contradictions for source-owner review.",
+      "universal_printer": "Universal technology scope means endeavouring to make any physically lawful technology, not a machine that can print a universe nor a claim of current universal physical capability.",
+      "scope_vs_configuration": "4D defining feature set remains a mandatory development objective for the architecture. Individual delivered printer modules are optional where appropriate, with exact operating capability bounded by tested configuration and safeguards.",
+      "sourced_readback": [
+        "Drive: CGX living filespace build strategy 2026-09-21 (NON-CANONICAL); semantic profiles plus authority/source, children reference/embed/track/pin",
+        "Type 1 Romer Cognigrex: 14_Control_Plane, 81_EVIDENCE_GOV_v0_8, 89_COLLISION_CONTROLS_v0_9",
+        "Type 1 Systems Cognigrex: Parameter Registry, Calculator Registry",
+        "Type 1 Operations Cognigrex: Claim Control, Review Gates, Data Dictionary"
+      ],
+      "boundedness": "Selected-source reconciliation only; entire corpus and all workbook logic gates have NOT been exhaustively audited. No CGX root schema, runtime, upstream UTP/PMX, or other owner's Drive workbook altered.",
+      "owner_handoff": "IN_TRANSIT_CONTINUATION_HANDOFF_2026-10-08.md"
+    },
+    "nested_printer_identity_gate": "Deferred, not answered, by global CGX family/definition scope correction. Preserve without forcing an independent identity."
   }
 }
