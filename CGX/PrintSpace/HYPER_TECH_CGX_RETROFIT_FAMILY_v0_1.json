@@ -1,0 +1,549 @@
+{
+  "schema": "cgx.printspace.hyper_tech_retrofit_family.v0.1",
+  "date": "2026-10-09",
+  "owner": "CGX semantic definitions as imported by PrintSpace; source owner must approve before runtime or public release",
+  "state": "REVIEW_ONLY",
+  "public_label": "Hyper-Tech — technology extensions raising verified awareness/capability on existing machines",
+  "not_a_new_cgx_root": true,
+  "planes": {
+    "FileSpace": "Original design, CAD, datasheets, semantic CGX object/family/part references, capability manifest and legally scoped permissions",
+    "DataSpace": "Measurements, actual device state, changes, DBR ancestry, import/export consent, uncertainty and history",
+    "PrintSpace": "Fabrication, physical upgrade, installed hardware provenance and acceptance evidence, independent C0 hardware guards",
+    "WorkSpace": "Physical zone limits, user intent, shared actors, safety permissions, proposed job, workflow ownership and audit",
+    "CCC_CYC": "Optional signed/provenance-aware package and authorised community publication/download; NOT an automatic market or an active entitlement claim"
+  },
+  "stages": [
+    "INVENTORY_EXISTING",
+    "VERIFY_PERMISSION_AND_CAPABILITIES",
+    "DEFINE_WANTED_FUNCTION",
+    "SIMULATE_PRINT_AND_SOURCE_ROUTES",
+    "FABRICATE_APPROVED_NONCRITICAL_PARTS",
+    "INSTALL_WITH_USER",
+    "HANDSHAKE_AND_TEST",
+    "PERSIST_DBRS_AND_OPTIONAL_CCC_SHARE"
+  ],
+  "trust_tiers": [
+    "DESCRIBE_ONLY",
+    "READ_ONLY_SENSOR",
+    "USER_CONFIRMED_NONHAZARD_ACTUATION",
+    "PREAPPROVED_BOUNDED_AUTOMATION",
+    "HAZARD_CONTROL_REQUIRES_EXTERNAL_QUALIFICATION"
+  ],
+  "security_invariants": [
+    "Offline first if configured; no wireless or internet imposed",
+    "CGX local identity does not grant remote permissions",
+    "USB device must not autorun or silently use privileged host control",
+    "Human/owner approval and hardware E-stop prevail over optional intelligence",
+    "Data minimization and private home/workspace boundaries",
+    "No hidden camera/audio scanning or network discovery",
+    "Passive child may have global type record but not mandatory independent node",
+    "Safety-critical appliances retain OEM interlocks and electrical/certified repair routes"
+  ],
+  "products": [
+    {
+      "id": "HT-001",
+      "title": "Print-only geometric or tagged fixture",
+      "domain": "bench/tools",
+      "kind": "retrofit",
+      "host_requirement": "none",
+      "printspace_outputs": [
+        "fixture",
+        "label or QR geometry"
+      ],
+      "filespace_dataspace_workspace": [
+        "Filespace type and instance references",
+        "Workspace owner purpose"
+      ],
+      "non_printed_seed_parts": [
+        "material/label"
+      ],
+      "verified_limits": [
+        "print fit/strength not yet tested"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-002",
+      "title": "NFC/QR identity sleeve and asset passport",
+      "domain": "general",
+      "kind": "retrofit",
+      "host_requirement": "phone/scanner optional",
+      "printspace_outputs": [
+        "holder",
+        "protective sleeve",
+        "visible ID"
+      ],
+      "filespace_dataspace_workspace": [
+        "CGX individual or passive child lookup",
+        "DBR maintenance record"
+      ],
+      "non_printed_seed_parts": [
+        "QR/NFC tag or camera"
+      ],
+      "verified_limits": [
+        "NFC does not create power or control"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-003",
+      "title": "USB-C/USB-A authorized PC adapter shell",
+      "domain": "computer",
+      "kind": "retrofit",
+      "host_requirement": "consented installed host adapter if functions needed",
+      "printspace_outputs": [
+        "adapter case",
+        "mount",
+        "strain relief"
+      ],
+      "filespace_dataspace_workspace": [
+        "Filespace device identity",
+        "DataSpace status/events",
+        "Workspace authorization"
+      ],
+      "non_printed_seed_parts": [
+        "USB interface IC/module",
+        "signed host agent with permission"
+      ],
+      "verified_limits": [
+        "Inserting USB must never silently install network service or bypass security"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-004",
+      "title": "BLE sensor or keyboard interface",
+      "domain": "general",
+      "kind": "retrofit",
+      "host_requirement": "opt-in BLE-capable peer",
+      "printspace_outputs": [
+        "housing",
+        "mount",
+        "antenna support"
+      ],
+      "filespace_dataspace_workspace": [
+        "advertised characteristic map",
+        "bounded permissions"
+      ],
+      "non_printed_seed_parts": [
+        "BLE radio/MCU/power"
+      ],
+      "verified_limits": [
+        "BLE link != control authorization"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-005",
+      "title": "LAN/Wi-Fi existing API proxy",
+      "domain": "network",
+      "kind": "retrofit",
+      "host_requirement": "documented authenticated local API",
+      "printspace_outputs": [
+        "optional case/strain relief"
+      ],
+      "filespace_dataspace_workspace": [
+        "CGX capability adapter; audit state"
+      ],
+      "non_printed_seed_parts": [
+        "approved network interface existing or sourced"
+      ],
+      "verified_limits": [
+        "No unsupported SSH/admin/device scraping"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-006",
+      "title": "External physical-button pusher",
+      "domain": "appliances",
+      "kind": "retrofit",
+      "host_requirement": "accessible button and safe supported control",
+      "printspace_outputs": [
+        "mount",
+        "compliant pusher",
+        "alignment jig"
+      ],
+      "filespace_dataspace_workspace": [
+        "actuation request through Workspace with consent",
+        "camera/proximity evidence"
+      ],
+      "non_printed_seed_parts": [
+        "servo/controller/safety limits"
+      ],
+      "verified_limits": [
+        "No safety override or unattended harmful heated appliance use"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-007",
+      "title": "External non-invasive vision observer",
+      "domain": "appliances",
+      "kind": "retrofit",
+      "host_requirement": "visual access and owner consent",
+      "printspace_outputs": [
+        "camera bracket",
+        "shroud"
+      ],
+      "filespace_dataspace_workspace": [
+        "DataSpace read-only interpretation",
+        "Filespace semantic UI map"
+      ],
+      "non_printed_seed_parts": [
+        "camera/compute/power"
+      ],
+      "verified_limits": [
+        "Pixels are uncertain and cannot replace appliance status feedback"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-008",
+      "title": "External screen/touch overlay",
+      "domain": "legacy screens",
+      "kind": "retrofit",
+      "host_requirement": "nonhazardous accessible external UI",
+      "printspace_outputs": [
+        "touch stylus holder",
+        "replaceable screen protector"
+      ],
+      "filespace_dataspace_workspace": [
+        "Workspace external UI model",
+        "user override"
+      ],
+      "non_printed_seed_parts": [
+        "sensing and actuation module"
+      ],
+      "verified_limits": [
+        "Do not bypass built-in protections or obstruct operator controls"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-009",
+      "title": "Isolated low-voltage legacy serial interface",
+      "domain": "instruments",
+      "kind": "retrofit",
+      "host_requirement": "documented accessible serial port",
+      "printspace_outputs": [
+        "case",
+        "strain relief"
+      ],
+      "filespace_dataspace_workspace": [
+        "typed command schema",
+        "DBR per command"
+      ],
+      "non_printed_seed_parts": [
+        "isolator/serial-USB converter"
+      ],
+      "verified_limits": [
+        "No unknown voltage, uncertified mains/medical/industrial controls"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-010",
+      "title": "Workbench tool-dock presence tracker",
+      "domain": "workbench",
+      "kind": "retrofit",
+      "host_requirement": "identified tool registrations",
+      "printspace_outputs": [
+        "tool clips",
+        "dock",
+        "registration markers"
+      ],
+      "filespace_dataspace_workspace": [
+        "DataSpace tool presence",
+        "Workspace work plan"
+      ],
+      "non_printed_seed_parts": [
+        "optional NFC/limit sensors"
+      ],
+      "verified_limits": [
+        "Passive marker doesn't prove device powered/calibrated"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-011",
+      "title": "Smart jigs, bit trays and inventory sorting",
+      "domain": "woodwork",
+      "kind": "retrofit",
+      "host_requirement": "user provided loose parts/tools",
+      "printspace_outputs": [
+        "sort trays",
+        "storage drawers",
+        "arm compatible grip fixtures"
+      ],
+      "filespace_dataspace_workspace": [
+        "CGX child fastener definition",
+        "DataSpace count/variant DBR"
+      ],
+      "non_printed_seed_parts": [
+        "camera/optional actuator if automated"
+      ],
+      "verified_limits": [
+        "Classification uncertainty and safe gripping verified per SKU"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-012",
+      "title": "Wireless power receiver mechanical retrofit",
+      "domain": "power",
+      "kind": "retrofit",
+      "host_requirement": "certified interoperable transmitter/receiver",
+      "printspace_outputs": [
+        "receiver enclosure",
+        "mount/thermal pad holder"
+      ],
+      "filespace_dataspace_workspace": [
+        "DataSpace measured received W and heat"
+      ],
+      "non_printed_seed_parts": [
+        "approved receiver/regulator"
+      ],
+      "verified_limits": [
+        "Does not replace arbitrary mains adapters/batteries; thermal/EMC compatibility"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-013",
+      "title": "Low-energy robot/desk assistant body",
+      "domain": "robotics",
+      "kind": "retrofit",
+      "host_requirement": "qualified controller and motor drivers",
+      "printspace_outputs": [
+        "robot chassis",
+        "articulated shell",
+        "claws"
+      ],
+      "filespace_dataspace_workspace": [
+        "CGX child robots/tasks and capability links"
+      ],
+      "non_printed_seed_parts": [
+        "actuators/controller/sensors/power"
+      ],
+      "verified_limits": [
+        "Moving robot safety, high load and autonomous claims unproven"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-014",
+      "title": "Machine service/multimaterial feed adapter",
+      "domain": "printspace",
+      "kind": "retrofit",
+      "host_requirement": "qualified target tool/feed port",
+      "printspace_outputs": [
+        "feed guides",
+        "cartridge mounts",
+        "sleeves"
+      ],
+      "filespace_dataspace_workspace": [
+        "PMX recipe reference",
+        "DBR installed module lineage"
+      ],
+      "non_printed_seed_parts": [
+        "rated valve/pump/electric/thermal parts"
+      ],
+      "verified_limits": [
+        "No pressure/rating inferred from printed fittings"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-015",
+      "title": "Retrofit local environment data logger",
+      "domain": "ecology",
+      "kind": "retrofit",
+      "host_requirement": "allowed placement and consent",
+      "printspace_outputs": [
+        "weather shield",
+        "sensor bracket"
+      ],
+      "filespace_dataspace_workspace": [
+        "Eco-Grex data and environmental impact restrictions"
+      ],
+      "non_printed_seed_parts": [
+        "calibrated sensors/low power"
+      ],
+      "verified_limits": [
+        "No wildlife interaction without permissions"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-016",
+      "title": "Accessibility adaptive input",
+      "domain": "user-interface",
+      "kind": "retrofit",
+      "host_requirement": "explicit user preferences and compatible host",
+      "printspace_outputs": [
+        "larger pushbutton",
+        "grip",
+        "custom switch mounts"
+      ],
+      "filespace_dataspace_workspace": [
+        "private Workspace preferences and user confirmation"
+      ],
+      "non_printed_seed_parts": [
+        "approved switch/controller"
+      ],
+      "verified_limits": [
+        "Accessibility fit and consent, no generic device hacking"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-017",
+      "title": "HYPER-USB as a CGX family bootstrap node",
+      "domain": "network",
+      "kind": "retrofit",
+      "host_requirement": "supported PC with signed installer and explicit user confirmation",
+      "printspace_outputs": [
+        "adapter case",
+        "asset/QR provenance"
+      ],
+      "filespace_dataspace_workspace": [
+        "initial CGX root pointer to scoped child instance",
+        "Filespace/DBR handshake",
+        "owner-allowlisted service"
+      ],
+      "non_printed_seed_parts": [
+        "data-rated USB bridge or secure onboard MCU"
+      ],
+      "verified_limits": [
+        "Cannot make a regular PC remotely accessible by plugging in untrusted USB alone"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-018",
+      "title": "Local smart coffee-machine assistant",
+      "domain": "appliances",
+      "kind": "retrofit",
+      "host_requirement": "owner-supported API OR qualified safe external button UI",
+      "printspace_outputs": [
+        "detachable actuator mount",
+        "noncontact camera guard"
+      ],
+      "filespace_dataspace_workspace": [
+        "request → policy check → safe command → observed result DBR"
+      ],
+      "non_printed_seed_parts": [
+        "approved controller and insulated low-energy power"
+      ],
+      "verified_limits": [
+        "Hot fluid, pressure, boil-dry, food safety and human presence require appliance-specific risk review"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-019",
+      "title": "Printable mobile/wearable accessory",
+      "domain": "personal",
+      "kind": "retrofit",
+      "host_requirement": "compatible smart device and measured RF/power envelope",
+      "printspace_outputs": [
+        "watch/ring/phone shell",
+        "strap",
+        "dock"
+      ],
+      "filespace_dataspace_workspace": [
+        "CGX local device capabilities, user's privacy settings"
+      ],
+      "non_printed_seed_parts": [
+        "source electronics, radio, display, protection"
+      ],
+      "verified_limits": [
+        "No fully printed phone/chip/battery-free all-functions claim"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    },
+    {
+      "id": "HT-020",
+      "title": "Room-scale interoperable workshop",
+      "domain": "workspace",
+      "kind": "system",
+      "host_requirement": "multiple explicitly commissioned safe nodes",
+      "printspace_outputs": [
+        "tool holders",
+        "datum tags",
+        "field-station mounts"
+      ],
+      "filespace_dataspace_workspace": [
+        "WorkSpace bounded physical zones and actor roles",
+        "filespace capabilities",
+        "dataspace evidence"
+      ],
+      "non_printed_seed_parts": [
+        "sourced controllers/sensors as needed"
+      ],
+      "verified_limits": [
+        "No unsupervised hazardous operations or omniscient space claim"
+      ],
+      "provenance": "CANDIDATE_NOT_QUALIFIED",
+      "compatible_device_types": "PER_DEVICE_HANDSHAKE_ONLY",
+      "authorization": "OWNER_SPECIFIC_LEAST_PRIVILEGE"
+    }
+  ],
+  "product_count": 20,
+  "link_to_inverse_graph": [
+    "HT-JIG",
+    "HT-USB",
+    "HT-PUSH",
+    "HT-CHARGE",
+    "HT-WORKSPACE"
+  ],
+  "price_policy": "Only external provenance-linked tool observations, never a blanket USD/AUD claim on retrofit cost.",
+  "marketing_claim_gate": "HYPER-AWARE/HYPER-CAPABLE describe potential conditional verified new function; not consciousness or unrestricted device control.",
+  "sharing_rights": "LEGO Ideas not suitable for AI-assisted submissions under current published terms; maintain a generic brick-compatible proposal and request separate rights/approval for any LEGO collaboration.",
+  "owner_gates": [
+    "EMASSC licensing and CCC terms",
+    "CGX identity/Filespace ownership",
+    "C0 independent safety & device authorization",
+    "Transport auth, code signing, provenance and rollback",
+    "Privacy and consent for room-scale sensing"
+  ]
+}
