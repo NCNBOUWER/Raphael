@@ -1,0 +1,927 @@
+{
+  "schema": "cgx.printspace.shared_primitive_reuse.v0.5",
+  "id": "CGX-F4D-REUSE-20261008",
+  "status": "PROPOSED",
+  "source_atlas": "CGX-F4D-PRODUCT-ATLAS-20261008",
+  "primitive_count": 70,
+  "products": 80,
+  "records": [
+    {
+      "technology_id": "PT-001",
+      "canonical_function": "Beam / lattice / shell",
+      "product_reuse_count": 55,
+      "grex_domain_count": 8,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-043",
+      "canonical_function": "Hybrid compute island",
+      "product_reuse_count": 52,
+      "grex_domain_count": 8,
+      "grex_groups": [
+        "backend",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-018",
+      "canonical_function": "Temperature sensor",
+      "product_reuse_count": 45,
+      "grex_domain_count": 9,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-011",
+      "canonical_function": "Conductor / bus / trace",
+      "product_reuse_count": 45,
+      "grex_domain_count": 8,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-023",
+      "canonical_function": "Optical / photodetector interface",
+      "product_reuse_count": 25,
+      "grex_domain_count": 8,
+      "grex_groups": [
+        "backend",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-031",
+      "canonical_function": "Battery cell",
+      "product_reuse_count": 25,
+      "grex_domain_count": 8,
+      "grex_groups": [
+        "backend",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-045",
+      "canonical_function": "RF transceiver body/interface",
+      "product_reuse_count": 25,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "backend",
+        "eco",
+        "operable",
+        "operations",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-015",
+      "canonical_function": "Antenna / transmission line / resonator",
+      "product_reuse_count": 21,
+      "grex_domain_count": 5,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-044",
+      "canonical_function": "RFID / NFC identity node",
+      "product_reuse_count": 20,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "eco",
+        "operations",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-008",
+      "canonical_function": "Heat spreader / radiator",
+      "product_reuse_count": 18,
+      "grex_domain_count": 5,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "operable",
+        "romer",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-054",
+      "canonical_function": "Calibration artefact / probe fixture",
+      "product_reuse_count": 14,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "operations",
+        "research",
+        "romer",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-039",
+      "canonical_function": "Waveguide / diffuser / reflector",
+      "product_reuse_count": 13,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "research",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-007",
+      "canonical_function": "Fluid/gas manifold",
+      "product_reuse_count": 13,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-019",
+      "canonical_function": "Strain / force sensor",
+      "product_reuse_count": 12,
+      "grex_domain_count": 5,
+      "grex_groups": [
+        "civil",
+        "operable",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-026",
+      "canonical_function": "Motor / stator-rotor assembly",
+      "product_reuse_count": 12,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "eco",
+        "operable",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-005",
+      "canonical_function": "Seal / gasket",
+      "product_reuse_count": 11,
+      "grex_domain_count": 7,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "operable",
+        "operations",
+        "research",
+        "romer",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-021",
+      "canonical_function": "Humidity / gas sensor",
+      "product_reuse_count": 10,
+      "grex_domain_count": 6,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "operable",
+        "operations",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-059",
+      "canonical_function": "Structural-health sensor skin",
+      "product_reuse_count": 10,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "romer",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-013",
+      "canonical_function": "Capacitor",
+      "product_reuse_count": 10,
+      "grex_domain_count": 5,
+      "grex_groups": [
+        "backend",
+        "operations",
+        "research",
+        "romer",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-014",
+      "canonical_function": "Inductor / transformer / coil",
+      "product_reuse_count": 8,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "research",
+        "romer",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-003",
+      "canonical_function": "Gear / cam / pulley",
+      "product_reuse_count": 7,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "civil",
+        "operable",
+        "operations"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-052",
+      "canonical_function": "Pump / valve / manifold module",
+      "product_reuse_count": 7,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "civil",
+        "operable",
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-024",
+      "canonical_function": "Magnetic / field sensor interface",
+      "product_reuse_count": 6,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "civil",
+        "romer",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-025",
+      "canonical_function": "Solenoid",
+      "product_reuse_count": 6,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "operable",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-053",
+      "canonical_function": "Gripper / end effector",
+      "product_reuse_count": 6,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "eco",
+        "operable",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-051",
+      "canonical_function": "Post-mix nozzle / mixer head",
+      "product_reuse_count": 6,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "civil",
+        "operable",
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-010",
+      "canonical_function": "EMI / optical / dust shield",
+      "product_reuse_count": 6,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "backend",
+        "civil",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-002",
+      "canonical_function": "Compliant flexure / spring",
+      "product_reuse_count": 5,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "operable",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-050",
+      "canonical_function": "Water-quality / treatment node",
+      "product_reuse_count": 5,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "operable",
+        "operations"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-009",
+      "canonical_function": "Thermal insulation / break",
+      "product_reuse_count": 5,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "civil",
+        "eco",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-022",
+      "canonical_function": "Electrochemical water-quality sensor",
+      "product_reuse_count": 5,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "eco",
+        "operations",
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-055",
+      "canonical_function": "Child printer skeleton and tool bus",
+      "product_reuse_count": 5,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "civil",
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-068",
+      "canonical_function": "Mark integrated functional body",
+      "product_reuse_count": 5,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-046",
+      "canonical_function": "Optical / IR link",
+      "product_reuse_count": 4,
+      "grex_domain_count": 4,
+      "grex_groups": [
+        "backend",
+        "eco",
+        "usable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-006",
+      "canonical_function": "Pressure/vacuum cavity",
+      "product_reuse_count": 4,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-038",
+      "canonical_function": "Hybrid semiconductor LED",
+      "product_reuse_count": 3,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-016",
+      "canonical_function": "Contact / connector / pad",
+      "product_reuse_count": 3,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "backend",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-012",
+      "canonical_function": "Resistor / heater",
+      "product_reuse_count": 3,
+      "grex_domain_count": 3,
+      "grex_groups": [
+        "backend",
+        "operations",
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-049",
+      "canonical_function": "Microfluidic lab / assay cartridge",
+      "product_reuse_count": 3,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "eco",
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-056",
+      "canonical_function": "Road/guideway functional coating",
+      "product_reuse_count": 3,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "civil"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-033",
+      "canonical_function": "Photovoltaic layer/device",
+      "product_reuse_count": 3,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "civil",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-069",
+      "canonical_function": "Luke / InterSol support module",
+      "product_reuse_count": 3,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-020",
+      "canonical_function": "Pressure / capacitive sensor",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "operable",
+        "wearable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-034",
+      "canonical_function": "Inductive power transfer",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "backend",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-047",
+      "canonical_function": "Filter / membrane module",
+      "product_reuse_count": 2,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "eco"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-070",
+      "canonical_function": "Roaming/mobile UTP",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "civil",
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-058",
+      "canonical_function": "Solar Hull / structural photovoltaic skin",
+      "product_reuse_count": 2,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-017",
+      "canonical_function": "Printed fuse / current limiter",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-032",
+      "canonical_function": "Supercapacitor",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-062",
+      "canonical_function": "Mineral/regolith composite feed",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-067",
+      "canonical_function": "Beneficiation/refinery machine parts",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-064",
+      "canonical_function": "Regolith structural element",
+      "product_reuse_count": 2,
+      "grex_domain_count": 2,
+      "grex_groups": [
+        "research",
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-040",
+      "canonical_function": "Printed thin-film transistor / active switch",
+      "product_reuse_count": 2,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-027",
+      "canonical_function": "Voice-coil / linear EM actuator",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-035",
+      "canonical_function": "Thermoelectric generator/cooler",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "usable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-028",
+      "canonical_function": "Pneumatic / hydraulic actuator",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "operable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-029",
+      "canonical_function": "Compliant / electrothermal actuator",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "operable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-030",
+      "canonical_function": "Piezo / dielectric-elastomer actuator",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "operable"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-048",
+      "canonical_function": "Catalytic/reactive surface",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "eco"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-060",
+      "canonical_function": "Recovered polymer feed",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "eco"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-061",
+      "canonical_function": "Recovered graphene conductive feed",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "eco"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-063",
+      "canonical_function": "Bio-derived binder/carrier",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "eco"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-057",
+      "canonical_function": "Building functional coating",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "civil"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-004",
+      "canonical_function": "Bearing/bushing interface",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-066",
+      "canonical_function": "Shield / berm / landing-pad construction",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "romer"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-036",
+      "canonical_function": "RGB gas-discharge pixel",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-041",
+      "canonical_function": "Printed simple logic / oscillator",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-042",
+      "canonical_function": "Printed memory candidate",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-037",
+      "canonical_function": "Electroluminescent thin-film element",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    },
+    {
+      "technology_id": "PT-065",
+      "canonical_function": "Locally refined metal wire/truss",
+      "product_reuse_count": 1,
+      "grex_domain_count": 1,
+      "grex_groups": [
+        "research"
+      ],
+      "source": "UTP-CATALOGUE-001",
+      "physical_qualified": false
+    }
+  ]
+}
