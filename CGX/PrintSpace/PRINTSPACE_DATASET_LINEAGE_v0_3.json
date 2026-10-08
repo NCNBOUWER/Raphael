@@ -131,6 +131,29 @@
       "records": 172,
       "equations": 59,
       "recorded_numeric_values": 0
+    },
+    {
+      "artifact": "CGX-F4D-PRODUCT-ATLAS-20261008",
+      "path": "CROSS_GREX_PRODUCT_ATLAS_v0_5.json",
+      "records": 80,
+      "technology_links": 586,
+      "proposed_stages": 475
+    },
+    {
+      "artifact": "CGX-F4D-GAP-ATLAS-20261008",
+      "path": "CROSS_GREX_GAP_REGISTER_v0_5.json",
+      "records": 220,
+      "verified_closure": 0
+    },
+    {
+      "artifact": "CGX-F4D-SHARED-PRIMITIVES-20261008",
+      "path": "CROSS_GREX_SHARED_PRIMITIVES_v0_5.json",
+      "records": 70
+    },
+    {
+      "artifact": "CGX-F4D-PRODUCT-TAXONOMY-20261008",
+      "path": "PRODUCT_ATLAS_TAXONOMY_v0_5.json",
+      "process_profiles": 17
     }
   ],
   "evidence_policy": {
@@ -155,11 +178,14 @@
     "equation_validation": "SI dimension checks + synthetic analytical fixtures only; real material properties remain unpopulated",
     "operand_requirements": 172,
     "operand_measurements_populated": 0,
-    "property_schema_gaps": 7
+    "property_schema_gaps": 7,
+    "product_qualifications": 0,
+    "candidate_component_bindings": 586
   },
   "qa_tests": [
     "test_multistage_route_planner.py",
     "test_printspace_population_v0_3.py",
-    "test_dimensioned_equation_engine_v0_4.py"
+    "test_dimensioned_equation_engine_v0_4.py",
+    "test_cross_grex_product_atlas_v0_5.py"
   ]
 }
