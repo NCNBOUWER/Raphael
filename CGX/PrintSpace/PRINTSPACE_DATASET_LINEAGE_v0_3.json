@@ -104,6 +104,13 @@
       "records": 3481,
       "curated_routes": 72,
       "family_class_inherited_only": 3409
+    },
+    {
+      "artifact": "CGX-F4D-MATPROP-20261008",
+      "path": "MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv",
+      "records": 531,
+      "measured_value_count": 0,
+      "distinct_property_types": 110
     }
   ],
   "evidence_policy": {
@@ -121,7 +128,8 @@
     "shopfloor_instruction_authority": false,
     "provenance_rule": "Every material property needs measured value, units, uncertainty, temperature/regime, specimen geometry, feedstock lot, device calibration, date and attributable source",
     "state_rule": "All v0.3 records are provisional, no demonstrated 4D printer capability inferred",
-    "material_matrix_physical_qualification_count": 0
+    "material_matrix_physical_qualification_count": 0,
+    "material_property_slots_waiting_for_measurement": 531
   },
   "qa_tests": [
     "test_multistage_route_planner.py",
