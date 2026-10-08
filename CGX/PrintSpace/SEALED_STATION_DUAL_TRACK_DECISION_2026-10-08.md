@@ -43,8 +43,12 @@ Record: stage velocity/acceleration/jerk, motor and tooling excitation spectra, 
 - **Form factor confirmed:** predominantly see-through *elongated rectangular* usable enclosure rather than cube-like, to handle long-flat objects and slender-tall configurations via internal automated reorientation. Glass or acrylic are candidates only; glazing composition and transparent fraction require compatibility/structural/optical safety evaluation.
 - **Build-generation priority:** The founder states that the **first printer need not be visually polished**; the printer produced *by* Printer-1 should be aesthetically refined. This is a design-intent observation, **not yet approval** of a particular self-fabrication scope or replacement generation architecture.
 
-## Next founder decision — pending
-**Printer-1 vs. Printer-2 release intent (YES/NO):** Approve Printer-1 as the full-environment, capability-first research station (appearance secondary), then design and manufacture a refined, visually polished Printer-2 using Printer-1 wherever capabilities permit, while retaining separately certified containment, safety-rated components and independently verified construction? The programme does not presume a printer can already fabricate itself, and no physical operation is authorised.
+## Founder-confirmed Bootstrap 4D Printer decision (2026-10-08)
+- **APPROVED:** Name the initial function-first machine **Bootstrap 4D Printer**, engineering it for all distinguishing CGX 4D functions from the initial machine. Do not avoid requirements because they are difficult; document and resolve experimental failure modes without accepting unqualified safety risk.
+- **Successor intent:** Use the bootstrap system to fabricate components and assemblies for an aesthetically refined next generation, then create scaled and application-specific classes including an expandable personal DIY kit, general-purpose models and custom industrial printers.
+- **Required support systems:** Track starter feedstock budgets, replenishment and heavy-material capacity; safe/qualified pressure and atmosphere equipment; redundancy and safe-failure design based on analysis; source-versus-print provenance for expansion assemblies.
+- **NEXT OPEN GATE:** Whether externally sourced and qualified nonprintable hardware may be used as essential inputs to DIY printer self-expansion. See [bootstrap family charter](BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md).
+- **Qualification remains held:** approval of project scope does not certify the equipment, print self-replication, materials, pressure/gas systems, or physically activate any machine.
 
 ## Source references
 - [Founder BB programme and sealed session definition](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md)
