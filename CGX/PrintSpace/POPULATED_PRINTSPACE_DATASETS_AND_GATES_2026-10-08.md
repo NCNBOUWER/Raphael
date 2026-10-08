@@ -12,7 +12,8 @@ Raphael UTP PR #5 already contains **70** PT umbrella technology classes, feedst
 - 70/70 existing UTP functional technology classes linked to candidate material passports and preliminary parametric geometry.
 - 26 environmental and interface opportunities, including deliberately induced oxidation, low-oxygen deposition, internal hermetic volumes, low energy activation and independent Earth/microgravity routes.
 - 30 parametric geometry archetypes covering printed circuits, RF, batteries, interfaces, optics, thermal/flow and robotic motion.
-- 72 coupon qualification plans, one per candidate directional material route; 12 initially flagged for priority study. *No experimental coupons are claimed to have been manufactured or measured*.
+- 72 coupon qualification plans, one per candidate directional material route; 12 initially flagged for priority study.
+- 531 typed SI property measurement slots across all 59 archetypes (110 distinct property names) in `MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv`. Every measured value, uncertainty and source field is intentionally blank pending traceable data; the register captures what must be measured without inventing material properties. *No experimental coupons are claimed to have been manufactured or measured*.
 
 ## Source/physical evidence doctrine
 NIST documents how AM material properties can vary with feedstock, build equipment and processing environment. A NIST Materials Data Repository listing is a discovery location, **not** automatic evidence that a particular recipe is qualified. ISO/ASTM 52920:2023 is a general AM process/site qualification standard; ISO/ASTM 52953:2025 is specifically scoped to registering process-monitoring NDT data for laser-based metal powder bed fusion, with methods adaptable beyond its normative scope. This work neither accesses paywalled full standards nor claims compliance.
