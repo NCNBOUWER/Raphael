@@ -106,10 +106,10 @@
     },
     {
       "id": "D07",
-      "recommendation": "Rejected by founder: near-ambient-only/nonreactive-only as first-generation station requirement. Keep operating atmosphere unfinalised, and ask whether vacuum, positive pressure and controlled gas must be in first-gen design.",
-      "basis": "Explicit founder 'No' during quickfire, 2026-10-08.",
+      "recommendation": "Engineer first-generation sealed station for vacuum, positive pressure and controlled gases from outset; reject ambient-only design baseline. Hold every physical chamber, atmosphere and operation pending independent engineering evidence.",
+      "basis": "Founder explicitly answered YES to integrated vacuum/pressure/controlled-gas first-gen scope on 2026-10-08.",
       "reversible": true,
-      "status": "REJECTED_REPLACEMENT_UNDECIDED"
+      "status": "FOUNDER_APPROVED_DESIGN_SCOPE"
     }
   ],
   "gates": [
@@ -184,9 +184,9 @@
       "title": "Printer-1 / gas cell preparation",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "List actual tools/sensors and access, safe benign coupons, controlled test protocol, operator and emergency stop",
+      "acceptance": "Catalogue actual printer tools/sensors and access; design sealed compartmental printing with vacuum, positive-pressure and controlled-gas capabilities from Printer-1, appropriate rated containment, ventilation, monitoring, interlocks, calibration and safety review, plus dry-run and safe coupon protocol.",
       "execution": "MANUAL",
-      "hold": "No machine actuation or chamber pressurization from catalogue alone",
+      "hold": "No vacuum/pressure/gas actuation, hazardous operation or physical machinery commissioning based on founder design approval; professional review, suitable pressure/vacuum design and operator controls needed.",
       "priority": "P1",
       "closed": false
     },
@@ -302,7 +302,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Should first-generation station DESIGN explicitly encompass vacuum, positive pressure and controlled-gas capabilities (all safety-rated and separately qualified before physical operation)?",
+    "active_founder_question": "Approve Printer-1 as full-environment research printer with appearance secondary, and Printer-2 as a refined/polished next-generation printer built using Printer-1 where technically qualified (with separately sourced/rated safety components where needed)?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -331,17 +331,28 @@
       "physical_authority": "HOLD"
     },
     "atmosphere_founder_decision": {
-      "question": "Lock first-generation enclosure to near-ambient nonreactive environment with later separately rated controlled-atmosphere modules?",
-      "answer": "NO",
-      "state": "FOUNDER_REJECTED_2026-10-08",
-      "interpretation": "Do not adopt near-ambient-only/nonreactive-only as a first-generation design requirement; exact vacuum, pressure and gas capabilities require separate affirmative scoping.",
-      "safety_hold": "No pressure/vacuum design qualification or physical operating authority granted."
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "rejected_baseline": "Near-ambient, nonreactive-only first-gen station",
+      "approved_scope": [
+        "engineered vacuum capability in Printer-1 design",
+        "engineered positive-pressure capability in Printer-1 design",
+        "controlled-gas atmospheres with designed isolation/handling in Printer-1 design"
+      ],
+      "operating_ranges": "UNSPECIFIED_PENDING_ENGINEERING",
+      "gas_species": "UNSPECIFIED_PENDING_ENGINEERING",
+      "qualification": "No pressure chamber, window material, atmosphere switching or physical operating procedure qualified; independent safety engineering and authorisation needed",
+      "source": "SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md"
     },
     "enclosure_geometry": {
       "state": "FOUNDER_DIRECTION_2026-10-08",
       "form": "Visibly inspectable elongated rectangular rather than cube-like chamber; supports long, flat objects and slender tall objects by reorientation inside the sealed run.",
       "transparent_materials": "Glass or acrylic candidate; no material selected or performance rating established.",
       "dimensions": "Not fixed; derive from product bounding volumes, robotic sweep/reach and safety envelope."
+    },
+    "printer_generations_founder_input": {
+      "state": "FOUNDER_INTENT_2026-10-08_NOT_YET_FINAL_RELEASE_GATE",
+      "printer_1": "Function and full process capability matter more than aesthetics.",
+      "printer_2": "Printer made using Printer-1 should be visually refined; exact manufacturing and assembly scope remains for founder decision."
     }
   }
 }
