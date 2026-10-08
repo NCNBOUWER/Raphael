@@ -16,7 +16,7 @@ class PrintCeptorFrontierProjectionTests(unittest.TestCase):
     def test_consumer_only_no_root_promotion(self):
         self.assertIn("NON_AUTHORITATIVE", POLICY["state"])
         self.assertIn("no CGX root mutation", POLICY["namespace_scope"])
-        self.assertIn("without creating a new CGX schema", POLICY["purpose"].lower())
+        self.assertIn("without creating a new cgx schema", POLICY["purpose"].lower())
 
     def test_hydration_profiles_distinct_and_bounded(self):
         profiles = POLICY["query_contract"]["profiles"]
