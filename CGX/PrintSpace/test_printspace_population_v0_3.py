@@ -3,6 +3,7 @@
 No physical data verification or production qualification is implied.
 """
 import json
+import csv
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -95,6 +96,33 @@ class TestPrintSpacePopulation(unittest.TestCase):
             self.assertFalse(x["physical_tested"])
             self.assertFalse(x["production_approved"])
             self.assertEqual(x["status"],"DESIGNED_NOT_EXECUTED")
+
+
+    def test_complete_material_level_directional_index(self):
+        with (HERE / "MATERIAL_PAIRWISE_INDEX_v0_3.csv").open(
+            "r", encoding="utf-8", newline=""
+        ) as handle:
+            rows=list(csv.DictReader(handle))
+        mats={m["material_id"]:m for m in self.materials["materials"]}
+        fams={(p["from"], p["to"]):p for p in self.families["pairs"]}
+        curated={(r["first"],r["second"]):r for r in self.routes["routes"]}
+        self.assertEqual(len(rows),59 * 59)
+        self.assertEqual(len({(r["material_from"],r["material_to"]) for r in rows}),59 * 59)
+        self.assertEqual(sum(bool(r["curated_directional_route_id"]) for r in rows),72)
+        for row in rows:
+            a=mats[row["material_from"]]
+            b=mats[row["material_to"]]
+            p=fams[(a["planning_family"],b["planning_family"])]
+            self.assertEqual(row["inherited_family_route_class"],p["route_class"])
+            self.assertEqual(row["family_pair_id"],p["pair_id"])
+            self.assertEqual(row["production_approved"],"false")
+            self.assertEqual(row["physical_test_status"],"NOT_TESTED")
+            cr=curated.get((a["material_id"],b["material_id"]))
+            self.assertEqual(row["curated_directional_route_id"],cr["route_id"] if cr else "")
+            if cr is None:
+                self.assertEqual(row["candidate_status"],"FAMILY_CLASS_INHERITED")
+            else:
+                self.assertEqual(row["candidate_status"],"ROUTE_SEED_ONLY")
 
     def test_handshake_fail_closed(self):
         h=self.handshake
