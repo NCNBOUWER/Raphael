@@ -143,6 +143,16 @@ Open decision: whether independently functional electronic mini-printers retain 
 
 **Next founder release gate (OPEN):** Should this universal-technology-scope versus independently qualified **manufacturing claim** distinction become mandatory for all printer product releases and public descriptions? Recommendation **yes**. Its acceptance would not certify any actual process, permission or product.
 
+## Final voice-session founder gate: DBR network compaction and live retry (2026-10-08)
+- **DBR** is **Digitally Backed Receipt**. Spoken "DBI" was a mispronunciation, not a separate protocol.
+- Printer-specific CGX filespace/dataspace settings determine history/reset choices. A local-only printer may lose its history on local erase; a networked printer can choose to clear local history or compact its multiple DBRs into one network-held DBR.
+- **Founder YES:** Upon the compact-to-network path, internally verify the network's durable acceptance of the compacted receipt before allowing local history to clear. Do not add a routine external confirmation screen on success.
+- **Founder failure-path clarification:** If acknowledgement fails or is unavailable, keep the local record and a live, persistent pending handoff to retry. When offline, the handoff must remain locally queued for later network submission; network delivery cannot be assumed. Use idempotent delivery and readback proofs before changing the receipt state to complete.
+- **Proposed state contract (not yet implemented):** PREPARED_LOCAL -> PENDING_RETRY -> NETWORK_ACKNOWLEDGED -> RECEIPT_INTEGRITY_VERIFIED -> LOCAL_CLEAR_ELIGIBLE. Timeouts/restarts return to retained local PENDING_RETRY. Transfer should preserve child DBR references/digests, source order, issuer, destination and acknowledgement evidence without discarding verification information during compaction.
+- Errors affecting retention or data security must remain inspectable, and actionable failures can be surfaced; successful automatic handoff is unobtrusive. Comply with owner permissions, data-protection rules, legal retention and non-bypassable physical safeguards.
+- **Important boundary:** This is a product requirement in PrintSpace PR #6, **not** a running retry automation, implemented network adapter, actual transfer, local deletion, tested DBR compactor or change to canonical DBR/CGX filespace schemas.
+- **Next chat research gate:** consult the actual DBR/COIN canonical contract and decide with its owner the precise integrity and compacted-lineage format; do not fork it in PrintSpace. Other PrintSpace technical gaps and hardware qualifications remain open.
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
