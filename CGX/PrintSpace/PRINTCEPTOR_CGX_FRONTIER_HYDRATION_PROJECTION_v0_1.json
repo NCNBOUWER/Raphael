@@ -1,0 +1,339 @@
+{
+  "schema": "cgx.printspace.consumer_frontier_hydration_projection.v0.1",
+  "state": "REVIEW_ONLY_NON_AUTHORITATIVE_CGX_CONSUMER",
+  "date": "2026-10-09",
+  "purpose": "Bind PrintCeptor user task, co-running project lanes and physical child printers to existing CGX topology/query-normalisation/evidence contracts without creating a new CGX schema, runtime, agent, ontology or source-authority hierarchy.",
+  "namespace_scope": "PrintSpace application projection only; no CGX root mutation",
+  "source_refs": {
+    "cgx_root_local": "C:/Cognigrex/cognigrex.root.json; S92 promoted, sha of carrier 722558c274416c8e3d7e555575fb7fa43e0538aca72d6875ee06bb1486175db5; local read-only observation",
+    "cgx_domain_registry": "achillesromer-coder/LightSpeed:cgx/domain_templates/domains.json",
+    "cgx_universal_object": "achillesromer-coder/LightSpeed:cgx/domain_templates/universal_object_extension_contract.json",
+    "cgx_cross_domain_bridge": "achillesromer-coder/LightSpeed:cgx/domain_templates/cross_domain_bridge_registry.json",
+    "cgx_selection": "achillesromer-coder/LightSpeed:cgx/domain_templates/view_selection_policy.json",
+    "cgx_hydration_tests": "achillesromer-coder/LightSpeed:cgx/domain_templates/corpus_test_simulation_policy.json",
+    "cgx_node_exchange": "achillesromer-coder/LightSpeed:cgx/domain_templates/node_exchange_contract.json",
+    "cgx_memory": "achillesromer-coder/LightSpeed:cgx/domain_templates/agent_runtime_contract.json",
+    "cgx_tech_stack": "achillesromer-coder/LightSpeed:cgx/domain_templates/technology_stack_registry.json",
+    "cgx_handshake": "achillesromer-coder/LightSpeed:plugins/source/core-skills/cgx-handshake/SKILL.md",
+    "cgx_atlas": "achillesromer-coder/LightSpeed:docs/engineering/CGX_COMPONENT_GEOMETRY_ATLAS_2026-10-08.md; 411 archetypes, 64 field/slice, 61 geometry-search, 75 interaction entries; Drive workbook is authoritative",
+    "utp": "NCNBOUWER/Raphael PR5:Raphael_Packages/Universal_Tech_Printer/desktop_cell_architecture_v0_3.json; G1 17 targets; printer_mu_dependency_dag_v0_1.json has 20 unresolved categories",
+    "post_mix": "achillesromer-coder/Data PR11; PMX-MAT-001, PMX-CELL-001",
+    "printspace": "NCNBOUWER/Raphael PR6:TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json and PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md",
+    "filespace": "CGX Filespace Comprehensive Manual v0.1 and Phase A Whitepaper v0.1; owner-controlled Object ID/State Root/DBR Root",
+    "ccc_cyc": "Existing CCC/CGX package/sharing contracts; CYC routes static and publication-held"
+  },
+  "state_observations": {
+    "printspace_provider_head_at_intake": "e529758848551e20da8ff904bbf5ace5beef4a29",
+    "printspace_local_head_at_intake": "4a12b3f56c299c87c4b5d7ceaefca41baef0bf59",
+    "lightspeed_main_local_and_origin_at_intake": "4819e5f1b1ecff388621d74778987e4c52e3e079",
+    "lightspeed_root_checkout_pointer_at_intake": "d35e74c2561d957559ed5dbd16cd1148e491691c",
+    "root_pointer_state": "STALE_POINTER_OBSERVED_NOT_CORRECTED",
+    "provider_snapshot_only": true,
+    "refresh_rule": "Do not use observed head values as live invariants. Before any execution/reconciliation, reread each present provider/host/DBR root and compare against its current owner/authority, then produce a signed/readback receipt."
+  },
+  "identities": {
+    "node": "Authenticated host/compute device identity independent of printer machine identity and agent identity",
+    "printer_individual": "One persistent hardware/digital CGX machine Object_ID; self-expansion preserves identity even as components change",
+    "child_printer": "Independently functional nested electronic printer holds its own child Object_ID; host parent assembly membership is relation not authority inheritance",
+    "bay": "Allocated passive or tool-supported manufacturing space, not itself an agent/CGX independent individual",
+    "passive_part": "Assembly child/instance of global type reference, material and origin attributes; no forced standalone machine",
+    "canonical_source": "Native Drive/Git/CAD/instrument identity distinct from Object_ID and rendered view"
+  },
+  "memory_classes": {
+    "semantic": "owner-controlled CGX domain object/state, not automatic side-chat promotion",
+    "episodic": "DBR task/run/stage and historical receipts, evidence and calibration traces",
+    "temporary": "per-query task packet/hydration cache, discardable within selected user/safety policy",
+    "private": "user-local private/profile/context sidecars, not auto-imported into Römer or shared/public CGX",
+    "co_running_chat": "not canonical by conversation alone; persist agreed differences through existing owner branch/receipt, then derive source-linked projection"
+  },
+  "query_contract": {
+    "normalization": "CGX FFQP/PQH/CNR + cgx-handshake selection, current Object ID/State Root/DBR Root/capability profile and typed provenance",
+    "required_packet_fields": [
+      "task_id",
+      "object_ids",
+      "domain",
+      "intent",
+      "owner",
+      "source_heads",
+      "source_state_roots",
+      "security_scope",
+      "authority_lease",
+      "evidence_ceiling",
+      "dependencies",
+      "unknowns",
+      "requested_output",
+      "hydrate_profile"
+    ],
+    "preflight": [
+      "resolve current S92/owner-root and verifier",
+      "resolve installed/registered capabilities and physical safe state",
+      "check consequence/safety/privacy owner policy",
+      "traverse only task-reachable admissible dependency subgraph",
+      "respect evidence/unknown classes and final dependency receipts",
+      "select a single primary view with on-demand secondary projections"
+    ],
+    "default_profile": "SPARSE",
+    "profile_order": [
+      "SHELL",
+      "SPARSE",
+      "PROJECT_DEEP",
+      "CROSS_DOMAIN_BOUNDED"
+    ],
+    "profiles": [
+      {
+        "id": "SHELL",
+        "description": "Phone, ring, simple device, child quicklook: identity/capabilities/state/last DBR/status only.",
+        "neighbors": "0-1 hop",
+        "data": [
+          "Object_ID",
+          "source/DBR root refs",
+          "declared installed capabilities",
+          "current hazards/holds",
+          "current active job"
+        ],
+        "forbidden": [
+          "raw entire corpus",
+          "private memories from other people",
+          "unneeded detailed material sweeps"
+        ],
+        "primary_view": "hybrid-canonical-cells"
+      },
+      {
+        "id": "SPARSE",
+        "description": "Specific item or one machine part: its required type, geometry, one-hop interfaces, directly needed materials/tools and applicable owner evidence.",
+        "neighbors": "dependency cone bounded by current task",
+        "data": [
+          "object and type/instance link",
+          "machine installed module capability",
+          "material and process references for this part",
+          "relevant current receipt",
+          "direct unknowns"
+        ],
+        "forbidden": [
+          "unrelated mission/eco/civil programmes",
+          "all global CVs/communications",
+          "raw local LLM traces"
+        ],
+        "primary_view": "active-object-inspector"
+      },
+      {
+        "id": "PROJECT_DEEP",
+        "description": "End-to-end PrintCeptor bootstrap, Butter Bot complete article or one printer bay batch, bounded to approved work package.",
+        "neighbors": "recursive dependency cone, typed root and source checking",
+        "data": [
+          "BOM/dependency DAG",
+          "qualified/unknown process route packets",
+          "child-tool metrology and calibration",
+          "resource budgets and hazards",
+          "direct owner source refs",
+          "stage/receipt ancestry"
+        ],
+        "forbidden": [
+          "unrestricted outer corpus by default",
+          "invented physical evidence",
+          "automatic production dispatch"
+        ],
+        "primary_view": "twin-3d"
+      },
+      {
+        "id": "CROSS_DOMAIN_BOUNDED",
+        "description": "Source-owner-reviewed Mark/Luke/ISRU/Socie-Civil or global program interaction with genuinely cross-domain dependency.",
+        "neighbors": "bridged dependency cones with per-owner admission",
+        "data": [
+          "typed cross-domain bridge/authority",
+          "project-specific physical constraints",
+          "upstream accepted receipts",
+          "separate domain provenance/security",
+          "permissible hydration budget and tool lease"
+        ],
+        "forbidden": [
+          "merge other owner data into printer object",
+          "transfer source authority with bytes",
+          "secrets",
+          "unrequested public export"
+        ],
+        "primary_view": "topology-graph"
+      }
+    ],
+    "escalation": "Hydrate an additional dependency/specialist only on an unresolved required field/constraint, material claimed functional effect, environment hazard, user request, or current owner-approved evidence; explicit source/size/compute budget required.",
+    "evidence_rules": "Candidate/simulated results remain candidate. Missing input remains unknown or bounded approved measurement sweep. Only proven/readback/committed results can parameterise dependent tests.",
+    "model_selection": "no_model_deterministic, classical_solver, optional local LLM, optional remote specialist depending on verified capabilities; model is not agent identity and no model may independently authorise actuation."
+  },
+  "task_cases": [
+    {
+      "id": "CASE_CLAW",
+      "intent": "print replacement claw for PrintCeptor-0",
+      "profile": "SPARSE",
+      "owner_lanes": [
+        "PrintSpace",
+        "CGA/Drive",
+        "UTP"
+      ],
+      "optional_lanes": [
+        "PostMix when recipe/formulation changes",
+        "LS safety C0 on physical execution"
+      ],
+      "excluded_by_default": [
+        "EMFF",
+        "orbital mechanics",
+        "public publication"
+      ],
+      "expected_output": "tool/material/geometry/strength candidate plus missing actual ratings"
+    },
+    {
+      "id": "CASE_BUTTERBOT",
+      "intent": "first complete Butter Bot sealed-session article",
+      "profile": "PROJECT_DEEP",
+      "owner_lanes": [
+        "PrintSpace",
+        "Raphael UTP",
+        "PostMix",
+        "CGX Atlas",
+        "CGX DBR/LightSpeed C0"
+      ],
+      "optional_lanes": [
+        "CCC/CYC when authorised publication is requested"
+      ],
+      "excluded_by_default": [
+        "public/source redistribution before licence verification",
+        "mission governance beyond active link"
+      ],
+      "expected_output": "full first-article DAG, tool qualification holes, source-provenance, internal test plan, no claim physical print occurred"
+    },
+    {
+      "id": "CASE_OPEN_BAY",
+      "intent": "reconfigure one open chamber into 2 independent process bays",
+      "profile": "PROJECT_DEEP",
+      "owner_lanes": [
+        "PrintSpace",
+        "UTP geometry",
+        "PostMix materials",
+        "LS physical safety"
+      ],
+      "optional_lanes": [
+        "child printer object only if installed and registered"
+      ],
+      "excluded_by_default": [
+        "whole corpus",
+        "unqualified pressure-rating inference"
+      ],
+      "expected_output": "candidate partitions, reach, seal and process isolation constraints"
+    },
+    {
+      "id": "CASE_MU",
+      "intent": "evaluate Printer-mu G1 17-function child acceptance after Butter Bot",
+      "profile": "PROJECT_DEEP",
+      "owner_lanes": [
+        "Raphael UTP",
+        "CGX Atlas",
+        "PrintSpace"
+      ],
+      "optional_lanes": [
+        "PostMix",
+        "LS G1 physical controller"
+      ],
+      "excluded_by_default": [
+        "automatic claim child is qualified because body printed"
+      ],
+      "expected_output": "20-category/17-function dependency closure and real evidence gaps"
+    },
+    {
+      "id": "CASE_MARK_ISRU",
+      "intent": "consider 4D printer feed from Mark/Luke/ISRU route",
+      "profile": "CROSS_DOMAIN_BOUNDED",
+      "owner_lanes": [
+        "Römer/EMASSC",
+        "Eco-Grex recovered materials",
+        "Raphael UTP",
+        "PostMix",
+        "PrintSpace"
+      ],
+      "optional_lanes": [
+        "SAI, LS runtime with lease"
+      ],
+      "excluded_by_default": [
+        "mission flight-readiness claim",
+        "unrelated user private files"
+      ],
+      "expected_output": "resource composition/qualification and route/life-cycle plan with separate flight/safety evidence"
+    },
+    {
+      "id": "CASE_PUBLIC_CCC",
+      "intent": "publish authorised PrintCeptor user-modified case as CCC share",
+      "profile": "SPARSE",
+      "owner_lanes": [
+        "CGX CCC/CYC",
+        "EMASSC licensing/security",
+        "PrintSpace"
+      ],
+      "optional_lanes": [
+        "LightSpeed publisher if installed"
+      ],
+      "excluded_by_default": [
+        "private DBRs",
+        "unlicensed CAD",
+        "unapproved hardware methods"
+      ],
+      "expected_output": "draft publication packet and explicit outstanding release permission"
+    }
+  ],
+  "frontier_records": [
+    {
+      "id": "FR-01",
+      "owner": "Neo/R2/Achilles",
+      "state": "EXTERNAL_OWNER_HOLD",
+      "issue": "Local CGX root LightSpeed pointer older than local/current main source",
+      "evidence": "Local canonical HEAD/origin 4819e5f vs root pointer d35e74c; read-only observation",
+      "acceptance": "Owner-grade source/root pointer reconciliation with rollback and exact readback; PrintSpace does not rewrite root"
+    },
+    {
+      "id": "FR-02",
+      "owner": "CGX Atlas/Drive owner",
+      "state": "CURRENT_SOURCE_BOUND",
+      "issue": "Atlas previous 407 projection now 411 with four distinct Printer-mu archetypes",
+      "evidence": "Git mirror latest description; Drive owner canon",
+      "acceptance": "PrintSpace mapping references current 411 and MU-001/006/011/020 by type ID; exact instance material/tool links still missing"
+    },
+    {
+      "id": "FR-03",
+      "owner": "Raphael UTP",
+      "state": "EXTERNAL_OWNER_HOLD",
+      "issue": "20 Printer-mu material/process/hardware classes not selected or physically qualified",
+      "evidence": "UTP-PRINTER-MU-DEPENDENCY-DAG-001 planning state",
+      "acceptance": "Owner real hardware/lot/component provenance and measured G1 tests; later than first Butter Bot"
+    },
+    {
+      "id": "FR-04",
+      "owner": "Römer-Grex PrintSpace",
+      "state": "OPEN_LOCAL_LANE",
+      "issue": "PrintCeptor first safe bootstrap physical inventory/17-G1 mapping not confirmed",
+      "evidence": "PC-Q05; no physically commissioned machine",
+      "acceptance": "Exact sourced/in-house part inventory, SI geometry, hazard and qualification map; no fabricated estimates"
+    },
+    {
+      "id": "FR-05",
+      "owner": "PrintSpace+EMASSC",
+      "state": "EXTERNAL_RIGHTS_HOLD",
+      "issue": "Butter Bot source CAD and commercial/IP reuse not verified",
+      "evidence": "public source read-only but no independent licence readback",
+      "acceptance": "CAD exact files, explicit licence rights and retained attribution; publicity/redistribution owner approved"
+    },
+    {
+      "id": "FR-06",
+      "owner": "CGX CCC/CYC/DBR",
+      "state": "EXTERNAL_OWNER_HOLD",
+      "issue": "Public package download service and recoverable DBR compaction not runtime accepted",
+      "evidence": "CCC/CYC shell static test only, DBR user design choice",
+      "acceptance": "Registered signed package capability, consent/security, tested offline import/recovery and owner approval"
+    },
+    {
+      "id": "FR-07",
+      "owner": "PrintSpace+UTP+PostMix+LS",
+      "state": "EVIDENCE_PENDING",
+      "issue": "Combined child robot/chemistry/thermal/precision qualification for simultaneous internal partitions and tools",
+      "evidence": "software planner and synthetic cases not empirical",
+      "acceptance": "Real coupon/instrument data and chamber/operator safe state with calibration before actuation"
+    }
+  ],
+  "promotion": "Never automatically close an external-owner frontier or alter another owner PR. Crosslane intelligence should circulate via typed source refs and explicit admission stages, with selective dependency hydration and independent owner review."
+}
