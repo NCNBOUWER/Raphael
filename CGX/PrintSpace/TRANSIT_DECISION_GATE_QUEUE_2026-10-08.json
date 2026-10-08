@@ -124,6 +124,34 @@
       "basis": "Founder decisions in transit, 2026-10-08",
       "reversible": true,
       "status": "FOUNDER_APPROVED_STRATEGY"
+    },
+    {
+      "id": "D10",
+      "recommendation": "Existing PoC: parallel Bootstrap printer, BB, Mark/Luke and wider map-based project development; separately qualify hardware and release, rather than mandating consumer-first launch.",
+      "basis": "Founder transit decisions 2026-10-08",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED"
+    },
+    {
+      "id": "D11",
+      "recommendation": "DIY seed may integrate sourced qualified safety-critical parts; starter kit includes appropriate safeguards; optional guided progression plus per-operation capability handshake. Keep only evidenced safe functions available and withhold hazardous modes lacking required protections.",
+      "basis": "Founder transit decisions 2026-10-08; high-consequence functions require independent safety proof",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_REQUIREMENTS"
+    },
+    {
+      "id": "D12",
+      "recommendation": "Upcycle/recycle/upgrade by design, modularise wherever feasible; passport and end-of-life route for inseparable components; prefer application-qualified recovered input, including Mark-to-Mark research.",
+      "basis": "Founder transit decisions 2026-10-08",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_REQUIREMENTS"
+    },
+    {
+      "id": "D13",
+      "recommendation": "Cognigrex functional primacy and individuality: independent aesthetics, vocabulary and material choices per product; similar appearance never compels universal brand standard. Transfer knowledge only with provenance and recipient review.",
+      "basis": "Founder explicit clarification 2026-10-08",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_REQUIREMENTS"
     }
   ],
   "gates": [
@@ -288,9 +316,9 @@
       "title": "80-product portfolio coverage and shared modules",
       "owner": "PrintSpace owners",
       "state": "OPEN",
-      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements.",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification.",
       "execution": "DESIGN",
-      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas.",
+      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence.",
       "priority": "P2",
       "closed": false,
       "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
@@ -318,8 +346,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "For smallest customer-expandable Bootstrap-derived 4D printer, may separately sourced/qualified chips, vacuum/pressure parts, gas hardware and controllers remain necessary to print/assemble its expansion modules, while direct printing of all those parts remains a distinct R&D objective?",
-    "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
+    "active_founder_question": "Should Mark-to-Mark material/component regeneration be a separately measurable named proof-of-concept demonstrator alongside Butter Bot and Bootstrap 4D Printer?",
+    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -397,6 +425,18 @@
       "redundancy": "Include appropriate redundancy, fail-safe and safety provisions for each class based on hazard and reliability assessment.",
       "status_caveat": "No completed prototype, validated 4D feature implementation, commercial costing, industrial safety sign-off or physical runtime permission is implied.",
       "owner_document": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
+    },
+    "parallel_program_and_circularity": {
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "poc_role": "Bootstrap printer is shared proof-of-concept manufacturing infrastructure for Butter Bot, Mark, Luke and other existing projects; develop in parallel, with separate release gates",
+      "sourced_parts": "Founder approved sourced certified/qualified modules for DIY kit and bootstrap expansion, alongside ongoing full-printing R&D",
+      "kit_learning": "Optional guided build journey with exploratory alternatives; measure and present actual available capability",
+      "startup_handshake": "Discover parts and report per-operation capability and limits; keep verified safe modes available but require adequate protection for hazardous functions",
+      "circularity": "Upcycle/recycle/upgrade; modular when practicable, embedded when functional; passport and end-of-life plan mandatory for non-removable parts",
+      "recovered_first": "Prioritise qualified reused/upcycled material and parts; requalify recovered Mark hardware for its target use",
+      "aesthetic_priority": "Product function and measured performance dominate cosmetics, including solar-energy conversion",
+      "independent_identities": "No universal colour, appearance, terminology or design identity; each owner lane retains individuality; cross-lane learning is evidence-linked and reviewable",
+      "evidence_caveat": "No physical demonstration, safe pressure rating, recycling rate, or product certification is implied."
     }
   }
 }
