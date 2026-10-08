@@ -161,6 +161,26 @@ class DimensionalEquationTests(unittest.TestCase):
             self.assertTrue(set(eq["utp_kernel_ids"])<=known)
             self.assertFalse(eq["production_approved"])
 
+    def test_operand_provenance_blueprint_complete_and_unmeasured(self):
+        blueprint=read("PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json")
+        self.assertEqual(blueprint["equation_count"],59)
+        self.assertEqual(blueprint["operand_count"],172)
+        self.assertEqual(blueprint["unresolved_domain_assignments"],[])
+        self.assertEqual(len(blueprint["missing_material_property_definitions"]),7)
+        self.assertEqual({x["equation_id"] for x in blueprint["entries"]},
+                         {x["id"] for x in self.registry["models"]})
+        for entry in blueprint["entries"]:
+            eq=next(e for e in self.registry["models"] if e["id"]==entry["equation_id"])
+            self.assertEqual({x["symbol"] for x in entry["inputs"]},set(eq["inputs"]))
+            self.assertEqual(entry["unresolved_source_count"],0)
+            self.assertFalse(entry["all_numeric_inputs_provenanced"])
+            for op in entry["inputs"]:
+                self.assertEqual(op["unit"],eq["inputs"][op["symbol"]])
+                self.assertIsNone(op["numeric_value"])
+                self.assertIsNone(op["measured_uncertainty"])
+                self.assertEqual(op["source_status"],"SOURCE_EVIDENCE_REQUIRED")
+        self.assertFalse(blueprint["production_approved"])
+
     def test_qualified_properties_still_unset(self):
         self.assertEqual(sum(len(x["measured_material_properties"]) for x in self.materials["materials"]),0)
         self.assertTrue(all(x["process_window"] is None for x in self.materials["materials"]))
