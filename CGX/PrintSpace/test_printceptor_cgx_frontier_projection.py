@@ -16,7 +16,7 @@ class PrintCeptorFrontierProjectionTests(unittest.TestCase):
     def test_consumer_only_no_root_promotion(self):
         self.assertIn("NON_AUTHORITATIVE", POLICY["state"])
         self.assertIn("no CGX root mutation", POLICY["namespace_scope"])
-        self.assertIn("not a second", POLICY["purpose"].lower(), msg="intent should state no parallel authority")
+        self.assertIn("without creating a new CGX schema", POLICY["purpose"].lower())
 
     def test_hydration_profiles_distinct_and_bounded(self):
         profiles = POLICY["query_contract"]["profiles"]
@@ -61,7 +61,7 @@ class PrintCeptorFrontierProjectionTests(unittest.TestCase):
 
     def test_source_identity_and_evidence_not_unconditionally_promoted(self):
         self.assertIn("PMX", POLICY["source_refs"]["post_mix"])
-        self.assertIn("PrintSpace", POLICY["source_refs"]["printspace"])
+        self.assertIn("PR6", POLICY["source_refs"]["printspace"])
         self.assertIn("411", POLICY["source_refs"]["cgx_atlas"])
         self.assertIn("Only proven/readback/committed", POLICY["query_contract"]["evidence_rules"])
         self.assertIn("independent owner review", POLICY["promotion"])
