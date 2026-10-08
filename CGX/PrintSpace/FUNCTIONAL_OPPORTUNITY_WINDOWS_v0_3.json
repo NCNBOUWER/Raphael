@@ -1,0 +1,582 @@
+{
+  "schema": "cgx.printspace.functional_opportunity_windows.v0.3",
+  "id": "CGX-F4D-OPPORTUNITY-20261008",
+  "status": "CANDIDATE_ONLY",
+  "utp_environment_authority": "UTP-ENV-001",
+  "utp_hypergraph_authority": "UTP-HYPERGRAPH-001",
+  "count": 26,
+  "records": [
+    {
+      "id": "PS-OPP-001",
+      "slug": "controlled_oxygen",
+      "environment_mechanism": "low-oxygen shroud or chamber",
+      "candidate_utp_environment_ids": [
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "can_if": "oxygen-sensitive metal print then protective coating",
+      "controlled_quantities": [
+        "partial pressure of oxygen",
+        "moisture and temperature"
+      ],
+      "required_measurements": [
+        "conductivity",
+        "oxide composition and ageing"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-002",
+      "slug": "deliberate_oxidation",
+      "environment_mechanism": "controlled oxygen dose",
+      "candidate_utp_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "can_if": "grow intentional insulating or protective surface oxide",
+      "controlled_quantities": [
+        "oxygen concentration",
+        "temperature",
+        "exposure time"
+      ],
+      "required_measurements": [
+        "oxide thickness",
+        "adhesion and electrical property"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-003",
+      "slug": "hermetic_internal_void",
+      "environment_mechanism": "sealed micro-chamber",
+      "candidate_utp_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "can_if": "fill or evacuate functional void before final barrier closure",
+      "controlled_quantities": [
+        "gas composition",
+        "partial pressures",
+        "leak rate",
+        "permeation and dwell"
+      ],
+      "required_measurements": [
+        "sealed life",
+        "leak measurement",
+        "gas composition"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-004",
+      "slug": "high_temperature_first",
+      "environment_mechanism": "macro furnace or heat zone",
+      "candidate_utp_environment_ids": [
+        "ENV-3"
+      ],
+      "can_if": "complete sintering before heat-sensitive layers",
+      "controlled_quantities": [
+        "actual T(x",
+        "t)",
+        "gas activity",
+        "ramp and cooling"
+      ],
+      "required_measurements": [
+        "residual stress",
+        "distortion and phase"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-005",
+      "slug": "selective_local_heating",
+      "environment_mechanism": "local beam, heater or laser",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "locally sinter printed conductor on cooler supporting body",
+      "controlled_quantities": [
+        "absorptivity",
+        "local T(x",
+        "t)",
+        "heat affected zone"
+      ],
+      "required_measurements": [
+        "continuity",
+        "bond strength and thermal damage"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-006",
+      "slug": "local_photocure",
+      "environment_mechanism": "spatial illumination region",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "crosslink photopolymer without heating whole part",
+      "controlled_quantities": [
+        "irradiance",
+        "wavelength",
+        "depth",
+        "dose"
+      ],
+      "required_measurements": [
+        "conversion",
+        "cure depth",
+        "stress"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-007",
+      "slug": "humidity_gradient",
+      "environment_mechanism": "dry-to-wet chamber transition",
+      "candidate_utp_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "can_if": "enable hydrogel swelling or moisture response",
+      "controlled_quantities": [
+        "relative humidity",
+        "water activity",
+        "diffusion history"
+      ],
+      "required_measurements": [
+        "strain",
+        "time response",
+        "stability"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-008",
+      "slug": "electrical_potential",
+      "environment_mechanism": "voltage-controlled electrochemical cell",
+      "candidate_utp_environment_ids": [
+        "ENV-2"
+      ],
+      "can_if": "induce electrodeposition or ion transport",
+      "controlled_quantities": [
+        "electrode potential",
+        "conductivity",
+        "charge and current"
+      ],
+      "required_measurements": [
+        "layer thickness",
+        "coulombic efficiency"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-009",
+      "slug": "chemical_potential",
+      "environment_mechanism": "segregated reactive fluids",
+      "candidate_utp_environment_ids": [
+        "ENV-2"
+      ],
+      "can_if": "selective reaction, deposition or concentration-driven transport",
+      "controlled_quantities": [
+        "species activities",
+        "flow",
+        "temperature"
+      ],
+      "required_measurements": [
+        "conversion",
+        "chemical state and contamination"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-010",
+      "slug": "solvent_selectivity",
+      "environment_mechanism": "closed solvent-handling cell",
+      "candidate_utp_environment_ids": [
+        "ENV-2"
+      ],
+      "can_if": "remove sacrificial support while preserving host polymer",
+      "controlled_quantities": [
+        "solvent formulation",
+        "temperature",
+        "residence time"
+      ],
+      "required_measurements": [
+        "residuals",
+        "dimensional stability and flow"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-011",
+      "slug": "interlayer_gradient",
+      "environment_mechanism": "multifeed local mixing zone",
+      "candidate_utp_environment_ids": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "can_if": "mediate expansion, stiffness, or chemical mismatch",
+      "controlled_quantities": [
+        "feed ratios",
+        "phase formation",
+        "width of gradient"
+      ],
+      "required_measurements": [
+        "composition micrograph",
+        "adhesion and thermal cycle"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-012",
+      "slug": "magnetic_alignment",
+      "environment_mechanism": "controlled magnetic field cell",
+      "candidate_utp_environment_ids": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "can_if": "align fillers or magnetise printed magnet body",
+      "controlled_quantities": [
+        "magnetic field strength",
+        "orientation",
+        "thermal state"
+      ],
+      "required_measurements": [
+        "remanence",
+        "flux",
+        "alignment error"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-013",
+      "slug": "electromagnetic_induction",
+      "environment_mechanism": "coil/core energy interface",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "enable wireless power, resonant sensing or actuation",
+      "controlled_quantities": [
+        "frequency",
+        "geometry",
+        "field strength",
+        "impedance"
+      ],
+      "required_measurements": [
+        "coupling",
+        "Q",
+        "dissipated power"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-014",
+      "slug": "residual_stress_preload",
+      "environment_mechanism": "controlled cure, cooling and geometry",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-3"
+      ],
+      "can_if": "programmed curvature, mechanical preload and flexures",
+      "controlled_quantities": [
+        "shrinkage",
+        "temperature",
+        "cure and constraint"
+      ],
+      "required_measurements": [
+        "shape recovery",
+        "stress and fatigue"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-015",
+      "slug": "triboelectric_contact",
+      "environment_mechanism": "moving dissimilar dielectric surfaces",
+      "candidate_utp_environment_ids": [
+        "ENV-0"
+      ],
+      "can_if": "generate measurable contact electrification for sensing or harvesting",
+      "controlled_quantities": [
+        "surface condition",
+        "motion",
+        "humidity",
+        "load"
+      ],
+      "required_measurements": [
+        "charge",
+        "output power and wear"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-016",
+      "slug": "piezoelectric_strain",
+      "environment_mechanism": "poled piezo material under controlled force",
+      "candidate_utp_environment_ids": [
+        "ENV-1"
+      ],
+      "can_if": "sense vibration or produce deformation",
+      "controlled_quantities": [
+        "poling state",
+        "strain",
+        "drive field and frequency"
+      ],
+      "required_measurements": [
+        "charge coefficient",
+        "displacement and fatigue"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-017",
+      "slug": "thermoelectric_gradient",
+      "environment_mechanism": "sustained thermal source and sink",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "heat-flow-driven conversion or cooling device",
+      "controlled_quantities": [
+        "gradient",
+        "contact thermal resistances",
+        "current"
+      ],
+      "required_measurements": [
+        "electrical output and net heat balance"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-018",
+      "slug": "optical_contrast",
+      "environment_mechanism": "graded refractive index / interfaces",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "waveguiding, reflection, detection and filter behaviour",
+      "controlled_quantities": [
+        "refractive index",
+        "surface roughness",
+        "wavelength"
+      ],
+      "required_measurements": [
+        "transmission",
+        "scattering and spectrum"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-019",
+      "slug": "acoustic_impedance_contrast",
+      "environment_mechanism": "dissimilar density and compliance",
+      "candidate_utp_environment_ids": [
+        "ENV-0"
+      ],
+      "can_if": "resonant isolation, attenuation or transduction",
+      "controlled_quantities": [
+        "frequency response",
+        "damping",
+        "interface stiffness"
+      ],
+      "required_measurements": [
+        "resonance and sound transmission"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-020",
+      "slug": "fluidic_pressure_difference",
+      "environment_mechanism": "manifold and compliant valve",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-2"
+      ],
+      "can_if": "pump, valve, fluidic rectification or sensing",
+      "controlled_quantities": [
+        "pressure",
+        "flow",
+        "viscosity",
+        "temperature"
+      ],
+      "required_measurements": [
+        "flow-rate and leak performance"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-021",
+      "slug": "heat_flow_disparity",
+      "environment_mechanism": "thermal spreader and insulator interface",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "direct heat to radiators and protect sensitive islands",
+      "controlled_quantities": [
+        "thermal conductivity",
+        "interfacial resistance",
+        "flux"
+      ],
+      "required_measurements": [
+        "hotspots",
+        "transient thermal response"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-022",
+      "slug": "earth_gravity",
+      "environment_mechanism": "earth-fixed manufacturing frame",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-3"
+      ],
+      "can_if": "gravity-assisted settling, draining, powder placement and liquid support",
+      "controlled_quantities": [
+        "orientation",
+        "acceleration vector",
+        "vibration"
+      ],
+      "required_measurements": [
+        "uniformity and repeatability"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-023",
+      "slug": "microgravity",
+      "environment_mechanism": "orbital microgravity process cell",
+      "candidate_utp_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "can_if": "controlled non-sedimenting flow and retained capillary shape",
+      "controlled_quantities": [
+        "residual accelerations",
+        "surface tension",
+        "containment"
+      ],
+      "required_measurements": [
+        "dimensional reproducibility and particle capture"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-024",
+      "slug": "radiation_shielding",
+      "environment_mechanism": "graded radiation attenuation interface",
+      "candidate_utp_environment_ids": [
+        "ENV-3"
+      ],
+      "can_if": "allocate protective mass and material while preserving operation",
+      "controlled_quantities": [
+        "particle or photon spectrum",
+        "flux",
+        "dose rate"
+      ],
+      "required_measurements": [
+        "attenuation and damage accumulation"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-025",
+      "slug": "biological_viability",
+      "environment_mechanism": "sterile low-energy environment",
+      "candidate_utp_environment_ids": [
+        "ENV-2"
+      ],
+      "can_if": "deposit bioactive or living features after thermal processes",
+      "controlled_quantities": [
+        "sterility",
+        "pH",
+        "temperature",
+        "osmolality"
+      ],
+      "required_measurements": [
+        "viability",
+        "contamination and functionality"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    },
+    {
+      "id": "PS-OPP-026",
+      "slug": "recycling_purity",
+      "environment_mechanism": "sorted recycled feed streams",
+      "candidate_utp_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "can_if": "convert identified recovered feed into qualified new material",
+      "controlled_quantities": [
+        "species analysis",
+        "contamination",
+        "rheology",
+        "lot provenance"
+      ],
+      "required_measurements": [
+        "repeatable process and coupon performance"
+      ],
+      "evidence": "MECHANISM_CANDIDATE; NO_SPECIFIC_PROCESS_APPROVAL",
+      "process_characterisation_required": true,
+      "production_approved": false
+    }
+  ]
+}
