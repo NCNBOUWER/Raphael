@@ -107,6 +107,10 @@
 - **Next founder gate:** track each physical module or printed component by unit ID where practical, or batch/lot where adequate, including parent-child lineage and evidence links. **Unresolved separately:** default data ownership/local storage and cloud opt-in.
 - PrintSpace only records intended interfaces; it does not create/alter actual CGX canonical schema or RootAuthority or activate any device.
 
+## Founder CGX individual clarification
+CGX individuals are digital/filespace representations of electronic machines and subsystems. Non-electronic nuts, bolts, screws and printed structural pieces are children in their owning CGX object's component hierarchy, not standalone CGX individuals. Their material, count and lifecycle evidence can be recorded as child attributes. The previous every-component-individual proposal was declined.
+Open decision: whether independently functional electronic mini-printers retain a distinct individual identity when nested inside a parent station. Existing machine controls and owner boundaries remain unchanged.
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
