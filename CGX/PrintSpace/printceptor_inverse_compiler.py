@@ -12,9 +12,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 DEFAULT_GRAPH = HERE / "PRINTCEPTOR_INVERSE_BUILD_GRAPH_v0_1.json"
 PRIORITIES = {
-    "sourcing": ("PRINT", "REUSE", "HYBRID", "HAND", "BUY", "ASSEMBLE", "QUALIFY"),
-    "simple": ("BUY", "REUSE", "HYBRID", "PRINT", "HAND", "ASSEMBLE", "QUALIFY"),
-    "learning": ("HAND", "PRINT", "HYBRID", "REUSE", "BUY", "ASSEMBLE", "QUALIFY"),
+    "sourcing": ("PRINT", "SALVAGE", "REUSE", "HYBRID", "HAND", "BUY", "ASSEMBLE", "QUALIFY"),
+    "simple": ("BUY", "REUSE", "SALVAGE", "HYBRID", "PRINT", "HAND", "ASSEMBLE", "QUALIFY"),
+    "learning": ("HAND", "PRINT", "HYBRID", "SALVAGE", "REUSE", "BUY", "ASSEMBLE", "QUALIFY"),
 }
 
 def load_graph(path=DEFAULT_GRAPH):
@@ -36,7 +36,10 @@ def load_graph(path=DEFAULT_GRAPH):
     return data
 
 def evaluate(data, kit_id="K-FDM", goal="BB-FINAL", priority="sourcing"):
-    """Return an auditable route plan; 'candidate' is not 'available/qualified'."""
+    """Return an auditable route plan; 'candidate' is not 'available/qualified'.
+
+    Salvage paths never imply a device is owned or a removed safety interlock is valid.
+    """
     kits = {k["id"]: k for k in data["starter_kits"]}
     nodes = {p["id"]: p for p in data["components"]}
     kit = kits[kit_id]
