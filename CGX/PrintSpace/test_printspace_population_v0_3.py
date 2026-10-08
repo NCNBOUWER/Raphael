@@ -124,6 +124,23 @@ class TestPrintSpacePopulation(unittest.TestCase):
             else:
                 self.assertEqual(row["candidate_status"],"ROUTE_SEED_ONLY")
 
+    def test_material_property_capture_register(self):
+        with (HERE / "MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv").open(
+            "r", encoding="utf-8", newline=""
+        ) as handle:
+            rows=list(csv.DictReader(handle))
+        self.assertEqual(len(rows),531)
+        mats={m["material_id"] for m in self.materials["materials"]}
+        self.assertEqual({row["passport_id"] for row in rows},mats)
+        self.assertEqual(len({(row["passport_id"],row["property"]) for row in rows}),len(rows))
+        self.assertGreaterEqual(len({r["property"] for r in rows}),100)
+        for row in rows:
+            self.assertEqual(row["measured_value"],"")
+            self.assertEqual(row["uncertainty"],"")
+            self.assertTrue(row["unit"])
+            self.assertEqual(row["evidence_state"],"NOT_POPULATED_BY_SOURCE")
+            self.assertEqual(row["production_approved"],"false")
+
     def test_handshake_fail_closed(self):
         h=self.handshake
         self.assertFalse(h["physical_actuation"])
