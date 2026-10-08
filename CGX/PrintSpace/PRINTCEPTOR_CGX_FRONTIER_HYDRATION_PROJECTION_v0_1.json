@@ -333,7 +333,30 @@
       "issue": "Combined child robot/chemistry/thermal/precision qualification for simultaneous internal partitions and tools",
       "evidence": "software planner and synthetic cases not empirical",
       "acceptance": "Real coupon/instrument data and chamber/operator safe state with calibration before actuation"
+    },
+    {
+      "id": "FR-08",
+      "owner": "CGX semantic sibling owner (Neo/Achilles)",
+      "state": "NON_CANONICAL_REVIEW_ONLY",
+      "issue": "Prior 2026-10-06 sibling crystallisation/provider/CRDT proposal requires owner decisions, not silent import into PrintCeptor",
+      "evidence": "Local sibling decision packet and CGX semantic-domain-object brief, read-only",
+      "acceptance": "Existing owner validates specific accepted decisions and current root/DBR lineage; PrintSpace only resolves typed consumer bindings"
     }
   ],
-  "promotion": "Never automatically close an external-owner frontier or alter another owner PR. Crosslane intelligence should circulate via typed source refs and explicit admission stages, with selective dependency hydration and independent owner review."
+  "promotion": "Never automatically close an external-owner frontier or alter another owner PR. Crosslane intelligence should circulate via typed source refs and explicit admission stages, with selective dependency hydration and independent owner review.",
+  "sibling_legacy_alignment": {
+    "state": "NON_CANONICAL_SIBLING_REFERENCE_READ_ONLY",
+    "sources": [
+      "C:/Cognigrex/State/Frontier/CGX_SEMANTIC_DOMAIN_OBJECT_DECISION_SIBLING_2026-10-06.md",
+      "C:/Cognigrex/State/Frontier/PROJECT_WIDE_SIBLING_DECISION_PACKET_v0_2_2026-10-06.md",
+      "C:/Cognigrex/State/Frontier/cgx_semantic_domain_object_decisions_2026-10-06.json"
+    ],
+    "clarification": "CGX is live semantic object/namespace with stable Object_ID/source ownership; representation/carrier can be sparse and provider-distributed. A visual/file/CAD/assistant projection is not a new object master.",
+    "crystallisation": "task/user/surface/device-permission projection over one semantically sourced state, bounded by evidence and security; no automatic change in object or root authority",
+    "view_rule": "Existing CGX View Selection Policy chooses at most one primary view and on-demand relevant secondary views; task/requester identity does not override admission, evidence or privacy.",
+    "collaboration": "Ephemeral dialogue/presence may be transient; independently attributable user/operator decisions and reviewed proposals persist as scoped events/DBRs/overlays. Workspace CRDT/optimistic merges do not self-promote semantic canon.",
+    "provider_rule": "Drive/Git/Canva/CAD/local files are provider representations with native source identity. No copying entire sibling project content into the printer for coverage metrics.",
+    "node_rule": "Web surfaces/phones/hydration clients are not enrolled compute/physical nodes solely by opening CGX; device handshake + capability attestation + scoped lease are separate.",
+    "non_authority": "Sibling packet labels are proposal or recommendation only, even if newer. Close its owner decisions in their lane; PrintSpace consumes only approved exact-revision source evidence."
+  }
 }
