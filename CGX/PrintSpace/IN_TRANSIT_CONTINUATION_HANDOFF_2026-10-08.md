@@ -1,3 +1,19 @@
+## Co-running CGX / PrintCeptor frontier handoff (2026-10-09)
+**Scope:** This remains PrintSpace-owner review, not a new shared runtime or a command to other autonomous chats. A conversation, cached model thought, Draft PR, receipt preview and runtime view are **not** source authority. Source owners integrate accepted deltas through their existing workflows; preserve Task_ID/Run_ID/Hour_ID/Queue_ID lineage rather than duplicating dispatch.
+
+**Source:** [PrintCeptor CGX topology/hydration consumer projection](PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json); static source-check [tests](test_printceptor_cgx_frontier_projection.py). Read current provider branches before using any recorded SHA.
+
+**Fresh intake findings:**
+- BouwerBase is online; local `C:/Cognigrex/cognigrex.root.json` describes exact promoted S92 carrier and four child domain carriers. `current_canonical_source_head` in that root remains **d35e74c**, whereas local tracked clean `D:/LightSpeed/Repositories/LightSpeed_Canonical` HEAD/origin/main read **4819e5f**. **Neo/R2/Achilles source-root/currentness repair owner**, not PrintSpace; no edit of root files.
+- Drive-owned CGX Component Geometry Atlas **now has 411 archetypes** across 15 domains / 22 families, plus 64 4D field/slice records, 61 geometry families and 75 interaction records. The Git mirror reports four new Printer-μ ontology types (`CGA-M-029`, `CGA-DIEL-001`, `CGA-O-023`, `CGA-M-030`), not physical acceptance. Older 407 figures are snapshot-specific.
+- LightSpeed PRs **#123**, **#126**, **#127** verified merged and closed at the time of the handoff, while Raphael UTP **PR #5**, PrintSpace **PR #6** and Post-Mix Data **PR #11** remain open/unmerged. Do not cherry-pick, rebase, merge or mutate sibling owner branches to force apparent alignment.
+- UTP `UTP-PRINTER-MU-DEPENDENCY-DAG-001` preserves 20 candidate dependency nodes with hardware/tool/material qualifications still unselected. Do not confuse ontology coverage, digital/synthetic candidate or working Butter Bot with qualified Printer-μ G1 child.
+- Founder physical order still prevails: **Bootstrap → safe self-upgrades → Butter Bot FIRST integrated sealed article → collaborators → PrintCeptor A → regional pilot and later sales**. Other digital R&D may occur concurrently.
+
+**Minimal work/crosslane routing:** For a small part request hydrate local CGX identity/capabilities + one relevant component dependency cone; expand to PMX/Raphael and qualified environment only when needed. For full Butter Bot hydrate the whole accepted *Butter Bot* dependency cone; for Mark/Luke add admitted Römer/EMASSC/Eco bridging, not irrelevant data. Choose one primary view (CGX View Selection Policy) and on-demand secondary views, preserve source native CAD and physical evidence grade. C0 deterministic safety and scoped leases stay independent of local/remote AI. Transfer only missing content hashes and require target readback before dependent compute.
+
+**Co-running owner receipt requests:** (1) Neo/R2/Achilles read and reconcile stale root pointer with current authoritative source and rollback; (2) CGX Atlas owner confirm 411-type source→PrintSpace/UTP binding without copying workbook; (3) Raphael UTP deliver actual 17-function tool×hardware/Printer-μ dependency bind; (4) Post-Mix owner deliver bounded material passports/process histories; (5) CCC/CYC and DBR owners verify download/restore and permission states; (6) PrintSpace owner build first-article G06/G07 CAD/BOM/proof inputs. All are existing G-gate dependencies rather than invented dispatches.
+
 # CGX PrintSpace — In-Transit Continuation / Owner Handoff
 **Timestamp:** 2026-10-08 Australia/Brisbane  
 **Scope:** Read-only mobile/LS GO handoff for continuing the existing Cognigrex/Raphael/PrintSpace engineering corpus.  
