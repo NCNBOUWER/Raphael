@@ -3,6 +3,9 @@
 **Scope:** CGX PrintSpace / Raphael PR #6 owner-review documentation. This records the founder's conversation; it does not certify printing, hardware, or source releases.
 **Supersedes:** Any interpretation of BB01 as a butter-delivery benchmark or fixed-base laboratory assistant product.
 
+## Founder-specific sequence update (2026-10-09)
+The latest decision is to safely assemble the Bootstrap PrintCeptor first (initial manual construction with qualified supplied parts), use it to print/update its own appropriately qualified tools and components, then make a **simple working Butter Bot the FIRST integrated sealed-session article**. Its functional powered self-test must occur before enclosure opening when safe. Collaborator testing and subsequent refined PrintCeptor A follow. Existing BB01/BB02/BB03 component development remains a phased subset of the Butter Bot article, not a requirement to physically reproduce a universal child printer first. See [latest authoritative PrintSpace founder sequence](PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md). Public source CAD readability alone does not confer derivative or commercial reuse rights.
+
 ## Confirmed programme intent
 1. **Primary R&D task: make the printer capable of manufacturing one complete, working Butter Bot during a single print session.** This is a printer/process/material interoperability research programme using the known, comparatively simple Butter Bot geometry and component layout as the manufacturing test article. It is *not* primarily a butter-delivery application-development programme.
 2. **Every component is an attempted printable target**, including mechanical, conductive, insulating, magnetic, actuation, sensing, electronics, interconnection, and power subsystems. Do not silently exclude components because today's machinery cannot yet print them. Record a proposed pathway, current evidence, unknowns, alternatives, and failure modes for each.
