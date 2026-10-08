@@ -182,9 +182,9 @@
       "title": "Butter Bot printer-first full-component reference programme",
       "owner": "Römer-Grex+Raphael",
       "state": "OPEN",
-      "acceptance": "Map known BB01 geometry and every functional component, interfaces and measured test criteria; BB02 recursive modularity; BB03 integrated candidate; prove end-to-end multi-process printing in one session before final unversioned Butter Bot claim. Define printed versus reference bought-in parts explicitly.",
+      "acceptance": "Map all BB01 components and interfaces; BB02 modular process research; BB03 integrated informed candidate; fabricate/automatically integrate a complete Butter Bot in one cycle without opening or de-sealing main enclosure. Automated placement of safely pre-staged externally made ICs/other modules is allowed; separately track how much is truly additively fabricated. Qualification requires verified sealed-cycle evidence plus independent product safety/functional evidence.",
       "execution": "DESIGN",
-      "hold": "No butter-delivery benchmark, no lab-arm redesign, no claims that active components or a single-session print have been qualified. Physical printer command remains held.",
+      "hold": "No unsealed operator repositioning in a claimed one-session build; do not misrepresent pre-staged chips as directly printed. No butter-delivery benchmark, no lab-arm redesign, no physical actuation authority from documentation.",
       "priority": "P1",
       "closed": false
     },
@@ -288,8 +288,24 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Define the single print session: one automated manufacturing job with multihead, stage changes, in-situ processing and no manual assembly; interim auto-placed manufactured components are research controls not fully printed final qualification.",
+    "active_founder_question": "Must the completed robot pass an in-enclosure powered functional self-test before the sealed manufacturing cycle ends, or can powered commissioning begin after removal?",
     "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
-    "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority."
+    "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
+    "single_session_founder_ruling": {
+      "state": "APPROVED_2026-10-08",
+      "outer_enclosure": "Must remain sealed and unopened from cycle start through cycle completion; any manual opening mid-build terminates qualification as a single session.",
+      "allowed_during_seal": [
+        "automated rotation and repositioning",
+        "compartmental build operations",
+        "robotic tool/material access from pre-staged internal shelves or magazines",
+        "automated integration of externally manufactured components such as semiconductor chips, pre-staged without opening the process enclosure"
+      ],
+      "prohibited_mid_cycle": [
+        "operator opening or de-sealing outer process enclosure",
+        "manual assembly/repositioning requiring outer seal breach"
+      ],
+      "provenance_requirement": "Keep direct-printed content separate from vendor-made or preloaded components; a sealed one-session complete Butter Bot need not be composed of 100% directly printed parts, but all-component printing research remains in scope.",
+      "cross_product": "Design automated tooling/component-access interface for wider product families, not only Butter Bot."
+    }
   }
 }
