@@ -379,10 +379,18 @@
     }
   ],
   "asset_evidence": {
-    "bundle_sha256": "0e65bfed9255e0d184db1f2348fc37c79440401158c6ce2702585a5f7ec1ee3a",
+    "bundle_sha256": "0e5ae35b9d63eac0f730ac1a012f44ad7a525c1c6fc73a5be9f952a986bda084",
     "viewer_sha256": "0f9e3def70c0a64660a73c28894f130eb1e92075d7278139dc2296ae77835dcc",
     "sweep_csv_sha256": "0c267cc98f7ce0a0376eec7704346b84c6012caab157f71b5386169b27ae47c8",
-    "paths": "Session downloadable assets; not persistent LightSpeed deploy URIs"
+    "paths": "Session downloadable assets; not persistent LightSpeed deploy URIs",
+    "additional_assets": [
+      "PRINTCEPTOR_0_FRONT_PLAN_CONCEPT_v0_1.svg",
+      "PRINTCEPTOR_4D_SYMBOLIC_MANUFACTURING_TIMELINE_v0_1.json",
+      "REBUILD_FAMILY_3D_MODELS.py",
+      "FILE_SHA256_RECEIPT.json"
+    ],
+    "validation": "Local ZIP CRC, 26 SHA256 entries, 18 GLB readback, 68 CSV scenario invariants, SVG XML, 7 phase JSON, Node JS syntax passed. Browser UI screenshot/render attempt timed out; not claimed verified.",
+    "bundle_location": "Conversation downloadable artifact only; not yet installed in LightSpeed/Drive/Cognigrex."
   },
   "integration_next": [
     "LightSpeed/CGX owner review of rendered artifact metadata and file location",
