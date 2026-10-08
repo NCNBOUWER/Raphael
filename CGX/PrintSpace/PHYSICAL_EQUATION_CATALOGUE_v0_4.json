@@ -10,7 +10,7 @@
   "sources": [
     "https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022",
     "https://www.nist.gov/publications/additive-manufacturing-data-and-metadata-acquisition-general-practice",
-    "https://www.nist.gov/publications/fully-registered-situ-and-ex-situ-dataset-metal-powder-fusion-additive"
+    "https://www.nist.gov/publications/fully-registered-situ-and-ex-situ-dataset-metal-powder-bed-fusion-additive"
   ],
   "constants": {
     "pi": {
