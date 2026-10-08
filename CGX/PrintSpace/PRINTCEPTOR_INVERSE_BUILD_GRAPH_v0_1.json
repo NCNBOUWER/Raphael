@@ -192,6 +192,92 @@
       "actual_ownership": "UNVERIFIED",
       "physical_qualification": "NONE_INFERRED",
       "autonomous_single_session": "NO; a single-arm bench demonstrator even if motorised is not a dual-arm sealed PrintCeptor"
+    },
+    {
+      "id": "K-FOUNDER-CURRENT",
+      "name": "Actual founder present tool capacity: Dremel 4300, unidentified components unscored",
+      "capabilities": [
+        "MANUAL_FINISH"
+      ],
+      "known_price_observations": [],
+      "unpriced_dependencies": [
+        "All unidentified parts",
+        "Bench setup and power/ventilation",
+        "Consumables/protective/measurement kit not confirmed"
+      ],
+      "actual_ownership": "DREMEL_CONFIRMED_ONLY",
+      "physical_qualification": "HAND_ROTOR_NOT_TESTED; NO_FDM_OR_PEN",
+      "autonomous_single_session": "NO",
+      "inventory_link": "FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json",
+      "acquisition_state": "CURRENT_OWNED_CAPABILITY_ONLY",
+      "purchase_delta_pricing": "None yet; observed subtotal zero is not cost of workspace"
+    },
+    {
+      "id": "K-FOUNDER-FIRST-FDM",
+      "name": "Founder first FDM purchase plus owned Dremel 4300",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "VISUAL_INSPECT"
+      ],
+      "known_price_observations": [
+        {
+          "label": "Creality Ender-3 V3 SE (candidate, not yet bought)",
+          "aud": 259,
+          "url": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+          "observed_date": "2026-10-09"
+        }
+      ],
+      "unpriced_dependencies": [
+        "filament",
+        "first-print bed/nozzle supplies",
+        "bench setup power protection and ventilation",
+        "caliper/multimeter/PPE if not found on hand",
+        "existing components identification"
+      ],
+      "actual_ownership": "DREMEL_CONFIRMED_ONLY; FDM_PROPOSED",
+      "physical_qualification": "FDM_PLANNED_NOT_PHYSICALLY_AVAILABLE",
+      "autonomous_single_session": "NO",
+      "inventory_link": "FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json",
+      "acquisition_state": "POST_PURCHASE_HYPOTHETICAL",
+      "purchase_delta_pricing": "Known manufacturer printer price only; donor/second-hand alternatives retained"
+    },
+    {
+      "id": "K-FOUNDER-FDM-PEN-LATER",
+      "name": "After FDM plus optional pen-derived arm extrusion; Dremel already owned",
+      "capabilities": [
+        "FDM_POLYMER",
+        "MANUAL_FINISH",
+        "MANUAL_ASSEMBLY",
+        "VISUAL_INSPECT"
+      ],
+      "known_price_observations": [
+        {
+          "label": "Creality Ender-3 V3 SE candidate",
+          "aud": 259,
+          "url": "https://store.creality.com/au/products/ender-3-v3-se-3d-printer",
+          "observed_date": "2026-10-09"
+        },
+        {
+          "label": "PLA 3D pen donor candidate if selected",
+          "aud": 79.95,
+          "url": "https://www.jaycar.com.au/high-temp-pla-3d-pen-kit/p/TL4582",
+          "observed_date": "2026-10-09"
+        }
+      ],
+      "unpriced_dependencies": [
+        "pen vs purpose-built hotend compatibility review",
+        "motors, drivers, bearings, limit sensors, thermal cutoff, controls",
+        "guarded low-power bench setup and materials",
+        "calibrated tests",
+        "existing component inventory"
+      ],
+      "actual_ownership": "DREMEL_CONFIRMED_ONLY; FDM_PEN_PROPOSED",
+      "physical_qualification": "NOT_COMMISSIONED",
+      "autonomous_single_session": "NO",
+      "inventory_link": "FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json",
+      "acquisition_state": "POST_OPTIONAL_STAGE_HYPOTHETICAL",
+      "purchase_delta_pricing": "Two quoted potential purchases; rotary not repurchased"
     }
   ],
   "components": [
@@ -1291,5 +1377,7 @@
       "all_in_total_aud": null,
       "reason": "Do not estimate total with missing parts or infer technical compatibility."
     }
-  }
+  },
+  "founder_workshop_inventory_ref": "FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json",
+  "source_priority_for_founder": "Founder confirmed Dremel 4300 already owned; no FDM/pen owned; other components inventory unknown. Generic K-FDM and K-FDM-PEN-ARM are illustrative scenarios, not founder purchase list. Use founder-specific kits when optimizing incremental acquisition."
 }
