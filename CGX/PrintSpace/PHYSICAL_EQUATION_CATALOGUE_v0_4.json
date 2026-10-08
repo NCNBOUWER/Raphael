@@ -1,0 +1,991 @@
+{
+  "schema": "cgx.printspace.equation_catalogue.v0.4",
+  "id": "CGX-F4D-EQN-20261008",
+  "version": "0.4",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "authority": "Equation baselines only; defer full equations and novel Raphael geometry to UTP-KERNELS-001 and native solvers",
+  "unit_system": "SI with rad dimensionless",
+  "evaluation": "Non-actuating isolated deterministic evaluator; requires caller-provided, sourced numeric inputs",
+  "constant_source": "https://physics.nist.gov/cuu/Constants/index.html",
+  "sources": [
+    "https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022",
+    "https://www.nist.gov/publications/additive-manufacturing-data-and-metadata-acquisition-general-practice",
+    "https://www.nist.gov/publications/fully-registered-situ-and-ex-situ-dataset-metal-powder-fusion-additive"
+  ],
+  "constants": {
+    "pi": {
+      "value": 3.141592653589793,
+      "unit": "1",
+      "status": "mathematical_exact"
+    },
+    "c_light": {
+      "value": 299792458,
+      "unit": "m/s",
+      "status": "SI_exact",
+      "source": "NIST CODATA 2022"
+    },
+    "R_gas": {
+      "value": 8.31446261815324,
+      "unit": "J/(mol*K)",
+      "status": "SI_derived_exact",
+      "source": "NIST CODATA 2022"
+    },
+    "F_const": {
+      "value": 96485.33212331001,
+      "unit": "C/mol",
+      "status": "SI_derived_exact",
+      "source": "NIST CODATA 2022"
+    },
+    "eps0": {
+      "value": 8.8541878188e-12,
+      "unit": "F/m",
+      "status": "CODATA_2022_APPROXIMATE",
+      "source": "NIST CODATA 2022"
+    },
+    "mu0": {
+      "value": 0.00000125663706127,
+      "unit": "H/m",
+      "status": "CODATA_2022_APPROXIMATE",
+      "source": "NIST CODATA 2022"
+    }
+  },
+  "coverage": {
+    "formula_count": 47,
+    "integrated_utp_kernels": [
+      "K-BV",
+      "K-ENERGY",
+      "K-FLUID-MASS",
+      "K-FLUID-MOM",
+      "K-MAXWELL",
+      "K-MECH",
+      "K-NP",
+      "K-RADIATION",
+      "K-SPECIES"
+    ]
+  },
+  "models": [
+    {
+      "id": "PS-EQ-001",
+      "name": "DC trace resistance",
+      "domain": "electric",
+      "formula": "resistivity*length/area",
+      "result_unit": "Ohm",
+      "inputs": {
+        "resistivity": "Ohm*m",
+        "length": "m",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Uniform isotropic ohmic conductor with known cross-section and temperature; contact resistance excluded",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-002",
+      "name": "Resistive heating",
+      "domain": "electric_thermal",
+      "formula": "current**2*resistance",
+      "result_unit": "W",
+      "inputs": {
+        "current": "A",
+        "resistance": "Ohm"
+      },
+      "constants": [],
+      "validity": "DC or RMS current at unchanged effective resistance; thermal feedback separately solved",
+      "utp_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-003",
+      "name": "Constant power exposure energy",
+      "domain": "energy",
+      "formula": "power*duration",
+      "result_unit": "J",
+      "inputs": {
+        "power": "W",
+        "duration": "s"
+      },
+      "constants": [],
+      "validity": "Constant power; integrate measured time history otherwise",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-004",
+      "name": "Parallel-plate capacitance",
+      "domain": "electric",
+      "formula": "eps0*eps_r*area/gap",
+      "result_unit": "F",
+      "inputs": {
+        "eps_r": "1",
+        "area": "m**2",
+        "gap": "m"
+      },
+      "constants": [
+        "eps0"
+      ],
+      "validity": "Uniform linear dielectric; negligible fringing and no breakdown",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-005",
+      "name": "Capacitor energy",
+      "domain": "energy",
+      "formula": "capacitance*voltage**2/2",
+      "result_unit": "J",
+      "inputs": {
+        "capacitance": "F",
+        "voltage": "V"
+      },
+      "constants": [],
+      "validity": "Linear constant capacitance; no dielectric losses included",
+      "utp_kernel_ids": [
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-006",
+      "name": "Lossless lumped LC resonance",
+      "domain": "rf",
+      "formula": "1/(2*pi*(inductance*capacitance)**0.5)",
+      "result_unit": "Hz",
+      "inputs": {
+        "inductance": "H",
+        "capacitance": "F"
+      },
+      "constants": [
+        "pi"
+      ],
+      "validity": "Lumped ideal LC; parasitic resistance and distributed effects excluded",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-007",
+      "name": "Long-solenoid magnetic flux density",
+      "domain": "magnetic",
+      "formula": "mu0*mu_r*turns*current/length",
+      "result_unit": "T",
+      "inputs": {
+        "mu_r": "1",
+        "turns": "1",
+        "current": "A",
+        "length": "m"
+      },
+      "constants": [
+        "mu0"
+      ],
+      "validity": "Long solenoid, linear unsaturated medium, negligible fringing",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-008",
+      "name": "Long-solenoid inductance",
+      "domain": "magnetic",
+      "formula": "mu0*mu_r*turns**2*area/length",
+      "result_unit": "H",
+      "inputs": {
+        "mu_r": "1",
+        "turns": "1",
+        "area": "m**2",
+        "length": "m"
+      },
+      "constants": [
+        "mu0"
+      ],
+      "validity": "Long solenoid, linear medium, no external field effects",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-009",
+      "name": "Plane conduction thermal rate",
+      "domain": "thermal",
+      "formula": "thermal_conductivity*area*delta_temperature/length",
+      "result_unit": "W",
+      "inputs": {
+        "thermal_conductivity": "W/(m*K)",
+        "area": "m**2",
+        "delta_temperature": "K",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Steady one-dimensional conduction; no contact or convective losses",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-010",
+      "name": "Plane conduction thermal resistance",
+      "domain": "thermal",
+      "formula": "length/(thermal_conductivity*area)",
+      "result_unit": "K/W",
+      "inputs": {
+        "length": "m",
+        "thermal_conductivity": "W/(m*K)",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Uniform k, one-dimensional steady conduction",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-011",
+      "name": "Linear thermal expansion",
+      "domain": "mechanical_thermal",
+      "formula": "expansion_coefficient*length*delta_temperature",
+      "result_unit": "m",
+      "inputs": {
+        "expansion_coefficient": "1/K",
+        "length": "m",
+        "delta_temperature": "K"
+      },
+      "constants": [],
+      "validity": "Small strain, approximately constant coefficient over range",
+      "utp_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-012",
+      "name": "Uniaxial elastic stress",
+      "domain": "mechanical",
+      "formula": "young_modulus*strain",
+      "result_unit": "Pa",
+      "inputs": {
+        "young_modulus": "Pa",
+        "strain": "1"
+      },
+      "constants": [],
+      "validity": "Linear elastic uniaxial material, within proportional range",
+      "utp_kernel_ids": [
+        "K-MECH"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-013",
+      "name": "Axial bar deformation",
+      "domain": "mechanical",
+      "formula": "force*length/(young_modulus*area)",
+      "result_unit": "m",
+      "inputs": {
+        "force": "N",
+        "length": "m",
+        "young_modulus": "Pa",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Prismatic linear elastic bar, axial loading only",
+      "utp_kernel_ids": [
+        "K-MECH"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-014",
+      "name": "Hagen-Poiseuille volume flow",
+      "domain": "fluid",
+      "formula": "pi*radius**4*delta_pressure/(8*dynamic_viscosity*length)",
+      "result_unit": "m**3/s",
+      "inputs": {
+        "radius": "m",
+        "delta_pressure": "Pa",
+        "dynamic_viscosity": "Pa*s",
+        "length": "m"
+      },
+      "constants": [
+        "pi"
+      ],
+      "validity": "Steady laminar fully developed incompressible Newtonian circular tube; no slip",
+      "utp_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-015",
+      "name": "Reynolds number",
+      "domain": "fluid",
+      "formula": "density*velocity*diameter/dynamic_viscosity",
+      "result_unit": "1",
+      "inputs": {
+        "density": "kg/m**3",
+        "velocity": "m/s",
+        "diameter": "m",
+        "dynamic_viscosity": "Pa*s"
+      },
+      "constants": [],
+      "validity": "Continuum characteristic velocity/length and Newtonian effective viscosity",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-016",
+      "name": "Fick gradient flux magnitude",
+      "domain": "species",
+      "formula": "diffusivity*delta_concentration/length",
+      "result_unit": "mol/(m**2*s)",
+      "inputs": {
+        "diffusivity": "m**2/s",
+        "delta_concentration": "mol/m**3",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Simple one-dimensional Fickian transport, sign convention handled by process topology",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-017",
+      "name": "Molar rate across area",
+      "domain": "species",
+      "formula": "molar_flux*area",
+      "result_unit": "mol/s",
+      "inputs": {
+        "molar_flux": "mol/(m**2*s)",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Uniform normal flux on chosen area",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-018",
+      "name": "Ideal Faraday deposition mass",
+      "domain": "electrochemical",
+      "formula": "molar_mass*efficiency*current*duration/(charge_number*F_const)",
+      "result_unit": "kg",
+      "inputs": {
+        "molar_mass": "kg/mol",
+        "efficiency": "1",
+        "current": "A",
+        "duration": "s",
+        "charge_number": "1"
+      },
+      "constants": [
+        "F_const"
+      ],
+      "validity": "Ideal electrode stoichiometry adjusted for measured faradaic efficiency; no side reactions modelled",
+      "utp_kernel_ids": [
+        "K-BV",
+        "K-NP"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-019",
+      "name": "Ideal gas pressure",
+      "domain": "gas",
+      "formula": "moles*R_gas*temperature/volume",
+      "result_unit": "Pa",
+      "inputs": {
+        "moles": "mol",
+        "temperature": "K",
+        "volume": "m**3"
+      },
+      "constants": [
+        "R_gas"
+      ],
+      "validity": "Equilibrium ideal gas uniform absolute temperature; gas activity/nonideal corrections excluded",
+      "utp_kernel_ids": [
+        "K-SPECIES",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-020",
+      "name": "Hydrostatic pressure difference",
+      "domain": "gravity_fluid",
+      "formula": "density*gravity*height",
+      "result_unit": "Pa",
+      "inputs": {
+        "density": "kg/m**3",
+        "gravity": "m/s**2",
+        "height": "m"
+      },
+      "constants": [],
+      "validity": "Uniform gravity and incompressible static fluid, signed direction externally resolved",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-021",
+      "name": "Bond number",
+      "domain": "gravity_fluid",
+      "formula": "density_difference*gravity*length**2/surface_tension",
+      "result_unit": "1",
+      "inputs": {
+        "density_difference": "kg/m**3",
+        "gravity": "m/s**2",
+        "length": "m",
+        "surface_tension": "N/m"
+      },
+      "constants": [],
+      "validity": "Representative scale, density contrast and positive interfacial tension; distinguishes buoyancy/capillarity",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-022",
+      "name": "Cylindrical meniscus capillary pressure",
+      "domain": "gravity_fluid",
+      "formula": "2*surface_tension*cos(contact_angle)/radius",
+      "result_unit": "Pa",
+      "inputs": {
+        "surface_tension": "N/m",
+        "contact_angle": "rad",
+        "radius": "m"
+      },
+      "constants": [],
+      "validity": "Simple cylindrical capillary Young-Laplace approximation with angle measured through liquid",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-023",
+      "name": "Diffusion time scale",
+      "domain": "species",
+      "formula": "length**2/diffusivity",
+      "result_unit": "s",
+      "inputs": {
+        "length": "m",
+        "diffusivity": "m**2/s"
+      },
+      "constants": [],
+      "validity": "Order-of-magnitude transport time only, not exact characteristic mode coefficient",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-024",
+      "name": "Membrane steady molar permeation rate",
+      "domain": "species",
+      "formula": "permeability*area*delta_pressure/thickness",
+      "result_unit": "mol/s",
+      "inputs": {
+        "permeability": "mol/(m*s*Pa)",
+        "area": "m**2",
+        "delta_pressure": "Pa",
+        "thickness": "m"
+      },
+      "constants": [],
+      "validity": "Steady solution-diffusion homogeneous film; permeation mechanism and pressure basis validated",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-025",
+      "name": "Lumped thermal time constant",
+      "domain": "thermal",
+      "formula": "thermal_resistance*thermal_capacitance",
+      "result_unit": "s",
+      "inputs": {
+        "thermal_resistance": "K/W",
+        "thermal_capacitance": "J/K"
+      },
+      "constants": [],
+      "validity": "Single well-mixed thermal node; Biot adequacy and boundary conditions required",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-026",
+      "name": "Charge-based electric energy",
+      "domain": "energy",
+      "formula": "voltage*charge",
+      "result_unit": "J",
+      "inputs": {
+        "voltage": "V",
+        "charge": "C"
+      },
+      "constants": [],
+      "validity": "Constant voltage approximation; battery discharge requires integration of V(q)",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-027",
+      "name": "Seebeck open circuit voltage",
+      "domain": "energy",
+      "formula": "seebeck*delta_temperature",
+      "result_unit": "V",
+      "inputs": {
+        "seebeck": "V/K",
+        "delta_temperature": "K"
+      },
+      "constants": [],
+      "validity": "Constant effective Seebeck coefficient over small temperature span",
+      "utp_kernel_ids": [
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-028",
+      "name": "Matched resistive load power",
+      "domain": "energy",
+      "formula": "voltage**2/(4*internal_resistance)",
+      "result_unit": "W",
+      "inputs": {
+        "voltage": "V",
+        "internal_resistance": "Ohm"
+      },
+      "constants": [],
+      "validity": "Thevenin DC source matched to load, not necessarily maximum system efficiency",
+      "utp_kernel_ids": [
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-029",
+      "name": "Incident radiant power",
+      "domain": "optical",
+      "formula": "irradiance*area",
+      "result_unit": "W",
+      "inputs": {
+        "irradiance": "W/m**2",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Uniform irradiance projected normal to collecting area; spectrum and angle separately specified",
+      "utp_kernel_ids": [
+        "K-RADIATION"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-030",
+      "name": "Photovoltaic collection accounting",
+      "domain": "optical_energy",
+      "formula": "irradiance*area*conversion_efficiency",
+      "result_unit": "W",
+      "inputs": {
+        "irradiance": "W/m**2",
+        "area": "m**2",
+        "conversion_efficiency": "1"
+      },
+      "constants": [],
+      "validity": "Defined conversion efficiency and specified illumination; not a semiconductor efficiency solver",
+      "utp_kernel_ids": [
+        "K-RADIATION",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-031",
+      "name": "Force moment arm torque",
+      "domain": "mechanical",
+      "formula": "force*lever_arm",
+      "result_unit": "N*m",
+      "inputs": {
+        "force": "N",
+        "lever_arm": "m"
+      },
+      "constants": [],
+      "validity": "Perpendicular lever arm and quasi-static force",
+      "utp_kernel_ids": [
+        "K-MECH"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-032",
+      "name": "Rotational shaft power",
+      "domain": "mechanical",
+      "formula": "torque*angular_speed",
+      "result_unit": "W",
+      "inputs": {
+        "torque": "N*m",
+        "angular_speed": "rad/s"
+      },
+      "constants": [],
+      "validity": "Angular rate in radians/second; no parasitic loss",
+      "utp_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-033",
+      "name": "Pressure actuator ideal force",
+      "domain": "fluid_mechanical",
+      "formula": "delta_pressure*area",
+      "result_unit": "N",
+      "inputs": {
+        "delta_pressure": "Pa",
+        "area": "m**2"
+      },
+      "constants": [],
+      "validity": "Uniform net pressure on piston, leakage and friction excluded",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM",
+        "K-MECH"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-034",
+      "name": "Hydraulic flow power",
+      "domain": "fluid_energy",
+      "formula": "delta_pressure*volume_flow",
+      "result_unit": "W",
+      "inputs": {
+        "delta_pressure": "Pa",
+        "volume_flow": "m**3/s"
+      },
+      "constants": [],
+      "validity": "Hydraulic transport power, neglect pump efficiency",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-035",
+      "name": "Nonreactive two-feed species mass fraction",
+      "domain": "mixing",
+      "formula": "(mass_a*fraction_a+mass_b*fraction_b)/(mass_a+mass_b)",
+      "result_unit": "1",
+      "inputs": {
+        "mass_a": "kg",
+        "fraction_a": "1",
+        "mass_b": "kg",
+        "fraction_b": "1"
+      },
+      "constants": [],
+      "validity": "No reaction, loss, volatility or selective retention; bulk mass basis",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-036",
+      "name": "Ideal additive feed volumes",
+      "domain": "mixing",
+      "formula": "mass_a/density_a+mass_b/density_b",
+      "result_unit": "m**3",
+      "inputs": {
+        "mass_a": "kg",
+        "density_a": "kg/m**3",
+        "mass_b": "kg",
+        "density_b": "kg/m**3"
+      },
+      "constants": [],
+      "validity": "Ideal additive volumes; real mixing may have excess volume",
+      "utp_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-037",
+      "name": "Friis free-space power budget",
+      "domain": "rf",
+      "formula": "tx_power*tx_gain*rx_gain*(wavelength/(4*pi*range))**2",
+      "result_unit": "W",
+      "inputs": {
+        "tx_power": "W",
+        "tx_gain": "1",
+        "rx_gain": "1",
+        "wavelength": "m",
+        "range": "m"
+      },
+      "constants": [
+        "pi"
+      ],
+      "validity": "Far field, unobstructed, polarization/impedance matching; no interference or body loss",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-038",
+      "name": "Free-space electromagnetic frequency",
+      "domain": "rf",
+      "formula": "c_light/wavelength",
+      "result_unit": "Hz",
+      "inputs": {
+        "wavelength": "m"
+      },
+      "constants": [
+        "c_light"
+      ],
+      "validity": "Vacuum wavelength; media need local wave propagation model",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-039",
+      "name": "Beer-Lambert transmitted optical power",
+      "domain": "optical",
+      "formula": "incident_power*exp(-attenuation*length)",
+      "result_unit": "W",
+      "inputs": {
+        "incident_power": "W",
+        "attenuation": "1/m",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Linear homogeneous Beer-Lambert attenuation, no nonlinear gain or scattering outside model",
+      "utp_kernel_ids": [
+        "K-RADIATION"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-040",
+      "name": "Rectangular sheet resistance",
+      "domain": "electric",
+      "formula": "sheet_resistance*length/width",
+      "result_unit": "Ohm",
+      "inputs": {
+        "sheet_resistance": "Ohm",
+        "length": "m",
+        "width": "m"
+      },
+      "constants": [],
+      "validity": "Uniform thin sheet; contact and current spreading neglected",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-041",
+      "name": "Unrestrained thermal mismatch displacement",
+      "domain": "mechanical_thermal",
+      "formula": "abs(alpha_a-alpha_b)*delta_temperature*length",
+      "result_unit": "m",
+      "inputs": {
+        "alpha_a": "1/K",
+        "alpha_b": "1/K",
+        "delta_temperature": "K",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "First-order free differential expansion; NOT bonded-interface stress result",
+      "utp_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-042",
+      "name": "Sensible heat storage",
+      "domain": "thermal",
+      "formula": "mass*specific_heat*delta_temperature",
+      "result_unit": "J",
+      "inputs": {
+        "mass": "kg",
+        "specific_heat": "J/(kg*K)",
+        "delta_temperature": "K"
+      },
+      "constants": [],
+      "validity": "Constant heat capacity no phase transition",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-043",
+      "name": "Volumetric energy density",
+      "domain": "energy",
+      "formula": "energy/volume",
+      "result_unit": "J/m**3",
+      "inputs": {
+        "energy": "J",
+        "volume": "m**3"
+      },
+      "constants": [],
+      "validity": "Geometric system-level density; practical packaging excluded",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-044",
+      "name": "Gravitational potential energy",
+      "domain": "gravity_mechanical",
+      "formula": "mass*gravity*height",
+      "result_unit": "J",
+      "inputs": {
+        "mass": "kg",
+        "gravity": "m/s**2",
+        "height": "m"
+      },
+      "constants": [],
+      "validity": "Uniform field vertical elevation, reference arbitrary",
+      "utp_kernel_ids": [
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-045",
+      "name": "Faraday electrode transfer charge",
+      "domain": "electrochemical",
+      "formula": "charge_number*F_const*moles",
+      "result_unit": "C",
+      "inputs": {
+        "charge_number": "1",
+        "moles": "mol"
+      },
+      "constants": [
+        "F_const"
+      ],
+      "validity": "Ideal integer ion electron count; ignores measured charge efficiency",
+      "utp_kernel_ids": [
+        "K-BV",
+        "K-NP"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-046",
+      "name": "Capillary length",
+      "domain": "gravity_fluid",
+      "formula": "sqrt(surface_tension/(density_difference*gravity))",
+      "result_unit": "m",
+      "inputs": {
+        "surface_tension": "N/m",
+        "density_difference": "kg/m**3",
+        "gravity": "m/s**2"
+      },
+      "constants": [],
+      "validity": "Positive finite nonzero effective gravity; near microgravity use alternative direct force balance",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-047",
+      "name": "Faraday induced voltage magnitude",
+      "domain": "magnetic",
+      "formula": "turns*flux_change/duration",
+      "result_unit": "V",
+      "inputs": {
+        "turns": "1",
+        "flux_change": "Wb",
+        "duration": "s"
+      },
+      "constants": [],
+      "validity": "Average induced emf magnitude over time interval; flux linkage and orientation defined",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    }
+  ]
+}
