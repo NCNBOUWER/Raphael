@@ -423,7 +423,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "After confirming source-owner DBR receipt contract, should a network-compacted DBR by default preserve recoverable historical payloads, or should it be proof-only with explicit loss of original payloads?",
+    "active_founder_question": "PC-Q01 — Confirm recoverable network DBR archive as default, with proof-only optional, preserving any mandatory safety/legal checkpoints?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -637,5 +637,146 @@
         "next_founder_gate": "Default single DBR: recoverable archive vs proof-only summary; owner acceptance of concrete wire format remains separate."
       }
     }
+  },
+  "printceptor_founder_intake_20261008": {
+    "status": "FOUNDER_INTAKE_TRANSLATED_TO_EXISTING_GATES / OWNER_REVIEW_ONLY",
+    "source": "User in-chat response to expanded sections A–P on 2026-10-08; shared ChatGPT URL was not directly retrievable. Reconciled with Raphael UTP PR5 and Post-Mix Data PR11 currently open; not a claim of full underlying shared chat readback.",
+    "terminology": {
+      "proper_machine_name": "PrintCeptor",
+      "concept_name": "Printception",
+      "manufacturer": "CGX PrintSpace consumer of existing UTP/Post-Mix/Filespace runtime contracts",
+      "four_d": "3D volumetric manufacturing with designed environment/stimulus/time-dependent state or functional cyberphysical response; distinct evidence grades for intrinsic 4D material vs functioning integrated device",
+      "product_family": "Two base consumer models, configurable kits/community/industrial classes; no forced uniform physical design or proprietary universal dock",
+      "naming_overlap": "New Neutrals product family vs UTP-NEW-NEUTRALS-001 functional neutral/interlayer classes retained as separate type namespaces until owners reconcile, not newest wins"
+    },
+    "accepted_architecture": [
+      "Start Bootstrap PrintCeptor as smallest safe functional core and expand iteratively Ship-of-Theseus style, preserving all planned 4D technology capabilities as trackable goals; successor purpose-specific printer follows measured validation.",
+      "Every model designed and simulated digitally even where actual build depends on financing, sourced equipment, collaboration and staged qualification.",
+      "Dual arm minimum with baseless/seed-anchor manufacturing when mechanically feasible, interchangeable print/pick/drill/scan/handling functions, extensible robotic modules, coordinated child printers with own CGX identities.",
+      "Configurable bays do not automatically act as printers; independent child printers may process multiple functional subassemblies concurrently behind independent verified environmental barriers.",
+      "Primary sealed transparent chamber; retractable internal barriers, separate material/spool service cavity, interface-equipped programmable floor/panel modules, gravity-fed baseline first and microgravity later independently qualified.",
+      "Post-Mix feed families and composition/substrate dilution controlled from PMX-MAT-001 and companion feed heat dilution matrix; user requested broad H1–H20 research scope but physical process windows remain research.",
+      "Distributed cameras/scanners and automated checks; multiple optical views do not prove computed tomography or internal material quality without qualified volumetric NDE.",
+      "Automatic feeder calibration/scan, start-up system metrology and conditional recalibration; C0 deterministic safety, C1 offline contextual planning, C2 optional network heavy work, no AI control of actuators/interlocks.",
+      "Emergency mode conditional on actual contents, person location, exhaust containment, qualified gas species and operator safety; do not use spool cavity as unqualified noxious-gas dump.",
+      "Maintenance self-upgrades, modular recovery/reuse, contextual safe use across public/specialist programmes, per-component/child DBR history; no full replacement cycle mandated.",
+      "Externally sourced and printed modules are separate lineage and acceptance states. Butter Bot requires pre-unseal functional verification when safe; full single-sealed-session integration remains primary proof goal.",
+      "Desktop visual reference white/orange with clear side-feed cavity, dual articulated arms, conditional display and optional screenless/minimal devices; two stock base models then custom/community classes.",
+      "Rollout objective public libraries/state university partners and industry skilled operators, conditional on actual agreements, resources, funding, hazard approvals and owner release."
+    ],
+    "cross_source_dependencies": [
+      {
+        "owner": "Post-Mix PR11",
+        "identifiers": [
+          "PMX-MAT-001",
+          "PMX-CELL-001",
+          "FVX-MATRIX-001"
+        ],
+        "rule": "Do not replace deterministic recipe mass conservation, feed certificates, substrate dilution or process-structure-property evidence with visual-only simulation; no second postmix solver."
+      },
+      {
+        "owner": "UTP PR5",
+        "identifiers": [
+          "UTP-DESKTOP-001",
+          "UTP-PRINTER-MU-DEPENDENCY-DAG-001",
+          "UTP-OPS-001",
+          "UTP-NEW-NEUTRALS-001"
+        ],
+        "rule": "Consume recursive dependency/physics and capability handshake with identified owner review; no active printer implied."
+      },
+      {
+        "owner": "CGX/Filespace/LightSpeed",
+        "identifiers": [
+          "CGX object/state/DBR roots"
+        ],
+        "rule": "Object identity, child and family references, offline C0 safety, durable DBR and source lineage not replaced."
+      }
+    ],
+    "resolved_by_scope_not_recency": [
+      {
+        "issue": "bootstrap complete 4D design vs tiny seed ship-of-theseus machine",
+        "resolution": "Mandatory research requirement and explicitly staged verified operational modules are different states. Do not label seed fully functional until acceptance."
+      },
+      {
+        "issue": "universal 4D printer vs static screw sorter drawer",
+        "resolution": "Manufacturing system capability is distinct from a specific output's strict time-responsive material properties or integrated-function test. Record output category separately."
+      },
+      {
+        "issue": "P9 'no balance' vs physical mass balance",
+        "resolution": "Do not impose a manual balancing workbook when simulation/compiler can maintain mass conservation; digital planning must still account for feed and losses."
+      },
+      {
+        "issue": "camera coverage vs CT-style internal inspection",
+        "resolution": "Multiview optical coverage can estimate external surface and pose; internal defects need qualified volumetric/NDE modality."
+      },
+      {
+        "issue": "retractable safety partitions vs pressure-rated external shell",
+        "resolution": "Secondary internal partitions may be dynamic when qualified; changing the primary rated boundary still requires independent pressure/structure review."
+      },
+      {
+        "issue": "smart warnings vs hazardous operation",
+        "resolution": "Warnings and degraded safe capability are appropriate in verified low-risk modes; interlocks remain for unqualified hazardous states."
+      }
+    ],
+    "open_founder_gates": [
+      {
+        "id": "PC-Q01",
+        "question": "Does one network DBR compact default to recoverable full history or proof-only summary with explicit nonrecoverable original data?",
+        "recommendation": "Recoverable archive by default; proof-only option separately explicit.",
+        "owner": "CGX/DBR"
+      },
+      {
+        "id": "PC-Q02",
+        "question": "Are the first two customer base models Everyday and Pro, differentiated by physically installed hardware modules while architecture has no arbitrarily omitted intended technology targets?",
+        "recommendation": "Yes: Everyday expandable, Pro preconfigured with nested child printer ability.",
+        "owner": "PrintCeptor product"
+      },
+      {
+        "id": "PC-Q03",
+        "question": "Should the initial Pro CAD comparator use three configurable inner bays as the baseline, while permitting more/fewer bays from packaging, power, contamination and reach studies?",
+        "recommendation": "Yes as reference, not mandated final quantity.",
+        "owner": "PrintCeptor mechanical"
+      },
+      {
+        "id": "PC-Q04",
+        "question": "Must retractable/collapsible auto-built partitions stay secondary internal process enclosures in Gen1, leaving the primary pressure/vacuum enclosure a separately rated static boundary?",
+        "recommendation": "Yes, until professional pressure-boundary design permits another certified approach.",
+        "owner": "PrintCeptor chamber safety"
+      },
+      {
+        "id": "PC-Q05",
+        "question": "Which initial physical functions define the minimum bootstrap tool kit, beyond dual arms and CGX calibration (deposition, grasp, inspect, join/finish, electric-test)?",
+        "recommendation": "Define minimum by a candidate first accepted print, not product marketing.",
+        "owner": "PrintCeptor engineering"
+      },
+      {
+        "id": "PC-Q06",
+        "question": "For the first complete 4D printer release, which first functional acceptance article is authoritative: a powered Butter Bot in one sealed cycle, a printer-made child printer performing a qualified print, or both in staged order?",
+        "recommendation": "Both as separate milestones; seed expansion/child reproduction and Butter Bot integration are independently testable.",
+        "owner": "PrintCeptor programme"
+      },
+      {
+        "id": "PC-Q07",
+        "question": "Which PrintCeptor skeleton, CAD, safety-critical firmware and community-module rights are published versus controlled/licensed?",
+        "recommendation": "Separate publicly reusable reference schemas/design examples from reviewed safety-critical build files and commercial license; await IP/legal signoff.",
+        "owner": "EMASSC/IP"
+      },
+      {
+        "id": "PC-Q08",
+        "question": "Can compaction and full local reset erase nonessential user history while retaining independent safety/compliance device records only where a legitimate legal/safety rule requires?",
+        "recommendation": "Use purpose-limited retention and avoid claiming universal deletion.",
+        "owner": "DBR/privacy"
+      }
+    ],
+    "engineering_proof_not_founder_YN": [
+      "Actual envelope/chamber pressure and optical window rating; beam structural FEA and hazard analysis.",
+      "Robot DOF selection, 3D reach/collision envelope, seed-anchor load path, reversible fixtures and datum/vibration stability.",
+      "Separate gas/purge/airlock and emergency isolation sequences, safe human exposure limits.",
+      "Spectral/thermal/electrical/chemical inspection capability, imaging tomography modality, calibration budgets.",
+      "Actual feedstocks/assays/process windows/whole-job mass balance, property uncertainty and contamination/coupon validation.",
+      "Batteryless/wireless wearable realistic power/field/RF link budgets and human exposure/EMC requirements.",
+      "Public-library field sites, insurance, training, legal release/leases, costings and partners' independent authorisation."
+    ],
+    "provenance_notes": "All still review-only, not merged or installed; zero physical qualification claimed. Do not promote to UTP/PMX/Cognigrex roots or change current automations. Treat PrintCeptor naming/intake as current founder preference, preserve historical 'Printer-1' as alias."
   }
 }
