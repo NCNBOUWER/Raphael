@@ -10,6 +10,7 @@
 - [40/40 GitHub-hosted tests at earlier checked head](../../.github/workflows/printspace-data-tests.yml), subject to fresh workflow readback at resumed head.
 - [Machine-readable owner decision queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json), 16 gates, unchanged authority.
 - [Butter Bot founder mission correction and print-session decision](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md): authoritative clarification of this handoff's older illustrative BB01/task phrasing.
+- [Station and motion dual-track founder direction](SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md): parallel sealed station + motion testbed, layered isolation candidate, seal/pressure authority boundary and vibration measurement plan.
 - [Read-only product comparator](cross_grex_atlas_compiler.py): `--product FO-01 --mode both`, `--product FU-01 --mode top`, `--compare FU-01 FB-01`.
 
 ## System boundaries and source ancestry
@@ -66,6 +67,11 @@
 - Active: Neo :00 dispatch; R2 :22 adjacent proof/fallback; R3 :33 integrate/close; Achilles :44 audit/commit. R1 :11 is disabled (as of 2026-10-08 live automation readback); no fabricated R1 BUS-08. This manual handoff does **not** generate an Hour_ID/Queue_ID or modify the automation prompts.
 - Each run remains responsible for its own original lane, not commandeering this manual PrintSpace owner branch. Audit first; result receipts and data source links through the existing Achilles P.A canonical workbook/Index Appendix log when reconciled by its owner.
 - Android/in-transit ChatGPT conversation can advance specifications, risk registers and candidate component design without host login, local build, root pointer editing or claiming execution.
+
+## Founder update — parallel manufacturing station and motion testbed
+- **D06 approved:** Do not force a choice between sealed multi-process printer infrastructure and a motion-only rig. Design them in tandem, using common datums, measured vibration/settling and mechanical load paths, and feed learnings into the actual print station. Preserve a secondary internal isolation/process volume as a **candidate**, not a pressure-rated conclusion from the aircraft window analogy.
+- **Sealed rule retained:** pre-staged components can be placed by internal robotics; external digital signals are permitted via appropriately sealed interfaces. No manual intervention/opening the process enclosure mid-cycle.
+- **Next founder decision pending:** first-generation chamber envelope: near-ambient, nonreactive operation with later separately qualified vacuum/pressure modules (recommended), or an engineered vacuum/pressure chamber as first-gen core. Safety and physical operation remain independently gated. See [coupled engineering handoff](SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md).
 
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
