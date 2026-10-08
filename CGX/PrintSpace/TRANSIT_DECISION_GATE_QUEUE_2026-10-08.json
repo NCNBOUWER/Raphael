@@ -1,0 +1,281 @@
+{
+  "schema": "cgx.printspace.mobile_transit_decision_queue.v0.1",
+  "id": "CGX-F4D-TRANSIT-GATES-20261008",
+  "state": "REVIEW_ONLY_NOT_DISPATCHED",
+  "created_date": "2026-10-08",
+  "current_authorities": {
+    "PrintSpace": {
+      "repo": "NCNBOUWER/Raphael",
+      "pr": 6,
+      "branch": "docs/cgx-printspace-capability-first-2026-10-08",
+      "head_checked_before_handoff": "4931ae5bbac20202b4836a7d3427505772eb985b",
+      "state": "open/unmerged"
+    },
+    "UTP": {
+      "repo": "NCNBOUWER/Raphael",
+      "pr": 5,
+      "head": "a45633d50521c749a7544ad78410824e1e7a023c",
+      "state": "open/unmerged"
+    },
+    "PostMix": {
+      "repo": "achillesromer-coder/Data",
+      "pr": 11,
+      "head": "f17346e6a420265ddd1846d3bcd0c22f8429dd36",
+      "state": "open/unmerged"
+    },
+    "local_target": "C:/Cognigrex/State/Frontier/PrintSpaceTransit_20261008/Raphael_PR6",
+    "credential_policy": "no secrets copied to handoff"
+  },
+  "state_counts": {
+    "products": 80,
+    "domains": 9,
+    "technology_classes": 70,
+    "technology_links": 586,
+    "stage_operations": 475,
+    "stage_transitions": 395,
+    "open_gaps": 220,
+    "material_archetypes": 59,
+    "directional_material_pairs": 3481,
+    "curated_candidate_routes": 72,
+    "physical_route_qualification": 0,
+    "typed_material_property_slots": 531,
+    "measured_material_property_count": 0,
+    "analytic_equations": 59,
+    "named_equation_operands": 172,
+    "physical_products_qualified": 0
+  },
+  "automation_reference": {
+    "neo": ":00",
+    "r1": ":11 DISABLED",
+    "r2": ":22 FALLBACK",
+    "r3": ":33",
+    "achilles": ":44",
+    "instructions": "observe active Hour_ID and Queue_ID; never duplicate dispatch, R1 success or closeout receipts"
+  },
+  "no_action_without_gate": [
+    "promote S92/RootAuthority",
+    "rewrite cognigrex.root.json",
+    "activate Printer-1",
+    "modify android/native mobile handler",
+    "claim flight/structural/regulatory qualification",
+    "move or delete user source",
+    "merge other owner PR"
+  ],
+  "safety": "Review and workflow only. Open gates require specific new physical or provider evidence.",
+  "recommended_manual_sequence": [
+    "G00",
+    "G01",
+    "G02",
+    "G07",
+    "G04",
+    "G03",
+    "G05",
+    "G06",
+    "G14"
+  ],
+  "decisions_inferred": [
+    {
+      "id": "D01",
+      "recommendation": "Reuse existing UTP/PT and PMX authorities; do not create second atlas or manufacturing runtime",
+      "basis": "Source identity conservation",
+      "reversible": true
+    },
+    {
+      "id": "D02",
+      "recommendation": "Quantify Butter Bot and benign protected-conductor coupon before dependent space or home-product proofs",
+      "basis": "Measurable, reusable lower-consequence primitives",
+      "reversible": true
+    },
+    {
+      "id": "D03",
+      "recommendation": "Hybrid insert active IC, secure element and protected batteries until appropriate printing evidence exists",
+      "basis": "Function first with qualified supplier modules",
+      "reversible": true
+    },
+    {
+      "id": "D04",
+      "recommendation": "Keep Mobile/LSGO in display, analysis and owner review; physical OS/managing authority held",
+      "basis": "Android/PWA source evidence is not platform-attested permission",
+      "reversible": true
+    }
+  ],
+  "gates": [
+    {
+      "id": "G00",
+      "title": "Local review checkout and receipt",
+      "owner": "Raphael/PrintSpace",
+      "state": "PROOF_REQUIRED",
+      "acceptance": "Fresh local HEAD = reviewed provider branch; clean tracked tree; 40/40 regression; recorded SHA-256",
+      "execution": "LOCAL",
+      "hold": "do not edit promoted CGX carrier or root",
+      "priority": "P0",
+      "closed": false
+    },
+    {
+      "id": "G01",
+      "title": "CGX host and canonical root currentness",
+      "owner": "Neo/R2/Achilles",
+      "state": "HOLD",
+      "acceptance": "Read exact LightSpeed local HEAD/origin/divergence and root/runtime pointers against current provider; investigate earlier unverified root-pointer correction",
+      "execution": "LOCAL",
+      "hold": "Do not presume checkout CURRENT from a previous audit",
+      "priority": "P0",
+      "closed": false
+    },
+    {
+      "id": "G02",
+      "title": "Source authority reconciliation",
+      "owner": "Raphael+UTP+Post-Mix owners",
+      "state": "OPEN",
+      "acceptance": "Owner accepts cross references among Raphael PR6, UTP PR5 and Data PR11; no duplicate material/equation authority",
+      "execution": "TRANSFER",
+      "hold": "No unapproved merge or authority promotion",
+      "priority": "P0",
+      "closed": false
+    },
+    {
+      "id": "G03",
+      "title": "Physical material passport evidence",
+      "owner": "Raphael/PrintSpace",
+      "state": "OPEN",
+      "acceptance": "Populate actual values/units/uncertainties/lot/calibration for 531 measurement slots; baseline 0 filled",
+      "execution": "EXTERNAL",
+      "hold": "Do not invent values; missing remains null",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G04",
+      "title": "Equation operand resolution",
+      "owner": "Raphael",
+      "state": "OPEN",
+      "acceptance": "Trace 172 operand requirements and seven flagged schema gaps; quantify error budgets",
+      "execution": "LOCAL/EXTERNAL",
+      "hold": "59 screening models do not replace qualified nonlinear solver",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G05",
+      "title": "Directional transition qualification",
+      "owner": "Raphael+Römer",
+      "state": "OPEN",
+      "acceptance": "Target 12 priority candidate material routes, X→Y and reverse, non-adjacent cumulative histories, process-environment and contamination tests",
+      "execution": "EXTERNAL",
+      "hold": "0 of 72 candidate coupons physically qualified",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G06",
+      "title": "Printer-1 / gas cell preparation",
+      "owner": "Römer-Grex",
+      "state": "HELD_PHYSICAL",
+      "acceptance": "List actual tools/sensors and access, safe benign coupons, controlled test protocol, operator and emergency stop",
+      "execution": "MANUAL",
+      "hold": "No machine actuation or chamber pressurization from catalogue alone",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G07",
+      "title": "Butter Bot BB01 complete quantitative contract",
+      "owner": "Römer-Grex+Raphael",
+      "state": "OPEN",
+      "acceptance": "Specify object mass/distance, target force and speed, joints, actuator sizing, sensors, battery and duty cycle, thermal and safety envelope, acceptance measurements",
+      "execution": "DESIGN",
+      "hold": "Hybrid MCU/motor/battery until proven as printable",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G08",
+      "title": "CGX phone-like device architecture",
+      "owner": "LightSpeed+CGX",
+      "state": "OPEN",
+      "acceptance": "Complete display/radio/power/SoC architecture and PCB/printed RF structures, security, EMC, energy, repairability and test plan",
+      "execution": "DESIGN",
+      "hold": "No fully printed smartphone SoC claim",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G09",
+      "title": "SAI public/private/government/defensive hardware permissions",
+      "owner": "CGX/SAI+Achilles",
+      "state": "HELD_PLATFORM",
+      "acceptance": "Local node manifest, keys, identity, onboarding, consent/security boundaries, OS/Android attestation and trusted commissioning",
+      "execution": "EXTERNAL",
+      "hold": "PR117 source proof != Android device-management authority or attested peer",
+      "priority": "P1",
+      "closed": false
+    },
+    {
+      "id": "G10",
+      "title": "Eco-Grex acoustic/habitat demonstrator",
+      "owner": "Eco-Grex",
+      "state": "OPEN",
+      "acceptance": "Use passive material acoustic controls, before/after spectral data, species-specific welfare review and permitted test setting",
+      "execution": "DESIGN/EXTERNAL",
+      "hold": "No field fauna interaction without welfare and permission gate",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G11",
+      "title": "Solar Hull / Mark III/V / space ladder",
+      "owner": "Römer-Grex+EMASSC",
+      "state": "OPEN",
+      "acceptance": "Trace units/compartments, mass/power/thermal/structural/EM/RF budgets, microgravity manufacturing and independent mission/flight qualification",
+      "execution": "EXTERNAL",
+      "hold": "Not flight hardware, no novel EMFF/RFS proof implied",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G12",
+      "title": "Socie-Civil M1 and river nodes",
+      "owner": "Socie-Civil+Römer-Grex",
+      "state": "OPEN",
+      "acceptance": "Quantify structural/acoustic/flood service loads, local geometry and civil regulation; route to accredited engineering",
+      "execution": "EXTERNAL",
+      "hold": "No transport structural approval from printer catalogue",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G13",
+      "title": "Eco/ISRU recovered feed and post-mix chemistry",
+      "owner": "Eco-Grex+Post-Mix",
+      "state": "OPEN",
+      "acceptance": "Supplier/specimen passport, separation/purity, mass balance, nonlinear phase/process model, emission controls, coupon acceptance",
+      "execution": "EXTERNAL",
+      "hold": "Do not replace PMX-MAT-001 with simple nonreactive mixing",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G14",
+      "title": "80-product portfolio coverage and shared modules",
+      "owner": "PrintSpace owners",
+      "state": "OPEN",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale",
+      "execution": "DESIGN",
+      "hold": "70/70 PT coverage is reference completeness, not hardware completeness",
+      "priority": "P2",
+      "closed": false
+    },
+    {
+      "id": "G15",
+      "title": "Owner review / production / release decision",
+      "owner": "EMASSC+Achilles",
+      "state": "HELD_AUTHORITY",
+      "acceptance": "Explicit code ownership, independent safety/physical evidence, rollback/receipt and acceptance before any merge, production or publicity",
+      "execution": "MANUAL",
+      "hold": "No public claims, production commands, root promotion or unreviewed merges",
+      "priority": "P0",
+      "closed": false
+    }
+  ],
+  "evidence_caveat": "Schema/test/CI are software evidence; local checkout proof must be read back after write; never treat physical tests as complete based on software."
+}
