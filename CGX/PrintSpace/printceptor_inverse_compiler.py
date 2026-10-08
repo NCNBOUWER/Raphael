@@ -82,6 +82,17 @@ def evaluate(data, kit_id="K-FDM", goal="BB-FINAL", priority="sourcing"):
         seen.add(part_id)
     visit(goal)
     blocked = [n for n in ordered if route_options[n]["selected"]["missing_capabilities"]]
+    unverified_sourced = [{
+        "node": n,
+        "input_components_to_find_test_or_buy": route_options[n]["selected"]["sourced_seed_components"],
+        "ownership": "UNKNOWN",
+        "technical_equivalence": "NOT_VERIFIED",
+    } for n in ordered if route_options[n]["selected"]["sourced_seed_components"]]
+    critical_holds = [{
+        "node": n,
+        "risk_class": route_options[n]["safety"],
+        "acceptance": "PHYSICAL_AND_OWNER_EVIDENCE_REQUIRED",
+    } for n in ordered if route_options[n]["safety"] in ("CRITICAL", "SECURITY")]
     counts = Counter(route_options[n]["selected"]["route"] for n in ordered)
     known_priced = sum(item["aud"] for item in kit["known_price_observations"])
     return {
@@ -91,6 +102,9 @@ def evaluate(data, kit_id="K-FDM", goal="BB-FINAL", priority="sourcing"):
         "tool_prices_aud_observed_sum_not_total_project_cost": round(known_priced, 2),
         "unpriced_kit_dependencies": kit["unpriced_dependencies"],
         "route_class_counts": dict(counts), "traversal_dependency_first": ordered,
+        "unverified_sourced_parts": unverified_sourced,
+        "critical_physical_safety_holds": critical_holds,
+        "no_missing_capability_label_does_not_mean_build_ready": True,
         "candidate_blockers": [{"node": p, "missing_capabilities": route_options[p]["selected"]["missing_capabilities"]} for p in blocked],
         "decisions": route_options,
         "note": "A route whose capability labels match remains unqualified; no automatic BOM procurement or motion authority.",
