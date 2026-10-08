@@ -423,8 +423,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "PC-Q01 — Confirm recoverable network DBR archive as default, with proof-only optional, preserving any mandatory safety/legal checkpoints?",
-    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
+    "active_founder_question": "Current founder PC-Q01 settled YES. Next owner evidence: actual 17-function seed PrintCeptor BOM (PC-Q05) and EMASSC/community asset licensing decision matrix (PC-Q07).",
+    "active_founder_question_state": "RESOLVED_PC_Q01_NO_REPEAT; ENGINEERING_AND_OWNER_EVIDENCE_HELD",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -635,7 +635,8 @@
         "source_owners": "DBR/CGX Filespace, LightSpeed transport/outbox, Achilles privacy/retention, PrintSpace consumer",
         "runtime_status": "NOT_IMPLEMENTED_NOT_QUALIFIED",
         "next_founder_gate": "Default single DBR: recoverable archive vs proof-only summary; owner acceptance of concrete wire format remains separate."
-      }
+      },
+      "default_network_compaction": "RECOVERABLE_ARCHIVE_FOUNDER_APPROVED_2026-10-08; proof-only opt-in; still require source-owner DBR format/restore and safety/privacy approvals"
     }
   },
   "printceptor_founder_intake_20261008": {
@@ -723,49 +724,74 @@
         "id": "PC-Q01",
         "question": "Does one network DBR compact default to recoverable full history or proof-only summary with explicit nonrecoverable original data?",
         "recommendation": "Recoverable archive by default; proof-only option separately explicit.",
-        "owner": "CGX/DBR"
+        "owner": "CGX Filespace/DBR and LightSpeed execution",
+        "status": "FOUNDER_APPROVED_YES_RECOVERABLE_DEFAULT",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO",
+        "confirmed_response": "Y; recoverable network-held consolidated DBR is default; proof-only separately explicit"
       },
       {
         "id": "PC-Q02",
         "question": "Are the first two customer base models Everyday and Pro, differentiated by physically installed hardware modules while architecture has no arbitrarily omitted intended technology targets?",
         "recommendation": "Yes: Everyday expandable, Pro preconfigured with nested child printer ability.",
-        "owner": "PrintCeptor product"
+        "owner": "PrintCeptor product",
+        "status": "RESOLVED_FROM_FOUNDER_TWO_BASES_AND_PREVIOUS_EVERYDAY_PRO",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO"
       },
       {
         "id": "PC-Q03",
         "question": "Should the initial Pro CAD comparator use three configurable inner bays as the baseline, while permitting more/fewer bays from packaging, power, contamination and reach studies?",
         "recommendation": "Yes as reference, not mandated final quantity.",
-        "owner": "PrintCeptor mechanical"
+        "owner": "PrintCeptor mechanical",
+        "status": "DESIGN_REFERENCE_THREE_BAYS_NOT_FIXED_MINIMUM",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO"
       },
       {
         "id": "PC-Q04",
         "question": "Must retractable/collapsible auto-built partitions stay secondary internal process enclosures in Gen1, leaving the primary pressure/vacuum enclosure a separately rated static boundary?",
         "recommendation": "Yes, until professional pressure-boundary design permits another certified approach.",
-        "owner": "PrintCeptor chamber safety"
+        "owner": "PrintCeptor chamber safety",
+        "status": "ENGINEERING_SAFETY_BOUNDARY_CONFIRMED_PHYSICAL_PROOF_HELD",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO"
       },
       {
         "id": "PC-Q05",
         "question": "Which initial physical functions define the minimum bootstrap tool kit, beyond dual arms and CGX calibration (deposition, grasp, inspect, join/finish, electric-test)?",
         "recommendation": "Define minimum by a candidate first accepted print, not product marketing.",
-        "owner": "PrintCeptor engineering"
+        "owner": "PrintCeptor engineering",
+        "status": "UTP_17_BASIS_FOUND_ACTUAL_SEED_BOM_OPEN",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE"
       },
       {
         "id": "PC-Q06",
         "question": "For the first complete 4D printer release, which first functional acceptance article is authoritative: a powered Butter Bot in one sealed cycle, a printer-made child printer performing a qualified print, or both in staged order?",
         "recommendation": "Both as separate milestones; seed expansion/child reproduction and Butter Bot integration are independently testable.",
-        "owner": "PrintCeptor programme"
+        "owner": "PrintCeptor programme",
+        "status": "RESOLVED_PARALLEL_INDEPENDENT_ACCEPTANCE",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO"
       },
       {
         "id": "PC-Q07",
         "question": "Which PrintCeptor skeleton, CAD, safety-critical firmware and community-module rights are published versus controlled/licensed?",
         "recommendation": "Separate publicly reusable reference schemas/design examples from reviewed safety-critical build files and commercial license; await IP/legal signoff.",
-        "owner": "EMASSC/IP"
+        "owner": "EMASSC/IP",
+        "status": "EMASSC_IP_LEGAL_OWNER_APPROVAL_OPEN",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE"
       },
       {
         "id": "PC-Q08",
         "question": "Can compaction and full local reset erase nonessential user history while retaining independent safety/compliance device records only where a legitimate legal/safety rule requires?",
         "recommendation": "Use purpose-limited retention and avoid claiming universal deletion.",
-        "owner": "DBR/privacy"
+        "owner": "DBR/privacy",
+        "status": "POLICY_RECONCILED_DATA_RETENTION_OWNER_PROOF_OPEN",
+        "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+        "requires_new_founder_YN": "NO"
       }
     ],
     "engineering_proof_not_founder_YN": [
@@ -777,6 +803,15 @@
       "Batteryless/wireless wearable realistic power/field/RF link budgets and human exposure/EMC requirements.",
       "Public-library field sites, insurance, training, legal release/leases, costings and partners' independent authorisation."
     ],
-    "provenance_notes": "All still review-only, not merged or installed; zero physical qualification claimed. Do not promote to UTP/PMX/Cognigrex roots or change current automations. Treat PrintCeptor naming/intake as current founder preference, preserve historical 'Printer-1' as alias."
+    "provenance_notes": "All still review-only, not merged or installed; zero physical qualification claimed. Do not promote to UTP/PMX/Cognigrex roots or change current automations. Treat PrintCeptor naming/intake as current founder preference, preserve historical 'Printer-1' as alias.",
+    "register_state": "FOUNDER_PC_Q01_CONFIRMED_SOURCE_ALIGNED_Q02_Q03_Q04_Q06_Q08_RECONCILED_Q05_Q07_OWNER_GATES",
+    "reconciliation_document": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
+    "latest_source_findings": {
+      "component_atlas": "Drive-owned CGX geometry atlas = 407 archetypes, 64 4D operators, 61 search families, 75 interactions; Git mirror; no physical product qualification",
+      "utp_basis": "UTP-DESKTOP-001 v0.3 lists 17 G1 required functional outputs and seven specialist tool groups, Printer-Mu reproduction criterion; owner PR5 remains open",
+      "post_mix": "PMX-MAT-001 mass/thermal chemistry and PMX-CELL-001 3-5 agents own recipes, materials and interaction; owner PR11 remains open",
+      "dbri": "DBR compaction integrity/restore needs owner-reviewed physical implementation; Y in chat resolves product default, not transport/API approval",
+      "additional_Gates": "G02/G03/G04/G05/G06/G07/G14/G15 keep their existing IDs and owners; no new dispatch"
+    }
   }
 }
