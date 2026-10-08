@@ -111,6 +111,38 @@
 CGX individuals are digital/filespace representations of electronic machines and subsystems. Non-electronic nuts, bolts, screws and printed structural pieces are children in their owning CGX object's component hierarchy, not standalone CGX individuals. Their material, count and lifecycle evidence can be recorded as child attributes. The previous every-component-individual proposal was declined.
 Open decision: whether independently functional electronic mini-printers retain a distinct individual identity when nested inside a parent station. Existing machine controls and owner boundaries remain unchanged.
 
+## Corpus reconciliation — universal technology scope, CGX definitions and release evidence
+**Status:** PrintSpace owner-review interpretation grounded in targeted read-only samples of three Cognigrex workbooks and a non-canonical CGX strategy document on 2026-10-08. This is **not** an exhaustive corpus reconciliation, revision of workbook authorities or approval of other lanes.
+
+**Founder's definition:** A *universal technology printer* has a research/design scope covering any technology physically compatible with the laws of nature; it is **not** a claim to print a universe, nor a verified capability to fabricate all technology today. Each installed printer publishes only what its measured configuration can accomplish. Preserve all 4D-defining capabilities as architectural development targets, while permitting different customer modules, form factors, process envelopes and independently verified operational limits.
+
+**Reconciled CGX identity and definition levels:**
+- The **global CGX families/filespace** can define a metric fastener family or a particular N1 bolt type holistically: geometry, units, compositions, tolerances, relationships and evidence, without declaring the fastener an autonomous electronic individual.
+- A **specific printer's CGX device instance** records the bolt as an installed child/component **reference** to the global definition, with local quantity, position, material lot, substitution and service history. A powered micro-printer may carry its own digital identity linked to the host; that relationship remains an unapproved owner decision.
+- **Reusable type**, **physical installed instance** and **digital identity** are separate roles; global definitions must not be deleted because an individual product embeds them as components.
+- A lightweight CGX semantic skeleton need not run a general-purpose operating system; local machine firmware and validated control/interlocks still perform real-time control. LightSpeed is the execution fabric, not the semantic authority.
+
+**Cross-source contradiction treatment (not newest-wins):**
+1. Preserve each original source, ID, equation and its epistemic class. Test whether claims differ by scope (global family versus local part), abstraction (architectural ambition versus installed function), or model state (target/proxy versus measurement).
+2. Hybridise only when definitions and constraints genuinely coexist. Express the relation with a sourced type/instance link, compatible bounded interface, or alternative branch; never overwrite a contradictory definition just because it is newer.
+3. For a substantive incompatibility, record both evidence lines, assumptions, model conditions, impact, owner and falsification/proof requirement. Propose a resolution to the owning lane and retain an **OPEN** conflict until reviewed.
+4. Calculation and process selection should enforce controlled SI parameters, physical/environmental bounds, safe capability handshake, material provenance, verified equation domains and fallback-safe states. Unmeasured property values remain unknown.
+5. Before either an external claim or an automated physical process, apply the appropriate separate publication/qualification and safety owner gates. Source-level CI or CAD models cannot stand in for device test evidence.
+
+**Targeted live source readback:**
+- [CGX Living Filespace Build Strategy, 2026-09-21](https://docs.google.com/document/d/1ZyPusNt3IJqHFUU0tbua75qcJeX_rxoIoqaO-4yV7Rg/edit), explicitly **non-canonical**: semantic data+meaning+source/authority bound to an object; embed/track/pin/reference children; Römer-Grex distinct from Cognigrex root; LightSpeed neutral execution; originals and migration receipts retained.
+- [Type 1 Römer Cognigrex — 14_Control_Plane and 89_COLLISION_CONTROLS_v0_9](https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit): do not fork schemas or mutate main; branch/PR overlays; preserve source archive; explicit local/remote commit evidence rather than inferred success.
+- [Type 1 Römer Cognigrex — 81_EVIDENCE_GOV_v0_8](https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit): GOV-001 distinguishes known/inferred/speculative/target; GOV-003 bars equating internal tests with external validation; evidence, maturity and critical gaps bind public claims.
+- [Type 1 Systems Cognigrex — Parameter Registry and Calculator Registry](https://docs.google.com/spreadsheets/d/1EhMo0zHROrRhQQJGLJKCRKIh6MXgJVl2cNLI9ofcVko/edit): source-authority cells, SI units, CAD-state and evidence class; e.g. the Mark III wall thickness is a **target** while cylinder volumes are **proxies** pending exact CAD verification.
+- [Type 1 Operations Cognigrex — Claim Control / Review Gates / Data Dictionary](https://docs.google.com/spreadsheets/d/1M3nBDHw85S0YV2U3r97GwJ9YyH8w4P42HA-HvpOMhKg/edit): preserve source-row ancestry, recorded schema status and scenario-versus-qualified separation.
+
+**Concrete conflicts corrected here, not elsewhere:**
+- Earlier PrintSpace phrasing treating every passive component as an independent CGX individual was **overbroad**. Global fastener *definitions* and printer-owned *installed children* coexist; neither requires a duplicate independent device individual.
+- Earlier mandatory fully featured *design scope* versus user-selectable *physical printer modules* is resolved by differentiating architectural target, configured hardware, observed capability and allowed/restricted operation.
+- Earlier "universal printer" ambition versus absence of proven physical process coverage is resolved as universal **research scope**, with manufacturing claims restricted to verified conditions. No unknown property is promoted to a measured result.
+
+**Next founder release gate (OPEN):** Should this universal-technology-scope versus independently qualified **manufacturing claim** distinction become mandatory for all printer product releases and public descriptions? Recommendation **yes**. Its acceptance would not certify any actual process, permission or product.
+
 ## Decision ledger — provisional, reversible
 - D01: one shared UTP component ontology and Grex-bounded execution; no parallel architecture.
 - D02 (founder-confirmed correction): BB01 is the first *printer/component interoperability* reference article built around known Butter Bot geometry; BB02 tests modularity, BB03 aims integrated refinement, and additional iterations are possible before naming a validated result simply Butter Bot. All components are print research targets. The final printer goal is a complete robot in one session, not demonstration of butter delivery. First safe materials coupons remain provisional under professional controls. See [founder decision record](BUTTER_BOT_FOUNDER_DECISIONS_2026-10-08.md).
