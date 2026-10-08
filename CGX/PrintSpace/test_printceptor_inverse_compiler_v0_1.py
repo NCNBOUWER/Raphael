@@ -86,6 +86,29 @@ class InverseTreeTest(unittest.TestCase):
         self.assertIn("medical", self.d["first_purchase_salvage_lens_v0_2"]["industrial_context_equivalence"]["non_equivalence"].lower())
         self.assertTrue(all(o["cost_aud"] is None for x in nodes.values() for o in x["options"]))
 
+    def test_founder_current_inventory_does_not_contain_printer_or_pen(self):
+        current = evaluate(self.d, "K-FOUNDER-CURRENT", "PC-ARM-PEN-DEMO")
+        self.assertEqual(current["kit_acquisition_state"], "CURRENT_OWNED_CAPABILITY_ONLY")
+        self.assertFalse(current["post_purchase_capabilities_are_not_currently_installed"])
+        self.assertEqual(current["tool_prices_aud_observed_sum_not_total_project_cost"], 0)
+        self.assertIn("PC-ARM-PEN-DEMO", [x["node"] for x in current["candidate_blockers"]])
+
+    def test_founder_first_fdm_not_yet_owned_and_rotary_not_rebought(self):
+        kit = next(k for k in self.d["starter_kits"] if k["id"] == "K-FOUNDER-FIRST-FDM")
+        self.assertEqual(len(kit["known_price_observations"]), 1)
+        self.assertTrue(all("rotary" not in x["label"].lower() for x in kit["known_price_observations"]))
+        self.assertIn("FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json", kit["inventory_link"])
+        future = evaluate(self.d, "K-FOUNDER-FIRST-FDM", "BB-SHELL")
+        self.assertTrue(future["post_purchase_capabilities_are_not_currently_installed"])
+        self.assertTrue(future["known_price_excludes_previously_owned_dremel_4300"])
+        self.assertEqual(future["tool_prices_aud_observed_sum_not_total_project_cost"], 259)
+
+    def test_founder_pen_optional_later_and_unknown_components_unscored(self):
+        f = evaluate(self.d, "K-FOUNDER-FDM-PEN-LATER", "PC-ARM-PEN-DEMO")
+        self.assertEqual(len(f["quoted_tool_items_not_yet_purchased"]), 2)
+        self.assertFalse(f["source_qualified"])
+        self.assertTrue(f["critical_physical_safety_holds"])
+
     def test_repair_alternatives_not_deleted(self):
         a = evaluate(self.d, "K-FDM", "BB-TRACKS")
         self.assertEqual(len(a["decisions"]["BB-TRACKS"]["all_alternatives"]), 2)
