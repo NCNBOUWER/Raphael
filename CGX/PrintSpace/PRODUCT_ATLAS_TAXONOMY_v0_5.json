@@ -36,12 +36,12 @@
     "robot": [
       "MT",
       "TP",
+      "EL",
       "CI",
       "DE",
       "MG",
       "SC",
-      "BT",
-      "EL"
+      "BT"
     ],
     "fluid": [
       "MT",
