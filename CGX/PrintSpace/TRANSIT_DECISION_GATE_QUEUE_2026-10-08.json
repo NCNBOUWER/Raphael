@@ -106,10 +106,10 @@
     },
     {
       "id": "D07",
-      "recommendation": "Proposed staged environment: first-gen outer sealed near-ambient nonreactive build, reserve independently rated and verified vacuum/pressure-controlled modules for later.",
-      "basis": "Founder decision requested; pressure and dynamic loads not specified; no physical chamber authorisation.",
+      "recommendation": "Rejected by founder: near-ambient-only/nonreactive-only as first-generation station requirement. Keep operating atmosphere unfinalised, and ask whether vacuum, positive pressure and controlled gas must be in first-gen design.",
+      "basis": "Explicit founder 'No' during quickfire, 2026-10-08.",
       "reversible": true,
-      "status": "AWAITING_FOUNDER_DECISION"
+      "status": "REJECTED_REPLACEMENT_UNDECIDED"
     }
   ],
   "gates": [
@@ -302,8 +302,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Approve first-generation sealed near-ambient, nonreactive envelope with future separately qualified vacuum/pressure-controlled modules, rather than requiring vacuum/controlled-pressure inner chamber in the first-generation core?",
-    "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
+    "active_founder_question": "Should first-generation station DESIGN explicitly encompass vacuum, positive pressure and controlled-gas capabilities (all safety-rated and separately qualified before physical operation)?",
+    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -329,6 +329,19 @@
       "enclosure": "Maintain sealed outer chamber throughout cycle; internal robotic tool swaps/pick-place and external digital communications through appropriately sealed feedthroughs permitted.",
       "source_file": "SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md",
       "physical_authority": "HOLD"
+    },
+    "atmosphere_founder_decision": {
+      "question": "Lock first-generation enclosure to near-ambient nonreactive environment with later separately rated controlled-atmosphere modules?",
+      "answer": "NO",
+      "state": "FOUNDER_REJECTED_2026-10-08",
+      "interpretation": "Do not adopt near-ambient-only/nonreactive-only as a first-generation design requirement; exact vacuum, pressure and gas capabilities require separate affirmative scoping.",
+      "safety_hold": "No pressure/vacuum design qualification or physical operating authority granted."
+    },
+    "enclosure_geometry": {
+      "state": "FOUNDER_DIRECTION_2026-10-08",
+      "form": "Visibly inspectable elongated rectangular rather than cube-like chamber; supports long, flat objects and slender tall objects by reorientation inside the sealed run.",
+      "transparent_materials": "Glass or acrylic candidate; no material selected or performance rating established.",
+      "dimensions": "Not fixed; derive from product bounding volumes, robotic sweep/reach and safety envelope."
     }
   }
 }
