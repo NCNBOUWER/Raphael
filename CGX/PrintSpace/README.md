@@ -2,6 +2,9 @@
 
 Status: **PROPOSED / OWNER REVIEW**. Read-only modelling and data/QA package. No machine control or qualified print recipe.
 
+## Current founder build/release ordering (2026-10-09)
+The latest accepted physical sequence is **Bootstrap PrintCeptor manual seed assembly → safe internally fabricated upgrades → Butter Bot as first complete sealed-session integrated print and internal functional test → collaborator validation → PrintCeptor A → proposed state library/university/SQE pilots → broader commercial rollout**. Digital UTP/PMX development may remain concurrent; this does **not** impose a prior Printer-μ reproduction test before the initial Butter Bot. Main chamber defaults to one open print volume with job-created/reused secondary partitions. See [authoritative latest founder decision overlay](PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md) and [current decision queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json). All steps are **planned**, not hardware completion.
+
 ## Entry points by responsibility
 - **Capability doctrine:** [CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md](CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md) — CAN IF philosophy and process opportunities.
 - **Directional process ontology:** [CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md](CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md) and [PAIRWISE_SEQUENCE_ROUTES_v0_1.json](PAIRWISE_SEQUENCE_ROUTES_v0_1.json) — 14×14 family pairs.
