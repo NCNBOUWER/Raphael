@@ -5,7 +5,7 @@
   "status": "PROPOSED_OWNER_REVIEW",
   "authority": "Equation baselines only; defer full equations and novel Raphael geometry to UTP-KERNELS-001 and native solvers",
   "unit_system": "SI with rad dimensionless",
-  "evaluation": "Non-actuating isolated deterministic evaluator; requires caller-provided, sourced numeric inputs",
+  "evaluation": "Non-actuating isolated deterministic evaluator; requires caller-provided, sourced numeric inputs; includes dimensionless similarity groups and scaling indicators",
   "constant_source": "https://physics.nist.gov/cuu/Constants/index.html",
   "sources": [
     "https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022",
@@ -50,7 +50,7 @@
     }
   },
   "coverage": {
-    "formula_count": 47,
+    "formula_count": 59,
     "integrated_utp_kernels": [
       "K-BV",
       "K-ENERGY",
@@ -61,7 +61,8 @@
       "K-NP",
       "K-RADIATION",
       "K-SPECIES"
-    ]
+    ],
+    "regime_equations": 12
   },
   "models": [
     {
@@ -981,6 +982,244 @@
       },
       "constants": [],
       "validity": "Average induced emf magnitude over time interval; flux linkage and orientation defined",
+      "utp_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-048",
+      "name": "Péclet number",
+      "domain": "fluid_species",
+      "formula": "velocity*length/diffusivity",
+      "result_unit": "1",
+      "inputs": {
+        "velocity": "m/s",
+        "length": "m",
+        "diffusivity": "m**2/s"
+      },
+      "constants": [],
+      "validity": "Advection to molecular diffusion; select characteristic length and species diffusivity",
+      "utp_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-049",
+      "name": "Capillary number",
+      "domain": "fluid",
+      "formula": "dynamic_viscosity*velocity/surface_tension",
+      "result_unit": "1",
+      "inputs": {
+        "dynamic_viscosity": "Pa*s",
+        "velocity": "m/s",
+        "surface_tension": "N/m"
+      },
+      "constants": [],
+      "validity": "Viscous to surface tension force ratio for selected Newtonian representative scales",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-050",
+      "name": "Weber number",
+      "domain": "fluid",
+      "formula": "density*velocity**2*length/surface_tension",
+      "result_unit": "1",
+      "inputs": {
+        "density": "kg/m**3",
+        "velocity": "m/s",
+        "length": "m",
+        "surface_tension": "N/m"
+      },
+      "constants": [],
+      "validity": "Inertial to interfacial tension ratio under selected length scale",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-051",
+      "name": "Fourier number",
+      "domain": "thermal",
+      "formula": "thermal_diffusivity*duration/length**2",
+      "result_unit": "1",
+      "inputs": {
+        "thermal_diffusivity": "m**2/s",
+        "duration": "s",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Unsteady conduction characteristic length and homogeneous thermal diffusivity",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-052",
+      "name": "Biot number",
+      "domain": "thermal",
+      "formula": "convective_coefficient*length/thermal_conductivity",
+      "result_unit": "1",
+      "inputs": {
+        "convective_coefficient": "W/(m**2*K)",
+        "length": "m",
+        "thermal_conductivity": "W/(m*K)"
+      },
+      "constants": [],
+      "validity": "External convection to internal solid conduction resistance using geometry-correct characteristic length",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-053",
+      "name": "Knudsen number",
+      "domain": "rarefied_flow",
+      "formula": "mean_free_path/length",
+      "result_unit": "1",
+      "inputs": {
+        "mean_free_path": "m",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Continuum validity indicator for gas process; mean free path depends on pressure and gas",
+      "utp_kernel_ids": [
+        "K-FLUID-MOM",
+        "K-SPECIES"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-054",
+      "name": "Damköhler characteristic time ratio",
+      "domain": "chemical",
+      "formula": "flow_timescale/reaction_timescale",
+      "result_unit": "1",
+      "inputs": {
+        "flow_timescale": "s",
+        "reaction_timescale": "s"
+      },
+      "constants": [],
+      "validity": "Single-reaction representative transport/reaction time ratio; chemistry-specific reaction law required",
+      "utp_kernel_ids": [
+        "K-SPECIES",
+        "K-BV"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-055",
+      "name": "Magnetic Reynolds number",
+      "domain": "electromagnetic_fluid",
+      "formula": "mu0*mu_r*electrical_conductivity*velocity*length",
+      "result_unit": "1",
+      "inputs": {
+        "mu_r": "1",
+        "electrical_conductivity": "S/m",
+        "velocity": "m/s",
+        "length": "m"
+      },
+      "constants": [
+        "mu0"
+      ],
+      "validity": "Magnetic advection to diffusion comparison, electrically conducting continuum; full MHD needed",
+      "utp_kernel_ids": [
+        "K-MAXWELL",
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-056",
+      "name": "Hartmann number",
+      "domain": "electromagnetic_fluid",
+      "formula": "magnetic_field*length*sqrt(electrical_conductivity/dynamic_viscosity)",
+      "result_unit": "1",
+      "inputs": {
+        "magnetic_field": "T",
+        "length": "m",
+        "electrical_conductivity": "S/m",
+        "dynamic_viscosity": "Pa*s"
+      },
+      "constants": [],
+      "validity": "Viscous to Lorentz force balance scale for conducting fluid; relevant field orientation and geometry specified",
+      "utp_kernel_ids": [
+        "K-MAXWELL",
+        "K-FLUID-MOM"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-057",
+      "name": "Debye screening length ratio",
+      "domain": "electrochemical",
+      "formula": "debye_length/length",
+      "result_unit": "1",
+      "inputs": {
+        "debye_length": "m",
+        "length": "m"
+      },
+      "constants": [],
+      "validity": "Electrolyte double-layer to geometric scale; requires composition, concentration and temperature",
+      "utp_kernel_ids": [
+        "K-NP",
+        "K-BV"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-058",
+      "name": "Thermal diffusivity identity",
+      "domain": "thermal",
+      "formula": "thermal_conductivity/(density*specific_heat)",
+      "result_unit": "m**2/s",
+      "inputs": {
+        "thermal_conductivity": "W/(m*K)",
+        "density": "kg/m**3",
+        "specific_heat": "J/(kg*K)"
+      },
+      "constants": [],
+      "validity": "Effective homogeneous isotropic solid; temperature and microstructure may alter properties",
+      "utp_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "evidence_state": "CLASSICAL_IDENTITY_WITH_ASSUMPTIONS_NOT_MATERIAL_VALIDATION",
+      "production_approved": false
+    },
+    {
+      "id": "PS-EQ-059",
+      "name": "Skin-depth screening",
+      "domain": "electromagnetic",
+      "formula": "sqrt(2*resistivity/(mu0*mu_r*angular_speed))",
+      "result_unit": "m",
+      "inputs": {
+        "resistivity": "Ohm*m",
+        "mu_r": "1",
+        "angular_speed": "rad/s"
+      },
+      "constants": [
+        "mu0"
+      ],
+      "validity": "Good linear conductor at nonzero frequency, planar skin approximation; no anisotropy or proximity effects",
       "utp_kernel_ids": [
         "K-MAXWELL"
       ],
