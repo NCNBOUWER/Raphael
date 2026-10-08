@@ -303,21 +303,21 @@
       "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links. Define per-device cached vs durable DBR data, an append-only service/configuration change record, risk-classified equivalence checks and safety-bounded requalification for swapped components. Distinguish independent nested printer CGX individual from outer parent hierarchy. Model internal durable DBR compaction handoff with network integrity/readback acknowledgment, retry-safe persistent outbox, idempotent retry semantics and local-history clearance guarded by verified success.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes. Require a deterministic offline controller, per-device identity and per-operation safety/capability readback independent of any optional AI or cloud link. Specify a discoverable CGX device skeleton and deterministic hardware controller as separate layers, including setup naming, optional functions and safe capability discovery; preserve parent/child/sibling component information links. Define per-device cached vs durable DBR data, an append-only service/configuration change record, risk-classified equivalence checks and safety-bounded requalification for swapped components. Distinguish independent nested printer CGX individual from outer parent hierarchy. Model internal durable DBR compaction handoff with network integrity/readback acknowledgment, retry-safe persistent outbox, idempotent retry semantics and local-history clearance guarded by verified success. Founder refinement 2026-10-09: main print chamber begins as single open work volume; dynamically printed/reused temporary or semi-permanent partitions and programmable multi-feed floor plates reconfigure qualified secondary zones as needed. Initial safe manually assembled bootstrap may manufacture selected claws, fixtures, tool bodies and upgrades before the first Butter Bot integrated print.",
       "execution": "MANUAL",
       "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer. No unverified acrylic/window substitution may silently enlarge or preserve vacuum/pressure ratings; engineering qualification still required. Network DBR transfer and clearing are not implemented or released by this owner-review document.",
       "priority": "P1",
       "closed": false,
-      "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
+      "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
     },
     {
       "id": "G07",
       "title": "Butter Bot printer-first full-component reference programme",
       "owner": "Römer-Grex+Raphael",
       "state": "OPEN",
-      "acceptance": "Map all BB01 components and interfaces; BB02 modular process research; BB03 integrated informed candidate; fabricate/automatically integrate a complete Butter Bot in one cycle without opening or de-sealing main enclosure. Automated placement of safely pre-staged externally made ICs/other modules is allowed; separately track how much is truly additively fabricated. Qualification requires verified sealed-cycle evidence plus independent product safety/functional evidence.",
+      "acceptance": "Map all BB01 components and interfaces; BB02 modular process research; BB03 integrated informed candidate; fabricate/automatically integrate a complete Butter Bot in one cycle without opening or de-sealing main enclosure. Automated placement of safely pre-staged externally made ICs/other modules is allowed; separately track how much is truly additively fabricated. Qualification requires verified sealed-cycle evidence plus independent product safety/functional evidence. Founder update: Butter Bot is the first complete integrated sealed-session print after functional bootstrap assembly/self-made components; safe functional powered test within enclosure required; source CAD rights and derivative publication independently reviewed, then collaborators; PrintCeptor A follows.",
       "execution": "DESIGN",
-      "hold": "No unsealed operator repositioning in a claimed one-session build; do not misrepresent pre-staged chips as directly printed. No butter-delivery benchmark, no lab-arm redesign, no physical actuation authority from documentation.",
+      "hold": "No unsealed operator repositioning in a claimed one-session build; do not misrepresent pre-staged chips as directly printed. No butter-delivery benchmark, no lab-arm redesign, no physical actuation authority from documentation. Public CAD and fictional media-character likeness do not imply permission to manufacture commercially, republish/redistribute derivative files or commit upstream without owner rights.",
       "priority": "P1",
       "closed": false,
       "owner_review_companion": "SEALED_STATION_DUAL_TRACK_DECISION_2026-10-08.md"
@@ -393,9 +393,9 @@
       "title": "80-product portfolio coverage and shared modules",
       "owner": "PrintSpace owners",
       "state": "OPEN",
-      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification. Record Everyday/Pro differentiated printer features and comparative sourcing versus micro-printing with provenance and whole-system resource efficiency. Resolve semantic type-versus-instance/CGX individual conflicts using source provenance and receiving owner review; do not rank authority by date. Distinguish physically lawful universal technology design scope from evidenced manufacture per product/device/process.",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification. Record Everyday/Pro differentiated printer features and comparative sourcing versus micro-printing with provenance and whole-system resource efficiency. Resolve semantic type-versus-instance/CGX individual conflicts using source provenance and receiving owner review; do not rank authority by date. Distinguish physically lawful universal technology design scope from evidenced manufacture per product/device/process. CCC/CYC/CGX library community designs and profile/licence/security/DBR gates remain source-owning services; two initial base models with Australian state library/university/SQE pilot strategy before commercial rollout; no duplicate marketplace or unsanctioned publication.",
       "execution": "DESIGN",
-      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence. Public universal capability claims remain held until verified per feature and configuration.",
+      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence. Public universal capability claims remain held until verified per feature and configuration. No actual state library/university/SQE equipment placements, contracts, licensed downloadable public library, live share backend or PrintCeptor commerce implied.",
       "priority": "P2",
       "closed": false,
       "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
@@ -417,14 +417,14 @@
   "butter_bot_founder_direction": {
     "state": "CONFIRMED_BY_FOUNDER_2026-10-08",
     "primary_goal": "Qualify a printer/process system capable of fabricating the entire simple known-geometry Butter Bot in one manufacturing session, attempting printable pathways for every component.",
-    "development_sequence": "BB01 baseline component/geometry compatibility; BB02 recursive modularisation; BB03 informed integrated refinement; more iterations as needed; only qualified endpoint receives unversioned Butter Bot name.",
+    "development_sequence": "Bootstrap PrintCeptor first physical build, self-print safe upgrade components with primary manual setup, then Butter Bot as FIRST COMPLETE INTEGRATED PRINT ARTICLE; collaborator validation then PrintCeptor A. BB01/02/03 are sub-stages in this Butter Bot programme. Printer-Mu universal child follows as independent later release test.",
     "not_objectives": [
       "Butter delivery as R&D success benchmark",
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Current founder PC-Q01 settled YES. Next owner evidence: actual 17-function seed PrintCeptor BOM (PC-Q05) and EMASSC/community asset licensing decision matrix (PC-Q07).",
-    "active_founder_question_state": "RESOLVED_PC_Q01_NO_REPEAT; ENGINEERING_AND_OWNER_EVIDENCE_HELD",
+    "active_founder_question": "No further repeat decisions: source evidence for actual bootstrap hardware BOM, Butter Bot source licence/CAD readback, live CCC/CYC sharing and Dataspace0 namespace, pilot partner agreements.",
+    "active_founder_question_state": "EVIDENCE_AND_SOURCE_OWNER_REVIEW_ONLY",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -637,6 +637,12 @@
         "next_founder_gate": "Default single DBR: recoverable archive vs proof-only summary; owner acceptance of concrete wire format remains separate."
       },
       "default_network_compaction": "RECOVERABLE_ARCHIVE_FOUNDER_APPROVED_2026-10-08; proof-only opt-in; still require source-owner DBR format/restore and safety/privacy approvals"
+    },
+    "butter_bot_source_candidate": {
+      "url": "https://github.com/djnugent/ButterBot",
+      "evidence": "Public GitHub root lists CAD and build description; no reusable CAD distribution or commercial derivative licence verified; fictional media character rights separately reviewed.",
+      "state": "SOURCE_REFERENCE_ONLY",
+      "target": "PrintCeptor first physical sealed-session integrated test, qualified original derivative with attribution/rights review"
     }
   },
   "printceptor_founder_intake_20261008": {
@@ -725,73 +731,97 @@
         "question": "Does one network DBR compact default to recoverable full history or proof-only summary with explicit nonrecoverable original data?",
         "recommendation": "Recoverable archive by default; proof-only option separately explicit.",
         "owner": "CGX Filespace/DBR and LightSpeed execution",
-        "status": "FOUNDER_APPROVED_YES_RECOVERABLE_DEFAULT",
+        "status": "FOUNDER_APPROVED_RECOVERABLE_NETWORK_DBR_DEFAULT",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
         "requires_new_founder_YN": "NO",
-        "confirmed_response": "Y; recoverable network-held consolidated DBR is default; proof-only separately explicit"
+        "confirmed_response": "Y; recoverable network-held consolidated DBR is default; proof-only separately explicit",
+        "resolved_direction": "Founder Q1 as recommended; DBR recovery default previously approved; signed network ACK+readback required before local deletion, compact proof-only explicit opt-in.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q02",
         "question": "Are the first two customer base models Everyday and Pro, differentiated by physically installed hardware modules while architecture has no arbitrarily omitted intended technology targets?",
         "recommendation": "Yes: Everyday expandable, Pro preconfigured with nested child printer ability.",
         "owner": "PrintCeptor product",
-        "status": "RESOLVED_FROM_FOUNDER_TWO_BASES_AND_PREVIOUS_EVERYDAY_PRO",
+        "status": "FOUNDER_APPROVED_TWO_BASES_STATE_PILOT_BEFORE_COMMERCIAL",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "NO"
+        "requires_new_founder_YN": "NO",
+        "resolved_direction": "Everyday/Pro product bases, initial founder and region/state public library/university/SQE industry pilot before consumer commercial rollout; specific partners/quantities not yet confirmed.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q03",
         "question": "Should the initial Pro CAD comparator use three configurable inner bays as the baseline, while permitting more/fewer bays from packaging, power, contamination and reach studies?",
         "recommendation": "Yes as reference, not mandated final quantity.",
         "owner": "PrintCeptor mechanical",
-        "status": "DESIGN_REFERENCE_THREE_BAYS_NOT_FIXED_MINIMUM",
+        "status": "FOUNDER_APPROVED_SINGLE_OPEN_BASE_DYNAMIC_BAYS",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "NO"
+        "requires_new_founder_YN": "NO",
+        "resolved_direction": "One unobstructed print chamber by default. 1/2/3/N bays are job-specific deployable partitions and modules using reusable/reprinted panels, not fixed standard slots. Child printer only if autonomous.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q04",
         "question": "Must retractable/collapsible auto-built partitions stay secondary internal process enclosures in Gen1, leaving the primary pressure/vacuum enclosure a separately rated static boundary?",
         "recommendation": "Yes, until professional pressure-boundary design permits another certified approach.",
         "owner": "PrintCeptor chamber safety",
-        "status": "ENGINEERING_SAFETY_BOUNDARY_CONFIRMED_PHYSICAL_PROOF_HELD",
+        "status": "FOUNDER_APPROVED_REUSABLE_SECONDARY_PRINTED_PARTITIONS",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "NO"
+        "requires_new_founder_YN": "NO",
+        "resolved_direction": "Temporary/semi-permanent/reused panels may create isolated local environments after qualified barriers/fixtures. Main rated pressure/vacuum shell separately certified.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q05",
         "question": "Which initial physical functions define the minimum bootstrap tool kit, beyond dual arms and CGX calibration (deposition, grasp, inspect, join/finish, electric-test)?",
         "recommendation": "Define minimum by a candidate first accepted print, not product marketing.",
         "owner": "PrintCeptor engineering",
-        "status": "UTP_17_BASIS_FOUND_ACTUAL_SEED_BOM_OPEN",
+        "status": "FOUNDER_APPROVED_SMALLEST_SAFE_BOOTSTRAP_TOOL_STRATEGY_BOM_EVIDENCE_OPEN",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE"
+        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE",
+        "resolved_direction": "Use existing UTP 17 G1 function coverage and two arms/tool-change design, minimize externally sourced initial components by printing qualified small components/grips/tools after first commissioning; evidence-based specific seed BOM still open.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q06",
         "question": "For the first complete 4D printer release, which first functional acceptance article is authoritative: a powered Butter Bot in one sealed cycle, a printer-made child printer performing a qualified print, or both in staged order?",
         "recommendation": "Both as separate milestones; seed expansion/child reproduction and Butter Bot integration are independently testable.",
         "owner": "PrintCeptor programme",
-        "status": "RESOLVED_PARALLEL_INDEPENDENT_ACCEPTANCE",
+        "status": "FOUNDER_REVISED_SEQUENTIAL_FIRST_PHYSICAL_TEST_BUTTERBOT",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "NO"
+        "requires_new_founder_YN": "NO",
+        "resolved_direction": "Physical stages: Bootstrap PrintCeptor manually assembled+safely self-made tools -> first integrated sealed-session Butter Bot function test -> partner verification -> PrintCeptor A refined second machine -> later stringent Printer-Mu recursive G1. Digital R&D may still be parallel.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q07",
         "question": "Which PrintCeptor skeleton, CAD, safety-critical firmware and community-module rights are published versus controlled/licensed?",
         "recommendation": "Separate publicly reusable reference schemas/design examples from reviewed safety-critical build files and commercial license; await IP/legal signoff.",
         "owner": "EMASSC/IP",
-        "status": "EMASSC_IP_LEGAL_OWNER_APPROVAL_OPEN",
+        "status": "FOUNDER_ASSIGNS_EXISTING_CGX_CCC_CYC_SHARE_CONTRACT_LEGAL_PERMISSIONS_OPEN",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE"
+        "requires_new_founder_YN": "ONLY_IF_SOURCE_OWNER_CONTRACT_CANNOT_RESOLVE",
+        "resolved_direction": "Reuse CGX/CCC/CYC signed package, profile, source/licence/permissions, human review, local downloadable sparse package; public reference methods subject to EMASSC and source owner permissions; not a new marketplace, CL3 routes are static staging not live public build+share.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       },
       {
         "id": "PC-Q08",
         "question": "Can compaction and full local reset erase nonessential user history while retaining independent safety/compliance device records only where a legitimate legal/safety rule requires?",
         "recommendation": "Use purpose-limited retention and avoid claiming universal deletion.",
         "owner": "DBR/privacy",
-        "status": "POLICY_RECONCILED_DATA_RETENTION_OWNER_PROOF_OPEN",
+        "status": "FOUNDER_APPROVED_FAMILY_SCOPED_DATASPACE_CLEANUP_POLICY",
         "resolution_source": "PRINTCEPTOR_PC_GATE_RECONCILIATION_2026-10-08.md",
-        "requires_new_founder_YN": "NO"
+        "requires_new_founder_YN": "NO",
+        "resolved_direction": "Per individual/family/network DBR storage and history roots; configurable retention, private consent, tidy/archive/snapshot/lineage, recoverable DBR by default if network compaction chosen, safety/legal holds independently binding.",
+        "next_action": "IMPLEMENT_OR_OWNER_PROOF_ONLY_NOT_ANOTHER_FOUNDER_VOTE",
+        "owner_review_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md"
       }
     ],
     "engineering_proof_not_founder_YN": [
@@ -812,6 +842,24 @@
       "post_mix": "PMX-MAT-001 mass/thermal chemistry and PMX-CELL-001 3-5 agents own recipes, materials and interaction; owner PR11 remains open",
       "dbri": "DBR compaction integrity/restore needs owner-reviewed physical implementation; Y in chat resolves product default, not transport/API approval",
       "additional_Gates": "G02/G03/G04/G05/G06/G07/G14/G15 keep their existing IDs and owners; no new dispatch"
-    }
+    },
+    "founder_20261009_decisions_recorded": true,
+    "founder_20261009_companion": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md",
+    "physical_milestones": [
+      "P0_SAFE_PRINTER_ENGINEERING",
+      "P1_MANUAL_ASSEMBLY_BOOTSTRAP",
+      "P2_PROOF_OF_SELF_PRINTED_TOOLS_AND_UPGRADES",
+      "P3_FIRST_INTEGRATED_SEALED_SESSION_BUTTERBOT",
+      "P4_COLLABORATOR_SCIENTIFIC_VALIDATION",
+      "P5_PRINTCEPTOR_A",
+      "P6_STATE_REGIONAL_PILOT_THEN_COMMERCIAL"
+    ],
+    "release_holds": [
+      "CGX/CCC-CYC static staging != live download catalogue",
+      "Unconfirmed CAD licence != commercial 4D Butter Bot publication rights",
+      "First self-printed grips/parts != complete universal printer self-replication",
+      "Never bypass local C0/interlocks/qualifications",
+      "No root or other branch mutation"
+    ]
   }
 }
