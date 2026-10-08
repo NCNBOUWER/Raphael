@@ -1,0 +1,230 @@
+{
+  "schema": "cgx.printspace.portfolio_taxonomy.v0.5",
+  "status": "UNQUALIFIED_PROPOSED",
+  "profiles": {
+    "wear": [
+      "TP",
+      "EL",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "optical": [
+      "TP",
+      "OP",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "portable": [
+      "TP",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "audio": [
+      "TP",
+      "CI",
+      "MG",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "robot": [
+      "MT",
+      "TP",
+      "CI",
+      "DE",
+      "MG",
+      "SC",
+      "BT",
+      "EL"
+    ],
+    "fluid": [
+      "MT",
+      "TP",
+      "FL",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "compute": [
+      "MT",
+      "TP",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "habitat": [
+      "TP",
+      "FL",
+      "CI",
+      "DE",
+      "SC",
+      "BT"
+    ],
+    "surface": [
+      "TP",
+      "CI",
+      "DE",
+      "EL"
+    ],
+    "space": [
+      "MT",
+      "CR",
+      "CI",
+      "DE",
+      "MG",
+      "SC",
+      "BT"
+    ],
+    "skin": [
+      "CR",
+      "MT",
+      "CI",
+      "DE",
+      "OP",
+      "SC"
+    ],
+    "civil": [
+      "CR",
+      "MT",
+      "CI",
+      "DE",
+      "SC"
+    ],
+    "printer": [
+      "MT",
+      "TP",
+      "CI",
+      "DE",
+      "SC"
+    ],
+    "micro": [
+      "CR",
+      "CI",
+      "DE",
+      "OP",
+      "SC"
+    ],
+    "battery": [
+      "CR",
+      "CI",
+      "DE",
+      "EC",
+      "BT"
+    ],
+    "resource": [
+      "TP",
+      "FL",
+      "CI",
+      "DE",
+      "SC"
+    ],
+    "gas": [
+      "CR",
+      "CI",
+      "DE",
+      "FL",
+      "SC"
+    ]
+  },
+  "groups": [
+    {
+      "id": "wearable",
+      "title": "Wearable",
+      "color": "#4E83D0",
+      "owner": "LightSpeed / CGX",
+      "adjacent": [
+        "EMASSC",
+        "SAI"
+      ]
+    },
+    {
+      "id": "usable",
+      "title": "Usable",
+      "color": "#7E7BCF",
+      "owner": "LightSpeed / CGX",
+      "adjacent": [
+        "Römer-Grex"
+      ]
+    },
+    {
+      "id": "operable",
+      "title": "Operable",
+      "color": "#D38B55",
+      "owner": "Römer-Grex",
+      "adjacent": [
+        "Raphael",
+        "LightSpeed"
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend / SAI",
+      "color": "#528F9A",
+      "owner": "CGX / SAI",
+      "adjacent": [
+        "Achilles",
+        "LightSpeed"
+      ]
+    },
+    {
+      "id": "eco",
+      "title": "Eco-Grex",
+      "color": "#4E9E80",
+      "owner": "Eco-Grex",
+      "adjacent": [
+        "Socie-Civil",
+        "Römer-Grex"
+      ]
+    },
+    {
+      "id": "romer",
+      "title": "Römer / EMASSC",
+      "color": "#B78B4D",
+      "owner": "Römer-Grex",
+      "adjacent": [
+        "EMASSC",
+        "Raphael"
+      ]
+    },
+    {
+      "id": "civil",
+      "title": "Socie-Civil / Infrastructure",
+      "color": "#6996A9",
+      "owner": "Socie-Civil",
+      "adjacent": [
+        "Römer-Grex",
+        "Eco-Grex"
+      ]
+    },
+    {
+      "id": "research",
+      "title": "PrintSpace / R&D",
+      "color": "#A37DC3",
+      "owner": "Raphael / CGX",
+      "adjacent": [
+        "Römer-Grex",
+        "EMASSC"
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Community / Operations",
+      "color": "#9B8A6A",
+      "owner": "Operations / LS",
+      "adjacent": [
+        "Socie-Civil",
+        "Eco-Grex"
+      ]
+    }
+  ],
+  "source": "UTP-ENV-001",
+  "staging_rule": "Early high-temperature formation then protect/control interface -> circuits -> dielectric -> active module late -> energy last -> verify"
+}
