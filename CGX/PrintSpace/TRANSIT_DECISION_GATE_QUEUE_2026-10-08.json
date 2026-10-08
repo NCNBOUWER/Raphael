@@ -110,6 +110,20 @@
       "basis": "Founder explicitly answered YES to integrated vacuum/pressure/controlled-gas first-gen scope on 2026-10-08.",
       "reversible": true,
       "status": "FOUNDER_APPROVED_DESIGN_SCOPE"
+    },
+    {
+      "id": "D08",
+      "recommendation": "Founder-approved Bootstrap 4D Printer first generation; no omissions of defining 4D features, even where practical implementation is a research problem; collect failures as validation data, with safety physical holds intact.",
+      "basis": "Founder decisions in transit, 2026-10-08; BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_DESIGN_SCOPE"
+    },
+    {
+      "id": "D09",
+      "recommendation": "Bootstrap manufactures refined follow-on printers; scale/function/application differentiated printer classes from low-price DIY expandable kit to custom-priced industry machine; appropriate safety/redundancy and material reserve/feeds for high-volume jobs; no arbitrary removal of core 4D capabilities.",
+      "basis": "Founder decisions in transit, 2026-10-08",
+      "reversible": true,
+      "status": "FOUNDER_APPROVED_STRATEGY"
     }
   ],
   "gates": [
@@ -181,14 +195,15 @@
     },
     {
       "id": "G06",
-      "title": "Printer-1 / gas cell preparation",
+      "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Catalogue actual printer tools/sensors and access; design sealed compartmental printing with vacuum, positive-pressure and controlled-gas capabilities from Printer-1, appropriate rated containment, ventilation, monitoring, interlocks, calibration and safety review, plus dry-run and safe coupon protocol.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules.",
       "execution": "MANUAL",
-      "hold": "No vacuum/pressure/gas actuation, hazardous operation or physical machinery commissioning based on founder design approval; professional review, suitable pressure/vacuum design and operator controls needed.",
+      "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer.",
       "priority": "P1",
-      "closed": false
+      "closed": false,
+      "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
     },
     {
       "id": "G07",
@@ -273,11 +288,12 @@
       "title": "80-product portfolio coverage and shared modules",
       "owner": "PrintSpace owners",
       "state": "OPEN",
-      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements.",
       "execution": "DESIGN",
-      "hold": "70/70 PT coverage is reference completeness, not hardware completeness",
+      "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas.",
       "priority": "P2",
-      "closed": false
+      "closed": false,
+      "owner_review_companion": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
     },
     {
       "id": "G15",
@@ -302,8 +318,8 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Approve Printer-1 as full-environment research printer with appearance secondary, and Printer-2 as a refined/polished next-generation printer built using Printer-1 where technically qualified (with separately sourced/rated safety components where needed)?",
-    "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
+    "active_founder_question": "For smallest customer-expandable Bootstrap-derived 4D printer, may separately sourced/qualified chips, vacuum/pressure parts, gas hardware and controllers remain necessary to print/assemble its expansion modules, while direct printing of all those parts remains a distinct R&D objective?",
+    "active_founder_question_state": "PROPOSED_AWAITING_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
       "state": "APPROVED_2026-10-08",
@@ -350,9 +366,37 @@
       "dimensions": "Not fixed; derive from product bounding volumes, robotic sweep/reach and safety envelope."
     },
     "printer_generations_founder_input": {
-      "state": "FOUNDER_INTENT_2026-10-08_NOT_YET_FINAL_RELEASE_GATE",
-      "printer_1": "Function and full process capability matter more than aesthetics.",
-      "printer_2": "Printer made using Printer-1 should be visually refined; exact manufacturing and assembly scope remains for founder decision."
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "printer_1": "Bootstrap 4D Printer; function-first, full intended CGX 4D feature coverage; cosmetics secondary.",
+      "printer_2": "More visually refined 4D printer made with Bootstrap 4D Printer wherever validated, retaining full defining functional requirements; first of multiple scale/application classes."
+    },
+    "bootstrap_printer_founder_decision": {
+      "state": "FOUNDER_APPROVED_2026-10-08",
+      "name": "Bootstrap 4D Printer",
+      "intent": "Function-first first-generation printer; create a refined next generation and scalable family of 4D printers.",
+      "complete_4d_requirement": "All attributes defining intended CGX 4D functionality must actually be implemented and experimentally addressed from the initial machine; do not evade hard features. Unsafe, untested capability remains commissioning-held.",
+      "iteration_rule": "Capture failures/hiccups and use them to improve processes and follow-on machine design, rather than omitting capabilities.",
+      "next_generation": "Refined visually polished printer fabricated via Bootstrap printer to the extent its measured processes support; safety-rated externally made parts remain independently qualified.",
+      "classes": [
+        "Personal DIY expandable low-cost seed kit",
+        "Assembled general-use printer",
+        "Larger or higher-throughput heavy-material printer",
+        "Industry/application-specific tailored printer"
+      ],
+      "differentiation": [
+        "build volume",
+        "scale",
+        "application",
+        "function",
+        "material throughput",
+        "optional product colour/identification",
+        "safety-rated process modules"
+      ],
+      "kit_strategy": "Provide minimum SAFE working seed components plus evidenced roadmap for printing/enlarging modules. If self-fabrication infeasible, conventional manufacture/assembly kit is an explicit alternate offer, not mislabeled as printer self-replication.",
+      "material_strategy": "Account for heavy/high-material prints with feed-specific stock surplus/starting allowance OR suitable modular refills and material options; calculate mass balance, waste, processing losses and safe storage rather than indiscriminate over-supply.",
+      "redundancy": "Include appropriate redundancy, fail-safe and safety provisions for each class based on hazard and reliability assessment.",
+      "status_caveat": "No completed prototype, validated 4D feature implementation, commercial costing, industrial safety sign-off or physical runtime permission is implied.",
+      "owner_document": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
     }
   }
 }
