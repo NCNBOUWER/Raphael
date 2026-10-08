@@ -152,6 +152,13 @@
       "basis": "Founder explicit clarification 2026-10-08",
       "reversible": true,
       "status": "FOUNDER_APPROVED_REQUIREMENTS"
+    },
+    {
+      "id": "D14",
+      "status": "FOUNDER_CONFIRMED_DESIGN_SCOPE",
+      "recommendation": "Princeception printer-to-printer and nested manufacturing. Pro supports internal micro-printers; source trays and replaceable component magazines; fixed/micro/roving functions; independent inner atmosphere zones. Preserve safety and source evidence holds.",
+      "basis": "Founder transit clarification 2026-10-08; Bootstrap charter",
+      "reversible": true
     }
   ],
   "gates": [
@@ -226,7 +233,7 @@
       "title": "Bootstrap 4D Printer first-generation multi-process station",
       "owner": "Römer-Grex",
       "state": "HELD_PHYSICAL",
-      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules.",
+      "acceptance": "Design all intended CGX 4D-defining capabilities, with per-feature implementation/evidence status, including full enclosure seal, vacuum/positive-pressure/controlled gases, robotic in-session handling, multiprocess/graded-material/temporal pathways, metrology, motion stability and safe design. Map safety equipment and actual operator qualifications. Trace required material quantities/consumables for expandable printer modules. Study modular nested isolated-zone design, replenishable component trays, staging, robotic transfer, fixed/micro/roving tool reach and hazards of simultaneous dissimilar processes.",
       "execution": "MANUAL",
       "hold": "Unproven capabilities, pressure/vacuum/chemical operations and physical activation remain held pending independent qualification; do not treat partial hardware or a simulation as a complete 4D printer.",
       "priority": "P1",
@@ -316,7 +323,7 @@
       "title": "80-product portfolio coverage and shared modules",
       "owner": "PrintSpace owners",
       "state": "OPEN",
-      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification.",
+      "acceptance": "Resolve 220 preliminary gap tickets into measurable tests, define reusable module qualification and supplier-vs-print rationale Include scalable printer-class shared modules, DIY seed expansion/sourced-part provenance, redundant safety and feed-specific material reserve calculations; validate independent class requirements. Audit functional primacy, line-specific design independence, upgrade and recycled-feed priority; document material passports and end-of-life strategies for inseparable printed regions. Include Mark-to-Mark candidate recovery alongside retained product-specific qualification. Record Everyday/Pro differentiated printer features and comparative sourcing versus micro-printing with provenance and whole-system resource efficiency.",
       "execution": "DESIGN",
       "hold": "70/70 PT coverage is reference completeness, not hardware completeness Do not claim finished self-replicating printers or safety-rated chambers from a candidate product atlas. Shared design appearance is not an imposed requirement; claims of verified recycled content require actual evidence.",
       "priority": "P2",
@@ -346,7 +353,7 @@
       "Fixed-base bench-assistant design as BB01 starting target"
     ],
     "later_derivative": "Specialised desk/bench assistant robotics after Butter Bot manufacturing learning curve",
-    "active_founder_question": "Should Mark-to-Mark material/component regeneration be a separately measurable named proof-of-concept demonstrator alongside Butter Bot and Bootstrap 4D Printer?",
+    "active_founder_question": "Should a common mechanical/digital docking contract be used for part trays, fixed/roving/micro-printer modules and isolated inner process chambers, with separately rated connections for gas/pressure/power as needed?",
     "active_founder_question_state": "PROPOSED_AWAITING_FOUNDER_ANSWER",
     "operating_hold": "No physical operation, high-risk chemistry, root promotion, deployment or PR merge without separate authority.",
     "single_session_founder_ruling": {
@@ -437,6 +444,27 @@
       "aesthetic_priority": "Product function and measured performance dominate cosmetics, including solar-energy conversion",
       "independent_identities": "No universal colour, appearance, terminology or design identity; each owner lane retains individuality; cross-lane learning is evidence-linked and reviewable",
       "evidence_caveat": "No physical demonstration, safe pressure rating, recycling rate, or product certification is implied."
-    }
+    },
+    "princeception": {
+      "status": "FOUNDER_CONFIRMED_DESIGN_SCOPE_2026-10-08",
+      "goal": "Print printers and printer-supporting components within an expanding manufacturing family; retain provenance for inserted sourced components and future direct-print research.",
+      "classes": [
+        "Everyday private expandable",
+        "Pro nested micro-printer",
+        "tailored industrial and large scale"
+      ],
+      "device_kinds": [
+        "fixed in situ",
+        "micro printer",
+        "roving/transversing",
+        "encapsulated multi-printer"
+      ],
+      "sourcing": "Renewable/replaceable feed and component trays, including sourced microchips and gyroscopes when more qualified or materially efficient than direct fabrication",
+      "contained_zones": "Independent nested controlled-atmosphere process zones must be designed alongside shared-atmosphere options; no physical operation or gas segregation claimed",
+      "single_session": "Nested jobs and automatic assembly take place while outer controlled boundary remains sealed",
+      "evidence": "Chemistry, differential environments, pressure, actuation, contamination, energy, schedule, geometry and safety unverified; proof required.",
+      "source": "BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
+    },
+    "prior_mark_regeneration_gate": "NOT_ACCEPTED_AS_A_DISTINCT_MANDATORY_POC; preserve as circularity research candidate. Founder redirected discussion toward Princeception."
   }
 }
