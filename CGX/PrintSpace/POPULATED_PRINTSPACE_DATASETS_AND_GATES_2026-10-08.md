@@ -7,6 +7,7 @@ Raphael UTP PR #5 already contains **70** PT umbrella technology classes, feedst
 ## Coverage
 - 14 manufacturing-family identities and all 196 ordered class-level candidate transitions remain in existing v0.1 assets.
 - 59 named material, chemical, void or module *archetypes*, one or more in every family; no numeric AM process properties are invented.
+- 3,481 (59×59) unique ordered archetype-level combinations in `MATERIAL_PAIRWISE_INDEX_v0_3.csv`. Precisely 72 link to curated candidate route designs; the remaining 3,409 inherit only an unqualified broad-family P/S/T/M/R routing suggestion, not an actual material compatibility claim.
 - 72 directional material-level route seeds covering 36 selected pairs in both directions, each with process staging, candidate environment, unknowns, alternative and test measurements.
 - 70/70 existing UTP functional technology classes linked to candidate material passports and preliminary parametric geometry.
 - 26 environmental and interface opportunities, including deliberately induced oxidation, low-oxygen deposition, internal hermetic volumes, low energy activation and independent Earth/microgravity routes.
