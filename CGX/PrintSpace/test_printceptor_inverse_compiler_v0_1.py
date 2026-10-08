@@ -59,6 +59,25 @@ class InverseTreeTest(unittest.TestCase):
         self.assertGreater(r["tool_prices_aud_observed_sum_not_total_project_cost"], 250)
         self.assertGreater(len(r["unpriced_kit_dependencies"]), 0)
 
+    def test_first_arm_and_pen_can_be_considered_but_not_qualified(self):
+        kit = next(k for k in self.d["starter_kits"] if k["id"] == "K-FDM-PEN-ARM")
+        self.assertIn("FDM_POLYMER", kit["capabilities"])
+        self.assertNotIn("SERVO_MOTION", kit["capabilities"])
+        a = evaluate(self.d, "K-FDM-PEN-ARM", "PC-ARM-PEN-DEMO")
+        self.assertIn("PC-ARM-ONE", a["decisions"])
+        self.assertIn("PC-PEN-HEAD", a["decisions"])
+        self.assertEqual(a["decisions"]["PC-PEN-HEAD"]["selected"]["route"], "SALVAGE")
+        self.assertFalse(a["single_sealed_session_qualified"])
+        self.assertFalse(a["source_qualified"])
+
+    def test_donor_hardware_and_non_equivalent_nozzles_are_unverified(self):
+        nodes = {x["id"]: x for x in self.d["components"]}
+        self.assertEqual(
+            set(o["mode"] for o in nodes["PC-GEAR-DONOR"]["options"]), {"BUY", "SALVAGE"}
+        )
+        self.assertIn("medical", self.d["first_purchase_salvage_lens_v0_2"]["industrial_context_equivalence"]["non_equivalence"].lower())
+        self.assertTrue(all(o["cost_aud"] is None for x in nodes.values() for o in x["options"]))
+
     def test_repair_alternatives_not_deleted(self):
         a = evaluate(self.d, "K-FDM", "BB-TRACKS")
         self.assertEqual(len(a["decisions"]["BB-TRACKS"]["all_alternatives"]), 2)
