@@ -1,5 +1,9 @@
 # CGX PrintSpace — Capability-First Functional Manufacturing (Review Branch)
 
+## Next-week CGX/PrintCeptor review sprint (12–18 October 2026)
+[Owner-scoped next-week plan](NEXT_WEEK_CGX_REVIEW_SPRINT_2026-10-12.json) consumes the existing [CGX engineering review-lens compiler](cgx_review_lens_compiler.py), [decision/G-gate queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json), [CGX hydration topology](PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json) and the PrintCeptor→Butter Bot first-article plan; it does **not** start a new renderer, master catalogue or scheduler. Target one coherent internally secured source-linked, scrollable family-to-object visual review in the existing LS GO/Achilles/Quests surfaces, with 3840×2160 render derivatives only when actual approved geometry and local rendering are evidenced. Renders are not certified dimensions/materials/physical results. The owner gate and security restrictions remain binding; latest BouwerBase RPC/currentness and any actual render/test are still **unverified for this planning pass**. Daily task packets are conditional and may be advanced by existing Neo/R2/R3/Achilles queues once source currentness is independently re-established; user-facing follow-up is a single Friday afternoon review, not a second execution queue.
+
+
 Status: **PROPOSED / OWNER REVIEW**. Read-only modelling and data/QA package. No machine control or qualified print recipe.
 
 ## Current founder build/release ordering (2026-10-09)
