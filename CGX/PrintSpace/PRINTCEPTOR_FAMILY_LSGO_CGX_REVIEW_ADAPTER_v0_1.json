@@ -404,5 +404,115 @@
     "No physical hardware proof or operational motion",
     "No new CCC/Library public downloadable package",
     "No alteration of UTP/PMX/CGX root authorities"
-  ]
+  ],
+  "design_and_4k_review_policy": {
+    "status": "REVIEW_LENS_PROPOSED_NOT_DEPLOYED",
+    "intent": "One CGX-backed variable/geometry/appearance review projected into existing LightSpeed GO LightSpeed page and Achilles/Quests interfaces, not a new app, new canonical brand or independent rendering authority.",
+    "format": "source-bound vector/mesh output with optional 3840×2160 raster capture; 4K is image resolution not validation of shape/physics/material properties",
+    "visual_maturity_classes": [
+      {
+        "id": "V0",
+        "name": "Conceptual",
+        "geometry": "hypothetical proportions",
+        "claim": "no build accuracy, no certified performance"
+      },
+      {
+        "id": "V1",
+        "name": "Source-linked",
+        "geometry": "existing SVG/reference CAD geometry",
+        "claim": "source can be historical or illustrative, provenance visible"
+      },
+      {
+        "id": "V2",
+        "name": "Parametric",
+        "geometry": "source-hashed CAD dimensions and BOM interfaces",
+        "claim": "model checks only, no physical certification"
+      },
+      {
+        "id": "V3",
+        "name": "Simulated",
+        "geometry": "validated solver and stated physics regime",
+        "claim": "sweeps with uncertainty, not physical measurements"
+      },
+      {
+        "id": "V4",
+        "name": "Measured",
+        "geometry": "metrology/calibration and inspected physical result",
+        "claim": "test-specific, not system-wide manufacturing release"
+      },
+      {
+        "id": "V5",
+        "name": "Qualified",
+        "geometry": "independently accepted configuration within specified operating envelope",
+        "claim": "only exact owner-certified scope"
+      }
+    ],
+    "proposed_brand_lenses": [
+      {
+        "family": "PrintCeptor / New Neutrals consumer",
+        "baseline": "white outer casing, orange accents, dark neutral functional components",
+        "variation": "user-specified material/layer, lighting and shell; two base product models and custom variants",
+        "source": "Founder PrintCeptor white-orange desktop reference, New Neutrals consumer family",
+        "approval": "OWNER_BRAND_AND_PHYSICAL_BOM_PENDING"
+      },
+      {
+        "family": "Römer-Grex / Mark-Luke / Intersol",
+        "baseline": "engineering/mission schematic with actual source CAD and SI units",
+        "variation": "mission, field, thermal, aerospace, service/hazard and ecological impact overlays",
+        "source": "Römer owner canonical workbooks and available native 3D Objects",
+        "approval": "MISSION_AND_CAD_SOURCE_OWNER"
+      },
+      {
+        "family": "Eco-Grex",
+        "baseline": "material provenance, ecological life cycle and nature impact visualization",
+        "variation": "materials/passports/repair/reuse and region-specific environment",
+        "source": "Eco-Grex material stewardship and Post-Mix feedstock authorities",
+        "approval": "ECO_SOURCE_AND_ACTUAL_EMPIRICAL_DATA"
+      },
+      {
+        "family": "EMASSC",
+        "baseline": "restrained IP/evidence/ownership and commercial-license context",
+        "variation": "owned vs licensable vs community-release, public-safe vs internal",
+        "source": "EMASSC sole IP custodian and CCC/CYC rights",
+        "approval": "LEGAL_IP_AND_RELEASE_RIGHTS"
+      },
+      {
+        "family": "CGX / SAI / LightSpeed",
+        "baseline": "neutral cross-family object inspector, topology/verified deltas",
+        "variation": "sparse vs full hydration, accessibility, detailed proof inspector, game-like Quests navigation",
+        "source": "existing LS GO LightSpeed/Achilles/Quests surfaces",
+        "approval": "AUTHENTICATED_OPERATOR_VIEW_POLICY"
+      }
+    ],
+    "per_object_review_fields": [
+      "object_id and family",
+      "type vs exact instance",
+      "native source/head/hash",
+      "functional/operation specification",
+      "equations with valid regimes",
+      "materials and environmental operating boundary",
+      "SI geometry and tolerance",
+      "printed/hybrid/bought status",
+      "phase/time/4D response",
+      "design/brand alternatives",
+      "evidence tier and uncertainty",
+      "measured test links",
+      "unresolved gates",
+      "operator suggestion/choice",
+      "owner approval & DBR writeback separate"
+    ],
+    "preview_sequence": [
+      "native source readback",
+      "geometry or symbolic proxy labelled",
+      "material/environment overlay",
+      "function/flow/cause-effect view",
+      "variant slider & dimensions",
+      "reasoned impact/safety tradeoffs",
+      "owner-scoped review suggestion",
+      "separate approval and actual DBR"
+    ],
+    "source_data_reuse": "Do not duplicate 411 component geometries, 81 PT, 80 product, 17 printer, 16 atrium twins or 128 SVGs; use CGX object/Filespace hashes and auth decisions to hydrate.",
+    "local_preview": "PrintSpace cgx_review_lens_compiler.py staging only. Actual 4K output, physical CAD faithfulness and LS GO production deployment require tests/readback and permissioned host availability.",
+    "security_gate": "Do not expose INTERNAL_REVIEW_LOCAL or any private CGX preview in unauthenticated public/dist data. No device actuation and no automatic release."
+  }
 }
