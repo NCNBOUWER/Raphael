@@ -15,6 +15,23 @@ The [17-platform parametric family registry](PRINTCEPTOR_FAMILY_PARAMETRIC_REGIS
 **Founder starting equipment (2026-10-09):** [partial inventory](FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json) confirms an owned Dremel 4300, no FDM printer or pen, other unlisted on-hand parts and a small workbench that can be assembled. The [first-purchase decision matrix](PRINTCEPTOR_FIRST_PURCHASE_INVERSE_DECISION_MATRIX_2026-10-09.md) has been corrected to **avoid rebuying rotary equipment** and to model current owned capacity separately from post-purchase FDM or optional pen conversion. Example scenario commands: `python printceptor_inverse_compiler.py --kit K-FOUNDER-CURRENT --goal BB-SHELL --summary` and `--kit K-FOUNDER-FIRST-FDM`. A proposed printer does **not** exist as a physical installed capability merely because its scenario is selectable.\n\n
 New [PrintCeptor inverse AND/OR build graph](PRINTCEPTOR_INVERSE_BUILD_GRAPH_v0_1.json) decomposes the Butter Bot first integrated article, PrintCeptor bootstrap and candidate Hyper-Tech upgrades into purchased, printed, salvaged, hand-built or hybrid routes, retaining alternative choices and physical evidence holds. [Source-only inverse compiler](printceptor_inverse_compiler.py) and [regression tests](test_printceptor_inverse_compiler_v0_1.py) compare starter tool capability *labels*, not physical readyness. The [first-acquisition decision matrix](PRINTCEPTOR_FIRST_PURCHASE_INVERSE_DECISION_MATRIX_2026-10-09.md) includes the founder's **entry FDM → printed single-arm linkages → repurposed 3D pen toolhead** learning route; disassembly, sourced safety hardware, thermal control and donor qualification remain separately verified. [Hyper-Tech retrofit family](HYPER_TECH_CGX_RETROFIT_FAMILY_v0_1.json) adds 20 candidate legacy-device/benchtop adapter patterns across FileSpace, DataSpace, PrintSpace and WorkSpace. [Cross-domain review](PRINTCEPTOR_INVERSE_BOOTSTRAP_HYPERTECH_HANDOFF_2026-10-09.md) retains original type IDs, sourcing assumptions, provenance, CCC/CYC/share and environmental controls. No actual purchases, installed controls, external device authorization or hardware acceptance implied.
 
+## Offline review lens — catalogue through interplanetary twins (2026-10-09)
+
+[CGX review-lens compiler](cgx_review_lens_compiler.py) plus [source-only tests](test_cgx_review_lens_compiler.py) is a **read-only derivative projection**, not another CGX/Drive master, public LS GO static deployment or a hardware controller. It binds **411** current component archetypes, **81** PT technology records, **80** proposed cross-Grex product entries, **17** PrintCeptor candidate configurations and **16** documented system-twin families; these are distinct *overlapping* namespaces, not 605 unique manufactured objects. Sixteen reference SVGs are copied from the existing 128 source illustrations for scalable review. No new geometry, measurement, qualified machine or simulation claim is invented.
+
+After an exact source/currentness preflight on the local BouwerBase host, from the existing PR #6 review checkout run:
+
+```powershell
+$repo = 'C:\Cognigrex\State\Frontier\PrintSpaceTransit_20261008\Raphael_PR6'
+$light = 'D:\LightSpeed\Repositories\LightSpeed_Canonical'
+$script = Join-Path $repo 'CGX\PrintSpace\cgx_review_lens_compiler.py'
+$python = 'D:\LightSpeed\Environment\Scripts\python.exe'
+& $python $script --lightspeed-root $light --printspace-root $repo --check
+& $python $script --lightspeed-root $light --printspace-root $repo --output 'C:\Cognigrex\State\Frontier\CGX_Review_Exports\current'
+```
+
+Opening the generated **local file** `index.html` does not install a new app or expose material to LS GO's static listener. Filtering, searching and temporary review-shortlisting happen in the browser; the exported shortlist remains **NOT_APPROVED**. The accompanying receipt records source HEADs, source SHA256 and displayed-asset checksums. Avoid running an unattended build if checkout is dirty, owner source mismatch, endpoint/auth/security holds or an unverified source payload is encountered. Renderer → 4K capture/physical twin and permissioned LightSpeed GO integration remain independent release gates. **Current remote generation and visual check have not passed yet due to host RPC timeout.**
+
 ## Entry points by responsibility
 - **Capability doctrine:** [CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md](CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md) — CAN IF philosophy and process opportunities.
 - **Directional process ontology:** [CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md](CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md) and [PAIRWISE_SEQUENCE_ROUTES_v0_1.json](PAIRWISE_SEQUENCE_ROUTES_v0_1.json) — 14×14 family pairs.
