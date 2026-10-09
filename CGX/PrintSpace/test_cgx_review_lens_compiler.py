@@ -61,5 +61,17 @@ class OfflineCGXReviewTests(unittest.TestCase):
         self.assertEqual(len(rows), 605)
         self.assertEqual(set(meta["source_heads"]), {"LightSpeed", "PrintSpace"})
 
+    def test_guided_review_paths_preserve_one_source_graph(self):
+        self.assertEqual(len(module.TOURS), 4)
+        ids = [tour["id"] for tour in module.TOURS]
+        self.assertEqual(len(ids), len(set(ids)))
+        for tour in module.TOURS:
+            self.assertGreaterEqual(len(tour["steps"]), 4)
+            self.assertEqual(len(set(tour["steps"])), len(tour["steps"]))
+            self.assertTrue(all(kind in module.GROUPS for kind, _id in tour["steps"]))
+        self.assertIn('id="tour"', module.HTML)
+        self.assertIn('function jumpRoute', module.HTML)
+        self.assertIn('source review only', module.HTML)
+
 if __name__ == "__main__":
     unittest.main()
