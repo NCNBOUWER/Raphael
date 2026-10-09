@@ -2,6 +2,7 @@
 from __future__ import annotations
 import sys
 import unittest
+import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -40,6 +41,25 @@ class OfflineCGXReviewTests(unittest.TestCase):
 
     def test_no_fake_twin_geometry(self):
         self.assertIn("No verified graphic is linked", module.HTML)
+
+    def test_real_source_metadata_if_roots_supplied(self):
+        """Optional integration smoke test; intentionally absent on unmounted CI."""
+        light = os.environ.get("CGX_LIGHTSPEED_ROOT")
+        printspace = os.environ.get("CGX_PRINTSPACE_ROOT")
+        if not light or not printspace:
+            self.skipTest("Set CGX_LIGHTSPEED_ROOT/CGX_PRINTSPACE_ROOT for full source smoke")
+        meta, rows = module.compile_data(Path(light), Path(printspace))
+        self.assertIsInstance(meta, dict)
+        self.assertIsInstance(rows, list)
+        self.assertEqual(meta["counts"], {
+            "component": 411,
+            "technology": 81,
+            "product": 80,
+            "printer": 17,
+            "twin": 16,
+        })
+        self.assertEqual(len(rows), 605)
+        self.assertEqual(set(meta["source_heads"]), {"LightSpeed", "PrintSpace"})
 
 if __name__ == "__main__":
     unittest.main()
