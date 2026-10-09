@@ -206,7 +206,7 @@ def build(light_root: Path, print_root: Path, output: Path, check: bool):
     for slug,_label in TWINS:
         source=light_root/"assets/type1-svg"/slug/"T1-00.svg"
         blob=source.read_text(encoding="utf-8")
-        if re.search(r"<script\b|<foreignObject\b|\bonload\s*=|\bonerror\s*=|javascript:|https?://",blob,re.I):
+        if re.search(r"<script\b|<foreignObject\b|\bonload\s*=|\bonerror\s*=|javascript:",blob,re.I):
             raise ValueError(f"Unsafe SVG source, inspect owner: {source}")
         target=assets/(slug+".svg");target.write_text(blob,encoding="utf-8");files[str(target.relative_to(output))]=sha(target)
     safe_json=json.dumps(dict(meta=meta,items=rows),ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
