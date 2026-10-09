@@ -14,6 +14,24 @@ from urllib.parse import quote
 SOURCE = Path(__file__).resolve().parents[2]
 PRINT = Path(__file__).resolve().parent
 GROUPS = ("component", "technology", "product", "printer", "twin")
+TOURS = (
+    {"id": "diode-to-device", "name": "Diode → integrated devices", "steps": (
+        ("component","CGA-D-001"), ("component","CGA-R-001"), ("component","CGA-C-001"),
+        ("component","CGA-L-001"), ("component","CGA-IC-055"), ("component","CGA-E-008"),
+        ("component","CGA-RF-041"), ("product","FW-01"), ("product","FU-01"))},
+    {"id": "printceptor-first-article", "name": "PrintCeptor → Butter Bot", "steps": (
+        ("printer","CGX-PC-FAM-PC0"), ("product","FO-01"), ("printer","CGX-PC-FAM-PCA"),
+        ("printer","CGX-PC-FAM-EVD"), ("printer","CGX-PC-FAM-PRO"), ("printer","CGX-PC-FAM-MIC"))},
+    {"id": "earth-to-intersol", "name": "Solar Hull → Mark → Luke → InterSol", "steps": (
+        ("component","CGA-E-017"), ("product","FR-04"), ("twin","TWIN-SOLAR-HULL"),
+        ("product","FR-01"), ("product","FR-02"), ("twin","TWIN-MARK-III"),
+        ("product","FR-03"), ("product","FR-07"), ("product","FR-08"),
+        ("twin","TWIN-LUKE-FAMILY"), ("twin","TWIN-INTERSOL"))},
+    {"id": "circular-civil", "name": "Recovery → Eco → civil systems", "steps": (
+        ("printer","CGX-PC-FAM-REC"), ("twin","TWIN-SECOND-CYCLE"),
+        ("twin","TWIN-EMBEDDED-BIO-BLOCKS"), ("twin","TWIN-WATCHTOWER"),
+        ("twin","TWIN-M1-ELEVATED-BYPASS"))},
+)
 TWINS = (
     ("solar_hull", "Solar Hull"),
     ("free_flow_batteries", "Free Flow Batteries"),
@@ -116,6 +134,11 @@ def compile_data(light_root: Path, print_root: Path):
     if counts != expect: raise ValueError(f"Drift/partial source import: {counts}, expected {expect}")
     keys=[(row["kind"],row["id"]) for row in data]
     if len(keys)!=len(set(keys)): raise ValueError("Duplicate within namespace")
+    present = set(keys)
+    for tour in TOURS:
+        for kind, object_id in tour["steps"]:
+            if (kind, object_id) not in present:
+                raise ValueError(f"Unbound review route {tour['id']}: {kind}:{object_id}")
     meta = dict(schema="CGX-REVIEW-LENS-OFFLINE/0.1", state="READ_ONLY_DERIVED_NOT_CANON",
         created_by="cgx_review_lens_compiler.py", counts=counts,
         source_heads={"LightSpeed":lshead,"PrintSpace":pshead},
@@ -140,14 +163,33 @@ main{display:grid;grid-template-columns:minmax(370px,40%) 1fr;max-height:calc(10
 @media print{header,.catalog,.actions{display:none}main{display:block}.inspect{padding:0}.preview{max-height:none}.preview img{max-height:none}body{background:#fff;color:#111}.field{background:#fff;color:#111}}
 </style></head><body>
 <header><div><div class="eyebrow">COGNIGREX / TECHNICAL REVIEW</div><h1>CGX Object & Family Atlas</h1><small>Identity → source → geometry → environment → evidence → review · Not a production authorisation</small></div><div><span class="pill" id="allCount"></span><span class="pill">Source-bound / local-only</span></div></header>
-<main><section class="catalog"><div class="row"><input id="search" aria-label="Search CGX objects" placeholder="Find diode, capacitor, PrintCeptor, Mark III, Luke…" autofocus><select id="family" aria-label="Object family"><option value="">All families</option></select></div><div class="row" id="types"></div><div class="row"><small id="resultCount"></small><small id="shortlistCount"></small></div><div class="objects" id="items" aria-label="Object cards"></div></section>
+<main><section class="catalog"><div class="row"><input id="search" aria-label="Search CGX objects" placeholder="Find diode, capacitor, PrintCeptor, Mark III, Luke…" autofocus><select id="family" aria-label="Object family"><option value="">All families</option></select></div><div class="row" id="types"></div>
+<div class="row"><select id="tour" aria-label="Guided source-linked review"><option value="">Guided review route…</option></select><button id="tourPrev" title="Previous verified source object">◀ Route</button><button id="tourNext" title="Next verified source object">Route ▶</button><small id="tourStep">Select a route to navigate its source records</small></div><div class="row"><small id="resultCount"></small><small id="shortlistCount"></small></div><div class="objects" id="items" aria-label="Object cards"></div></section>
 <section class="inspect"><div class="eyebrow" id="cat">SOURCE-LINKED COMPONENT</div><h2 id="name">Select an object</h2><div class="row low"><span class="pill" id="key"></span><span class="pill" id="badge"></span></div><p class="muted" id="description"></p><div class="preview" id="preview"></div><div class="actions"><button id="add">Add to review shortlist</button><button id="export">Show draft shortlist</button><button id="prev">◀ Previous</button><button id="next">Next ▶</button></div><textarea id="exportBox" aria-label="Review shortlist draft"></textarea><div class="fields" id="fields"></div><div class="section"><div class="eyebrow">Evidence ceiling and release gates</div><p class="notice" id="hold"></p><p class="muted">This interface cannot approve objects, advance a DBR, claim measured geometry or command a physical printer. Use existing CGX owner/LightSpeed authority gates.</p></div><div class="section"><div class="eyebrow">Native source provenance</div><p id="source"></p><small id="hashes"></small></div></section></main>
 <script id="data" type="application/json">__PAYLOAD__</script>
 <script>
 "use strict";
-const payload=JSON.parse(document.getElementById("data").textContent),items=payload.items;
+const payload=JSON.parse(document.getElementById("data").textContent),items=payload.items,routes=payload.routes||[];
 const $=id=>document.getElementById(id), chosen=new Set();
-let visible=items,selected=0,kind="all";
+let visible=items,selected=0,kind="all",activeRoute=null,routeIndex=0;
+for(const route of routes){const option=document.createElement("option");option.value=route.id;option.textContent=route.name+" ("+route.steps.length+" steps)";document.getElementById("tour").appendChild(option)}
+function jumpRoute(target){
+ if(!activeRoute)return;
+ routeIndex=(target+activeRoute.steps.length)%activeRoute.steps.length;
+ const step=activeRoute.steps[routeIndex];
+ kind=step.kind;document.getElementById("search").value="";document.getElementById("family").value="";
+ update();
+ const index=visible.findIndex(item=>item.kind===step.kind&&item.id===step.id);
+ if(index<0){text("tourStep","Source unavailable — route held");return}
+ selected=index;render();
+ text("tourStep",(routeIndex+1)+"/"+activeRoute.steps.length+" · "+step.id+" · source review only");
+}
+document.getElementById("tour").addEventListener("change",event=>{
+ activeRoute=routes.find(route=>route.id===event.target.value)||null;
+ if(activeRoute)jumpRoute(0);else text("tourStep","Select a route to navigate its source records");
+});
+document.getElementById("tourPrev").addEventListener("click",()=>jumpRoute(routeIndex-1));
+document.getElementById("tourNext").addEventListener("click",()=>jumpRoute(routeIndex+1));
 const types=[["all","All"],["component","Components"],["technology","Technologies"],["product","Products"],["printer","PrintCeptor"],["twin","System twins"]];
 for(const [id,label] of types){let b=document.createElement("button");b.textContent=label;b.onclick=()=>{kind=id;update()};b.dataset.kind=id;$("types").appendChild(b)}
 $("allCount").textContent=items.length+" records · 5 namespaces";
@@ -209,7 +251,7 @@ def build(light_root: Path, print_root: Path, output: Path, check: bool):
         if re.search(r"<script\b|<foreignObject\b|\bonload\s*=|\bonerror\s*=|javascript:",blob,re.I):
             raise ValueError(f"Unsafe SVG source, inspect owner: {source}")
         target=assets/(slug+".svg");target.write_text(blob,encoding="utf-8");files[str(target.relative_to(output))]=sha(target)
-    safe_json=json.dumps(dict(meta=meta,items=rows),ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
+    safe_json=json.dumps(dict(meta=meta,items=rows,routes=[{"id":t["id"],"name":t["name"],"steps":[{"kind":k,"id":i} for k,i in t["steps"]]} for t in TOURS]),ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
     viewer=output/"index.html";viewer.write_text(HTML.replace("__PAYLOAD__",safe_json),encoding="utf-8")
     receipt=dict(meta,artifact="OFFLINE_LOCAL_REVIEW_ONLY",item_total=len(rows),files={**files,"index.html":sha(viewer)},safety="Local file only, no served dist/public CYC upload, approval, machine or root write.",target=str(output))
     (output/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
