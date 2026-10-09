@@ -121,7 +121,7 @@ def compile_data(light_root: Path, print_root: Path):
         source_heads={"LightSpeed":lshead,"PrintSpace":pshead},
         source_sha256={key:sha(path) for key,path in sources.items()},
         claims="No source CAD changed; concept SVG does not imply physical accuracy; no owner approvals are written.",
-        operator_review="Local shortlist is a draft selection only; authority and DBR acceptance require the existing CGX owner."),
+        operator_review="Local shortlist is a draft selection only; authority and DBR acceptance require the existing CGX owner.")
     return meta,data
 
 HTML = r'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
