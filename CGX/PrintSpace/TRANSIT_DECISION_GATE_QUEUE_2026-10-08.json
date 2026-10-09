@@ -887,5 +887,42 @@
         "G15"
       ]
     }
+  },
+  "next_week_review_sprint_20261012": {
+    "period": "2026-10-12/2026-10-18",
+    "work_packet": "CGX/PrintSpace/NEXT_WEEK_CGX_REVIEW_SPRINT_2026-10-12.json",
+    "status": "PROPOSED_NEXT_WEEK_DELIVERY_PLAN_REVIEW_ONLY",
+    "implementation": "REUSE_EXISTING_CGX_REVIEW_LENS_COMPILER_AND_LS_GO_FAMILIES",
+    "outputs": [
+      "source/geometry/rights reconciliation",
+      "source-hashed private 4K when CAD exists",
+      "LS GO family-to-component navigation",
+      "scoped variable review",
+      "non-authoritative DBR-backed approve/hold draft",
+      "Bootstrap PrintCeptor and Butter Bot proof reductions",
+      "week-end factual closure"
+    ],
+    "existing_gate_ids": [
+      "G00",
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15"
+    ],
+    "automation_policy": "Use Neo/R2/R3/Achilles existing hourly queue and already-present local watchers; single Oct16 user-facing report only, no duplicate dispatcher or independent Hour_ID/Queue_ID.",
+    "hold": "Last BouwerBase RPC timed out; no current host/local test/readback claim. Never expose INTERNAL_REVIEW_LOCAL through public static routes, and do not alter Documents/root/other owners.",
+    "new_architecture": false,
+    "device_credentials": "DO_NOT_COPY_OR_INCLUDE"
   }
 }
