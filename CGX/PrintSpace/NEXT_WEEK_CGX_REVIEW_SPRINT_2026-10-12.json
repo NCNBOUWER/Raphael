@@ -1,0 +1,255 @@
+{
+  "schema": "cgx.printspace.next_week_review_sprint.v0.1",
+  "calendar": {
+    "timezone": "Australia/Brisbane",
+    "starts": "2026-10-12",
+    "ends": "2026-10-18"
+  },
+  "state": "NEXT_WEEK_REVIEW_WORKLOAD_NOT_A_CLAIM_OF_EXECUTION",
+  "user_intent": "Create coherent, source-driven internal interactive review of electronics→functional stacks→PrintCeptor→Römer, Eco, EMASSC→Mark/Luke/InterSol, with high-fidelity media where exact geometry exists, and continue software proof across all domains via existing CGX/LightSpeed owners and automations.",
+  "immutables": {
+    "source_owner_rule": "Consume latest exact authoritative Git/Drive/CGX root references; derivative views never rewrite source, licenses, geometry, safety, DBR or root authority.",
+    "single_runtime": "Use existing LightSpeed GO, Achilles P.A, LightSpeed operations, Quests and CGX resolver; no second CGX catalogue/master/agent/heartbeat.",
+    "schedule": "Neo :00; R1 :11 intentionally disabled; R2 :22 fallback; R3 :33; Achilles :44. Existing local Merovingian and Windows guard remain sole local schedules. No changes to their cadence.",
+    "host": "BouwerBase currentness/readback and owner permissions verified before any local mutation. RPC timeout => HOST_UNAVAILABLE_HOLD and provider-only task. Never touch Windows Documents.",
+    "security": "Internal review media must remain under authenticated/private CGX review root; never copy into public/, dist/ or static without separately accepted access control. No credential values in artifacts.",
+    "scientific": "Evidence class distinguishes published measured/qualified source, derived physics, simulated/synthetic, analogue, concept, unknown and physical NOT_RUN. Geometry does not prove material, rating or full 4D acceptance.",
+    "privacy": "Personal contexts and CGX family Dataspace are access-scoped, never bulk hydrated, exfiltrated or included in shared review previews.",
+    "owner_gate": "Changes to Raphael UTP PR5, Data PostMix PR11, LightSpeed canonical, CGX S92 and public CCC/CYC require their independent owner operations; this packet lives only in PrintSpace PR6."
+  },
+  "reuse": {
+    "compiler": "CGX/PrintSpace/cgx_review_lens_compiler.py",
+    "compiler_tests": "CGX/PrintSpace/test_cgx_review_lens_compiler.py",
+    "hydration": "CGX/PrintSpace/PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json",
+    "queue": "CGX/PrintSpace/TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json",
+    "first_article": "CGX/PrintSpace/PRINTCEPTOR_FIRST_BUTTERBOT_ARTICLE_V0_1.json",
+    "source_inventory_targets": [
+      {
+        "category": "component_archetypes",
+        "expected_reference_count": 411,
+        "owner": "CGX atlas Drive / LightSpeed Git mirror",
+        "not_a_promise": "Not 411 physically proven components"
+      },
+      {
+        "category": "technology_classes",
+        "expected_reference_count": 81,
+        "owner": "CGX PT source",
+        "not_a_promise": "Legacy and extended PT types may overlap with products"
+      },
+      {
+        "category": "proposed_products",
+        "expected_reference_count": 80,
+        "owner": "PrintSpace owner",
+        "not_a_promise": "Proposed not commercial releases"
+      },
+      {
+        "category": "printer_families",
+        "expected_reference_count": 17,
+        "owner": "PrintSpace CGX UTP scoped ref",
+        "not_a_promise": "Design coverage not 17 physical devices"
+      },
+      {
+        "category": "existing_engineering_twins",
+        "expected_reference_count": 16,
+        "owner": "Existing OBJ/mesh source inventory",
+        "not_a_promise": "Verify exact files/hashes and do not create phantom geometry"
+      },
+      {
+        "category": "scalable_svg_source_assets",
+        "expected_reference_count": 128,
+        "owner": "Type-I source existing SVG assets",
+        "not_a_promise": "Only counted after exact source/revision check"
+      },
+      {
+        "category": "function_basis",
+        "expected_reference_count": 17,
+        "owner": "Raphael UTP G1",
+        "not_a_promise": "Target acceptance categories; first printer not qualified"
+      }
+    ],
+    "existing_matrix": "411 archetypes × 60 owner properties × 20 primitive equation kernels × 40 volumetric kernels × 16 directional interface operators × process sequence × state/evidence; do not materialize a quadratic Cartesian mega catalog"
+  },
+  "week_tasks": [
+    {
+      "id": "WK42-01",
+      "date": "2026-10-12",
+      "owner": "Neo→PrintSpace source review",
+      "existing_gates": [
+        "G00",
+        "G01",
+        "G02"
+      ],
+      "goal": "Fresh provider/host/source authority; compare latest atlas/type/asset inventories to existing review compiler; mark host outages as held",
+      "deliverable": "Currentness receipt: exact checked revision, object refs, held mismatch and minimal next proof",
+      "admission": "Read only; no root mutations",
+      "done_when": "One verified source owner list and exact counts; missing source must be UNKNOWN not guessed"
+    },
+    {
+      "id": "WK42-02",
+      "date": "2026-10-13",
+      "owner": "R2/PrintSpace compiler with CGX Atlas/Raphael evidence",
+      "existing_gates": [
+        "G02",
+        "G04",
+        "G14"
+      ],
+      "goal": "Bind actual component→diode/RCL/sensors/capacitors/batteries→stack family and corresponding approved source/geometry/chemistry/4D evidence",
+      "deliverable": "Per-item provenance/hash/evidence class and SVG/mesh-availability matrix for each source-supported item",
+      "admission": "Source/owner same graph; no new solver or duplicate atlas",
+      "done_when": "At least one deterministic category traversal end-to-end tested, not fabricated render"
+    },
+    {
+      "id": "WK42-03",
+      "date": "2026-10-14",
+      "owner": "R2/R3 on existing local render plane",
+      "existing_gates": [
+        "G06",
+        "G11",
+        "G14"
+      ],
+      "goal": "Proof render one or more geometry-promoted source assets at 3840x2160 and generate thumbnails and source-hash receipts; geometry missing=>status card",
+      "deliverable": "Internal-only hashed technical media with source geometry, transforms, physical state evidence and aesthetic overlay separated",
+      "admission": "Private authenticated output; renderer/tool available; evidence ceiling never raised by pixels",
+      "done_when": "Exact source→view→render→hash/readback test or justified GEOMETRY_NOT_PROMOTED hold"
+    },
+    {
+      "id": "WK42-04",
+      "date": "2026-10-15",
+      "owner": "LightSpeed frontend owner/PrintSpace consumer",
+      "existing_gates": [
+        "G09",
+        "G12",
+        "G14"
+      ],
+      "goal": "Game-like scrollable object/family navigation from diode to consumer appliances, PrintCeptor, Eco, Römer/Mark/Luke/InterSol with sparse→deep hydration and no source leakage",
+      "deliverable": "Existing LS GO/Achilles/Quests UI compatibility contract: family, typed route, object preview, evidence, change choices",
+      "admission": "Use existing UI. No fourth surface or unauthorised CGX bridge endpoint.",
+      "done_when": "One accessible clickthrough test on source-linked data or exact held binding"
+    },
+    {
+      "id": "WK42-05",
+      "date": "2026-10-16",
+      "owner": "Achilles gate/LS GO owner",
+      "existing_gates": [
+        "G08",
+        "G14",
+        "G15"
+      ],
+      "goal": "Approval UX from source item, selectable parametric variables, draft change preview, scope/owner validation, digital readback and DBR receipt",
+      "deliverable": "Fail-closed dry-run approve/hold/reject/needs-evidence packet and receipts without canonical mutation",
+      "admission": "Credential authentication, owner authority, safe scope; no launch/physical approval",
+      "done_when": "Evidence/receipt chain validated and reviewer can tell provisional vs released"
+    },
+    {
+      "id": "WK42-06",
+      "date": "2026-10-17",
+      "owner": "CGX/UTP/PostMix and PrintSpace scoped",
+      "existing_gates": [
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G10",
+        "G13"
+      ],
+      "goal": "Resolve one strongest representative process/functional gap for Bootstrap PrintCeptor and first Butter Bot, with circular material Post-Mix paths; public/space variants remain digital intent",
+      "deliverable": "Exact source-model/BOM/tool/mass/energy/quantity/calibration unknown ledger and bounded safe test plan",
+      "admission": "Digital R&D only; no manufacturing until specific physical gate",
+      "done_when": "One measurable reduction in unknowns or a proven hold"
+    },
+    {
+      "id": "WK42-07",
+      "date": "2026-10-18",
+      "owner": "Neo/R3/Achilles periodic closure",
+      "existing_gates": [
+        "G00",
+        "G01",
+        "G14",
+        "G15"
+      ],
+      "goal": "Week-end retrospective: no-dup audit, best next-phase proofs, user-visible LS GO review readiness and internal 4K proof inventory",
+      "deliverable": "Small review receipt: completed vs held, exact source hashes, number of valid linked models/renders, unresolved owner gates, next work week",
+      "admission": "No arbitrary backlog mass closure, no snapshot-to-canon promotion",
+      "done_when": "Verified source/host readback and explicit owner handoff"
+    }
+  ],
+  "review_ui_contract": {
+    "primary_surfaces": [
+      "Achilles Personal Assistant",
+      "LightSpeed Operations",
+      "Quests"
+    ],
+    "navigation": [
+      "family",
+      "technology",
+      "component",
+      "stack",
+      "assembly",
+      "device",
+      "infrastructure",
+      "space"
+    ],
+    "fields": [
+      "CGX Object_ID",
+      "family",
+      "native source ref",
+      "revision/hash",
+      "geometry availability",
+      "material/process/operation evidence",
+      "state timeline",
+      "qualification ceiling",
+      "unknowns",
+      "user choices",
+      "owner-approved commit scope",
+      "DBR reference"
+    ],
+    "interactions": [
+      "scroll/browse",
+      "filter",
+      "inspect",
+      "expand dependency/hydrate as needed",
+      "select design variables",
+      "draft private rendering request",
+      "approve/hold/request proof with genuine authorized owner action"
+    ],
+    "palette": "Dark-neutral base, teal interface primary, green verified source/software, gold provisional/inferred, red blocked/safety. Never infer functional material specifications from colors.",
+    "rendering": "High fidelity and 4K dimensions conditional on actual promoted CAD/mesh and local rendering budget; SVG technical diagrams already existing should be reused."
+  },
+  "readiness_gates": [
+    {
+      "gate": "RG-01",
+      "blocker": "Exact device/head freshness & timed-out local RPC",
+      "classification": "HOLD_UNTIL_HOST_RETURN"
+    },
+    {
+      "gate": "RG-02",
+      "blocker": "Authenticated CGX private media delivery; public-path access control",
+      "classification": "SAFETY_SECURITY_HOLD"
+    },
+    {
+      "gate": "RG-03",
+      "blocker": "Approved source geometry and brand/3rd-party license for certain products",
+      "classification": "SOURCE_RIGHTS_HOLD"
+    },
+    {
+      "gate": "RG-04",
+      "blocker": "Live LS GO project/selection/DBR UI contract and signed approval action",
+      "classification": "OWNER_UI_HOLD"
+    },
+    {
+      "gate": "RG-05",
+      "blocker": "Measured 4D, process material interface, chamber and Printer-μ qualification",
+      "classification": "PHYSICAL_NOT_RUN"
+    },
+    {
+      "gate": "RG-06",
+      "blocker": "Multiple independent PR source owners and canonical CGX S92 launch gates",
+      "classification": "OTHER_OWNER_AUTHORITY"
+    },
+    {
+      "gate": "RG-07",
+      "blocker": "Auth/credential source code changes and recovery",
+      "classification": "EXCLUDED_FROM_VISUAL_SCOPE_NO_SECRETS"
+    }
+  ]
+}
