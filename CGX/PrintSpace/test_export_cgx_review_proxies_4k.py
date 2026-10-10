@@ -14,7 +14,7 @@ class ReviewProxyFourKTests(unittest.TestCase):
         self.assertEqual((source.WIDTH, source.HEIGHT), (3840, 2160))
         document = source.wrapper("mark_iii", "../assets/mark_iii.svg")
         self.assertIn("INTERACTION PROXY", document)
-        self.assertIn("NOT DIMENSIONED CAD", document)
+        self.assertIn("NOT VERIFIED AS-BUILT CAD", document)
         self.assertIn("connect-src 'none'", document)
         self.assertIn("../assets/mark_iii.svg", document)
 
