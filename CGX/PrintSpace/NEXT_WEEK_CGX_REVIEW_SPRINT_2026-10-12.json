@@ -360,5 +360,130 @@
       "Render photoreal source-approved material/design variants only after true CAD geometry, process/window/lot material and IP/owner license bind; for missing geometry show explicit no-render gate.",
       "Retain independently running Neo :00, R2 :22, R3 :33, Achilles :44; no duplicate watch or R1 revival."
     ]
+  },
+  "type1_digital_release_cutline_20261010": {
+    "schema": "cgx.printspace.type1_digital_evidence_cutline.v0.1",
+    "type": "OWNER_REVIEW_DERIVATIVE_OF_EXISTING_TYPE1_OPERATIONS_SYSTEMS_ROMER_ECO_AND_LSGO_CGX_NO_NEW_CANON",
+    "status": "CONDITIONAL_PRIVATE_DIGITAL_REVIEW_READY; AUTHENTICATED_CROSS_FAMILY_RELEASE_HELD; PUBLIC_OUTREACH_CLAIMS_HELD",
+    "definition": "A Type-I digital research/engineering platform is considered internally demonstrable when user can traverse source-backed domain objects, evidence-labelled candidate/simulation outputs, approved 2D/3D/4D representations, owner-scoped interactions, and reproducible receipt lineage in a secure interface. This does not establish physically realised Type-I capability, mission readiness, verified new physical effects, or regulatory safety.",
+    "source_snapshot": {
+      "printspace_review_branch": "31b1fd7127edba6bdb253564bab4798b0588110f",
+      "lightSpeed_local_checkout": "4dabcb4647825ab4e7d7cf67e53225a82ee3402c",
+      "lightSpeed_local_origin_main": "0884a000e25a7b002c67d863fa4825a143fb0b3a",
+      "lightSpeed_index_lock": "PRESENT; update fast-forward failed; multiple co-running PowerShell/Git audit candidates present; no forced lock removal",
+      "printspace_checkout": "FF_ONLY_SYNC_PASS; tests 80 run, 79 PASS, one optional smoke SKIP",
+      "local_services": "127.0.0.1:8080/4173/8765/11434 HTTP 200 at inspection",
+      "atlas": "411 archetypes; 64 functional/4D operators; 61 geometry families; 75 interactions, as source snapshot",
+      "private_review": "CGX 605-object private offline inspector, receipt local verified; 16 × 3840x2160 private design/review proxies with receipt; not qualified native CAD",
+      "five_surface_native_workbooks": "Type1 Operations, Systems, Romer, Eco and Achilles PA; treat Drive as source owner, not new parallel PrintSpace workbook",
+      "systems_outreach_source": "Type 1 Systems Cognigrex: OUTREACH TECHNICAL EVIDENCE MATRIX + OBJECT/DATUM APPENDIX + MILESTONE APPLICATION FACT MATRIX + TECHNICAL ATTACHMENT/PROVENANCE MANIFEST and residual family addendum",
+      "host_local_recheck": "2026-10-10 BouwerBase online; source heads are historical observations, must reread before release or deployment"
+    },
+    "exit_conditions": [
+      {
+        "id": "TI-D01",
+        "domain": "source_alignment",
+        "state": "HOLD",
+        "owner": "Neo/R2/Achilles + LightSpeed",
+        "missing": "Clean, exact provider/local + CGX S92/root/DBR/Drive owner readback. LightSpeed local index.lock and source pointer drift cannot be ignored.",
+        "pass": "No surprise edits; exact branch/state/root/receipt hashes verified, index.lock owner identified and handled by active process/owner."
+      },
+      {
+        "id": "TI-D02",
+        "domain": "corpus_translation",
+        "state": "SOURCE_TRANSLATION_ADVANCED_VERIFIED_NOT_ALL_SEMANTICS_QUALIFIED",
+        "owner": "Type1 5 Drive workbook owners",
+        "missing": "Check current per-family semantic claims, content/provenance coverage and contradictions against versioned source; avoid new master.",
+        "pass": "Five existing native source surfaces and stable identities map to review projections without duplicate source copy; missing fields remain explicit."
+      },
+      {
+        "id": "TI-D03",
+        "domain": "private_cgx_user_review",
+        "state": "PRIVATE_OFFLINE_VIEW_READY; AUTHENTICATED_GO_REVIEW_HELD",
+        "owner": "LightSpeed UI/CGX owner",
+        "missing": "LS GO Objects review deploy + navigation/backlinks/roles + exact source/DBR admission. Local 605 HTML is fallback, not active shared service.",
+        "pass": "Operator can navigate from one LS GO entry to 411 types + 81 tech + 80 products + 17 printers +16 twins with correct source/evidence and deny unauthorised scopes."
+      },
+      {
+        "id": "TI-D04",
+        "domain": "representation_fidelity",
+        "state": "DESIGN_PROXY_REVIEW_READY; NATIVE_PHYSICAL_GEOMETRY_PARTIAL",
+        "owner": "Raphael/CGX Atlas/EMASSC/Eco owners",
+        "missing": "True source CAD, parametric transforms, unit/tolerance/material and licence basis for target high-fidelity item; do not treat 4K pixels as proof.",
+        "pass": "Selected product has source-identifiable parametric geometry, validated mathematical constraints or clear GEOMETRY_NOT_PROMOTED, owner-approved 4K render with measurement-independent design-layer branding."
+      },
+      {
+        "id": "TI-D05",
+        "domain": "deterministic_engineering_proof",
+        "state": "SOFTWARE_REGRESSION_PASS; PHYSICAL_RESEARCH_NOT_RUN",
+        "owner": "UTP PR5/PostMix PR11/CGX typeI owner",
+        "missing": "Selected process/material/temperature/power/provenance and canonical UTP-143/UTP-141 interface decisions; empirical proof for actual physical claim.",
+        "pass": "Numerical calculation exact source and unit, test vectors, second proof check, uncertainty/negative cases, and evidence class; no mock upgrade to physical result."
+      },
+      {
+        "id": "TI-D06",
+        "domain": "review_decision_to_dbr",
+        "state": "GATE_OPEN",
+        "owner": "Achilles/LightSpeed/CGX DBR",
+        "missing": "Authenticated scoped approve/hold/reject/needs-evidence with durable accepted DBR and readback; no simulated approval writes to canon.",
+        "pass": "End-to-end selection→preview→review→authority check→append receipt→integrity readback→rollback/hold test."
+      },
+      {
+        "id": "TI-D07",
+        "domain": "static_asset_and_privacy_security",
+        "state": "RELEASE_HOLD",
+        "owner": "LightSpeed issue 158 and CGX/CCC security",
+        "missing": "Identify PUBLIC_SAFE subset and block exposure of private atlas/source paths in Vite public/dist. Bounded live unauthenticated localhost probes were 404 on two JSON routes, not a complete authorisation audit.",
+        "pass": "Tests of unauthenticated, revoked, valid scoped session, path traversal, image/metadata access and deployed dist, explicit release tier and owner approval."
+      },
+      {
+        "id": "TI-D08",
+        "domain": "build_local_installed_deploy",
+        "state": "PARTIAL_HOST_READY_HOLD",
+        "owner": "LightSpeed owner / Merovingian",
+        "missing": "Canonical checkout one commit behind, index.lock active; installed GO release and actual logged runtime not proven current Git head.",
+        "pass": "Clean owner-approved source→tested build→installed artifact hash→endpoint/status/e2e smoke/rollback chain."
+      },
+      {
+        "id": "TI-D09",
+        "domain": "public_technical_outreach",
+        "state": "OWNER_REVIEW_HOLD",
+        "owner": "Achilles/EMASSC/Römer plus source custodians",
+        "missing": "Choose recipient tier and accepted claim-safe case studies, third party CAD/image/source licence, current technical appendices, team/partner roles.",
+        "pass": "Signed PUBLIC / TECHNICAL REVIEW / NDA-controlled package manifest with current source revisions, falsifiable claim boundaries and explicit NOT_RUN physical fields; no unauthorised external send."
+      },
+      {
+        "id": "TI-D10",
+        "domain": "first_IRL_print_and_research",
+        "state": "PHYSICAL_EXECUTION_NOT_RUN_SEPARATE_PROGRAMME",
+        "owner": "Römer/PrintSpace/engineering reviewers",
+        "missing": "Exact owner inventory and first hardware BOM, costs and funded equipment, site/environment safety, professional review, partner signed agreements.",
+        "pass": "Safe commissioned PrintCeptor-0 seed and instrumented first coupon/ButterBot sequence under distinct hardware/WHS/gas/electrical/rights authority, not digital exit requirement."
+      }
+    ],
+    "outreach_tiers": {
+      "internal": "Current 605 review viewer and private 4K design previews only; use on founder host with no publication.",
+      "technical_under_review": "Claim-safe architecture/source/CAD/evidence methods and a proposed physics/material test plan, no claims of realised new physical effects or qualified space systems; recipient-approved controlled transfer.",
+      "public": "Only explicitly PUBLIC_SAFE, verified/licensed, privacy-reviewed materials after Achilles/EMASSC and source owner publication gate. Independent peer reviews welcome, not implicit endorsement.",
+      "controlled_NDA": "Detailed proprietary manufacturing interfaces, mission modules, partner site work, unresolved safety/security and owner-restricted records stay restricted."
+    },
+    "crosslane_action_reuse": {
+      "neo": "Use existing :00 Hour_ID/Queue_ID, exact currentness, dispatch at most Q1..Q3; recognise PrintSpace branch as reference rather than new job queue.",
+      "R2": "Existing :22 fallback challenges one smallest G01/TI-D07/TI-D06 proof; do not merge without release authority.",
+      "R3": "Existing :33 integrates verified sibling-delta source refs and anti-duplication; separate technology model state from geometry/proxy.",
+      "Achilles": "Existing :44 checks signed/authority acceptance, exact SOURCE→VIEW→ACTION→DBR readback, decides PUBLIC/TECH/NDA tiers.",
+      "PrintSpace": "Existing PR6 owner edits only; no manual global CGX root mutation, no source-owner workbook rewrite, no physical actuation.",
+      "LightSpeed": "Use existing issue 158 and draft PR 152/153/155 for secure view, evidence-limited execution and Type I voxel basis; do not assume merged."
+    },
+    "release_decision_needed_from_founder": "Approve claim-safe TECHNICAL_REVIEW outreach before physical qualification, scoped to a first university/industry reviewer selected by founder, with no public media/patent claims or live device operation; if yes, source owners still approve package and recipient selection.",
+    "restrictions": [
+      "No new master workbook",
+      "No public release before owner/IP/security signoff",
+      "No use of credentials in repo or communication",
+      "No physical claims from review proxies",
+      "Do not delete active Git index.lock or kill unknown co-running processes",
+      "Windows Documents and CGX root unchanged",
+      "No false all-Type-I-complete status"
+    ]
   }
 }
