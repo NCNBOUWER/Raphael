@@ -48,6 +48,25 @@ class ReviewProxyFourKTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "drift"):
                 source.validate_receipt(root)
 
+    def test_derived_geometry_has_distinct_evidence_ceiling(self):
+        with TemporaryDirectory() as temp:
+            path = Path(temp) / "watchtower.svg"
+            path.write_text(
+                '<svg data-representation-class="SOURCE_DERIVED_GEOMETRY" '
+                'data-dimension-authority="DERIVED_MODEL_ENVELOPE_ONLY" '
+                'data-source-binding-state="COMMITTED_DERIVATION_RECEIPT" '
+                'data-release-eligible="false"></svg>',
+                encoding="utf-8",
+            )
+            e = source.svg_evidence(path)
+            self.assertEqual(e["dimension_authority"], "DERIVED_MODEL_ENVELOPE_ONLY")
+            self.assertIn("DERIVED MODEL ENVELOPE ONLY",
+                          source.wrapper("watchtower", "../assets/watchtower.svg", e))
+            path.write_text(path.read_text().replace('data-release-eligible="false"',
+                                                    'data-release-eligible="true"'))
+            with self.assertRaises(ValueError):
+                source.svg_evidence(path)
+
     def test_unqualified_svg_is_held(self):
         with TemporaryDirectory() as temp:
             root = Path(temp)
@@ -62,7 +81,7 @@ class ReviewProxyFourKTests(unittest.TestCase):
                           for name in source.ALLOWED},
             }
             (root / "receipt.json").write_text(json.dumps(receipt), encoding="utf-8")
-            with self.assertRaisesRegex(ValueError, "Not a declared"):
+            with self.assertRaisesRegex(ValueError, "Not an accepted"):
                 source.validate_receipt(root)
 
 
