@@ -283,7 +283,7 @@
     },
     "proof": {
       "source_bound_compiler": "PASS",
-      "local_regression": "80 PASS, 1 optional source-smoke SKIPPED for final exporter run; separate full source-smoke 75 PASS earlier",
+      "local_regression": "80 tests run: 79 PASS, 1 optional source-smoke SKIPPED; earlier distinct 75 test full-source regression passed",
       "raster_dimensions": "16/16 exactly 3840x2160",
       "raster_manifest_sha256": "16/16 match",
       "visual_not_flat_check": "16/16 non-flat",
