@@ -1,0 +1,69 @@
+{
+  "schema": "cgx.printspace.visualize_view_contract.v0.5",
+  "id": "CGX-F4D-VISUALIZE-20261008",
+  "status": "READ_ONLY_REPRESENTATION",
+  "source_branch": "docs/cgx-printspace-capability-first-2026-10-08",
+  "source_dataset": "CGX/PrintSpace/CROSS_GREX_PRODUCT_ATLAS_v0_5.json",
+  "secondary_sources": [
+    "CGX/PrintSpace/CROSS_GREX_SHARED_PRIMITIVES_v0_5.json",
+    "CGX/PrintSpace/CROSS_GREX_GAP_REGISTER_v0_5.json",
+    "CGX/PrintSpace/PRODUCT_ATLAS_TAXONOMY_v0_5.json"
+  ],
+  "project_record_scope": "Represent 80 product archetypes, nine Grex portfolios, UTP 70-class mapping and candidate process paths, without inflating maturity.",
+  "views": [
+    {
+      "id": "portfolio",
+      "functions": [
+        "search",
+        "filter by Grex/domain",
+        "select product",
+        "show domain coverage"
+      ]
+    },
+    {
+      "id": "top_down",
+      "functions": [
+        "functional contract",
+        "UTP components",
+        "hybrid hardware",
+        "acceptance and unresolved evidence"
+      ]
+    },
+    {
+      "id": "bottom_up",
+      "functions": [
+        "material family path",
+        "directional S/T/M transitions",
+        "candidate environment cells",
+        "nonadjacent survival gates"
+      ]
+    },
+    {
+      "id": "reuse",
+      "functions": [
+        "shared PT class counts",
+        "cross-product component intersection"
+      ]
+    },
+    {
+      "id": "gaps",
+      "functions": [
+        "owner",
+        "open gap",
+        "qualification next action"
+      ]
+    }
+  ],
+  "permitted_actions": [
+    "read filter selection",
+    "navigation",
+    "compare candidate requirements"
+  ],
+  "prohibited_actions": [
+    "machine execution",
+    "physical recipe release",
+    "CGX authority transfer",
+    "invent physical validation or supplier metrics"
+  ],
+  "evidence_rule": "Unqualified v0.5 candidate only. View is presentation. Reviews and execution live under existing Grex/CGX owner gates."
+}

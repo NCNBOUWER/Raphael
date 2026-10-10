@@ -1,0 +1,882 @@
+{
+  "schema": "cgx.printspace.parametric_family_registry.v0.1",
+  "generated_date": "2026-10-09",
+  "status": "REVIEWABLE_PRELIMINARY_DESIGN_NOT_AS_BUILT",
+  "scope": "One CGX printer platform family across scales/deployments; no duplicate canonical technology atlas.",
+  "source_authorities": {
+    "cgx": "Cognigrex S92, Type1 Romer geometry atlas (Drive owner); Git mirror",
+    "utp": "Raphael UTP-DESKTOP-001 v0.3, Printer-Mu DAG, PR5 owner",
+    "postmix": "Data PMX-MAT-001 and PMX-CELL-001 PR11 owner",
+    "printspace": "NCNBOUWER/Raphael PR6 PrintSpace",
+    "dbr": "CGX Filespace DBR Owner",
+    "product": "EMASSC IP / Romer-Grex founder approvals"
+  },
+  "glossary": {
+    "printceptor": "proper name for primary evolving creator manufacturing station",
+    "printception": "printer manufacturing its successor and/or contributing functional printer subsystems",
+    "child_printer": "independently controlled CGX individual hosted in a parent station",
+    "bay": "spatially allocated (optionally isolated) resource without independent electronic identity unless equipped",
+    "four_d": "manufactured 3D architecture with designed, verified state changes over time/environment; distinguish smart device responsiveness from intrinsic smart material response",
+    "single_session": "uninterrupted sealed outer manufacturing boundary with internal fully automatic handling"
+  },
+  "units": "mm",
+  "geometry_role": "ILLUSTRATIVE_CONCEPT_ENVELOPES_NOT_DESIGN_OR_SAFETY_LIMITS",
+  "dim_order": "width_x_depth_y_height_z",
+  "roles": [
+    "CGX filespace identity + input manifest",
+    "UTP G1 programme target and real per-unit capability handshake",
+    "postmix material/provenance contract",
+    "C0 deterministic safety; C1 local reasoning optional; C2 network optional",
+    "DBR lifecycle and family relationships",
+    "two-arm seed anchor baseline when machine can mechanically support it"
+  ],
+  "interface_basis": [
+    "process-volume",
+    "toolhead-interface",
+    "nested-workcell-interface",
+    "feed-conditioning",
+    "material/service-cavity",
+    "sensor-metrology",
+    "actuation-control",
+    "CGX capability/DBR"
+  ],
+  "shared_mandatory": "Every platform preserves physical 4D responsive-matter/process research and family interoperability as design objectives; actual installed capabilities limited to verified tools and safety.",
+  "process_family_descriptors": [
+    {
+      "id": "P-MECH",
+      "label": "mechanical additive/subtractive assembly",
+      "qualification": "process-specific"
+    },
+    {
+      "id": "P-CHEM",
+      "label": "Post-Mix reactive/nonreactive feed transformation",
+      "qualification": "measured composition & kinetics"
+    },
+    {
+      "id": "P-FUNC",
+      "label": "conductive/dielectric/optical/magnetic/energy structures",
+      "qualification": "per interface and function"
+    },
+    {
+      "id": "P-ATM",
+      "label": "vacuum/positive/controlled gas internal cells",
+      "qualification": "chamber/gas/safety rated"
+    },
+    {
+      "id": "P-REPAIR",
+      "label": "sort/recover/regenerate/requalify",
+      "qualification": "lot & use-case specific"
+    },
+    {
+      "id": "P-4D",
+      "label": "stimulus-response over time",
+      "qualification": "measured functional delta & ageing"
+    }
+  ],
+  "family_count": 17,
+  "family": [
+    {
+      "id": "CGX-PC-FAM-PC0",
+      "name": "PrintCeptor 0 — Bootstrap",
+      "kind": "bootstrap",
+      "application": "founder-rd",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1400,
+        850,
+        1100
+      ],
+      "inner_envelope_mm": [
+        1064,
+        595,
+        748
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "dual-arm",
+        "qualified-sealed-envelope-target",
+        "open-chamber",
+        "auto-feed",
+        "reconfigurable-partitions",
+        "CGX-offline"
+      ],
+      "use_cases": [
+        "PoC: self-printed noncritical tools",
+        "first complete Butter Bot as integrated sealed print"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-PCA",
+      "name": "PrintCeptor A — Successor",
+      "kind": "successor",
+      "application": "founder-rd",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1400,
+        850,
+        1050
+      ],
+      "inner_envelope_mm": [
+        1064,
+        595,
+        714
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "dual-arm",
+        "sealed-environment",
+        "auto-feed",
+        "nested-child-optional",
+        "self-upgrade"
+      ],
+      "use_cases": [
+        "refined printer manufactured with PC0 where verified"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-EVD",
+      "name": "Everyday Desktop",
+      "kind": "consumer",
+      "application": "home",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        850,
+        550,
+        680
+      ],
+      "inner_envelope_mm": [
+        646,
+        385,
+        462
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "dual-arm-reference",
+        "open-chamber",
+        "auto-feed",
+        "safety-bounded",
+        "expandable"
+      ],
+      "use_cases": [
+        "personal projects",
+        "New Neutrals first products"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-PRO",
+      "name": "Pro Desktop",
+      "kind": "consumer",
+      "application": "pro-maker",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1100,
+        700,
+        900
+      ],
+      "inner_envelope_mm": [
+        836,
+        490,
+        612
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "dual-arm",
+        "open-to-multicell",
+        "tool-swap",
+        "nested-micro",
+        "auto-feed",
+        "controlled-environment-option"
+      ],
+      "use_cases": [
+        "simultaneous functional subassembly manufacture"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning",
+        "independent-child-printer"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-MIC",
+      "name": "Micro Printer Child",
+      "kind": "module",
+      "application": "nested",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        320,
+        260,
+        260
+      ],
+      "inner_envelope_mm": [
+        243,
+        182,
+        177
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "independent-CGX-child",
+        "precision-deposition",
+        "isolatable-microcell"
+      ],
+      "use_cases": [
+        "small sourced/printed inserts and electronics"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "MICRO_WORKCELL",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-SND",
+      "name": "Standalone Precision Desktop",
+      "kind": "specialist",
+      "application": "lab",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        750,
+        650,
+        720
+      ],
+      "inner_envelope_mm": [
+        570,
+        455,
+        490
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "precision",
+        "camera-scan",
+        "thin-film-candidate",
+        "protected-airlock"
+      ],
+      "use_cases": [
+        "sensors",
+        "microelectronic packaging"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-WKS",
+      "name": "Workshop Modular",
+      "kind": "workshop",
+      "application": "business",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1900,
+        1150,
+        1700
+      ],
+      "inner_envelope_mm": [
+        1444,
+        805,
+        1156
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "dual-arm",
+        "tool-rack",
+        "multi-feed",
+        "reconfigurable-bays"
+      ],
+      "use_cases": [
+        "prototyping",
+        "repair",
+        "small production"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-IND",
+      "name": "Industrial Multi-cell",
+      "kind": "industrial",
+      "application": "industrial",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        3200,
+        1850,
+        2500
+      ],
+      "inner_envelope_mm": [
+        2432,
+        1295,
+        1700
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "coordinated-arms",
+        "controlled-atmosphere",
+        "multi-printer",
+        "inspection-cell"
+      ],
+      "use_cases": [
+        "repeatable production with separate evidence gates"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning",
+        "independent-child-printer"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-HEV",
+      "name": "Heavy-material Production",
+      "kind": "industrial",
+      "application": "metals-ceramics",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        3000,
+        1900,
+        2700
+      ],
+      "inner_envelope_mm": [
+        2280,
+        1330,
+        1836
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "thermal-isolation",
+        "hot-process-cell",
+        "feedstock-qualification",
+        "independent-safety"
+      ],
+      "use_cases": [
+        "bounded candidate metal/ceramic processing"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-LRG",
+      "name": "Large Structural Cell",
+      "kind": "scale",
+      "application": "structure",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        6400,
+        3450,
+        3900
+      ],
+      "inner_envelope_mm": [
+        4864,
+        2415,
+        2652
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "traversing-gantry",
+        "dual-arm-option",
+        "modular-panels",
+        "large-fixture"
+      ],
+      "use_cases": [
+        "transport/civil prototype segments"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-ROV",
+      "name": "Roving/In-situ Cell",
+      "kind": "mobile",
+      "application": "field",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1650,
+        1080,
+        1350
+      ],
+      "inner_envelope_mm": [
+        1254,
+        756,
+        918
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "roving-print-head",
+        "mobile-datum",
+        "local-tooling",
+        "environment-conditional"
+      ],
+      "use_cases": [
+        "repair",
+        "on-site assembly",
+        "remote deposition"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "MOBILE_DATUM",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-FLD",
+      "name": "Container/Field Station",
+      "kind": "mobile",
+      "application": "field",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        2500,
+        1500,
+        2100
+      ],
+      "inner_envelope_mm": [
+        1900,
+        1050,
+        1428
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "transportable-cell",
+        "sealed-process-pod",
+        "renewable-feed",
+        "service"
+      ],
+      "use_cases": [
+        "remote engineering/repair station"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-REC",
+      "name": "Reclamation/Repair Cell",
+      "kind": "specialist",
+      "application": "circularity",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1800,
+        1100,
+        1650
+      ],
+      "inner_envelope_mm": [
+        1368,
+        770,
+        1122
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "sort-and-classify",
+        "material-passports",
+        "qualified-reprocess",
+        "assembly-tooling"
+      ],
+      "use_cases": [
+        "upcycle",
+        "parts harvesting",
+        "repair"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-BIF",
+      "name": "Bio/Fluidic Controlled Cell",
+      "kind": "specialist",
+      "application": "lab",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1250,
+        850,
+        1450
+      ],
+      "inner_envelope_mm": [
+        950,
+        595,
+        986
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "isolated-compatible-fluidics",
+        "wet-process",
+        "bio-safety-gated",
+        "sterility-evidence"
+      ],
+      "use_cases": [
+        "microfluidics",
+        "nonclinical candidate bioprocess"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-ENE",
+      "name": "Energy/Electronics Cell",
+      "kind": "specialist",
+      "application": "energy",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1400,
+        1100,
+        1500
+      ],
+      "inner_envelope_mm": [
+        1064,
+        770,
+        1020
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "conductive-dielectric",
+        "encapsulation",
+        "high-current-protection",
+        "thermal-control"
+      ],
+      "use_cases": [
+        "battery assembly via qualified supplied components",
+        "energy harvesting"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-ORB",
+      "name": "Orbital/Microgravity Cell",
+      "kind": "environment",
+      "application": "space",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        1700,
+        1180,
+        1800
+      ],
+      "inner_envelope_mm": [
+        1292,
+        826,
+        1224
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "space-constraints-unknown",
+        "capture-restraints",
+        "thermal-management",
+        "isolation-required"
+      ],
+      "use_cases": [
+        "long-range research only, no qualified orbital manufacturing"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    },
+    {
+      "id": "CGX-PC-FAM-CIV",
+      "name": "Civil Distributed Printer Array",
+      "kind": "scale",
+      "application": "infrastructure",
+      "parent_type": "cgx.printspace.4d_printer_platform",
+      "source_machine_identity": "NEW_DEVICE_ID_REQUIRED_AT_BUILD_NOT_NOW",
+      "outer_envelope_mm": [
+        9000,
+        4700,
+        5200
+      ],
+      "inner_envelope_mm": [
+        6840,
+        3290,
+        3536
+      ],
+      "geometry_assumptions": [
+        "illustrative envelope only; not measured",
+        "primary enclosure is a candidate boundary, pressure qualification absent",
+        "within-volume sketches are no-clearance machine planning geometry"
+      ],
+      "features_candidate": [
+        "multi-rover",
+        "field-control",
+        "survey-reconstruction",
+        "restricted-material"
+      ],
+      "use_cases": [
+        "terrestrial large-scale and infrastructure concepts"
+      ],
+      "characterization": "ARCHITECTURE_RESEARCH_ONLY",
+      "physically_qualified": false,
+      "primary_volumetric_mode": "OPEN_PRIMARY_CHAMBER",
+      "bay_topology": "JOB_DEPENDENT_0_TO_N",
+      "installable_tool_groups": [
+        "deposition",
+        "grasp-and-place",
+        "metrology",
+        "conditioning"
+      ],
+      "safety_scope": "UNKNOWN_TO_BE_QUALIFIED_PER_CONFIG"
+    }
+  ],
+  "configurations": {
+    "bay_states": [
+      "OPEN",
+      "ONE_SECONDARY_CELL",
+      "TWO_CELLS",
+      "THREE_CELLS"
+    ],
+    "tool_modes": [
+      "DEPLOYED",
+      "STOWED",
+      "CHILD_ACTIVE"
+    ],
+    "evidence_scale": [
+      "concept",
+      "screened",
+      "simulated",
+      "measured",
+      "qualified"
+    ],
+    "safety_hold": "inference/sweeps do not authorize physical motion or process"
+  },
+  "sweep_contract": {
+    "mode": "GEOMETRIC_PARAMETER_SCREEN_ONLY",
+    "arm_reach_model": "two distance-only spherical coverages; NOT robot IK",
+    "objective_metrics": [
+      "gross_internal_volume_m3",
+      "estimated_freely_usable_volume_m3",
+      "floor_reach_fraction_distance_only",
+      "estimated_partition_area_m2",
+      "geometric_partition_count"
+    ],
+    "physical_unknowns": [
+      "mass",
+      "center of gravity",
+      "live loads",
+      "robot IK and collisions",
+      "actual clearance",
+      "pressure shell rating",
+      "material/environment survival",
+      "thermal/electric/pump resources",
+      "processing time/energy and resource constraints"
+    ]
+  },
+  "sharing": {
+    "ccc": "existing trusted source package and permissions/receipt owner",
+    "format_candidates": [
+      "CGX sparse reference",
+      "SVG schematic",
+      "GLB conceptual mesh",
+      "HTML 3D concept viewer",
+      "parametric solver input"
+    ],
+    "source_scope": "Public library release only following source/asset/IP and safety review; no automatic shared download rights."
+  }
+}

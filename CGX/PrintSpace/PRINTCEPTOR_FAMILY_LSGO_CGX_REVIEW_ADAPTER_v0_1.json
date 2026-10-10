@@ -1,0 +1,518 @@
+{
+  "schema": "cgx.printspace.lightspeed_3d_review_adapter.v0.1",
+  "state": "OWNER_REVIEW_ONLY_NOT_DEPLOYED",
+  "date": "2026-10-09",
+  "authority": {
+    "family": "CGX/PrintSpace/PRINTCEPTOR_FAMILY_PARAMETRIC_REGISTRY_v0_1.json",
+    "source_geometry": "Drive Type 1 Romer Cognigrex CGX Geometry Atlas; Git mirror (the mirror currently describes 411+four additional archetypes; reconcile exact authoritative workbook count)",
+    "utp": "Raphael UTP PR5: UTP-DESKTOP-001 v0.3 G1 function basis, Printer-Mu DAG, operational state machine",
+    "material": "Data PostMix PR11 PMX-MAT-001",
+    "device": "Cognigrex S92/CGX Filespace/DBR",
+    "runtime": "LightSpeed LS GO C0/C1/C2 owner"
+  },
+  "identity_rule": "CGX individuals are actual functional electronic printers, not bays/bolts; current reference IDs are only catalog TYPE IDs; physical instance identity assigned at commissioning",
+  "viewer": {
+    "status": "GENERATED_LOCAL_SESSION_ASSETS_NOT_INSTALLED_IN_LSGO",
+    "format": [
+      "self-contained offline 3D HTML",
+      "17 GLB family concept meshes plus Pro three-cell example",
+      "CSV 68 synthetic geometric sweep records",
+      "parametric Python generation script",
+      "SHA256 receipt bundle"
+    ],
+    "read_only": true,
+    "driver_bridge": false,
+    "network_required": false,
+    "input_state": [
+      "family_id",
+      "secondary_partition_count 0..3",
+      "phase_index",
+      "layer_visibility",
+      "orthographic_camera"
+    ],
+    "output_state": [
+      "geometry/overlay proxy",
+      "candidate volume and distance-only reach",
+      "illustrative phase explanation",
+      "unsatisfied safety/physics flags"
+    ],
+    "physical_execution_permission": false,
+    "material_kinetic_simulation": false
+  },
+  "phase_labels": [
+    "P0 configure open chamber",
+    "P1 calibrate axes/tools/sensors",
+    "P2 self-print seed tooling",
+    "P3 deploy optional secondary zones",
+    "P4 internally assemble article",
+    "P5 safe electrical/functional inspection",
+    "P6 release after qualified safeguards"
+  ],
+  "phase_time": "ORDINAL_ONLY_NO_REAL_ELAPSED_TIME",
+  "phase_evidence": "No actual machine execution. Not a digital twin with validated physical response.",
+  "functions": [
+    {
+      "utp_id": "G1-F01",
+      "name": "structure",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F02",
+      "name": "conductance",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F03",
+      "name": "dielectric",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F04",
+      "name": "resistance/heating",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F05",
+      "name": "capacitance",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F06",
+      "name": "inductance/field",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F07",
+      "name": "energy storage",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F08",
+      "name": "light emission",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F09",
+      "name": "sensor",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F10",
+      "name": "actuation",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F11",
+      "name": "fluid/gas routing",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F12",
+      "name": "pressure/vacuum sealing",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F13",
+      "name": "RF receiver/transmitter structure",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F14",
+      "name": "thermal management",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F15",
+      "name": "active switching/logic",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F16",
+      "name": "metrology/calibration",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    },
+    {
+      "utp_id": "G1-F17",
+      "name": "software-defined toolpath/process",
+      "design_target": true,
+      "verified_in_any_product": false,
+      "material_route_evidence": "UNKNOWN"
+    }
+  ],
+  "model_capability_skeleton": [
+    {
+      "family_ref": "CGX-PC-FAM-PC0",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-PCA",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-EVD",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-PRO",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-MIC",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-SND",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-WKS",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-IND",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-HEV",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-LRG",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-ROV",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-FLD",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-REC",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-BIF",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-ENE",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-ORB",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    },
+    {
+      "family_ref": "CGX-PC-FAM-CIV",
+      "actual_device": "NOT_PROVISIONED",
+      "linked_G1_basis": "UTP-DESKTOP-001",
+      "installed_capabilities": "UNKNOWN",
+      "existing_child_nodes": [],
+      "source_authority": "Romer/CGX owner review"
+    }
+  ],
+  "sweeps": [
+    {
+      "id": "S-GEO",
+      "records": 68,
+      "state": "COMPUTED_SYNTHETIC",
+      "variables": [
+        "17 model types",
+        "0..3 partition layout"
+      ],
+      "metrics": [
+        "candidate gross inner volume",
+        "rough volume less parked tooling and partitions",
+        "candidate partition area",
+        "two-arm distance-only coverage"
+      ],
+      "excludes": [
+        "robot inverse kinematics",
+        "self/dual-arm collisions",
+        "loads",
+        "energy",
+        "thermal",
+        "vacuum",
+        "pressure",
+        "gas separations",
+        "process kinetics"
+      ]
+    },
+    {
+      "id": "S-IK",
+      "state": "EVIDENCE_REQUIRED",
+      "inputs": [
+        "CAD joints/tool frames",
+        "limits",
+        "force/torque",
+        "fixtures",
+        "actuator data"
+      ]
+    },
+    {
+      "id": "S-ENV",
+      "state": "EVIDENCE_REQUIRED",
+      "inputs": [
+        "chamber ratings",
+        "gas species/pump/valve specs",
+        "windows/seals",
+        "hazard analysis"
+      ]
+    },
+    {
+      "id": "S-MAT",
+      "state": "EVIDENCE_REQUIRED",
+      "inputs": [
+        "PMX recipes and lots",
+        "directional transitions",
+        "measured coupons",
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "S-4D",
+      "state": "EVIDENCE_REQUIRED",
+      "inputs": [
+        "stimulus-response constitutive laws",
+        "time history",
+        "measured validation",
+        "ageing"
+      ]
+    }
+  ],
+  "asset_evidence": {
+    "bundle_sha256": "0e5ae35b9d63eac0f730ac1a012f44ad7a525c1c6fc73a5be9f952a986bda084",
+    "viewer_sha256": "0f9e3def70c0a64660a73c28894f130eb1e92075d7278139dc2296ae77835dcc",
+    "sweep_csv_sha256": "0c267cc98f7ce0a0376eec7704346b84c6012caab157f71b5386169b27ae47c8",
+    "paths": "Session downloadable assets; not persistent LightSpeed deploy URIs",
+    "additional_assets": [
+      "PRINTCEPTOR_0_FRONT_PLAN_CONCEPT_v0_1.svg",
+      "PRINTCEPTOR_4D_SYMBOLIC_MANUFACTURING_TIMELINE_v0_1.json",
+      "REBUILD_FAMILY_3D_MODELS.py",
+      "FILE_SHA256_RECEIPT.json"
+    ],
+    "validation": "Local ZIP CRC, 26 SHA256 entries, 18 GLB readback, 68 CSV scenario invariants, SVG XML, 7 phase JSON, Node JS syntax passed. Browser UI screenshot/render attempt timed out; not claimed verified.",
+    "bundle_location": "Conversation downloadable artifact only; not yet installed in LightSpeed/Drive/Cognigrex."
+  },
+  "integration_next": [
+    "LightSpeed/CGX owner review of rendered artifact metadata and file location",
+    "crosswalk local viewer model ID → CGX object + DBR root",
+    "instantiate physical-machine asset only after actual build",
+    "implement qualified 3D camera/kinematics/thermal/process solvers with owner controls",
+    "run non-actuating sim and compare measurements before releasing operation"
+  ],
+  "holds": [
+    "No live LS GO printer viewer deployed",
+    "No physical hardware proof or operational motion",
+    "No new CCC/Library public downloadable package",
+    "No alteration of UTP/PMX/CGX root authorities"
+  ],
+  "design_and_4k_review_policy": {
+    "status": "REVIEW_LENS_PROPOSED_NOT_DEPLOYED",
+    "intent": "One CGX-backed variable/geometry/appearance review projected into existing LightSpeed GO LightSpeed page and Achilles/Quests interfaces, not a new app, new canonical brand or independent rendering authority.",
+    "format": "source-bound vector/mesh output with optional 3840×2160 raster capture; 4K is image resolution not validation of shape/physics/material properties",
+    "visual_maturity_classes": [
+      {
+        "id": "V0",
+        "name": "Conceptual",
+        "geometry": "hypothetical proportions",
+        "claim": "no build accuracy, no certified performance"
+      },
+      {
+        "id": "V1",
+        "name": "Source-linked",
+        "geometry": "existing SVG/reference CAD geometry",
+        "claim": "source can be historical or illustrative, provenance visible"
+      },
+      {
+        "id": "V2",
+        "name": "Parametric",
+        "geometry": "source-hashed CAD dimensions and BOM interfaces",
+        "claim": "model checks only, no physical certification"
+      },
+      {
+        "id": "V3",
+        "name": "Simulated",
+        "geometry": "validated solver and stated physics regime",
+        "claim": "sweeps with uncertainty, not physical measurements"
+      },
+      {
+        "id": "V4",
+        "name": "Measured",
+        "geometry": "metrology/calibration and inspected physical result",
+        "claim": "test-specific, not system-wide manufacturing release"
+      },
+      {
+        "id": "V5",
+        "name": "Qualified",
+        "geometry": "independently accepted configuration within specified operating envelope",
+        "claim": "only exact owner-certified scope"
+      }
+    ],
+    "proposed_brand_lenses": [
+      {
+        "family": "PrintCeptor / New Neutrals consumer",
+        "baseline": "white outer casing, orange accents, dark neutral functional components",
+        "variation": "user-specified material/layer, lighting and shell; two base product models and custom variants",
+        "source": "Founder PrintCeptor white-orange desktop reference, New Neutrals consumer family",
+        "approval": "OWNER_BRAND_AND_PHYSICAL_BOM_PENDING"
+      },
+      {
+        "family": "Römer-Grex / Mark-Luke / Intersol",
+        "baseline": "engineering/mission schematic with actual source CAD and SI units",
+        "variation": "mission, field, thermal, aerospace, service/hazard and ecological impact overlays",
+        "source": "Römer owner canonical workbooks and available native 3D Objects",
+        "approval": "MISSION_AND_CAD_SOURCE_OWNER"
+      },
+      {
+        "family": "Eco-Grex",
+        "baseline": "material provenance, ecological life cycle and nature impact visualization",
+        "variation": "materials/passports/repair/reuse and region-specific environment",
+        "source": "Eco-Grex material stewardship and Post-Mix feedstock authorities",
+        "approval": "ECO_SOURCE_AND_ACTUAL_EMPIRICAL_DATA"
+      },
+      {
+        "family": "EMASSC",
+        "baseline": "restrained IP/evidence/ownership and commercial-license context",
+        "variation": "owned vs licensable vs community-release, public-safe vs internal",
+        "source": "EMASSC sole IP custodian and CCC/CYC rights",
+        "approval": "LEGAL_IP_AND_RELEASE_RIGHTS"
+      },
+      {
+        "family": "CGX / SAI / LightSpeed",
+        "baseline": "neutral cross-family object inspector, topology/verified deltas",
+        "variation": "sparse vs full hydration, accessibility, detailed proof inspector, game-like Quests navigation",
+        "source": "existing LS GO LightSpeed/Achilles/Quests surfaces",
+        "approval": "AUTHENTICATED_OPERATOR_VIEW_POLICY"
+      }
+    ],
+    "per_object_review_fields": [
+      "object_id and family",
+      "type vs exact instance",
+      "native source/head/hash",
+      "functional/operation specification",
+      "equations with valid regimes",
+      "materials and environmental operating boundary",
+      "SI geometry and tolerance",
+      "printed/hybrid/bought status",
+      "phase/time/4D response",
+      "design/brand alternatives",
+      "evidence tier and uncertainty",
+      "measured test links",
+      "unresolved gates",
+      "operator suggestion/choice",
+      "owner approval & DBR writeback separate"
+    ],
+    "preview_sequence": [
+      "native source readback",
+      "geometry or symbolic proxy labelled",
+      "material/environment overlay",
+      "function/flow/cause-effect view",
+      "variant slider & dimensions",
+      "reasoned impact/safety tradeoffs",
+      "owner-scoped review suggestion",
+      "separate approval and actual DBR"
+    ],
+    "source_data_reuse": "Do not duplicate 411 component geometries, 81 PT, 80 product, 17 printer, 16 atrium twins or 128 SVGs; use CGX object/Filespace hashes and auth decisions to hydrate.",
+    "local_preview": "PrintSpace cgx_review_lens_compiler.py staging only. Actual 4K output, physical CAD faithfulness and LS GO production deployment require tests/readback and permissioned host availability.",
+    "security_gate": "Do not expose INTERNAL_REVIEW_LOCAL or any private CGX preview in unauthenticated public/dist data. No device actuation and no automatic release."
+  }
+}

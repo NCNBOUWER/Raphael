@@ -1,0 +1,28 @@
+name: PrintSpace data and candidate routing checks
+on:
+  pull_request:
+    paths:
+      - "CGX/PrintSpace/**"
+      - ".github/workflows/printspace-data-tests.yml"
+  push:
+    branches:
+      - "docs/cgx-printspace-capability-first-2026-10-08"
+    paths:
+      - "CGX/PrintSpace/**"
+      - ".github/workflows/printspace-data-tests.yml"
+
+jobs:
+  printspace-data-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile candidate-only route code
+        run: python -m compileall -q CGX/PrintSpace
+      - name: Validate all existing route and populated data tests
+        working-directory: CGX/PrintSpace
+        run: python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py test_dimensioned_equation_engine_v0_4.py test_cross_grex_product_atlas_v0_5.py test_type1_utp150_maturation_crosswalk.py

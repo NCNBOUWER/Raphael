@@ -1,0 +1,1059 @@
+{
+  "schema": "cgx.printspace.product_seeds.v0.5",
+  "segment": "A",
+  "scope": "wearable, usable, operable",
+  "state": "ARCHITECTURAL_CANDIDATE",
+  "products": [
+    {
+      "category": "wearable",
+      "id": "FW-01",
+      "name": "Wrist watch and band",
+      "tech_ids": [
+        "PT-018",
+        "PT-019",
+        "PT-023",
+        "PT-031",
+        "PT-043",
+        "PT-044"
+      ],
+      "profile": "wear",
+      "goal": [
+        "Time",
+        " sensing",
+        " notification",
+        " NFC",
+        " tactile alerts"
+      ],
+      "gaps": [
+        "skin-safe sealing",
+        " runtime",
+        " miniature power"
+      ],
+      "hybrid": [
+        "MCU",
+        "display",
+        "sensor die",
+        "cell"
+      ],
+      "measures": [
+        "runtime",
+        "sensor drift",
+        "water ingress"
+      ],
+      "opportunity": [
+        "humidity_gradient"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-02",
+      "name": "Sensor ring",
+      "tech_ids": [
+        "PT-019",
+        "PT-020",
+        "PT-024",
+        "PT-031",
+        "PT-044",
+        "PT-005"
+      ],
+      "profile": "wear",
+      "goal": [
+        "Gesture sensing",
+        " proximity",
+        " token"
+      ],
+      "gaps": [
+        "RF detuning",
+        " miniature power",
+        " safety"
+      ],
+      "hybrid": [
+        "sensor IC",
+        "cell",
+        "NFC controller"
+      ],
+      "measures": [
+        "RF matching",
+        "thermal",
+        "wear"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-03",
+      "name": "Smart glasses",
+      "tech_ids": [
+        "PT-023",
+        "PT-039",
+        "PT-045",
+        "PT-046",
+        "PT-043",
+        "PT-031"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Optical overlay",
+        " sensing",
+        " communication"
+      ],
+      "gaps": [
+        "optical calibration",
+        " face heat",
+        " mass"
+      ],
+      "hybrid": [
+        "microdisplay",
+        "camera",
+        "processor",
+        "cell"
+      ],
+      "measures": [
+        "alignment",
+        "eye safety",
+        "power"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-04",
+      "name": "Neckline audio and environmental pendant",
+      "tech_ids": [
+        "PT-018",
+        "PT-021",
+        "PT-023",
+        "PT-043",
+        "PT-045",
+        "PT-031"
+      ],
+      "profile": "audio",
+      "goal": [
+        "Audio",
+        " environmental logging",
+        " accessible controls"
+      ],
+      "gaps": [
+        "acoustic seal",
+        " privacy",
+        " skin comfort"
+      ],
+      "hybrid": [
+        "microphone",
+        "DSP",
+        "processor",
+        "cell"
+      ],
+      "measures": [
+        "SNR",
+        "comfort",
+        "runtime"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-05",
+      "name": "Hearing protection comms",
+      "tech_ids": [
+        "PT-015",
+        "PT-018",
+        "PT-039",
+        "PT-043",
+        "PT-045",
+        "PT-031"
+      ],
+      "profile": "audio",
+      "goal": [
+        "Protect hearing",
+        " communicate"
+      ],
+      "gaps": [
+        "audio exposure",
+        " standards",
+        " fit"
+      ],
+      "hybrid": [
+        "driver",
+        "amplifier",
+        "certified ear insert"
+      ],
+      "measures": [
+        "attenuation",
+        "latency",
+        "fit"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-06",
+      "name": "Textile sensor patch",
+      "tech_ids": [
+        "PT-002",
+        "PT-011",
+        "PT-019",
+        "PT-044",
+        "PT-059"
+      ],
+      "profile": "wear",
+      "goal": [
+        "Strain and temperature signal in washable patch"
+      ],
+      "gaps": [
+        "washability",
+        " contact",
+        " fatigue"
+      ],
+      "hybrid": [
+        "readout IC",
+        "clip-in module"
+      ],
+      "measures": [
+        "wash cycles",
+        "strain drift"
+      ],
+      "opportunity": [
+        "residual_stress_preload"
+      ]
+    },
+    {
+      "category": "wearable",
+      "id": "FW-07",
+      "name": "Emergency identity badge",
+      "tech_ids": [
+        "PT-044",
+        "PT-018",
+        "PT-043",
+        "PT-045",
+        "PT-031"
+      ],
+      "profile": "portable",
+      "goal": [
+        "Offline credential and emergency alert"
+      ],
+      "gaps": [
+        "privacy",
+        " false alarms",
+        " security"
+      ],
+      "hybrid": [
+        "secure element",
+        "MCU",
+        "cell"
+      ],
+      "measures": [
+        "offline",
+        "alert accuracy",
+        "ingress"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-01",
+      "name": "Complete CGX phone-like device",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-013",
+        "PT-015",
+        "PT-023",
+        "PT-031",
+        "PT-038",
+        "PT-039",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Display",
+        " audio",
+        " camera",
+        " sensors",
+        " compute",
+        " local CGX"
+      ],
+      "gaps": [
+        "SoC density",
+        " RF rules",
+        " secure OS",
+        " heat"
+      ],
+      "hybrid": [
+        "SoC",
+        "display",
+        "camera",
+        "microphone",
+        "cell"
+      ],
+      "measures": [
+        "UI",
+        "call link",
+        "EMC",
+        "runtime"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-02",
+      "name": "Tablet / field dataspace slate",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-015",
+        "PT-023",
+        "PT-031",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Touch review of files",
+        " data",
+        " twins"
+      ],
+      "gaps": [
+        "durability",
+        " screen power",
+        " connectivity"
+      ],
+      "hybrid": [
+        "touch panel",
+        "compute",
+        "cell"
+      ],
+      "measures": [
+        "drop",
+        "display",
+        "offline sync"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-03",
+      "name": "Portable specialised laptop",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-015",
+        "PT-031",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Compute",
+        " ports",
+        " field research"
+      ],
+      "gaps": [
+        "hinge cycle",
+        " heat",
+        " ESD"
+      ],
+      "hybrid": [
+        "CPU",
+        "RAM",
+        "SSD",
+        "screen",
+        "cell"
+      ],
+      "measures": [
+        "benchmark",
+        "cooling",
+        "hinge"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-04",
+      "name": "Desktop / edge workstation",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-016",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "compute",
+      "goal": [
+        "Local simulation and inference host"
+      ],
+      "gaps": [
+        "mains safety",
+        " thermal",
+        " EMC"
+      ],
+      "hybrid": [
+        "CPU",
+        "GPU",
+        "RAM",
+        "SSD",
+        "PSU"
+      ],
+      "measures": [
+        "compute",
+        "uptime",
+        "thermal"
+      ],
+      "opportunity": [
+        "heat_flow_disparity"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-05",
+      "name": "Spatial speaker and audio body",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-014",
+        "PT-027",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "audio",
+      "goal": [
+        "Sound with tuned cavity and signal processing"
+      ],
+      "gaps": [
+        "driver gap",
+        " distortion",
+        " thermal"
+      ],
+      "hybrid": [
+        "driver",
+        "magnet",
+        "amp",
+        "DSP"
+      ],
+      "measures": [
+        "frequency",
+        "THD",
+        "SPL"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-06",
+      "name": "Camera / optical recorder",
+      "tech_ids": [
+        "PT-001",
+        "PT-023",
+        "PT-039",
+        "PT-043",
+        "PT-045",
+        "PT-031"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Imaging and provenance logging"
+      ],
+      "gaps": [
+        "alignment",
+        " dust",
+        " privacy"
+      ],
+      "hybrid": [
+        "sensor",
+        "optics",
+        "compute",
+        "cell"
+      ],
+      "measures": [
+        "MTF",
+        "noise",
+        "integrity"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-07",
+      "name": "Accessible gaming controller",
+      "tech_ids": [
+        "PT-002",
+        "PT-019",
+        "PT-024",
+        "PT-043",
+        "PT-044",
+        "PT-031"
+      ],
+      "profile": "wear",
+      "goal": [
+        "Adaptive input",
+        " haptics",
+        " motion"
+      ],
+      "gaps": [
+        "ergonomics",
+        " latency",
+        " repair"
+      ],
+      "hybrid": [
+        "MCU",
+        "haptic driver",
+        "cell"
+      ],
+      "measures": [
+        "latency",
+        "cycles",
+        "force"
+      ],
+      "opportunity": [
+        "residual_stress_preload"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-08",
+      "name": "Personal environmental node",
+      "tech_ids": [
+        "PT-018",
+        "PT-021",
+        "PT-023",
+        "PT-043",
+        "PT-045",
+        "PT-031"
+      ],
+      "profile": "portable",
+      "goal": [
+        "Weather and local environment"
+      ],
+      "gaps": [
+        "sensor calibration",
+        " drift"
+      ],
+      "hybrid": [
+        "sensors",
+        "radio",
+        "MCU",
+        "cell"
+      ],
+      "measures": [
+        "accuracy",
+        "uptime"
+      ],
+      "opportunity": [
+        "humidity_gradient"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-09",
+      "name": "Home tunable light",
+      "tech_ids": [
+        "PT-038",
+        "PT-039",
+        "PT-011",
+        "PT-012",
+        "PT-018",
+        "PT-043",
+        "PT-035"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Light and local automation"
+      ],
+      "gaps": [
+        "electrical safety",
+        " optical comfort"
+      ],
+      "hybrid": [
+        "LED driver",
+        "LED",
+        "MCU"
+      ],
+      "measures": [
+        "flicker",
+        "thermal",
+        "EMC"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-10",
+      "name": "Offline household CGX terminal",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-015",
+        "PT-043",
+        "PT-044",
+        "PT-045"
+      ],
+      "profile": "portable",
+      "goal": [
+        "Private local files and connected devices"
+      ],
+      "gaps": [
+        "permissions",
+        " OS hardening"
+      ],
+      "hybrid": [
+        "CPU",
+        "storage",
+        "display",
+        "RF"
+      ],
+      "measures": [
+        "offline",
+        "access",
+        "integrity"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "usable",
+      "id": "FU-11",
+      "name": "Portable optical measurement instrument",
+      "tech_ids": [
+        "PT-023",
+        "PT-039",
+        "PT-043",
+        "PT-046",
+        "PT-054",
+        "PT-031"
+      ],
+      "profile": "optical",
+      "goal": [
+        "Calibrated spectral or optical measurements"
+      ],
+      "gaps": [
+        "metrology",
+        " field drift",
+        " noise"
+      ],
+      "hybrid": [
+        "optical source",
+        "detector",
+        "analog front end"
+      ],
+      "measures": [
+        "accuracy",
+        "noise",
+        "repeatability"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-01",
+      "name": "Butter Bot BB01",
+      "tech_ids": [
+        "PT-001",
+        "PT-002",
+        "PT-003",
+        "PT-011",
+        "PT-018",
+        "PT-019",
+        "PT-025",
+        "PT-026",
+        "PT-031",
+        "PT-043",
+        "PT-053"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Locate and deliver butter",
+        " grip safely"
+      ],
+      "gaps": [
+        "joint wear",
+        " motor heating",
+        " vision",
+        " runtime"
+      ],
+      "hybrid": [
+        "MCU",
+        "camera",
+        "motors",
+        "cell"
+      ],
+      "measures": [
+        "grip",
+        "force",
+        "runtime",
+        "stop"
+      ],
+      "opportunity": [
+        "magnetic_alignment"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-02",
+      "name": "Smart coffee machine",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-007",
+        "PT-011",
+        "PT-018",
+        "PT-020",
+        "PT-026",
+        "PT-031",
+        "PT-043",
+        "PT-052",
+        "PT-028"
+      ],
+      "profile": "fluid",
+      "goal": [
+        "Heat",
+        " dose",
+        " pump",
+        " dispense beverage"
+      ],
+      "gaps": [
+        "steam pressure",
+        " food contact",
+        " safe mains"
+      ],
+      "hybrid": [
+        "heater",
+        "pump",
+        "controller",
+        "supply"
+      ],
+      "measures": [
+        "volume",
+        "temperature",
+        "leaks"
+      ],
+      "opportunity": [
+        "fluidic_pressure_difference"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-03",
+      "name": "Robotic manipulation arm",
+      "tech_ids": [
+        "PT-001",
+        "PT-002",
+        "PT-003",
+        "PT-011",
+        "PT-019",
+        "PT-025",
+        "PT-026",
+        "PT-043",
+        "PT-053"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Precision placement and bounded force"
+      ],
+      "gaps": [
+        "backlash",
+        " human proximity",
+        " E-stop"
+      ],
+      "hybrid": [
+        "motors",
+        "encoders",
+        "safety PLC"
+      ],
+      "measures": [
+        "repeatability",
+        "payload",
+        "stop"
+      ],
+      "opportunity": [
+        "residual_stress_preload"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-04",
+      "name": "Autonomous service rover",
+      "tech_ids": [
+        "PT-001",
+        "PT-003",
+        "PT-018",
+        "PT-023",
+        "PT-026",
+        "PT-031",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Navigate",
+        " inspect",
+        " deliver"
+      ],
+      "gaps": [
+        "terrain",
+        " obstacles",
+        " energy"
+      ],
+      "hybrid": [
+        "drives",
+        "LIDAR",
+        "compute",
+        "cell"
+      ],
+      "measures": [
+        "range",
+        "collision safety"
+      ],
+      "opportunity": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-05",
+      "name": "Ecological survey drone",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-018",
+        "PT-023",
+        "PT-026",
+        "PT-031",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Non-invasive airborne surveys"
+      ],
+      "gaps": [
+        "flight law",
+        " fauna safety",
+        " mass"
+      ],
+      "hybrid": [
+        "propulsion",
+        "controller",
+        "camera",
+        "cell"
+      ],
+      "measures": [
+        "duration",
+        "landing",
+        "precision"
+      ],
+      "opportunity": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-06",
+      "name": "Fabrication cobot and tool changer",
+      "tech_ids": [
+        "PT-001",
+        "PT-003",
+        "PT-011",
+        "PT-018",
+        "PT-019",
+        "PT-026",
+        "PT-043",
+        "PT-051",
+        "PT-053"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Pick",
+        " print",
+        " place",
+        " inspect"
+      ],
+      "gaps": [
+        "tool calibration",
+        " guarding"
+      ],
+      "hybrid": [
+        "actuators",
+        "safety controller",
+        "camera"
+      ],
+      "measures": [
+        "accuracy",
+        "stop",
+        "repeatability"
+      ],
+      "opportunity": [
+        "selective_local_heating"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-07",
+      "name": "Intelligent fluid dosing unit",
+      "tech_ids": [
+        "PT-007",
+        "PT-018",
+        "PT-021",
+        "PT-043",
+        "PT-050",
+        "PT-052"
+      ],
+      "profile": "fluid",
+      "goal": [
+        "Meter irrigation and chemical-safe fluids"
+      ],
+      "gaps": [
+        "contamination",
+        " material chemistry"
+      ],
+      "hybrid": [
+        "pump",
+        "valves",
+        "MCU"
+      ],
+      "measures": [
+        "flow",
+        "dose",
+        "pressure"
+      ],
+      "opportunity": [
+        "fluidic_pressure_difference"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-08",
+      "name": "Inspection crawler",
+      "tech_ids": [
+        "PT-001",
+        "PT-003",
+        "PT-011",
+        "PT-018",
+        "PT-023",
+        "PT-026",
+        "PT-031",
+        "PT-043"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Inspect pipes and infrastructure"
+      ],
+      "gaps": [
+        "confined access",
+        " contamination"
+      ],
+      "hybrid": [
+        "motors",
+        "camera",
+        "controller",
+        "cell"
+      ],
+      "measures": [
+        "traction",
+        "imaging",
+        "recovery"
+      ],
+      "opportunity": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-09",
+      "name": "Assistive adaptive gripper",
+      "tech_ids": [
+        "PT-002",
+        "PT-019",
+        "PT-025",
+        "PT-029",
+        "PT-043",
+        "PT-053",
+        "PT-030"
+      ],
+      "profile": "robot",
+      "goal": [
+        "Human-safe gripping assistance"
+      ],
+      "gaps": [
+        "human contact",
+        " fatigue"
+      ],
+      "hybrid": [
+        "actuator",
+        "force sensor",
+        "MCU"
+      ],
+      "measures": [
+        "grip",
+        "response",
+        "failsafe"
+      ],
+      "opportunity": [
+        "residual_stress_preload"
+      ]
+    },
+    {
+      "category": "operable",
+      "id": "FO-10",
+      "name": "Smart ventilation and acoustic unit",
+      "tech_ids": [
+        "PT-007",
+        "PT-018",
+        "PT-021",
+        "PT-026",
+        "PT-043",
+        "PT-045"
+      ],
+      "profile": "fluid",
+      "goal": [
+        "Ventilation and noise management"
+      ],
+      "gaps": [
+        "air safety",
+        " acoustic exposure"
+      ],
+      "hybrid": [
+        "fan",
+        "motor",
+        "sensors",
+        "controller"
+      ],
+      "measures": [
+        "airflow",
+        "SPL",
+        "energy"
+      ],
+      "opportunity": [
+        "acoustic_impedance_contrast"
+      ]
+    }
+  ]
+}

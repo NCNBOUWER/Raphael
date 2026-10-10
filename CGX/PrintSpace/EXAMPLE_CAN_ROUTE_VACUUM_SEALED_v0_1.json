@@ -1,0 +1,31 @@
+{
+  "document_id": "CGX-F4D-CAP-20261008",
+  "version": "0.1",
+  "record_kind": "process_capability_example",
+  "state": "CAN-3",
+  "function": "retain printed conductor function after atmospheric exposure",
+  "can_if": [
+    "controlled oxygen environment verified",
+    "compatible deposition and processing",
+    "sealed barrier completed before chamber refill",
+    "leak and lifetime tests passed"
+  ],
+  "process_steps": [
+    "characterise material",
+    "condition chamber",
+    "deposit feature",
+    "seal in chamber",
+    "leak test",
+    "return atmosphere",
+    "functional test"
+  ],
+  "test_status": "pending",
+  "production_approved": false,
+  "authority": "owner review required",
+  "runtime_tool_status": "not_checked",
+  "alternative_routes": [
+    "inert atmosphere",
+    "multilayer barrier",
+    "replaceable sealed insert"
+  ]
+}
