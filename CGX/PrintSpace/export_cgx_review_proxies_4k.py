@@ -40,7 +40,7 @@ def sha256(path: Path) -> str:
 def svg_evidence(path: Path) -> dict[str, str]:
     raw = path.read_text(encoding="utf-8")
     def attribute(name: str) -> str:
-        value = re.search(r'\\b' + name + r'="([^"]*)"', raw)
+        value = re.search(r'\b' + name + r'="([^"]*)"', raw)
         return value.group(1) if value else ""
     rec = {
         "representation_class": attribute("data-representation-class"),
