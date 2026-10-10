@@ -307,5 +307,58 @@
       "Wk42-03": "Integrate only through existing private, authenticated LS GO/Quests/Personal Assistant capability with owner permission, not by copying to served public dist",
       "Wk42-04": "Upgrade 3D only from existing real geometric/parametric sources and proof; no photoreal replacement for unmeasured engineering state"
     }
+  },
+  "cgx_review_frontend_reconciliation_20261010": {
+    "state": "SOURCE_AVAILABLE_DEPLOYMENT_ACCESS_REVIEW_HELD",
+    "policy": "Consume current LightSpeed GO Objects review as primary future authenticated operator projection; retain existing 605-object offline CGX review as a private fallback. No second master, solver, catalogue, heartbeat or source authority.",
+    "existing_offline_review": {
+      "host_path": "C:/Cognigrex/State/Frontier/PrintSpace_CGX_605_Review_20261010/index.html",
+      "source_count": 605,
+      "components": 411,
+      "technology": 81,
+      "products": 80,
+      "printer_types": 17,
+      "system_twins": 16,
+      "proxies_4k": 16,
+      "source_git_snapshot": {
+        "LightSpeed": "4dabcb4647825ab4e7d7cf67e53225a82ee3402c",
+        "PrintSpace": "dfecbd968cf3191c15614ff4e72412843269b99b"
+      },
+      "last_readback": "2026-10-10 read-only RDC returned receipt.json and review_4k/receipt.json for the private local bundle; 16 3840x2160 manifest records, but hashes and image accessibility not newly independently raster-verified this pass",
+      "evidence_class": "PRIVATE_SOURCE_BOUND_REVIEW_ONLY_NOT_VALIDATED_AS_BUILT_CAD"
+    },
+    "new_LSGO_source_view": {
+      "owner_repo": "achillesromer-coder/LightSpeed",
+      "source_paths": [
+        "apps/lightspeed-go/src/objectReview.ts",
+        "apps/lightspeed-go/src/objectReview.test.ts",
+        "apps/lightspeed-go/public/data/cgx_object_review_catalogue.json",
+        "apps/lightspeed-go/public/data/component_geometry_atlas_public_review.json",
+        "cgx/review/object_review_render_queue_v0_1.json"
+      ],
+      "newest_source_delta": "GitHub main compared with local checkout 4dabcb4: one commit ahead when checked 2026-10-10; 30 changed files",
+      "component_rows": 411,
+      "symbolic_component_or_stack_plates": 6,
+      "existing_mesh_plates": 16,
+      "source_render_queue_state": "ACTIVE_INTERNAL_REVIEW_NONBLOCKING_SIDE_LANE",
+      "client_nav": "LightSpeed GO → Objects → CGX object review catalogue",
+      "source_status": "GIT_SOURCE_PRESENT_RELEASE_NOT_VERIFIED",
+      "caveat": "Screenshots/4K SVGs do not certify geometry, material, 4D kinetic behaviour, as-built performance or license."
+    },
+    "hold": {
+      "owner_issue": "https://github.com/achillesromer-coder/LightSpeed/issues/158",
+      "classification": "LSGO_STATIC_ASSET_ACCESS_PUBLICATION_REVIEW",
+      "reason": "Main's internal review catalogue is placed under Vite public/data and public/review paths; existing PrintSpace owner packet forbids exposing private internal review in public/dist without access/privacy/IP owner approval.",
+      "next_owner_action": "Verify actual served dist and deny unauthenticated private asset reads; use existing authenticated bridge for private data; separate explicitly PUBLIC_SAFE projection before broader deployment. Do not silently delete already reviewed source files.",
+      "local_source_sync": "Guarded clean fast-forward from 4dabcb4 started on RDC but terminal readback has not been obtained. Do not claim sync or test pass until process result.",
+      "physical_state": "NOT_RUN"
+    },
+    "nonduplicative_next": [
+      "Do not rerender the 16 existing private 3840x2160 proxies without changed source hash and exact prebuilt receipt readback.",
+      "Do not create a second 411-row public component catalogue in PrintSpace: use CGX Atlas Drive owner and the existing LightSpeed emitted projection.",
+      "Use existing 4 SVG guided tours and family/Quests/PA views as source links to component→diode/receiver/battery→device→PrintCeptor→Mark/Luke/InterSol, with clickthrough scope and evidence grades.",
+      "Render photoreal source-approved material/design variants only after true CAD geometry, process/window/lot material and IP/owner license bind; for missing geometry show explicit no-render gate.",
+      "Retain independently running Neo :00, R2 :22, R3 :33, Achilles :44; no duplicate watch or R1 revival."
+    ]
   }
 }
