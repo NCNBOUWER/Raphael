@@ -30,7 +30,9 @@ class ReviewProxyFourKTests(unittest.TestCase):
             for name in source.ALLOWED:
                 (assets / (name + ".svg")).write_text(
                     '<svg data-representation-class="INTERACTION_PROXY" '
-                    'data-dimension-authority="NONE" data-release-eligible="false"></svg>',
+                    'data-dimension-authority="NONE" '
+                    'data-source-binding-state="NONE_PROXY_ONLY" '
+                    'data-release-eligible="false"></svg>',
                     encoding="utf-8",
                 )
             receipt = {
