@@ -66,5 +66,37 @@ class FourStageIntegrationProjectionTests(unittest.TestCase):
         self.assertIn("reread", RECORD["safety_and_release"]["always_current"])
 
 
+    def test_founder_cgx_filespace_identity_is_one_product(self):
+        product = RECORD["founder_universal_filespace_identity_20261010"]
+        self.assertIn("CGX == FileSpace", product["semantic_equivalence"])
+        self.assertEqual(product["file_extension"], ".cgx")
+        self.assertEqual(product["concrete_parent_display"], "Cognigrex.cgx")
+        self.assertEqual(product["local_concrete_parent"], "C:/Cognigrex/Cognigrex.cgx")
+        aliases = [x["address"] for x in product["aliases"]]
+        self.assertIn("cgx://CGX.cgx", aliases)
+        self.assertIn("Resolver MUST bind", product["identity_invariant"])
+        self.assertIn("NOT two data stores", product["semantic_equivalence"])
+        self.assertTrue(any("no duplicate DataSpace DB" in x for x in product["no_mutations"]))
+
+    def test_dataspace_acceptance_needs_real_lease_and_independent_receipt(self):
+        ds = RECORD["dataspace_minimum_end_to_end_proof"]
+        self.assertEqual(ds["state"], "ACCEPTANCE_SPECIFIED_NOT_E2E_VERIFIED")
+        ids = [x["id"] for x in ds["acceptance_cases"]]
+        self.assertEqual(ids, [f"DS-{i:02d}" for i in range(1, 9)])
+        self.assertTrue(all(x["proof"].strip() for x in ds["acceptance_cases"]))
+        self.assertIn("newest-timestamp-wins", " ".join(ds["workflow"]))
+        self.assertIn("No claim", ds["readiness_rule"])
+
+    def test_completion_lanes_consume_existing_interface_ids_only(self):
+        c = RECORD["completion_register"]
+        valid = {x["id"] for x in RECORD["interfaces"]}
+        self.assertEqual(c["status"], "OWNER_SAFE_WORKLIST_NOT_CLOSURE_CLAIM")
+        self.assertEqual(len(c["lanes"]), 6)
+        for lane in c["lanes"]:
+            self.assertTrue(set(lane["maps_to"]).issubset(valid))
+            self.assertTrue(lane["owner"])
+            self.assertTrue(lane["deliverable"])
+        self.assertIn("disabled R1 stays disabled", c["invariants"])
+
 if __name__ == "__main__":
     unittest.main()
