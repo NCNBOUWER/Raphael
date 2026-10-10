@@ -96,7 +96,7 @@ class FourStageIntegrationProjectionTests(unittest.TestCase):
             self.assertTrue(set(lane["maps_to"]).issubset(valid))
             self.assertTrue(lane["owner"])
             self.assertTrue(lane["deliverable"])
-        self.assertIn("disabled R1 stays disabled", c["invariants"])
+        self.assertIn("disabled R1 stays disabled", " ".join(c["invariants"]))
 
 if __name__ == "__main__":
     unittest.main()
