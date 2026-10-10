@@ -1,0 +1,383 @@
+{
+  "schema": "cgx.printspace.four_stage_integration_projection.v0.1",
+  "date": "2026-10-10",
+  "state": "DERIVED_SOURCE_BOUND_REVIEW_ONLY",
+  "status_note": "Consumer integration delta over existing CGX contracts, local 605-object inspector, GO 4K object-review and corpus owners; NOT a new master Filespace, DataSpace, compiler, agent, scheduler, UI app or ontology.",
+  "vision": [
+    {
+      "id": "S1",
+      "name": "Universal FileSpace",
+      "outcome": "Represent native content, semantic identities, provenance, functions and sparse state without discarding traditional files or providers."
+    },
+    {
+      "id": "S2",
+      "name": "Interoperable DataSpace",
+      "outcome": "Admit peers, exchange typed content and scoped compute, collaborate/reconcile, preserve independent owner identity and DBR roots."
+    },
+    {
+      "id": "S3",
+      "name": "PrintSpace",
+      "outcome": "Translate verified source/model requirements to machine-tool/process plans, safely manufacture and measure physical outputs, return evidence through CGX."
+    },
+    {
+      "id": "S4",
+      "name": "InterSpecial Egalitarian Type I pathway",
+      "outcome": "Iteratively use empirically evaluated technology toward ecological restoration, distributive benefit, regional capacity, infrastructure and interplanetary logistics with governance and dissent."
+    }
+  ],
+  "source_snapshots": {
+    "lightspeed_host_canonical": "0884a000e25a7b002c67d863fa4825a143fb0b3a",
+    "cgx_local_root_canonical_head": "0884a000e25a7b002c67d863fa4825a143fb0b3a",
+    "lightspeed_github_main": "7d7050dc6410a237de98490ccf1c55edc782d5de",
+    "lightspeed_provider_delta": "one fast-forward commit (4K review/mesh/orbit); no host release or root update claimed",
+    "printspace_pr6": "bf412c2e774c365f0828b8fcda18229766410195",
+    "utp_pr5": "ad0cd21c29dc22af10f8f70f7171e6440694571d",
+    "postmix_data_pr11": "f17346e6a420265ddd1846d3bcd0c22f8429dd36",
+    "atlas": "Drive-owned Type 1 v0.3, current Git mirror 411 archetypes / 64 field-slice / 61 search / 75 interactions",
+    "offline_review": "C:/Cognigrex/State/Frontier/PrintSpace_CGX_605_Review_20261010; source heads 4dabcb4 + dfecbd9; read-only 605 objects",
+    "private_review_artwork": "16 x 3840×2160 raster proxies (13 interaction, 2 derived bounded-envelope, 1 derived partial), exact 2026-10-10 local receipts; zero physical tests inferred",
+    "github_visual": "LightSpeed main 7d7050c 4K SVG engineering plates/hero, 16 derived mesh payloads; GO production served dist adoption not established"
+  },
+  "native_suites": [
+    {
+      "provider": "Windows desktop / file explorer",
+      "role": "Host UI, local files and Open With",
+      "gate": "User-scoped .cgx handler signing/admission and safe launch; Windows stays default, Documents excluded"
+    },
+    {
+      "provider": "Google Drive/Docs/Sheets",
+      "role": "Durable owner-controlled project evidence, workbooks, documents",
+      "gate": "Signed/mounted native source id+revision+scope; no blind overwrite; Drive is not vault"
+    },
+    {
+      "provider": "GitHub/GitHub Desktop",
+      "role": "Source, contracts, source manifests, branch/PR lifecycle",
+      "gate": "Expected-head proof, tests, owner PR review, no parent-root self-promotion"
+    },
+    {
+      "provider": "FreeCAD/mesh/CAD tools",
+      "role": "Parametric authoring and source geometry",
+      "gate": "Units, dimensions, topology, materials, mechanical and environmental interfaces accepted"
+    },
+    {
+      "provider": "Canva/Sites/LS GO/browser",
+      "role": "Presentation, on-demand generated views and approved publish lens",
+      "gate": "Review is not canonical mutation; public security/licence/claims released separately"
+    },
+    {
+      "provider": "Gmail/Calendar/Contacts/Slack and optional external APIs",
+      "role": "Authorised communications, plans and coordination",
+      "gate": "Named connector, leased read/write scope, private data minimisation and explicit external-send approval"
+    },
+    {
+      "provider": "Ollama/local LLM, remote AI, deterministic solvers",
+      "role": "Replaceable models and tool capabilities",
+      "gate": "Current hardware capability/lease, task budgets and source-hashed results; no AI inference equals empirically validated truth"
+    }
+  ],
+  "families": [
+    {
+      "id": "Cognigrex",
+      "role": "parent semantic graph, source/DBR state, assurance/custodial, admission, bridge and view selection",
+      "agent": "Neo oversight + independent Achilles audit",
+      "filespace": "S92/root+child carrier",
+      "authority": "existing parent CGX owner"
+    },
+    {
+      "id": "Romer-Grex",
+      "role": "industrial/civil/Mark/Luke/ISRU/interplanetary operational requirements and deployments",
+      "agent": "Neo domain specialist",
+      "filespace": "Romer.cgx",
+      "authority": "Römer owner"
+    },
+    {
+      "id": "Eco-Grex",
+      "role": "species/site/material/renewal/ecological/side-effect/impact loops",
+      "agent": "Athene",
+      "filespace": "Eco.cgx",
+      "authority": "Eco owner"
+    },
+    {
+      "id": "EMASSC",
+      "role": "research/validation/standards/IP/publication and independent evidence",
+      "agent": "Achilles review",
+      "filespace": "EMASSC.cgx",
+      "authority": "EMASSC custodian"
+    },
+    {
+      "id": "LightSpeed",
+      "role": "Windows runtime/LS GO/bridge/tools/leases/receipts/network/computation",
+      "agent": "LS governed floors and Merovingian",
+      "filespace": "LS.cgx",
+      "authority": "LightSpeed owner"
+    },
+    {
+      "id": "Achilles P.A.",
+      "role": "founder personal assistant, Quests, approvals, metadata-safe credential references",
+      "agent": "Achilles PA",
+      "filespace": "personal isolated scoped view",
+      "authority": "user/PA owner, not all families"
+    },
+    {
+      "id": "SAI & national-capacity context",
+      "role": "sovereign partner scopes, education/public-interest/operator controls",
+      "agent": "governed partner",
+      "filespace": "scoped organizational/file-space relation",
+      "authority": "partner/state/domain authority required"
+    },
+    {
+      "id": "CCC/CYC",
+      "role": "signed package, collections, share/download and printable artefact exchange",
+      "agent": "CCC owner",
+      "filespace": "existing CGX package plane",
+      "authority": "publication/legal/security owner"
+    }
+  ],
+  "contract_refs": [
+    "CGX Filespace Comprehensive Manual v0.1 and Phase A Whitepaper (Drive)",
+    "LightSpeed cgx/domain_templates/domains.json",
+    "LightSpeed cgx/domain_templates/universal_object_extension_contract.json",
+    "LightSpeed cgx/domain_templates/cross_domain_bridge_registry.json",
+    "LightSpeed cgx/domain_templates/view_selection_policy.json",
+    "LightSpeed cgx/domain_templates/node_exchange_contract.json",
+    "LightSpeed cgx/domain_templates/agent_runtime_contract.json",
+    "LightSpeed cgx/domain_templates/plugin_capability_routes.json",
+    "LightSpeed plugins/source/core-skills/utp-portfolio-catalogue/references/output_contract.json",
+    "Raphael PR5 UTP and PrintSpace PR6 G00-G15",
+    "Post-Mix Data PR11 formulations/directional routes",
+    "LightSpeed GO CGX-OBJECT-REVIEW-CATALOGUE/0.2 411 archetypes/16 source meshes"
+  ],
+  "interfaces": [
+    {
+      "id": "I01",
+      "edge": "traditional source -> FileSpace object",
+      "owner": "CGX Filespace + native provider",
+      "state": "PARTIAL",
+      "missing": "Typed per-provider Object_ID/native revision/hash ACL and partial/large-file mount acceptance across all traditional file classes",
+      "mutation": "Enhance existing converter/mount adapters and source-link receipts, no duplicate file store",
+      "proof": "For one text, sheet and CAD source preserve native rev/hash/permissions, support sparse open and replay readback",
+      "parent_gate": "G00/G01"
+    },
+    {
+      "id": "I02",
+      "edge": "CGX object -> semantic representation/topology",
+      "owner": "CGX parent / domains",
+      "state": "CONTRACT_EXISTS_BINDINGS_PENDING",
+      "missing": "Complete live instance binding, authoritative aliases, type/parent/child edges and consistent conflict/unknown propagation",
+      "mutation": "Project existing universal-cell records into object inspector; attach delta/bridge proposal to owning CGX review",
+      "proof": "Stable Object_ID survives rename, provider move, unknown and contested relation; no duplicate authority",
+      "parent_gate": "G01/G02"
+    },
+    {
+      "id": "I03",
+      "edge": "family <-> family interoperation",
+      "owner": "Cognigrex + paired domain owners",
+      "state": "REVIEW_BLUEPRINT",
+      "missing": "Counterparty-admitted typed bridge acceptance and inherited security/evidence scope across domain products",
+      "mutation": "Use existing HAS_ECO_INTERFACE, REQUESTS_VALIDATION_METHOD, PRODUCES_EVIDENCE_INPUT_FOR typed relations",
+      "proof": "Römer material/site references Eco evidence and EMASSC method without cloning source or escalating evidence",
+      "parent_gate": "G09/G10/G11/G12"
+    },
+    {
+      "id": "I04",
+      "edge": "FileSpace -> DataSpace node discovery",
+      "owner": "CGX identity + LightSpeed networking",
+      "state": "IMPLEMENTATION_CONTRACT_TRANSPORT_GATE",
+      "missing": "Actual peer enrollment, approved device/root attestation, local and remote interoperability/readback incl offline cases",
+      "mutation": "Use existing CGX-NODE-EXCHANGE/0.1; enrol only registered nodes with scoped leases",
+      "proof": "Two independently authenticated nodes exchange bounded manifest; no OS API privilege inferred",
+      "parent_gate": "G08/G09"
+    },
+    {
+      "id": "I05",
+      "edge": "DataSpace -> content addressed transfer",
+      "owner": "LightSpeed node exchange + Filespace DBR",
+      "state": "IMPLEMENTATION_CONTRACT_TRANSPORT_GATE",
+      "missing": "Durable ACK/readback, restart/idempotent replays, competing versions, hash/size/tombstone policies, restore tests",
+      "mutation": "Consumer of transfer envelopes and recoverable DBR default; do not replace state/receipt roots",
+      "proof": "Interrupted transfer recovered with exact byte/hash ancestry and non-destructive source retention",
+      "parent_gate": "G08/G15"
+    },
+    {
+      "id": "I06",
+      "edge": "DataSpace -> delegated computation/AI",
+      "owner": "LightSpeed shared tool plane and Neo",
+      "state": "TYPED_ROUTER_AVAILABLE_RUNTIME_NEEDS_E2E_PROOF",
+      "missing": "Dynamic access scoping, budget enforcement, model/tool/version receipt, verified on-host and remote execution paths",
+      "mutation": "Use cgx.resolve_context/plan_query/minimum_work/cross_analysis/registered local tools; C0 control never given to model",
+      "proof": "Small object routed to deterministic tool with readback; unknown capability returns HOLD, no broad hydration or shell bypass",
+      "parent_gate": "G08/G15"
+    },
+    {
+      "id": "I07",
+      "edge": "CGX -> adaptive human/machine UI",
+      "owner": "LightSpeed GO / Trinity / CGX view owner",
+      "state": "REVIEW_PROJECTION_PRESENT_DEPLOYMENT_GATE",
+      "missing": "Connect live object/root API/approval to generated UI, access-controlled family cards, version conflict and DBR readback",
+      "mutation": "Reuse existing LightSpeed three principal surfaces Achilles PA / LightSpeed Ops / Quests plus on-demand object/3D lens",
+      "proof": "User selects one object, sees true current/unknown state, changes approved param, reviews delta, source owner commits with receipt",
+      "parent_gate": "G08/G14/G15"
+    },
+    {
+      "id": "I08",
+      "edge": "source geometry -> internal 3D/4D review",
+      "owner": "CGX Atlas / Raphael / LightSpeed GO",
+      "state": "DIGITAL_REVIEW_DEMONSTRATED",
+      "missing": "Exact material/process/measurements not available for all catalogue items, latest 4K commit not yet reflected in local host/dist",
+      "mutation": "Consume 605 offline review, 16 4K local proxies and latest source-hashed 4K/mesh objects; update deployed projection only through LS owner gate",
+      "proof": "Selected source hash matches render/mesh and actual SI dimensions when claimed, never promotes artwork to qualified geometry",
+      "parent_gate": "G02/G14"
+    },
+    {
+      "id": "I09",
+      "edge": "technology class -> exact component instance",
+      "owner": "Drive Atlas + Raphael UTP",
+      "state": "CATALOGUE_COVERAGE_NOT_INSTANCE_PROOF",
+      "missing": "Per-instance datasheet/lot/ports/tolerances/material ratings and 17-function dependencies",
+      "mutation": "Bind global archetype once, instantiate exact purchased/printed part refs with source ID and authority grade",
+      "proof": "One diode->passive->receiver assembly has no invented semiconductor fabrication, independent tests and actual sourced child parts",
+      "parent_gate": "G02/G03/G06"
+    },
+    {
+      "id": "I10",
+      "edge": "DataSpace -> PrintSpace process compiler",
+      "owner": "Raphael UTP + Post-Mix + PrintSpace",
+      "state": "SOURCE_MODEL_AND_PROTOTYPE_PLANS",
+      "missing": "Directional X→Y co-print/sequence effects, chamber/tool/utility settings, quantified process window, resource/mass conservation and qualified equivalent routes",
+      "mutation": "Reuse UTP/PMX single equations; X→Y and Y→X remain distinct with previous-layer survival/encapsulation gates",
+      "proof": "Accepted test coupon, tool plan, source lot, standard units, damage/protection evidence before claim of printable stack",
+      "parent_gate": "G03/G04/G05/G06"
+    },
+    {
+      "id": "I11",
+      "edge": "PrintSpace CAD -> physical PrintCeptor/ButterBot",
+      "owner": "Römer-Grex PrintSpace + EMASSC methods",
+      "state": "DIGITAL_ONLY",
+      "missing": "Actual bootstrap equipment, physical safety, chamber rating, multi-arm performance, precise BOM, bought/printed parts distinction",
+      "mutation": "Follow existing Bootstrap->self-upgrades->Butter Bot first integrated print->collaborator->PrintCeptor A order",
+      "proof": "Approved apparatus/calibration/safe powered tests, measured environmental/material acceptance, as-built DBRs",
+      "parent_gate": "G06/G07/G15"
+    },
+    {
+      "id": "I12",
+      "edge": "physical observed state -> FileSpace+DataSpace knowledge",
+      "owner": "EMASSC evidence + CGX DBR",
+      "state": "EMPIRICAL_LOOP_NOT_YET_CLOSED",
+      "missing": "Instrument and witness API, traceable calibration, postprint property/functional measurements, independent repeat, contradictory results",
+      "mutation": "Ingest signed raw observation, create derived claim Overlay, independent Resolve/owner acceptance then update object State Root/DBR",
+      "proof": "Measurement units/uncertainty/method/revision, two independent checks where feasible, preserved failed result and rollback",
+      "parent_gate": "G03/G07/G15"
+    },
+    {
+      "id": "I13",
+      "edge": "CGX -> public package / collaboration",
+      "owner": "CCC/CYC + EMASSC IP + LightSpeed",
+      "state": "STATIC_REVIEW_AND_RELEASE_GATE",
+      "missing": "Actual signed package download/import and authenticity, rights, versioning, user consents and content safety",
+      "mutation": "Use existing CCC/CGX collection; no new marketplace, no internal/P.A secret receipt exposure",
+      "proof": "Authorised source and derivative license, signed package import offline and independent release approval",
+      "parent_gate": "G14/G15"
+    },
+    {
+      "id": "I14",
+      "edge": "product/facility -> ecology/civilisation impact",
+      "owner": "Eco-Grex + Römer + EMASSC + partner domains",
+      "state": "MODELLED_PROGRAMME_NOT_DEPLOYMENT",
+      "missing": "Local environmental baselines, life-cycle balance, cost/equity/safety/affected-party reviews, physical partner permits and sovereign governance",
+      "mutation": "Typed impact bridge and empirical monitoring loops, record dissent and alternatives, independent legal/civic authority",
+      "proof": "Measurable stewardship outcome, controlled externalities, public-interest audit and pilot partner records",
+      "parent_gate": "G10/G11/G12/G13/G15"
+    }
+  ],
+  "execution_contract": {
+    "input": "Task_ID + Object_IDs + native source rev/hash + family/domain + intent + scopes + device/current capabilities + lease + evidence ceiling + data budget",
+    "hydrate_levels": [
+      "SHELL",
+      "SPARSE",
+      "PROJECT_DEEP",
+      "CROSS_DOMAIN_BOUNDED"
+    ],
+    "path": [
+      "Discover source and owner",
+      "Resolve exact source roots and permissions",
+      "Calculate bounded dependency cone",
+      "Select one primary task lens and on-demand secondary panels",
+      "Plan via deterministic algorithms and optional AI suggestions",
+      "Challenge with independent numerical/physical proof as applicable",
+      "Owner/operator approve precise proposed delta",
+      "Run on registered leased capability or HOLD",
+      "Read back result, digest and source receipt",
+      "Write to source owner, reconcile DBR State Root, propagate minimal verified delta"
+    ],
+    "no_evidence_escalation": [
+      "model confidence != evidence",
+      "GPU image != CAD qualification",
+      "API reachable != authority",
+      "simulation != empirical test",
+      "two models != independent physical proof",
+      "transfer receipt != source owner promotion"
+    ],
+    "physical_command_rule": "Requires real C0 deterministic controller, hardware identity, calibration, local safe-state, verified operator/release lease; an AI can plan but cannot authorise safety bypass or actuation.",
+    "provider_change_rule": "Never overwrite native provider files without exact owner current head/revision and rollback; existing documents and Windows user Documents excluded.",
+    "no_new_master": true
+  },
+  "example_work": {
+    "minimal": {
+      "request": "Open a previously known CAD object and show its dependencies.",
+      "profile": "SPARSE",
+      "hydrate": "object manifest, authoritative source revision, matching geometric instance and direct dependencies",
+      "output": "filespace-tree or object inspector plus optional derived 3D; no model/software mutation"
+    },
+    "project": {
+      "request": "Review Butter Bot functional electronics, material and assembly route.",
+      "profile": "PROJECT_DEEP",
+      "hydrate": "PrintCeptor machine capabilities, approved Butter Bot CAD rights, exact BOM/UTP/PMX route, measured/simulated evidence",
+      "output": "source-linked CAD/tool sequencing/untested gates and owner approval queue; no physical print"
+    },
+    "cross": {
+      "request": "Use Eco-Grex material from a Römer site in Mark/Luke hardware.",
+      "profile": "CROSS_DOMAIN_BOUNDED",
+      "hydrate": "authorised ISRU material lot, physical/composition facts, Eco impact, Römer mission specification, EMASSC method, manufacturing routes",
+      "output": "bounded assessment and counterparty-approved interface record; physical acceptance separate"
+    }
+  },
+  "priority_without_new_dispatch": [
+    {
+      "rank": 1,
+      "existing_owner": "LS GO/CGX",
+      "mutation": "Verify local source 0884 vs provider 7d705 one-commit delta; run source tests and update owner-approved host/dist with rollback after canonical root pointer reconciliation",
+      "proof": "same exact-source hash and clean worktree, full UI health and owner readback"
+    },
+    {
+      "rank": 2,
+      "existing_owner": "CGX Filespace/DataSpace",
+      "mutation": "One read-only provider file->object->node-transfer->readback integration fixture using existing node-exchange and explicit lease; no production mutation",
+      "proof": "stable Object_ID, source sha256, no new authority, offline fallback and scoped payload"
+    },
+    {
+      "rank": 3,
+      "existing_owner": "Trinity/Achilles PA/LS GO",
+      "mutation": "Connect existing 605-object inspector to per-object view and owner review action; reuse 4K mesh/hero where source permits; do not duplicate rendering",
+      "proof": "open current provider source, display known/unknown and approved specific write receipt"
+    },
+    {
+      "rank": 4,
+      "existing_owner": "Raphael UTP+PostMix/PrintSpace",
+      "mutation": "Choose one diode->functional circuit and one Butter Bot child component digital-to-empirical dependency chain",
+      "proof": "quantified SI BOM, process/material compatibility, source-bound exposure and independent measurement needs"
+    },
+    {
+      "rank": 5,
+      "existing_owner": "Römer/Eco/EMASSC",
+      "mutation": "Bind one ecological/material life-cycle and one Mark/Luke subsystem impact object to the existing bridge",
+      "proof": "two-domain signed/counterparty-review and stewarded acceptance, no agency/partner deployment implied"
+    }
+  ],
+  "safety_and_release": {
+    "source_ownership": "Drive engineering canon, Git code, local execution; source/display carrier identity separate from content authority.",
+    "secrets": "Secret reference only. Do not import passwords from chats or Google Drive into CGX; excluded personal paths unchanged.",
+    "bootstrap_auth": "Owner credentials and per-device approvals independently gated; no user PIN carried into runtime commands.",
+    "approval": "No public release, root promotion, phone/peer enrolment, physical printing, commercial claim or external communication from review packet.",
+    "always_current": "Provider and host commit IDs in this file are observations, not evergreen pointers; reread before executions."
+  }
+}
