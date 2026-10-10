@@ -379,5 +379,197 @@
     "bootstrap_auth": "Owner credentials and per-device approvals independently gated; no user PIN carried into runtime commands.",
     "approval": "No public release, root promotion, phone/peer enrolment, physical printing, commercial claim or external communication from review packet.",
     "always_current": "Provider and host commit IDs in this file are observations, not evergreen pointers; reread before executions."
+  },
+  "founder_universal_filespace_identity_20261010": {
+    "status": "FOUNDER_CANONICAL_NAMING_DIRECTION_REVIEW_CONSUMER_NO_ROOT_CHANGE",
+    "semantic_equivalence": "CGX == FileSpace; two labels for one universal product, NOT two data stores/services/master identity spaces",
+    "file_extension": ".cgx",
+    "concrete_parent_display": "Cognigrex.cgx",
+    "local_concrete_parent": "C:/Cognigrex/Cognigrex.cgx",
+    "aliases": [
+      {
+        "address": "cgx://CGX.cgx",
+        "role": "founder-preferred universal discovery entry",
+        "status": "PROPOSED_ALIAS_REQUIRES_EXISTING_RESOLVER_VALIDATION"
+      },
+      {
+        "address": "cgx://CGX",
+        "role": "older product route; preserve as historical/compatibility alias pending owner policy",
+        "status": "HISTORICAL_NOT_NEW_ROOT"
+      },
+      {
+        "address": "cgx://cognigrex/",
+        "role": "local/semantic parent route where configured",
+        "status": "EXISTING_CONTEXTUAL_ALIAS_VERIFY_EXACT_NAMESPACE"
+      },
+      {
+        "address": "Cognigrex.cgx",
+        "role": "specific owner-controlled parent filespace carrier",
+        "status": "EXISTING_HOST_FILE_CURRENTNESS_PROVEN_AT_READ"
+      }
+    ],
+    "identity_invariant": "Resolver MUST bind aliases to the existing signed namespace/Object_ID/State Root/DBR Root; letter casing, pathname, extension and address alone confer neither identity nor trust",
+    "canonical_carrier_scope": "one semantic root/Filespace can have sparse projections/multiple storage providers/ZIP-compatible Phase A carrier; logical unified filesystem does NOT mean one physical database/server/blob",
+    "child_spaces": [
+      "Romer.cgx",
+      "Eco.cgx",
+      "EMASSC.cgx",
+      "LS.cgx"
+    ],
+    "data_space": "DataSpace is the federated exchange/collaboration/state-routing CAPABILITY of interoperating CGX FileSpaces; not a second version of the universal filespace",
+    "print_space": "PrintSpace is a separately qualified digital-to-empirical execution edge consuming FileSpace+DataSpace models and returning measured, method-bound DBR evidence",
+    "planned_interoperability": "human/machine inspect/read/write through source-owned projections; native PDFs/DOCX/XLSX/SQL/CAD/GLB/3MF, agents, apps and APIs remain native preserved inputs and governed capabilities, not mandatory full conversion or blanket credential access",
+    "source_references": [
+      "CGX Living FileSpace Build Strategy 2026-09-21 Drive",
+      "CGX Filespace Phase A Manual v0.1 Drive",
+      "CGX Filespace Phase A Whitepaper v0.1 Drive",
+      "CGX_Addressing_v0_1.md Drive",
+      "LightSpeed cgx/domain_templates/domains.json and universal_object_extension_contract.json (main)"
+    ],
+    "no_mutations": [
+      "no S92 root rewrite",
+      "no new universal filespace namespace ID",
+      "no duplicate DataSpace DB",
+      "no Windows handler activation without signed/approved host policy",
+      "no new local LLM agent, scheduler or CGX platform application"
+    ]
+  },
+  "dataspace_minimum_end_to_end_proof": {
+    "contract_version": "PRODUCT_ACCEPTANCE_REVIEW_v0.1",
+    "workflow": [
+      "Authenticated distinct device/node enrollment and scoped capability/permission/lease negotiation",
+      "Read native Drive/Git/local file within source ACL and produce object envelope referencing signed type/instance/provider revision and hashes",
+      "Select minimum permissible data slice for semantic state and task-specific hydration",
+      "Content-addressed node exchange with interrupted/resumed transfer, idempotent recipient write, digest-size readback",
+      "Delegated computation to admissible local no-model/classical/AI capability only with explicit lease and input snapshot hash",
+      "Return typed result/unknown/uncertainty with exact inputs/capability/version and receipt",
+      "Overlay proposed semantic delta without changing owner state; support disagreement and dual acceptance across child families",
+      "Owner approval gated Resolve, atomic State Root and DBR Root with ancestor closures and recoverable history",
+      "Independent offline/read-only degraded operation and cross-node resync with conflict preservation; never newest-timestamp-wins",
+      "Optional physical device/PrintSpace step requires independent C0 interlocks, qualified process and measured return receipt"
+    ],
+    "acceptance_cases": [
+      {
+        "id": "DS-01",
+        "test": "one original PDF/DOCX or text document and one spreadsheet open as sparse CGX views",
+        "proof": "object id stable; provider SHA/revision preserved; editing requires owner ACL"
+      },
+      {
+        "id": "DS-02",
+        "test": "one measured CAD/STL/STEP/glTF/GLB source mapped to typed geometry/unknown envelope",
+        "proof": "native geometry hash & SI units vs displayed 3D, no fabricated dimension"
+      },
+      {
+        "id": "DS-03",
+        "test": "two separately authenticated genuine nodes compare source/DBR roots then selective transfer",
+        "proof": "hash and size equality; replay/readback; transport interruption and restart"
+      },
+      {
+        "id": "DS-04",
+        "test": "authorized no-model deterministic tool and optional local LLM complete one scoped task",
+        "proof": "capability is attested; exact input/out root and DBR; model response not canonical evidence"
+      },
+      {
+        "id": "DS-05",
+        "test": "one Römer↔Eco↔EMASSC cross-domain bridge with contrary results",
+        "proof": "no automatic authority copy, dual/counterparty gate, both dissenting states preserved"
+      },
+      {
+        "id": "DS-06",
+        "test": "CGX GO generated interface shows one physical object, 3D/4D/data state and approval card",
+        "proof": "one primary view; source identity and status badge/evidence; owner decision write→readback receipt"
+      },
+      {
+        "id": "DS-07",
+        "test": "private user/credential data remains out of public review/CCC/Google Drive export",
+        "proof": "negative unauthenticated asset tests, controlled credentials, audit and private data separation"
+      },
+      {
+        "id": "DS-08",
+        "test": "PrintCeptor candidate print instruction digital→physical→tested evidence",
+        "proof": "source lot/tool/calibration/environment; measured acceptance; local safe state; no claim physical until live results"
+      }
+    ],
+    "readiness_rule": "No claim of DataSpace full completion from local HTTP 200, merged PR, single-device simulator, generated 4K artwork, schema/CI, or one side's unsigned assertion. Require typed current source, independent tests and operator/owner acceptance. Discrete unavailable external/manual standards remain held with harness.",
+    "source_of_authority": "Existing CGX Node Exchange, Filespace Manual, Agent Runtime, DBR, Assurance and owner Roots; consumer fixture only",
+    "state": "ACCEPTANCE_SPECIFIED_NOT_E2E_VERIFIED"
+  },
+  "completion_register": {
+    "status": "OWNER_SAFE_WORKLIST_NOT_CLOSURE_CLAIM",
+    "lanes": [
+      {
+        "id": "FS-1",
+        "owner": "CGX Filespace",
+        "scope": "Name/resolver alias, carrier open/verify, native source/mount with ACL, object identity, roots/DBR, format-adapter tests",
+        "maps_to": [
+          "I01",
+          "I02"
+        ],
+        "deliverable": "2 legacy files + 1 CAD sparse open/close replay with owner revision verification"
+      },
+      {
+        "id": "DS-1",
+        "owner": "CGX DataSpace + LightSpeed",
+        "scope": "Authenticated real 2-node admission, delta/hash transfer, offline conflict/reconnect, compute lease and signed receipts",
+        "maps_to": [
+          "I03",
+          "I04",
+          "I05",
+          "I06"
+        ],
+        "deliverable": "separately authenticated nodes with transport/lease logs and independent readback; no simulated peer promotion"
+      },
+      {
+        "id": "UI-1",
+        "owner": "Trinity/LightSpeed GO/Achilles P.A",
+        "scope": "Single generated accessible CGX operator view with Files/Graph/3D/DBR/Approvals and real owner callback",
+        "maps_to": [
+          "I07",
+          "I08"
+        ],
+        "deliverable": "source-hashed 3D review plus governed owner approve/hold/reject mutation receipt; private/public negative access tests"
+      },
+      {
+        "id": "MFG-1",
+        "owner": "Raphael UTP/Post-Mix/PrintSpace",
+        "scope": "Diode→assembly→Butter Bot and Mark/Luke dependency proofs with materials and process qualification",
+        "maps_to": [
+          "I09",
+          "I10",
+          "I11",
+          "I12"
+        ],
+        "deliverable": "one complete digital route and instrumented first article when independently authorized; physical otherwise NOT_RUN"
+      },
+      {
+        "id": "GOV-1",
+        "owner": "EMASSC/CCC/CYC/Eco/Römer",
+        "scope": "Scope/IP/ethics/permissions/source chain and public impact",
+        "maps_to": [
+          "I13",
+          "I14"
+        ],
+        "deliverable": "signed community export and objective lifecycle impact evidence, legal/public releases separately gated"
+      },
+      {
+        "id": "OPS-1",
+        "owner": "Neo/R2/R3/Achilles",
+        "scope": "Maintain 14 interface records and four-stage completion evidence in existing G gates only, receive owner proposals from co-running chats",
+        "maps_to": [
+          "I01",
+          "I14"
+        ],
+        "deliverable": "hourly receipts with exact head/source, highest proof gap, owner/lease, accepted/rejected delta and test reruns; no duplicate queue"
+      }
+    ],
+    "invariants": [
+      "one CGX==FileSpace product",
+      "DataSpace is interoperation not second master",
+      "only signed current source/permissions confer authority",
+      "render media may be derived, never qualified physical evidence",
+      "four existing active hourly automations, disabled R1 stays disabled",
+      "skip unchanged sources, avoid recrawl and duplicate computation",
+      "physical/public/legal/financial/credential/root mutation held until distinct authority"
+    ]
   }
 }
