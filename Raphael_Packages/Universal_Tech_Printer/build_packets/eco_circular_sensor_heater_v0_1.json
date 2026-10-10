@@ -1,0 +1,30 @@
+{
+  "artifact_id": "UTP-PACKET-ECO-CIRCULAR-001",
+  "version": "0.1",
+  "audience": "Eco/nonprofit/community",
+  "title": "Cleanup-to-Qualified-Feed + Sensor/Heater Packet",
+  "catalogue_refs": [
+    "PT-012",
+    "PT-018..024",
+    "PT-049",
+    "PT-050",
+    "PT-060",
+    "PT-061",
+    "PT-063",
+    "UTP-NEW-NEUTRALS-001"
+  ],
+  "objective": "Convert a known recovered material stream into a characterized low-risk functional coupon only after contamination/material gates.",
+  "workflow": [
+    "identify source stream and prohibited contaminants",
+    "sort/separate/clean",
+    "measure composition/physical properties appropriate to feed class",
+    "assign material passport + uncertainty",
+    "make benign coupon before device use",
+    "measure conductivity/resistance/thermal/sensor behavior",
+    "compare recovered feed with virgin/reference control",
+    "accept/reject/reprocess",
+    "record ecological/resource outcome without assuming benefit from collection alone"
+  ],
+  "volunteer_boundary": "Volunteers/community may perform bounded collection, sorting, documentation and low-risk assembly; chemistry, contamination, electrical safety, pressure and process qualification stay with competent responsible operators.",
+  "graphene_boundary": "Recovered carbonaceous or plastic/ocean-cleanup material is not labelled graphene merely by origin. Graphene-grade feed requires an actual validated conversion/characterization route."
+}

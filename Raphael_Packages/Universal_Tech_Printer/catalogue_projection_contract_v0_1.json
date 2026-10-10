@@ -1,0 +1,75 @@
+{
+  "artifact_id": "UTP-CATALOGUE-PROJECTION-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Universal Printable Technology Catalogue — Projection and Expansion Contract",
+  "principle": "Maintain one underlying evidence-bearing catalogue; project it by audience, local horizon, consequence, domain and maturity rather than creating disconnected catalogues.",
+  "axes": [
+    "function/category",
+    "catalogue primitive",
+    "geometry archetype",
+    "feed/material family",
+    "new-neutral/interface requirement",
+    "environment/tool/energy process",
+    "compute profile",
+    "CGX identity class",
+    "DIY/professional level",
+    "local horizon",
+    "evidence tier",
+    "seed dependency",
+    "repair/recycle path",
+    "owner/authority",
+    "portfolio domain",
+    "showcase/build packet"
+  ],
+  "audiences": [
+    "DIY/school",
+    "SME",
+    "research",
+    "Eco/nonprofit/community",
+    "government/infrastructure",
+    "internal Romer/EMASSC/InterSol",
+    "remote/outpost"
+  ],
+  "horizons": [
+    "terrestrial-site",
+    "ocean",
+    "regional-infrastructure",
+    "orbital",
+    "lunar",
+    "Martian",
+    "asteroid",
+    "interplanetary",
+    "interstellar-frontier"
+  ],
+  "portfolio_domains": [
+    "Cognigrex/.cgx",
+    "LightSpeed",
+    "Raphael",
+    "Romer-Grex",
+    "Eco-Grex",
+    "EMASSC",
+    "Operations",
+    "Solar Hull",
+    "Free Flow",
+    "RFS/EMFF",
+    "InterSol",
+    "Socie-Civil/Type-1",
+    "Type-2 frontier"
+  ],
+  "expansion_rule": "New technology is added by decomposing it into existing primitives/interfaces/processes first. Add a new primitive only where decomposition leaves a falsifiable missing function.",
+  "outreach_rule": "Public/partner material must show readiness/evidence and DIY/safety level alongside benefits. Outreach cannot strengthen the underlying evidence ceiling.",
+  "organization_pattern": {
+    "status": "candidate portfolio-delivery pattern, not legal advice or incorporated structure",
+    "core": "small accountable professional front/back-end team",
+    "contributors": "paid/benefit-bearing specialist contributors + bounded volunteer/community/research participation",
+    "network": "InterSol/federated delivery partners and local nodes",
+    "controls": [
+      "clear role/authority",
+      "volunteer-safe task boundary",
+      "insurance/WHS/employment/IP/export-control review",
+      "public evidence labels",
+      "right-to-exit/provider substitution"
+    ]
+  }
+}

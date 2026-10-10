@@ -1,0 +1,74 @@
+{
+  "artifact_id": "UTP-IR-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Recursive Multiscale Print Intermediate Representation",
+  "build_node_schema": {
+    "id": "stable node id",
+    "scale": "nano|micro|meso|macro|site",
+    "geometry_ref": "source-bound geometry or parametric description",
+    "material_state_ref": "voxel/feed/material passport",
+    "process_ref": "qualified/candidate process",
+    "environment_ref": "ENV-0..4",
+    "ports": [
+      "mechanical",
+      "thermal",
+      "electrical",
+      "magnetic_EM",
+      "optical",
+      "fluid_gas",
+      "chemical_species",
+      "data_control",
+      "service_manufacturing"
+    ],
+    "active_kernels": [
+      "UTP-KERNEL ids"
+    ],
+    "boundary_conditions": [],
+    "controls": [],
+    "children": [],
+    "verification": [],
+    "uncertainty": {},
+    "evidence_state": "concept|source|calculation|simulation|controlled_test|reviewed"
+  },
+  "recursion_rules": [
+    "child nodes inherit only explicitly declared parent boundary/environment state",
+    "child material/process authority never automatically uplifts parent readiness",
+    "interfaces are first-class nodes when they control failure/function",
+    "a nominally monolithic print may still contain staged inserts/cavities/seals",
+    "same IR supports one-core-outward and multi-agent partitioned execution"
+  ],
+  "compiler_stages": [
+    "intent/function decomposition",
+    "geometry + port graph",
+    "material/function assignment",
+    "kernel/regime selection",
+    "interaction hypergraph",
+    "traditional comparator",
+    "environment selection",
+    "thermal/chemical build-order solve",
+    "robot/tool allocation",
+    "verification insertion",
+    "toolpath/process packet",
+    "runtime state updates",
+    "CGX twin emission"
+  ],
+  "cgx_outputs": {
+    "filespace": [
+      "geometry manifests",
+      "process graph",
+      "toolpaths",
+      "hardware/software interface manifests",
+      "service map"
+    ],
+    "dataspace": [
+      "solver states",
+      "material passports",
+      "coefficients",
+      "raw logs",
+      "uncertainty",
+      "test/proof records",
+      "failure/residual maps"
+    ]
+  }
+}

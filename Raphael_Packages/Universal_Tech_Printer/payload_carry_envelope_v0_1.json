@@ -1,0 +1,117 @@
+{
+  "artifact_id": "UTP-CARRY-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Manipulation / Carry Capacity Envelope — Micro to Macro and Space",
+  "correction": "payload capacity is not one scalar 'N kg'. It is configuration-, gravity-, acceleration-, geometry- and interface-dependent.",
+  "payload_state": [
+    "mass m",
+    "bounding dimensions dx,dy,dz",
+    "center of mass c_xyz",
+    "inertia tensor I",
+    "attachment/contact geometry",
+    "allowable force/torque wrench",
+    "required acceleration/velocity/jerk",
+    "fragility/compliance",
+    "temperature/heat load",
+    "electrical charge/potential and grounding state",
+    "magnetic moment/susceptibility where relevant",
+    "pressure/volatile/gas state",
+    "contamination/abrasion/dust class",
+    "communications/power tether state"
+  ],
+  "manipulator_equation": "tau = M(q) qdd + C(q,qd) + g(q,g_env) + J(q)^T F_ext",
+  "feasibility": "payload/manipulation operation is allowed only where every joint torque, structural stress, stability/anchoring, actuator thermal, contact, collision and control constraint remains inside its envelope",
+  "space_effects": [
+    "lower gravity reduces weight but not inertial mass",
+    "microgravity makes acceleration/reaction forces and momentum management dominant",
+    "lunar low gravity also reduces available traction/normal force, so anchoring can become more limiting than lifting",
+    "asteroid/very-low-g operations require capture/anchoring/containment to prevent both tool and resource from drifting",
+    "charged dust and electrostatic/magnetic state can alter handling and separation"
+  ],
+  "capability_axes": [
+    {
+      "axis": "translation",
+      "variables": [
+        "x",
+        "y",
+        "z"
+      ],
+      "meaning": "reachable Cartesian workspace under load"
+    },
+    {
+      "axis": "orientation",
+      "variables": [
+        "roll",
+        "pitch",
+        "yaw"
+      ],
+      "meaning": "tool/object attitude"
+    },
+    {
+      "axis": "wrench",
+      "variables": [
+        "Fx",
+        "Fy",
+        "Fz",
+        "Tx",
+        "Ty",
+        "Tz"
+      ],
+      "meaning": "allowed force/torque at tool/object interface"
+    },
+    {
+      "axis": "environment",
+      "variables": [
+        "g",
+        "p",
+        "T",
+        "atmosphere",
+        "radiation/dust"
+      ],
+      "meaning": "site-specific derating"
+    },
+    {
+      "axis": "process",
+      "variables": [
+        "feed mass flow",
+        "energy input",
+        "local chamber size",
+        "reaction force"
+      ],
+      "meaning": "printing/manufacturing load"
+    }
+  ],
+  "carry_classes": [
+    {
+      "id": "C0",
+      "name": "micro manipulate",
+      "scope": "particles, dies, fibres, wires, microcells"
+    },
+    {
+      "id": "C1",
+      "name": "desktop component",
+      "scope": "subassemblies/toolheads/child-printer parts"
+    },
+    {
+      "id": "C2",
+      "name": "machine module",
+      "scope": "arms, tanks, beams, printer modules"
+    },
+    {
+      "id": "C3",
+      "name": "cooperative macro",
+      "scope": "multiple agents share a load/fixture"
+    },
+    {
+      "id": "C4",
+      "name": "in-situ anchored manipulation",
+      "scope": "resource boulders, large truss/road/pad segments, Luke/Mark/infrastructure modules"
+    },
+    {
+      "id": "C5",
+      "name": "free-space manipulation",
+      "scope": "orbital assembly/repair where momentum exchange and anchoring replace gravity-load limits"
+    }
+  ]
+}

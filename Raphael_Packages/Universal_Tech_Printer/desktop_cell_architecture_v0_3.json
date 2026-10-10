@@ -1,0 +1,112 @@
+{
+  "artifact_id": "UTP-DESKTOP-001",
+  "version": "0.3",
+  "supersedes": "desktop_cell_architecture_v0_2.json",
+  "date": "2026-10-07",
+  "title": "Desktop Universal Technology Printer — Generation-1 Universal Acceptance Architecture",
+  "correction": "G1 is not a reduced common-core demonstrator. It must be able to manufacture/activate a bounded example of every universal function basis class required to reproduce a smaller fully functioning UTP, including RGB/light emission, energy storage, conductance, passive electronics, sensing, actuation, environment handling and at least one active switching/logic route. Performance parity with commercial products and 100% local provenance are not required for G1 acceptance.",
+  "external_class": "approximately 1 m^3 cabinet class; internal build envelope smaller",
+  "two_arm_roles": {
+    "arm_A": "bulk/functional material: structural extrusion, post-mix DIW, conductor, dielectric, electrode, cavity/seal",
+    "arm_B": "precision/process: pick-place, mill/ablate, fine deposition, energy treatment, metrology, fill/evacuate/recover",
+    "rule": "either arm may exchange tools; contamination class and calibration determine allowed swaps"
+  },
+  "first_machine_required_outputs": [
+    {
+      "id": "G1-F01",
+      "function": "structure",
+      "example": "frame/cavity/tool body"
+    },
+    {
+      "id": "G1-F02",
+      "function": "conductance",
+      "example": "printed/embedded power or signal path"
+    },
+    {
+      "id": "G1-F03",
+      "function": "dielectric",
+      "example": "insulating layer/barrier"
+    },
+    {
+      "id": "G1-F04",
+      "function": "resistance/heating",
+      "example": "printed resistor/heater"
+    },
+    {
+      "id": "G1-F05",
+      "function": "capacitance",
+      "example": "multilayer conductor-dielectric-conductor"
+    },
+    {
+      "id": "G1-F06",
+      "function": "inductance/field",
+      "example": "coil/inductor/antenna geometry"
+    },
+    {
+      "id": "G1-F07",
+      "function": "energy storage",
+      "example": "bounded printed/filled electrochemical or supercapacitor cell"
+    },
+    {
+      "id": "G1-F08",
+      "function": "light emission",
+      "example": "sealed gas-discharge/phosphor RGB cell and/or printed/placed semiconductor emitter"
+    },
+    {
+      "id": "G1-F09",
+      "function": "sensor",
+      "example": "temperature/strain/conductivity/optical sensor"
+    },
+    {
+      "id": "G1-F10",
+      "function": "actuation",
+      "example": "coil/solenoid/motor-stage or printed compliant actuator with inserted precision element"
+    },
+    {
+      "id": "G1-F11",
+      "function": "fluid/gas routing",
+      "example": "printed manifold/channel + valve interface"
+    },
+    {
+      "id": "G1-F12",
+      "function": "pressure/vacuum sealing",
+      "example": "filled/evacuated sealed cavity"
+    },
+    {
+      "id": "G1-F13",
+      "function": "RF receiver/transmitter structure",
+      "example": "antenna/transmission-line/resonator geometry + active interface"
+    },
+    {
+      "id": "G1-F14",
+      "function": "thermal management",
+      "example": "heat spreader/insulator/radiator geometry"
+    },
+    {
+      "id": "G1-F15",
+      "function": "active switching/logic",
+      "example": "qualified printed thin-film switch if available, otherwise printed interconnect/passives plus inserted seed die as a tracked dependency"
+    },
+    {
+      "id": "G1-F16",
+      "function": "metrology/calibration",
+      "example": "camera/probe/calibration artifact and closed-loop correction"
+    },
+    {
+      "id": "G1-F17",
+      "function": "software-defined toolpath/process",
+      "example": "CGX compile→deterministic controller→measured update"
+    }
+  ],
+  "specialist_tools_required_in_same_machine": [
+    "fine additive/direct-write head",
+    "evaporative/degassing/vacuum process capability",
+    "thin-film/fine deposition cartridge or upgrade port",
+    "localized UV/visible/IR/laser/photonic energy treatment",
+    "subtractive patterning/milling/ablation; chemical etch only in isolated qualified module",
+    "gas/liquid fill, evacuation, seal and gas recovery",
+    "electrical/optical/leak/metrology test"
+  ],
+  "acceptance_rule": "G1 passes only when it fabricates and commissions P1-PRINTER-MU as a smaller universal printer that can itself execute the same G1 functional basis at its own scale, with all seed dependencies explicitly listed.",
+  "seed_dependency_policy": "seed parts/materials are permitted and measured; no claim of complete self-replication until critical-dependency fraction reaches the declared threshold and the child can reproduce its own calibration/control chain."
+}

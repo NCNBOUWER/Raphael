@@ -1,0 +1,77 @@
+{
+  "artifact_id": "UTP-HYPERGRAPH-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Residual-Driven Interaction Hypergraph",
+  "premise": "pair-first decomposition for tractability; higher-order interactions are explicit residual terms, never assumed absent",
+  "state_equation": "dS_i/dt = R_i + sum_j K_ij + sum_{j<k} K3_ijk + ... + B_i + C_i",
+  "interaction_orders": [
+    {
+      "order": 1,
+      "name": "self",
+      "meaning": "intrinsic/local material or component evolution"
+    },
+    {
+      "order": 2,
+      "name": "pair",
+      "meaning": "interface/contact/field/transport between two entities; default first interaction layer"
+    },
+    {
+      "order": 3,
+      "name": "triplet",
+      "meaning": "irreducible three-entity coupling promoted only when pair reconstruction residual exceeds gate"
+    },
+    {
+      "order": "N",
+      "name": "hyperedge",
+      "meaning": "bounded higher-order interaction or shared field/boundary condition"
+    }
+  ],
+  "residual_gate": {
+    "metric": "||observed_or_high_fidelity - pair_model|| / max(||observed_or_high_fidelity||, epsilon)",
+    "threshold": "domain/test specific; never universal",
+    "actions": [
+      "PASS_PAIR",
+      "PROMOTE_TRIPLET",
+      "PROMOTE_SHARED_FIELD",
+      "REJECT_MODEL",
+      "REQUEST_EVIDENCE"
+    ]
+  },
+  "edge_classes": [
+    "mechanical_contact",
+    "thermal_interface",
+    "chemical_reaction",
+    "diffusion",
+    "solvent_wetting_evaporation",
+    "electrical_contact",
+    "ionic_interface",
+    "electrochemical_charge_transfer",
+    "magnetic_coupling",
+    "electromagnetic_force",
+    "optical_coupling",
+    "plasma_surface",
+    "fluid_structure",
+    "phase_boundary",
+    "data_control",
+    "manufacturing_service"
+  ],
+  "evidence_fields": [
+    "source",
+    "units",
+    "coefficients",
+    "boundary_conditions",
+    "calibration_range",
+    "uncertainty",
+    "raw_test_ids",
+    "falsifier"
+  ],
+  "raphael_mapping": {
+    "rule": "normalize only physically/computationally derived pathway weights into closure/OBW/MMB",
+    "forbidden": [
+      "equate TPW log well with chemical free energy",
+      "invent missing Raphael coefficients",
+      "promote analogy into physical law"
+    ]
+  }
+}

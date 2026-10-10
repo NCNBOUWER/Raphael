@@ -1,0 +1,262 @@
+{
+  "artifact_id": "UTP-KERNELS-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Universal Tech Printer Multiphysics Kernel Registry",
+  "authority": "adapter registry; source-governed Raphael equations and conventional domain physics remain separate authorities",
+  "source_bridges": {
+    "raphael_repo": "NCNBOUWER/Raphael",
+    "raphael_equation_exposure": "N^3/INTERNAL/registers/Equation exposure register.md",
+    "geomatrices_code": "N^3/RUN/code/fascicle_ii_geomatrices.py",
+    "raphael_bridge": "N^3/RUN/code/fascicle_iii_raphael_bridge.py",
+    "eml_catalogue": "EML#F/Publications/EML#F overview.md",
+    "drive_json_library": {
+      "folder_id": "1Al3PinRcb8_vJKr5i4VrTS2Ci0wBKgPS",
+      "files": [
+        "constants.json",
+        "atomic.json",
+        "molecular.json",
+        "relative.json",
+        "planetary.json",
+        "stellar.json",
+        "cosmic.json",
+        "galactic.json",
+        "quantum.json",
+        "consolidating.json"
+      ],
+      "rule": "legacy/source library; ingest through schema/dimensional validation; never silently repair source values"
+    }
+  },
+  "state_fields": [
+    "composition",
+    "phase_order",
+    "density",
+    "velocity",
+    "pressure",
+    "temperature",
+    "species",
+    "charge_density",
+    "electric_potential",
+    "E",
+    "B",
+    "H",
+    "stress",
+    "strain",
+    "geometry",
+    "interfaces",
+    "environment",
+    "embedded_devices",
+    "control_state",
+    "uncertainty",
+    "evidence"
+  ],
+  "kernels": [
+    {
+      "id": "K-CLOSURE",
+      "domain": "geomatrices",
+      "class": "representation",
+      "equation": "p_i=X_i/sum(X)",
+      "authority": "Raphael/N^3 proof-safe",
+      "activate_when": [
+        "normalized comparison or bounded state mapping"
+      ],
+      "not_physical_substitute": true
+    },
+    {
+      "id": "K-FLUID-MASS",
+      "domain": "fluid",
+      "class": "conservation",
+      "equation": "d(rho)/dt + div(rho*u)=S_m",
+      "authority": "classical conservation",
+      "activate_when": [
+        "moving/flowing continuum"
+      ]
+    },
+    {
+      "id": "K-FLUID-MOM",
+      "domain": "fluid",
+      "class": "conservation",
+      "equation": "d(rho*u)/dt+div(rho*u⊗u)=-grad(p)+div(tau)+rho*g+f_EM+f_surface+f_other",
+      "authority": "continuum mechanics",
+      "activate_when": [
+        "momentum transport"
+      ]
+    },
+    {
+      "id": "K-ENERGY",
+      "domain": "thermal",
+      "class": "conservation",
+      "equation": "dE/dt+div((E+p)u)=div(k grad T)+Q",
+      "authority": "energy conservation",
+      "activate_when": [
+        "thermal/process energy"
+      ]
+    },
+    {
+      "id": "K-SPECIES",
+      "domain": "chemical_transport",
+      "class": "transport",
+      "equation": "dc_k/dt+div(c_k u)=div(D_k grad c_k)+R_k",
+      "authority": "species conservation",
+      "activate_when": [
+        "mixture/reaction/solvent/gas species"
+      ]
+    },
+    {
+      "id": "K-MAXWELL",
+      "domain": "electromagnetic",
+      "class": "field",
+      "equation": "Maxwell equations + charge continuity",
+      "authority": "classical electromagnetism",
+      "activate_when": [
+        "electric/magnetic/EM function"
+      ]
+    },
+    {
+      "id": "K-NP",
+      "domain": "electrochemical",
+      "class": "transport",
+      "equation": "J_k=-D_k grad c_k-z_k u_k F c_k grad(phi)+c_k u",
+      "authority": "Nernst-Planck family",
+      "activate_when": [
+        "mobile ions/electrolyte/electrokinetics"
+      ],
+      "requires": [
+        "electrochemical boundary/interface model"
+      ]
+    },
+    {
+      "id": "K-BV",
+      "domain": "electrochemical",
+      "class": "interface_kinetics",
+      "equation": "Butler-Volmer or validated alternative",
+      "authority": "electrode kinetics",
+      "activate_when": [
+        "faradaic electrode interface"
+      ],
+      "coefficients": "material/interface specific"
+    },
+    {
+      "id": "K-CH",
+      "domain": "phase_field",
+      "class": "conserved_phase",
+      "equation": "dc/dt=div(M grad mu)+R; mu=deltaF/deltac",
+      "authority": "phase-field candidate",
+      "activate_when": [
+        "conserved composition/phase separation/solidification model"
+      ],
+      "coefficients": "material specific"
+    },
+    {
+      "id": "K-AC",
+      "domain": "phase_field",
+      "class": "nonconserved_phase",
+      "equation": "deta/dt=-L deltaF/deltaeta",
+      "authority": "phase-field candidate",
+      "activate_when": [
+        "non-conserved order evolution"
+      ],
+      "coefficients": "material specific"
+    },
+    {
+      "id": "K-MECH",
+      "domain": "mechanics",
+      "class": "constitutive",
+      "equation": "balance of momentum + selected constitutive law",
+      "authority": "classical/constitutive",
+      "activate_when": [
+        "stress/strain/deformation"
+      ],
+      "rule": "select thermoelastic/plastic/viscoelastic/creep/fatigue by material and timescale"
+    },
+    {
+      "id": "K-SEMI",
+      "domain": "semiconductor",
+      "class": "carrier_transport",
+      "equation": "Poisson + electron/hole drift-diffusion + recombination",
+      "authority": "semiconductor device physics",
+      "activate_when": [
+        "LED/transistor/photodiode/semiconductor device"
+      ],
+      "coefficients": "material/band/interface specific"
+    },
+    {
+      "id": "K-PLASMA",
+      "domain": "plasma",
+      "class": "discharge_transport",
+      "equation": "charged/neutral species continuity + drift-diffusion + Poisson/EM + reactions + radiation",
+      "authority": "plasma-device model family",
+      "activate_when": [
+        "microdischarge/plasma process/device"
+      ],
+      "coefficients": "gas/pressure/geometry/cross-section specific"
+    },
+    {
+      "id": "K-RADIATION",
+      "domain": "optical_radiative",
+      "class": "transport",
+      "equation": "dI_nu/ds=-kappa_nu I_nu+j_nu",
+      "authority": "radiative transfer",
+      "activate_when": [
+        "participating medium/plasma/phosphor/thermal radiation where relevant"
+      ]
+    },
+    {
+      "id": "K-FREEENERGY",
+      "domain": "thermodynamics",
+      "class": "landscape",
+      "equation": "F=integral(f_chem+kappa/2|grad c|^2+f_elastic+f_electric+f_magnetic+f_surface)dV",
+      "authority": "model family",
+      "activate_when": [
+        "phase/pathway/stability comparison"
+      ],
+      "rule": "term signs/potentials depend on ensemble and domain"
+    },
+    {
+      "id": "K-RAPHAEL-OBW",
+      "domain": "raphael",
+      "class": "comparison",
+      "equation": "OBW/MMB/closure/falsification mapping",
+      "authority": "N^3/GeoMatrices",
+      "activate_when": [
+        "solver outputs need normalized multi-observer comparison"
+      ],
+      "not_physical_substitute": true
+    },
+    {
+      "id": "K-EML-CANDIDATE",
+      "domain": "candidate_expression",
+      "class": "grammar",
+      "equation": "eml(x,y)=exp(x)-ln(y) and EML cascade catalogue",
+      "authority": "EML#F external derivation library",
+      "activate_when": [
+        "candidate response discovery"
+      ],
+      "rule": "requires dimensions, physical meaning, calibration, null model and held-out validation before domain use"
+    }
+  ],
+  "regime_descriptors": [
+    "Re",
+    "Pe",
+    "Da",
+    "We",
+    "Ca",
+    "Kn",
+    "Debye_ratio",
+    "Rm",
+    "Ha",
+    "Fourier",
+    "Biot"
+  ],
+  "solver_families": [
+    "finite_volume",
+    "finite_difference",
+    "finite_element",
+    "spectral",
+    "ODE/integrator",
+    "phase_field",
+    "circuit/device",
+    "Monte_Carlo_or_uncertainty"
+  ],
+  "validation_rule": "every kernel instance carries assumptions, boundary conditions, coefficients, source, units, uncertainty and failure criteria"
+}

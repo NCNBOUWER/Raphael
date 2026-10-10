@@ -1,0 +1,79 @@
+{
+  "artifact_id": "UTP-BENCH-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Traditional / Hybrid Benchmark Ladder",
+  "benchmarks": [
+    {
+      "id": "BENCH-FLUID-001",
+      "equation": "Hagen-Poiseuille pressure drop",
+      "traditional": "single material pipe/channel",
+      "hybrid": "printed graded/surface-functional channel",
+      "validity": "steady incompressible fully-developed laminar circular tube; benchmark only",
+      "outputs": [
+        "delta_p"
+      ]
+    },
+    {
+      "id": "BENCH-THERM-001",
+      "equation": "1D steady conduction",
+      "traditional": "uniform slab",
+      "hybrid": "layered/graded thermal path",
+      "validity": "steady 1D constant-k per segment benchmark",
+      "outputs": [
+        "heat_rate",
+        "thermal_resistance"
+      ]
+    },
+    {
+      "id": "BENCH-CAP-001",
+      "equation": "parallel-plate capacitance",
+      "traditional": "discrete capacitor",
+      "hybrid": "embedded printed conductor-dielectric-conductor",
+      "validity": "fringing negligible benchmark",
+      "outputs": [
+        "capacitance",
+        "stored_energy"
+      ]
+    },
+    {
+      "id": "BENCH-EM-001",
+      "equation": "ideal long solenoid",
+      "traditional": "wound coil",
+      "hybrid": "embedded/conformal conductor path",
+      "validity": "long-solenoid benchmark only",
+      "outputs": [
+        "B"
+      ]
+    },
+    {
+      "id": "BENCH-DIFF-001",
+      "equation": "steady Fick diffusion",
+      "traditional": "homogeneous barrier",
+      "hybrid": "printed barrier/graded interface",
+      "validity": "1D steady constant-D benchmark",
+      "outputs": [
+        "molar_flux"
+      ]
+    }
+  ],
+  "comparison_dimensions": [
+    "mass",
+    "volume",
+    "parts",
+    "interfaces",
+    "process_steps",
+    "thermal_cycles",
+    "yield",
+    "scrap",
+    "inspection_access",
+    "repairability",
+    "qualification_burden",
+    "embodied_energy",
+    "supply_dependencies",
+    "functional_density",
+    "failure_consequence",
+    "recycle_disassembly"
+  ],
+  "rule": "do not aggregate dimensions into a universal score without user/owner-declared weights and decision context"
+}

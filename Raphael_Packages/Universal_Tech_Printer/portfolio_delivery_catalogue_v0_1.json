@@ -1,0 +1,182 @@
+{
+  "artifact_id": "UTP-DELIVERY-CATALOGUE-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "UTP Portfolio Delivery Catalogue — DIY to Government to Outpost",
+  "principle": "One underlying CGX catalogue and evidence graph is rendered differently by audience, horizon and consequence; no audience receives a stronger readiness claim than the underlying item evidence supports.",
+  "offerings": [
+    {
+      "id": "OFR-DIY-01",
+      "audience": "individual/maker/school",
+      "name": "Functional materials starter",
+      "includes": [
+        "PT-001",
+        "PT-011",
+        "PT-012",
+        "PT-013",
+        "PT-014",
+        "PT-018",
+        "PT-039",
+        "PT-054"
+      ],
+      "output": "guided safe coupons for structure, conductor, resistor/heater, capacitor, coil, simple sensor and optical geometry",
+      "mode": "DIY L1-L2",
+      "gate": "low-voltage/benign materials only unless competent supervision is present"
+    },
+    {
+      "id": "OFR-DIY-02",
+      "audience": "individual/maker/school",
+      "name": "CGX object starter",
+      "includes": [
+        "PT-044",
+        "PT-043"
+      ],
+      "output": "identity-tagged object with simple local sensor state and CGX helper record",
+      "mode": "hybrid seed electronics",
+      "gate": "no claim of fully printed compute"
+    },
+    {
+      "id": "OFR-SME-01",
+      "audience": "small business",
+      "name": "Repair and custom tooling cell",
+      "includes": [
+        "PT-001..010",
+        "PT-051..055"
+      ],
+      "output": "jigs, fixtures, manifolds, tooling, housings, replacement parts, calibration artifacts",
+      "mode": "cost/throughput/QA/maintenance optimized",
+      "gate": "part-specific engineering acceptance"
+    },
+    {
+      "id": "OFR-SME-02",
+      "audience": "small business",
+      "name": "Functional product microfactory",
+      "includes": [
+        "PT-011..046"
+      ],
+      "output": "embedded passives, sensors, comms bodies, lighting/display interfaces and hybrid compute islands",
+      "mode": "production packet + QA + traceability",
+      "gate": "device-specific evidence tier"
+    },
+    {
+      "id": "OFR-ECO-01",
+      "audience": "cleanup/nonprofit/community",
+      "name": "Cleanup-to-feed node",
+      "includes": [
+        "PT-022",
+        "PT-047",
+        "PT-049",
+        "PT-050",
+        "PT-060..063"
+      ],
+      "output": "sorting/assay/water-quality/circular-feed qualification and benign local products",
+      "mode": "volunteer-safe front end + professional contamination/material gate",
+      "gate": "captured waste is never direct feed without identity/cleaning/characterization/coupon test"
+    },
+    {
+      "id": "OFR-ECO-02",
+      "audience": "cleanup/nonprofit/community",
+      "name": "Circular sensor/heater network",
+      "includes": [
+        "PT-012",
+        "PT-018..024",
+        "PT-044",
+        "PT-059",
+        "PT-061"
+      ],
+      "output": "repairable environmental monitoring and heating/sensing coupons using qualified recovered conductive feed",
+      "mode": "public-benefit/evidence-first",
+      "gate": "ecotoxicity, emissions and recovery pathway included"
+    },
+    {
+      "id": "OFR-GOV-01",
+      "audience": "government/municipal/infrastructure",
+      "name": "Infrastructure sensing and functional coatings",
+      "includes": [
+        "PT-056",
+        "PT-057",
+        "PT-059",
+        "PT-015",
+        "PT-018..024"
+      ],
+      "output": "road/building/guideway protective + sensing/communications layers and inspection packets",
+      "mode": "procurement/compliance/lifecycle view",
+      "gate": "mechanism must be measured; no unbounded geospatial/biofeedback/resonance claim"
+    },
+    {
+      "id": "OFR-GOV-02",
+      "audience": "government/municipal/infrastructure",
+      "name": "Distributed resilience microfactory",
+      "includes": [
+        "PT-001..016",
+        "PT-047..055",
+        "PT-070"
+      ],
+      "output": "local spares, water/environment nodes, emergency repair, mobile printers",
+      "mode": "public-safety and continuity planning",
+      "gate": "regulated/high-consequence articles remain owner-certified"
+    },
+    {
+      "id": "OFR-RESEARCH-01",
+      "audience": "university/lab",
+      "name": "Multiphysics printable-device testbed",
+      "includes": [
+        "PT-031..042",
+        "UTP-KERNELS-001",
+        "UTP-HYPERGRAPH-001"
+      ],
+      "output": "material/process sweeps, device coupons, uncertainty/falsifier datasets",
+      "mode": "publication/provenance-first",
+      "gate": "hypothesis/evidence tiers explicit"
+    },
+    {
+      "id": "OFR-ROMER-01",
+      "audience": "internal Römer/EMASSC/InterSol",
+      "name": "Printer family bootstrap",
+      "includes": [
+        "PT-051..055",
+        "PT-070"
+      ],
+      "output": "Printer-1 → Printer-mu → parent upgrade/Printer-2 → roaming pair/team",
+      "mode": "capability closure",
+      "gate": "seed dependency, calibration and function-basis acceptance tracked"
+    },
+    {
+      "id": "OFR-ROMER-02",
+      "audience": "internal Römer/EMASSC/InterSol",
+      "name": "Resource-to-node bootstrap",
+      "includes": [
+        "PT-060..070"
+      ],
+      "output": "assay/beneficiation/refining/feed passports + local printer/refinery/power/comms growth",
+      "mode": "local-horizon self-organization",
+      "gate": "resource rights, planetary protection, mission economics and physical qualification"
+    },
+    {
+      "id": "OFR-OUTPOST-01",
+      "audience": "remote/space outpost",
+      "name": "Minimum viable outpost kit",
+      "includes": [
+        "Printer-mu/UTP node",
+        "power",
+        "comms",
+        "assay",
+        "repair",
+        "resource front-end",
+        "Eco stewardship"
+      ],
+      "output": "smallest seed set that can expand local manufacturing while remaining safely operable through latency/network loss",
+      "mode": "C0/C1 local + C2 federated when available",
+      "gate": "redundancy and local safe-state mandatory"
+    }
+  ],
+  "AI_rendering": {
+    "DIY": "plain-language steps, required skills/tools, low-cost substitutions only when qualified, mandatory test-before-use",
+    "SME": "BOM/cost/throughput/maintenance/quality and supplier-vs-print decision",
+    "GOVERNMENT": "requirements/compliance/public benefit/lifecycle/interoperability/procurement evidence",
+    "RESEARCH": "hypotheses/controls/uncertainty/falsifiers/data provenance",
+    "ECO": "ecological baseline, contamination gate, volunteer-safe tasks, recovery/cleanup outcomes",
+    "OUTPOST": "mass/energy/seed dependency, repair/reproduction closure, latency-tolerant procedures"
+  },
+  "portfolio_rule": "Products/services remain federated and interoperable; Römer's moat is orchestration, evidence, systems integration and qualified process knowledge rather than mandatory ownership of every supplier or end-use."
+}

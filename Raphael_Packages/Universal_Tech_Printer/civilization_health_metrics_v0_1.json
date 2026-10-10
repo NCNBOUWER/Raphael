@@ -1,0 +1,96 @@
+{
+  "artifact_id": "UTP-CIV-METRICS-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Civilization / Portfolio Health Metric Vector for CGX-UTP",
+  "source_gap": {
+    "alias": "RUVR",
+    "search_state": "NO EXACT SOURCE FOUND in current Raphael branch, local C:\\Cognigrex search, or connected Drive keyword search on 2026-10-07",
+    "rule": "Do not invent expansion/equation. Bind the original RUVR definition when recovered and crosswalk it to the metric vector."
+  },
+  "principle": "Use a vector/dashboard by default, not one opaque civilization score; any composite requires declared weights, normalization, uncertainty and owner approval.",
+  "metrics": [
+    {
+      "id": "M-CAP",
+      "name": "capability closure",
+      "measure": "fraction of required functional graph currently qualified locally"
+    },
+    {
+      "id": "M-SEED",
+      "name": "critical seed dependency",
+      "measure": "mass/count/criticality of imported or single-source items required to reproduce capability"
+    },
+    {
+      "id": "M-LOCAL",
+      "name": "local material fraction",
+      "measure": "qualified local material mass / total material mass"
+    },
+    {
+      "id": "M-CIRC",
+      "name": "circularity",
+      "measure": "reused/recycled/recovered material fraction with retained quality evidence"
+    },
+    {
+      "id": "M-ENERGY",
+      "name": "energy closure",
+      "measure": "local generation/storage adequacy and energy per accepted functional output"
+    },
+    {
+      "id": "M-REPAIR",
+      "name": "repairability",
+      "measure": "fraction of likely failure modes accessible to inspect/repair/remanufacture locally"
+    },
+    {
+      "id": "M-RES",
+      "name": "resilience",
+      "measure": "capability retained under node/provider/network/material failures and time-to-recover"
+    },
+    {
+      "id": "M-ECO",
+      "name": "ecological outcome",
+      "measure": "resource extraction, waste, toxicity/emissions, habitat/biodiversity effects and verified cleanup/restoration outcomes"
+    },
+    {
+      "id": "M-PUBLIC",
+      "name": "public benefit/access",
+      "measure": "availability, affordability, accessibility, community/worker benefit and essential-service improvement"
+    },
+    {
+      "id": "M-INTEROP",
+      "name": "interoperability/exit",
+      "measure": "share of interfaces/passports/formats with safe provider substitution or fork path"
+    },
+    {
+      "id": "M-EVID",
+      "name": "evidence readiness",
+      "measure": "weighted maturity of source, analytic, bench, integrated and operational evidence across the dependency graph"
+    },
+    {
+      "id": "M-SAFE",
+      "name": "safety/governance closure",
+      "measure": "fraction of required hazard, authority, ecological, legal and human-override gates closed"
+    },
+    {
+      "id": "M-ECON",
+      "name": "economic sustainability",
+      "measure": "cost, maintenance, throughput, revenue/savings/public-value and capital replacement burden"
+    },
+    {
+      "id": "M-EXP",
+      "name": "expansion leverage",
+      "measure": "future qualified production/capability enabled per unit mass, energy, time and scarce seed consumed"
+    }
+  ],
+  "type_path": {
+    "T1": "high terrestrial/regional energy-material-data coordination with ecological/public-benefit closure",
+    "INTERPLANETARY": "federated local-horizon nodes exchanging resources, evidence and functions without single-point dependence",
+    "T2_FRONTIER": "long-horizon energy/material/ecological closure planning only; no readiness inference from taxonomy"
+  },
+  "anti_gaming": [
+    "no single metric can erase a safety/ecology hard gate",
+    "throughput/revenue cannot compensate for invalid evidence",
+    "local-only cannot silently substitute unqualified material",
+    "expansion leverage cannot justify monopoly/lock-in",
+    "uncertainty reported with metric values"
+  ]
+}

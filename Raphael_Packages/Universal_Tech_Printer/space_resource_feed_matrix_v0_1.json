@@ -1,0 +1,131 @@
+{
+  "artifact_id": "UTP-SPACE-RESOURCE-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Space Resource → Qualified Feed → Universal Printer Function Matrix",
+  "principle": "local bulk material plus small carried specialty concentrates can yield high imported-mass leverage; every local source passes characterization/beneficiation/extraction/assay/passport before printing",
+  "resource_classes": [
+    {
+      "id": "LUNAR-REGOLITH",
+      "source": "Moon",
+      "confirmed_or_current_demo_outputs": [
+        "oxygen",
+        "iron/metal-rich products",
+        "silicon",
+        "aluminum",
+        "slag/glass/ceramic fractions"
+      ],
+      "routes": [
+        "particle classification",
+        "magnetic/electrostatic beneficiation",
+        "hydrogen reduction/electrolysis/melt refining",
+        "molten regolith electrolysis",
+        "carbothermal or other validated extraction routes"
+      ],
+      "UTP_functions": [
+        "structural metal/steel feed",
+        "aluminum conductor/wire feed",
+        "silicon / solar-cell feed after high-purity processing",
+        "glass/dielectric/ceramic feed",
+        "oxygen/process/life-support commodity",
+        "regolith-derived construction feed"
+      ],
+      "evidence_boundary": "exact purity and alloy/device suitability are downstream process qualifications, not implied by extraction alone"
+    },
+    {
+      "id": "ASTEROID-M",
+      "source": "metallic asteroid class",
+      "bulk_character": "nickel-iron dominated broad class",
+      "UTP_functions": [
+        "structural metal",
+        "conductors after refining",
+        "magnetic material candidates",
+        "machined/printed feedstock"
+      ],
+      "processing": [
+        "characterize",
+        "fragment",
+        "magnetic/electrostatic sort",
+        "melt/refine",
+        "assay",
+        "alloy or powder/wire production"
+      ]
+    },
+    {
+      "id": "ASTEROID-S",
+      "source": "stony asteroid class",
+      "bulk_character": "silicates plus nickel-iron broad class",
+      "UTP_functions": [
+        "glass/ceramic",
+        "silicate/dielectric",
+        "metals after beneficiation/refining",
+        "structural aggregate"
+      ],
+      "processing": [
+        "mineral sort",
+        "metal/silicate separation",
+        "thermal/electrochemical extraction",
+        "assay"
+      ]
+    },
+    {
+      "id": "ASTEROID-C",
+      "source": "carbonaceous asteroid class / Bennu-like primitive material as evidence analogue",
+      "bulk_character": "clay/silicate-rich material with carbon-bearing/volatile-bearing phases; Bennu samples also show carbon, nitrogen, water-related/hydrated minerals, carbonates, iron oxides/sulfides and phosphates",
+      "UTP_functions": [
+        "water/volatile feed after extraction",
+        "carbon feed candidates",
+        "ceramic/mineral feed",
+        "chemical/electrochemical reagents after separation",
+        "life-support/agricultural chemistry candidates"
+      ],
+      "warning": "heterogeneous primitive material is chemically valuable but is not direct printer feed; beneficiation and contamination control dominate"
+    },
+    {
+      "id": "MARS-LOCAL",
+      "source": "Mars surface/atmosphere",
+      "bulk_character": "oxide/silicate regolith + CO2-dominant atmosphere",
+      "UTP_functions": [
+        "structural/mineral feed",
+        "oxygen/metals after extraction",
+        "CO2-derived process chemistry where validated"
+      ],
+      "warning": "exact site mineralogy and atmospheric-processing route remain location/process specific"
+    },
+    {
+      "id": "RECYCLED-FLEET",
+      "source": "failed/retired parts, slag, support material, cuttings, captured dust",
+      "UTP_functions": [
+        "highest-priority secondary feed where material identity is recoverable"
+      ],
+      "rule": "re-characterize before reuse; do not assume original material state survives service/reprocessing"
+    }
+  ],
+  "seed_concentrate_strategy": {
+    "expression": "m_finished = m_local_bulk + m_recycled + m_seed_specialty",
+    "leverage_metric": "L_seed = m_finished / m_seed_specialty",
+    "aim": "maximize L_seed without breaching functional or evidence requirements",
+    "examples": [
+      "abundant local metal/silicate carrier + low-mass dopant/alloying concentrate",
+      "local glass/dielectric + carried phosphor or active optical concentrate",
+      "local structural/conductor mass + carried semiconductor die/dopant until local semiconductor purity is qualified",
+      "local electrode structure + carried electrolyte/specialty salts until local chemistry route matures"
+    ],
+    "link_to_DILUTE": "DILUTE/DOPE operators let scarce high-function material be spatially concentrated only where function requires it rather than homogenized through the entire part"
+  },
+  "pipeline": [
+    "survey/map",
+    "sample/assay",
+    "excavate/capture",
+    "size/classify",
+    "beneficiate",
+    "extract/refine",
+    "purify/alloy/formulate",
+    "material passport",
+    "post-mix stock bin",
+    "print/process",
+    "in-process verify",
+    "article verify",
+    "recover/recycle"
+  ]
+}

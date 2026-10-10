@@ -1,0 +1,203 @@
+{
+  "artifact_id": "UTP-DESKTOP-001",
+  "version": "0.2",
+  "date": "2026-10-06",
+  "title": "Desktop Universal Tech Printer — Dual-Arm Recursive Manufacturing Cell",
+  "design_intent": "~1 m^3 external machine class; internal usable build volume necessarily smaller because arms, chamber shell, tooling, gas manifold and service volume consume space",
+  "baseline_geometry": {
+    "external_class": "approximately 1 m × 1 m × 1 m cabinet class",
+    "target_internal_build_zone": "~0.4–0.6 m per axis initially; exact envelope set by arm reach/tool collision study",
+    "architecture": "sealed serviceable chamber + two internal tool arms + central indexed/tilting build fixture",
+    "note": "a true 1 m^3 build volume would require a substantially larger machine envelope"
+  },
+  "core_principles": [
+    "environment is a process tool: global chamber state and local tool shrouds may overlap",
+    "expensive gases are preferentially delivered to local cavities/shrouds and recovered",
+    "high-temperature/high-energy processes run before heat-sensitive active devices and electrochemical fills",
+    "cavities/current collectors/electrodes may be printed early; gases/electrolytes are filled and sealed late",
+    "replaceable/serviceable islands are preferred for fragile or qualification-limited active electronics",
+    "the machine recursively fabricates structural/tooling upgrades while bought precision components remain allowed seed parts"
+  ],
+  "minimum_subsystems": [
+    {
+      "id": "M01",
+      "name": "sealed chamber",
+      "minimum": "pressure-capable low-differential chamber with controlled purge/reduced-pressure operation, viewports, interlocks and service access",
+      "optional": [
+        "higher-vacuum insert chamber",
+        "heated walls",
+        "load lock"
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "dual motion systems",
+      "minimum": "two compact 5–6 DOF arms or equivalent independent kinematic stages sharing a calibrated frame",
+      "optional": [
+        "third metrology microstage",
+        "external tethered macro arm"
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "indexed build fixture",
+      "minimum": "heated/grounded/rotating or tilting workholding with datum registration",
+      "optional": [
+        "strain/preload fixture",
+        "electrical feedthrough bed",
+        "fluidic manifold bed"
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "post-mix feed bank",
+      "minimum": "multiple independently metered viscous/liquid feeds into disposable/static/dynamic mixer cartridges",
+      "optional": [
+        "continuous gravimetric feed",
+        "inline rheology/conductivity sensing"
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "structural extrusion",
+      "minimum": "filament/pellet or paste extrusion head",
+      "optional": [
+        "wire-feed deposition",
+        "ceramic paste",
+        "foam/cellular extrusion"
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "fine functional deposition",
+      "minimum": "microdispenser/DIW head",
+      "optional": [
+        "aerosol-jet",
+        "electrohydrodynamic jet",
+        "inkjet"
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "conductor integration",
+      "minimum": "conductive paste/ink + wire embedding",
+      "optional": [
+        "electrodeposition head",
+        "metal foil/tape placement",
+        "future vacuum deposition cartridge"
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "subtractive finishing",
+      "minimum": "micro-mill/drill/ream/polish tool with debris extraction",
+      "optional": [
+        "laser ablation",
+        "ultrasonic finishing"
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "pick-place/service insertion",
+      "minimum": "vacuum gripper/tweezer head for bought dies, bearings, sensors and precision parts",
+      "optional": [
+        "automated feeder",
+        "microgripper"
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "energy toolkit",
+      "minimum": "UV/visible curing + controlled hot-air/IR/resistive heating",
+      "optional": [
+        "photonic flash",
+        "localized laser sintering/anneal",
+        "induction/RF",
+        "Joule conditioning"
+      ]
+    },
+    {
+      "id": "M11",
+      "name": "gas/environment manifold",
+      "minimum": "air exhaust, dry N2/Ar, vacuum/reduced-pressure, isolated local-fill port, pressure/O2/H2O sensing",
+      "optional": [
+        "Ne/Xe noble-gas recovery loop",
+        "CO2 process gas",
+        "specialist process cartridge"
+      ]
+    },
+    {
+      "id": "M12",
+      "name": "gas recovery",
+      "minimum": "dedicated recovery reservoir/ballast + isolation valves + particulate/condensable trapping for costly gases",
+      "optional": [
+        "closed-loop purifier",
+        "gas analyser/RGA",
+        "compressor rated for process gas"
+      ]
+    },
+    {
+      "id": "M13",
+      "name": "metrology",
+      "minimum": "camera + structured-light/laser profiling + electrical probing + temperature sensing",
+      "optional": [
+        "microscope",
+        "spectrometer",
+        "four-wire probe",
+        "leak detector",
+        "acoustic/NDE"
+      ]
+    },
+    {
+      "id": "M14",
+      "name": "control/safety",
+      "minimum": "deterministic machine controller, independent safety PLC/interlocks, E-stop, pressure/temp/current limits",
+      "optional": [
+        "FPGA timing",
+        "hardware-in-loop twin"
+      ]
+    },
+    {
+      "id": "M15",
+      "name": "CGX/Raphael supervisory layer",
+      "minimum": "build compiler, source/evidence binding, solver selection, process schedule, residual analysis and twin updates",
+      "constraint": "never directly owns hard safety interlocks"
+    }
+  ],
+  "bought_seed_components_initially": [
+    "servo/stepper motors and precision encoders",
+    "bearings/linear guides/ball screws or robotic joints",
+    "vacuum pump(s), certified valves, regulators and pressure sensors",
+    "mass-flow hardware where required",
+    "cameras/optics/laser or photonic energy sources",
+    "safety controller, power electronics and compute",
+    "high-reliability semiconductor dies and specialised sensors",
+    "certified chamber seals/feedthroughs",
+    "gas cylinders and certified pressure hardware"
+  ],
+  "recursive_self_improvement": [
+    {
+      "generation": "G0",
+      "description": "commercial 3D printer/CNC/robot components fabricate jigs, chamber parts, manifolds and structural pieces for first UTP"
+    },
+    {
+      "generation": "G1",
+      "description": "dual-arm UTP prints most brackets, manifolds, ducts, cable carriers, fixtures, housings, functional composites, conductors/dielectrics and passive devices"
+    },
+    {
+      "generation": "G2",
+      "description": "UTP fabricates more sensors, coils, motors/actuators, embedded buses and specialised toolheads; bought precision/vacuum/semiconductor items decrease"
+    },
+    {
+      "generation": "G3",
+      "description": "same IR splits into micro-cell variants and tethered/free-range site printers with local mobile process bubbles"
+    }
+  ],
+  "baseline_exclusions": [
+    "pyrophoric/toxic semiconductor precursor gas chemistry inside the general-purpose baseline cell",
+    "chlorine/fluorine aggressive etch chemistry in the shared chamber",
+    "uncontrolled hydrogen/oxygen combustible process mixtures",
+    "high-energy powder-bed metal processing without a separately engineered safety module",
+    "true semiconductor-fab cleanliness/epitaxy claims from generic post-mix deposition"
+  ]
+}

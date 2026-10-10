@@ -1,0 +1,91 @@
+{
+  "artifact_id": "UTP-ECO-CIRCULAR-REFERENCE-COUPON-001",
+  "version": "0.1",
+  "date": "2026-10-08",
+  "title": "Eco Circular Feed — Same-Polymer Reference/Recovered Control Coupon Plan",
+  "build_ref": "BUILD-062",
+  "state": "DIGITAL_TEST_PLAN / PHYSICAL_EXECUTION_NOT_RUN",
+  "objective": "Qualify a clean, segregated recovered thermoplastic feed against a virgin same-polymer reference before any mixed cleanup stream is admitted to UTP functional use.",
+  "first_route": {
+    "route_id": "CIRC-CTRL-A",
+    "material_family": "PETG preferred for the first route only after exact on-hand resin/filament identity is source-bound; PLA may substitute only as a separately recorded same-polymer route.",
+    "control": "virgin/reference material from the same declared polymer grade/product family used to define the recovered candidate",
+    "recovered_candidate": "clean segregated print scrap/offcuts from that same known material family; service-aged, mixed-polymer, ocean-recovered, painted, filled, unknown or contaminated material is excluded from the first route",
+    "rule": "reference and recovered arms must use the same declared geometry, process settings, conditioning method and measurement schema except for feed provenance/reprocessing history"
+  },
+  "evidence_boundary": [
+    "This plan is not evidence that any recovered feed is qualified.",
+    "Recovered identity/provenance alone is insufficient; contamination, moisture/conditioning, processability and coupon performance remain measured gates.",
+    "No mixed ocean/municipal cleanup material enters the first control route.",
+    "A passing structural coupon does not automatically qualify electrical, dielectric, optical, pressure, electrochemical or biological-contact use."
+  ],
+  "passport_fields": [
+    "feed_id",
+    "polymer_family",
+    "manufacturer_or_source_identity",
+    "grade_or_product_family",
+    "lot_or_traceable_source_ref",
+    "virgin_or_recovered_state",
+    "service_history_if_any",
+    "collection_location_or_process_ref",
+    "cleaning_record",
+    "conditioning_or_drying_record",
+    "size_reduction_or_reformation_record",
+    "mass_before_after",
+    "contamination_screen",
+    "operator",
+    "timestamp",
+    "source_hashes"
+  ],
+  "process_sequence": [
+    "SOURCE_BIND_REFERENCE_AND_RECOVERED",
+    "SEGREGATE_SAME_POLYMER_ONLY",
+    "VISUAL_AND_PROVENANCE_SCREEN",
+    "CLEAN_WITH_MATERIAL_COMPATIBLE_METHOD",
+    "CONDITION_OR_DRY_PER_BOUND_SOURCE_REQUIREMENT",
+    "SIZE_REDUCE_OR_REFORM_IF_REQUIRED",
+    "ISSUE_MATERIAL_PASSPORT",
+    "PRINT_IDENTICAL_REFERENCE_AND_RECOVERED_COUPONS",
+    "MEASURE_DECLARED_GEOMETRY_MASS_AND_PROCESS_RESPONSE",
+    "RUN_AVAILABLE_MECHANICAL_OR_FUNCTIONAL_TESTS",
+    "COMPARE_REFERENCE_VS_RECOVERED_WITH_PREDECLARED_LIMITS",
+    "WRITE_RESULT_RECEIPT",
+    "READBACK_RECEIPT",
+    "DBR_FRONTIER_ONLY",
+    "REVIEW_FOR_NEXT_USE_CLASS"
+  ],
+  "minimum_measurements": {
+    "required": [
+      "coupon dimensions and dimensional error",
+      "coupon mass",
+      "visible defects/warpage/delamination",
+      "print/process interruptions or feed instability",
+      "reference and recovered process settings",
+      "material passport/readback identity"
+    ],
+    "conditional": [
+      "density if volume can be measured adequately",
+      "tensile/flexural/compression strength using a declared standard/test geometry if suitable test equipment exists",
+      "thermal transition or rheology only when calibrated instruments and method are available",
+      "electrical/dielectric properties only in a separately qualified functional-feed route"
+    ],
+    "forbidden_inference": [
+      "do not infer polymer chemistry from appearance alone",
+      "do not infer safety/toxicity/ecotoxicity from a successful print",
+      "do not infer graphene/carbon conversion from generic recovered carbonaceous material",
+      "do not invent acceptance percentages without an intended-use requirement, material source or declared test method"
+    ]
+  },
+  "acceptance_logic": {
+    "before_run": "declare intended use class, reference identity, coupon geometry, measurements and acceptance limits from source requirements or a documented engineering requirement",
+    "pass": "recovered arm stays within all predeclared limits relative to the reference and has no unresolved contamination/provenance/process anomaly",
+    "hold": "any identity ambiguity, mixed polymer, contamination uncertainty, conditioning failure, uncontrolled process change or failed measurement",
+    "promotion_ceiling": "one qualified material/process/use-class coupon only; no blanket recovered-feed approval"
+  },
+  "next_escalation": [
+    "repeat across lots/reprocessing cycles to establish variability",
+    "add chemical/contamination assays for externally recovered material",
+    "separately qualify conductive/filler/dielectric functional recovered feeds against virgin controls",
+    "only after those gates consider mixed municipal/ocean cleanup streams"
+  ]
+}

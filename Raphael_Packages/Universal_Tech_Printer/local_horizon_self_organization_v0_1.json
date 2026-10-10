@@ -1,0 +1,175 @@
+{
+  "artifact_id": "UTP-HORIZON-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Local-Horizon Self-Organising CGX Manufacturing Profiles",
+  "horizon_state_variables": [
+    "available_materials",
+    "material_purity",
+    "recycling_stock",
+    "energy_generation",
+    "energy_storage",
+    "environment/atmosphere",
+    "gravity",
+    "thermal cycle",
+    "radiation/dust/biofouling",
+    "water/volatile availability",
+    "mobility/anchoring",
+    "communications latency/bandwidth",
+    "local compute",
+    "human/operator availability",
+    "legal/governance authority",
+    "ecological/biosecurity constraints",
+    "transport/import lead time",
+    "printer/tool capability",
+    "metrology capability",
+    "maintenance state"
+  ],
+  "profiles": [
+    {
+      "id": "H-TERR-SITE",
+      "scope": "terrestrial site",
+      "examples": [
+        "home",
+        "workshop",
+        "factory",
+        "community maker hub"
+      ],
+      "priority": [
+        "safe DIY",
+        "repair",
+        "local circular feed",
+        "education/business production"
+      ]
+    },
+    {
+      "id": "H-OCEAN",
+      "scope": "marine/coastal",
+      "examples": [
+        "cleanup vessel",
+        "port",
+        "island/coastal node"
+      ],
+      "priority": [
+        "sorting/decontamination",
+        "water-quality sensing",
+        "corrosion-resistant builds",
+        "captured-plastic/mineral feed qualification"
+      ]
+    },
+    {
+      "id": "H-REGION",
+      "scope": "regional terrestrial infrastructure",
+      "examples": [
+        "municipal depot",
+        "transport corridor",
+        "disaster response"
+      ],
+      "priority": [
+        "distributed spares",
+        "coatings/sensors",
+        "repair",
+        "mobile printers"
+      ]
+    },
+    {
+      "id": "H-ORBIT",
+      "scope": "orbital/free-space",
+      "examples": [
+        "station",
+        "relay",
+        "service depot"
+      ],
+      "priority": [
+        "recycle launched material",
+        "low-g assembly",
+        "momentum management",
+        "vacuum-compatible local bubbles"
+      ]
+    },
+    {
+      "id": "H-LUNAR",
+      "scope": "lunar surface/orbit",
+      "examples": [
+        "South Pole node",
+        "resource site"
+      ],
+      "priority": [
+        "regolith beneficiation",
+        "metals/oxygen/glass",
+        "power bootstrap",
+        "dust/thermal management"
+      ]
+    },
+    {
+      "id": "H-MARS",
+      "scope": "Martian surface/orbit",
+      "examples": [
+        "surface outpost"
+      ],
+      "priority": [
+        "regolith/mineral use",
+        "CO2/water processing where qualified",
+        "pressure/thermal/dust controls",
+        "repair autonomy"
+      ]
+    },
+    {
+      "id": "H-ASTEROID",
+      "scope": "asteroid/resource body",
+      "examples": [
+        "NEO resource node"
+      ],
+      "priority": [
+        "anchoring/capture",
+        "assay/beneficiation",
+        "local refinement",
+        "mass-efficient export"
+      ]
+    },
+    {
+      "id": "H-INTERPLANETARY",
+      "scope": "multi-node solar-system network",
+      "examples": [
+        "Earth-Moon-Mars-asteroid logistics"
+      ],
+      "priority": [
+        "resource specialization",
+        "printer/refinery replication",
+        "latency-tolerant CGX federation",
+        "shared evidence/passports"
+      ]
+    },
+    {
+      "id": "H-INTERSTELLAR",
+      "scope": "future interstellar node",
+      "examples": [
+        "independent long-latency outpost"
+      ],
+      "priority": [
+        "maximum closure of seed dependencies",
+        "local knowledge/evidence replication",
+        "ecological stewardship",
+        "autonomous repair/reproduction"
+      ],
+      "evidence_state": "frontier planning only"
+    }
+  ],
+  "self_organization_algorithm": [
+    "discover reachable CGX nodes",
+    "advertise capability + resource + evidence envelopes",
+    "compute local-horizon profile",
+    "decompose requested objective into BuildNodes/resources/tests",
+    "select feasible local/subnetwork execution graph",
+    "prefer local/recycled inputs when function, safety and evidence permit",
+    "reserve scarce specialty seed for high-function voxels",
+    "execute locally with deterministic safety controls",
+    "publish receipts/snapshots when connectivity permits",
+    "reconcile conflicts by source authority + evidence + newest verified state, never last-chat-wins"
+  ],
+  "local_only_mode": {
+    "objective": "minimize imported mass and ecological burden",
+    "hard_rule": "local-only is a selectable constraint, not an assumed capability",
+    "fallback": "when a required functional material/process cannot be locally qualified, expose the seed dependency rather than silently substituting"
+  }
+}

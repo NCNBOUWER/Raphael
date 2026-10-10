@@ -1,0 +1,103 @@
+{
+  "artifact_id": "UTP-ECO-CIRCULAR-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "Eco-Grex Circular Local-Material Binding for UTP",
+  "parent_domains": [
+    "cgx:domain:eco",
+    "cgx:domain:romer"
+  ],
+  "principle": "cleanup/recovery material is a resource candidate, not printer feed, until identified, separated, cleaned, characterized and qualified",
+  "streams": [
+    {
+      "id": "ECO-POLY",
+      "source_examples": [
+        "ocean/river plastic",
+        "municipal plastic",
+        "printer scrap"
+      ],
+      "chain": [
+        "capture",
+        "identify polymer",
+        "remove salts/organics/metals",
+        "wash/dry",
+        "size reduce",
+        "stabilize/compound",
+        "coupon test",
+        "feed passport"
+      ],
+      "outputs": [
+        "structural polymer",
+        "sacrificial/support feed",
+        "low-criticality composite feed"
+      ],
+      "risks": [
+        "mixed-polymer incompatibility",
+        "salt/organic contamination",
+        "UV/thermal aging",
+        "additives/pigments",
+        "microplastic release"
+      ]
+    },
+    {
+      "id": "ECO-GRAPHENE",
+      "source_examples": [
+        "recovered printed electronics",
+        "qualified graphene-rich waste/process scrap"
+      ],
+      "outputs": [
+        "conductive ink/composite",
+        "heater/sensor electrode",
+        "ESD/resistive regions"
+      ],
+      "evidence_anchor": "2026 recyclable graphene printed-electronics study reported >93% graphene recovery and five reuse cycles for sensor/heater fabrication",
+      "constraint": "ocean plastic does not itself become graphene; feed identities remain distinct"
+    },
+    {
+      "id": "ECO-MINERAL",
+      "source_examples": [
+        "local sand/mineral fines",
+        "construction mineral waste",
+        "regolith/off-world mineral feed"
+      ],
+      "outputs": [
+        "ceramic/glass filler",
+        "dielectric/thermal filler",
+        "structural aggregate"
+      ],
+      "constraint": "chemistry/particle-size/contaminants must be measured"
+    },
+    {
+      "id": "ECO-BIO",
+      "source_examples": [
+        "bio-renewable binders/solvents",
+        "cellulose-derived binders",
+        "qualified biomass-derived carbon"
+      ],
+      "outputs": [
+        "binder/carrier",
+        "composite",
+        "carbon feed candidate"
+      ],
+      "constraint": "biodegradable/renewable does not automatically mean non-toxic or fit for every environment"
+    }
+  ],
+  "non_contaminant_objective": [
+    "minimize persistent toxic additives",
+    "prefer separable/recoverable material families",
+    "record every additive in material passport",
+    "design for disassembly/recovery where monolithic integration is not functionally necessary",
+    "capture dust/fumes/solvent emissions",
+    "prevent contaminated marine feed from entering high-purity electronics path",
+    "measure leachate/biosecurity where builds contact soil/water/organisms"
+  ],
+  "application_links": [
+    "Eco-Grex water-quality nodes",
+    "cleanup-vessel spare parts",
+    "distributed sensors/heaters",
+    "infrastructure coatings",
+    "repairable household/community objects",
+    "printer consumables",
+    "off-world recycled fleet feed"
+  ]
+}

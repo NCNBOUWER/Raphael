@@ -1,0 +1,148 @@
+{
+  "artifact_id": "UTP-BUILD-ORDER-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Skeleton-First Recursive Build / Activation Order",
+  "critical_rule": "print geometry and inactive device skeletons early; fill/activate vulnerable gas/electrochemical functions late",
+  "phases": [
+    {
+      "phase": 0,
+      "name": "datum + primary skeleton",
+      "operations": [
+        "print/machine structural datum",
+        "primary load path",
+        "mounts",
+        "service corridors",
+        "future cavity walls"
+      ],
+      "why": "provides stiffness and registration"
+    },
+    {
+      "phase": 1,
+      "name": "high-energy backbone",
+      "operations": [
+        "high-temperature structural features",
+        "coils/heaters if process compatible",
+        "thermal spreaders",
+        "major power buses",
+        "fluid/gas manifolds"
+      ],
+      "why": "complete processes most likely to damage later functions"
+    },
+    {
+      "phase": 2,
+      "name": "passive electronics",
+      "operations": [
+        "conductive traces",
+        "dielectrics",
+        "resistors",
+        "capacitor electrodes/dielectrics",
+        "inductor traces",
+        "sensors that tolerate later process"
+      ],
+      "why": "shared air/inert environment and high overlap"
+    },
+    {
+      "phase": 3,
+      "name": "device skeletons",
+      "operations": [
+        "battery cavity/current collectors/electrodes but no electrolyte if later heat remains",
+        "plasma-cell cavity/electrodes/phosphor but no final gas fill",
+        "semiconductor/PV substrate geometry and contacts",
+        "chip nests and test pads"
+      ],
+      "why": "prepare geometry without activating vulnerable contents"
+    },
+    {
+      "phase": 4,
+      "name": "precision finishing",
+      "operations": [
+        "mill/polish/laser trim",
+        "clean",
+        "surface activate",
+        "measure flatness/conductivity/isolation"
+      ],
+      "why": "buried defects become expensive after closure"
+    },
+    {
+      "phase": 5,
+      "name": "active hybrid insertion / specialist thin films",
+      "operations": [
+        "pick-place dies/sensors",
+        "wire/bump/conductive attach",
+        "specialist printed semiconductor/PV layers where validated",
+        "low-temperature photonic/laser/UV cure"
+      ],
+      "why": "after high-temperature and abrasive operations"
+    },
+    {
+      "phase": 6,
+      "name": "local environment activation",
+      "operations": [
+        "locally purge/evacuate printed cavities",
+        "fill noble-gas discharge cells",
+        "fill electrochemical cells",
+        "establish vacuum gaps",
+        "seal each cavity",
+        "recover excess process gas"
+      ],
+      "why": "late activation protects gas/electrolyte purity and prevents repeated chamber-wide cycling"
+    },
+    {
+      "phase": 7,
+      "name": "functional test before burial",
+      "operations": [
+        "electrical continuity/isolation",
+        "capacitance/resistance",
+        "spectral/plasma check at bounded test condition",
+        "electrochemical open-circuit/impedance as applicable",
+        "leak test"
+      ],
+      "why": "no final overbuild over an unverified subsystem"
+    },
+    {
+      "phase": 8,
+      "name": "overbuild + shielding + enclosure",
+      "operations": [
+        "print outer structure",
+        "thermal/EM shields",
+        "environmental seals",
+        "service covers"
+      ],
+      "why": "turns verified modules into monolithic/near-monolithic functional body"
+    },
+    {
+      "phase": 9,
+      "name": "system calibration",
+      "operations": [
+        "CGX twin alignment",
+        "sensor calibration",
+        "thermal map",
+        "power sequencing",
+        "fault injection within safe bounds"
+      ],
+      "why": "final operational envelope"
+    }
+  ],
+  "gas_discharge_RGB": {
+    "architecture": "common noble-gas discharge family plus separate RGB phosphor/conversion regions",
+    "key_simplification": "red/green/blue need not require three different chamber gases",
+    "reference_literature_points": [
+      "Ne/Xe is a standard plasma-display family",
+      "published PDP examples include 8% Xe in Ne at 400 Torr and 15% Xe in Ne at 450 Torr",
+      "these are historical comparator points only; UTP geometry/electrode/dielectric/phosphor system requires its own breakdown, efficiency and lifetime sweep"
+    ],
+    "UTP_sequence": [
+      "print dielectric cavity/ribs and electrode geometry",
+      "print/select phosphor/conversion layer for target colour",
+      "close cavity leaving fill/evacuation microport",
+      "evacuate/purge local cell or local bank",
+      "meter noble-gas mixture into cavity",
+      "seal microport",
+      "recover manifold excess into dedicated noble-gas reservoir",
+      "electrically/optically test before final overbuild"
+    ]
+  },
+  "true_LED_boundary": "true semiconductor LED colour is set principally by semiconductor band structure/composition and junction design, not chamber fill gas; baseline UTP therefore embeds qualified LEDs/dies while PF-SEMIPRINT matures separately",
+  "photovoltaic_boundary": "PV/thin-film functions may reuse fine deposition, controlled atmosphere, photonic/thermal treatment and strain/geometry programming, but each absorber/junction system requires its own material/process qualification"
+}

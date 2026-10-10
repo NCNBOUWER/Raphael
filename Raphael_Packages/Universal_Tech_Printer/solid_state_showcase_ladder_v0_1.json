@@ -1,0 +1,127 @@
+{
+  "artifact_id": "UTP-SHOWCASE-001",
+  "version": "0.1",
+  "date": "2026-10-07",
+  "title": "CGX / Solid-State Portfolio Showcase Ladder",
+  "objective": "Demonstrate one shared filespace×dataspace×solid-state grammar from household/DIY scale through infrastructure and interplanetary nodes.",
+  "showcases": [
+    {
+      "id": "SH-01",
+      "name": "CGX identity coupon",
+      "proves": [
+        "physical object identity",
+        "snapshot/DBR",
+        "handshake",
+        "basic sensor state"
+      ],
+      "risk": "low"
+    },
+    {
+      "id": "SH-02",
+      "name": "phone-like functional solid-state object",
+      "proves": [
+        "display/light",
+        "storage",
+        "sensor",
+        "audio/actuation",
+        "antenna/comms interface",
+        "UI",
+        "modest edge compute",
+        "CGX connectivity"
+      ],
+      "boundary": "functional graph, not iPhone SoC density"
+    },
+    {
+      "id": "SH-03",
+      "name": "Eco circular sensor/heater",
+      "proves": [
+        "cleanup/recovered feed qualification",
+        "conductive function",
+        "passport",
+        "recovery loop"
+      ]
+    },
+    {
+      "id": "SH-04",
+      "name": "functional road/building coating stack",
+      "proves": [
+        "protective base",
+        "functional sensing/thermal/optical layer",
+        "environmental topcoat",
+        "geospatial twin"
+      ],
+      "boundary": "resonant/biofeedback mechanisms require separately measured physics"
+    },
+    {
+      "id": "SH-05",
+      "name": "Solar Hull multifunction skin coupon",
+      "proves": [
+        "graded structure/thermal/electrical/optical/PV interface",
+        "post-mix composition field"
+      ],
+      "boundary": "PV performance independently qualified"
+    },
+    {
+      "id": "SH-06",
+      "name": "Free Flow power/storage coupon",
+      "proves": [
+        "coil/capacitor/battery/power geometry",
+        "embedded sensing"
+      ],
+      "boundary": "novel energy claims remain evidence-gated"
+    },
+    {
+      "id": "SH-07",
+      "name": "Printer-mu",
+      "proves": [
+        "recursive manufacture",
+        "same function basis smaller scale",
+        "child .cgx identity",
+        "parent calibration upgrade"
+      ]
+    },
+    {
+      "id": "SH-08",
+      "name": "Roaming UTP pair",
+      "proves": [
+        "multi-agent shared frame",
+        "mobile local environment",
+        "cooperative build/repair"
+      ]
+    },
+    {
+      "id": "SH-09",
+      "name": "Eco/municipal microfactory",
+      "proves": [
+        "DIY/business/government helper views",
+        "circular feed",
+        "public-service spares/sensors"
+      ]
+    },
+    {
+      "id": "SH-10",
+      "name": "local-resource outpost",
+      "proves": [
+        "assay→feed→printer→power/comms→repair/reproduction",
+        "horizon self-organization"
+      ]
+    },
+    {
+      "id": "SH-11",
+      "name": "Mark representative integrated-body sector",
+      "proves": [
+        "multi-domain solid-state functional body",
+        "resource/logistics/field/thermal/comms integration"
+      ],
+      "boundary": "representative subsystem only until Mark qualification"
+    },
+    {
+      "id": "SH-12",
+      "name": "Luke/InterSol support-node twin",
+      "proves": [
+        "large-scale distributed manufacturing/service/resource federation"
+      ],
+      "boundary": "digital/representative until mission authority and physical qualification"
+    }
+  ]
+}

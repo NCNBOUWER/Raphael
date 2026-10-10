@@ -1,0 +1,295 @@
+{
+  "schema": "CGX-UTP-PRINTER-MU-SOURCE-CANDIDATE-MATRIX/0.1",
+  "artifact_id": "UTP-PRINTER-MU-SOURCE-CANDIDATES-001",
+  "date": "2026-10-11",
+  "owner": "Raphael / Universal Technology Printer / Printer-mu dependency owner",
+  "purpose": "Bind official-source commercial seed/tool candidates to unresolved Printer-mu DAG nodes without converting source evidence into procurement, selection-with-evidence, certification or physical qualification.",
+  "state": "SOURCE-BOUND CANDIDATES / NO PROCUREMENT / NO PHYSICAL QUALIFICATION",
+  "selection_semantics": {
+    "CANDIDATE": "An attributable product/tool is technically relevant enough to carry forward into sizing, compatibility, interface and coupon planning.",
+    "SOURCE_ONLY": "Manufacturer source supports identity and stated specifications only; no local possession, integration, measured performance or qualification is implied.",
+    "SELECTED_WITH_EVIDENCE": "Not used in this matrix. Requires reviewed architecture selection plus attributable integration/physical evidence."
+  },
+  "candidates": [
+    {
+      "candidate_id": "PMU-CAND-FRAME-001",
+      "mu_nodes": [
+        "MU-001"
+      ],
+      "manufacturer": "MISUMI",
+      "model": "HFS5-2020",
+      "role": "20 x 20 mm aluminium extrusion candidate for structural frame members; not itself a precision datum network",
+      "official_source": "https://jp.misumi-ec.com/vona2/detail/110302683830/",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "material": "A6005CSS-T5",
+        "cross_section_mm": "20 x 20",
+        "groove_width_mm": 6,
+        "length_range_mm": "50 to 4000 in 0.5 mm increments",
+        "mass_kg_per_m": 0.5,
+        "cross_section_area_mm2": 183,
+        "second_moment_mm4_x": "0.742e4",
+        "second_moment_mm4_y": "0.742e4",
+        "surface": "white anodized for HFS type"
+      },
+      "engineering_interpretation": "Suitable as a source-bound modular frame candidate. Manufacturer notes extrusion squareness is not specified, so machined datum plates/kinematic referencing/metrology remain required before calling this a datum network.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "machine envelope and load cases",
+        "joint architecture",
+        "datum/flatness/stiffness targets",
+        "modal response",
+        "as-built dimensional verification"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-GUIDE-001",
+      "mu_nodes": [
+        "MU-002"
+      ],
+      "manufacturer": "HIWIN",
+      "model": "MGN09H / MGN09HZ1HM class with matching MGNR09 rail",
+      "role": "miniature recirculating linear guide candidate for precision motion",
+      "official_source": "https://www.hiwin.de/en/Products/Linear-guideways/Blocks/Miniature-guides/MGN-HIRES-series/MGN09HZ1HM/p/5-001026",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "total_height_mm": 10,
+        "block_width_mm": 20,
+        "block_length_mm": 39.9,
+        "mass_kg": 0.03,
+        "dynamic_load_rating_N": 2550,
+        "static_load_rating_N": 4020,
+        "static_moment_Nm_x": 19.6,
+        "static_moment_Nm_y": 18.6,
+        "static_moment_Nm_z": 18.6
+      },
+      "engineering_interpretation": "Strong precision-guide candidate for Printer-mu sizing, but preload, accuracy class, rail length, lubrication, mounting flatness, travel and environmental compatibility remain configuration-specific.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "accuracy/preload class",
+        "rail length/travel",
+        "mounting flatness",
+        "lubrication/cleanliness",
+        "assembled repeatability and wear"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-MOTOR-001",
+      "mu_nodes": [
+        "MU-002",
+        "MU-013"
+      ],
+      "manufacturer": "Oriental Motor",
+      "model": "PKP243D08B2",
+      "role": "42 mm two-phase bipolar stepper motor candidate for low-consequence benchtop motion axes",
+      "official_source": "https://catalog.orientalmotor.com/item/2-phase-bipolar-stepper-motors/42mm-pkp-series-2-phase-bipolar-stepper-motors/pkp243d08b2",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "frame_mm": 42,
+        "motor_length_mm": 33,
+        "step_angle_deg": 1.8,
+        "holding_torque_Nm": 0.35,
+        "current_A_per_phase": 0.85,
+        "nominal_voltage_VDC": 4.6,
+        "resistance_ohm_per_phase": 5.4,
+        "inductance_mH_per_phase": 10,
+        "output_shaft_diameter_mm": 5,
+        "stop_position_accuracy_deg": "±0.05",
+        "encoder": "not equipped",
+        "ambient_temperature_C": "-10 to 50 non-freezing"
+      },
+      "engineering_interpretation": "Candidate actuator seed only. Lack of encoder means closed-loop metrology must come from an external encoder or other reference; holding torque alone is not an axis-performance claim.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "axis inertia and acceleration",
+        "torque-speed operating point",
+        "thermal rise in enclosure",
+        "coupling/leadscrew or belt architecture",
+        "external position feedback and homing"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-DRIVER-001",
+      "mu_nodes": [
+        "MU-017"
+      ],
+      "manufacturer": "Analog Devices / Trinamic",
+      "model": "TMC2209",
+      "role": "two-phase stepper power-stage / motion-driver candidate; not a safety controller",
+      "official_source": "https://www.analog.com/en/products/tmc2209.html",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "supply_voltage_VDC": "4.75 to 29",
+        "motor_current": "up to 2 A RMS / 2.8 A peak class per manufacturer overview",
+        "interface": [
+          "STEP/DIR",
+          "single-wire UART"
+        ],
+        "interpolation": "up to 256 microsteps",
+        "functions": [
+          "StealthChop2",
+          "SpreadCycle",
+          "StallGuard4",
+          "CoolStep",
+          "protection/diagnostics"
+        ]
+      },
+      "engineering_interpretation": "Useful motion-driver seed with diagnostics and current control. It cannot by itself satisfy C0 deterministic machine safety, safety-rated stop, independent E-stop chain or motion-controller scheduling.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "exact current/voltage operating point",
+        "thermal design",
+        "EMC",
+        "fault reaction integration",
+        "deterministic motion-core/controller selection",
+        "safety-rated isolation from actuation"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-METROLOGY-001",
+      "mu_nodes": [
+        "MU-019"
+      ],
+      "manufacturer": "Renishaw",
+      "model": "TONiC optical incremental encoder family",
+      "role": "non-contact external position-metrology candidate",
+      "official_source": "https://www.renishaw.com/en/--37824",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "maximum_speed_m_per_s": "up to 10 depending configuration",
+        "resolution": "down to 1 nm with Ti interface depending configuration",
+        "scale_pitch_um": 20,
+        "variants": [
+          "linear",
+          "partial arc",
+          "rotary",
+          "UHV",
+          "Functional Safety variants"
+        ]
+      },
+      "engineering_interpretation": "High-resolution metrology candidate, but exact readhead/scale/interface, accuracy, scale length, thermal expansion and installation tolerance must be selected for the machine envelope. Source resolution is not assembled Printer-mu accuracy.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "exact scale/readhead/interface",
+        "machine travel",
+        "accuracy budget",
+        "thermal expansion",
+        "mounting and alignment",
+        "cross-calibration to traceable reference"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-FINEFEED-001",
+      "mu_nodes": [
+        "MU-004"
+      ],
+      "manufacturer": "nScrypt",
+      "model": "SmartPump / SmartPump 100 Gen 2 class",
+      "role": "positive-pressure microdispensing tool candidate for functional paste/ink/fine-feed development",
+      "official_source": "https://www.nscrypt.com/smartpump/",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "volume_control": "down to 100 pL stated by manufacturer",
+        "viscosity_range": "about 1 cP to over 1,000,000 cP across product description",
+        "demonstrated_line_width_um": "as small as 20, material-dependent",
+        "demonstrated_dot_um": "as small as 50, material-dependent",
+        "Gen2_air_pressure_kPa": "0 to 1000 from manufacturer specification sheet"
+      },
+      "engineering_interpretation": "Strong SOURCE_ONLY candidate for MU-004 because it covers a broad material-viscosity range. Pressure, wetted-material compatibility, nozzle selection, curing/sintering and actual electrical/dielectric coupon quality remain separate qualification gates.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "exact SmartPump configuration",
+        "material-specific pressure and nozzle",
+        "wetted-part compatibility",
+        "shroud/environment",
+        "cure/sinter route",
+        "measured line/volume repeatability on selected feeds"
+      ]
+    },
+    {
+      "candidate_id": "PMU-CAND-SAFETY-001",
+      "mu_nodes": [
+        "MU-017"
+      ],
+      "manufacturer": "Pilz",
+      "model": "PNOZ X3 24VAC/24VDC 3n/o 1n/c 1so, product 774310",
+      "role": "independent E-stop / safety-gate relay candidate within the C0 hardware safety chain; not the complete C0 controller",
+      "official_source": "https://www.pilz.com/en-INT/eshop/product/774310",
+      "source_snapshot": "2026-10-11",
+      "source_facts": {
+        "supply": "24 V AC/DC",
+        "safety_outputs": "3 N/O",
+        "auxiliary_outputs": "1 N/C + 1 semiconductor output",
+        "width_mm": 45,
+        "functions": [
+          "1/2-channel input",
+          "automatic/monitored start",
+          "E-STOP monitoring",
+          "safety-gate monitoring"
+        ],
+        "approvals": [
+          "CE",
+          "CCC",
+          "UKCA",
+          "cULus Listed",
+          "KOSHA",
+          "EAC",
+          "TÜV"
+        ]
+      },
+      "engineering_interpretation": "Credible independent safety-relay seed for the hardware stop chain. Its approvals and contact ratings apply only to the exact product/application conditions; they do not certify the Printer-mu system or replace the deterministic motion controller, contactors, power removal design or risk assessment.",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "unresolved": [
+        "risk assessment and required PL/SIL architecture",
+        "power-removal/contactors",
+        "feedback loop",
+        "reset/start logic",
+        "motion controller",
+        "wiring/diagnostic coverage",
+        "system validation"
+      ]
+    }
+  ],
+  "dag_advancement": {
+    "nodes_advanced_to_candidate": [
+      "MU-001",
+      "MU-002",
+      "MU-004",
+      "MU-013",
+      "MU-017",
+      "MU-019"
+    ],
+    "nodes_remaining_unselected": [
+      "MU-003",
+      "MU-005",
+      "MU-006",
+      "MU-007",
+      "MU-008",
+      "MU-009",
+      "MU-010",
+      "MU-011",
+      "MU-012",
+      "MU-014",
+      "MU-015",
+      "MU-016",
+      "MU-018",
+      "MU-020"
+    ],
+    "C0_state": "PARTIAL CANDIDATE STACK ONLY — TMC2209 motion power stage + PNOZ X3 safety relay; deterministic motion controller and full safety architecture remain UNSELECTED",
+    "physical_qualification": "NOT_RUN"
+  },
+  "next_resolution": [
+    "Select machine envelope, axis count, load/inertia and travel before final frame/guide/motor sizing.",
+    "Select deterministic C0 motion controller and required safety architecture from a documented risk assessment; do not infer safety from driver features.",
+    "Bind structural-deposition and conductor/dielectric/resistive/capacitive/inductive material-process candidates to exact source properties and witness coupons.",
+    "Bind exact metrology scale/interface and uncertainty budget.",
+    "Do not procure or call any candidate selected-with-evidence until owner review and compatibility sizing close."
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "artifact_id": "UTP-UMBRELLA-001",
+  "version": "0.1",
+  "date": "2026-10-06",
+  "title": "Universal Printer Umbrella Process / Environment Families",
+  "process_families": [
+    {
+      "id": "PF-STRUCT",
+      "name": "structural skeleton and enclosure",
+      "functions": [
+        "load path",
+        "fixture",
+        "cavity wall",
+        "rib",
+        "lattice",
+        "housing",
+        "service channel"
+      ],
+      "tools": [
+        "pellet/filament/paste extrusion",
+        "optional wire/metal deposition",
+        "mill"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "priority": "early/high-temperature first"
+    },
+    {
+      "id": "PF-COND",
+      "name": "electrical conductor / bus / electrode",
+      "functions": [
+        "power",
+        "signal",
+        "coil",
+        "heater",
+        "electrode",
+        "ground plane",
+        "shield"
+      ],
+      "tools": [
+        "DIW/microdispense",
+        "wire embed",
+        "electrodeposition optional",
+        "mill/laser trim"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "postprocess": [
+        "thermal cure",
+        "photonic cure",
+        "laser/local sinter as qualified"
+      ]
+    },
+    {
+      "id": "PF-DIEL",
+      "name": "dielectric / insulation / barrier",
+      "functions": [
+        "electrical isolation",
+        "capacitor dielectric",
+        "chemical barrier",
+        "gas barrier",
+        "encapsulation"
+      ],
+      "tools": [
+        "DIW",
+        "extrusion",
+        "coating"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "postprocess": [
+        "UV",
+        "thermal",
+        "photonic where compatible"
+      ]
+    },
+    {
+      "id": "PF-FUNC",
+      "name": "functional composite",
+      "functions": [
+        "resistive",
+        "thermal conductor",
+        "thermal barrier",
+        "magnetic",
+        "piezo/flexural candidate",
+        "optical/scattering",
+        "shielding"
+      ],
+      "tools": [
+        "post-mix DIW/extrusion"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "rule": "functional filler fraction is continuously variable within rheology/percolation/process limits"
+    },
+    {
+      "id": "PF-OPT",
+      "name": "optical / phosphor / conversion",
+      "functions": [
+        "phosphor",
+        "diffuser",
+        "reflector",
+        "absorber",
+        "waveguide/cladding candidate"
+      ],
+      "tools": [
+        "microdispense",
+        "aerosol/inkjet optional",
+        "photonic/UV cure"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT",
+        "ENV-LOCAL-SHROUD"
+      ]
+    },
+    {
+      "id": "PF-CAV",
+      "name": "printed cavity / void / channel",
+      "functions": [
+        "vacuum gap",
+        "gas cell",
+        "fluid channel",
+        "thermal break",
+        "acoustic resonator",
+        "service void"
+      ],
+      "tools": [
+        "skeleton extrusion",
+        "sacrificial/support process",
+        "fill/evacuate needle",
+        "seal tool"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT",
+        "ENV-REDUCED-P",
+        "ENV-NOBLE-LOCAL"
+      ]
+    },
+    {
+      "id": "PF-PLASMA",
+      "name": "microplasma / discharge device",
+      "functions": [
+        "UV source",
+        "visible phosphor excitation",
+        "sensor/process plasma candidate"
+      ],
+      "tools": [
+        "electrode print",
+        "dielectric print",
+        "phosphor print",
+        "local gas fill",
+        "seal"
+      ],
+      "typical_environments": [
+        "ENV-NOBLE-LOCAL"
+      ],
+      "rule": "gas creates discharge/UV; visible RGB normally selected by phosphor/conversion layer, not separate RGB gas chemistry"
+    },
+    {
+      "id": "PF-PASSIVE",
+      "name": "printed passive electronics",
+      "functions": [
+        "resistor",
+        "heater",
+        "capacitor",
+        "inductor",
+        "antenna",
+        "crossovers"
+      ],
+      "tools": [
+        "PF-COND + PF-DIEL + PF-FUNC"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "priority": "baseline functional-electronics target"
+    },
+    {
+      "id": "PF-ACTIVE-HYBRID",
+      "name": "hybrid active electronics",
+      "functions": [
+        "MCU",
+        "driver",
+        "power IC",
+        "sensor IC",
+        "memory",
+        "RF"
+      ],
+      "tools": [
+        "printed pads/interconnects + pick-place + encapsulation"
+      ],
+      "typical_environments": [
+        "ENV-DRY-INERT"
+      ],
+      "priority": "baseline path for chip-level functionality"
+    },
+    {
+      "id": "PF-SEMIPRINT",
+      "name": "printed thin-film semiconductor / photovoltaic",
+      "functions": [
+        "simple transistor",
+        "photodiode",
+        "solar cell",
+        "sensor"
+      ],
+      "tools": [
+        "fine deposition",
+        "energy treatment",
+        "pattern/trim",
+        "metrology"
+      ],
+      "typical_environments": [
+        "ENV-DRY-INERT",
+        "ENV-REDUCED-P",
+        "ENV-LOCAL-SHROUD"
+      ],
+      "priority": "specialist extension; material-specific"
+    },
+    {
+      "id": "PF-ELECTROCHEM",
+      "name": "electrochemical storage/actuation",
+      "functions": [
+        "battery",
+        "supercapacitor",
+        "electrochemical sensor"
+      ],
+      "tools": [
+        "electrode print",
+        "separator/electrolyte placement",
+        "fill/seal"
+      ],
+      "typical_environments": [
+        "ENV-DRY-INERT",
+        "ENV-WET-LOCAL"
+      ],
+      "priority": "late activation after thermal processes"
+    },
+    {
+      "id": "PF-MECH-INSTALL",
+      "name": "precision insert / mechanism",
+      "functions": [
+        "bearing",
+        "shaft",
+        "seal",
+        "gear",
+        "spring",
+        "motor rotor/stator insert",
+        "sensor die"
+      ],
+      "tools": [
+        "pick-place",
+        "press-fit tool",
+        "mill"
+      ],
+      "typical_environments": [
+        "ENV-AIR",
+        "ENV-DRY-INERT"
+      ],
+      "priority": "install after incompatible thermal/chemical steps"
+    }
+  ],
+  "environments": [
+    {
+      "id": "ENV-AIR",
+      "name": "ambient/dry air",
+      "cost": "low",
+      "best_for": [
+        "structural print",
+        "machining",
+        "inspection",
+        "many polymers/ceramics"
+      ],
+      "avoid": [
+        "oxygen/moisture-sensitive chemistry",
+        "expensive gas discharge fill"
+      ]
+    },
+    {
+      "id": "ENV-DRY-INERT",
+      "name": "dry nitrogen or argon near ambient pressure",
+      "cost": "low-moderate",
+      "best_for": [
+        "oxidation-sensitive conductors",
+        "dry assembly",
+        "many functional inks",
+        "electrochemical dry assembly"
+      ],
+      "sensors": [
+        "O2",
+        "H2O/dew point",
+        "pressure"
+      ]
+    },
+    {
+      "id": "ENV-REDUCED-P",
+      "name": "reduced pressure / rough vacuum",
+      "cost": "moderate",
+      "best_for": [
+        "degassing",
+        "void control",
+        "gas exchange",
+        "vacuum gaps",
+        "specialist deposition submodules"
+      ],
+      "rule": "pressure range is process-specific; do not treat one vacuum level as universal"
+    },
+    {
+      "id": "ENV-LOCAL-SHROUD",
+      "name": "tool-local controlled microclimate",
+      "cost": "moderate",
+      "best_for": [
+        "small-volume inert/solvent/process zones",
+        "protecting existing object from global chamber change"
+      ]
+    },
+    {
+      "id": "ENV-NOBLE-LOCAL",
+      "name": "local noble-gas fill/recovery",
+      "cost": "high gas / low volume preferred",
+      "best_for": [
+        "sealed plasma/discharge cells"
+      ],
+      "reference_only": "PDP literature contains Ne/Xe sub-atmospheric examples; UTP recipe remains device-test specific"
+    },
+    {
+      "id": "ENV-WET-LOCAL",
+      "name": "isolated wet/electrochemical microcell",
+      "cost": "moderate",
+      "best_for": [
+        "electrolyte placement",
+        "electrodeposition",
+        "wet chemistry"
+      ],
+      "rule": "physically isolated from general chamber/vacuum train where contamination is unacceptable"
+    },
+    {
+      "id": "ENV-ENERGY",
+      "name": "energy-treatment overlay",
+      "cost": "tool-dependent",
+      "best_for": [
+        "UV cure",
+        "IR/thermal cure",
+        "photonic flash",
+        "localized laser",
+        "Joule conditioning",
+        "mechanical strain programming"
+      ],
+      "rule": "overlay on another environment; it is not a gas state"
+    }
+  ],
+  "overlap_logic": [
+    "PF-STRUCT, PF-COND, PF-DIEL, PF-FUNC and most PF-PASSIVE share ENV-AIR/ENV-DRY-INERT and therefore form the highest-value common core",
+    "PF-OPT usually shares the same common core plus UV/photonic treatment",
+    "PF-CAV requires the common core to create geometry, then a late fill/evacuate/seal operation",
+    "PF-PLASMA and PF-ELECTROCHEM should be activated late because their gas/electrolyte contents are vulnerable to subsequent heat/vacuum/chemical processing",
+    "PF-ACTIVE-HYBRID provides most computer functionality without forcing the printer to reproduce a semiconductor fab",
+    "PF-SEMIPRINT is a specialist branch that can rationally reuse motion, chamber, fine deposition and energy subsystems without claiming literal CMOS process equivalence"
+  ]
+}

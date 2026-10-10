@@ -1,0 +1,672 @@
+{
+  "artifact_id": "UTP-PRINTER-MU-DEPENDENCY-DAG-001",
+  "version": "0.2",
+  "date": "2026-10-11",
+  "title": "Printer-μ Dependency / BOM / Process DAG — Planning Baseline",
+  "generation_ref": "P1-PRINTER-MU",
+  "build_ref": "BUILD-062",
+  "state": "SOURCE-BOUND CANDIDATE DAG / NO PROCUREMENT BOM / NO PHYSICAL QUALIFICATION",
+  "objective": "Map every G1 universal-function requirement into explicit child-machine dependency classes and identify what may be parent-printed, child-printed, locally sourced, recycled, seed-dependent, precision-limited, environment-limited or qualification-limited before any claim of recursive manufacturing closure.",
+  "classification_enums": {
+    "ternary": [
+      "YES",
+      "NO",
+      "CONDITIONAL",
+      "UNKNOWN"
+    ],
+    "evidence_state": [
+      "ARCHITECTURE",
+      "SOURCE_ONLY",
+      "BENCH_REQUIRED",
+      "QUALIFIED"
+    ],
+    "selection_state": [
+      "UNSELECTED",
+      "CANDIDATE",
+      "SELECTED_WITH_EVIDENCE"
+    ]
+  },
+  "hard_rules": [
+    "No component is QUALIFIED unless attributable physical evidence exists.",
+    "UNSELECTED does not become parent-printable by geometry alone.",
+    "A seed component may satisfy function while remaining an explicit reproduction dependency.",
+    "Local/recovered material is not accepted until passport, contamination/assay and coupon gates pass.",
+    "Child manufacture begins only after parent-machine calibration and G1 function-basis acceptance are measured.",
+    "High-energy, pressure/vacuum, reactive chemistry and hazardous processes remain separately qualified modules."
+  ],
+  "universal_function_basis": [
+    "STRUCTURE",
+    "CONDUCTOR",
+    "DIELECTRIC",
+    "RESISTOR",
+    "CAPACITOR",
+    "INDUCTOR_COIL",
+    "ENERGY_STORAGE",
+    "LIGHT_EMITTER",
+    "SENSOR",
+    "ACTUATOR",
+    "FLUID_GAS_ROUTING",
+    "SEAL_PRESSURE_BOUNDARY",
+    "RF_ANTENNA",
+    "THERMAL_FUNCTION",
+    "ACTIVE_SWITCH_LOGIC",
+    "COMPUTE_INTERFACE",
+    "METROLOGY_CALIBRATION"
+  ],
+  "nodes": [
+    {
+      "id": "MU-001",
+      "name": "structural frame and datum network",
+      "function_basis": [
+        "STRUCTURE"
+      ],
+      "upstream": [],
+      "processes": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "YES",
+      "recycled_candidate": "YES",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "datum/flatness/stiffness targets not yet assigned",
+      "environment_limit": "ambient-compatible candidates preferred",
+      "qualification_limit": "mechanical coupon + dimensional/metrology evidence required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-FRAME-001"
+      ]
+    },
+    {
+      "id": "MU-002",
+      "name": "precision motion/guide interfaces",
+      "function_basis": [
+        "STRUCTURE",
+        "ACTUATOR",
+        "METROLOGY_CALIBRATION"
+      ],
+      "upstream": [
+        "MU-001"
+      ],
+      "processes": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "bearing/guide/runout/repeatability architecture unresolved",
+      "environment_limit": "cleanliness and lubrication depend on selected mechanism",
+      "qualification_limit": "load/repeatability/wear testing required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-GUIDE-001",
+        "PMU-CAND-MOTOR-001"
+      ]
+    },
+    {
+      "id": "MU-003",
+      "name": "structural deposition tool",
+      "function_basis": [
+        "STRUCTURE"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-002"
+      ],
+      "processes": [
+        "ADD",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "flow/nozzle/tool geometry unresolved",
+      "environment_limit": "feed-specific",
+      "qualification_limit": "bead/geometry/process-window coupons required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-004",
+      "name": "functional paste/ink or fine-feed tool",
+      "function_basis": [
+        "CONDUCTOR",
+        "DIELECTRIC",
+        "RESISTOR",
+        "CAPACITOR",
+        "INDUCTOR_COIL",
+        "RF_ANTENNA",
+        "SENSOR"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-002"
+      ],
+      "processes": [
+        "ADD",
+        "MIX",
+        "DILUTE",
+        "GRADIENT",
+        "CURE",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "feature size/feed metering unresolved",
+      "environment_limit": "material-specific shroud/thermal control may be required",
+      "qualification_limit": "electrical/dielectric/sensor coupons required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-FINEFEED-001"
+      ]
+    },
+    {
+      "id": "MU-005",
+      "name": "conductor/reference network",
+      "function_basis": [
+        "CONDUCTOR",
+        "RF_ANTENNA",
+        "COMPUTE_INTERFACE"
+      ],
+      "upstream": [
+        "MU-004"
+      ],
+      "processes": [
+        "ADD",
+        "PLATE_DEPOSIT_FILM",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "resistance/current/RF geometry targets unresolved",
+      "environment_limit": "feed/process-specific",
+      "qualification_limit": "continuity/resistance/current/RF coupon evidence required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-006",
+      "name": "dielectric/isolation system",
+      "function_basis": [
+        "DIELECTRIC",
+        "CAPACITOR",
+        "COMPUTE_INTERFACE"
+      ],
+      "upstream": [
+        "MU-004",
+        "MU-005"
+      ],
+      "processes": [
+        "ADD",
+        "CURE",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "thickness/void control unresolved",
+      "environment_limit": "moisture/cleanliness/thermal requirements material-specific",
+      "qualification_limit": "breakdown/leakage/adhesion coupon evidence required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-007",
+      "name": "resistive/heater element route",
+      "function_basis": [
+        "RESISTOR",
+        "THERMAL_FUNCTION",
+        "SENSOR"
+      ],
+      "upstream": [
+        "MU-004",
+        "MU-005",
+        "MU-006"
+      ],
+      "processes": [
+        "ADD",
+        "CURE",
+        "SINTER_ANNEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "sheet resistance/TCR/geometry unresolved",
+      "environment_limit": "thermal process specific",
+      "qualification_limit": "R(T), power and thermal cycling coupons required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-008",
+      "name": "capacitive element route",
+      "function_basis": [
+        "CAPACITOR"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006"
+      ],
+      "processes": [
+        "ADD",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "area/gap/dielectric thickness unresolved",
+      "environment_limit": "clean/dry requirements depend on dielectric",
+      "qualification_limit": "capacitance/leakage/breakdown coupons required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-009",
+      "name": "inductor/coil/antenna route",
+      "function_basis": [
+        "INDUCTOR_COIL",
+        "RF_ANTENNA"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006"
+      ],
+      "processes": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "turn spacing/conductor loss/core option unresolved",
+      "environment_limit": "ambient candidates possible; core processing material-specific",
+      "qualification_limit": "L/Q/RF response and thermal coupons required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-010",
+      "name": "energy-storage route",
+      "function_basis": [
+        "ENERGY_STORAGE"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006"
+      ],
+      "processes": [
+        "ADD",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "chemistry and separator/electrolyte architecture unresolved",
+      "environment_limit": "electrochemistry may require controlled dry/wet local environment",
+      "qualification_limit": "capacity/impedance/cycle/safety evidence required before embedding",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-011",
+      "name": "light-emission route",
+      "function_basis": [
+        "LIGHT_EMITTER"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006"
+      ],
+      "processes": [
+        "ADD",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "UNKNOWN",
+      "recycled_candidate": "UNKNOWN",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "microplasma vs semiconductor vs seed-emitter route unresolved",
+      "environment_limit": "route-specific controlled gas/semiconductor processing may be required",
+      "qualification_limit": "optical/electrical/thermal evidence required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-012",
+      "name": "sensor suite and state feedback",
+      "function_basis": [
+        "SENSOR",
+        "METROLOGY_CALIBRATION"
+      ],
+      "upstream": [
+        "MU-004",
+        "MU-005",
+        "MU-006",
+        "MU-007"
+      ],
+      "processes": [
+        "ADD",
+        "PICK_PLACE_OPTIONAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "sensor modalities/accuracy unresolved",
+      "environment_limit": "modality-specific",
+      "qualification_limit": "calibration against reference standards required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-013",
+      "name": "actuator route",
+      "function_basis": [
+        "ACTUATOR"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006",
+        "MU-009",
+        "MU-012"
+      ],
+      "processes": [
+        "ADD",
+        "POLARIZE_MAGNETIZE",
+        "PICK_PLACE_OPTIONAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "force/stroke/speed/control target unresolved",
+      "environment_limit": "material/field conditioning specific",
+      "qualification_limit": "force/displacement/life/safe-state tests required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-MOTOR-001"
+      ]
+    },
+    {
+      "id": "MU-014",
+      "name": "fluid/gas routing and local process environment",
+      "function_basis": [
+        "FLUID_GAS_ROUTING",
+        "SEAL_PRESSURE_BOUNDARY"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-002"
+      ],
+      "processes": [
+        "ADD",
+        "REMOVE_PATTERN",
+        "FILL",
+        "EVACUATE",
+        "SEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "YES",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "valves/seals/pumps/manifold tolerances unresolved",
+      "environment_limit": "pressure/vacuum/gas handling separately gated",
+      "qualification_limit": "leak/pressure/compatibility testing required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-015",
+      "name": "thermal management network",
+      "function_basis": [
+        "THERMAL_FUNCTION"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-005",
+        "MU-006",
+        "MU-007",
+        "MU-014"
+      ],
+      "processes": [
+        "ADD",
+        "FILL",
+        "SEAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "heat-load and allowable gradients unresolved",
+      "environment_limit": "passive vs fluid-assisted route specific",
+      "qualification_limit": "thermal resistance/transient/leak evidence required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-016",
+      "name": "active switch/logic route",
+      "function_basis": [
+        "ACTIVE_SWITCH_LOGIC",
+        "COMPUTE_INTERFACE"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-006",
+        "MU-012"
+      ],
+      "processes": [
+        "ADD",
+        "DOPE_FUNCTIONALIZE",
+        "PLATE_DEPOSIT_FILM",
+        "PICK_PLACE_OPTIONAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "UNKNOWN",
+      "recycled_candidate": "UNKNOWN",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "printed-device performance vs seed-die integration unresolved",
+      "environment_limit": "advanced printed semiconductor route may require specialized controlled environment",
+      "qualification_limit": "switching transfer/leakage/reliability evidence required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-017",
+      "name": "C0 deterministic safety and motion controller",
+      "function_basis": [
+        "COMPUTE_INTERFACE",
+        "ACTUATOR",
+        "METROLOGY_CALIBRATION"
+      ],
+      "upstream": [
+        "MU-012",
+        "MU-013",
+        "MU-016"
+      ],
+      "processes": [
+        "PICK_PLACE_OPTIONAL",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "UNKNOWN",
+      "recycled_candidate": "UNKNOWN",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "controller architecture unresolved",
+      "environment_limit": "must remain locally operable independent of C2 network",
+      "qualification_limit": "deterministic interlock/fault/safe-state verification required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-DRIVER-001",
+        "PMU-CAND-SAFETY-001"
+      ]
+    },
+    {
+      "id": "MU-018",
+      "name": "C1/CGX local identity and twin interface",
+      "function_basis": [
+        "COMPUTE_INTERFACE"
+      ],
+      "upstream": [
+        "MU-005",
+        "MU-012",
+        "MU-017"
+      ],
+      "processes": [
+        "PROVISION_ID",
+        "HANDSHAKE",
+        "TEST"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "UNKNOWN",
+      "recycled_candidate": "UNKNOWN",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "identity/security/edge hardware unresolved",
+      "environment_limit": "network is optional for safe local state",
+      "qualification_limit": "identity/hash/lease/readback/DBR tests required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    },
+    {
+      "id": "MU-019",
+      "name": "metrology and calibration chain",
+      "function_basis": [
+        "METROLOGY_CALIBRATION"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-002",
+        "MU-003",
+        "MU-004",
+        "MU-012"
+      ],
+      "processes": [
+        "TEST",
+        "REPAIR"
+      ],
+      "parent_printable": "CONDITIONAL",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "CONDITIONAL",
+      "recycled_candidate": "CONDITIONAL",
+      "seed_dependency": "CONDITIONAL",
+      "precision_limit": "traceability standards and transfer artifacts unresolved",
+      "environment_limit": "measurement-specific thermal/cleanliness control may be required",
+      "qualification_limit": "cross-calibration and uncertainty budget required",
+      "selection_state": "CANDIDATE",
+      "evidence_state": "SOURCE_ONLY",
+      "candidate_refs": [
+        "PMU-CAND-METROLOGY-001"
+      ]
+    },
+    {
+      "id": "MU-020",
+      "name": "service/repair/access interfaces",
+      "function_basis": [
+        "STRUCTURE",
+        "COMPUTE_INTERFACE"
+      ],
+      "upstream": [
+        "MU-001",
+        "MU-005",
+        "MU-014",
+        "MU-017",
+        "MU-019"
+      ],
+      "processes": [
+        "TEST",
+        "REPAIR"
+      ],
+      "parent_printable": "YES",
+      "child_printable": "CONDITIONAL",
+      "local_source_candidate": "YES",
+      "recycled_candidate": "YES",
+      "seed_dependency": "UNKNOWN",
+      "precision_limit": "service envelope unresolved",
+      "environment_limit": "must not compromise qualified barriers/seals",
+      "qualification_limit": "access, replacement and post-repair verification required",
+      "selection_state": "UNSELECTED",
+      "evidence_state": "ARCHITECTURE"
+    }
+  ],
+  "dependency_closure": {
+    "acceptance_rule": "Every universal function basis item must map to at least one DAG node and every critical node must declare unresolved seed, precision, environment and qualification limits.",
+    "child_commissioning_gate": [
+      "parent Printer-1 physically exists and is calibrated",
+      "required G1 function-basis coupons have measured acceptance evidence",
+      "selected Printer-mu parts/material/processes have attributable revisions and passports",
+      "C0 safe-state/controller is independently verified",
+      "child metrology chain is cross-calibrated",
+      "CGX identity/DBR handshake passes without transferring execution authority"
+    ],
+    "source_bound_candidate_count": 6,
+    "source_bound_candidate_nodes": [
+      "MU-001",
+      "MU-002",
+      "MU-004",
+      "MU-013",
+      "MU-017",
+      "MU-019"
+    ],
+    "c0_partial_candidate_note": "MU-017 has a source-bound stepper power-stage candidate and an independent safety-relay candidate only. Deterministic motion controller, risk-derived safety architecture, power-removal/contactors and system validation remain unresolved."
+  },
+  "next_resolution_actions": [
+    "size source-bound frame/guide/motor candidates against a frozen machine envelope, axis count, travel, inertia/load and thermal budget before any final selection",
+    "select deterministic C0 motion controller and risk-derived safety architecture; TMC2209 and PNOZ X3 are partial seeds, not a complete C0 controller",
+    "bind exact structural-deposition and conductor/dielectric/resistor/capacitor/inductor material-process candidates from attributable sources",
+    "bind exact TONiC configuration and uncertainty/cross-calibration budget if retained",
+    "derive mass/part/function/critical-dependency fractions only after reviewed candidate stack closes",
+    "build smallest benign coupon tree covering STRUCTURE through METROLOGY_CALIBRATION before recursive commissioning"
+  ],
+  "source_candidate_matrix_ref": "printer_mu_source_candidate_matrix_v0_1.json",
+  "source_candidate_matrix_artifact": "UTP-PRINTER-MU-SOURCE-CANDIDATES-001",
+  "source_candidate_rule": "Candidate status binds attributable manufacturer identity/specification only. It is not procurement, selected-with-evidence, integration acceptance, certification or physical qualification."
+}

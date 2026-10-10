@@ -1,0 +1,129 @@
+{
+  "schema": "CGX-PHYSICAL-NODE/0.1",
+  "node_id": "cgx:object:romer:utp:printer-1-plan",
+  "serial": "PRINTER-1-PLAN-001",
+  "identity_state": "PLANNED_DIGITAL_NODE / NO_PHYSICAL_MACHINE",
+  "parent_relations": [
+    "cgx:root:cognigrex",
+    "cgx:domain:romer"
+  ],
+  "related_domains": [
+    "cgx:domain:eco",
+    "cgx:domain:lightspeed",
+    "cgx:domain:emassc"
+  ],
+  "object_contract": "UTP-CGX-OBJECT-IDENTITY-001",
+  "universal_triplet": [
+    "filespace",
+    "dataspace",
+    "solid_state"
+  ],
+  "hardware_revision": "UNASSIGNED",
+  "software_revision": "Raphael UTP branch feature/universal-tech-printer-multiphysics-20261006",
+  "compute_profile": {
+    "C0": "REQUIRED / hardware unassigned",
+    "C1": "PLANNED / modest local CGX twin",
+    "C2": "AVAILABLE AS EXTERNAL FEDERATION CONCEPT / live binding not claimed"
+  },
+  "capability_manifest": {
+    "state": "PLANNED_ONLY",
+    "required_function_basis": [
+      "structure",
+      "conductance",
+      "dielectric",
+      "resistor/heater",
+      "capacitor",
+      "inductor/coil/antenna",
+      "energy storage",
+      "light emission",
+      "sensor",
+      "actuator",
+      "fluid/gas routing",
+      "pressure/vacuum seal",
+      "thermal function",
+      "active switch/logic route",
+      "metrology/calibration",
+      "software-defined process"
+    ],
+    "current_physical_qualified_functions": [],
+    "catalogue_source": "UTP-CATALOGUE-001",
+    "projection_source": "UTP-CATALOGUE-PROJECTION-001",
+    "neutral_layer_source": "UTP-NEW-NEUTRALS-001"
+  },
+  "tool_manifest": {
+    "state": "OPEN_PRE_BUILD",
+    "required_classes": [
+      "structural extrusion",
+      "functional DIW",
+      "wire/conductor",
+      "pick-place",
+      "mill/ablate",
+      "energy treatment",
+      "fill/evacuate/seal",
+      "metrology"
+    ]
+  },
+  "material_feed_manifest": {
+    "state": "OPEN_PRE_BUILD",
+    "required_families": [
+      "STRUCT-POLY",
+      "COND-METAL",
+      "COND-CARBON",
+      "DIEL",
+      "THERM",
+      "MAG",
+      "OPT",
+      "ELECTRODE",
+      "ELECTROLYTE",
+      "SEMI",
+      "SACRIFICIAL"
+    ]
+  },
+  "environment_manifest": {
+    "state": "OPEN_PRE_BUILD",
+    "required": [
+      "AIR",
+      "DRY-INERT",
+      "REDUCED-P",
+      "LOCAL-SHROUD",
+      "NOBLE-LOCAL",
+      "WET-LOCAL",
+      "ENERGY"
+    ]
+  },
+  "calibration_state": "NOT_CALIBRATED / NO_PHYSICAL_MACHINE",
+  "safety_envelope": "NOT_ESTABLISHED / hardware design and hazard analysis required before actuation",
+  "local_horizon_profile": "H-TERR-SITE / planning assumption only",
+  "power_state": "UNASSIGNED",
+  "task_queue": [
+    "derive physical BOM/process DAG",
+    "select motion/chamber/tool architecture",
+    "select benign G1 coupon materials",
+    "build C0 safety/controller architecture",
+    "construct and calibrate physical machine",
+    "execute G1 function-basis coupon tree",
+    "commission Printer-mu only after measured evidence"
+  ],
+  "twin_snapshot": {
+    "state": "DESIGN_INTENT_ONLY",
+    "as_built": false
+  },
+  "evidence_receipts": [
+    "Raphael PR #5 software-contract CI",
+    "Type1 canonical catalogue/readback",
+    "BouwerBase Frontier handoffs"
+  ],
+  "dbr_pointer": "PENDING first physical plan/as-built snapshot",
+  "source_authority_pointer": "Raphael UTP PR #5 + Type1 Romer Cognigrex",
+  "network_interfaces": [
+    "CGX/LightSpeed candidate interface",
+    "manual/offline file handoff"
+  ],
+  "last_verified_state": "DIGITAL MANIFEST ONLY",
+  "hard_boundaries": [
+    "does not advertise physical manufacturing capability",
+    "does not imply certified pressure/high-voltage/reactive-chemistry operation",
+    "does not imply printed iPhone-class compute",
+    "does not mutate durable .cgx carriers"
+  ]
+}
