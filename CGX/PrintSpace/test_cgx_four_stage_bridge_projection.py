@@ -54,7 +54,7 @@ class FourStageIntegrationProjectionTests(unittest.TestCase):
         self.assertTrue(any("GitHub" in p for p in providers))
         self.assertTrue(any("Google Drive" in p for p in providers))
         self.assertIn("Documents excluded", RECORD["native_suites"][0]["gate"])
-        self.assertIn("no new", RECORD["status_note"].lower())
+        self.assertIn("not a new", RECORD["status_note"].lower())
         self.assertIn("No public release", RECORD["safety_and_release"]["approval"])
 
     def test_physical_evidence_and_live_currentness_are_not_promoted(self):
@@ -63,7 +63,7 @@ class FourStageIntegrationProjectionTests(unittest.TestCase):
         self.assertIn("one fast-forward commit", recorded["lightspeed_provider_delta"])
         self.assertIn("16 x 3840", recorded["private_review_artwork"])
         self.assertIn("simulation != empirical test", RECORD["execution_contract"]["no_evidence_escalation"])
-        self.assertIn("current", RECORD["safety_and_release"]["always_current"])
+        self.assertIn("reread", RECORD["safety_and_release"]["always_current"])
 
 
 if __name__ == "__main__":
