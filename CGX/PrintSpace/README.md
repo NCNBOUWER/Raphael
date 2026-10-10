@@ -1,3 +1,6 @@
+## FileSpace = CGX product identity (founder lock, 2026-10-10)
+**CGX and FileSpace are one and the same universal filespace product**, not two independent platform layers. `.cgx` is the portable universal filespace extension; `Cognigrex.cgx` is the concrete root/product instance on BouwerBase. `cgx://CGX.cgx` is a founder-preferred discovery address that must be mapped and authenticated via the existing signed namespace + Object_ID + State Root + DBR Root; a URL-like label is not authority. **DataSpace** is the separately tested network interoperation/collaboration capability across individually owned CGX filespaces, not another master object store. **PrintSpace** is the independently qualified digital-to-physical consumer and empirical receipt return path. Full product evidence/proof gates, owner responsibilities and eight DataSpace acceptance fixtures remain in the [existing four-stage bridge projection](CGX_FILESPACE_DATASPACE_PRINTSPACE_TYPE1_BRIDGE_2026-10-10.json), with [static regression tests](test_cgx_four_stage_bridge_projection.py). No S92/carrier/name-authority promotion or separate DataSpace service is implied by this review derivative.
+
 # CGX PrintSpace — Capability-First Functional Manufacturing (Review Branch)
 
 ## FileSpace → DataSpace → PrintSpace → Type I integration (2026-10-10)
