@@ -116,6 +116,17 @@ def render(root: Path, executable: Path, *, limit: int | None = None) -> dict:
     dest = root / "review_4k"
     dest.mkdir(exist_ok=True)
     snapshots = []
+    manifest_file = dest / "receipt.json"
+    prior_by_slug = {}
+    if manifest_file.is_file():
+        previous = json.loads(manifest_file.read_text(encoding="utf-8"))
+        if (previous.get("schema") != "CGX-REVIEW-PROXY-4K/0.1"
+                or previous.get("source_receipt_sha256") != sha256(root / "receipt.json")
+                or previous.get("source_heads") != source_receipt["source_heads"]):
+            raise ValueError("Existing 4K export receipt diverges; refuse automatic resume")
+        prior_by_slug = {record["slug"]: record for record in previous.get("items", [])}
+        if len(prior_by_slug) != len(previous.get("items", [])):
+            raise ValueError("Duplicate existing 4K receipt entries")
     try:
         from PIL import Image
     except ImportError as exc:
@@ -123,8 +134,21 @@ def render(root: Path, executable: Path, *, limit: int | None = None) -> dict:
     for slug, source, evidence in pairs:
         page = dest / f"{slug}.html"
         image = dest / f"{slug}.png"
+        prior = prior_by_slug.get(slug)
+        if prior is not None:
+            if not page.is_file() or not image.is_file():
+                raise FileNotFoundError(f"Incomplete existing 4K export: {slug}")
+            with Image.open(image) as im:
+                dimensions = im.size
+            if (dimensions != (WIDTH, HEIGHT)
+                    or prior["source_svg_sha256"] != sha256(source)
+                    or prior["image_sha256"] != sha256(image)
+                    or any(prior.get(k) != val for k, val in evidence.items())):
+                raise ValueError(f"Prior 4K export hash/representation drift: {slug}")
+            snapshots.append(prior)
+            continue
         if page.exists() or image.exists():
-            raise FileExistsError(f"Existing derived render held (no overwrites): {slug}")
+            raise FileExistsError(f"Unreceipted existing render held (no overwrite): {slug}")
         page.write_text(wrapper(slug, f"../assets/{slug}.svg", evidence), encoding="utf-8")
         result = subprocess.run(
             [
