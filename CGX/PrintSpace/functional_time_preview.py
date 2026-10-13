@@ -1165,7 +1165,19 @@ def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed",type=Path,default=SEEDS)
     parser.add_argument("--product",default=None)
+    parser.add_argument("--adaptive-summary",action="store_true",
+                        help="print 3 source-only scenario thresholds, no production or price recommendations")
     args=parser.parse_args(argv)
+    if args.adaptive_summary:
+        if args.product is not None:
+            parser.error("--product cannot be combined with --adaptive-summary")
+        data=simulate_adaptive_seed_alternatives()
+        result={key:value for key,value in data.items() if key!="results"}
+        result["results"]=[{
+            key:value for key,value in tier.items() if key not in ("frames",)
+        } for tier in data["results"]]
+        print(json.dumps(result,indent=2,sort_keys=True))
+        return
     output=load_and_compile(args.seed)
     if args.product:
         output["products"]=[p for p in output["products"] if p["id"]==args.product]
