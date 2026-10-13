@@ -456,8 +456,13 @@ def compile_preview(source, *, source_hash=None):
 
 def load_and_compile(path=SEEDS):
     path=Path(path)
-    return compile_preview(json.loads(path.read_text(encoding="utf-8")),
+    output=compile_preview(json.loads(path.read_text(encoding="utf-8")),
                            source_hash=source_sha(path))
+    butterbot=next((p for p in output["products"] if p["id"]=="BB-SOURCE-DEMO"),None)
+    if butterbot is not None:
+        output["adaptive_seed_trials"]=simulate_adaptive_seed_alternatives(
+            base_route=butterbot["i3_track_build_route"])
+    return output
 
 
 
