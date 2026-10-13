@@ -7,6 +7,7 @@ from pathlib import Path
 from functional_time_preview import (
     SEEDS, SCHEMA, _sorted_stages, compile_preview,
     load_and_compile, validate_seed, assess_functional_device_requirements,
+    assess_process_window, review_directional_material_transition,
 )
 
 class FunctionalTimeReviewTests(unittest.TestCase):
@@ -124,6 +125,106 @@ class FunctionalTimeReviewTests(unittest.TestCase):
             with self.subTest(values=values):
                 with self.assertRaisesRegex(ValueError,msg):
                     assess_functional_device_requirements(product,**values)
+
+    def test_temporal_window_wet_lithography_is_conditional_not_qualified(self):
+        wet=assess_process_window(
+            "MASKED_PHOTOLITHOGRAPHY_CANDIDATE",
+            substrate_state="WET_FLOWABLE",environment="LOCAL_SHROUD",
+            source_lot_ref="UNVERIFIED_LOT_LABEL",
+            substrate_temperature_c=55.0,
+            exposure_dose_j_cm2=1.25,focus_or_alignment_um=10.0,
+        )
+        self.assertEqual(
+            wet["disposition"],
+            "CAN_IF_WET_CHEMISTRY_FOCUS_AND_MASK_COUPONS_VALIDATED")
+        self.assertTrue(any("mask adhesion" in x for x in
+                            wet["requires_independent_evidence"]))
+        self.assertTrue(any("earlier deposited material" in x for x in
+                            wet["requires_independent_evidence"]))
+        self.assertFalse(wet["physical_process_verified"])
+        self.assertFalse(wet["safety_interlocks_verified"])
+        self.assertFalse(wet["production_approved"])
+        self.assertIsNone(wet["hardware_command"])
+        self.assertIsNone(wet["claim_time_seconds"])
+
+    def test_optical_state_unknown_and_laser_open_enclosure_gates(self):
+        unknown=assess_process_window("LASER_DIRECT_WRITE_CANDIDATE")
+        self.assertEqual(unknown["disposition"],"HOLD_SUBSTRATE_STATE_UNRESOLVED")
+        self.assertIn("actual substrate cure/rheology and temperature state",
+                      unknown["requires_independent_evidence"])
+        open_air=assess_process_window(
+            "LASER_DIRECT_WRITE_CANDIDATE",
+            substrate_state="STABILIZED",environment="OPEN",
+            source_lot_ref="USER_LOT",substrate_temperature_c=24,
+            exposure_dose_j_cm2=0.1,focus_or_alignment_um=15)
+        self.assertEqual(open_air["disposition"],
+                         "HOLD_LASER_ENCLOSURE_NOT_QUALIFIED")
+        self.assertFalse(open_air["production_approved"])
+        self.assertTrue(any("open laser" in s for s in
+                            open_air["requires_independent_evidence"]))
+        conditioned=assess_process_window(
+            "LASER_DIRECT_WRITE_CANDIDATE",
+            substrate_state="STABILIZED",environment="MACRO_CHAMBER",
+            source_lot_ref="UNVERIFIED_SOURCE",substrate_temperature_c=24,
+            exposure_dose_j_cm2=1.0,focus_or_alignment_um=3.5)
+        self.assertEqual(conditioned["disposition"],
+                         "CAN_IF_SOURCE_REQUIREMENTS_INDEPENDENTLY_QUALIFIED")
+        self.assertFalse(conditioned["material_compatibility_verified"])
+        self.assertFalse(conditioned["safety_interlocks_verified"])
+
+    def test_green_staged_uv_process_requires_transient_material_history(self):
+        green=assess_process_window(
+            "UV_CURE_CANDIDATE",substrate_state="GREEN_PARTIALLY_CURED",
+            environment="SEALED_MICROCHAMBER")
+        self.assertEqual(green["disposition"],
+                         "CAN_IF_TRANSIENT_STATE_EXPOSURE_AND_DAMAGE_VALIDATED")
+        self.assertTrue(any("viscosity" in s for s in green["requires_independent_evidence"]))
+        self.assertFalse(green["production_approved"])
+
+    def test_directional_material_pair_provenance_not_reversible_authority(self):
+        forward=review_directional_material_transition("TP","CI")
+        reverse=review_directional_material_transition("CI","TP")
+        self.assertEqual(forward["pair_id"],"PS-PAIR-TP-CI")
+        self.assertEqual(reverse["pair_id"],"PS-PAIR-CI-TP")
+        self.assertEqual(forward["reverse_pair_id"],reverse["pair_id"])
+        self.assertEqual(forward["source_catalog_sha256"],reverse["source_catalog_sha256"])
+        self.assertEqual(len(forward["source_catalog_sha256"]),64)
+        self.assertTrue(forward["reverse_is_separate_contract"])
+        self.assertFalse(forward["production_approved"])
+        self.assertFalse(forward["actual_tool_route_available"])
+        self.assertIn("Pause, cure, clean and resume",forward["fallback_routes"])
+
+    def test_process_input_and_material_family_are_fail_closed(self):
+        attempts=[
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "substrate_state":"STABILIZED","environment":"OPEN",
+             "exposure_dose_j_cm2":float("nan")},
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "substrate_state":"STABILIZED","environment":"OPEN",
+             "exposure_dose_j_cm2":-2},
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "substrate_state":"STABILIZED","environment":"OPEN",
+             "focus_or_alignment_um":True},
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "substrate_state":"HOT_AND_PERFECT"},
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "environment":"MAGIC_VACUUM"},
+            {"process":"LASER_DIRECT_WRITE_CANDIDATE",
+             "source_lot_ref":"CREDENTIAL\nBAD"},
+        ]
+        for item in attempts:
+            with self.subTest(item=item):
+                process=item.pop("process")
+                with self.assertRaises(ValueError):
+                    assess_process_window(process,**item)
+        with self.assertRaisesRegex(ValueError,"unregistered PrintSpace"):
+            assess_process_window("ARBITRARY_LASER_GCODE")
+        with self.assertRaisesRegex(ValueError,"unregistered material family"):
+            review_directional_material_transition("UNKNOWN","CI")
+        with self.assertRaisesRegex(ValueError,"unqualified process"):
+            assess_process_window("LASER_DIRECT_WRITE_CANDIDATE",process_contracts={
+                "LASER_DIRECT_WRITE_CANDIDATE":{"can_run_physically":True,"needs":["danger"]}
+            })
 
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
