@@ -30,6 +30,9 @@ jobs:
       - name: Build offline watchable PrintSpace candidate
         working-directory: CGX/PrintSpace
         run: python cgx_review_lens_compiler.py --print-demo-only --output "$RUNNER_TEMP/cgx-printspace-geometry-preview"
+      - name: Emulate three adaptive CPU and print tier starters
+        working-directory: CGX/PrintSpace
+        run: python functional_time_preview.py --adaptive-summary > "$RUNNER_TEMP/cgx-printspace-geometry-preview/adaptive-three-seed-results.json"
       - name: Retain reviewed geometric timeline as CI artifact
         uses: actions/upload-artifact@v4
         with:
