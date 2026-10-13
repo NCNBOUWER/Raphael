@@ -9,6 +9,7 @@ from functional_time_preview import (
     load_and_compile, validate_seed, assess_functional_device_requirements,
     assess_process_window, review_directional_material_transition,
     compile_i3_track_closure_plan, I3_TRACK_PLAN,
+    simulate_adaptive_seed_alternatives, ADAPTIVE_SEED_POLICY, ADAPTIVE_SCENARIO_FIXTURE,
 )
 
 class FunctionalTimeReviewTests(unittest.TestCase):
@@ -390,6 +391,105 @@ class FunctionalTimeReviewTests(unittest.TestCase):
             candidate.write_text(json.dumps(changed),encoding="utf-8")
             with self.assertRaisesRegex(ValueError,"unprintable"):
                 compile_i3_track_closure_plan(candidate)
+
+
+    def test_three_adaptive_tiers_pick_threshold_driven_substitutions(self):
+        result=simulate_adaptive_seed_alternatives()
+        self.assertEqual(result["tier_count"],3)
+        self.assertTrue(result["scenario_only"])
+        self.assertFalse(result["physical_process_qualified"])
+        self.assertFalse(result["closed_chamber_fabrication_accepted"])
+        self.assertEqual(len(result["policy_sha256"]),64)
+        self.assertEqual(len(result["scenario_sha256"]),64)
+        selected=[x["selection"] for x in result["results"]]
+        self.assertEqual([x["tier_id"] for x in result["results"]],
+                         ["BOOTSTRAP_EVERYDAY","PRO_BALANCED","INDUSTRIAL_CIRCULAR"])
+        self.assertEqual([x["id"] for x in selected],[
+            "HYPOTHETICAL_LOW_POWER_I3",
+            "HYPOTHETICAL_COMPACT_I5",
+            "HYPOTHETICAL_PERFORMANCE_I5"
+        ])
+        self.assertEqual([r["stage_count"] for r in result["results"]],[28,30,32])
+        self.assertEqual([x["family"] for x in selected],["i3","i5","i5"])
+        self.assertTrue(all(x["actual_CPU_SKU"] is None for x in result["results"]))
+        self.assertEqual(result,simulate_adaptive_seed_alternatives())
+
+    def test_bootstrap_keeps_budget_and_runtime_thresholds_over_cpu_badge(self):
+        result=simulate_adaptive_seed_alternatives()
+        bootstrap=result["results"][0]
+        low_power=bootstrap["selection"]
+        self.assertEqual(low_power["family"],"i3")
+        self.assertAlmostEqual(low_power["ideal_arithmetic_runtime_h"],3)
+        self.assertEqual(low_power["scenario_cost_aud"],90)
+        rejects={x["id"]:x["rejected_thresholds"] for x in bootstrap["alternatives"]}
+        self.assertIn("IDEAL_RUNTIME_BELOW_TIER_MINIMUM",
+                      rejects["HYPOTHETICAL_RECYCLED_I3"])
+        self.assertIn("ACQUISITION_COST_EXCEEDS_ASSUMED_AVAILABLE_BUDGET",
+                      rejects["HYPOTHETICAL_COMPACT_I5"])
+        self.assertFalse(bootstrap["actual_device_selection_approved"])
+        self.assertFalse(bootstrap["actual_sealed_session_verified"])
+
+    def test_three_tiers_overlay_original_28_stages_without_changing_safety(self):
+        original=compile_i3_track_closure_plan()
+        result=simulate_adaptive_seed_alternatives()
+        for tier in result["results"]:
+            frames=tier["frames"]
+            real_ids=[f["stage_id"] for f in frames
+                      if f["mode"]=="BASE_28_STAGE_ROUTE"]
+            self.assertEqual(real_ids,original["ordered_stages"])
+            self.assertEqual(len({f["stage_id"] for f in frames}),len(frames))
+            self.assertEqual(frames[-1]["progress_fraction"],1)
+            self.assertTrue(all(f["travel_mm"] is None for f in frames))
+            self.assertTrue(all(f["physical_execution_approved"] is False for f in frames))
+            overlays=[f for f in frames
+                      if f["mode"]=="OPTIONAL_REVIEW_HOLD_NOT_HARDWARE_OPERATION"]
+            self.assertEqual(len(overlays),tier["stage_count"]-28)
+            self.assertFalse(tier["fully_printable"])
+            self.assertFalse(tier["actual_device_selection_approved"])
+            self.assertEqual(tier["source_component_class_count"],19)
+            self.assertTrue(0<tier["candidate_print_class_fraction"]<1)
+            self.assertTrue(tier["unknown_physical_print_fraction"])
+        self.assertEqual(original,compile_i3_track_closure_plan())
+
+    def test_threshold_inputs_refuse_fake_source_approval_or_offline_session(self):
+        from tempfile import TemporaryDirectory
+        policy=json.loads(Path(ADAPTIVE_SEED_POLICY).read_text(encoding="utf-8"))
+        fixture=json.loads(Path(ADAPTIVE_SCENARIO_FIXTURE).read_text(encoding="utf-8"))
+        with TemporaryDirectory() as tmp:
+            p=Path(tmp)/"policy.json"
+            s=Path(tmp)/"scenario.json"
+            variants=[
+                ({"type":"policy","change":lambda x:x["tiers"][0]["weights"].__setitem__("cost",0.90)}, "sum to one"),
+                ({"type":"policy","change":lambda x:x["tiers"][1].__setitem__("sealed_session_mandatory",False)}, "sealed session"),
+                ({"type":"fixture","change":lambda x:x["candidates"][0].__setitem__("exact_cpu_sku","i3-13100")}, "remain unverified"),
+                ({"type":"fixture","change":lambda x:x["candidates"][0].__setitem__("cooling_capacity_w",float("nan"))}, "finite"),
+                ({"type":"fixture","change":lambda x:x["tier_snapshots"][0].__setitem__("internally_preloaded_sourced_trays",False)}, "sealed session"),
+                ({"type":"policy","change":lambda x:x["tiers"][2]["stage_insertions"][0].__setitem__("qualified",True)}, "unqualified"),
+            ]
+            for item,errmsg in variants:
+                with self.subTest(item=errmsg):
+                    data1=copy.deepcopy(policy)
+                    data2=copy.deepcopy(fixture)
+                    if item["type"]=="policy":
+                        item["change"](data1)
+                    else:
+                        item["change"](data2)
+                    p.write_text(json.dumps(data1),encoding="utf-8")
+                    s.write_text(json.dumps(data2),encoding="utf-8")
+                    with self.assertRaisesRegex(ValueError,errmsg):
+                        simulate_adaptive_seed_alternatives(p,s)
+
+    def test_printing_coverage_target_is_not_claimed_when_modules_sourced(self):
+        result=simulate_adaptive_seed_alternatives()
+        a=result["results"][-1]
+        self.assertLess(a["candidate_print_class_fraction"],a["target_print_fraction"])
+        self.assertEqual(a["all_component_printable_target_gate"],
+                         "HOLD_UNTIL_SOURCED_CHIPS_BATTERY_MOTORS_PRECISION_CLAIM_QUALIFIED")
+        self.assertFalse(a["actual_sealed_session_verified"])
+        self.assertFalse(a["real_battery_runtime_verified"])
+        self.assertFalse(a["toolpaths_and_simulated_physics_verified"])
+        self.assertEqual(a["release_status"],
+                         "DIGITAL_SCENARIO_ONLY_NO_PURCHASING_OR_HARDWARE_AUTHORITY")
 
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
