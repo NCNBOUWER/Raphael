@@ -175,6 +175,7 @@ main{display:grid;grid-template-columns:minmax(370px,40%) 1fr;max-height:calc(10
   <div class="row"><label for="printRate">Replay cadence</label><select id="printRate"><option value="1200">Slow</option><option value="650" selected>Medium</option><option value="240">Fast</option></select><span class="pill" id="printCount">Zero active parts</span></div>
   <div class="row"><label for="printArm">Arm pose (°)</label><input id="printArm" type="range" min="-45" max="45" step="5" value="0"><output id="printArmVal">0°</output></div>
   <div class="row"><label for="printBattery">Battery Wh (user candidate)</label><input id="printBattery" type="number" min="0" max="10000" step="0.1" placeholder="unknown"><label for="printCompute">Compute n (units not yet specified)</label><input id="printCompute" type="number" min="0" max="1000000" step="1" placeholder="unknown"></div>
+  <div class="row"><label for="printSubstrate">Process state</label><select id="printSubstrate" aria-label="Hypothetical printed material state"><option value="UNKNOWN">Unknown / not measured</option><option value="WET_FLOWABLE">Hot or wet, flowable</option><option value="GREEN_PARTIALLY_CURED">Partially conditioned</option><option value="STABILIZED">Stabilized material</option></select><small>Candidate conditions only; real machine windows require coupons</small></div>
   <div class="row"><label for="printProcedure">Procedure review</label><select id="printProcedure" aria-label="Alternative preview process"></select><button type="button" id="printExport">Copy draft review</button></div><textarea id="printDraft" aria-label="Candidate PrintSpace process revisions" readonly></textarea>
   <p class="muted" id="printDescription"></p><p class="notice" id="printEvidence">Preview-only · no measured process duration, qualified machine, original Butter Bot CAD rights or production approval</p>
   <div class="fields" id="printParams"></div>
@@ -331,6 +332,8 @@ function sceneRender(){
  const requestedRoute=reviewOverrides[reviewKey]||"BASELINE";
  const route=requestedRoute==="BASELINE"?frame?.process:requestedRoute;
  const contract=payload.time_previews?.process_catalog?.[route];
+ const hypotheticalState=$("printSubstrate").value;
+ const stateWindow=payload.time_previews?.process_window_profiles?.[route]?.[hypotheticalState];
  const current=frame?frame.stage_id+" · "+route:"unbuilt";
  text("printStage",frameIndex+" / "+stages.length);
  text("printCount",layers.length+" / "+chosenPrint.parts.length+" schematic parts");
@@ -346,7 +349,8 @@ function sceneRender(){
  text("printDescription",chosenPrint.name+" · "+current+
    " · phase index only (no measured seconds or thermal/kinematic simulation)");
  text("printEvidence",frame?
-  "Evidence HOLD: "+frame.process_status+"; process candidate requires "+(contract?.needs||frame.process_required_evidence).join(", ")+
+  "Evidence HOLD: "+frame.process_status+"; "+(stateWindow?.disposition||"NO_VERIFIED_PROCESS_WINDOW")+
+   "; source requires "+(stateWindow?.requires_independent_evidence||contract?.needs||frame.process_required_evidence).join(", ")+
   ". "+(requestedRoute!=="BASELINE"?"MANUAL PROCESS CHANGE NOT RE-SEQUENCED OR QUALIFIED. ":"")+
   "Qualified: no; physical print: not run.":
   "Source-only seed with unresolved BOM, material rights, geometry and physical validation.");
@@ -359,6 +363,9 @@ function sceneRender(){
    "Compute capacity n (UNVERIFIED user value; define metric)":cn,
    "Motion envelope":chosenPrint.motion_candidate,
    "Envelope, mm":chosenPrint.envelope_mm,
+   "Material state selection":hypotheticalState,
+   "Directional Raphael catalog source SHA":payload.time_previews?.directional_material_catalog_sha256,
+   "Process state qualified":false,
    "Original CAD verified":false,"Aesthetic palette":$("printPalette").value==="default"?chosenPrint.aesthetic.palette:$("printPalette").value};
  for(const [k,v] of Object.entries(vals)){
   const el=document.createElement("div"),label=document.createElement("b"),txt=document.createElement("span");
@@ -380,6 +387,7 @@ $("printPalette").addEventListener("change",sceneRender);
 $("printArm").addEventListener("input",sceneRender);
 $("printBattery").addEventListener("input",sceneRender);
 $("printCompute").addEventListener("input",sceneRender);
+$("printSubstrate").addEventListener("change",sceneRender);
 $("printProcedure").addEventListener("change",()=>{
  const frame=chosenPrint?.frames[Number($("printPhase").value)-1];
  if(!frame)return;
@@ -398,7 +406,8 @@ $("printExport").addEventListener("click",()=>{
    arm_pose_degrees:chosenPrint.kind==="tracked_robot"?Number($("printArm").value):null,
    battery_wh_unverified:$("printBattery").value===""?null:Number($("printBattery").value),
    compute_n_unverified:$("printCompute").value===""?null:Number($("printCompute").value),
-   colour_candidate:$("printPalette").value
+   colour_candidate:$("printPalette").value,
+   substrate_state_unverified:$("printSubstrate").value
   },
   candidate_process_overrides:Object.fromEntries(
    Object.entries(reviewOverrides).filter(([k])=>k.startsWith(chosenPrint.id+":"))),
