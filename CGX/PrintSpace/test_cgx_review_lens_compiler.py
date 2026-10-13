@@ -79,7 +79,7 @@ class OfflineCGXReviewTests(unittest.TestCase):
             self.assertTrue((target/"receipt.json").exists())
             with self.assertRaisesRegex(ValueError,"occupied"):
                 module.build_print_demo(target)
-            script=re.search(r"<script>\\s*(.*?)</script>",markup,re.S)
+            script=re.search(r"<script>\s*(.*?)</script>",markup,re.S)
             self.assertIsNotNone(script)
             node=shutil.which("node")
             if node:
