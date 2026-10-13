@@ -169,3 +169,82 @@ functional simulation gate alongside calibrated CAD and rights, sourced
 motors/MCU/battery, all environmental process windows, collision and measured
 4D response. The offline replay must not be described as a completely
 simulated functional or production-ready Butter Bot.
+
+## Butter Bot: Intel Core i3 first-article, open track / late-closure workflow
+
+The current Butter Bot source now includes BUTTERBOT_I3_TRACK_CLOSURE_PLAN_v0_1.json,
+compiled by compile_i3_track_closure_plan() in the EXISTING functional_time_preview.py.
+It is ONE extension of the owner PrintCeptor inverse DAG and CGX review lens, not a
+second printer engine. It contains 28 dependency-ordered symbolic manufacturing
+stages, 19 component classes and 14 source/assembly/inspection station labels.
+The offline CGX viewer now offers 'Intel i3: full dual-arm 28-stage route' alongside
+the prior summary mode. Real machine coordinate paths, durations, robot sweeps
+and qualified tension forces are not available; the viewer never issues G-code.
+
+### Sourced Intel i3 core and printed support structures
+
+The Intel Core i3 seed is sourced (not 3D-printed silicon): exact SKU, matching
+socket or assembled BGA module, motherboard, RAM, storage, fan/heatsink, input
+rails and physical assembly passport must precede dimensional acceptance.
+A safety MCU/E-stop and motor-drive power cutoff must be independent of the
+x86 host process; a locked-up i3 must not prevent emergency motor shutdown.
+The source seed's i3 CPU SKU, actual board/heat-sink envelope, mass, continuous
+and peak power, input voltage and battery duration are deliberately null.
+Intel's own examples underscore why: i3-13100 60W processor base / 110W
+maximum turbo (https://www.intel.com/content/www/us/en/products/sku/230575/)
+versus embedded i3-1220PE 28W / 64W
+(https://www.intel.com/content/www/us/en/products/sku/227852/).
+These are ALTERNATIVES, not claims about the user's available donor i3.
+Printed candidates include chassis/cradle, service-access tracks, printed
+sprocket/idler bodies, cable guides, neck/arm linkages and enclosure.
+Motors, shafts, precision bearings, certified battery/BMS, sourced microchips,
+motor drivers, servos, safety MCU, speaker, LEDs, sensors and wear-critical
+fasteners remain sourced unless an exact qualified alternative exists.
+
+### Split track construction, fitting allowance and dual-arm handoff
+
+Open lower left and right track sections are printed first with a proposed
+10% UNTRIMMED FITTING STOCK allowance; this is NOT 10% final belt tension,
+pitch extension, interference, fastener clearance, track strain or motor torque.
+With both tracks open, print remaining case and access geometry, insert wheel
+bearings, shafts, printed sprockets, drive motors, tensioner mounts and
+internal structural/electrical modules. Print head/shell BEFORE installing
+the i3 and battery to avoid avoidable hot-tool access around electronics.
+Inspect the assembled drive path, actual tooth pitch, neutral axis geometry,
+idler stroke and articulation before trimming the stock and closure.
+
+Default final join is a REMOVABLE MECHANICAL PIN + accessible adjustable idler:
+ARM_A can hold LEFT track via controlled fixture while ARM_B positions the
+join; cool/relax/inspect, then swap roles (ARM_B holds RIGHT, ARM_A joins).
+Retain a removable jig and independent force feedback; both arms cannot
+simultaneously occupy each other's swept tool volume. A polymer pin, UV
+bond, cooled interlock or in-situ thermal deposition is only a candidate
+after real coupon fatigue, thermomechanical, material and joint safety proof.
+Do not heat-weld a track near the installed battery/processor by default.
+No unverified printer should control motor actuation, live battery work or
+servo loading in the same chamber without the independent C0 interlock.
+Track closure is a LATE mechanical manufacturing stage; final drive rotation
+requires real joint/wheel inspection and measured low-speed load data.
+
+### Real source-to-source travel acceptance
+
+The 28 stages register bounded symbolic transfers between external parts
+shelf, sorted donor input, FDM feed, chassis datum, L/R open track beds,
+compute cavity, cable channels, upper shell, individual closure fixtures,
+metrology, isolated electrical testing and output park. Every transfer
+has travel_mm=null, cartesian_path=null, workpiece temperature/force/time
+unknown and physical_execution_approved=false until PC01 machine geometry,
+effective tool reach, dual-arm collision sweep, coordinate registration
+and actual supplier dimensions are measured. This makes missing travel
+and machine limits VISIBLE rather than inventing a robot trajectory.
+
+Build/test from source: python -m unittest -v test_functional_time_preview.py
+and the existing .github/workflows/printspace-data-tests.yml. Git Actions
+CI packages the source-only offline viewer as a private review artifact;
+it does not build printer G-code or publish an original Butter Bot CAD.
+
+Next physical acceptance: obtain exact i3 donor model and board+cooler CAD;
+verify original Butter Bot design/character rights and print license;
+freeze source BOM dimensions and thermal envelope; qualify track material,
+bearing fit, idler travel and pinned joint, then simulate real PC01 travel
+using measured axes. End-to-end fully functional 3D printing is NOT claimed.
