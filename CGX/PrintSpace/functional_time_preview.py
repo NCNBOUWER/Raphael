@@ -172,6 +172,7 @@ def compile_preview(source, *, source_hash=None):
                 "process_status":stage["status"],
                 "claimed_elapsed_seconds":None,"measured_temperature_c":None,
                 "measured_energy_j":None,"qualified_process":False,
+                "observed_substrate_state":None,"stage_process_window_verified":False,
             })
         routes.append({
             "id":v["id"],"name":v["name"],"kind":v["kind"],"family":v["family"],
@@ -187,6 +188,16 @@ def compile_preview(source, *, source_hash=None):
         "schema":SCHEMA,"source_sha256":source_hash,
         "units":"mm","timeline":"NORMALIZED_ORDER_NO_MEASURED_SECONDS",
         "process_catalog":source["process_contracts"],
+        "directional_material_catalog_sha256": source_sha(
+            HERE / "PAIRWISE_SEQUENCE_ROUTES_v0_1.json"),
+        "process_window_profiles": {
+            process: {
+                state: assess_process_window(
+                    process,substrate_state=state,
+                    process_contracts=source["process_contracts"])
+                for state in sorted(SUBSTRATE_STATES)
+            } for process in sorted(STAGE_TYPES)
+        },
         "physical_or_calibrated_simulation":False,
         "source_cad_ownership_verified":False,
         "public_release_authorized":False,"machine_control_enabled":False,
