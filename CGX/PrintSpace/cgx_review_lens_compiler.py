@@ -365,6 +365,8 @@ function sceneRender(){
    "Envelope, mm":chosenPrint.envelope_mm,
    "Material state selection":hypotheticalState,
    "Directional Raphael catalog source SHA":payload.time_previews?.directional_material_catalog_sha256,
+   "Inverse source requirement nodes not illustrated":chosenPrint.inverse_source_coverage?.not_geometrically_represented||null,
+   "Inverse source references are not functional proof":Boolean(chosenPrint.inverse_source_coverage),
    "Process state qualified":false,
    "Original CAD verified":false,"Aesthetic palette":$("printPalette").value==="default"?chosenPrint.aesthetic.palette:$("printPalette").value};
  for(const [k,v] of Object.entries(vals)){
