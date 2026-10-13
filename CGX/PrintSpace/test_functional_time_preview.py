@@ -243,6 +243,35 @@ class FunctionalTimeReviewTests(unittest.TestCase):
                 self.assertFalse(stage["stage_process_window_verified"])
                 self.assertFalse(stage["qualified_process"])
 
+    def test_butter_bot_replay_retains_unrepresented_source_dependencies(self):
+        b=self.products["BB-SOURCE-DEMO"]
+        coverage=b["inverse_source_coverage"]
+        self.assertEqual(coverage["owner_goal_id"],"BB-FINAL")
+        self.assertEqual(len(coverage["graph_sha256"]),64)
+        self.assertEqual(len(coverage["required_node_ids"]),8)
+        self.assertEqual(coverage["not_geometrically_represented"],
+                         ["BB-ACT","BB-VOICE"])
+        self.assertEqual(coverage["reference_count"],9)
+        self.assertEqual(len(coverage["referenced_node_ids"]),6)
+        self.assertFalse(coverage["physical_functional_coverage_verified"])
+        self.assertFalse(coverage["qualified_fabrication"])
+        self.assertIsNone(self.products["WATCH-ROUND"]["inverse_source_coverage"])
+        self.assertIsNone(self.products["WATCH-SQUARE"]["inverse_source_coverage"])
+
+    def test_unregistered_or_wrong_owner_source_dependency_fails_closed(self):
+        bad=copy.deepcopy(self.seeds)
+        bad["product_variants"][0]["parts"][0]["source_dependency_node_ref"]="PC-C0"
+        with self.assertRaisesRegex(ValueError,"foreign or unregistered"):
+            compile_preview(bad)
+        bad=copy.deepcopy(self.seeds)
+        bad["product_variants"][0]["source_goal_node"]="BB-GOAL-MISSING"
+        with self.assertRaisesRegex(ValueError,"missing or duplicate inverse"):
+            compile_preview(bad)
+        bad=copy.deepcopy(self.seeds)
+        del bad["product_variants"][0]["source_goal_node"]
+        with self.assertRaisesRegex(ValueError,"require registered inverse goal"):
+            compile_preview(bad)
+
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
         x=altered["product_variants"][0]["stages"]
