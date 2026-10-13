@@ -190,6 +190,211 @@ def _source_dependency_coverage(variant: dict) -> dict | None:
 
 
 
+
+I3_TRACK_PLAN = HERE / "BUTTERBOT_I3_TRACK_CLOSURE_PLAN_v0_1.json"
+I3_ROUTE_SCHEMA = "cgx.printspace.butterbot_i3_track_closure_compiled.v0.1"
+
+
+def compile_i3_track_closure_plan(path=I3_TRACK_PLAN):
+    """Resolve ordered tool travel and mechanism prerequisites without a machine.
+
+    An ordered symbolic station route can be independently reviewed and
+    sampled without commanding either arm. Positions, collision free-space,
+    tension force and the Intel Core i3 SKU remain explicit unknowns.
+    """
+    path = Path(path)
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    if raw.get("schema") != "cgx.printspace.butterbot_i3_core_track_closure.v0.1":
+        raise ValueError("unregistered Intel i3 track-closure schema")
+    if (raw.get("status") != "SOURCE_CANDIDATE_NO_HARDWARE_CONTROL" or
+            raw.get("safety", {}).get("physical_process_approved") is not False or
+            raw.get("safety", {}).get("armed_tool_action_allowed") is not False):
+        raise ValueError("unqualified manufacturing authority")
+    source = raw.get("host_i3_seed", {})
+    if (source.get("core_family") != "Intel Core i3" or
+            source.get("exact_sku") is not None or
+            source.get("safety_control") != "SEPARATE_DETERMINISTIC_MCU"):
+        raise ValueError("Intel i3 SKU/independent safety role must remain unresolved")
+    if source.get("implementation") != "SOURCED_COMPUTE_MODULE_BOARD_COOLING_STORAGE_MEMORY":
+        raise ValueError("CPU silicon cannot be printed by this route")
+
+    components = raw.get("source_components", [])
+    if not isinstance(components, list) or not 1 <= len(components) <= 128:
+        raise ValueError("invalid component registry")
+    ids = [c["id"] for c in components]
+    if len(ids) != len(set(ids)):
+        raise ValueError("duplicate component identity")
+    registry = {c["id"]: c for c in components}
+    for c in components:
+        if not isinstance(c.get("required"), list) or not c["required"]:
+            raise ValueError("component lacks passport/functional requirements")
+        if c.get("kind") == "SOURCED" and c.get("can_print") is not False:
+            raise ValueError("fabricating an unprintable sourced component")
+    for required in ("i3_module", "motor_left", "motor_right", "battery_pack",
+                     "safety_MCU", "motor_drivers", "servo_pack",
+                     "speaker_and_LEDs", "sensors", "track_links",
+                     "join_pins", "wheel_bearings", "idler_axles"):
+        if required not in registry:
+            raise ValueError("mechanical/electrical BOM missing " + required)
+
+    stations = raw.get("stations", {})
+    if not isinstance(stations, dict) or len(stations) < 12:
+        raise ValueError("unregistered machine stations")
+    if any(x.get("physical_position_mm") is not None for x in stations.values()):
+        raise ValueError("machine travel positions cannot be asserted before calibration")
+    steps = _sorted_stages(raw.get("steps", []))
+    if not 15 <= len(steps) <= 128:
+        raise ValueError("unbounded staged build")
+    named = {s["id"]: s for s in steps}
+    index = {s["id"]: idx for idx, s in enumerate(steps)}
+
+    for stage in steps:
+        if (stage.get("source_station") not in stations or
+                stage.get("target_station") not in stations):
+            raise ValueError("stage origin/destination station unresolved")
+        if stage.get("motion_path_proven") is not False or stage.get("physical_execution_approved") is not False:
+            raise ValueError("unsafe machine motion authority")
+        if not isinstance(stage.get("evidence_required"), list) or not stage["evidence_required"]:
+            raise ValueError("operation requires explicit proof list")
+        parts = stage.get("component_ids")
+        if not isinstance(parts, list) or len(parts) != len(set(parts)) or any(p not in registry for p in parts):
+            raise ValueError("stage uses unregistered source component")
+        role = stage.get("tool_role")
+        if type(role) is not str or not role.startswith(("ARM_", "CAMERA_", "ISOLATED_")):
+            raise ValueError("tool role unregistered")
+        if stage.get("allowance_fraction") is not None:
+            if stage["id"] not in ("S02_LOWER_TRACK_LEFT_10PCT",
+                                  "S03_LOWER_TRACK_RIGHT_10PCT") or \
+                    stage["allowance_fraction"] != 0.1:
+                raise ValueError("10 percent allowance cannot be applied to tension")
+
+    expected = (
+        "S00_CORE_BASIS", "S02_LOWER_TRACK_LEFT_10PCT",
+        "S03_LOWER_TRACK_RIGHT_10PCT", "S04_PRINT_CHASSIS_AND_CRADLE",
+        "S06_INSTALL_BEARINGS_AXLES", "S07_INSTALL_TRACK_DRIVE_MOTORS",
+        "S08_CHECK_TRACK_OPEN_ROUTE", "S13_INSTALL_I3_MODULE",
+        "S14_BATTERY_AND_REGULATORS", "S17_VOICE_LED",
+        "S18_DRY_ASSEMBLY_INSPECTION", "S19_MEASURE_FINAL_TRACK_ROUTE",
+        "S20_PREP_LEFT_TRACK", "S21_CLOSE_LEFT_TRACK",
+        "S22_LEFT_COOL_RELAX_INSPECT", "S23_PREP_RIGHT_TRACK",
+        "S24_CLOSE_RIGHT_TRACK", "S25_RIGHT_COOL_RELAX_INSPECT",
+        "S26_FINAL_C0_TEST", "S27_FINISH_AND_PARK",
+    )
+    if any(x not in index for x in expected):
+        raise ValueError("closure dependency stage missing")
+    if sorted(index[x] for x in expected) != [index[x] for x in expected]:
+        raise ValueError("closure order/dependency violation")
+
+    before_electronics = ("S10_PRINT_ARM_AND_NECK", "S16_HEAD_SHELL")
+    if any(index[x] >= index["S13_INSTALL_I3_MODULE"] for x in before_electronics):
+        raise ValueError("hot structural printing after sourced electronics")
+    if index["S16_HEAD_SHELL"] >= index["S14_BATTERY_AND_REGULATORS"]:
+        raise ValueError("heated shell work after battery insertion")
+    for sid in ("S21_CLOSE_LEFT_TRACK", "S24_CLOSE_RIGHT_TRACK"):
+        stage = named[sid]
+        if "NO_UNQUALIFIED_HOT_WELD" not in stage.get("temperature_guard", ""):
+            raise ValueError("closure must hold hot welding near sourced electronics")
+        if stage.get("toolhead_conflict_guard") is not True:
+            raise ValueError("closure lacks tool collision guard")
+    left = named["S21_CLOSE_LEFT_TRACK"]
+    right = named["S24_CLOSE_RIGHT_TRACK"]
+    if ((left.get("tension_arm"), left.get("joining_arm")) != ("ARM_A", "ARM_B") or
+            (right.get("tension_arm"), right.get("joining_arm")) != ("ARM_B", "ARM_A")):
+        raise ValueError("two-arm handoff/alternation contract violated")
+    if (named["S20_PREP_LEFT_TRACK"].get("tension_arm") != "ARM_A" or
+            named["S23_PREP_RIGHT_TRACK"].get("tension_arm") != "ARM_B"):
+        raise ValueError("fixture handoff does not match closure")
+    p = raw.get("track_plan", {})
+    if (p.get("allowance", {}).get("value") != 0.10 or
+            p["allowance"].get("applies_to") !=
+            "RAW_UNTRIMMED_LOWER_STOCK_OR_PRINTED_FIT_TABS_ONLY" or
+            "BELT_OPERATING_STRAIN" not in p["allowance"].get("applies_not_to", [])):
+        raise ValueError("track allowance incorrectly assumed final strain")
+    if (p.get("force_target_n") is not None or
+            p.get("closed_loop_tension_validated") is not False or
+            p.get("safety_default", "").split(";")[0] !=
+            "MECHANICAL_PIN_AND_IDLER"):
+        raise ValueError("unqualified track tension or thermal joining")
+    modes = p.get("closure_modes", [])
+    if not modes or sum(m.get("default") is True for m in modes) != 1 or \
+            any(m.get("physical_ready") is not False for m in modes):
+        raise ValueError("closure mode wrongly qualified")
+    if raw.get("access_contract", {}).get("all_axes_calibration_and_collision_sweeps_required") is not True:
+        raise ValueError("machine collision/clearance acceptance missing")
+
+    # The parser cannot infer actual path distance, joint servo torque, speed,
+    # friction or loaded deformation from symbolic station identifiers.
+    seen = set()
+    visible = set()
+    frames = []
+    render_parts = {
+        "S02_LOWER_TRACK_LEFT_10PCT": ("left_track",),
+        "S03_LOWER_TRACK_RIGHT_10PCT": ("right_track",),
+        "S04_PRINT_CHASSIS_AND_CRADLE": ("chassis",),
+        "S10_PRINT_ARM_AND_NECK": ("neck", "left_arm", "right_arm"),
+        "S13_INSTALL_I3_MODULE": ("compute_bay",),
+        "S14_BATTERY_AND_REGULATORS": ("battery_cavity",),
+        "S16_HEAD_SHELL": ("head",),
+        "S17_VOICE_LED": ("face",),
+    }
+    for idx, stage in enumerate(steps):
+        if not set(stage["depends_on"]) <= seen:
+            raise ValueError("unsatisfied step dependency")
+        seen.add(stage["id"])
+        visible.update(render_parts.get(stage["id"], ()))
+        is_closure = stage["operation"] == "LAST_TRACK_CLOSURE"
+        frames.append({
+            "step": idx + 1,
+            "progress_fraction": round((idx + 1) / len(steps), 6),
+            "stage_id": stage["id"],
+            "operation": stage["operation"],
+            "from_station": stage["source_station"],
+            "to_station": stage["target_station"],
+            "travel_mm": None,
+            "cartesian_path": None,
+            "tool_role": stage["tool_role"],
+            "tension_arm": stage.get("tension_arm"),
+            "joining_arm": stage.get("joining_arm"),
+            "force_target_n": None,
+            "force_measured_n": None,
+            "workpiece_temperature_c": None,
+            "time_s": None,
+            "visible_part_ids": sorted(visible),
+            "closure_side": "LEFT" if stage["id"] == "S21_CLOSE_LEFT_TRACK"
+                            else "RIGHT" if stage["id"] == "S24_CLOSE_RIGHT_TRACK" else None,
+            "track_left_closed_candidate": index["S21_CLOSE_LEFT_TRACK"] <= idx,
+            "track_right_closed_candidate": index["S24_CLOSE_RIGHT_TRACK"] <= idx,
+            "operation_evidence": stage["evidence_required"],
+            "output_state_candidate": stage["output_state"],
+            "source_component_ids": stage["component_ids"],
+            "tool_reachability_verified": False,
+            "joint_strength_verified": False,
+            "tension_verified": False,
+            "physical_execution_approved": False,
+        })
+
+    return {
+        "schema": I3_ROUTE_SCHEMA,
+        "source_sha256": source_sha(path),
+        "root": "BB-FINAL",
+        "cpu": source,
+        "source_components": components,
+        "station_metadata": stations,
+        "track": p,
+        "ordered_stages": [s["id"] for s in steps],
+        "frames": frames,
+        "stage_count": len(frames),
+        "physical_machine_motion_simulated": False,
+        "full_functional_butterbot_simulation": False,
+        "electrical_source_verified": False,
+        "authentic_original_CAD_verified": False,
+        "finished_article_printed": False,
+        "factory_production_authorized": False,
+        "holds": raw.get("known_limits", []),
+    }
+
+
+
 def compile_preview(source, *, source_hash=None):
     validate_seed(source)
     routes = []
