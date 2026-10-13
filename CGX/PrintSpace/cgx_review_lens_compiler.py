@@ -327,7 +327,7 @@ function sceneRender(){
    const isDetailed=$("printBuildMode").value==="i3";
    const openTrack=isDetailed&&p.id==="left_track"&&!frame?.track_left_closed_candidate||
      isDetailed&&p.id==="right_track"&&!frame?.track_right_closed_candidate;
-   const ratio=openTrack?.55:(frame&&p.stage===frame.stage_id&&frame.process==="FDM_DEPOSITION"?.72:1);
+   const ratio=openTrack?0.55:(frame&&p.stage===frame.stage_id&&frame.process==="FDM_DEPOSITION"?.72:1);
    if(p.primitive==="cylinder")drawCylinder(ctx,p,scale,ratio,base);
    else drawCube(ctx,p,scale,ratio,base);
  }
