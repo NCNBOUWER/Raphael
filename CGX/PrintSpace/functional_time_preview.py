@@ -227,7 +227,12 @@ def assess_functional_device_requirements(
             raise ValueError(name + " must be nonnegative (strictly positive when required)")
         return float(value)
 
-    angle = optional(arm_angle_deg,"arm_angle_deg")
+    if arm_angle_deg is not None:
+        if type(arm_angle_deg) not in (int, float) or not math.isfinite(arm_angle_deg) or abs(arm_angle_deg) > 180:
+            raise ValueError("arm angle must be finite within -180..180 degrees")
+        angle = float(arm_angle_deg)
+    else:
+        angle = None
     length = optional(arm_length_mm,"arm_length_mm",strict_positive=True)
     mass = optional(payload_mass_kg,"payload_mass_kg")
     display = optional(required_screen_area_mm2,"required_screen_area_mm2",strict_positive=True)
@@ -237,8 +242,6 @@ def assess_functional_device_requirements(
     if target is not None and (not isinstance(compute_metric,str) or
                                not 1 <= len(compute_metric) <= 64):
         raise ValueError("compute_n requires declared metric and units")
-    if angle is not None and angle > 180:
-        raise ValueError("arm angle outside 0..180 degree request")
     if angle is not None and product.get("kind") != "tracked_robot":
         raise ValueError("arm angle not applicable to this article")
 
