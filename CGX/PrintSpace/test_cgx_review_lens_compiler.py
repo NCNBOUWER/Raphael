@@ -42,6 +42,18 @@ class OfflineCGXReviewTests(unittest.TestCase):
     def test_no_fake_twin_geometry(self):
         self.assertIn("No verified graphic is linked", module.HTML)
 
+    def test_same_offline_atlas_embeds_replay_controls_without_machine_execution(self):
+        self.assertIn('id="printTimeline"', module.HTML)
+        self.assertIn('id="printCanvas"', module.HTML)
+        self.assertIn('id="printPhase"', module.HTML)
+        self.assertIn('id="printRate"', module.HTML)
+        self.assertIn('id="printPalette"', module.HTML)
+        self.assertIn("sceneRender()", module.HTML)
+        self.assertIn("time_previews", module.HTML)
+        self.assertTrue(callable(module.load_and_compile))
+        self.assertIn("connect-src 'none'", module.HTML)
+        self.assertIn("not verified CAD", module.HTML)
+
     def test_real_source_metadata_if_roots_supplied(self):
         """Optional integration smoke test; intentionally absent on unmounted CI."""
         light = os.environ.get("CGX_LIGHTSPEED_ROOT")
