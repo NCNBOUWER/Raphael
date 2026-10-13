@@ -449,14 +449,61 @@ def build(light_root: Path, print_root: Path, output: Path, check: bool):
     (output/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"status":"BUILT_OFFLINE_REVIEW","counts":meta["counts"],"path":str(viewer),"assets":len(files),"receipt":str(output/"receipt.json")},indent=2))
 
+def build_print_demo(output: Path):
+    """Render the existing offline lens from PUBLIC-SAFE geometry seeds only.
+
+    No private LightSpeed checkout, original licensed ButterBot CAD, device
+    commands or user files are required. An existing directory is not overwritten.
+    """
+    output = Path(output)
+    if any(part.lower() == "documents" for part in output.parts):
+        raise ValueError("protected Documents path excluded")
+    if output.exists() and (output.is_symlink() or any(output.iterdir())):
+        raise ValueError("print demo target already occupied; never overwrite")
+    output.mkdir(parents=True, exist_ok=True)
+    preview = load_and_compile()
+    meta = {
+        "schema": "CGX-REVIEW-LENS-OFFLINE/0.1",
+        "state": "DEMO_ONLY_NOT_CANON_NOT_PUBLIC_RELEASE_APPROVAL",
+        "source_sha256": {},
+        "source_heads": {},
+        "counts": {"component": 0, "technology": 0, "product": 0,
+                   "printer": 0, "twin": 0},
+    }
+    payload = json.dumps(
+        {"meta": meta, "items": [], "routes": [], "time_previews": preview},
+        ensure_ascii=False, separators=(",", ":")
+    ).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    viewer=output/"index.html"
+    viewer.write_text(HTML.replace("__PAYLOAD__",payload),encoding="utf-8")
+    receipt={
+        "schema":"cgx.printspace.offline_demo_receipt.v0.1",
+        "status":"VIEWER_CREATED_NO_PHYSICAL_OR_CAD_PROOF",
+        "index_sha256":sha(viewer),
+        "source_seed_sha256":preview["source_sha256"],
+        "root_promotion":False,"public_release_authorized":False,
+        "licensed_original_cad_included":False,"device_control_enabled":False
+    }
+    (output/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
+    return receipt
+
+
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("--lightspeed-root",type=Path,required=True)
+    parser.add_argument("--lightspeed-root",type=Path)
+    parser.add_argument("--print-demo-only",action="store_true")
     parser.add_argument("--printspace-root",type=Path,default=SOURCE)
     parser.add_argument("--output",type=Path)
     parser.add_argument("--check",action="store_true")
     a=parser.parse_args()
     if not a.check and a.output is None:parser.error("--output required unless --check")
+    if a.print_demo_only:
+        if a.check or a.output is None:
+            parser.error("--print-demo-only requires --output and is not --check")
+        print(json.dumps(build_print_demo(a.output),indent=2))
+        return
+    if a.lightspeed_root is None:
+        parser.error("--lightspeed-root required for full canonical review")
     build(a.lightspeed_root,a.printspace_root,a.output,a.check)
 
 if __name__=="__main__":main()
