@@ -903,7 +903,7 @@
     {
       "id": "S21_CLOSE_LEFT_TRACK",
       "operation": "LAST_TRACK_CLOSURE",
-      "source_station": "FDM_FEED",
+      "source_station": "DRY_PARTS_SORT",
       "target_station": "LEFT_CLOSURE_FIXTURE",
       "tool_role": "ARM_B_JOIN_HEAD_OR_GRIPPER",
       "depends_on": [
@@ -916,7 +916,8 @@
       "output_state": "LEFT_TRACK_JOINT_CANDIDATE",
       "evidence_required": [
         "default mechanical pin or qualified cooled interlock",
-        "thermal weld only if separately qualified for installed electronics"
+        "thermal weld only if separately qualified for installed electronics",
+        "default closure uses sourced mechanical pin from dry parts; hot FDM feed only if alternate mode explicitly qualified"
       ],
       "thermal_risk": "HOT_DEPOSITION_HOLD_UNTIL_QUALIFIED",
       "required_previous_assembly_access": [],
@@ -979,7 +980,7 @@
     {
       "id": "S24_CLOSE_RIGHT_TRACK",
       "operation": "LAST_TRACK_CLOSURE",
-      "source_station": "FDM_FEED",
+      "source_station": "DRY_PARTS_SORT",
       "target_station": "RIGHT_CLOSURE_FIXTURE",
       "tool_role": "ARM_A_JOIN_HEAD_OR_GRIPPER",
       "depends_on": [
@@ -992,7 +993,8 @@
       "output_state": "RIGHT_TRACK_JOINT_CANDIDATE",
       "evidence_required": [
         "same qualified closure method and joint material lot",
-        "left already secure and arms can swap"
+        "left already secure and arms can swap",
+        "default closure uses sourced mechanical pin from dry parts; hot FDM feed only if alternate mode explicitly qualified"
       ],
       "thermal_risk": "HOT_DEPOSITION_HOLD_UNTIL_QUALIFIED",
       "required_previous_assembly_access": [],
