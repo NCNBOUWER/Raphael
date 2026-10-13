@@ -55,7 +55,8 @@
             48
           ],
           "stage": "body",
-          "role": "STRUCTURE"
+          "role": "STRUCTURE",
+          "source_dependency_node_ref": "BB-SHELL"
         },
         {
           "id": "left_track",
@@ -71,7 +72,8 @@
             38
           ],
           "stage": "tracks",
-          "role": "DRIVE"
+          "role": "DRIVE",
+          "source_dependency_node_ref": "BB-TRACKS"
         },
         {
           "id": "right_track",
@@ -87,7 +89,8 @@
             38
           ],
           "stage": "tracks",
-          "role": "DRIVE"
+          "role": "DRIVE",
+          "source_dependency_node_ref": "BB-TRACKS"
         },
         {
           "id": "battery_cavity",
@@ -103,7 +106,8 @@
             15
           ],
           "stage": "power",
-          "role": "RESERVED_BATTERY_VOID"
+          "role": "RESERVED_BATTERY_VOID",
+          "source_dependency_node_ref": "BB-ENERGY"
         },
         {
           "id": "compute_bay",
@@ -119,7 +123,8 @@
             15
           ],
           "stage": "compute",
-          "role": "EXTERNAL_ELECTRONICS"
+          "role": "EXTERNAL_ELECTRONICS",
+          "source_dependency_node_ref": "BB-LOGIC"
         },
         {
           "id": "neck",
@@ -135,7 +140,8 @@
             49
           ],
           "stage": "neck",
-          "role": "MECHANISM"
+          "role": "MECHANISM",
+          "source_dependency_node_ref": "BB-NECK"
         },
         {
           "id": "left_arm",
@@ -151,7 +157,8 @@
             49
           ],
           "stage": "arms",
-          "role": "HINGED_ARM"
+          "role": "HINGED_ARM",
+          "source_dependency_node_ref": "BB-HANDS"
         },
         {
           "id": "right_arm",
@@ -167,7 +174,8 @@
             49
           ],
           "stage": "arms",
-          "role": "HINGED_ARM"
+          "role": "HINGED_ARM",
+          "source_dependency_node_ref": "BB-HANDS"
         },
         {
           "id": "head",
@@ -183,7 +191,8 @@
             34
           ],
           "stage": "head",
-          "role": "SHELL"
+          "role": "SHELL",
+          "source_dependency_node_ref": "BB-SHELL"
         },
         {
           "id": "face",
@@ -302,7 +311,8 @@
           "part_ids": [],
           "status": "VISUAL_ONLY"
         }
-      ]
+      ],
+      "source_goal_node": "BB-FINAL"
     },
     {
       "id": "WATCH-SQUARE",
