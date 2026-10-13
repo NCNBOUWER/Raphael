@@ -147,3 +147,25 @@ power/BOM, rated machine/control envelope, all process-condition witness
 coupons, thermal/kinematic full simulation, render comparison and as-built
 measurement. Demo approval, physical print, hardware actuation, licensing
 and public release remain FALSE / HOLD.
+
+### 13 October — process-state and inverse-source closure
+
+The existing preview compiler now publishes source-derived temporal CAN-IF windows
+for UNKNOWN, WET_FLOWABLE, GREEN_PARTIALLY_CURED and STABILIZED states. The viewer's
+Process state selector shows the corresponding requirements for the active
+UV/masked-lithography/laser candidate; all windows retain
+physical_process_verified=false, safety_interlocks_verified=false and
+production_approved=false. The material-to-material transition checker references
+the existing 14-family/196-directional-pair Raphael catalogue by SHA-256,
+rather than treating X-to-Y and Y-to-X as the same route.
+
+Butter Bot preview parts are now linked as *illustrative reference cells* to
+the authoritative 33-component inverse-build graph. In the current source
+model **BB-ACT (actuators) and BB-VOICE (speaker/LED and wiring) are not
+geometrically represented**. Other reference links designate intended
+locations, not functioning parts or proof of placement. This gap appears in
+the existing 3D viewer and source-compiled review output; it remains a HARD
+functional simulation gate alongside calibrated CAD and rights, sourced
+motors/MCU/battery, all environmental process windows, collision and measured
+4D response. The offline replay must not be described as a completely
+simulated functional or production-ready Butter Bot.
