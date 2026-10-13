@@ -3,6 +3,9 @@ from __future__ import annotations
 import sys
 import unittest
 import os
+import re
+import shutil
+import subprocess
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -53,6 +56,36 @@ class OfflineCGXReviewTests(unittest.TestCase):
         self.assertTrue(callable(module.load_and_compile))
         self.assertIn("connect-src 'none'", module.HTML)
         self.assertIn("not verified CAD", module.HTML)
+
+    def test_standalone_print_demo_is_playable_source_only_and_exclusive(self):
+        with TemporaryDirectory() as base:
+            target=Path(base)/"build-preview"
+            receipt=module.build_print_demo(target)
+            markup=(target/"index.html").read_text(encoding="utf-8")
+            self.assertEqual(receipt["status"],"VIEWER_CREATED_NO_PHYSICAL_OR_CAD_PROOF")
+            self.assertFalse(receipt["public_release_authorized"])
+            self.assertFalse(receipt["device_control_enabled"])
+            self.assertEqual(len(receipt["source_seed_sha256"]),64)
+            self.assertIn('id="printCanvas"',markup)
+            self.assertIn('id="printProcedure"',markup)
+            self.assertIn('id="printBattery"',markup)
+            self.assertIn('id="printArm"',markup)
+            self.assertIn('id="printPlay"',markup)
+            self.assertIn('"BB-SOURCE-DEMO"',markup)
+            self.assertIn('"WATCH-ROUND"',markup)
+            self.assertIn('"WATCH-SQUARE"',markup)
+            self.assertIn("connect-src 'none'",markup)
+            self.assertNotIn("private_canonical_root",markup)
+            self.assertTrue((target/"receipt.json").exists())
+            with self.assertRaisesRegex(ValueError,"occupied"):
+                module.build_print_demo(target)
+            script=re.search(r"<script>\\s*(.*?)</script>",markup,re.S)
+            self.assertIsNotNone(script)
+            node=shutil.which("node")
+            if node:
+                result=subprocess.run([node,"--check"],input=script.group(1),
+                                      encoding="utf-8",capture_output=True,timeout=8)
+                self.assertEqual(result.returncode,0,result.stderr)
 
     def test_real_source_metadata_if_roots_supplied(self):
         """Optional integration smoke test; intentionally absent on unmounted CI."""
