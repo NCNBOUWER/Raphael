@@ -8,6 +8,7 @@ from functional_time_preview import (
     SEEDS, SCHEMA, _sorted_stages, compile_preview,
     load_and_compile, validate_seed, assess_functional_device_requirements,
     assess_process_window, review_directional_material_transition,
+    compile_i3_track_closure_plan, I3_TRACK_PLAN,
 )
 
 class FunctionalTimeReviewTests(unittest.TestCase):
@@ -271,6 +272,124 @@ class FunctionalTimeReviewTests(unittest.TestCase):
         del bad["product_variants"][0]["source_goal_node"]
         with self.assertRaisesRegex(ValueError,"require registered inverse goal"):
             compile_preview(bad)
+
+
+    def test_intel_i3_is_real_sourced_core_with_separate_safety_controller(self):
+        route=compile_i3_track_closure_plan()
+        self.assertEqual(route["schema"],
+                         "cgx.printspace.butterbot_i3_track_closure_compiled.v0.1")
+        self.assertEqual(route["cpu"]["core_family"],"Intel Core i3")
+        self.assertIsNone(route["cpu"]["exact_sku"])
+        self.assertEqual(route["cpu"]["safety_control"],
+                         "SEPARATE_DETERMINISTIC_MCU")
+        self.assertEqual(route["stage_count"],28)
+        self.assertEqual(len(route["source_sha256"]),64)
+        self.assertIsNone(route["cpu"]["processor_tdp_w"])
+        self.assertIsNone(route["cpu"]["battery_wh"])
+        self.assertFalse(route["factory_production_authorized"])
+        self.assertFalse(route["physical_machine_motion_simulated"])
+        kinds={x["id"]:x for x in route["source_components"]}
+        for ident in ("i3_module","safety_MCU","battery_pack","motor_left",
+                      "motor_right","servo_pack","speaker_and_LEDs"):
+            self.assertEqual(kinds[ident]["kind"],"SOURCED")
+            self.assertFalse(kinds[ident]["can_print"])
+
+    def test_open_tracks_have_only_stock_allowance_and_close_last(self):
+        route=compile_i3_track_closure_plan()
+        tracks=route["track"]
+        self.assertAlmostEqual(tracks["allowance"]["value"],0.10)
+        self.assertIn("BELT_OPERATING_STRAIN",tracks["allowance"]["applies_not_to"])
+        self.assertIsNone(tracks["force_target_n"])
+        self.assertEqual([x["id"] for x in tracks["closure_modes"] if x["default"]],
+                         ["MECHANICAL_PIN_AND_IDLER"])
+        ids=route["ordered_stages"]
+        idx=lambda item:ids.index(item)
+        self.assertLess(idx("S02_LOWER_TRACK_LEFT_10PCT"),
+                        idx("S04_PRINT_CHASSIS_AND_CRADLE"))
+        self.assertLess(idx("S03_LOWER_TRACK_RIGHT_10PCT"),
+                        idx("S04_PRINT_CHASSIS_AND_CRADLE"))
+        for step in ("S06_INSTALL_BEARINGS_AXLES","S07_INSTALL_TRACK_DRIVE_MOTORS",
+                     "S13_INSTALL_I3_MODULE","S14_BATTERY_AND_REGULATORS",
+                     "S17_VOICE_LED","S18_DRY_ASSEMBLY_INSPECTION",
+                     "S19_MEASURE_FINAL_TRACK_ROUTE"):
+            self.assertLess(idx(step),idx("S21_CLOSE_LEFT_TRACK"))
+        self.assertLess(idx("S21_CLOSE_LEFT_TRACK"),idx("S22_LEFT_COOL_RELAX_INSPECT"))
+        self.assertLess(idx("S22_LEFT_COOL_RELAX_INSPECT"),idx("S24_CLOSE_RIGHT_TRACK"))
+        self.assertLess(idx("S24_CLOSE_RIGHT_TRACK"),idx("S25_RIGHT_COOL_RELAX_INSPECT"))
+        self.assertLess(idx("S25_RIGHT_COOL_RELAX_INSPECT"),idx("S26_FINAL_C0_TEST"))
+        self.assertLess(idx("S16_HEAD_SHELL"),idx("S13_INSTALL_I3_MODULE"))
+        self.assertLess(idx("S16_HEAD_SHELL"),idx("S14_BATTERY_AND_REGULATORS"))
+
+    def test_two_arms_alternate_tension_and_join_only_as_planned(self):
+        frames=compile_i3_track_closure_plan()["frames"]
+        left=next(x for x in frames if x["stage_id"]=="S21_CLOSE_LEFT_TRACK")
+        right=next(x for x in frames if x["stage_id"]=="S24_CLOSE_RIGHT_TRACK")
+        self.assertEqual((left["tension_arm"],left["joining_arm"]),("ARM_A","ARM_B"))
+        self.assertEqual((right["tension_arm"],right["joining_arm"]),("ARM_B","ARM_A"))
+        self.assertEqual(left["closure_side"],"LEFT")
+        self.assertEqual(right["closure_side"],"RIGHT")
+        self.assertFalse(left["track_right_closed_candidate"])
+        self.assertTrue(right["track_left_closed_candidate"])
+        self.assertTrue(right["track_right_closed_candidate"])
+        self.assertFalse(left["joint_strength_verified"])
+        self.assertIsNone(left["force_measured_n"])
+        self.assertIsNone(right["time_s"])
+        self.assertFalse(right["physical_execution_approved"])
+
+    def test_each_station_travel_is_symbolic_and_unapproved(self):
+        route=compile_i3_track_closure_plan()
+        self.assertEqual(len(route["station_metadata"]),14)
+        self.assertTrue(all(s["physical_position_mm"] is None
+                            for s in route["station_metadata"].values()))
+        for idx,frame in enumerate(route["frames"]):
+            self.assertEqual(frame["step"],idx+1)
+            self.assertIn(frame["from_station"],route["station_metadata"])
+            self.assertIn(frame["to_station"],route["station_metadata"])
+            self.assertIsNone(frame["travel_mm"])
+            self.assertIsNone(frame["cartesian_path"])
+            self.assertIsNone(frame["force_target_n"])
+            self.assertFalse(frame["tool_reachability_verified"])
+            self.assertFalse(frame["physical_execution_approved"])
+        self.assertEqual(len(set(route["ordered_stages"])),len(route["ordered_stages"]))
+        self.assertEqual(route,compile_i3_track_closure_plan())
+        bb=self.products["BB-SOURCE-DEMO"]
+        self.assertEqual(bb["i3_track_build_route"]["source_sha256"],route["source_sha256"])
+        self.assertIsNone(self.products["WATCH-SQUARE"]["i3_track_build_route"])
+
+    def test_unsafe_hot_tracks_after_cpu_and_unqualified_force_are_rejected(self):
+        source=json.loads(Path(I3_TRACK_PLAN).read_text(encoding="utf-8"))
+        variants=[
+          ("S21_CLOSE_LEFT_TRACK",{"tension_arm":"ARM_B"},"handoff"),
+          ("S24_CLOSE_RIGHT_TRACK",{"toolhead_conflict_guard":False},"collision guard"),
+          ("S21_CLOSE_LEFT_TRACK",{"temperature_guard":""},"hot welding"),
+          ("S16_HEAD_SHELL",{"depends_on":["S14_BATTERY_AND_REGULATORS"]},"cycle"),
+        ]
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as tmp:
+            candidate=Path(tmp)/"draft.json"
+            for stage_id,mutation,msg in variants:
+                with self.subTest(stage_id=stage_id,msg=msg):
+                    changed=copy.deepcopy(source)
+                    target=next(s for s in changed["steps"] if s["id"]==stage_id)
+                    target.update(mutation)
+                    candidate.write_text(json.dumps(changed),encoding="utf-8")
+                    with self.assertRaisesRegex(ValueError,msg):
+                        compile_i3_track_closure_plan(candidate)
+            changed=copy.deepcopy(source)
+            changed["track_plan"]["allowance"]["applies_to"]="FINAL_BELT_OPERATING_STRAIN"
+            candidate.write_text(json.dumps(changed),encoding="utf-8")
+            with self.assertRaisesRegex(ValueError,"track allowance"):
+                compile_i3_track_closure_plan(candidate)
+            changed=copy.deepcopy(source)
+            changed["host_i3_seed"]["exact_sku"]="i3-13100"
+            candidate.write_text(json.dumps(changed),encoding="utf-8")
+            with self.assertRaisesRegex(ValueError,"SKU"):
+                compile_i3_track_closure_plan(candidate)
+            changed=copy.deepcopy(source)
+            changed["source_components"][0]["can_print"]=True
+            candidate.write_text(json.dumps(changed),encoding="utf-8")
+            with self.assertRaisesRegex(ValueError,"unprintable"):
+                compile_i3_track_closure_plan(candidate)
 
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
