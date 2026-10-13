@@ -1,0 +1,2173 @@
+{
+  "schema": "cgx.printspace.material_candidate_passports.v0.3",
+  "id": "CGX-F4D-MATERIAL-SEEDS-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "evidence_policy": "No property or process interval is manufactured from generic textbook values. Null requires supplier lot data or measured coupon.",
+  "family_catalog": "CGX/PrintSpace/PAIRWISE_SEQUENCE_ROUTES_v0_1.json",
+  "utp_source": "UTP-FEEDS-001",
+  "retrieval_provenance": [
+    {
+      "url": "https://www.nist.gov/programs-projects/characterization-additive-manufacturing-materials",
+      "kind": "provenance_methodology"
+    },
+    {
+      "url": "https://materialsdata.nist.gov/",
+      "kind": "external_materials_data_discovery"
+    }
+  ],
+  "count": 59,
+  "materials": [
+    {
+      "material_id": "PS-MAT-CU_OFHC",
+      "material_label": "Oxygen-free copper",
+      "planning_family": "MT",
+      "index": 1,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "electrical buses",
+        "heat pathways"
+      ],
+      "process_route_seed": "bulk formed; powder or wire process-specific",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-AL_6061",
+      "material_label": "6061 aluminium alloy",
+      "planning_family": "MT",
+      "index": 2,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "lightweight frames",
+        "heat paths"
+      ],
+      "process_route_seed": "extrusion/machining; metal AM requires alloy/process-specific qualification",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-SS_316L",
+      "material_label": "316L stainless steel",
+      "planning_family": "MT",
+      "index": 3,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "corrosion-resistant structural elements"
+      ],
+      "process_route_seed": "metal powder bed or directed energy",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-TI_64",
+      "material_label": "Ti-6Al-4V alloy",
+      "planning_family": "MT",
+      "index": 4,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "strength-to-weight components"
+      ],
+      "process_route_seed": "metal powder-bed or wire deposition",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-NI_ALLOY",
+      "material_label": "Nickel alloy class",
+      "planning_family": "MT",
+      "index": 5,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "high-temperature structures"
+      ],
+      "process_route_seed": "high-energy metallurgy; chemistry-specific",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-AG_METAL",
+      "material_label": "Silver metal",
+      "planning_family": "MT",
+      "index": 6,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "electrodes",
+        "contacts"
+      ],
+      "process_route_seed": "formed metal or low-temperature deposited metallic system",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-ALUMINA",
+      "material_label": "Aluminium oxide ceramic",
+      "planning_family": "CR",
+      "index": 7,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "insulation",
+        "heat spreading"
+      ],
+      "process_route_seed": "ceramic forming and sinter",
+      "candidate_environments": [
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-SILICA",
+      "material_label": "Silicon dioxide glass/silica",
+      "planning_family": "CR",
+      "index": 8,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "dielectric",
+        "optics",
+        "protective interfaces"
+      ],
+      "process_route_seed": "glass/ceramic forming",
+      "candidate_environments": [
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-ZIRCONIA",
+      "material_label": "Zirconia ceramics",
+      "planning_family": "CR",
+      "index": 9,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "wear",
+        "insulation",
+        "thermal barrier"
+      ],
+      "process_route_seed": "ceramic densification",
+      "candidate_environments": [
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-BT_CERAMIC",
+      "material_label": "Barium titanate ceramic",
+      "planning_family": "CR",
+      "index": 10,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "high-permittivity dielectric candidate"
+      ],
+      "process_route_seed": "ceramic firing/low-temperature composite dependent",
+      "candidate_environments": [
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-BN_CERAMIC",
+      "material_label": "Hexagonal boron nitride",
+      "planning_family": "CR",
+      "index": 11,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "thermally conductive electrical insulation"
+      ],
+      "process_route_seed": "filled composite or ceramic processing",
+      "candidate_environments": [
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PLA",
+      "material_label": "Polylactic acid thermoplastic",
+      "planning_family": "TP",
+      "index": 12,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "prototype structural bodies"
+      ],
+      "process_route_seed": "material extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PETG",
+      "material_label": "PETG thermoplastic",
+      "planning_family": "TP",
+      "index": 13,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "tough enclosures and channels"
+      ],
+      "process_route_seed": "material extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-ABS",
+      "material_label": "ABS thermoplastic",
+      "planning_family": "TP",
+      "index": 14,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "housings and tooling"
+      ],
+      "process_route_seed": "material extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PA12",
+      "material_label": "Polyamide 12",
+      "planning_family": "TP",
+      "index": 15,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "mechanisms",
+        "light-duty housings"
+      ],
+      "process_route_seed": "powder fusion or extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PEEK",
+      "material_label": "PEEK thermoplastic",
+      "planning_family": "TP",
+      "index": 16,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "high-temperature polymer tooling and devices"
+      ],
+      "process_route_seed": "high-temperature controlled extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PP",
+      "material_label": "Polypropylene",
+      "planning_family": "TP",
+      "index": 17,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "hinges",
+        "fluid and chemical-compatible parts subject to grade"
+      ],
+      "process_route_seed": "polymer fusion/extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-ACRYLATE",
+      "material_label": "UV-curable acrylate resin family",
+      "planning_family": "RS",
+      "index": 18,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "fine geometry",
+        "cavities"
+      ],
+      "process_route_seed": "photocure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-EPOXY",
+      "material_label": "Epoxy thermoset system",
+      "planning_family": "RS",
+      "index": 19,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "insulation",
+        "encapsulation",
+        "adhesive"
+      ],
+      "process_route_seed": "controlled cure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-SILICONE_RESIN",
+      "material_label": "Curing silicone system",
+      "planning_family": "RS",
+      "index": 20,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "gaskets",
+        "protection",
+        "flexible bonds"
+      ],
+      "process_route_seed": "moisture/addition cure by formulation",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-TPU",
+      "material_label": "Thermoplastic polyurethane",
+      "planning_family": "EL",
+      "index": 21,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "soft joints",
+        "bumpers",
+        "gripping"
+      ],
+      "process_route_seed": "flexible polymer extrusion",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PDMS",
+      "material_label": "Polydimethylsiloxane elastomer",
+      "planning_family": "EL",
+      "index": 22,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "microfluidic sealing",
+        "optical microstructures"
+      ],
+      "process_route_seed": "casting/direct ink writing with cure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-SILICONE_E",
+      "material_label": "Silicone elastomer formulation",
+      "planning_family": "EL",
+      "index": 23,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "seals",
+        "flexures"
+      ],
+      "process_route_seed": "compatible extrusion or mould/print-and-place",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-HYDROGEL_E",
+      "material_label": "Hydrogel elastic matrix",
+      "planning_family": "EL",
+      "index": 24,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "wet responsive function"
+      ],
+      "process_route_seed": "aqueous deposition/cure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-AG_INK",
+      "material_label": "Silver-particle conductive ink",
+      "planning_family": "CI",
+      "index": 25,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "printed traces and electrodes"
+      ],
+      "process_route_seed": "print and product-dependent sinter",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CU_INK",
+      "material_label": "Copper-particle conductive ink",
+      "planning_family": "CI",
+      "index": 26,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "printed traces"
+      ],
+      "process_route_seed": "protective atmosphere and local activation may be necessary",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CARBON_INK",
+      "material_label": "Graphite/carbon-black conductive ink",
+      "planning_family": "CI",
+      "index": 27,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "resistors",
+        "strain sensors"
+      ],
+      "process_route_seed": "controlled print and drying",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-GRAPHENE_INK",
+      "material_label": "Graphene-family conductive dispersion",
+      "planning_family": "CI",
+      "index": 28,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "sensing",
+        "electrodes",
+        "films"
+      ],
+      "process_route_seed": "dispersion/coating/cure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PEDOT_PSS",
+      "material_label": "PEDOT:PSS conductive polymer",
+      "planning_family": "CI",
+      "index": 29,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "flexible conductive films"
+      ],
+      "process_route_seed": "solution deposition, humidity and formulation sensitivity",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-DIEL_UV",
+      "material_label": "UV-curable dielectric ink",
+      "planning_family": "DE",
+      "index": 30,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "trace isolation and printed capacitors"
+      ],
+      "process_route_seed": "photocure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-DIEL_EPOXY",
+      "material_label": "Insulating epoxy",
+      "planning_family": "DE",
+      "index": 31,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "encapsulation",
+        "structural dielectric"
+      ],
+      "process_route_seed": "chemical or thermal cure",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-POLYIMIDE",
+      "material_label": "Polyimide dielectric film",
+      "planning_family": "DE",
+      "index": 32,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "flex circuit isolation",
+        "thermal protection"
+      ],
+      "process_route_seed": "film insertion or coating/imidisation depending grade",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PARylene",
+      "material_label": "Parylene barrier coating",
+      "planning_family": "DE",
+      "index": 33,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "thin environmental protection"
+      ],
+      "process_route_seed": "vapour-phase deposition specialist cell",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-FERRITE_PASTE",
+      "material_label": "Ferrite particle composite",
+      "planning_family": "MG",
+      "index": 34,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "cores and magnetic flux routing"
+      ],
+      "process_route_seed": "filled print and qualified magnetisation",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-NDFEB_BONDED",
+      "material_label": "Bonded NdFeB magnet composite",
+      "planning_family": "MG",
+      "index": 35,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "magnetic actuation",
+        "retention"
+      ],
+      "process_route_seed": "particle-loaded polymer, orientation and magnetisation",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-IRON_COMPOSITE",
+      "material_label": "Soft magnetic iron composite",
+      "planning_family": "MG",
+      "index": 36,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "motor/solenoid flux paths"
+      ],
+      "process_route_seed": "graded conductive/insulated particle system",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-OPTICAL_RESIN",
+      "material_label": "Optical-grade photocured resin",
+      "planning_family": "OP",
+      "index": 37,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "waveguides",
+        "lenses"
+      ],
+      "process_route_seed": "precision photopolymerisation",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PMMA",
+      "material_label": "Optical PMMA",
+      "planning_family": "OP",
+      "index": 38,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "transparent lightguide/housing"
+      ],
+      "process_route_seed": "polymer optics processing",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-FUSED_SILICA",
+      "material_label": "Fused silica optic",
+      "planning_family": "OP",
+      "index": 39,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "window",
+        "fibre coupling"
+      ],
+      "process_route_seed": "precision optic insert or specialist fabrication",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PHOSPHOR_FILM",
+      "material_label": "Phosphor-containing optical coating",
+      "planning_family": "OP",
+      "index": 40,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "spectral conversion"
+      ],
+      "process_route_seed": "controlled deposition and conversion measurement",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-PVA_SUPPORT",
+      "material_label": "Water-soluble PVA support polymer",
+      "planning_family": "FL",
+      "index": 41,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "sacrificial channels and temporary cavities"
+      ],
+      "process_route_seed": "extrude then qualified dissolve/flush",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-WAX_SUPPORT",
+      "material_label": "Sacrificial wax",
+      "planning_family": "FL",
+      "index": 42,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "cast-like channels and structural voids"
+      ],
+      "process_route_seed": "print/deposit and melt/remove",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-MICROGEL",
+      "material_label": "Printable sacrificial microgel",
+      "planning_family": "FL",
+      "index": 43,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "temporarily supported fluidic paths"
+      ],
+      "process_route_seed": "rheology-driven deposition and removal",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-GAS_CAVITY",
+      "material_label": "Enclosed gas-filled void (feature)",
+      "planning_family": "FL",
+      "index": 44,
+      "specimen_type": "functional_void",
+      "functions": [
+        "pressure/vacuum microcell"
+      ],
+      "process_route_seed": "structure, evacuate/fill then validate seal",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-GRAPHITE_ANODE",
+      "material_label": "Graphitic anode composite",
+      "planning_family": "EC",
+      "index": 45,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "electrochemical intercalation electrode"
+      ],
+      "process_route_seed": "chemistry-specific slurry print/processing",
+      "candidate_environments": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-LFP_CATHODE",
+      "material_label": "Lithium iron phosphate cathode composite",
+      "planning_family": "EC",
+      "index": 46,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "cell positive electrode"
+      ],
+      "process_route_seed": "controlled slurry/cure and subsequent cell assembly",
+      "candidate_environments": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-GEL_ELECTROLYTE",
+      "material_label": "Gel polymer electrolyte",
+      "planning_family": "EC",
+      "index": 47,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "ionic transport"
+      ],
+      "process_route_seed": "controlled chemical deposition and containment",
+      "candidate_environments": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CARBON_SUPERCAP",
+      "material_label": "Activated-carbon supercapacitor electrode",
+      "planning_family": "EC",
+      "index": 48,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "high-surface-area capacitive storage"
+      ],
+      "process_route_seed": "electrode coating/printing",
+      "candidate_environments": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-SILICON_DIE",
+      "material_label": "Packaged silicon processor die",
+      "planning_family": "SC",
+      "index": 49,
+      "specimen_type": "module",
+      "functions": [
+        "computation"
+      ],
+      "process_route_seed": "pick/place interconnect; not general desktop chip fabrication",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CAMERA_MODULE",
+      "material_label": "Packaged imaging sensor module",
+      "planning_family": "SC",
+      "index": 50,
+      "specimen_type": "module",
+      "functions": [
+        "visual sensing"
+      ],
+      "process_route_seed": "qualified optical/electrical placement",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-LED_PACKAGE",
+      "material_label": "Packaged semiconductor LED",
+      "planning_family": "SC",
+      "index": 51,
+      "specimen_type": "module",
+      "functions": [
+        "illumination and indication"
+      ],
+      "process_route_seed": "pick/place and electrical integration",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-RF_IC",
+      "material_label": "Packaged RF integrated circuit",
+      "planning_family": "SC",
+      "index": 52,
+      "specimen_type": "module",
+      "functions": [
+        "wireless communication"
+      ],
+      "process_route_seed": "ESD-safe placement/interconnect",
+      "candidate_environments": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-LFP_MODULE",
+      "material_label": "Protected LFP battery module",
+      "planning_family": "BT",
+      "index": 53,
+      "specimen_type": "module",
+      "functions": [
+        "mobile power"
+      ],
+      "process_route_seed": "safety-rated replaceable module",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-LIION_MODULE",
+      "material_label": "Protected lithium-ion battery module",
+      "planning_family": "BT",
+      "index": 54,
+      "specimen_type": "module",
+      "functions": [
+        "energy storage"
+      ],
+      "process_route_seed": "protected mechanical/electrical integration",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CAP_BANK",
+      "material_label": "Commercial capacitor/supercapacitor module",
+      "planning_family": "BT",
+      "index": 55,
+      "specimen_type": "module",
+      "functions": [
+        "pulse power",
+        "buffering"
+      ],
+      "process_route_seed": "module placement and electrical safety",
+      "candidate_environments": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-ALGINATE",
+      "material_label": "Alginate hydrogel",
+      "planning_family": "BV",
+      "index": 56,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "bio-compatible carrier candidate"
+      ],
+      "process_route_seed": "aqueous extrusion and controlled crosslink",
+      "candidate_environments": [
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-GELATIN",
+      "material_label": "Gelatin hydrogel",
+      "planning_family": "BV",
+      "index": 57,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "responsive soft scaffold"
+      ],
+      "process_route_seed": "temperature-sensitive dispensing",
+      "candidate_environments": [
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-COLLAGEN",
+      "material_label": "Collagen matrix",
+      "planning_family": "BV",
+      "index": 58,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "bioactive scaffold candidate"
+      ],
+      "process_route_seed": "sterile formulation-specific deposition",
+      "candidate_environments": [
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    },
+    {
+      "material_id": "PS-MAT-CELL_INK",
+      "material_label": "Living cell-laden bioink",
+      "planning_family": "BV",
+      "index": 59,
+      "specimen_type": "material_or_formulation_family",
+      "functions": [
+        "tissue research applications"
+      ],
+      "process_route_seed": "specialist sterile bioprinting with viability safeguards",
+      "candidate_environments": [
+        "ENV-2"
+      ],
+      "state": "CANDIDATE_ONLY_NOT_A_RECIPE",
+      "measured_material_properties": [],
+      "process_window": null,
+      "qualifier_required": [
+        "specific formulation and batch",
+        "processing route and machine",
+        "temperature and atmosphere exposure history",
+        "geometry, interface and acceptance tests",
+        "traceable process evidence"
+      ],
+      "provenance": [
+        {
+          "ref": "UTP-FEEDS-001",
+          "kind": "family_taxonomy"
+        },
+        {
+          "ref": "CGX-F4D-SEQ-20261008",
+          "kind": "family_transition"
+        }
+      ],
+      "note": "Illustrative material/formulation archetype, not product specification or evidence of co-print compatibility."
+    }
+  ]
+}

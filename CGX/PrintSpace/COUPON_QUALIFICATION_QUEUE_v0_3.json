@@ -1,0 +1,2977 @@
+{
+  "schema": "cgx.printspace.coupon_qualification_queue.v0.3",
+  "id": "CGX-F4D-COUPONS-20261008",
+  "status": "PLAN_ONLY",
+  "source_routes": "CGX-F4D-MATROUTES-20261008",
+  "counts": {
+    "total": 72,
+    "p1": 12,
+    "p2": 30,
+    "p3": 30
+  },
+  "release": "NONE",
+  "coupons": [
+    {
+      "coupon_id": "PS-CQP-001",
+      "material_route_id": "PS-MR-001-AB",
+      "from_material": "PS-MAT-SS_316L",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "metal-polymer body",
+      "planned_measurements": [
+        "adhesion",
+        "thermal cycling",
+        "residual stress"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-002",
+      "material_route_id": "PS-MR-001-BA",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-SS_316L",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "metal-polymer body",
+      "planned_measurements": [
+        "adhesion",
+        "thermal cycling",
+        "residual stress"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-003",
+      "material_route_id": "PS-MR-002-AB",
+      "from_material": "PS-MAT-CU_OFHC",
+      "to_material": "PS-MAT-DIEL_EPOXY",
+      "priority": "P1_TARGETED",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "insulated conductive bus",
+      "planned_measurements": [
+        "dielectric breakdown",
+        "adhesion",
+        "leakage",
+        "thermal cycles"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-004",
+      "material_route_id": "PS-MR-002-BA",
+      "from_material": "PS-MAT-DIEL_EPOXY",
+      "to_material": "PS-MAT-CU_OFHC",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "insulated conductive bus",
+      "planned_measurements": [
+        "dielectric breakdown",
+        "adhesion",
+        "leakage",
+        "thermal cycles"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-005",
+      "material_route_id": "PS-MR-003-AB",
+      "from_material": "PS-MAT-AL_6061",
+      "to_material": "PS-MAT-TPU",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "compliant structural join",
+      "planned_measurements": [
+        "peel strength",
+        "fatigue",
+        "bond creep"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-006",
+      "material_route_id": "PS-MR-003-BA",
+      "from_material": "PS-MAT-TPU",
+      "to_material": "PS-MAT-AL_6061",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "compliant structural join",
+      "planned_measurements": [
+        "peel strength",
+        "fatigue",
+        "bond creep"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-007",
+      "material_route_id": "PS-MR-004-AB",
+      "from_material": "PS-MAT-ALUMINA",
+      "to_material": "PS-MAT-AG_INK",
+      "priority": "P1_TARGETED",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "ceramic printed conductor",
+      "planned_measurements": [
+        "continuity",
+        "adhesion",
+        "resistance drift"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-008",
+      "material_route_id": "PS-MR-004-BA",
+      "from_material": "PS-MAT-AG_INK",
+      "to_material": "PS-MAT-ALUMINA",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "ceramic printed conductor",
+      "planned_measurements": [
+        "continuity",
+        "adhesion",
+        "resistance drift"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-009",
+      "material_route_id": "PS-MR-005-AB",
+      "from_material": "PS-MAT-SILICA",
+      "to_material": "PS-MAT-OPTICAL_RESIN",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "optical glass/polymer interface",
+      "planned_measurements": [
+        "optical transmission",
+        "roughness",
+        "adhesion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-010",
+      "material_route_id": "PS-MR-005-BA",
+      "from_material": "PS-MAT-OPTICAL_RESIN",
+      "to_material": "PS-MAT-SILICA",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "optical glass/polymer interface",
+      "planned_measurements": [
+        "optical transmission",
+        "roughness",
+        "adhesion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-011",
+      "material_route_id": "PS-MR-006-AB",
+      "from_material": "PS-MAT-PLA",
+      "to_material": "PS-MAT-AG_INK",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "polymer printed circuit",
+      "planned_measurements": [
+        "sheet resistance",
+        "continuity",
+        "thermal distortion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-012",
+      "material_route_id": "PS-MR-006-BA",
+      "from_material": "PS-MAT-AG_INK",
+      "to_material": "PS-MAT-PLA",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "polymer printed circuit",
+      "planned_measurements": [
+        "sheet resistance",
+        "continuity",
+        "thermal distortion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-013",
+      "material_route_id": "PS-MR-007-AB",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-CU_INK",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "polymer copper trace",
+      "planned_measurements": [
+        "conductivity",
+        "oxidation",
+        "adhesion",
+        "warpage"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-014",
+      "material_route_id": "PS-MR-007-BA",
+      "from_material": "PS-MAT-CU_INK",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "polymer copper trace",
+      "planned_measurements": [
+        "conductivity",
+        "oxidation",
+        "adhesion",
+        "warpage"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-015",
+      "material_route_id": "PS-MR-008-AB",
+      "from_material": "PS-MAT-PA12",
+      "to_material": "PS-MAT-CARBON_INK",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "distributed strain sensor",
+      "planned_measurements": [
+        "gauge factor",
+        "hysteresis",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-016",
+      "material_route_id": "PS-MR-008-BA",
+      "from_material": "PS-MAT-CARBON_INK",
+      "to_material": "PS-MAT-PA12",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "distributed strain sensor",
+      "planned_measurements": [
+        "gauge factor",
+        "hysteresis",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-017",
+      "material_route_id": "PS-MR-009-AB",
+      "from_material": "PS-MAT-PEEK",
+      "to_material": "PS-MAT-POLYIMIDE",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "high-temperature insulation",
+      "planned_measurements": [
+        "dielectric strength",
+        "creep",
+        "thermo-mechanical cycling"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-018",
+      "material_route_id": "PS-MR-009-BA",
+      "from_material": "PS-MAT-POLYIMIDE",
+      "to_material": "PS-MAT-PEEK",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "high-temperature insulation",
+      "planned_measurements": [
+        "dielectric strength",
+        "creep",
+        "thermo-mechanical cycling"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-019",
+      "material_route_id": "PS-MR-010-AB",
+      "from_material": "PS-MAT-ACRYLATE",
+      "to_material": "PS-MAT-PEDOT_PSS",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "transparent flexible electrode candidate",
+      "planned_measurements": [
+        "conductivity",
+        "transparency",
+        "humidity stability"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-020",
+      "material_route_id": "PS-MR-010-BA",
+      "from_material": "PS-MAT-PEDOT_PSS",
+      "to_material": "PS-MAT-ACRYLATE",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "transparent flexible electrode candidate",
+      "planned_measurements": [
+        "conductivity",
+        "transparency",
+        "humidity stability"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-021",
+      "material_route_id": "PS-MR-011-AB",
+      "from_material": "PS-MAT-TPU",
+      "to_material": "PS-MAT-FERRITE_PASTE",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "compliant magnetic composite",
+      "planned_measurements": [
+        "magnetic hysteresis",
+        "flexibility",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-022",
+      "material_route_id": "PS-MR-011-BA",
+      "from_material": "PS-MAT-FERRITE_PASTE",
+      "to_material": "PS-MAT-TPU",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "compliant magnetic composite",
+      "planned_measurements": [
+        "magnetic hysteresis",
+        "flexibility",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-023",
+      "material_route_id": "PS-MR-012-AB",
+      "from_material": "PS-MAT-DIEL_UV",
+      "to_material": "PS-MAT-AG_INK",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "printed capacitor stack",
+      "planned_measurements": [
+        "capacitance",
+        "loss tangent",
+        "leakage",
+        "breakdown"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-024",
+      "material_route_id": "PS-MR-012-BA",
+      "from_material": "PS-MAT-AG_INK",
+      "to_material": "PS-MAT-DIEL_UV",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "printed capacitor stack",
+      "planned_measurements": [
+        "capacitance",
+        "loss tangent",
+        "leakage",
+        "breakdown"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-025",
+      "material_route_id": "PS-MR-013-AB",
+      "from_material": "PS-MAT-DIEL_EPOXY",
+      "to_material": "PS-MAT-GEL_ELECTROLYTE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "isolated electrochemistry",
+      "planned_measurements": [
+        "leakage",
+        "ionic conduction",
+        "contamination"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-026",
+      "material_route_id": "PS-MR-013-BA",
+      "from_material": "PS-MAT-GEL_ELECTROLYTE",
+      "to_material": "PS-MAT-DIEL_EPOXY",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "isolated electrochemistry",
+      "planned_measurements": [
+        "leakage",
+        "ionic conduction",
+        "contamination"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-027",
+      "material_route_id": "PS-MR-014-AB",
+      "from_material": "PS-MAT-IRON_COMPOSITE",
+      "to_material": "PS-MAT-CU_OFHC",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "motor magnetic circuit",
+      "planned_measurements": [
+        "flux map",
+        "coil resistance",
+        "core loss"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-028",
+      "material_route_id": "PS-MR-014-BA",
+      "from_material": "PS-MAT-CU_OFHC",
+      "to_material": "PS-MAT-IRON_COMPOSITE",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "TRAINED_WORKSHOP_OR_LAB",
+      "purpose": "motor magnetic circuit",
+      "planned_measurements": [
+        "flux map",
+        "coil resistance",
+        "core loss"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-029",
+      "material_route_id": "PS-MR-015-AB",
+      "from_material": "PS-MAT-NDFEB_BONDED",
+      "to_material": "PS-MAT-SILICONE_E",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sealed magnet structure",
+      "planned_measurements": [
+        "magnetic force",
+        "seal durability",
+        "ageing"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-030",
+      "material_route_id": "PS-MR-015-BA",
+      "from_material": "PS-MAT-SILICONE_E",
+      "to_material": "PS-MAT-NDFEB_BONDED",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sealed magnet structure",
+      "planned_measurements": [
+        "magnetic force",
+        "seal durability",
+        "ageing"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-031",
+      "material_route_id": "PS-MR-016-AB",
+      "from_material": "PS-MAT-OPTICAL_RESIN",
+      "to_material": "PS-MAT-LED_PACKAGE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "optical emitter integration",
+      "planned_measurements": [
+        "optical alignment",
+        "thermal drift",
+        "efficiency"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-032",
+      "material_route_id": "PS-MR-016-BA",
+      "from_material": "PS-MAT-LED_PACKAGE",
+      "to_material": "PS-MAT-OPTICAL_RESIN",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "optical emitter integration",
+      "planned_measurements": [
+        "optical alignment",
+        "thermal drift",
+        "efficiency"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-033",
+      "material_route_id": "PS-MR-017-AB",
+      "from_material": "PS-MAT-PVA_SUPPORT",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sacrificial cavity",
+      "planned_measurements": [
+        "complete support removal",
+        "flow",
+        "leaks"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-034",
+      "material_route_id": "PS-MR-017-BA",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-PVA_SUPPORT",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sacrificial cavity",
+      "planned_measurements": [
+        "complete support removal",
+        "flow",
+        "leaks"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-035",
+      "material_route_id": "PS-MR-018-AB",
+      "from_material": "PS-MAT-WAX_SUPPORT",
+      "to_material": "PS-MAT-EPOXY",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sacrificial channel in resin",
+      "planned_measurements": [
+        "complete removal",
+        "residuals",
+        "channel integrity"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-036",
+      "material_route_id": "PS-MR-018-BA",
+      "from_material": "PS-MAT-EPOXY",
+      "to_material": "PS-MAT-WAX_SUPPORT",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "sacrificial channel in resin",
+      "planned_measurements": [
+        "complete removal",
+        "residuals",
+        "channel integrity"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-037",
+      "material_route_id": "PS-MR-019-AB",
+      "from_material": "PS-MAT-GRAPHITE_ANODE",
+      "to_material": "PS-MAT-GEL_ELECTROLYTE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "electrochemical electrode junction",
+      "planned_measurements": [
+        "ionic transport",
+        "impedance",
+        "chemical stability"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-038",
+      "material_route_id": "PS-MR-019-BA",
+      "from_material": "PS-MAT-GEL_ELECTROLYTE",
+      "to_material": "PS-MAT-GRAPHITE_ANODE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "electrochemical electrode junction",
+      "planned_measurements": [
+        "ionic transport",
+        "impedance",
+        "chemical stability"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-039",
+      "material_route_id": "PS-MR-020-AB",
+      "from_material": "PS-MAT-LFP_CATHODE",
+      "to_material": "PS-MAT-GEL_ELECTROLYTE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "lithium-ion cell candidate",
+      "planned_measurements": [
+        "capacity",
+        "cycling",
+        "separator integrity",
+        "abuse safety"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-040",
+      "material_route_id": "PS-MR-020-BA",
+      "from_material": "PS-MAT-GEL_ELECTROLYTE",
+      "to_material": "PS-MAT-LFP_CATHODE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "lithium-ion cell candidate",
+      "planned_measurements": [
+        "capacity",
+        "cycling",
+        "separator integrity",
+        "abuse safety"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-041",
+      "material_route_id": "PS-MR-021-AB",
+      "from_material": "PS-MAT-CARBON_SUPERCAP",
+      "to_material": "PS-MAT-DIEL_UV",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "electrode insulation and spacing",
+      "planned_measurements": [
+        "leakage",
+        "capacitance",
+        "ESR"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-042",
+      "material_route_id": "PS-MR-021-BA",
+      "from_material": "PS-MAT-DIEL_UV",
+      "to_material": "PS-MAT-CARBON_SUPERCAP",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "electrode insulation and spacing",
+      "planned_measurements": [
+        "leakage",
+        "capacitance",
+        "ESR"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-043",
+      "material_route_id": "PS-MR-022-AB",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-SILICON_DIE",
+      "priority": "P1_TARGETED",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "hybrid processor enclosure",
+      "planned_measurements": [
+        "ESD checks",
+        "functional I/O",
+        "heat dissipation"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-044",
+      "material_route_id": "PS-MR-022-BA",
+      "from_material": "PS-MAT-SILICON_DIE",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "hybrid processor enclosure",
+      "planned_measurements": [
+        "ESD checks",
+        "functional I/O",
+        "heat dissipation"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-045",
+      "material_route_id": "PS-MR-023-AB",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-CAMERA_MODULE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "camera integration",
+      "planned_measurements": [
+        "MTF/optical alignment",
+        "vibration",
+        "contamination"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-046",
+      "material_route_id": "PS-MR-023-BA",
+      "from_material": "PS-MAT-CAMERA_MODULE",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "camera integration",
+      "planned_measurements": [
+        "MTF/optical alignment",
+        "vibration",
+        "contamination"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-047",
+      "material_route_id": "PS-MR-024-AB",
+      "from_material": "PS-MAT-PETG",
+      "to_material": "PS-MAT-LFP_MODULE",
+      "priority": "P1_TARGETED",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "replaceable battery",
+      "planned_measurements": [
+        "voltage protection",
+        "temperature",
+        "access",
+        "drop"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-048",
+      "material_route_id": "PS-MR-024-BA",
+      "from_material": "PS-MAT-LFP_MODULE",
+      "to_material": "PS-MAT-PETG",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "replaceable battery",
+      "planned_measurements": [
+        "voltage protection",
+        "temperature",
+        "access",
+        "drop"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-049",
+      "material_route_id": "PS-MR-025-AB",
+      "from_material": "PS-MAT-PA12",
+      "to_material": "PS-MAT-CAP_BANK",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "pulse energy storage",
+      "planned_measurements": [
+        "electrical safety",
+        "discharge",
+        "retention"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-050",
+      "material_route_id": "PS-MR-025-BA",
+      "from_material": "PS-MAT-CAP_BANK",
+      "to_material": "PS-MAT-PA12",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "pulse energy storage",
+      "planned_measurements": [
+        "electrical safety",
+        "discharge",
+        "retention"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-051",
+      "material_route_id": "PS-MR-026-AB",
+      "from_material": "PS-MAT-PDMS",
+      "to_material": "PS-MAT-SILICON_DIE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "soft microfluidic biosensor assembly",
+      "planned_measurements": [
+        "leak",
+        "surface chemistry",
+        "sensor response"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-052",
+      "material_route_id": "PS-MR-026-BA",
+      "from_material": "PS-MAT-SILICON_DIE",
+      "to_material": "PS-MAT-PDMS",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "soft microfluidic biosensor assembly",
+      "planned_measurements": [
+        "leak",
+        "surface chemistry",
+        "sensor response"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-053",
+      "material_route_id": "PS-MR-027-AB",
+      "from_material": "PS-MAT-ALGINATE",
+      "to_material": "PS-MAT-PDMS",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "aqueous biological microchannel",
+      "planned_measurements": [
+        "viability when relevant",
+        "contamination",
+        "mass transport"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-054",
+      "material_route_id": "PS-MR-027-BA",
+      "from_material": "PS-MAT-PDMS",
+      "to_material": "PS-MAT-ALGINATE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "aqueous biological microchannel",
+      "planned_measurements": [
+        "viability when relevant",
+        "contamination",
+        "mass transport"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-055",
+      "material_route_id": "PS-MR-028-AB",
+      "from_material": "PS-MAT-GELATIN",
+      "to_material": "PS-MAT-ALUMINA",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "hybrid bio-ceramic device",
+      "planned_measurements": [
+        "bio-interface stability",
+        "sterility",
+        "temperature sensitivity"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-056",
+      "material_route_id": "PS-MR-028-BA",
+      "from_material": "PS-MAT-ALUMINA",
+      "to_material": "PS-MAT-GELATIN",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "hybrid bio-ceramic device",
+      "planned_measurements": [
+        "bio-interface stability",
+        "sterility",
+        "temperature sensitivity"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-057",
+      "material_route_id": "PS-MR-029-AB",
+      "from_material": "PS-MAT-OPTICAL_RESIN",
+      "to_material": "PS-MAT-PHOSPHOR_FILM",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "spectral optic coating",
+      "planned_measurements": [
+        "spectrum",
+        "lifetime",
+        "conversion efficiency"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-058",
+      "material_route_id": "PS-MR-029-BA",
+      "from_material": "PS-MAT-PHOSPHOR_FILM",
+      "to_material": "PS-MAT-OPTICAL_RESIN",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "spectral optic coating",
+      "planned_measurements": [
+        "spectrum",
+        "lifetime",
+        "conversion efficiency"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-059",
+      "material_route_id": "PS-MR-030-AB",
+      "from_material": "PS-MAT-FERRITE_PASTE",
+      "to_material": "PS-MAT-AG_INK",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "integrated inductive field control",
+      "planned_measurements": [
+        "inductance",
+        "core loss",
+        "DC resistance"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-060",
+      "material_route_id": "PS-MR-030-BA",
+      "from_material": "PS-MAT-AG_INK",
+      "to_material": "PS-MAT-FERRITE_PASTE",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "integrated inductive field control",
+      "planned_measurements": [
+        "inductance",
+        "core loss",
+        "DC resistance"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-061",
+      "material_route_id": "PS-MR-031-AB",
+      "from_material": "PS-MAT-ABS",
+      "to_material": "PS-MAT-WAX_SUPPORT",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "moulded complex voids",
+      "planned_measurements": [
+        "thermal survival",
+        "complete removal",
+        "dimensional accuracy"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-062",
+      "material_route_id": "PS-MR-031-BA",
+      "from_material": "PS-MAT-WAX_SUPPORT",
+      "to_material": "PS-MAT-ABS",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "moulded complex voids",
+      "planned_measurements": [
+        "thermal survival",
+        "complete removal",
+        "dimensional accuracy"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-063",
+      "material_route_id": "PS-MR-032-AB",
+      "from_material": "PS-MAT-SS_316L",
+      "to_material": "PS-MAT-PARylene",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "corrosion barrier",
+      "planned_measurements": [
+        "pinholes",
+        "barrier permeability",
+        "adhesion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-064",
+      "material_route_id": "PS-MR-032-BA",
+      "from_material": "PS-MAT-PARylene",
+      "to_material": "PS-MAT-SS_316L",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "corrosion barrier",
+      "planned_measurements": [
+        "pinholes",
+        "barrier permeability",
+        "adhesion"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-065",
+      "material_route_id": "PS-MR-033-AB",
+      "from_material": "PS-MAT-FUSED_SILICA",
+      "to_material": "PS-MAT-RF_IC",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "optical-RF hybrid module",
+      "planned_measurements": [
+        "RF coupling",
+        "optical transmission",
+        "sealing"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-066",
+      "material_route_id": "PS-MR-033-BA",
+      "from_material": "PS-MAT-RF_IC",
+      "to_material": "PS-MAT-FUSED_SILICA",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "optical-RF hybrid module",
+      "planned_measurements": [
+        "RF coupling",
+        "optical transmission",
+        "sealing"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-067",
+      "material_route_id": "PS-MR-034-AB",
+      "from_material": "PS-MAT-GRAPHENE_INK",
+      "to_material": "PS-MAT-DIEL_UV",
+      "priority": "P1_TARGETED",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "carbon electronic isolation",
+      "planned_measurements": [
+        "surface resistance",
+        "dielectric leakage",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-068",
+      "material_route_id": "PS-MR-034-BA",
+      "from_material": "PS-MAT-DIEL_UV",
+      "to_material": "PS-MAT-GRAPHENE_INK",
+      "priority": "P2_MATRIX_EXPANSION",
+      "tier": "BENCH_WITH_APPROVED_MATERIALS",
+      "purpose": "carbon electronic isolation",
+      "planned_measurements": [
+        "surface resistance",
+        "dielectric leakage",
+        "fatigue"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-069",
+      "material_route_id": "PS-MR-035-AB",
+      "from_material": "PS-MAT-LIION_MODULE",
+      "to_material": "PS-MAT-SILICONE_E",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "battery impact isolation",
+      "planned_measurements": [
+        "thermal profile",
+        "vent clearance",
+        "mechanical retention"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-070",
+      "material_route_id": "PS-MR-035-BA",
+      "from_material": "PS-MAT-SILICONE_E",
+      "to_material": "PS-MAT-LIION_MODULE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "battery impact isolation",
+      "planned_measurements": [
+        "thermal profile",
+        "vent clearance",
+        "mechanical retention"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-071",
+      "material_route_id": "PS-MR-036-AB",
+      "from_material": "PS-MAT-HYDROGEL_E",
+      "to_material": "PS-MAT-ALGINATE",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "soft responsive microfluidic scaffold",
+      "planned_measurements": [
+        "swelling",
+        "diffusion",
+        "dynamic stiffness"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    },
+    {
+      "coupon_id": "PS-CQP-072",
+      "material_route_id": "PS-MR-036-BA",
+      "from_material": "PS-MAT-ALGINATE",
+      "to_material": "PS-MAT-HYDROGEL_E",
+      "priority": "P3_AFTER_BENCH",
+      "tier": "SPECIALIST_CONTROLLED_LAB",
+      "purpose": "soft responsive microfluidic scaffold",
+      "planned_measurements": [
+        "swelling",
+        "diffusion",
+        "dynamic stiffness"
+      ],
+      "required_study_design": [
+        "at least one matched single-material control",
+        "propose three independent builds; replicate number must be justified by study power",
+        "measure as-printed and after planned postprocess",
+        "record directional inverse in same design group",
+        "quantify uncertainty and instrument calibration",
+        "document physical interface imaging and environmental history",
+        "capture raw instrument files with source hashes"
+      ],
+      "threshold_source": "FUNCTIONAL_CONTRACT_OR_ACCEPTED_STANDARD_REQUIRED",
+      "threshold_values": null,
+      "instrument_requirements": [
+        "traceable dimension/geometry metrology",
+        "temperature/humidity logging",
+        "process-specific interface/electrical/chemical or other metrology",
+        "calibration IDs and uncertainty"
+      ],
+      "stop_conditions": [
+        "uncontrolled chemical reaction or exposure",
+        "equipment exceeded declared envelope",
+        "sealing or containment not verified",
+        "excessive temperature or pressure",
+        "missing operator approval"
+      ],
+      "status": "DESIGNED_NOT_EXECUTED",
+      "physical_tested": false,
+      "production_approved": false
+    }
+  ]
+}

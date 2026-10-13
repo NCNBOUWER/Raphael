@@ -1,0 +1,18 @@
+{
+  "cpu_family": null,
+  "cpu_sku": null,
+  "source_reference": null,
+  "module_xyz_mm": null,
+  "machine_internal_envelope_mm": null,
+  "margin_mm": null,
+  "processor_peak_power_w": null,
+  "cooling_capacity_w": null,
+  "average_system_power_w": null,
+  "battery_capacity_wh": null,
+  "workload_score_n": null,
+  "baseline_i3_workload_n": null,
+  "incremental_cost_aud": null,
+  "available_budget_aud": null,
+  "registered_machine_cells": null,
+  "internal_sourced_tray_preloaded": null
+}

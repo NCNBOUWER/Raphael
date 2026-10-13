@@ -1,0 +1,1069 @@
+{
+  "schema": "cgx.printspace.technology_material_candidate_crosswalk.v0.3",
+  "id": "CGX-F4D-TECHCROSS-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "upstream": {
+    "repo": "NCNBOUWER/Raphael",
+    "branch": "feature/universal-tech-printer-multiphysics-20261006",
+    "path": "Raphael_Packages/Universal_Tech_Printer/printable_technology_catalogue_v0_1.json",
+    "artifact_id": "UTP-CATALOGUE-001"
+  },
+  "references": [
+    "CGX-F4D-MATERIAL-SEEDS-20261008",
+    "CGX-F4D-SEQ-20261008"
+  ],
+  "records": [
+    {
+      "tech_id": "PT-001",
+      "canonical_name": "Beam / lattice / shell",
+      "canonical_category": "Structure",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PA12"
+      ],
+      "geometry_seed": "beam, shell, lattice",
+      "acceptance_measurands": "dimensional and structural load",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-002",
+      "canonical_name": "Compliant flexure / spring",
+      "canonical_category": "Structure",
+      "material_seed_ids": [
+        "PS-MAT-TPU",
+        "PS-MAT-PP",
+        "PS-MAT-PA12"
+      ],
+      "geometry_seed": "flexure, hinge, spring",
+      "acceptance_measurands": "fatigue and set",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-003",
+      "canonical_name": "Gear / cam / pulley",
+      "canonical_category": "Mechanism",
+      "material_seed_ids": [
+        "PS-MAT-PA12",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PLA"
+      ],
+      "geometry_seed": "gear, cam, pulley",
+      "acceptance_measurands": "wear backlash torque",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-004",
+      "canonical_name": "Bearing/bushing interface",
+      "canonical_category": "Mechanism",
+      "material_seed_ids": [
+        "PS-MAT-PA12",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "bearing, bushing",
+      "acceptance_measurands": "friction wear and clearance",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-005",
+      "canonical_name": "Seal / gasket",
+      "canonical_category": "Boundary",
+      "material_seed_ids": [
+        "PS-MAT-PDMS",
+        "PS-MAT-SILICONE_E",
+        "PS-MAT-TPU"
+      ],
+      "geometry_seed": "gasket, groove",
+      "acceptance_measurands": "compression set and leak",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-006",
+      "canonical_name": "Pressure/vacuum cavity",
+      "canonical_category": "Boundary",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PARylene"
+      ],
+      "geometry_seed": "sealed cavity, valve",
+      "acceptance_measurands": "leak rate and pressure cycle",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-007",
+      "canonical_name": "Fluid/gas manifold",
+      "canonical_category": "Fluidics",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-PDMS",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "channel, manifold",
+      "acceptance_measurands": "pressure loss and chemical contamination",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-008",
+      "canonical_name": "Heat spreader / radiator",
+      "canonical_category": "Thermal",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-AL_6061",
+        "PS-MAT-BN_CERAMIC"
+      ],
+      "geometry_seed": "heat fin, spreader",
+      "acceptance_measurands": "heat flux and hotspots",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-009",
+      "canonical_name": "Thermal insulation / break",
+      "canonical_category": "Thermal",
+      "material_seed_ids": [
+        "PS-MAT-SILICA",
+        "PS-MAT-BN_CERAMIC",
+        "PS-MAT-PEEK"
+      ],
+      "geometry_seed": "insulation layer",
+      "acceptance_measurands": "conductivity and breakdown",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-010",
+      "canonical_name": "EMI / optical / dust shield",
+      "canonical_category": "Shielding",
+      "material_seed_ids": [
+        "PS-MAT-AG_INK",
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-OPTICAL_RESIN"
+      ],
+      "geometry_seed": "mesh, shield",
+      "acceptance_measurands": "EMI attenuation and optical response",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-011",
+      "canonical_name": "Conductor / bus / trace",
+      "canonical_category": "Electrical",
+      "material_seed_ids": [
+        "PS-MAT-AG_INK",
+        "PS-MAT-CU_INK",
+        "PS-MAT-CU_OFHC"
+      ],
+      "geometry_seed": "trace, bus",
+      "acceptance_measurands": "resistance and thermal stability",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-012",
+      "canonical_name": "Resistor / heater",
+      "canonical_category": "Electrical",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "serpentine resistor",
+      "acceptance_measurands": "sheet resistance and heat",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-013",
+      "canonical_name": "Capacitor",
+      "canonical_category": "Electrical",
+      "material_seed_ids": [
+        "PS-MAT-DIEL_UV",
+        "PS-MAT-AG_INK",
+        "PS-MAT-BT_CERAMIC"
+      ],
+      "geometry_seed": "layered parallel plate",
+      "acceptance_measurands": "capacitance leakage and dielectric breakdown",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-014",
+      "canonical_name": "Inductor / transformer / coil",
+      "canonical_category": "Electrical",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-FERRITE_PASTE",
+        "PS-MAT-IRON_COMPOSITE"
+      ],
+      "geometry_seed": "spiral coil, solenoid",
+      "acceptance_measurands": "L Q factor and heating",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-015",
+      "canonical_name": "Antenna / transmission line / resonator",
+      "canonical_category": "RF",
+      "material_seed_ids": [
+        "PS-MAT-AG_INK",
+        "PS-MAT-CU_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "antenna, resonator",
+      "acceptance_measurands": "S parameters and impedance",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-016",
+      "canonical_name": "Contact / connector / pad",
+      "canonical_category": "Electrical",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-AG_INK",
+        "PS-MAT-PARylene"
+      ],
+      "geometry_seed": "pad, terminal",
+      "acceptance_measurands": "contact resistance and retention",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-017",
+      "canonical_name": "Printed fuse / current limiter",
+      "canonical_category": "Protection",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-AG_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "fusible trace",
+      "acceptance_measurands": "current limit threshold and thermal isolation",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-018",
+      "canonical_name": "Temperature sensor",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "meander sensor",
+      "acceptance_measurands": "calibration and thermal drift",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-019",
+      "canonical_name": "Strain / force sensor",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-PA12",
+        "PS-MAT-TPU"
+      ],
+      "geometry_seed": "strain gauge, flexure",
+      "acceptance_measurands": "gauge factor and hysteresis",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-020",
+      "canonical_name": "Pressure / capacitive sensor",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-DIEL_UV",
+        "PS-MAT-AG_INK",
+        "PS-MAT-PDMS"
+      ],
+      "geometry_seed": "membrane capacitor",
+      "acceptance_measurands": "sensitivity and leakage",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-021",
+      "canonical_name": "Humidity / gas sensor",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-ALUMINA"
+      ],
+      "geometry_seed": "gas membrane electrode",
+      "acceptance_measurands": "cross sensitivity and response",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-022",
+      "canonical_name": "Electrochemical water-quality sensor",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-CU_INK",
+        "PS-MAT-PDMS"
+      ],
+      "geometry_seed": "electrode microfluidic",
+      "acceptance_measurands": "selectivity response and contamination",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-023",
+      "canonical_name": "Optical / photodetector interface",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-OPTICAL_RESIN",
+        "PS-MAT-CAMERA_MODULE",
+        "PS-MAT-PHOSPHOR_FILM"
+      ],
+      "geometry_seed": "aperture, optical window",
+      "acceptance_measurands": "optical throughput noise and alignment",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-024",
+      "canonical_name": "Magnetic / field sensor interface",
+      "canonical_category": "Sensor",
+      "material_seed_ids": [
+        "PS-MAT-FERRITE_PASTE",
+        "PS-MAT-NDFEB_BONDED",
+        "PS-MAT-RF_IC"
+      ],
+      "geometry_seed": "flux concentrator sensor",
+      "acceptance_measurands": "magnetic calibration and temperature",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-025",
+      "canonical_name": "Solenoid",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-IRON_COMPOSITE",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "coil plunger",
+      "acceptance_measurands": "force stroke and heating",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-026",
+      "canonical_name": "Motor / stator-rotor assembly",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-IRON_COMPOSITE",
+        "PS-MAT-NDFEB_BONDED"
+      ],
+      "geometry_seed": "stator rotor",
+      "acceptance_measurands": "torque efficiency and insulation",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-027",
+      "canonical_name": "Voice-coil / linear EM actuator",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-NDFEB_BONDED",
+        "PS-MAT-TPU"
+      ],
+      "geometry_seed": "coil flexure",
+      "acceptance_measurands": "force frequency and fatigue",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-028",
+      "canonical_name": "Pneumatic / hydraulic actuator",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-PDMS",
+        "PS-MAT-PETG",
+        "PS-MAT-TPU"
+      ],
+      "geometry_seed": "piston chamber",
+      "acceptance_measurands": "pressure force and leak",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-029",
+      "canonical_name": "Compliant / electrothermal actuator",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-TPU",
+        "PS-MAT-PA12"
+      ],
+      "geometry_seed": "thermal flexure",
+      "acceptance_measurands": "displacement lifetime and power",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-030",
+      "canonical_name": "Piezo / dielectric-elastomer actuator",
+      "canonical_category": "Actuator",
+      "material_seed_ids": [
+        "PS-MAT-PDMS",
+        "PS-MAT-TPU",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "thin membrane actuator",
+      "acceptance_measurands": "breakdown strain and cycles",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-031",
+      "canonical_name": "Battery cell",
+      "canonical_category": "Energy",
+      "material_seed_ids": [
+        "PS-MAT-LFP_CATHODE",
+        "PS-MAT-GRAPHITE_ANODE",
+        "PS-MAT-GEL_ELECTROLYTE"
+      ],
+      "geometry_seed": "electrode separator stack",
+      "acceptance_measurands": "cycle capacity impedance and abuse",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-032",
+      "canonical_name": "Supercapacitor",
+      "canonical_category": "Energy",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_SUPERCAP",
+        "PS-MAT-GEL_ELECTROLYTE",
+        "PS-MAT-CU_OFHC"
+      ],
+      "geometry_seed": "porous electrode",
+      "acceptance_measurands": "capacitance ESR and leakage",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-033",
+      "canonical_name": "Photovoltaic layer/device",
+      "canonical_category": "Energy",
+      "material_seed_ids": [
+        "PS-MAT-SILICON_DIE",
+        "PS-MAT-PHOSPHOR_FILM",
+        "PS-MAT-FUSED_SILICA"
+      ],
+      "geometry_seed": "photovoltaic junction interface",
+      "acceptance_measurands": "conversion efficiency and lifetime",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-034",
+      "canonical_name": "Inductive power transfer",
+      "canonical_category": "Energy",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-FERRITE_PASTE",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "inductive receiver coil",
+      "acceptance_measurands": "coupling Q factor and power loss",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-035",
+      "canonical_name": "Thermoelectric generator/cooler",
+      "canonical_category": "Energy",
+      "material_seed_ids": [
+        "PS-MAT-BN_CERAMIC",
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-AL_6061"
+      ],
+      "geometry_seed": "thermoelectric module integration",
+      "acceptance_measurands": "thermal gradient and electrical output",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-036",
+      "canonical_name": "RGB gas-discharge pixel",
+      "canonical_category": "Display",
+      "material_seed_ids": [
+        "PS-MAT-SILICA",
+        "PS-MAT-AG_INK",
+        "PS-MAT-GAS_CAVITY"
+      ],
+      "geometry_seed": "sealed plasma cell",
+      "acceptance_measurands": "gas seal optical output and hazards",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-037",
+      "canonical_name": "Electroluminescent thin-film element",
+      "canonical_category": "Display",
+      "material_seed_ids": [
+        "PS-MAT-PHOSPHOR_FILM",
+        "PS-MAT-DIEL_UV",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "luminescent layered stack",
+      "acceptance_measurands": "spectrum and drive stability",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-038",
+      "canonical_name": "Hybrid semiconductor LED",
+      "canonical_category": "Display",
+      "material_seed_ids": [
+        "PS-MAT-LED_PACKAGE",
+        "PS-MAT-OPTICAL_RESIN",
+        "PS-MAT-CU_OFHC"
+      ],
+      "geometry_seed": "semiconductor light package",
+      "acceptance_measurands": "junction thermal and optical output",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-039",
+      "canonical_name": "Waveguide / diffuser / reflector",
+      "canonical_category": "Optics",
+      "material_seed_ids": [
+        "PS-MAT-OPTICAL_RESIN",
+        "PS-MAT-PMMA",
+        "PS-MAT-FUSED_SILICA"
+      ],
+      "geometry_seed": "optical guide",
+      "acceptance_measurands": "attenuation and scattering",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-040",
+      "canonical_name": "Printed thin-film transistor / active switch",
+      "canonical_category": "Compute",
+      "material_seed_ids": [
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "thin-film gate channel",
+      "acceptance_measurands": "switching ratio and stability",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-041",
+      "canonical_name": "Printed simple logic / oscillator",
+      "canonical_category": "Compute",
+      "material_seed_ids": [
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-AG_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "logic gate layout",
+      "acceptance_measurands": "oscillation stability and power",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-042",
+      "canonical_name": "Printed memory candidate",
+      "canonical_category": "Compute",
+      "material_seed_ids": [
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "memory bit candidate",
+      "acceptance_measurands": "retention endurance and write energy",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-043",
+      "canonical_name": "Hybrid compute island",
+      "canonical_category": "Compute",
+      "material_seed_ids": [
+        "PS-MAT-SILICON_DIE",
+        "PS-MAT-PETG",
+        "PS-MAT-CU_OFHC"
+      ],
+      "geometry_seed": "compute carrier",
+      "acceptance_measurands": "IO throughput and thermal stability",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-044",
+      "canonical_name": "RFID / NFC identity node",
+      "canonical_category": "Comms",
+      "material_seed_ids": [
+        "PS-MAT-RF_IC",
+        "PS-MAT-CU_INK",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "NFC antenna",
+      "acceptance_measurands": "tuning read range and security",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-045",
+      "canonical_name": "RF transceiver body/interface",
+      "canonical_category": "Comms",
+      "material_seed_ids": [
+        "PS-MAT-RF_IC",
+        "PS-MAT-AG_INK",
+        "PS-MAT-DIEL_UV"
+      ],
+      "geometry_seed": "RF matching traces",
+      "acceptance_measurands": "link budget spectral and regulatory",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-046",
+      "canonical_name": "Optical / IR link",
+      "canonical_category": "Comms",
+      "material_seed_ids": [
+        "PS-MAT-LED_PACKAGE",
+        "PS-MAT-CAMERA_MODULE",
+        "PS-MAT-OPTICAL_RESIN"
+      ],
+      "geometry_seed": "IR guide and aperture",
+      "acceptance_measurands": "optical link margin alignment",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-047",
+      "canonical_name": "Filter / membrane module",
+      "canonical_category": "Environment",
+      "material_seed_ids": [
+        "PS-MAT-PDMS",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-GRAPHENE_INK"
+      ],
+      "geometry_seed": "membrane, filter",
+      "acceptance_measurands": "selectivity and flux",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-048",
+      "canonical_name": "Catalytic/reactive surface",
+      "canonical_category": "Environment",
+      "material_seed_ids": [
+        "PS-MAT-ALUMINA",
+        "PS-MAT-SS_316L",
+        "PS-MAT-CARBON_INK"
+      ],
+      "geometry_seed": "catalytic surface",
+      "acceptance_measurands": "conversion selectivity and ageing",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-049",
+      "canonical_name": "Microfluidic lab / assay cartridge",
+      "canonical_category": "Lab",
+      "material_seed_ids": [
+        "PS-MAT-PDMS",
+        "PS-MAT-OPTICAL_RESIN",
+        "PS-MAT-ALGINATE"
+      ],
+      "geometry_seed": "microfluidic assay",
+      "acceptance_measurands": "flow mixing and contamination",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-050",
+      "canonical_name": "Water-quality / treatment node",
+      "canonical_category": "Water",
+      "material_seed_ids": [
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-PETG",
+        "PS-MAT-PDMS"
+      ],
+      "geometry_seed": "water-quality electrode channel",
+      "acceptance_measurands": "calibration and fluid isolation",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-051",
+      "canonical_name": "Post-mix nozzle / mixer head",
+      "canonical_category": "Tooling",
+      "material_seed_ids": [
+        "PS-MAT-SS_316L",
+        "PS-MAT-PEEK",
+        "PS-MAT-PDMS"
+      ],
+      "geometry_seed": "metered mixer nozzle",
+      "acceptance_measurands": "composition deviation mixing and clog",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-052",
+      "canonical_name": "Pump / valve / manifold module",
+      "canonical_category": "Tooling",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-PDMS",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "microvalve pump",
+      "acceptance_measurands": "flow-pressure and leak",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-053",
+      "canonical_name": "Gripper / end effector",
+      "canonical_category": "Robotics",
+      "material_seed_ids": [
+        "PS-MAT-TPU",
+        "PS-MAT-PA12",
+        "PS-MAT-CARBON_INK"
+      ],
+      "geometry_seed": "soft gripper",
+      "acceptance_measurands": "payload grip-force and fatigue",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-054",
+      "canonical_name": "Calibration artefact / probe fixture",
+      "canonical_category": "Metrology",
+      "material_seed_ids": [
+        "PS-MAT-SS_316L",
+        "PS-MAT-PLA",
+        "PS-MAT-ALUMINA"
+      ],
+      "geometry_seed": "reference coupon",
+      "acceptance_measurands": "traceable dimensional tolerance",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-055",
+      "canonical_name": "Child printer skeleton and tool bus",
+      "canonical_category": "Printer",
+      "material_seed_ids": [
+        "PS-MAT-AL_6061",
+        "PS-MAT-PETG",
+        "PS-MAT-CU_OFHC"
+      ],
+      "geometry_seed": "printer skeleton",
+      "acceptance_measurands": "rigidity geometry and E stop",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-056",
+      "canonical_name": "Road/guideway functional coating",
+      "canonical_category": "Coating",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "guideway surface",
+      "acceptance_measurands": "wear conductivity and repair",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-057",
+      "canonical_name": "Building functional coating",
+      "canonical_category": "Coating",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-BN_CERAMIC",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "functional wall surface",
+      "acceptance_measurands": "fire performance and lifecycle",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-058",
+      "canonical_name": "Solar Hull / structural photovoltaic skin",
+      "canonical_category": "Skin",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-SILICON_DIE",
+        "PS-MAT-OPTICAL_RESIN"
+      ],
+      "geometry_seed": "solar skin integration",
+      "acceptance_measurands": "conversion efficiency and adhesion",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-059",
+      "canonical_name": "Structural-health sensor skin",
+      "canonical_category": "Skin",
+      "material_seed_ids": [
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-TPU",
+        "PS-MAT-AG_INK"
+      ],
+      "geometry_seed": "sensor skin",
+      "acceptance_measurands": "damage sensitivity fatigue and EMI",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-060",
+      "canonical_name": "Recovered polymer feed",
+      "canonical_category": "Circular Feed",
+      "material_seed_ids": [
+        "PS-MAT-PETG",
+        "PS-MAT-PLA",
+        "PS-MAT-PA12"
+      ],
+      "geometry_seed": "recovered polymer feed",
+      "acceptance_measurands": "contamination melt rheology and coupons",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-061",
+      "canonical_name": "Recovered graphene conductive feed",
+      "canonical_category": "Circular Feed",
+      "material_seed_ids": [
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-CU_INK"
+      ],
+      "geometry_seed": "recovered conductive feed",
+      "acceptance_measurands": "purity dispersion and electrical performance",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-062",
+      "canonical_name": "Mineral/regolith composite feed",
+      "canonical_category": "Circular Feed",
+      "material_seed_ids": [
+        "PS-MAT-SILICA",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "regolith derived feed candidate",
+      "acceptance_measurands": "feed purity sinter and strength",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-063",
+      "canonical_name": "Bio-derived binder/carrier",
+      "canonical_category": "Circular Feed",
+      "material_seed_ids": [
+        "PS-MAT-ALGINATE",
+        "PS-MAT-GELATIN",
+        "PS-MAT-PDMS"
+      ],
+      "geometry_seed": "bio-derived binder",
+      "acceptance_measurands": "batch stability and contamination",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-064",
+      "canonical_name": "Regolith structural element",
+      "canonical_category": "Space",
+      "material_seed_ids": [
+        "PS-MAT-ALUMINA",
+        "PS-MAT-SILICA",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "offworld structural unit",
+      "acceptance_measurands": "mechanical and environment qualification",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-065",
+      "canonical_name": "Locally refined metal wire/truss",
+      "canonical_category": "Space",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-AL_6061",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "metal wire and truss",
+      "acceptance_measurands": "composition structure and weld",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-066",
+      "canonical_name": "Shield / berm / landing-pad construction",
+      "canonical_category": "Space",
+      "material_seed_ids": [
+        "PS-MAT-SILICA",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-SS_316L"
+      ],
+      "geometry_seed": "shield, berm",
+      "acceptance_measurands": "dose attenuation and structural quality",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-067",
+      "canonical_name": "Beneficiation/refinery machine parts",
+      "canonical_category": "Resource",
+      "material_seed_ids": [
+        "PS-MAT-SS_316L",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-PEEK"
+      ],
+      "geometry_seed": "refinery pump and separation",
+      "acceptance_measurands": "corrosion fatigue and retention",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-068",
+      "canonical_name": "Mark integrated functional body",
+      "canonical_category": "Römer",
+      "material_seed_ids": [
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-SS_316L",
+        "PS-MAT-BN_CERAMIC"
+      ],
+      "geometry_seed": "integrated actuator housing",
+      "acceptance_measurands": "multiphysics and dynamic load",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-069",
+      "canonical_name": "Luke / InterSol support module",
+      "canonical_category": "Römer",
+      "material_seed_ids": [
+        "PS-MAT-AL_6061",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PEEK"
+      ],
+      "geometry_seed": "support module",
+      "acceptance_measurands": "thermomechanical and structural load",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    },
+    {
+      "tech_id": "PT-070",
+      "canonical_name": "Roaming/mobile UTP",
+      "canonical_category": "Printer",
+      "material_seed_ids": [
+        "PS-MAT-AL_6061",
+        "PS-MAT-PETG",
+        "PS-MAT-LFP_MODULE"
+      ],
+      "geometry_seed": "roaming manufacturing node",
+      "acceptance_measurands": "portable safety and system integration",
+      "route_policy": "FOLLOW_DIRECTIONAL_MATRIX; REQUIRE_CHEMISTRY_SPECIFIC_CONFIRMATION",
+      "evidence_state": "CANDIDATE_BINDING_NOT_PRODUCTION_APPROVAL",
+      "upstream_authority": "UTP-CATALOGUE-001"
+    }
+  ],
+  "count": 70,
+  "disclaimer": "Bindings are planning examples; they do not imply fabrication readiness, performance qualification, regulatory conformity, or semiconductor manufacture."
+}

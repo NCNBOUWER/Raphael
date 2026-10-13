@@ -1,0 +1,653 @@
+{
+  "schema": "cgx.printspace.demonstrator_gate_packets.v0.6",
+  "id": "CGX-F4D-DEMONSTRATORS-20261008",
+  "status": "DIGITAL_ONLY_OWNER_REVIEW",
+  "source_atlas": "CGX-F4D-PRODUCT-ATLAS-20261008",
+  "source_gap_register": "CGX-F4D-GAPS-20261008",
+  "dependency_graph": "CGX-F4D-SHARED-DEPENDENCY-20261008",
+  "packets": [
+    {
+      "product_id": "FO-01",
+      "name": "Butter Bot BB01",
+      "category": "operable",
+      "primary_grex": "Römer-Grex",
+      "status": "INTEGRATED_DEMONSTRATOR_GATE_PACKET / DIGITAL_ONLY",
+      "functional_contract": "Locate and deliver butter;  grip safely",
+      "technology_ids": [
+        "PT-001",
+        "PT-002",
+        "PT-003",
+        "PT-011",
+        "PT-018",
+        "PT-019",
+        "PT-025",
+        "PT-026",
+        "PT-031",
+        "PT-043",
+        "PT-053"
+      ],
+      "component_functions": [
+        {
+          "ref": "PT-001",
+          "function": "Beam / lattice / shell"
+        },
+        {
+          "ref": "PT-002",
+          "function": "Compliant flexure / spring"
+        },
+        {
+          "ref": "PT-003",
+          "function": "Gear / cam / pulley"
+        },
+        {
+          "ref": "PT-011",
+          "function": "Conductor / bus / trace"
+        },
+        {
+          "ref": "PT-018",
+          "function": "Temperature sensor"
+        },
+        {
+          "ref": "PT-019",
+          "function": "Strain / force sensor"
+        },
+        {
+          "ref": "PT-025",
+          "function": "Solenoid"
+        },
+        {
+          "ref": "PT-026",
+          "function": "Motor / stator-rotor assembly"
+        },
+        {
+          "ref": "PT-031",
+          "function": "Battery cell"
+        },
+        {
+          "ref": "PT-043",
+          "function": "Hybrid compute island"
+        },
+        {
+          "ref": "PT-053",
+          "function": "Gripper / end effector"
+        }
+      ],
+      "hybrid_insert_candidates": [
+        "MCU",
+        "camera",
+        "motors",
+        "cell"
+      ],
+      "system_acceptance_tests": [
+        "grip",
+        "force",
+        "runtime",
+        "stop"
+      ],
+      "material_family_path": [
+        "MT",
+        "TP",
+        "EL",
+        "CI",
+        "DE",
+        "MG",
+        "SC",
+        "BT"
+      ],
+      "material_seed_refs": [
+        "PS-MAT-PETG",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PA12",
+        "PS-MAT-TPU",
+        "PS-MAT-PP",
+        "PS-MAT-PLA",
+        "PS-MAT-AG_INK",
+        "PS-MAT-CU_INK",
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-IRON_COMPOSITE",
+        "PS-MAT-DIEL_UV",
+        "PS-MAT-NDFEB_BONDED",
+        "PS-MAT-LFP_CATHODE",
+        "PS-MAT-GRAPHITE_ANODE",
+        "PS-MAT-GEL_ELECTROLYTE",
+        "PS-MAT-SILICON_DIE"
+      ],
+      "environment_opportunity_ids": [
+        "PS-OPP-012"
+      ],
+      "stages": [
+        {
+          "step": 1,
+          "family": "MT",
+          "environment": "ENV-3",
+          "planned_operation": "Complete metal formation and controlled energetic post-processing",
+          "process_pair_id": null,
+          "transition_class": null,
+          "can_if": "Verified machine and feedstock envelopes",
+          "survival_gate": "Verify initial substrate",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 2,
+          "family": "TP",
+          "environment": "ENV-0",
+          "planned_operation": "Print polymer frame, cavities, service ports and mechanical interfaces",
+          "process_pair_id": "PS-PAIR-MT-TP",
+          "transition_class": "T",
+          "can_if": "Engineer atmosphere or interface transition; verify cumulative exposure",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 3,
+          "family": "EL",
+          "environment": "ENV-0",
+          "planned_operation": "Print compliant mechanisms and verify cyclic survival",
+          "process_pair_id": "PS-PAIR-TP-EL",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 4,
+          "family": "CI",
+          "environment": "ENV-1",
+          "planned_operation": "Create and qualify conductive paths, pads and coils",
+          "process_pair_id": "PS-PAIR-EL-CI",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 5,
+          "family": "DE",
+          "environment": "ENV-1",
+          "planned_operation": "Print and inspect dielectric barriers and encapsulation",
+          "process_pair_id": "PS-PAIR-CI-DE",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 6,
+          "family": "MG",
+          "environment": "ENV-1",
+          "planned_operation": "Print or insert magnetic functional region and verify field behavior",
+          "process_pair_id": "PS-PAIR-DE-MG",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 7,
+          "family": "SC",
+          "environment": "ENV-1",
+          "planned_operation": "Insert independently manufactured electronic modules in a protected stage",
+          "process_pair_id": "PS-PAIR-MG-SC",
+          "transition_class": "M",
+          "can_if": "Insert separately qualified module; preserve service access",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 8,
+          "family": "BT",
+          "environment": "ENV-0",
+          "planned_operation": "Install protected serviceable energy module as the final sensitive insertion",
+          "process_pair_id": "PS-PAIR-SC-BT",
+          "transition_class": "M",
+          "can_if": "Insert separately qualified module; preserve service access",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        }
+      ],
+      "gap_tickets": [
+        {
+          "ticket_id": "PS-GAP-0053",
+          "product_id": "FO-01",
+          "primary_owner": "Römer-Grex",
+          "category": "operable",
+          "gap": "joint wear",
+          "classification": "thermal_and_lifecycle",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        },
+        {
+          "ticket_id": "PS-GAP-0054",
+          "product_id": "FO-01",
+          "primary_owner": "Römer-Grex",
+          "category": "operable",
+          "gap": " motor heating",
+          "classification": "thermal_and_lifecycle",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        },
+        {
+          "ticket_id": "PS-GAP-0055",
+          "product_id": "FO-01",
+          "primary_owner": "Römer-Grex",
+          "category": "operable",
+          "gap": " vision",
+          "classification": "evidence_and_models",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        },
+        {
+          "ticket_id": "PS-GAP-0056",
+          "product_id": "FO-01",
+          "primary_owner": "Römer-Grex",
+          "category": "operable",
+          "gap": " runtime",
+          "classification": "evidence_and_models",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        }
+      ],
+      "selection_state": {
+        "exact_supplier_parts": [],
+        "supplier_lot_passports": [],
+        "resolved_geometry_tolerances": [],
+        "measured_property_receipts": [],
+        "qualified_machine_cells": [],
+        "cad_revision": null
+      },
+      "gates": {
+        "all_stages_design_only": true,
+        "physical_recipe_verified": false,
+        "physical_tested": false,
+        "production_approved": false,
+        "hardware_safety_authority": "NOT_GRANTED",
+        "owner_review_required": true
+      },
+      "next_independent_proofs": [
+        "Select exact sourced-versus-print-research module choices with part/passport identity.",
+        "Bind one CAD revision and SI geometry/tolerance set.",
+        "Populate only source-traceable or measured material operands with uncertainty.",
+        "Run coupon sequence for each directional interface and cumulative-exposure gate.",
+        "Run system acceptance tests only after component and C0 safety gates pass."
+      ]
+    },
+    {
+      "product_id": "FE-04",
+      "name": "Water-quality sensing cell",
+      "category": "eco",
+      "primary_grex": "Eco-Grex",
+      "status": "INTEGRATED_DEMONSTRATOR_GATE_PACKET / DIGITAL_ONLY",
+      "functional_contract": "Measure field chemistry and water temperature",
+      "technology_ids": [
+        "PT-007",
+        "PT-018",
+        "PT-021",
+        "PT-022",
+        "PT-043",
+        "PT-049",
+        "PT-050",
+        "PT-048"
+      ],
+      "component_functions": [
+        {
+          "ref": "PT-007",
+          "function": "Fluid/gas manifold"
+        },
+        {
+          "ref": "PT-018",
+          "function": "Temperature sensor"
+        },
+        {
+          "ref": "PT-021",
+          "function": "Humidity / gas sensor"
+        },
+        {
+          "ref": "PT-022",
+          "function": "Electrochemical water-quality sensor"
+        },
+        {
+          "ref": "PT-043",
+          "function": "Hybrid compute island"
+        },
+        {
+          "ref": "PT-049",
+          "function": "Microfluidic lab / assay cartridge"
+        },
+        {
+          "ref": "PT-050",
+          "function": "Water-quality / treatment node"
+        },
+        {
+          "ref": "PT-048",
+          "function": "Catalytic/reactive surface"
+        }
+      ],
+      "hybrid_insert_candidates": [
+        "electrode readout",
+        "processor"
+      ],
+      "system_acceptance_tests": [
+        "accuracy",
+        "leak",
+        "cleaning"
+      ],
+      "material_family_path": [
+        "TP",
+        "FL",
+        "CI",
+        "DE",
+        "SC",
+        "BT"
+      ],
+      "material_seed_refs": [
+        "PS-MAT-PETG",
+        "PS-MAT-PDMS",
+        "PS-MAT-SS_316L",
+        "PS-MAT-PEDOT_PSS",
+        "PS-MAT-CARBON_INK",
+        "PS-MAT-AG_INK",
+        "PS-MAT-ALUMINA",
+        "PS-MAT-GRAPHENE_INK",
+        "PS-MAT-CU_INK",
+        "PS-MAT-SILICON_DIE",
+        "PS-MAT-CU_OFHC",
+        "PS-MAT-OPTICAL_RESIN",
+        "PS-MAT-ALGINATE"
+      ],
+      "environment_opportunity_ids": [
+        "PS-OPP-008"
+      ],
+      "stages": [
+        {
+          "step": 1,
+          "family": "TP",
+          "environment": "ENV-0",
+          "planned_operation": "Print polymer frame, cavities, service ports and mechanical interfaces",
+          "process_pair_id": null,
+          "transition_class": null,
+          "can_if": "Verified machine and feedstock envelopes",
+          "survival_gate": "Verify initial substrate",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 2,
+          "family": "FL",
+          "environment": "ENV-2",
+          "planned_operation": "Build and clear fluidic sacrificial paths or controlled cavities",
+          "process_pair_id": "PS-PAIR-TP-FL",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 3,
+          "family": "CI",
+          "environment": "ENV-1",
+          "planned_operation": "Create and qualify conductive paths, pads and coils",
+          "process_pair_id": "PS-PAIR-FL-CI",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 4,
+          "family": "DE",
+          "environment": "ENV-1",
+          "planned_operation": "Print and inspect dielectric barriers and encapsulation",
+          "process_pair_id": "PS-PAIR-CI-DE",
+          "transition_class": "S",
+          "can_if": "Sequentially condition prior layer; demonstrate survival",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 5,
+          "family": "SC",
+          "environment": "ENV-1",
+          "planned_operation": "Insert independently manufactured electronic modules in a protected stage",
+          "process_pair_id": "PS-PAIR-DE-SC",
+          "transition_class": "M",
+          "can_if": "Insert separately qualified module; preserve service access",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        },
+        {
+          "step": 6,
+          "family": "BT",
+          "environment": "ENV-0",
+          "planned_operation": "Install protected serviceable energy module as the final sensitive insertion",
+          "process_pair_id": "PS-PAIR-SC-BT",
+          "transition_class": "M",
+          "can_if": "Insert separately qualified module; preserve service access",
+          "survival_gate": "Evaluate accumulated exposures of ALL previously deposited regions",
+          "stage_status": "DESIGN_ONLY_NOT_RUN"
+        }
+      ],
+      "gap_tickets": [
+        {
+          "ticket_id": "PS-GAP-0112",
+          "product_id": "FE-04",
+          "primary_owner": "Eco-Grex",
+          "category": "eco",
+          "gap": "electrode fouling",
+          "classification": "evidence_and_models",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        },
+        {
+          "ticket_id": "PS-GAP-0113",
+          "product_id": "FE-04",
+          "primary_owner": "Eco-Grex",
+          "category": "eco",
+          "gap": " calibration",
+          "classification": "evidence_and_models",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        },
+        {
+          "ticket_id": "PS-GAP-0114",
+          "product_id": "FE-04",
+          "primary_owner": "Eco-Grex",
+          "category": "eco",
+          "gap": " biosecurity",
+          "classification": "safety_and_regulatory",
+          "evidence_state": "OPEN_NOT_TESTED",
+          "next_gate": "Define measurable acceptance, material/process authority and real evidence source",
+          "production_approved": false
+        }
+      ],
+      "selection_state": {
+        "exact_supplier_parts": [],
+        "supplier_lot_passports": [],
+        "resolved_geometry_tolerances": [],
+        "measured_property_receipts": [],
+        "qualified_machine_cells": [],
+        "cad_revision": null
+      },
+      "gates": {
+        "all_stages_design_only": true,
+        "physical_recipe_verified": false,
+        "physical_tested": false,
+        "production_approved": false,
+        "hardware_safety_authority": "NOT_GRANTED",
+        "owner_review_required": true
+      },
+      "next_independent_proofs": [
+        "Select exact sourced-versus-print-research module choices with part/passport identity.",
+        "Bind one CAD revision and SI geometry/tolerance set.",
+        "Populate only source-traceable or measured material operands with uncertainty.",
+        "Run coupon sequence for each directional interface and cumulative-exposure gate.",
+        "Run system acceptance tests only after component and C0 safety gates pass."
+      ]
+    }
+  ],
+  "cross_demonstrator_reuse": {
+    "products": [
+      "FO-01",
+      "FE-04"
+    ],
+    "shared_technology_ids": [
+      "PT-018",
+      "PT-043"
+    ],
+    "shared_primitives": [
+      {
+        "technology_id": "PT-018",
+        "canonical_function": "Temperature sensor",
+        "product_reuse_count": 45,
+        "grex_domain_count": 9,
+        "grex_groups": [
+          "backend",
+          "civil",
+          "eco",
+          "operable",
+          "operations",
+          "research",
+          "romer",
+          "usable",
+          "wearable"
+        ],
+        "products": [
+          "FB-04",
+          "FB-05",
+          "FB-09",
+          "FC-01",
+          "FC-02",
+          "FC-03",
+          "FC-04",
+          "FC-05",
+          "FC-07",
+          "FD-01",
+          "FD-03",
+          "FD-04",
+          "FD-06",
+          "FD-08",
+          "FD-09",
+          "FE-02",
+          "FE-03",
+          "FE-04",
+          "FE-05",
+          "FE-08",
+          "FE-09",
+          "FO-01",
+          "FO-02",
+          "FO-04",
+          "FO-05",
+          "FO-06",
+          "FO-07",
+          "FO-08",
+          "FO-10",
+          "FR-01",
+          "FR-02",
+          "FR-03",
+          "FR-10",
+          "FR-11",
+          "FR-12",
+          "FR-13",
+          "FS-02",
+          "FS-03",
+          "FS-04",
+          "FU-08",
+          "FU-09",
+          "FW-01",
+          "FW-04",
+          "FW-05",
+          "FW-07"
+        ],
+        "physical_qualified": false,
+        "rank_basis": "product_reuse_count_only",
+        "reuse_rank": 4
+      },
+      {
+        "technology_id": "PT-043",
+        "canonical_function": "Hybrid compute island",
+        "product_reuse_count": 52,
+        "grex_domain_count": 8,
+        "grex_groups": [
+          "backend",
+          "eco",
+          "operable",
+          "operations",
+          "research",
+          "romer",
+          "usable",
+          "wearable"
+        ],
+        "products": [
+          "FB-01",
+          "FB-02",
+          "FB-03",
+          "FB-04",
+          "FB-05",
+          "FB-06",
+          "FB-07",
+          "FB-08",
+          "FB-09",
+          "FB-10",
+          "FD-01",
+          "FD-03",
+          "FE-03",
+          "FE-04",
+          "FE-05",
+          "FE-08",
+          "FE-09",
+          "FO-01",
+          "FO-02",
+          "FO-03",
+          "FO-04",
+          "FO-05",
+          "FO-06",
+          "FO-07",
+          "FO-08",
+          "FO-09",
+          "FO-10",
+          "FR-01",
+          "FR-02",
+          "FR-03",
+          "FR-06",
+          "FR-09",
+          "FR-10",
+          "FR-11",
+          "FR-13",
+          "FS-04",
+          "FU-01",
+          "FU-02",
+          "FU-03",
+          "FU-04",
+          "FU-05",
+          "FU-06",
+          "FU-07",
+          "FU-08",
+          "FU-09",
+          "FU-10",
+          "FU-11",
+          "FW-01",
+          "FW-03",
+          "FW-04",
+          "FW-05",
+          "FW-07"
+        ],
+        "physical_qualified": false,
+        "rank_basis": "product_reuse_count_only",
+        "reuse_rank": 2
+      }
+    ],
+    "physical_interchangeability_verified": false
+  },
+  "authority_boundary": {
+    "machine_control": false,
+    "physical_actuation": false,
+    "production_release": false,
+    "semantic_authority_transfer": false
+  }
+}

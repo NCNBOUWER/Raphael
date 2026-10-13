@@ -1,0 +1,379 @@
+{
+  "schema": "cgx.printspace.multistage_test_cases.v0.2",
+  "status": "SOFTWARE_TEST_FIXTURES_ONLY",
+  "cases": [
+    {
+      "id": "VACUUM_CONDUCTOR_SEAL_REFILL",
+      "schema": "cgx.printspace.multistage_route_contract.v0.2",
+      "evidence_state": "SYNTHETIC_SOFTWARE_TEST_ONLY",
+      "production_approved": false,
+      "channels": {
+        "demo_damage_index": {
+          "unit": "1",
+          "aggregation": "additive",
+          "source": "SYNTHETIC_FIXTURE_ONLY",
+          "warning": "not a physical damage model"
+        }
+      },
+      "features": [
+        {
+          "id": "conductor",
+          "family": "CI",
+          "created_by": "deposit",
+          "protected_atmosphere_required": true,
+          "budgets": {
+            "demo_damage_index": 0.55
+          }
+        },
+        {
+          "id": "barrier",
+          "family": "DE",
+          "created_by": "seal",
+          "budgets": {
+            "demo_damage_index": 0.4
+          }
+        }
+      ],
+      "stages": [
+        {
+          "id": "deposit",
+          "family": "CI",
+          "creates": [
+            "conductor"
+          ],
+          "after": [],
+          "produces_gates": [
+            "oxygen_profile_verified"
+          ]
+        },
+        {
+          "id": "seal",
+          "family": "DE",
+          "creates": [
+            "barrier"
+          ],
+          "after": [
+            "deposit"
+          ],
+          "requires_gates": [
+            "oxygen_profile_verified"
+          ],
+          "produces_gates": [
+            "barrier_closed"
+          ],
+          "exposures": {
+            "conductor": {
+              "demo_damage_index": 0.12
+            }
+          }
+        },
+        {
+          "id": "inspect_seal",
+          "family": null,
+          "creates": [],
+          "after": [
+            "seal"
+          ],
+          "requires_gates": [
+            "barrier_closed"
+          ],
+          "produces_gates": [
+            "barrier_integrity_checked"
+          ],
+          "exposures": {
+            "conductor": {
+              "demo_damage_index": 0.05
+            },
+            "barrier": {
+              "demo_damage_index": 0.04
+            }
+          }
+        },
+        {
+          "id": "refill",
+          "family": null,
+          "operation": "atmosphere_refill",
+          "after": [
+            "inspect_seal"
+          ],
+          "requires_gates": [
+            "barrier_closed",
+            "barrier_integrity_checked"
+          ],
+          "exposures": {
+            "conductor": {
+              "demo_damage_index": 0.1
+            },
+            "barrier": {
+              "demo_damage_index": 0.06
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "THERMAL_POSTPROCESS_UNSAFE",
+      "schema": "cgx.printspace.multistage_route_contract.v0.2",
+      "evidence_state": "SYNTHETIC_SOFTWARE_TEST_ONLY",
+      "production_approved": false,
+      "channels": {
+        "demo_damage_index": {
+          "unit": "1",
+          "aggregation": "additive",
+          "source": "SYNTHETIC_FIXTURE_ONLY",
+          "warning": "not a physical damage model"
+        }
+      },
+      "features": [
+        {
+          "id": "printed_trace",
+          "family": "CI",
+          "created_by": "trace",
+          "budgets": {
+            "demo_damage_index": 0.5
+          }
+        }
+      ],
+      "stages": [
+        {
+          "id": "trace",
+          "family": "CI",
+          "creates": [
+            "printed_trace"
+          ],
+          "after": []
+        },
+        {
+          "id": "hot_metal",
+          "family": "MT",
+          "after": [
+            "trace"
+          ],
+          "transition": "high_temperature_process",
+          "exposures": {
+            "printed_trace": {
+              "demo_damage_index": 0.8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MISSING_EXPOSURE_REQUIRES_DATA",
+      "schema": "cgx.printspace.multistage_route_contract.v0.2",
+      "evidence_state": "SYNTHETIC_SOFTWARE_TEST_ONLY",
+      "production_approved": false,
+      "channels": {
+        "demo_damage_index": {
+          "unit": "1",
+          "aggregation": "additive",
+          "source": "SYNTHETIC_FIXTURE_ONLY",
+          "warning": "not a physical damage model"
+        }
+      },
+      "features": [
+        {
+          "id": "polymer_body",
+          "family": "TP",
+          "created_by": "body",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        }
+      ],
+      "stages": [
+        {
+          "id": "body",
+          "family": "TP",
+          "creates": [
+            "polymer_body"
+          ],
+          "after": []
+        },
+        {
+          "id": "add_conductor",
+          "family": "CI",
+          "after": [
+            "body"
+          ],
+          "exposures": {},
+          "transition": "low_temperature_deposition"
+        }
+      ]
+    },
+    {
+      "id": "BUTTER_BOT_HYBRID_SEQUENCE",
+      "schema": "cgx.printspace.multistage_route_contract.v0.2",
+      "evidence_state": "SYNTHETIC_SOFTWARE_TEST_ONLY",
+      "production_approved": false,
+      "channels": {
+        "demo_damage_index": {
+          "unit": "1",
+          "aggregation": "additive",
+          "source": "SYNTHETIC_FIXTURE_ONLY",
+          "warning": "not a physical damage model"
+        }
+      },
+      "features": [
+        {
+          "id": "shell",
+          "family": "TP",
+          "created_by": "01_body",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        },
+        {
+          "id": "traces",
+          "family": "CI",
+          "created_by": "02_traces",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        },
+        {
+          "id": "insulation",
+          "family": "DE",
+          "created_by": "03_dielectric",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        },
+        {
+          "id": "processor",
+          "family": "SC",
+          "created_by": "04_processor",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        },
+        {
+          "id": "power_cell",
+          "family": "BT",
+          "created_by": "05_cell",
+          "budgets": {
+            "demo_damage_index": 1
+          }
+        }
+      ],
+      "stages": [
+        {
+          "id": "01_body",
+          "family": "TP",
+          "after": [],
+          "creates": [
+            "shell"
+          ],
+          "exposures": {}
+        },
+        {
+          "id": "02_traces",
+          "family": "CI",
+          "after": [
+            "01_body"
+          ],
+          "creates": [
+            "traces"
+          ],
+          "transition": "local_low_energy_write",
+          "exposures": {
+            "shell": {
+              "demo_damage_index": 0.05
+            }
+          }
+        },
+        {
+          "id": "03_dielectric",
+          "family": "DE",
+          "after": [
+            "02_traces"
+          ],
+          "creates": [
+            "insulation"
+          ],
+          "exposures": {
+            "shell": {
+              "demo_damage_index": 0.05
+            },
+            "traces": {
+              "demo_damage_index": 0.05
+            }
+          }
+        },
+        {
+          "id": "04_processor",
+          "family": "SC",
+          "after": [
+            "03_dielectric"
+          ],
+          "creates": [
+            "processor"
+          ],
+          "transition": "ESD_safe_modular_placement",
+          "exposures": {
+            "shell": {
+              "demo_damage_index": 0.05
+            },
+            "traces": {
+              "demo_damage_index": 0.05
+            },
+            "insulation": {
+              "demo_damage_index": 0.05
+            }
+          }
+        },
+        {
+          "id": "05_cell",
+          "family": "BT",
+          "after": [
+            "04_processor"
+          ],
+          "creates": [
+            "power_cell"
+          ],
+          "transition": "protected_replaceable_module",
+          "exposures": {
+            "shell": {
+              "demo_damage_index": 0.05
+            },
+            "traces": {
+              "demo_damage_index": 0.05
+            },
+            "insulation": {
+              "demo_damage_index": 0.05
+            },
+            "processor": {
+              "demo_damage_index": 0.05
+            }
+          }
+        },
+        {
+          "id": "06_test",
+          "family": null,
+          "after": [
+            "05_cell"
+          ],
+          "creates": [],
+          "operation": "functional_check",
+          "exposures": {
+            "shell": {
+              "demo_damage_index": 0.05
+            },
+            "traces": {
+              "demo_damage_index": 0.05
+            },
+            "insulation": {
+              "demo_damage_index": 0.05
+            },
+            "processor": {
+              "demo_damage_index": 0.05
+            },
+            "power_cell": {
+              "demo_damage_index": 0.05
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

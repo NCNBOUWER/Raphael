@@ -1,0 +1,524 @@
+{
+  "schema": "cgx.printspace.parametric_geometry_seeds.v0.3",
+  "id": "CGX-F4D-GEOMETRY-20261008",
+  "status": "PARAMETRIC_CANDIDATE_ONLY",
+  "reference": "UTP-CATALOGUE-001",
+  "count": 30,
+  "geometries": [
+    {
+      "geometry_id": "PS-GEO-001",
+      "slug": "rectilinear_lattice",
+      "parameters": [
+        "pitch",
+        "wall_thickness",
+        "cell_angle",
+        "infill_ratio"
+      ],
+      "candidate_function": "structural modulus, mass, ventilation",
+      "required_solver_families": [
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-002",
+      "slug": "octet_lattice",
+      "parameters": [
+        "strut_diameter",
+        "node_radius",
+        "unit_cell"
+      ],
+      "candidate_function": "stiffness to mass, conductive topology",
+      "required_solver_families": [
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-003",
+      "slug": "gyroid_tpms",
+      "parameters": [
+        "unit_cell",
+        "wave_period",
+        "wall_thickness"
+      ],
+      "candidate_function": "conformal thermal or fluid pathways",
+      "required_solver_families": [
+        "fluid",
+        "thermal",
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-004",
+      "slug": "serpentine_trace",
+      "parameters": [
+        "trace_width",
+        "thickness",
+        "spacing",
+        "bend_radius"
+      ],
+      "candidate_function": "resistance and strain accommodation",
+      "required_solver_families": [
+        "electromagnetism",
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-005",
+      "slug": "planar_spiral_coil",
+      "parameters": [
+        "turns",
+        "width",
+        "spacing",
+        "outer_diameter",
+        "layer_count"
+      ],
+      "candidate_function": "inductance, coupled power and Q",
+      "required_solver_families": [
+        "electromagnetism",
+        "thermal"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-006",
+      "slug": "solenoid_helix",
+      "parameters": [
+        "turns",
+        "pitch",
+        "radius",
+        "wire_section",
+        "core_gap"
+      ],
+      "candidate_function": "magnetic field and actuation",
+      "required_solver_families": [
+        "electromagnetism",
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-007",
+      "slug": "capacitor_parallel_plate",
+      "parameters": [
+        "electrode_area",
+        "dielectric_thickness",
+        "permittivity"
+      ],
+      "candidate_function": "capacitance and breakdown",
+      "required_solver_families": [
+        "electrostatics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-008",
+      "slug": "interdigitated_capacitor",
+      "parameters": [
+        "finger_width",
+        "spacing",
+        "length",
+        "layer_count"
+      ],
+      "candidate_function": "capacitance and sensing",
+      "required_solver_families": [
+        "electrostatics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-009",
+      "slug": "patch_antenna",
+      "parameters": [
+        "patch_length",
+        "patch_width",
+        "substrate_height",
+        "ground_plane"
+      ],
+      "candidate_function": "resonant emission and reception",
+      "required_solver_families": [
+        "RF"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-010",
+      "slug": "microstrip_line",
+      "parameters": [
+        "line_width",
+        "height",
+        "dielectric_constant",
+        "ground_size"
+      ],
+      "candidate_function": "transmission impedance and losses",
+      "required_solver_families": [
+        "RF"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-011",
+      "slug": "loop_antenna",
+      "parameters": [
+        "radius",
+        "turn_count",
+        "trace_width",
+        "matching_network"
+      ],
+      "candidate_function": "inductive reception and telemetry",
+      "required_solver_families": [
+        "RF"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-012",
+      "slug": "resonator_cavity",
+      "parameters": [
+        "length",
+        "width",
+        "height",
+        "wall_conductivity",
+        "Q_target"
+      ],
+      "candidate_function": "acoustic or electromagnetic resonance",
+      "required_solver_families": [
+        "acoustic",
+        "EM"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-013",
+      "slug": "flexure_hinge",
+      "parameters": [
+        "web_thickness",
+        "radius",
+        "length",
+        "neutral_axis"
+      ],
+      "candidate_function": "compliant motion and fatigue",
+      "required_solver_families": [
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-014",
+      "slug": "ball_socket_joint",
+      "parameters": [
+        "ball_radius",
+        "clearance",
+        "seat_angle",
+        "coating"
+      ],
+      "candidate_function": "multi-axis controlled rotation",
+      "required_solver_families": [
+        "tribology",
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-015",
+      "slug": "bearing_race",
+      "parameters": [
+        "race_radius",
+        "clearance",
+        "texture",
+        "lubrication_route"
+      ],
+      "candidate_function": "low-friction rotary support",
+      "required_solver_families": [
+        "tribology"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-016",
+      "slug": "thermal_heat_spreader",
+      "parameters": [
+        "thickness",
+        "width",
+        "conductivity",
+        "interface_area"
+      ],
+      "candidate_function": "controlled heat transport",
+      "required_solver_families": [
+        "thermal"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-017",
+      "slug": "microchannel_serpentine",
+      "parameters": [
+        "hydraulic_diameter",
+        "length",
+        "turn_radius",
+        "wall_roughness"
+      ],
+      "candidate_function": "pressure controlled cooling or chemical flow",
+      "required_solver_families": [
+        "fluidics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-018",
+      "slug": "tesla_valve_channel",
+      "parameters": [
+        "stage_count",
+        "arc_radius",
+        "flow_direction",
+        "channel_section"
+      ],
+      "candidate_function": "directional fluidic resistance",
+      "required_solver_families": [
+        "fluidics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-019",
+      "slug": "sealed_gas_cell",
+      "parameters": [
+        "cavity_volume",
+        "wall_thickness",
+        "port",
+        "seal_length"
+      ],
+      "candidate_function": "controlled gas functional chamber",
+      "required_solver_families": [
+        "gas",
+        "transport"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-020",
+      "slug": "multi_layer_barrier",
+      "parameters": [
+        "layer_thicknesses",
+        "permeation_paths",
+        "interfaces"
+      ],
+      "candidate_function": "reduce gas/moisture infiltration",
+      "required_solver_families": [
+        "diffusion"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-021",
+      "slug": "graded_interface",
+      "parameters": [
+        "gradient_width",
+        "composition_profile",
+        "surface_area"
+      ],
+      "candidate_function": "thermomechanical or electronic transitions",
+      "required_solver_families": [
+        "multiphysics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-022",
+      "slug": "auxetic_cell",
+      "parameters": [
+        "angle",
+        "strut_length",
+        "thickness"
+      ],
+      "candidate_function": "negative effective Poisson response conditional geometry",
+      "required_solver_families": [
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-023",
+      "slug": "compliant_gripper",
+      "parameters": [
+        "jaw_width",
+        "flexure_length",
+        "contact_area"
+      ],
+      "candidate_function": "adaptive gripping and contact sensing",
+      "required_solver_families": [
+        "robotics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-024",
+      "slug": "wedge_coupler",
+      "parameters": [
+        "wedge_angle",
+        "overlap",
+        "fastener_pitch"
+      ],
+      "candidate_function": "detachable mechanical load transfer",
+      "required_solver_families": [
+        "mechanics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-025",
+      "slug": "photonic_waveguide",
+      "parameters": [
+        "width",
+        "height",
+        "bend_radius",
+        "refractive_index_map"
+      ],
+      "candidate_function": "optical signal routing",
+      "required_solver_families": [
+        "optics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-026",
+      "slug": "membrane_sensor",
+      "parameters": [
+        "diameter",
+        "thickness",
+        "prestrain",
+        "electrode_area"
+      ],
+      "candidate_function": "force and pressure sensing",
+      "required_solver_families": [
+        "mechanics",
+        "electrostatics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-027",
+      "slug": "battery_compartment",
+      "parameters": [
+        "free_volume",
+        "vent_direction",
+        "insulation_gap",
+        "access"
+      ],
+      "candidate_function": "safe protected energy module placement",
+      "required_solver_families": [
+        "battery",
+        "safety"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-028",
+      "slug": "fluid_manifold",
+      "parameters": [
+        "port_count",
+        "bore_diameter",
+        "valve_seat",
+        "drain_path"
+      ],
+      "candidate_function": "selective chemical and fluid routing",
+      "required_solver_families": [
+        "fluidics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-029",
+      "slug": "multi_material_conformal_skin",
+      "parameters": [
+        "substrate_curve",
+        "layer_order",
+        "interfaces",
+        "access_ports"
+      ],
+      "candidate_function": "sensor and shielding integration",
+      "required_solver_families": [
+        "multiphysics"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    },
+    {
+      "geometry_id": "PS-GEO-030",
+      "slug": "micro_stack_in_macro",
+      "parameters": [
+        "unit_cell",
+        "group_count",
+        "power_bus",
+        "separation"
+      ],
+      "candidate_function": "hierarchical functional arrays",
+      "required_solver_families": [
+        "systems"
+      ],
+      "qualified_parameters": [],
+      "evidence_state": "PARAMETRIC_ARCHETYPE_NOT_SIZED",
+      "machine_ready": false
+    }
+  ]
+}

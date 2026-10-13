@@ -1,0 +1,185 @@
+{
+  "schema": "CGX-PRINTSPACE-TYPE1-UTP150-CROSSWALK/0.1",
+  "artifact_id": "RAPHAEL-PRINTSPACE-UTP150-XWALK-001",
+  "status": "DIGITAL SOURCE-OWNER CROSSWALK / PHYSICAL_NOT_RUN",
+  "generated_for": "Raphael PR #6 PrintSpace specialist owner lane",
+  "active_maturation_owner": {
+    "repository": "achillesromer-coder/LightSpeed",
+    "pull_request": 167,
+    "head": "7a21f26c733e1c5d6eaf50e67ac5f77382f2b119",
+    "artifact": "UTP-150",
+    "role": "evidence ingest, dependency invalidation, scoped recompilation, maturity delta, next-witness and DBR/readback orchestration"
+  },
+  "ownership_rule": "Raphael PrintSpace datasets remain source owners. UTP-150 consumes attributable revisions by reference/hash; it does not copy them into a second master or transfer source authority.",
+  "accepted_ingest_classes": [
+    "SOURCE_DOCUMENT_OR_DATASHEET",
+    "CAD_BREP_MESH_OR_GEOMETRY_REVISION",
+    "MATERIAL_LOT_PASSPORT_OR_ASSAY",
+    "PROCESS_RECIPE_TOOL_ENVIRONMENT_RECORD",
+    "CALIBRATION_CERTIFICATE_OR_TRACE",
+    "RAW_MEASUREMENT",
+    "SEED_PART_FIRMWARE_OR_MODEL_REVISION",
+    "FIELD_SOLVER_OR_NUMERIC_RESULT",
+    "FAILURE_ANOMALY_OR_CONTRADICTION",
+    "HISTORICAL_REFERENCE",
+    "OWNER_DECISION_OR_AUTHORITY_EVENT"
+  ],
+  "source_family_bindings": [
+    {
+      "path": "CGX/PrintSpace/MATERIAL_CANDIDATE_PASSPORTS_v0_3.json",
+      "ingest_class": "MATERIAL_LOT_PASSPORT_OR_ASSAY",
+      "primary_axes": [
+        "identity_provenance",
+        "material",
+        "source_authority"
+      ],
+      "trigger": "material_lot_or_passport_changed",
+      "expected_dependents": [
+        "material compatibility",
+        "directional route eligibility",
+        "coupon plan inputs"
+      ],
+      "evidence_rule": "candidate passport is not qualification; missing assay/lot facts remain UNKNOWN or HOLD"
+    },
+    {
+      "path": "CGX/PrintSpace/MATERIAL_DIRECTIONAL_ROUTES_v0_3.json",
+      "ingest_class": "PROCESS_RECIPE_TOOL_ENVIRONMENT_RECORD",
+      "primary_axes": [
+        "process",
+        "material",
+        "integration_coupling"
+      ],
+      "trigger": "process_recipe_tool_or_environment_changed",
+      "expected_dependents": [
+        "X→Y compatibility route",
+        "interlayer/atmosphere transition",
+        "preservation and post-process requirements"
+      ],
+      "evidence_rule": "X→Y does not imply Y→X; unsupported route remains HOLD"
+    },
+    {
+      "path": "CGX/PrintSpace/PAIRWISE_SEQUENCE_ROUTES_v0_1.json",
+      "ingest_class": "PROCESS_RECIPE_TOOL_ENVIRONMENT_RECORD",
+      "primary_axes": [
+        "process",
+        "integration_coupling"
+      ],
+      "trigger": "process_recipe_tool_or_environment_changed",
+      "expected_dependents": [
+        "pairwise sequence route",
+        "prior-layer preservation",
+        "test/repair sequence"
+      ],
+      "evidence_rule": "pair-first coverage is not universal pairwise compatibility"
+    },
+    {
+      "path": "CGX/PrintSpace/MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv",
+      "ingest_class": "RAW_MEASUREMENT",
+      "primary_axes": [
+        "material",
+        "test_metrology",
+        "model"
+      ],
+      "trigger": "measurement_rejected_or_recalibrated",
+      "expected_dependents": [
+        "numeric material operand",
+        "uncertainty bound",
+        "equation eligibility"
+      ],
+      "evidence_rule": "measured values require source/instrument/calibration/uncertainty context before NUMERIC use"
+    },
+    {
+      "path": "CGX/PrintSpace/PHYSICAL_EQUATION_CATALOGUE_v0_4.json",
+      "ingest_class": "FIELD_SOLVER_OR_NUMERIC_RESULT",
+      "primary_axes": [
+        "model",
+        "integration_coupling"
+      ],
+      "trigger": "field_solver_model_or_boundary_changed",
+      "expected_dependents": [
+        "equation kernel selection",
+        "numeric/symbolic route",
+        "falsifier/test requirement"
+      ],
+      "evidence_rule": "catalogued equation availability is not proof that its assumptions hold for an instance"
+    },
+    {
+      "path": "CGX/PrintSpace/PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json",
+      "ingest_class": "SOURCE_DOCUMENT_OR_DATASHEET",
+      "primary_axes": [
+        "identity_provenance",
+        "model",
+        "source_authority"
+      ],
+      "trigger": "source_revision_or_hash_changed",
+      "expected_dependents": [
+        "operand provenance",
+        "numeric inference eligibility"
+      ],
+      "evidence_rule": "unknown consequential operands force SYMBOLIC or HOLD"
+    },
+    {
+      "path": "CGX/PrintSpace/PARAMETRIC_GEOMETRY_FUNCTION_SEEDS_v0_3.json",
+      "ingest_class": "CAD_BREP_MESH_OR_GEOMETRY_REVISION",
+      "primary_axes": [
+        "geometry",
+        "integration_coupling"
+      ],
+      "trigger": "geometry_revision_changed",
+      "expected_dependents": [
+        "functional region geometry",
+        "interface geometry",
+        "field/model boundary conditions"
+      ],
+      "evidence_rule": "parametric geometry is digital source evidence, not as-built geometry"
+    },
+    {
+      "path": "CGX/PrintSpace/COUPON_QUALIFICATION_QUEUE_v0_3.json",
+      "ingest_class": "OWNER_DECISION_OR_AUTHORITY_EVENT",
+      "primary_axes": [
+        "test_metrology",
+        "physical_evidence",
+        "authority_release"
+      ],
+      "trigger": "authority_ceiling_changed",
+      "expected_dependents": [
+        "next witness queue",
+        "test gate"
+      ],
+      "evidence_rule": "planned coupon or queue state cannot advance physical_evidence until measured execution exists"
+    },
+    {
+      "path": "CGX/PrintSpace/CROSS_GREX_PRODUCT_ATLAS_v0_5.json",
+      "ingest_class": "SOURCE_DOCUMENT_OR_DATASHEET",
+      "primary_axes": [
+        "identity_provenance",
+        "source_authority",
+        "integration_coupling"
+      ],
+      "trigger": "source_revision_or_hash_changed",
+      "expected_dependents": [
+        "portfolio projection",
+        "product-class composition candidates"
+      ],
+      "evidence_rule": "catalogue inclusion is not manufacturability, certification or release authority"
+    }
+  ],
+  "runtime_projection": {
+    "target": "existing LS GO Objects Maturity / ingest lens",
+    "rule": "project references, maturity delta, contradiction state, invalidated dependents and next witness; do not duplicate source payload",
+    "filespace": "stable source/object/revision + provenance + authority ceiling",
+    "dataspace": "mutation/invalidation/test/readback state",
+    "printspace": "regions/interfaces/process/as-built/witness state when present"
+  },
+  "hard_boundaries": [
+    "no silent overwrite",
+    "no second master or duplicate datastore",
+    "no physical execution or physical-evidence uplift from dataset ingestion",
+    "no seed certification inheritance",
+    "no universal material or solver compatibility claim",
+    "no durable .cgx carrier/root mutation without reviewed promotion",
+    "no public/certification/procurement/legal/financial/high-consequence authority uplift",
+    "unknown or unsupported coupling remains HOLD"
+  ],
+  "next_proof": "Select one attributable source revision from the mapped PrintSpace families, emit a UTP-150 evidence envelope, compute dependency closure and read back only affected derived state; physical execution remains separate."
+}

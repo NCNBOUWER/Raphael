@@ -1,0 +1,42 @@
+name: PrintSpace data and candidate routing checks
+on:
+  pull_request:
+    paths:
+      - "CGX/PrintSpace/**"
+      - ".github/workflows/printspace-data-tests.yml"
+  push:
+    branches:
+      - "docs/cgx-printspace-capability-first-2026-10-08"
+    paths:
+      - "CGX/PrintSpace/**"
+      - ".github/workflows/printspace-data-tests.yml"
+
+jobs:
+  printspace-data-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile candidate-only route code
+        run: python -m compileall -q CGX/PrintSpace
+      - name: Validate all existing route and populated data tests
+        working-directory: CGX/PrintSpace
+        run: python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py test_dimensioned_equation_engine_v0_4.py test_cross_grex_product_atlas_v0_5.py test_type1_utp150_maturation_crosswalk.py test_functional_time_preview.py test_cgx_review_lens_compiler.py
+
+      - name: Build offline watchable PrintSpace candidate
+        working-directory: CGX/PrintSpace
+        run: python cgx_review_lens_compiler.py --print-demo-only --output "$RUNNER_TEMP/cgx-printspace-geometry-preview"
+      - name: Emulate three adaptive CPU and print tier starters
+        working-directory: CGX/PrintSpace
+        run: python functional_time_preview.py --adaptive-summary > "$RUNNER_TEMP/cgx-printspace-geometry-preview/adaptive-three-seed-results.json"
+      - name: Retain reviewed geometric timeline as CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cgx-printspace-timeline-review-candidate
+          path: ${{ runner.temp }}/cgx-printspace-geometry-preview/
+          retention-days: 7
+          if-no-files-found: error

@@ -1,0 +1,71 @@
+{
+  "schema": "cgx.printspace.runtime_handshake.proposal.v0.2",
+  "id": "CGX-F4D-HANDSHAKE-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "physical_actuation": false,
+  "installed_in_local_runtime": false,
+  "live_registry_modified": false,
+  "namespace_proposed": "cgx://romer.industries/emassc/printspace",
+  "source": {
+    "repository": "NCNBOUWER/Raphael",
+    "review_pr": "https://github.com/NCNBOUWER/Raphael/pull/6",
+    "candidate_branch": "docs/cgx-printspace-capability-first-2026-10-08",
+    "pairwise_catalog": "CGX/PrintSpace/PAIRWISE_SEQUENCE_ROUTES_v0_1.json",
+    "planner": "CGX/PrintSpace/multistage_route_planner.py",
+    "fixtures": "CGX/PrintSpace/MULTISTAGE_ROUTE_TEST_CASES_v0_2.json",
+    "test_suite": "CGX/PrintSpace/test_multistage_route_planner.py"
+  },
+  "consumer_concept": {
+    "filespace": "Immutable source references and hashes; no duplicate authority",
+    "dataspace": "Typed material/feedstock passports, evidence links, states, units and uncertainty",
+    "printspace": "Read-only candidate route evaluation and staged qualification",
+    "lightspeed": "Future authorised user review and display of plan with actions separately gated"
+  },
+  "read_only_capabilities": [
+    "catalog.list_families",
+    "catalog.lookup_directional_pair",
+    "route.evaluate_candidate",
+    "route.list_unknowns",
+    "route.emit_unapproved_report"
+  ],
+  "prohibited_capabilities": [
+    "machine.start",
+    "machine.write_toolpath",
+    "physical_recipe.promote",
+    "physical_actuator.enable",
+    "evidence.synthetic_to_measured",
+    "runtime.authority.transfer",
+    "root_carrier.mutate"
+  ],
+  "authority": {
+    "source_integration": "Requires currentness reconciliation with local root and active provider heads",
+    "route_plan": "Proposal only, not release",
+    "process_qualification": "Requires measured coupons, machine profile, safety review and owner-authorised evidence",
+    "production_release": "Not supported by this proposal"
+  },
+  "state_handshake": {
+    "input_required": [
+      "canonical_material_ids",
+      "provenance",
+      "geometry_and_interface_topology",
+      "machine_envelope",
+      "process_telemetry_and_exposure_models",
+      "operator_authority"
+    ],
+    "output": [
+      "candidate_route_status",
+      "unknowns",
+      "violations",
+      "evidence_links",
+      "production_approved_false"
+    ],
+    "fail_closed_conditions": [
+      "missing_measurements",
+      "source_head_divergence",
+      "unknown_machine",
+      "untrusted_receipt",
+      "missing_operator_authority"
+    ]
+  },
+  "deployment_strategy": "Compare and adapt through existing CGX resolver/capability façade; do not edit or reissue promoted binary carriers."
+}
