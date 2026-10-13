@@ -171,6 +171,7 @@ main{display:grid;grid-template-columns:minmax(370px,40%) 1fr;max-height:calc(10
   <div class="eyebrow">PRINTSPACE / 4D-STATE REPLAY · OFFLINE CANDIDATE</div>
   <div class="row"><label for="printPreset">Article</label><select id="printPreset" aria-label="Article preview"></select><label for="printPalette">Finish</label><select id="printPalette"><option value="default">Original seed</option><option value="amber">Amber</option><option value="graphite">Graphite</option><option value="sand">Sand</option><option value="ocean">Ocean</option></select></div>
   <div class="row"><label for="printBuildMode">Build timeline</label><select id="printBuildMode" aria-label="Source assembly detail"><option value="summary">Summary stages (source schematic)</option><option value="i3">Intel i3: full dual-arm 28-stage route</option></select><small>Detailed mode uses symbolic pickup/placement stations, not machine paths</small></div>
+  <div class="row"><label for="printSeed">Adaptive seed / optimized scenario</label><select id="printSeed" aria-label="Simulation tier, not physical procurement or manufacturing approval"><option value="SOURCE_BASE">Original sourced i3 reference route</option></select><small>Three synthetic selection policies; CPU SKU, supplier prices and real build performance unverified</small></div>
   <canvas id="printCanvas" width="640" height="350" aria-label="Isometric schematic of progressive model parts, not calibrated CAD geometry" role="img"></canvas>
   <div class="row"><button id="printPlay" type="button">Play</button><label for="printPhase">Build stage</label><input type="range" id="printPhase" min="0" max="9" value="0" step="1"><output id="printStage">0 / 0</output></div>
   <div class="row"><label for="printRate">Replay cadence</label><select id="printRate"><option value="1200">Slow</option><option value="650" selected>Medium</option><option value="240">Fast</option></select><span class="pill" id="printCount">Zero active parts</span></div>
@@ -253,10 +254,18 @@ document.addEventListener("keydown",e=>{if(e.target.tagName==="INPUT"||e.target.
 
 // An offline, geometric 3D-like isometric stage viewer, NOT machine or CAD simulation.
 let chosenPrint=timeProducts[0]||null,playHandle=null;
-const currentStages=()=>chosenPrint&&$("printBuildMode").value==="i3"&&chosenPrint.i3_track_build_route?.frames?.length?chosenPrint.i3_track_build_route.frames:chosenPrint?.frames||[];
+const adaptiveSeeds=payload.time_previews?.adaptive_seed_trials?.results||[];
+const currentSeed=()=>chosenPrint?.id==="BB-SOURCE-DEMO"?adaptiveSeeds.find(s=>s.tier_id===$("printSeed").value)||null:null;
+const currentStages=()=>chosenPrint&&$("printBuildMode").value==="i3"&&chosenPrint.i3_track_build_route?.frames?.length?
+ (currentSeed()?.frames||chosenPrint.i3_track_build_route.frames):chosenPrint?.frames||[];
 const reviewOverrides={};
 const printSelect=$("printPreset");
 for(const product of timeProducts){const o=document.createElement("option");o.value=product.id;o.textContent=product.name;printSelect.appendChild(o)}
+for(const profile of adaptiveSeeds){
+ const item=document.createElement("option");item.value=profile.tier_id;
+ item.textContent=profile.display_name+" · "+profile.stage_count+" scenario phases";
+ $("printSeed").appendChild(item);
+}
 function shade(hex,factor){
  const m=(/^#([0-9a-f]{6})$/i).exec(hex);if(!m)return hex;
  const c=m[1];return "#"+[0,2,4].map(i=>Math.min(255,Math.round(parseInt(c.slice(i,i+2),16)*factor)).toString(16).padStart(2,"0")).join("");
@@ -369,7 +378,16 @@ function sceneRender(){
  const givenWh=$("printBattery").value, givenN=$("printCompute").value;
  const wh=givenWh!==""&&Number.isFinite(Number(givenWh))&&Number(givenWh)>=0&&Number(givenWh)<=10000?Number(givenWh):null;
  const cn=givenN!==""&&Number.isInteger(Number(givenN))&&Number(givenN)>=0&&Number(givenN)<=1000000?Number(givenN):null;
+ const selectedSeed=currentSeed();
  const vals={ "Display area, illustrative mm²":chosenPrint.display_area_mm2_candidate,
+   "Adaptive starter":selectedSeed?.display_name||"Original i3 source reference",
+   "CPU chosen in SYNTHETIC scenario":selectedSeed?.selection?.id||null,
+   "Synthetic score, not benchmark":selectedSeed?.selection?.weighted_score_scenario_only||null,
+   "Synthetic battery runtime (unverified h)":selectedSeed?.selection?.ideal_arithmetic_runtime_h||null,
+   "Synthetic budget (AUD not price quote)":selectedSeed?.budget_aud_synthetic||null,
+   "Candidate printed component classes":selectedSeed?.print_candidate_class_count||null,
+   "All components physically printable":false,
+   "Machine session physically accepted":false,
    "Battery capacity Wh (UNVERIFIED user value)":wh,
    "Compute capacity n (UNVERIFIED user value; define metric)":cn,
    "Motion envelope":chosenPrint.motion_candidate,
@@ -405,6 +423,12 @@ printSelect.addEventListener("change",()=>{
  $("printCompute").value="";
  $("printDraft").style.display="none";
  $("printBuildMode").value="summary";$("printBuildMode").disabled=!chosenPrint?.i3_track_build_route;
+ $("printSeed").disabled=!chosenPrint?.i3_track_build_route;$("printSeed").value="SOURCE_BASE";
+ $("printPhase").max=currentStages().length;$("printPhase").value=0;sceneRender();
+});
+$("printSeed").addEventListener("change",()=>{
+ stopPrint();
+ if($("printSeed").value!=="SOURCE_BASE")$("printBuildMode").value="i3";
  $("printPhase").max=currentStages().length;$("printPhase").value=0;sceneRender();
 });
 $("printBuildMode").addEventListener("change",()=>{
@@ -439,6 +463,11 @@ $("printExport").addEventListener("click",()=>{
    colour_candidate:$("printPalette").value,
    substrate_state_unverified:$("printSubstrate").value,
    time_review_mode:$("printBuildMode").value,
+   adaptive_seed_tier:currentSeed()?.tier_id||null,
+   synthetic_cpu_candidate:currentSeed()?.selection?.id||null,
+   synthetic_scores_not_real_performance:true,
+   adaptive_policy_sha256:payload.time_previews?.adaptive_seed_trials?.policy_sha256||null,
+   synthetic_fixture_sha256:payload.time_previews?.adaptive_seed_trials?.scenario_sha256||null,
    detailed_route_source_sha256:chosenPrint.i3_track_build_route?.source_sha256||null,
    symbolic_stations_only:true,
    real_toolhead_trajectory_verified:false,
@@ -466,6 +495,7 @@ $("printPlay").addEventListener("click",()=>{
 });
 $("printRate").addEventListener("change",()=>{if(playHandle!==null){stopPrint();$("printPlay").click()}});
 $("printBuildMode").disabled=!chosenPrint?.i3_track_build_route;
+$("printSeed").disabled=!chosenPrint?.i3_track_build_route;
 $("printPhase").max=currentStages().length;
 $("printArm").disabled=chosenPrint?.kind!=="tracked_robot";
 sceneRender();
