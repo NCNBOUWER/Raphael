@@ -10,6 +10,7 @@ import shutil
 import subprocess
 from pathlib import Path
 from urllib.parse import quote
+from functional_time_preview import load_and_compile
 
 SOURCE = Path(__file__).resolve().parents[2]
 PRINT = Path(__file__).resolve().parent
@@ -158,18 +159,28 @@ main{display:grid;grid-template-columns:minmax(370px,40%) 1fr;max-height:calc(10
 .row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}input,select,button,textarea{font:inherit;color:var(--ink);background:#0c181f;border:1px solid var(--line);padding:11px 12px;border-radius:9px}input{flex:1;min-width:170px}button{cursor:pointer}button:hover,button:focus-visible{border-color:var(--orange)}button.active{background:#3d2c23;border-color:var(--orange)}#types{margin:12px 0 16px}.objects{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:10px}.item{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:13px;text-align:left;min-height:120px}.item.selected{border:2px solid var(--orange);padding:12px}.item strong{display:block;font-size:14px;line-height:1.26;margin:8px 0}.item .id{font:11px Consolas,monospace;color:var(--orange)}
 .inspect{padding:23px 26px;overflow:auto}.inspect h2{font-size:clamp(25px,3vw,40px);line-height:1.15}.preview{background:#e5edf0;border:1px solid #49616b;border-radius:12px;min-height:290px;max-height:52vh;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#22333a}.preview img{width:100%;height:auto;max-height:52vh;object-fit:contain}.blank{font-size:14px;text-align:center;max-width:340px;padding:25px}
 .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;margin:12px 0}.field{padding:11px 13px;border:1px solid var(--line);background:var(--panel);border-radius:9px;word-break:break-word}.field b{color:var(--orange);display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
-.section{border-top:1px solid var(--line);padding-top:13px;margin-top:16px}.notice{color:#f1c18b}.link{color:var(--blue);word-break:break-word}.status{font-size:11px;color:#f0bc8c}.low{font-size:12px}textarea{width:100%;min-height:105px;display:none}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
+.time-review{border:1px solid var(--line);border-radius:12px;padding:12px;margin:14px 0;background:#101f27}.time-review canvas{display:block;width:100%;height:auto;background:#e2eaf0;border-radius:10px}.time-review input[type=range]{min-width:110px;flex:1;accent-color:var(--orange)}.time-review select{min-width:110px}.time-review .row{margin:9px 0}.section{border-top:1px solid var(--line);padding-top:13px;margin-top:16px}.notice{color:#f1c18b}.link{color:var(--blue);word-break:break-word}.status{font-size:11px;color:#f0bc8c}.low{font-size:12px}textarea{width:100%;min-height:105px;display:none}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
 @media(max-width:850px){main{display:block;max-height:none}.catalog,.inspect{overflow:visible}.catalog{border-right:0;border-bottom:1px solid var(--line)}header{display:block}.objects{max-height:380px;overflow:auto}.preview{min-height:200px}}
 @media print{header,.catalog,.actions{display:none}main{display:block}.inspect{padding:0}.preview{max-height:none}.preview img{max-height:none}body{background:#fff;color:#111}.field{background:#fff;color:#111}}
 </style></head><body>
 <header><div><div class="eyebrow">COGNIGREX / TECHNICAL REVIEW</div><h1>CGX Object & Family Atlas</h1><small>Identity → source → geometry → environment → evidence → review · Not a production authorisation</small></div><div><span class="pill" id="allCount"></span><span class="pill">Source-bound / local-only</span></div></header>
 <main><section class="catalog"><div class="row"><input id="search" aria-label="Search CGX objects" placeholder="Find diode, capacitor, PrintCeptor, Mark III, Luke…" autofocus><select id="family" aria-label="Object family"><option value="">All families</option></select></div><div class="row" id="types"></div>
 <div class="row"><select id="tour" aria-label="Guided source-linked review"><option value="">Guided review route…</option></select><button id="tourPrev" title="Previous verified source object">◀ Route</button><button id="tourNext" title="Next verified source object">Route ▶</button><small id="tourStep">Select a route to navigate its source records</small></div><div class="row"><small id="resultCount"></small><small id="shortlistCount"></small></div><div class="objects" id="items" aria-label="Object cards"></div></section>
-<section class="inspect"><div class="eyebrow" id="cat">SOURCE-LINKED COMPONENT</div><h2 id="name">Select an object</h2><div class="row low"><span class="pill" id="key"></span><span class="pill" id="badge"></span></div><p class="muted" id="description"></p><div class="preview" id="preview"></div><div class="actions"><button id="add">Add to review shortlist</button><button id="export">Show draft shortlist</button><button id="prev">◀ Previous</button><button id="next">Next ▶</button></div><textarea id="exportBox" aria-label="Review shortlist draft"></textarea><div class="fields" id="fields"></div><div class="section"><div class="eyebrow">Evidence ceiling and release gates</div><p class="notice" id="hold"></p><p class="muted">This interface cannot approve objects, advance a DBR, claim measured geometry or command a physical printer. Use existing CGX owner/LightSpeed authority gates.</p></div><div class="section"><div class="eyebrow">Native source provenance</div><p id="source"></p><small id="hashes"></small></div></section></main>
+<section class="inspect"><div class="eyebrow" id="cat">SOURCE-LINKED COMPONENT</div><h2 id="name">Select an object</h2><div class="row low"><span class="pill" id="key"></span><span class="pill" id="badge"></span></div><p class="muted" id="description"></p><div class="preview" id="preview"></div><div class="actions"><button id="add">Add to review shortlist</button><button id="export">Show draft shortlist</button><button id="prev">◀ Previous</button><button id="next">Next ▶</button></div><textarea id="exportBox" aria-label="Review shortlist draft"></textarea><div class="fields" id="fields"></div>
+<div class="time-review" id="printTimeline" aria-label="Functional PrintSpace temporal geometric preview">
+  <div class="eyebrow">PRINTSPACE / 4D-STATE REPLAY · OFFLINE CANDIDATE</div>
+  <div class="row"><label for="printPreset">Article</label><select id="printPreset" aria-label="Article preview"></select><label for="printPalette">Finish</label><select id="printPalette"><option value="default">Original seed</option><option value="amber">Amber</option><option value="graphite">Graphite</option><option value="sand">Sand</option><option value="ocean">Ocean</option></select></div>
+  <canvas id="printCanvas" width="640" height="350" aria-label="Isometric schematic of progressive model parts, not calibrated CAD geometry" role="img"></canvas>
+  <div class="row"><button id="printPlay" type="button">Play</button><label for="printPhase">Build stage</label><input type="range" id="printPhase" min="0" max="9" value="0" step="1"><output id="printStage">0 / 0</output></div>
+  <div class="row"><label for="printRate">Replay cadence</label><select id="printRate"><option value="1200">Slow</option><option value="650" selected>Medium</option><option value="240">Fast</option></select><span class="pill" id="printCount">Zero active parts</span></div>
+  <p class="muted" id="printDescription"></p><p class="notice" id="printEvidence">Preview-only · no measured process duration, qualified machine, original Butter Bot CAD rights or production approval</p>
+  <div class="fields" id="printParams"></div>
+</div>
+<div class="section"><div class="eyebrow">Evidence ceiling and release gates</div><p class="notice" id="hold"></p><p class="muted">This interface cannot approve objects, advance a DBR, claim measured geometry or command a physical printer. Use existing CGX owner/LightSpeed authority gates.</p></div><div class="section"><div class="eyebrow">Native source provenance</div><p id="source"></p><small id="hashes"></small></div></section></main>
 <script id="data" type="application/json">__PAYLOAD__</script>
 <script>
 "use strict";
-const payload=JSON.parse(document.getElementById("data").textContent),items=payload.items,routes=payload.routes||[];
+const payload=JSON.parse(document.getElementById("data").textContent),items=payload.items,routes=payload.routes||[],timeProducts=payload.time_previews?.products||[];
 const $=id=>document.getElementById(id), chosen=new Set();
 let visible=items,selected=0,kind="all",activeRoute=null,routeIndex=0;
 for(const route of routes){const option=document.createElement("option");option.value=route.id;option.textContent=route.name+" ("+route.steps.length+" steps)";document.getElementById("tour").appendChild(option)}
@@ -234,6 +245,116 @@ $("export").onclick=()=>{const list=items.filter(x=>chosen.has(x.kind+":"+x.id))
 $("prev").onclick=()=>{if(visible.length){selected=(selected-1+visible.length)%visible.length;render()}};
 $("next").onclick=()=>{if(visible.length){selected=(selected+1)%visible.length;render()}};
 document.addEventListener("keydown",e=>{if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;if(e.key==="ArrowRight")$("next").click();else if(e.key==="ArrowLeft")$("prev").click()});
+
+// An offline, geometric 3D-like isometric stage viewer, NOT machine or CAD simulation.
+let chosenPrint=timeProducts[0]||null,playHandle=null;
+const printSelect=$("printPreset");
+for(const product of timeProducts){const o=document.createElement("option");o.value=product.id;o.textContent=product.name;printSelect.appendChild(o)}
+function shade(hex,factor){
+ const m=(/^#([0-9a-f]{6})$/i).exec(hex);if(!m)return hex;
+ const c=m[1];return "#"+[0,2,4].map(i=>Math.min(255,Math.round(parseInt(c.slice(i,i+2),16)*factor)).toString(16).padStart(2,"0")).join("");
+}
+const paletteMap={amber:["#d7a571","#343b49","#c4eaff"],graphite:["#647789","#2d3642","#d0eeef"],sand:["#e1c79a","#6f7681","#b1ecea"],ocean:["#5d9eb8","#293b54","#a6ecff"]};
+function printColors(){
+ const p=$("printPalette").value==="default"?(chosenPrint?.aesthetic?.palette||"amber"):$("printPalette").value;
+ return paletteMap[p]||paletteMap.amber;
+}
+function paintFace(ctx,coords,fill,stroke="#4a5765"){
+ ctx.beginPath();coords.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();
+ ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=.65;ctx.stroke();
+}
+function projection(x,y,z,scale){return [320+(x-y)*scale*.8,255+(x+y)*scale*.34-z*scale];}
+function drawCube(ctx,part,scale,ratio,base) {
+ const [x,y,z]=part.center_mm,[w,h,d]=part.size_mm;
+ const f=Math.max(.01,ratio),height=Math.max(.08,d*f);
+ const bottom=z-d/2,top=bottom+height;
+ const pts=[];
+ for(const zz of [bottom,top])for(const xx of [x-w/2,x+w/2])for(const yy of [y-h/2,y+h/2])
+  pts.push(projection(xx,yy,zz,scale));
+ const p=(a,b,c,e)=>[pts[a],pts[b],pts[c],pts[e]];
+ paintFace(ctx,p(0,1,5,4),shade(base,.83));
+ paintFace(ctx,p(2,3,7,6),shade(base,.63));
+ paintFace(ctx,p(4,5,7,6),shade(base,1.07));
+}
+function drawCylinder(ctx,part,scale,ratio,base) {
+ const [x,y,z]=part.center_mm,[w,h,d]=part.size_mm;
+ const bottom=z-d/2,top=bottom+Math.max(.08,d*ratio),steps=18;
+ const bottomPts=[],topPts=[];
+ for(let k=0;k<steps;k++){
+  let a=k*2*Math.PI/steps;
+  bottomPts.push(projection(x+w*Math.cos(a)/2,y+h*Math.sin(a)/2,bottom,scale));
+  topPts.push(projection(x+w*Math.cos(a)/2,y+h*Math.sin(a)/2,top,scale));
+ }
+ for(let i=0;i<steps;i++){
+  const j=(i+1)%steps;if(i>steps/2)continue;
+  paintFace(ctx,[bottomPts[i],bottomPts[j],topPts[j],topPts[i]],shade(base,.72));
+ }
+ paintFace(ctx,topPts,shade(base,1.06));
+}
+function sceneRender(){
+ if(!chosenPrint)return;
+ const canvas=$("printCanvas"),ctx=canvas.getContext("2d");if(!ctx)return;
+ ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.fillStyle="#e2eaf0";ctx.fillRect(0,0,canvas.width,canvas.height);
+ const frameIndex=Number($("printPhase").value);
+ const stages=chosenPrint.frames,frame=stages[frameIndex-1]||null;
+ const visible=new Set(frame?.visible_part_ids||[]);
+ const total=Math.max(...chosenPrint.envelope_mm);
+ const scale=Math.min(2.0,155/total);
+ const pal=printColors();
+ const layers=chosenPrint.parts.filter(p=>visible.has(p.id));
+ layers.sort((a,b)=>a.center_mm[2]-b.center_mm[2]);
+ for(const p of layers){
+   const base=/BATTERY|COMPUTE|CONDUCTOR|DISPLAY/.test(p.role)?pal[2]:/DRIVE|MECHANISM|HINGED/.test(p.role)?pal[1]:pal[0];
+   const ratio=frame&&p.stage===frame.stage_id&&frame.process==="FDM_DEPOSITION"?.72:1;
+   if(p.primitive==="cylinder")drawCylinder(ctx,p,scale,ratio,base);
+   else drawCube(ctx,p,scale,ratio,base);
+ }
+ ctx.font="12px system-ui";ctx.fillStyle="#42515b";
+ ctx.fillText("SCHEMATIC 3D · mm reference · not verified CAD",16,22);
+ const current=frame?frame.stage_id+" · "+frame.process:"unbuilt";
+ text("printStage",frameIndex+" / "+stages.length);
+ text("printCount",layers.length+" / "+chosenPrint.parts.length+" schematic parts");
+ text("printDescription",chosenPrint.name+" · "+current+
+   " · phase index only (no measured seconds or thermal/kinematic simulation)");
+ text("printEvidence",frame?
+  "Evidence HOLD: "+frame.process_status+"; requires "+frame.process_required_evidence.join(", ")+
+   ". Qualified: no; physical print: not run.":
+  "Source-only seed with unresolved BOM, material rights, geometry and physical validation.");
+ $("printParams").replaceChildren();
+ const vals={ "Display area, illustrative mm²":chosenPrint.display_area_mm2_candidate,
+   "Battery capacity, Wh":chosenPrint.battery_capacity_wh,
+   "Compute capacity n":chosenPrint.compute_capacity_n,
+   "Motion envelope":chosenPrint.motion_candidate,
+   "Envelope, mm":chosenPrint.envelope_mm,
+   "Original CAD verified":false,"Aesthetic palette":$("printPalette").value==="default"?chosenPrint.aesthetic.palette:$("printPalette").value};
+ for(const [k,v] of Object.entries(vals)){
+  const el=document.createElement("div"),label=document.createElement("b"),txt=document.createElement("span");
+  el.className="field";label.textContent=k;txt.textContent=v==null?"UNKNOWN / user supplied":typeof v==="object"?JSON.stringify(v):String(v);
+  el.append(label,txt);$("printParams").appendChild(el);
+ }
+}
+function stopPrint(){if(playHandle!==null){clearInterval(playHandle);playHandle=null};$("printPlay").textContent="Play"}
+printSelect.addEventListener("change",()=>{
+ stopPrint();chosenPrint=timeProducts.find(p=>p.id===printSelect.value)||null;
+ $("printPhase").max=chosenPrint?.frames.length||0;$("printPhase").value=0;sceneRender();
+});
+$("printPalette").addEventListener("change",sceneRender);
+$("printPhase").addEventListener("input",sceneRender);
+$("printPlay").addEventListener("click",()=>{
+ if(playHandle!==null){stopPrint();return}
+ if(!chosenPrint)return;
+ $("printPlay").textContent="Pause";
+ playHandle=setInterval(()=>{
+  let n=Number($("printPhase").value)+1;
+  if(n>chosenPrint.frames.length){stopPrint();return}
+  $("printPhase").value=n;sceneRender();
+ },Number($("printRate").value));
+});
+$("printRate").addEventListener("change",()=>{if(playHandle!==null){stopPrint();$("printPlay").click()}});
+$("printPhase").max=chosenPrint?.frames.length||0;
+sceneRender();
+
 update();
 </script></body></html>'''
 
@@ -251,7 +372,8 @@ def build(light_root: Path, print_root: Path, output: Path, check: bool):
         if re.search(r"<script\b|<foreignObject\b|\bonload\s*=|\bonerror\s*=|javascript:",blob,re.I):
             raise ValueError(f"Unsafe SVG source, inspect owner: {source}")
         target=assets/(slug+".svg");target.write_text(blob,encoding="utf-8");files[str(target.relative_to(output))]=sha(target)
-    safe_json=json.dumps(dict(meta=meta,items=rows,routes=[{"id":t["id"],"name":t["name"],"steps":[{"kind":k,"id":i} for k,i in t["steps"]]} for t in TOURS]),ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
+    time_previews=load_and_compile()
+    safe_json=json.dumps(dict(meta=meta,items=rows,time_previews=time_previews,routes=[{"id":t["id"],"name":t["name"],"steps":[{"kind":k,"id":i} for k,i in t["steps"]]} for t in TOURS]),ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
     viewer=output/"index.html";viewer.write_text(HTML.replace("__PAYLOAD__",safe_json),encoding="utf-8")
     receipt=dict(meta,artifact="OFFLINE_LOCAL_REVIEW_ONLY",item_total=len(rows),files={**files,"index.html":sha(viewer)},safety="Local file only, no served dist/public CYC upload, approval, machine or root write.",target=str(output))
     (output/"receipt.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
