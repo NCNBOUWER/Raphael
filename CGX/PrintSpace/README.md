@@ -248,3 +248,86 @@ verify original Butter Bot design/character rights and print license;
 freeze source BOM dimensions and thermal envelope; qualify track material,
 bearing fit, idler travel and pinned joint, then simulate real PC01 travel
 using measured axes. End-to-end fully functional 3D printing is NOT claimed.
+
+## Adaptive Butter Bot seeds — Bootstrap, Pro, Industrial (13 October 2026)
+
+Three SOURCE-OWNED, versioned tier policies now extend the original i3 28-stage
+route. They do NOT clone PrintCeptor, make a new UI, auto-publish assets or
+interpret an i5 replacement as categorically better. Tier selectors and
+stage overlay results appear in the original CGX offline PrintSpace viewer.
+
+| Tier | Reference objective | Mechanisms and candidate sequence | Physical status |
+| --- | --- | --- | --- |
+| BOOTSTRAP_EVERYDAY / C0 | minimum new cash, workable ideal runtime, safe first article | existing 28 staged parts, sourced donor i3 or qualifying i5, preloaded components, cooled removable pin/idler closure | HOLD until donor, machine, seal, battery and joint proof |
+| PRO_BALANCED / C1 | required user-defined compute n, energy/runtime and safe modularity | original stages + hypothetical auto-toolchange check before FDM and calibrated vision/tension review before closure (30 phases) | HOLD pending calibrated internal arms/trays/sensors |
+| INDUSTRIAL_CIRCULAR / C2 | maximize **physically qualifiable** printable/repairable proportion | original stages + microprinter/tool-change, shielded optical patterning coupon, sealed preloaded-tray witness and repair metrology (32 phases) | HOLD: silicon, certified battery, motors, bearings and controllers still sourced absent independent process proof |
+
+Authority: BUTTERBOT_ADAPTIVE_SEED_THRESHOLDS_v0_1.json; synthetic data:
+BUTTERBOT_ADAPTIVE_THREE_SCENARIOS_v0_1.json; owner source and algorithms
+remain within functional_time_preview.py. Print seed choice is conditional
+on CPU SKU, complete board/cooler envelope, thermal peak and rails, actual
+battery capacity, measured workload, cost, internal chamber/trays and joint
+safety; no user-requested gender, shape, style or source asset loses rights.
+
+IMPORTANT: The reference fixture has FOUR invented CPU system candidates,
+with deliberately fabricated Watt, Wh, dimensions, dollar cost and workload
+n. They are SOFTWARE BRANCH FIXTURES, NOT Intel specifications or supplier
+price quotes. On that synthetic fixture the best available within each
+separate objective is low-power i3 for Everyday, compact i5 for Pro and
+performance i5 for Industrial. These are 'best-of-tier in a dry run' only;
+their scores are not comparable across tiers. Real purchase/machine
+recommendations remain HOLD. The score uses explicit weighted cost, ideal
+runtime, workload, thermal headroom and candidate print-class coverage.
+The 19 source component classes expose only candidate printability; they
+do not certify actual printed quantities or 100% source independence.
+
+PrintSpace implements the founder's initial AUD $100 bootstrapping constraint
+for Everyday as a candidate acquisition ceiling, with future incremental
+growth (~AUD $50 per week) to be budgeted separately after actual quotes;
+the Pro/Industrial synthetic scenario budgets are NOT founder approvals.
+Salvage/donor components are acceptable only when source, safety, dimensions
+and warranty/rights evidence qualifies them.
+
+One sealed session remains mandatory for ALL tiers: preload any required
+unprintable parts in qualified internal trays before closure; opening the
+machine midway for outside human replacement invalidates that route's
+one-session claim. Everyday may use a smaller set of machine cells, but
+the route is not 'sealed-session proven' merely because a dry-run input says
+the trays exist. Pro mini-printers and Industrial material changes are
+conditional capabilities subject to interlocks and prior print layers.
+
+To examine the exact three simulated best-of-tier outputs without connecting
+a machine, from a trusted checkout run:
+
+    python CGX/PrintSpace/functional_time_preview.py --adaptive-summary
+
+The standard GitHub PrintSpace CI review artifact now packages
+adaptive-three-seed-results.json alongside the offline index.html and
+receipt.json. The simulator never issues machine commands or hidden physical
+actuation and does not represent measured heat, time, mechanics, or circuits.
+
+For ANY later source-confirmed i3-to-i5 substitution (or alternate i3/i5
+model), fill the nullable field template
+BUTTERBOT_CPU_SUBSTITUTION_INTAKE_v0_1.json, then evaluate through
+assess_confirmed_cpu_substitution(tier_id, intake). Missing source/passport,
+module XYZ, peak/cooling, drive/battery, true workload metric, affordability,
+registered machine cells or inside-sealed-tray proof stays HOLD. Failures
+return explicit redesign reasons. Even when arithmetic thresholds clear,
+the function does not digitally validate a manufacturer signature, grant
+purchase approval, start a printer, accept new 4D chemistry, or certify the
+enclosure. Actual part provenance and verified host/print receipts are
+separate required stages.
+
+Example of why compute badge alone is insufficient: Intel i3-13100 specifies
+60W processor base and 110W maximum turbo, whereas i5-13400 specifies
+65W processor base and 148W maximum turbo; whole-system rails, storage,
+cooler, board and battery can differ independently, and these desktop
+examples do NOT imply either model fits Butter Bot. Official Intel sources:
+https://www.intel.com/content/www/us/en/products/sku/230575/intel-core-i313100-processor-12m-cache-up-to-4-50-ghz/specifications.html
+https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html
+
+Next physical qualification and escalation: submit actual donor CPU/board
+specs and geometric margins; C0 measurements; sourced rails/BMS/E-stop;
+source BOM lots, thermal and join coupons, in-chamber manipulator clearance
+and dry-run with preloaded trays; only thereafter claim physical print coverage,
+real performance or one uninterrupted Butter Bot build.
