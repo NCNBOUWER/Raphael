@@ -578,6 +578,27 @@ class FunctionalTimeReviewTests(unittest.TestCase):
         self.assertIn("INVALID_NUMERIC_BATTERY_CAPACITY_WH",result["rejected_thresholds"])
         self.assertFalse(result["approved_to_publish"])
 
+    def test_report_cli_and_nullable_donor_template_are_source_safe(self):
+        import subprocess
+        import sys
+        from functional_time_preview import HERE
+        submitted=json.loads((HERE/"BUTTERBOT_CPU_SUBSTITUTION_INTAKE_v0_1.json").read_text(encoding="utf-8"))
+        assessment=assess_confirmed_cpu_substitution("PRO_BALANCED",submitted)
+        self.assertEqual(assessment["disposition"],"HOLD_INPUTS_PENDING")
+        self.assertFalse(assessment["approved_to_build"])
+        p=subprocess.run([sys.executable,str(HERE/"functional_time_preview.py"),
+                          "--adaptive-summary"],capture_output=True,text=True,
+                         timeout=12,check=True)
+        data=json.loads(p.stdout)
+        self.assertEqual(data["tier_count"],3)
+        self.assertTrue(data["scenario_only"])
+        self.assertEqual([x["selection"]["family"] for x in data["results"]],
+                         ["i3","i5","i5"])
+        self.assertTrue(all("frames" not in x for x in data["results"]))
+        self.assertTrue(all(x["actual_device_selection_approved"] is False
+                            for x in data["results"]))
+        self.assertFalse(data["physical_process_qualified"])
+
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
         x=altered["product_variants"][0]["stages"]
