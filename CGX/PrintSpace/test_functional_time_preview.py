@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from functional_time_preview import (
     SEEDS, SCHEMA, _sorted_stages, compile_preview,
-    load_and_compile, validate_seed,
+    load_and_compile, validate_seed, assess_functional_device_requirements,
 )
 
 class FunctionalTimeReviewTests(unittest.TestCase):
@@ -75,6 +75,55 @@ class FunctionalTimeReviewTests(unittest.TestCase):
         self.assertIn("enclosure_interlocks",laser[0]["process_required_evidence"])
         self.assertIn("fluence_threshold",laser[0]["process_required_evidence"])
         self.assertIsNone(laser[0]["measured_energy_j"])
+
+    def test_arm_angle_payload_and_motion_are_bounded_not_certified(self):
+        result=assess_functional_device_requirements(
+            self.products["BB-SOURCE-DEMO"], arm_angle_deg=30,
+            arm_length_mm=100, payload_mass_kg=0.5)
+        self.assertAlmostEqual(result["arm_tip_horizontal_offset_mm"], 50, places=4)
+        self.assertAlmostEqual(result["arm_tip_vertical_rise_mm"], 86.60254,places=4)
+        self.assertAlmostEqual(result["static_gravity_torque_nm_candidate"],0.24516625,places=7)
+        self.assertFalse(result["hardware_control"])
+        self.assertFalse(result["measured_or_qualified"])
+        self.assertTrue(any("motor" in hold for hold in result["unresolved"]))
+        negative=assess_functional_device_requirements(
+            self.products["BB-SOURCE-DEMO"],arm_angle_deg=-30,arm_length_mm=100)
+        self.assertAlmostEqual(negative["arm_tip_horizontal_offset_mm"],-50,places=4)
+        self.assertIsNone(negative["static_gravity_torque_nm_candidate"])
+
+    def test_screen_battery_compute_unitless_inputs_never_claim_functional_device(self):
+        square=self.products["WATCH-SQUARE"]
+        result=assess_functional_device_requirements(
+            square,required_screen_area_mm2=960, battery_capacity_wh=4.5,
+            average_power_w=0.5,compute_target_n=120000,
+            compute_metric="reference_operations_per_second")
+        self.assertEqual(result["display_fit_comparison"],"AREA_ONLY_FITS")
+        self.assertEqual(result["ideal_arithmetic_runtime_h"],9)
+        self.assertEqual(result["compute_n_user_candidate"],120000)
+        self.assertFalse(result["hardware_control"])
+        self.assertTrue(any("optical" in hold for hold in result["unresolved"]))
+        oversized=assess_functional_device_requirements(
+            square,required_screen_area_mm2=1200)
+        self.assertEqual(oversized["display_fit_comparison"],
+                         "AREA_EXCEEDS_SCHEMATIC_APERTURE")
+        self.assertFalse(oversized["measured_or_qualified"])
+
+    def test_functional_parameter_inputs_fail_closed(self):
+        bot=self.products["BB-SOURCE-DEMO"]
+        watch=self.products["WATCH-ROUND"]
+        bad=[
+            (bot,{"arm_angle_deg":181},"-180..180"),
+            (bot,{"arm_angle_deg":float("nan")},"finite"),
+            (bot,{"arm_angle_deg":40,"arm_length_mm":-1},"nonnegative"),
+            (watch,{"arm_angle_deg":5},"not applicable"),
+            (watch,{"battery_capacity_wh":float("inf")},"finite"),
+            (watch,{"average_power_w":0},"positive"),
+            (watch,{"compute_target_n":10},"declared metric"),
+        ]
+        for product,values,msg in bad:
+            with self.subTest(values=values):
+                with self.assertRaisesRegex(ValueError,msg):
+                    assess_functional_device_requirements(product,**values)
 
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
