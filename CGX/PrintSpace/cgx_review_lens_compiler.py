@@ -170,6 +170,7 @@ main{display:grid;grid-template-columns:minmax(370px,40%) 1fr;max-height:calc(10
 <div class="time-review" id="printTimeline" aria-label="Functional PrintSpace temporal geometric preview">
   <div class="eyebrow">PRINTSPACE / 4D-STATE REPLAY · OFFLINE CANDIDATE</div>
   <div class="row"><label for="printPreset">Article</label><select id="printPreset" aria-label="Article preview"></select><label for="printPalette">Finish</label><select id="printPalette"><option value="default">Original seed</option><option value="amber">Amber</option><option value="graphite">Graphite</option><option value="sand">Sand</option><option value="ocean">Ocean</option></select></div>
+  <div class="row"><label for="printBuildMode">Build timeline</label><select id="printBuildMode" aria-label="Source assembly detail"><option value="summary">Summary stages (source schematic)</option><option value="i3">Intel i3: full dual-arm 28-stage route</option></select><small>Detailed mode uses symbolic pickup/placement stations, not machine paths</small></div>
   <canvas id="printCanvas" width="640" height="350" aria-label="Isometric schematic of progressive model parts, not calibrated CAD geometry" role="img"></canvas>
   <div class="row"><button id="printPlay" type="button">Play</button><label for="printPhase">Build stage</label><input type="range" id="printPhase" min="0" max="9" value="0" step="1"><output id="printStage">0 / 0</output></div>
   <div class="row"><label for="printRate">Replay cadence</label><select id="printRate"><option value="1200">Slow</option><option value="650" selected>Medium</option><option value="240">Fast</option></select><span class="pill" id="printCount">Zero active parts</span></div>
@@ -252,6 +253,7 @@ document.addEventListener("keydown",e=>{if(e.target.tagName==="INPUT"||e.target.
 
 // An offline, geometric 3D-like isometric stage viewer, NOT machine or CAD simulation.
 let chosenPrint=timeProducts[0]||null,playHandle=null;
+const currentStages=()=>chosenPrint&&$("printBuildMode").value==="i3"&&chosenPrint.i3_track_build_route?.frames?.length?chosenPrint.i3_track_build_route.frames:chosenPrint?.frames||[];
 const reviewOverrides={};
 const printSelect=$("printPreset");
 for(const product of timeProducts){const o=document.createElement("option");o.value=product.id;o.textContent=product.name;printSelect.appendChild(o)}
@@ -310,7 +312,7 @@ function sceneRender(){
  ctx.clearRect(0,0,canvas.width,canvas.height);
  ctx.fillStyle="#e2eaf0";ctx.fillRect(0,0,canvas.width,canvas.height);
  const frameIndex=Number($("printPhase").value);
- const stages=chosenPrint.frames,frame=stages[frameIndex-1]||null;
+ const stages=currentStages(),frame=stages[frameIndex-1]||null;
  const visible=new Set(frame?.visible_part_ids||[]);
  const total=Math.max(...chosenPrint.envelope_mm);
  const scale=Math.min(2.0,155/total);
@@ -322,7 +324,10 @@ function sceneRender(){
  layers.sort((a,b)=>a.center_mm[2]-b.center_mm[2]);
  for(const p of layers){
    const base=/BATTERY|COMPUTE|CONDUCTOR|DISPLAY/.test(p.role)?pal[2]:/DRIVE|MECHANISM|HINGED/.test(p.role)?pal[1]:pal[0];
-   const ratio=frame&&p.stage===frame.stage_id&&frame.process==="FDM_DEPOSITION"?.72:1;
+   const isDetailed=$("printBuildMode").value==="i3";
+   const openTrack=isDetailed&&p.id==="left_track"&&!frame?.track_left_closed_candidate||
+     isDetailed&&p.id==="right_track"&&!frame?.track_right_closed_candidate;
+   const ratio=openTrack?.55:(frame&&p.stage===frame.stage_id&&frame.process==="FDM_DEPOSITION"?.72:1);
    if(p.primitive==="cylinder")drawCylinder(ctx,p,scale,ratio,base);
    else drawCube(ctx,p,scale,ratio,base);
  }
@@ -330,7 +335,7 @@ function sceneRender(){
  ctx.fillText("SCHEMATIC 3D · mm reference · not verified CAD",16,22);
  const reviewKey=chosenPrint.id+":"+(frame?.stage_id||"unset");
  const requestedRoute=reviewOverrides[reviewKey]||"BASELINE";
- const route=requestedRoute==="BASELINE"?frame?.process:requestedRoute;
+ const route=requestedRoute==="BASELINE"?(frame?.process||frame?.operation):requestedRoute;
  const contract=payload.time_previews?.process_catalog?.[route];
  const hypotheticalState=$("printSubstrate").value;
  const stateWindow=payload.time_previews?.process_window_profiles?.[route]?.[hypotheticalState];
@@ -346,11 +351,17 @@ function sceneRender(){
  const choice=reviewOverrides[chosenPrint.id+":"+(frame?.stage_id||"unset")]||"BASELINE";
  routeSelect.value=choice;
  if(!routeSelect.value)routeSelect.value="BASELINE";
- text("printDescription",chosenPrint.name+" · "+current+
+ const stationTravel=frame?.from_station?
+   " · tool "+frame.tool_role+" · "+frame.from_station+" → "+frame.to_station+
+   " · travel distance UNCALIBRATED": "";
+ const holdRoles=frame?.tension_arm?
+   " · holding: "+frame.tension_arm+" joining: "+frame.joining_arm+
+   " · force UNMEASURED" : "";
+ text("printDescription",chosenPrint.name+" · "+current+stationTravel+holdRoles+
    " · phase index only (no measured seconds or thermal/kinematic simulation)");
  text("printEvidence",frame?
-  "Evidence HOLD: "+frame.process_status+"; "+(stateWindow?.disposition||"NO_VERIFIED_PROCESS_WINDOW")+
-   "; source requires "+(stateWindow?.requires_independent_evidence||contract?.needs||frame.process_required_evidence).join(", ")+
+  "Evidence HOLD: "+(frame.process_status||frame.output_state_candidate||"CANDIDATE_ONLY")+"; "+(stateWindow?.disposition||"NO_VERIFIED_PROCESS_WINDOW")+
+   "; source requires "+(stateWindow?.requires_independent_evidence||contract?.needs||frame.process_required_evidence||frame.operation_evidence||[]).join(", ")+
   ". "+(requestedRoute!=="BASELINE"?"MANUAL PROCESS CHANGE NOT RE-SEQUENCED OR QUALIFIED. ":"")+
   "Qualified: no; physical print: not run.":
   "Source-only seed with unresolved BOM, material rights, geometry and physical validation.");
@@ -364,6 +375,16 @@ function sceneRender(){
    "Motion envelope":chosenPrint.motion_candidate,
    "Envelope, mm":chosenPrint.envelope_mm,
    "Material state selection":hypotheticalState,
+   "Build review mode":$("printBuildMode").value,
+   "Intel i3 exact SKU and source":chosenPrint.i3_track_build_route?.cpu?.exact_sku||null,
+   "Detailed staged source root":chosenPrint.i3_track_build_route?.source_sha256||null,
+   "Detailed assembly stage count":chosenPrint.i3_track_build_route?.stage_count||null,
+   "Sourced component count":chosenPrint.i3_track_build_route?.source_components?.filter(c=>c.kind==="SOURCED").length||null,
+   "Selected source station":frame?.from_station||null,
+   "Target placement station":frame?.to_station||null,
+   "Tension/grip arm":frame?.tension_arm||null,
+   "Track join arm":frame?.joining_arm||null,
+   "Final track tension, N":null,
    "Directional Raphael catalog source SHA":payload.time_previews?.directional_material_catalog_sha256,
    "Inverse source requirement nodes not illustrated":chosenPrint.inverse_source_coverage?.not_geometrically_represented||null,
    "Inverse source references are not functional proof":Boolean(chosenPrint.inverse_source_coverage),
@@ -383,7 +404,14 @@ printSelect.addEventListener("change",()=>{
  $("printBattery").value="";
  $("printCompute").value="";
  $("printDraft").style.display="none";
- $("printPhase").max=chosenPrint?.frames.length||0;$("printPhase").value=0;sceneRender();
+ $("printBuildMode").value="summary";$("printBuildMode").disabled=!chosenPrint?.i3_track_build_route;
+ $("printPhase").max=currentStages().length;$("printPhase").value=0;sceneRender();
+});
+$("printBuildMode").addEventListener("change",()=>{
+  stopPrint();
+  $("printPhase").max=currentStages().length;
+  $("printPhase").value=0;
+  sceneRender();
 });
 $("printPalette").addEventListener("change",sceneRender);
 $("printArm").addEventListener("input",sceneRender);
@@ -391,7 +419,7 @@ $("printBattery").addEventListener("input",sceneRender);
 $("printCompute").addEventListener("input",sceneRender);
 $("printSubstrate").addEventListener("change",sceneRender);
 $("printProcedure").addEventListener("change",()=>{
- const frame=chosenPrint?.frames[Number($("printPhase").value)-1];
+ const frame=currentStages()[Number($("printPhase").value)-1];
  if(!frame)return;
  const route=$("printProcedure").value;
  reviewOverrides[chosenPrint.id+":"+frame.stage_id]=route;
@@ -409,7 +437,12 @@ $("printExport").addEventListener("click",()=>{
    battery_wh_unverified:$("printBattery").value===""?null:Number($("printBattery").value),
    compute_n_unverified:$("printCompute").value===""?null:Number($("printCompute").value),
    colour_candidate:$("printPalette").value,
-   substrate_state_unverified:$("printSubstrate").value
+   substrate_state_unverified:$("printSubstrate").value,
+   time_review_mode:$("printBuildMode").value,
+   detailed_route_source_sha256:chosenPrint.i3_track_build_route?.source_sha256||null,
+   symbolic_stations_only:true,
+   real_toolhead_trajectory_verified:false,
+   mechanically_qualified_tracks:false
   },
   candidate_process_overrides:Object.fromEntries(
    Object.entries(reviewOverrides).filter(([k])=>k.startsWith(chosenPrint.id+":"))),
@@ -427,12 +460,13 @@ $("printPlay").addEventListener("click",()=>{
  $("printPlay").textContent="Pause";
  playHandle=setInterval(()=>{
   let n=Number($("printPhase").value)+1;
-  if(n>chosenPrint.frames.length){stopPrint();return}
+  if(n>currentStages().length){stopPrint();return}
   $("printPhase").value=n;sceneRender();
  },Number($("printRate").value));
 });
 $("printRate").addEventListener("change",()=>{if(playHandle!==null){stopPrint();$("printPlay").click()}});
-$("printPhase").max=chosenPrint?.frames.length||0;
+$("printBuildMode").disabled=!chosenPrint?.i3_track_build_route;
+$("printPhase").max=currentStages().length;
 $("printArm").disabled=chosenPrint?.kind!=="tracked_robot";
 sceneRender();
 
