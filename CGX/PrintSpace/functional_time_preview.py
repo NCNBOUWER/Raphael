@@ -150,6 +150,46 @@ def _motion_candidate(variant):
             "torque_verified":False}
 
 
+
+def _source_dependency_coverage(variant: dict) -> dict | None:
+    """Reference owner-owned inverse DAG IDs; does not infer printed function."""
+    goal = variant.get("source_goal_node")
+    refs = [p["source_dependency_node_ref"] for p in variant["parts"]
+            if "source_dependency_node_ref" in p]
+    if goal is None:
+        if refs:
+            raise ValueError("source node refs require registered inverse goal")
+        return None
+    if type(goal) is not str or not goal or type(refs) is not list:
+        raise ValueError("unregistered source inverse goal")
+    graph_file = HERE / "PRINTCEPTOR_INVERSE_BUILD_GRAPH_v0_1.json"
+    graph = json.loads(graph_file.read_text(encoding="utf-8"))
+    if graph.get("schema") != "cgx.printspace.inverse_build_graph.v0.1":
+        raise ValueError("unregistered inverse source graph")
+    index = {c["id"]: c for c in graph["components"]}
+    if len(index) != len(graph["components"]) or goal not in index:
+        raise ValueError("missing or duplicate inverse source identity")
+    needed = set(index[goal].get("needs", []))
+    if not needed or len(needed) > 64 or any(x not in index for x in needed):
+        raise ValueError("inverse goal missing verified dependency closure")
+    if any(type(ref) is not str or ref not in needed for ref in refs):
+        raise ValueError("preview references foreign or unregistered source dependency")
+    represented = set(refs)
+    return {
+        "graph_sha256": source_sha(graph_file),
+        "owner_goal_id": goal,
+        "required_node_ids": sorted(needed),
+        "referenced_node_ids": sorted(represented),
+        "not_geometrically_represented": sorted(needed-represented),
+        "reference_count": len(refs),
+        "inference": "SEMANTIC_MOUNTING_POINT_NOT_PHYSICALLY_IMPLEMENTED",
+        "physical_functional_coverage_verified": False,
+        "electrical_control_safety_verified": False,
+        "qualified_fabrication": False,
+    }
+
+
+
 def compile_preview(source, *, source_hash=None):
     validate_seed(source)
     routes = []
@@ -180,7 +220,9 @@ def compile_preview(source, *, source_hash=None):
             "envelope_mm":v["design_envelope_mm"],"aesthetic":v["aesthetic"],
             "parameters":v["parameters"],"display_area_mm2_candidate":_display_area(v),
             "battery_capacity_wh":None,"compute_capacity_n":None,
-            "motion_candidate":_motion_candidate(v),"parts":parts,"frames":frames,
+            "motion_candidate":_motion_candidate(v),
+            "inverse_source_coverage":_source_dependency_coverage(v),
+            "parts":parts,"frames":frames,
             "unknowns":v["source_caveats"],
             "qualified_fabrication":False,"production_approved":False,
         })
