@@ -10,6 +10,7 @@ from functional_time_preview import (
     assess_process_window, review_directional_material_transition,
     compile_i3_track_closure_plan, I3_TRACK_PLAN,
     simulate_adaptive_seed_alternatives, ADAPTIVE_SEED_POLICY, ADAPTIVE_SCENARIO_FIXTURE,
+    assess_confirmed_cpu_substitution,
 )
 
 class FunctionalTimeReviewTests(unittest.TestCase):
@@ -490,6 +491,92 @@ class FunctionalTimeReviewTests(unittest.TestCase):
         self.assertFalse(a["toolpaths_and_simulated_physics_verified"])
         self.assertEqual(a["release_status"],
                          "DIGITAL_SCENARIO_ONLY_NO_PURCHASING_OR_HARDWARE_AUTHORITY")
+
+    def test_confirmed_processor_intake_stays_held_when_unmeasured(self):
+        result=assess_confirmed_cpu_substitution(
+            "PRO_BALANCED",{"cpu_family":"i5","cpu_sku":"user-reported-i5-model"})
+        self.assertEqual(result["disposition"],"HOLD_INPUTS_PENDING")
+        self.assertIn("processor_peak_power_w",result["incomplete_required_inputs"])
+        self.assertIn("module_xyz_mm",result["incomplete_required_inputs"])
+        self.assertIn("source_reference",result["incomplete_required_inputs"])
+        self.assertFalse(result["approved_to_build"])
+        self.assertFalse(result["approved_to_purchase"])
+        self.assertFalse(result["actual_source_identity_cryptographically_verified"])
+
+    def test_submitted_i5_can_clear_math_without_manufacture_approval(self):
+        supplied={
+            "cpu_family":"i5","cpu_sku":"SOURCE_REPORTED_SKU",
+            "source_reference":"owner:attachment:part_passport_candidate",
+            "module_xyz_mm":[120,105,42],
+            "machine_internal_envelope_mm":[190,165,135],
+            "margin_mm":[10,10,7],
+            "processor_peak_power_w":74,
+            "cooling_capacity_w":90,
+            "average_system_power_w":28,
+            "battery_capacity_wh":96,
+            "workload_score_n":210,
+            "baseline_i3_workload_n":100,
+            "incremental_cost_aud":175,
+            "available_budget_aud":260,
+            "registered_machine_cells":["FDM","PICK","INSPECT","SEALED_TRAYS",
+                                        "TOOLCHANGE","VISION","SENSOR_FEEDBACK"],
+            "internal_sourced_tray_preloaded":True,
+        }
+        result=assess_confirmed_cpu_substitution("PRO_BALANCED", supplied)
+        self.assertEqual(result["disposition"],
+                         "ARITHMETIC_AND_DECLARED_DIMENSION_THRESHOLDS_ONLY")
+        self.assertEqual(result["derived_metric_candidates"]["required_body_cavity_mm"],
+                         [140,125,56])
+        self.assertAlmostEqual(result["derived_metric_candidates"]["ideal_runtime_h"],
+                               96/28,places=4)
+        self.assertEqual(result["derived_metric_candidates"]["thermal_peak_headroom_w"],16)
+        self.assertAlmostEqual(result["derived_metric_candidates"]["i5_gain_ratio_to_supplied_i3"],2.1)
+        self.assertEqual(result["rejected_thresholds"],[])
+        self.assertFalse(result["actual_source_identity_cryptographically_verified"])
+        self.assertFalse(result["approved_to_build"])
+        self.assertFalse(result["approved_to_purchase"])
+        self.assertFalse(result["approved_to_actuate"])
+
+    def test_upgraded_cpu_cannot_bypass_thermal_cash_or_sealed_chamber(self):
+        intake={
+            "cpu_family":"i5","cpu_sku":"CANDIDATE",
+            "source_reference":"user:part-record",
+            "module_xyz_mm":[160,120,80],
+            "machine_internal_envelope_mm":[155,125,75],
+            "margin_mm":[12,12,8],
+            "processor_peak_power_w":150,
+            "cooling_capacity_w":70,
+            "average_system_power_w":70,
+            "battery_capacity_wh":70,
+            "workload_score_n":180,
+            "baseline_i3_workload_n":160,
+            "incremental_cost_aud":700,
+            "available_budget_aud":80,
+            "registered_machine_cells":["FDM","PICK"],
+            "internal_sourced_tray_preloaded":False,
+        }
+        result=assess_confirmed_cpu_substitution("PRO_BALANCED",intake)
+        self.assertEqual(result["disposition"],"REJECT_OR_REDESIGN_CONSTRAINTS")
+        reasons=result["rejected_thresholds"]
+        for reason in ("THERMAL_PEAK_OVERRUN","ACTUAL_MODULE_ENVELOPE_REQUIRES_BODY_REDIMENSION",
+                       "I5_GAIN_NOT_WORTH_UPGRADE_BY_POLICY",
+                       "PRICE_EXCEEDS_TIER_CAP_OR_AVAILABLE_CASH",
+                       "NECESSARY_MACHINE_CELLS_NOT_PRESENT",
+                       "SEALED_SESSION_CANNOT_USE_EXTERNAL_INSERTION"):
+            self.assertIn(reason,reasons)
+        self.assertFalse(result["approved_to_build"])
+
+    def test_source_substitution_intake_rejects_fabricated_fields_and_nonfinite(self):
+        with self.assertRaisesRegex(ValueError,"unregistered hardware intake"):
+            assess_confirmed_cpu_substitution("BOOTSTRAP_EVERYDAY",
+                {"cpu_family":"i5","owner_override_safety":True})
+        with self.assertRaisesRegex(ValueError,"unknown Butter Bot threshold tier"):
+            assess_confirmed_cpu_substitution("UNREGISTERED",{})
+        result=assess_confirmed_cpu_substitution("INDUSTRIAL_CIRCULAR",
+            {"cpu_family":"i7","cpu_sku":"fantasy", "battery_capacity_wh":float("nan")})
+        self.assertIn("UNREGISTERED_CPU_FAMILY",result["rejected_thresholds"])
+        self.assertIn("INVALID_NUMERIC_BATTERY_CAPACITY_WH",result["rejected_thresholds"])
+        self.assertFalse(result["approved_to_publish"])
 
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
