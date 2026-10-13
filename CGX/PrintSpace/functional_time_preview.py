@@ -715,6 +715,294 @@ def review_directional_material_transition(
 
 
 
+
+ADAPTIVE_SEED_POLICY = HERE / "BUTTERBOT_ADAPTIVE_SEED_THRESHOLDS_v0_1.json"
+ADAPTIVE_SCENARIO_FIXTURE = HERE / "BUTTERBOT_ADAPTIVE_THREE_SCENARIOS_v0_1.json"
+ADAPTIVE_SOLUTION_SCHEMA = "cgx.printspace.butterbot_adaptive_three_solutions.v0.1"
+TIER_ORDER = ("BOOTSTRAP_EVERYDAY", "PRO_BALANCED", "INDUSTRIAL_CIRCULAR")
+
+
+def _bounded_number(value, name, *, positive=False):
+    """Allow finite nonnegative numeric scenario values, never bool or NaN."""
+    if type(value) not in (int, float) or not math.isfinite(value) or value < 0 or value > 100000000:
+        raise ValueError(name + " must be finite and nonnegative")
+    if positive and value == 0:
+        raise ValueError(name + " must be positive")
+    return float(value)
+
+
+def _validate_adaptive_seed_data(policy, fixture, base):
+    if policy.get("schema") != "cgx.printspace.butterbot_adaptive_seed_thresholds.v0.1":
+        raise ValueError("unregistered adaptive threshold policy")
+    if fixture.get("schema") != "cgx.printspace.butterbot_adaptive_scenario_fixture.v0.1":
+        raise ValueError("unregistered adaptive scenario fixture")
+    if (fixture.get("status") != "SYNTHETIC_SCENARIO_ONLY_NO_LIVE_SOURCE_ATTESTATION" or
+            policy.get("status") != "SOURCE_REVIEW_ONLY_NOT_PRODUCTION" or
+            policy.get("source_policy", {}).get("hardware_control") is not False):
+        raise ValueError("adaptive scenario cannot authorize manufacture")
+    tiers = policy.get("tiers", [])
+    if [t.get("id") for t in tiers] != list(TIER_ORDER):
+        raise ValueError("exact three separate tier policies required")
+    if base["schema"] != I3_ROUTE_SCHEMA or base.get("factory_production_authorized") is not False:
+        raise ValueError("source 28-stage plan must remain unqualified")
+    base_stage_ids = {f["stage_id"] for f in base["frames"]}
+    all_stages = set(base_stage_ids)
+    for tier in tiers:
+        weights = tier.get("weights", {})
+        if set(weights) != {"cost", "runtime", "compute", "thermal", "printability"}:
+            raise ValueError("tier must declare all five optimization weights")
+        if abs(sum(_bounded_number(x, "weight") for x in weights.values()) - 1.0) > 1e-8:
+            raise ValueError("multi-objective tier weights must sum to one")
+        if tier.get("sealed_session_mandatory") is not True or \
+                tier.get("allowed_cpu_families") != ["i3", "i5"]:
+            raise ValueError("cpu substitutions and sealed session are mandatory")
+        _bounded_number(tier["required_workload_n"], "required_workload", positive=True)
+        _bounded_number(tier["min_ideal_runtime_h"], "min_runtime", positive=True)
+        _bounded_number(tier["min_i5_gain_ratio"], "min_i5_gain_ratio", positive=True)
+        _bounded_number(tier["preferred_print_fraction"], "print_target", positive=True)
+        if not 0 < tier["preferred_print_fraction"] <= 1:
+            raise ValueError("invalid printable fraction target")
+        inserts = tier.get("stage_insertions", [])
+        if len(inserts) > 8:
+            raise ValueError("too many conditional tier process insertions")
+        for item in inserts:
+            if item["after"] not in base_stage_ids or item["id"] in all_stages:
+                raise ValueError("unregistered or conflicting inserted stage")
+            if item.get("qualified") is not False or \
+                    item.get("kind") != "SCHEMATIC_REVIEW_ONLY":
+                raise ValueError("unqualified inserted manufacturing authority")
+            all_stages.add(item["id"])
+
+    candidates = fixture.get("candidates", [])
+    if not 1 <= len(candidates) <= 24:
+        raise ValueError("unbounded CPU candidate inventory")
+    if len({c["id"] for c in candidates}) != len(candidates):
+        raise ValueError("duplicate CPU candidate")
+    for c in candidates:
+        if c.get("family") not in ("i3", "i5") or \
+                c.get("source_type") != "SYNTHETIC_ONLY_NO_PURCHASING_CLAIM" or \
+                c.get("exact_cpu_sku") is not None or \
+                c.get("board_and_cooler_passport_verified") is not False:
+            raise ValueError("CPU donor scenario must remain unverified")
+        for key in ("cost_aud","peak_thermal_w","cooling_capacity_w",
+                    "average_system_w","workload_score_n"):
+            _bounded_number(c.get(key), "cpu "+key, positive=key!="cost_aud")
+        xyz=c.get("module_xyz_mm", [])
+        if len(xyz)!=3 or any(_bounded_number(v,"module xyz",positive=True)<=0 for v in xyz):
+            raise ValueError("CPU mechanical envelope not bounded")
+    snapshots=fixture.get("tier_snapshots", [])
+    if [s.get("tier_id") for s in snapshots] != list(TIER_ORDER):
+        raise ValueError("exact matching three inventory snapshots required")
+    for s in snapshots:
+        for k in ("max_spend_aud","battery_wh"):
+            _bounded_number(s.get(k),k,positive=True)
+        xyz=s.get("provisional_internal_envelope_mm",[])
+        if len(xyz)!=3 or any(_bounded_number(v,"body xyz",positive=True)<=0 for v in xyz):
+            raise ValueError("unbounded target enclosure")
+        if len(set(s.get("assumed_process_cells",[]))) != len(s.get("assumed_process_cells",[])):
+            raise ValueError("duplicated process capability")
+        if s.get("internally_preloaded_sourced_trays") is not True or \
+                s.get("real_sealed_session_witness") is not False or \
+                s.get("measured_machine_cell_readiness") is not False:
+            raise ValueError("sealed session evidence erroneously promoted")
+    margins=fixture.get("margin_mm",[])
+    if len(margins)!=3 or any(_bounded_number(v,"edge margin")>100 for v in margins):
+        raise ValueError("invalid CPU margin")
+    if fixture.get("benchmark_units") != "ABSTRACT_SYNTHETIC_WORKLOAD_N":
+        raise ValueError("unadmitted real workload benchmark")
+    return True
+
+
+def _seed_candidate_scores(tier, snapshot, fixture, print_candidate_fraction):
+    candidates=fixture["candidates"]
+    i3_benchmark=max((c["workload_score_n"] for c in candidates if c["family"]=="i3"),default=None)
+    available=min(_bounded_number(snapshot["max_spend_aud"],"budget",positive=True),
+                  _bounded_number(tier["max_incremental_cost_aud"],"tier cap",positive=True)
+                  if tier.get("max_incremental_cost_aud") is not None
+                  else _bounded_number(snapshot["max_spend_aud"],"budget",positive=True))
+    margins=fixture["margin_mm"]
+    outcomes=[]
+    for c in candidates:
+        rejects=[]
+        cost=float(c["cost_aud"])
+        power=float(c["peak_thermal_w"])
+        cooling=float(c["cooling_capacity_w"])
+        work=float(c["workload_score_n"])
+        runtime=float(snapshot["battery_wh"])/float(c["average_system_w"])
+        if c["family"] not in tier["allowed_cpu_families"]:
+            rejects.append("CPU_FAMILY_NOT_ALLOWED")
+        if work < tier["required_workload_n"]:
+            rejects.append("WORKLOAD_BELOW_TIER_MINIMUM")
+        if runtime < tier["min_ideal_runtime_h"]:
+            rejects.append("IDEAL_RUNTIME_BELOW_TIER_MINIMUM")
+        if power > cooling:
+            rejects.append("PEAK_THERMAL_LOAD_EXCEEDS_ASSUMED_COOLING")
+        if cost > available:
+            rejects.append("ACQUISITION_COST_EXCEEDS_ASSUMED_AVAILABLE_BUDGET")
+        if any(c["module_xyz_mm"][i]+2*margins[i] >
+               snapshot["provisional_internal_envelope_mm"][i] for i in range(3)):
+            rejects.append("COMPLETE_MODULE_EXCEEDS_PROVISIONAL_ENVELOPE")
+        missing_cells=sorted(set(tier["minimum_cells"]) -
+                             set(snapshot["assumed_process_cells"]))
+        if missing_cells:
+            rejects.append("STATED_MACHINE_PROCESS_CELLS_MISSING")
+        if c["family"]=="i5" and i3_benchmark is not None and \
+                work < i3_benchmark*tier["min_i5_gain_ratio"]:
+            rejects.append("I5_WORKLOAD_GAIN_DOES_NOT_CLEAR_THRESHOLD")
+        costs=1-min(1,cost/available)
+        ideal=min(1,runtime/(2*tier["min_ideal_runtime_h"]))
+        compute=min(1,work/(2*tier["required_workload_n"]))
+        thermal=min(1,max(0,(cooling-power)/power))
+        printable=min(1,print_candidate_fraction/tier["preferred_print_fraction"])
+        metrics={"cost":costs,"runtime":ideal,"compute":compute,
+                 "thermal":thermal,"printability":printable}
+        score=round(100*sum(float(tier["weights"][k])*metrics[k]
+                            for k in tier["weights"]),6)
+        outcomes.append({
+            "id":c["id"],"family":c["family"],"sku":None,
+            "scenario_cost_aud":cost,
+            "scenario_workload_n":work,
+            "scenario_peak_w":power,
+            "scenario_cooling_capacity_w":cooling,
+            "ideal_arithmetic_runtime_h":round(runtime,4),
+            "hypothetical_module_xyz_mm":c["module_xyz_mm"],
+            "rejected_thresholds":sorted(rejects),
+            "scenario_eligible":not rejects,
+            "weighted_score_scenario_only":score,
+            "metrics_dimensionless":{k:round(v,4) for k,v in metrics.items()},
+            "actual_hardware_verified":False,
+        })
+    outcomes.sort(key=lambda c:(not c["scenario_eligible"],-c["weighted_score_scenario_only"],c["id"]))
+    return outcomes
+
+
+def _insert_tier_review_stages(base_frames, tier):
+    insert_after={}
+    for x in tier["stage_insertions"]:
+        insert_after.setdefault(x["after"],[]).append(x)
+    output=[]
+    for frame in base_frames:
+        copy=dict(frame)
+        copy["mode"]="BASE_28_STAGE_ROUTE"
+        output.append(copy)
+        for item in insert_after.get(frame["stage_id"],[]):
+            overlay=dict(frame)
+            overlay.update({
+                "stage_id":item["id"],
+                "operation":"OPTIONAL_TIER_CAPABILITY_HOLD",
+                "source_component_ids":[],
+                "tool_role":"REVIEW_ONLY_NON_ACTUATING",
+                "from_station":frame["to_station"],
+                "to_station":frame["to_station"],
+                "travel_mm":None,
+                "cartesian_path":None,
+                "tension_arm":None,
+                "joining_arm":None,
+                "force_target_n":None,
+                "force_measured_n":None,
+                "workpiece_temperature_c":None,
+                "time_s":None,
+                "tool_reachability_verified":False,
+                "joint_strength_verified":False,
+                "tension_verified":False,
+                "physical_execution_approved":False,
+                "track_left_closed_candidate":frame["track_left_closed_candidate"],
+                "track_right_closed_candidate":frame["track_right_closed_candidate"],
+                "mode":"OPTIONAL_REVIEW_HOLD_NOT_HARDWARE_OPERATION",
+                "operation_evidence":["machine cells: "+",".join(item["required_cells"]),
+                                      "source-specific independent process coupon and controller witness"],
+                "required_cells":item["required_cells"],
+                "qualified":False
+            })
+            output.append(overlay)
+    for i,frame in enumerate(output):
+        frame["step"]=i+1
+        frame["progress_fraction"]=round((i+1)/len(output),6)
+    return output
+
+
+def simulate_adaptive_seed_alternatives(
+    policy_path=ADAPTIVE_SEED_POLICY, scenario_path=ADAPTIVE_SCENARIO_FIXTURE,
+    *,
+    base_route=None,
+):
+    """Select the best hypothetical component route for each of three tiers.
+
+    No real score is returned: the published scenario inventory explicitly
+    contains invented CPU energy, cost and performance examples, while each
+    output retains source, rights, machine, interlock and part qualification HOLD.
+    """
+    policy_path=Path(policy_path)
+    scenario_path=Path(scenario_path)
+    policy=json.loads(policy_path.read_text(encoding="utf-8"))
+    fixture=json.loads(scenario_path.read_text(encoding="utf-8"))
+    base=compile_i3_track_closure_plan() if base_route is None else base_route
+    _validate_adaptive_seed_data(policy,fixture,base)
+    raw=json.loads(I3_TRACK_PLAN.read_text(encoding="utf-8"))
+    classes=raw["source_components"]
+    printable=sum(c["kind"]=="PRINT_CANDIDATE" for c in classes)
+    fraction=printable/len(classes)
+    if len(classes)!=19:
+        raise ValueError("source-owned 19-class component registry has changed")
+    outputs=[]
+    for tier,snapshot in zip(policy["tiers"],fixture["tier_snapshots"]):
+        results=_seed_candidate_scores(tier,snapshot,fixture,fraction)
+        selected=next((x for x in results if x["scenario_eligible"]),None)
+        frames=_insert_tier_review_stages(base["frames"],tier)
+        outputs.append({
+            "tier_id":tier["id"],
+            "display_name":tier["display_name"],
+            "machine_level_candidate":tier["pc_gate"],
+            "objective":tier["candidate_process_policy"],
+            "selection":selected,
+            "alternatives":results[:3],
+            "candidate_pool_size":len(results),
+            "required_workload_n_synthetic":tier["required_workload_n"],
+            "budget_aud_synthetic":snapshot["max_spend_aud"],
+            "battery_wh_synthetic":snapshot["battery_wh"],
+            "internally_preloaded_trays_hypothesized":True,
+            "stage_count":len(frames),
+            "frames":frames,
+            "source_component_class_count":len(classes),
+            "print_candidate_class_count":printable,
+            "candidate_print_class_fraction":round(fraction,6),
+            "target_print_fraction":tier["preferred_print_fraction"],
+            "unknown_physical_print_fraction":True,
+            "fully_printable":False,
+            "all_component_printable_target_gate":"HOLD_UNTIL_SOURCED_CHIPS_BATTERY_MOTORS_PRECISION_CLAIM_QUALIFIED",
+            "tension_force_validated":False,
+            "actual_device_selection_approved":False,
+            "real_battery_runtime_verified":False,
+            "actual_sealed_session_verified":False,
+            "toolpaths_and_simulated_physics_verified":False,
+            "actual_CPU_SKU":None,
+            "release_status":"DIGITAL_SCENARIO_ONLY_NO_PURCHASING_OR_HARDWARE_AUTHORITY",
+            "unresolved":[
+                "real processor SKU and board+cooler passport",
+                "real price, workload benchmark and module power",
+                "measured body fit, center of mass and dynamic drive torque",
+                "printer calibration, automatic internal trays and safety C0",
+                "material lot, print/wear/thermal/cure coupons and as-built scan",
+                "real source rights and no mid-session manual chamber opening",
+            ]
+        })
+    return {
+        "schema":ADAPTIVE_SOLUTION_SCHEMA,
+        "policy_sha256":source_sha(policy_path),
+        "scenario_sha256":source_sha(scenario_path),
+        "base_route_sha256":base["source_sha256"],
+        "scenario_only":True,
+        "tier_count":len(outputs),
+        "selection_semantics":"ONE_BEST_HYPOTHETICAL_CPU_PER_TIER_NOT_CROSS_TIER_PRICE_RANKING",
+        "computer_architecture":"SOURCED_CPU_AND_ELECTRONICS_RETAINED",
+        "physical_process_qualified":False,
+        "printed_entire_device":False,
+        "closed_chamber_fabrication_accepted":False,
+        "results":outputs,
+    }
+
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed",type=Path,default=SEEDS)
