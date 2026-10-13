@@ -226,6 +226,23 @@ class FunctionalTimeReviewTests(unittest.TestCase):
                 "LASER_DIRECT_WRITE_CANDIDATE":{"can_run_physically":True,"needs":["danger"]}
             })
 
+    def test_compiled_stage_preview_includes_explicit_process_window_profiles(self):
+        result=load_and_compile()
+        self.assertEqual(len(result["process_window_profiles"]),7)
+        self.assertEqual(len(result["directional_material_catalog_sha256"]),64)
+        self.assertEqual(
+            result["process_window_profiles"]["LASER_DIRECT_WRITE_CANDIDATE"]["UNKNOWN"]["disposition"],
+            "HOLD_SUBSTRATE_STATE_UNRESOLVED")
+        wet=result["process_window_profiles"]["MASKED_PHOTOLITHOGRAPHY_CANDIDATE"]["WET_FLOWABLE"]
+        self.assertEqual(wet["disposition"],
+            "CAN_IF_WET_CHEMISTRY_FOCUS_AND_MASK_COUPONS_VALIDATED")
+        self.assertFalse(wet["production_approved"])
+        for product in result["products"]:
+            for stage in product["frames"]:
+                self.assertIsNone(stage["observed_substrate_state"])
+                self.assertFalse(stage["stage_process_window_verified"])
+                self.assertFalse(stage["qualified_process"])
+
     def test_cycle_and_duplicate_stage_rejected(self):
         altered=copy.deepcopy(self.seeds)
         x=altered["product_variants"][0]["stages"]
