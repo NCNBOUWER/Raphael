@@ -1008,6 +1008,159 @@ def simulate_adaptive_seed_alternatives(
 
 
 
+
+def assess_confirmed_cpu_substitution(tier_id: str, supplied: dict, *,
+                                      policy_path=ADAPTIVE_SEED_POLICY) -> dict:
+    """Plan around newly supplied donor/purchased hardware, without inventing proof.
+
+    Every absent measurement stays a named hold. A locally entered SKU,
+    manufacturer link or SHA by itself is NOT an independently verified receipt.
+    PASS here is arithmetic and envelope-only, never machine or release PASS.
+    """
+    policy_path=Path(policy_path)
+    policy=json.loads(policy_path.read_text(encoding="utf-8"))
+    if policy.get("schema")!="cgx.printspace.butterbot_adaptive_seed_thresholds.v0.1":
+        raise ValueError("unregistered CPU threshold policy")
+    tier=next((item for item in policy.get("tiers", []) if item["id"]==tier_id),None)
+    if tier is None:
+        raise ValueError("unknown Butter Bot threshold tier")
+    if type(supplied) is not dict:
+        raise ValueError("hardware input must be a typed record")
+    allowed_keys={
+        "cpu_family","cpu_sku","source_reference","module_xyz_mm",
+        "machine_internal_envelope_mm","margin_mm",
+        "processor_peak_power_w","cooling_capacity_w",
+        "average_system_power_w","battery_capacity_wh",
+        "workload_score_n","baseline_i3_workload_n",
+        "incremental_cost_aud","available_budget_aud",
+        "registered_machine_cells","internal_sourced_tray_preloaded",
+    }
+    if set(supplied)-allowed_keys:
+        raise ValueError("unregistered hardware intake fields")
+
+    missing=[]
+    rejected=[]
+    metrics={}
+    def needed(key):
+        value=supplied.get(key)
+        if value is None:
+            missing.append(key)
+        return value
+    family=needed("cpu_family")
+    if family is not None:
+        if type(family) is not str or family not in tier["allowed_cpu_families"]:
+            rejected.append("UNREGISTERED_CPU_FAMILY")
+    sku=needed("cpu_sku")
+    if sku is not None and (type(sku) is not str or
+                            not 1<=len(sku)<=96 or any(ord(x)<32 for x in sku)):
+        rejected.append("MALFORMED_CPU_SKU")
+    source=needed("source_reference")
+    if source is not None and (type(source) is not str or
+                               not 1<=len(source)<=256 or any(ord(x)<32 for x in source)):
+        rejected.append("MALFORMED_SOURCE_REFERENCE")
+    numeric={}
+    for field in ("processor_peak_power_w","cooling_capacity_w","average_system_power_w",
+                  "battery_capacity_wh","workload_score_n",
+                  "incremental_cost_aud","available_budget_aud"):
+        value=needed(field)
+        if value is None:
+            continue
+        try:
+            numeric[field]=_bounded_number(value,field,positive=field not in
+                                            ("incremental_cost_aud",))
+        except ValueError:
+            rejected.append("INVALID_NUMERIC_"+field.upper())
+    if family=="i5":
+        base=needed("baseline_i3_workload_n")
+        if base is not None:
+            try: numeric["baseline_i3_workload_n"]=_bounded_number(
+                base,"baseline_i3_workload_n",positive=True)
+            except ValueError: rejected.append("INVALID_I3_COMPARISON_BASE")
+    xyz={}
+    for key in ("module_xyz_mm","machine_internal_envelope_mm","margin_mm"):
+        value=needed(key)
+        if value is None:
+            continue
+        if type(value) is not list or len(value)!=3:
+            rejected.append("INVALID_ENVELOPE_"+key.upper())
+            continue
+        try:
+            xyz[key]=[_bounded_number(v,key,positive=key!="margin_mm") for v in value]
+        except ValueError:
+            rejected.append("INVALID_ENVELOPE_"+key.upper())
+    if all(key in xyz for key in ("module_xyz_mm","machine_internal_envelope_mm","margin_mm")):
+        minimum=[xyz["module_xyz_mm"][k]+2*xyz["margin_mm"][k] for k in range(3)]
+        metrics["required_body_cavity_mm"]=minimum
+        metrics["candidate_enclosure_fit"]=all(
+            minimum[k]<=xyz["machine_internal_envelope_mm"][k] for k in range(3))
+        if not metrics["candidate_enclosure_fit"]:
+            rejected.append("ACTUAL_MODULE_ENVELOPE_REQUIRES_BODY_REDIMENSION")
+    if "processor_peak_power_w" in numeric and "cooling_capacity_w" in numeric:
+        metrics["thermal_peak_headroom_w"]=round(
+            numeric["cooling_capacity_w"]-numeric["processor_peak_power_w"],4)
+        if metrics["thermal_peak_headroom_w"]<0:
+            rejected.append("THERMAL_PEAK_OVERRUN")
+    if "battery_capacity_wh" in numeric and "average_system_power_w" in numeric:
+        metrics["ideal_runtime_h"]=round(
+            numeric["battery_capacity_wh"]/numeric["average_system_power_w"],4)
+        if metrics["ideal_runtime_h"]<tier["min_ideal_runtime_h"]:
+            rejected.append("RUNTIME_BELOW_REQUIRED_THRESHOLD")
+    if "workload_score_n" in numeric:
+        if numeric["workload_score_n"]<tier["required_workload_n"]:
+            rejected.append("CPU_WORKLOAD_BELOW_TIER_REQUIREMENT")
+        if "baseline_i3_workload_n" in numeric and family=="i5":
+            metrics["i5_gain_ratio_to_supplied_i3"]=round(
+                numeric["workload_score_n"]/numeric["baseline_i3_workload_n"],5)
+            if metrics["i5_gain_ratio_to_supplied_i3"]<tier["min_i5_gain_ratio"]:
+                rejected.append("I5_GAIN_NOT_WORTH_UPGRADE_BY_POLICY")
+    if "incremental_cost_aud" in numeric and "available_budget_aud" in numeric:
+        cap=numeric["available_budget_aud"]
+        if tier.get("max_incremental_cost_aud") is not None:
+            cap=min(cap,tier["max_incremental_cost_aud"])
+        metrics["incremental_cost_cap_aud"]=cap
+        if numeric["incremental_cost_aud"]>cap:
+            rejected.append("PRICE_EXCEEDS_TIER_CAP_OR_AVAILABLE_CASH")
+    cells=needed("registered_machine_cells")
+    if cells is not None:
+        if type(cells) is not list or len(cells)!=len(set(
+                x for x in cells if isinstance(x,str))) or any(type(x) is not str for x in cells):
+            rejected.append("INVALID_MACHINE_CELLS")
+        else:
+            not_ready=sorted(set(tier["minimum_cells"])-set(cells))
+            metrics["missing_required_machine_cells"]=not_ready
+            if not_ready:
+                rejected.append("NECESSARY_MACHINE_CELLS_NOT_PRESENT")
+    sealed=needed("internal_sourced_tray_preloaded")
+    if sealed is not None and sealed is not True:
+        rejected.append("SEALED_SESSION_CANNOT_USE_EXTERNAL_INSERTION")
+    if rejected:
+        status="REJECT_OR_REDESIGN_CONSTRAINTS"
+    elif missing:
+        status="HOLD_INPUTS_PENDING"
+    else:
+        status="ARITHMETIC_AND_DECLARED_DIMENSION_THRESHOLDS_ONLY"
+    return {
+        "schema":"cgx.printspace.cpu_substitution_gate.v0.1",
+        "tier_id":tier_id,
+        "policy_sha256":source_sha(policy_path),
+        "cpu_family_candidate":family if family in ("i3","i5") else None,
+        "cpu_sku_candidate":sku if type(sku) is str and len(sku)<=96 else None,
+        "source_reference_user_supplied":source if type(source) is str and len(source)<=256 else None,
+        "disposition":status,
+        "incomplete_required_inputs":sorted(set(missing)),
+        "rejected_thresholds":sorted(set(rejected)),
+        "derived_metric_candidates":metrics,
+        "actual_source_identity_cryptographically_verified":False,
+        "actual_power_envelope_measured":False,
+        "actual_safe_sealed_session_witness":False,
+        "approved_to_purchase":False,
+        "approved_to_build":False,
+        "approved_to_actuate":False,
+        "approved_to_publish":False,
+    }
+
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed",type=Path,default=SEEDS)
