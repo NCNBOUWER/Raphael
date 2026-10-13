@@ -186,6 +186,7 @@ def compile_preview(source, *, source_hash=None):
     return {
         "schema":SCHEMA,"source_sha256":source_hash,
         "units":"mm","timeline":"NORMALIZED_ORDER_NO_MEASURED_SECONDS",
+        "process_catalog":source["process_contracts"],
         "physical_or_calibrated_simulation":False,
         "source_cad_ownership_verified":False,
         "public_release_authorized":False,"machine_control_enabled":False,
