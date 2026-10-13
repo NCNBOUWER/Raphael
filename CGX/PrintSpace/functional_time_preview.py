@@ -200,6 +200,100 @@ def load_and_compile(path=SEEDS):
                            source_hash=source_sha(path))
 
 
+
+def assess_functional_device_requirements(
+    product: dict, *,
+    arm_angle_deg=None, arm_length_mm=None, payload_mass_kg=None,
+    required_screen_area_mm2=None,
+    battery_capacity_wh=None, average_power_w=None,
+    compute_target_n=None, compute_metric=None,
+) -> dict:
+    """Bounded first-order requirement comparisons; NOT a device qualification.
+
+    Geometry can be exactly resolved from admitted candidate parameters.
+    Torque below is only a static gravity contribution; motor startup,
+    inertia, gearing, holding current and losses are intentionally excluded.
+    Battery runtime is an ideal arithmetic upper-bound estimate, not a
+    certified runtime; no supplied compute metric is silently converted to W.
+    """
+    if not isinstance(product, dict) or product.get("source_evidence") != "PARAMETRIC_SEED_NOT_ORIGINAL_CAD":
+        raise ValueError("unrecognized source-bound functional candidate")
+    def optional(value, name, *, strict_positive=False):
+        if value is None:
+            return None
+        if type(value) not in (int, float) or not math.isfinite(value) or abs(value) > 1e9:
+            raise ValueError(name + " must be finite bounded numeric")
+        if value < 0 or (strict_positive and value == 0):
+            raise ValueError(name + " must be nonnegative (strictly positive when required)")
+        return float(value)
+
+    angle = optional(arm_angle_deg,"arm_angle_deg")
+    length = optional(arm_length_mm,"arm_length_mm",strict_positive=True)
+    mass = optional(payload_mass_kg,"payload_mass_kg")
+    display = optional(required_screen_area_mm2,"required_screen_area_mm2",strict_positive=True)
+    wh = optional(battery_capacity_wh,"battery_capacity_wh")
+    watts = optional(average_power_w,"average_power_w",strict_positive=True)
+    target = optional(compute_target_n,"compute_target_n")
+    if target is not None and (not isinstance(compute_metric,str) or
+                               not 1 <= len(compute_metric) <= 64):
+        raise ValueError("compute_n requires declared metric and units")
+    if angle is not None and angle > 180:
+        raise ValueError("arm angle outside 0..180 degree request")
+    if angle is not None and product.get("kind") != "tracked_robot":
+        raise ValueError("arm angle not applicable to this article")
+
+    holds = []
+    results = {
+        "schema":"cgx.printspace.functional_requirements_candidate.v0.1",
+        "product_id":product["id"],
+        "evidence":"USER_PARAMETER_MATH_ONLY_NOT_AS_BUILT",
+        "measured_or_qualified":False,
+        "source_rights_verified":False,
+        "hardware_control":False,
+        "required_screen_area_mm2": display,
+        "available_display_area_mm2_schematic":product["display_area_mm2_candidate"],
+        "display_fit_comparison":None,
+        "arm_angle_deg_requested": angle,
+        "arm_tip_horizontal_offset_mm":None,
+        "arm_tip_vertical_rise_mm":None,
+        "static_gravity_torque_nm_candidate":None,
+        "battery_wh_user_candidate":wh,
+        "average_power_w_user_candidate":watts,
+        "ideal_arithmetic_runtime_h":None,
+        "compute_n_user_candidate":target,
+        "compute_metric":compute_metric if target is not None else None,
+        "unresolved":[]
+    }
+    if display is not None:
+        maxarea=product["display_area_mm2_candidate"]
+        results["display_fit_comparison"] = (
+            "UNRESOLVED_AVAILABLE_DISPLAY" if maxarea is None else
+            "AREA_ONLY_FITS" if display <= maxarea else "AREA_EXCEEDS_SCHEMATIC_APERTURE"
+        )
+        if maxarea is None or display > maxarea:holds.append("screen area/electro-optical packaging")
+        # Same area does not prove that rectangular vs circular panel can fit.
+        holds.append("screen outline, thickness, radii, electrical/optical interfaces and sealing")
+    if angle is not None:
+        if length is None:holds.append("arm length/datum/kinematic calibration")
+        else:
+            rad=math.radians(angle)
+            results["arm_tip_horizontal_offset_mm"]=round(length*math.sin(rad),6)
+            results["arm_tip_vertical_rise_mm"]=round(length*math.cos(rad),6)
+        if mass is not None and length is not None:
+            results["static_gravity_torque_nm_candidate"]=round(
+                mass*9.80665*length/1000*math.sin(math.radians(angle)),8)
+        holds.append("joint limits, bearings, full dynamic loads, motor curves, safety and collision sweep")
+    if wh is not None or watts is not None:
+        if wh is not None and watts is not None:
+            results["ideal_arithmetic_runtime_h"]=round(wh/watts,6)
+        holds.append("battery chemistry/discharge curve, thermal protection, power conversion and actual duty cycle")
+    if target is not None:
+        holds.append("compute workload benchmark, power performance, firmware and measured throughput")
+    results["unresolved"] = sorted(set(holds))
+    return results
+
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed",type=Path,default=SEEDS)
