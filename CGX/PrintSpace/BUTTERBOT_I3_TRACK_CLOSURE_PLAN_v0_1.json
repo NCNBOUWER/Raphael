@@ -1,0 +1,1120 @@
+{
+  "schema": "cgx.printspace.butterbot_i3_core_track_closure.v0.1",
+  "owner": "RAPHAEL_PRINTSPACE_PR6",
+  "status": "SOURCE_CANDIDATE_NO_HARDWARE_CONTROL",
+  "base_source_ids": [
+    "BB-FINAL",
+    "BB-ACT",
+    "BB-VOICE",
+    "PC-C0",
+    "PC-ARMS",
+    "PC-TOOL",
+    "PC-SENS",
+    "PC-CHAMBER"
+  ],
+  "host_i3_seed": {
+    "core_family": "Intel Core i3",
+    "exact_sku": null,
+    "source_sku_required": true,
+    "implementation": "SOURCED_COMPUTE_MODULE_BOARD_COOLING_STORAGE_MEMORY",
+    "safety_control": "SEPARATE_DETERMINISTIC_MCU",
+    "board_envelope_mm": null,
+    "processor_tdp_w": null,
+    "turbo_power_w": null,
+    "power_input_rails": null,
+    "heat_sink_and_airflow_clearance_mm": null,
+    "battery_wh": null,
+    "weight_kg": null,
+    "passive_cooling_safe": null,
+    "all_unknowns_hold": true
+  },
+  "manufacturing_narrative": "Sourced Core i3 computing core defines service envelope and electronics, but printed components plus sourced electrical/mechanical parts realize a robot; no fabrication of Intel silicon, motors, battery chemistry or populated MCU ICs inferred.",
+  "track_plan": {
+    "designs": [
+      "HINGED_RIGID_LINKS_WITH_PINS",
+      "FLEXIBLE_CONTINUOUS_ELASTOMER"
+    ],
+    "selected": null,
+    "split_build_sequence": "PRINT_LOWER_TRACK_SUPPORT_AND_OPEN_LINK_CANDIDATE_THEN_INSTALL_BODY_AND_SOURCED_PARTS_THEN_FINAL_TOP_OR_LINK_CLOSURE",
+    "allowance": {
+      "value": 0.1,
+      "applies_to": "RAW_UNTRIMMED_LOWER_STOCK_OR_PRINTED_FIT_TABS_ONLY",
+      "applies_not_to": [
+        "BELT_OPERATING_STRAIN",
+        "FINAL_TRACK_PITCH",
+        "MOTOR_TORQUE",
+        "AUTOMATED_TENSION_FORCE"
+      ],
+      "requires": [
+        "measured_installed_loop_path",
+        "link_pitch",
+        "idler_adjustment_travel",
+        "material_elongation_or_creep",
+        "cooling_shrinkage",
+        "joint_cutback",
+        "tension_load_coupons"
+      ]
+    },
+    "closure_modes": [
+      {
+        "id": "MECHANICAL_PIN_AND_IDLER",
+        "default": true,
+        "physical_ready": false,
+        "requirements": [
+          "registered_link_pitch",
+          "mechanical_pin_retention",
+          "idler_range",
+          "bearing_access",
+          "static_deenergized_fixture"
+        ],
+        "high_heat_near_electronics": false
+      },
+      {
+        "id": "COOLED_HINGE_INTERLOCK",
+        "default": false,
+        "physical_ready": false,
+        "requirements": [
+          "mechanical_coupon_strength",
+          "joint_clearance",
+          "fatigue",
+          "cooling_and_support"
+        ],
+        "high_heat_near_electronics": false
+      },
+      {
+        "id": "IN_SITU_THERMAL_DEPOSITION",
+        "default": false,
+        "physical_ready": false,
+        "requirements": [
+          "joint_material_thermal_weld_coupon",
+          "enclosure_interlocks",
+          "heat_affected_electronics_analysis",
+          "measured_tool_workpiece_clearance",
+          "closed_loop_tension_sensor",
+          "earlier_layer_shear_stability",
+          "cool_before_release"
+        ],
+        "high_heat_near_electronics": true
+      }
+    ],
+    "force_target_n": null,
+    "closed_loop_tension_validated": false,
+    "arm_role_handoff": "LEFT_TRACK: ARM_A_HOLD_OR_JIG, ARM_B_JOIN; RIGHT_TRACK: ARM_B_HOLD_OR_JIG, ARM_A_JOIN; never simultaneous unsafe tools",
+    "safety_default": "MECHANICAL_PIN_AND_IDLER; two-arm heated closure is HOLD until force/joint/thermal witnesses",
+    "loop_length_measurement": "DO_NOT_FIX_LENGTH_FROM_10_PERCENT; use actual mounted sprocket/idler tooth count, link pitch and adjusted center distance",
+    "requires_dual_arm_collision_plan": true,
+    "measurement_model": "LENGTH_FROM_MEASURED_TRAJECTORY_AND_PITCH; not a universal rigid pulley formula"
+  },
+  "stations": {
+    "EXTERNAL_PARTS_SHELF": {
+      "zone": "SOURCED_INPUTS",
+      "physical_position_mm": null,
+      "inspection": "passport identity and heat-safe storage"
+    },
+    "DRY_PARTS_SORT": {
+      "zone": "CLEAN_ASSEMBLY",
+      "physical_position_mm": null,
+      "inspection": "labeled queue and ESD isolation"
+    },
+    "FDM_FEED": {
+      "zone": "ADDITIVE_FEED",
+      "physical_position_mm": null,
+      "inspection": "lot, moisture, qualified nozzle temperature"
+    },
+    "JIG_A": {
+      "zone": "BED_FIXTURE",
+      "physical_position_mm": null,
+      "inspection": "datum registration and reachable exterior"
+    },
+    "LEFT_TRACK_LOWER": {
+      "zone": "BED_FIXTURE",
+      "physical_position_mm": null,
+      "inspection": "side L material and idler access"
+    },
+    "RIGHT_TRACK_LOWER": {
+      "zone": "BED_FIXTURE",
+      "physical_position_mm": null,
+      "inspection": "side R material and idler access"
+    },
+    "CORE_CAVITY": {
+      "zone": "INNER_ASSEMBLY",
+      "physical_position_mm": null,
+      "inspection": "ventilation, thermal separation, access"
+    },
+    "TOP_BODY": {
+      "zone": "UPPER_ASSEMBLY",
+      "physical_position_mm": null,
+      "inspection": "head and service clearance"
+    },
+    "CABLE_CHANNEL": {
+      "zone": "ELECTRICAL_ASSEMBLY",
+      "physical_position_mm": null,
+      "inspection": "strain relief, ESD and abrasion isolation"
+    },
+    "LEFT_CLOSURE_FIXTURE": {
+      "zone": "ACCESSIBLE_FINAL_CLOSURE",
+      "physical_position_mm": null,
+      "inspection": "tension+alignment registration under camera"
+    },
+    "RIGHT_CLOSURE_FIXTURE": {
+      "zone": "ACCESSIBLE_FINAL_CLOSURE",
+      "physical_position_mm": null,
+      "inspection": "tension+alignment registration under camera"
+    },
+    "OPTICAL_METROLOGY": {
+      "zone": "MEASUREMENT",
+      "physical_position_mm": null,
+      "inspection": "fiducial, dimensional and joint inspection"
+    },
+    "ELECTRICAL_TEST": {
+      "zone": "ISOLATED_TEST",
+      "physical_position_mm": null,
+      "inspection": "low-power E-stop and protective current limit"
+    },
+    "FINISHED_PARK": {
+      "zone": "OUTPUT",
+      "physical_position_mm": null,
+      "inspection": "cool, de-energized, supported"
+    }
+  },
+  "source_components": [
+    {
+      "id": "i3_module",
+      "kind": "SOURCED",
+      "root": "i3",
+      "required": [
+        "exact_cpu_sku",
+        "compatible_board_socket_or_soldered_package",
+        "RAM",
+        "nonvolatile_storage",
+        "cooler",
+        "input_rails",
+        "peak_power_budget",
+        "firmware_boot_receipt",
+        "total_mass"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "motor_left",
+      "kind": "SOURCED",
+      "root": "drive",
+      "required": [
+        "motor_model",
+        "rated_voltage",
+        "stall_current",
+        "shaft_diameter",
+        "torque_curve"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "motor_right",
+      "kind": "SOURCED",
+      "root": "drive",
+      "required": [
+        "motor_model",
+        "rated_voltage",
+        "stall_current",
+        "shaft_diameter",
+        "torque_curve"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "servo_pack",
+      "kind": "SOURCED",
+      "root": "mechanism",
+      "required": [
+        "servo_model",
+        "count",
+        "limits",
+        "peak_current",
+        "joint_couplers"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "battery_pack",
+      "kind": "SOURCED",
+      "root": "power",
+      "required": [
+        "battery_chemistry",
+        "certified_BMS",
+        "cell_pack_rating",
+        "overcurrent_protection",
+        "thermal_management"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "wheel_bearings",
+      "kind": "SOURCED",
+      "root": "track",
+      "required": [
+        "bearing_OD_ID",
+        "load_rating",
+        "lubrication",
+        "retainers"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "idler_axles",
+      "kind": "SOURCED",
+      "root": "track",
+      "required": [
+        "diameter",
+        "bearing_fit",
+        "retainer",
+        "corrosion_or_wear"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "join_pins",
+      "kind": "SOURCED_OR_QUALIFIED_PRINT",
+      "root": "track",
+      "required": [
+        "shear_strength",
+        "fatigue_cycles",
+        "retention_method",
+        "service_access"
+      ],
+      "can_print": "QUALIFIED_CANDIDATE_ONLY"
+    },
+    {
+      "id": "motor_drivers",
+      "kind": "SOURCED",
+      "root": "control",
+      "required": [
+        "driver_model",
+        "peak_current",
+        "thermal_limit",
+        "MCU_interface"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "safety_MCU",
+      "kind": "SOURCED",
+      "root": "control",
+      "required": [
+        "separate_deterministic_controller",
+        "watchdog",
+        "physical_E_stop",
+        "power_cut_relay"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "speaker_and_LEDs",
+      "kind": "SOURCED",
+      "root": "voice",
+      "required": [
+        "transducer_passport",
+        "driver",
+        "wiring",
+        "current",
+        "optical_status"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "sensors",
+      "kind": "SOURCED",
+      "root": "control",
+      "required": [
+        "track_encoder",
+        "tension_or_force",
+        "temperature",
+        "lid_access",
+        "camera"
+      ],
+      "can_print": false
+    },
+    {
+      "id": "chassis_polymer",
+      "kind": "PRINT_CANDIDATE",
+      "root": "structure",
+      "required": [
+        "feedstock_lot",
+        "printer_envelope",
+        "mechanical_strength",
+        "heat_clearance"
+      ],
+      "can_print": "FDM_CANDIDATE"
+    },
+    {
+      "id": "track_links",
+      "kind": "PRINT_CANDIDATE",
+      "root": "track",
+      "required": [
+        "link_pitch",
+        "flexure_type",
+        "fatigue",
+        "creep",
+        "friction",
+        "join_method"
+      ],
+      "can_print": "FDM_OR_ELASTOMER_CANDIDATE"
+    },
+    {
+      "id": "sprockets_and_idlers",
+      "kind": "PRINT_CANDIDATE",
+      "root": "track",
+      "required": [
+        "tooth_form",
+        "pitch",
+        "runout",
+        "bearing_press_fit",
+        "idler_stroke"
+      ],
+      "can_print": "FDM_CANDIDATE_WITH_SOURCED_BEARING"
+    },
+    {
+      "id": "core_cradle",
+      "kind": "PRINT_CANDIDATE",
+      "root": "structure",
+      "required": [
+        "board_mount_hole_pattern",
+        "thermal_isolation",
+        "fan_airflow",
+        "serviceability"
+      ],
+      "can_print": "FDM_CANDIDATE"
+    },
+    {
+      "id": "wiring_channels",
+      "kind": "PRINT_CANDIDATE",
+      "root": "structure",
+      "required": [
+        "abrasion_clearance",
+        "bend_radius",
+        "electrical_isolation"
+      ],
+      "can_print": "FDM_CANDIDATE"
+    },
+    {
+      "id": "arm_links",
+      "kind": "PRINT_CANDIDATE",
+      "root": "mechanism",
+      "required": [
+        "shaft_interface",
+        "torque",
+        "fatigue",
+        "bearing_mount",
+        "sweep_clearance"
+      ],
+      "can_print": "FDM_CANDIDATE"
+    },
+    {
+      "id": "head_and_case",
+      "kind": "PRINT_CANDIDATE",
+      "root": "structure",
+      "required": [
+        "face_display_fit",
+        "speaker_ports",
+        "ventilation",
+        "optical_path"
+      ],
+      "can_print": "FDM_CANDIDATE"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S00_CORE_BASIS",
+      "operation": "SOURCED_PASSPORT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "DRY_PARTS_SORT",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [],
+      "component_ids": [
+        "i3_module"
+      ],
+      "output_state": "INTEL_I3_MODULE_DECLARED_NOT_ACTIVATED",
+      "evidence_required": [
+        "exact i3 SKU and module/board passport",
+        "socket, thermal and power budget",
+        "RAM and cooler fit"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S01_MACHINE_DATUM",
+      "operation": "PRINT_FIXTURE",
+      "source_station": "FDM_FEED",
+      "target_station": "JIG_A",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S00_CORE_BASIS"
+      ],
+      "component_ids": [
+        "chassis_polymer"
+      ],
+      "output_state": "DATUM_MARKED",
+      "evidence_required": [
+        "actual XYZE envelope",
+        "machine tool change and fixture calibrated"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [
+        "JIG_A"
+      ],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S02_LOWER_TRACK_LEFT_10PCT",
+      "operation": "PRINT_OPEN_STOCK",
+      "source_station": "FDM_FEED",
+      "target_station": "LEFT_TRACK_LOWER",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S01_MACHINE_DATUM"
+      ],
+      "component_ids": [
+        "track_links"
+      ],
+      "output_state": "LEFT_OPEN_LINKS_WITH_SACRIFICIAL_STOCK",
+      "evidence_required": [
+        "10% trim stock measured; not final tension",
+        "part lot and dimensions"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "allowance_fraction": 0.1
+    },
+    {
+      "id": "S03_LOWER_TRACK_RIGHT_10PCT",
+      "operation": "PRINT_OPEN_STOCK",
+      "source_station": "FDM_FEED",
+      "target_station": "RIGHT_TRACK_LOWER",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S02_LOWER_TRACK_LEFT_10PCT"
+      ],
+      "component_ids": [
+        "track_links"
+      ],
+      "output_state": "RIGHT_OPEN_LINKS_WITH_SACRIFICIAL_STOCK",
+      "evidence_required": [
+        "similar left/right lot and shrinkage verified"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "allowance_fraction": 0.1
+    },
+    {
+      "id": "S04_PRINT_CHASSIS_AND_CRADLE",
+      "operation": "FDM_DEPOSITION",
+      "source_station": "FDM_FEED",
+      "target_station": "JIG_A",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S03_LOWER_TRACK_RIGHT_10PCT"
+      ],
+      "component_ids": [
+        "chassis_polymer",
+        "core_cradle"
+      ],
+      "output_state": "FRAME_WITH_OPEN_TRACK_ACCESS",
+      "evidence_required": [
+        "clearance, cooling and mounting tolerances verified"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S05_PRINT_SPROCKETS_TENSIONERS",
+      "operation": "FDM_DEPOSITION",
+      "source_station": "FDM_FEED",
+      "target_station": "LEFT_TRACK_LOWER",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S04_PRINT_CHASSIS_AND_CRADLE"
+      ],
+      "component_ids": [
+        "sprockets_and_idlers"
+      ],
+      "output_state": "LEFT_RIGHT_WHEEL_AND_TENSIONER_MOUNTS_PRINTED",
+      "evidence_required": [
+        "gear tooth pitch fit, shaft/bearing tolerance, idler stroke"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S06_INSTALL_BEARINGS_AXLES",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "LEFT_TRACK_LOWER",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S05_PRINT_SPROCKETS_TENSIONERS"
+      ],
+      "component_ids": [
+        "wheel_bearings",
+        "idler_axles"
+      ],
+      "output_state": "BOTH_TRACKS_WITH_AXLES_AND_IDLERS",
+      "evidence_required": [
+        "service access remains open and bearing retainers visible"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [
+        "LEFT_TRACK_LOWER",
+        "RIGHT_TRACK_LOWER"
+      ],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S07_INSTALL_TRACK_DRIVE_MOTORS",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "RIGHT_TRACK_LOWER",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S06_INSTALL_BEARINGS_AXLES"
+      ],
+      "component_ids": [
+        "motor_left",
+        "motor_right"
+      ],
+      "output_state": "BOTH_DRIVE_SHAFTS_INSTALLED",
+      "evidence_required": [
+        "sprocket coupling, clearance and fastener torque"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S08_CHECK_TRACK_OPEN_ROUTE",
+      "operation": "INSPECT_AND_MEASURE",
+      "source_station": "LEFT_TRACK_LOWER",
+      "target_station": "OPTICAL_METROLOGY",
+      "tool_role": "CAMERA_AND_PROBE",
+      "depends_on": [
+        "S07_INSTALL_TRACK_DRIVE_MOTORS"
+      ],
+      "component_ids": [
+        "track_links",
+        "sprockets_and_idlers"
+      ],
+      "output_state": "OPEN_BOTH_TRACKS_MEASURED",
+      "evidence_required": [
+        "measured path and link pitch",
+        "no trapped route or blocked idler adjuster"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S09_PRINT_WIRING_PATHS",
+      "operation": "FDM_DEPOSITION",
+      "source_station": "FDM_FEED",
+      "target_station": "CABLE_CHANNEL",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S08_CHECK_TRACK_OPEN_ROUTE"
+      ],
+      "component_ids": [
+        "wiring_channels"
+      ],
+      "output_state": "INSULATED_CABLE_DUCTS",
+      "evidence_required": [
+        "no pinch and supported cable bend radius"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S10_PRINT_ARM_AND_NECK",
+      "operation": "FDM_DEPOSITION",
+      "source_station": "FDM_FEED",
+      "target_station": "TOP_BODY",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S09_PRINT_WIRING_PATHS"
+      ],
+      "component_ids": [
+        "arm_links"
+      ],
+      "output_state": "ARM_LINKS_SHELL_SUPPORTED",
+      "evidence_required": [
+        "hinge and servo fit, bearing support and sweeps"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [
+        "TOP_BODY"
+      ],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S11_INSTALL_SERVOS",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "TOP_BODY",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S10_PRINT_ARM_AND_NECK"
+      ],
+      "component_ids": [
+        "servo_pack"
+      ],
+      "output_state": "MECHANICAL_ARMS_SOURCED_SERVOS",
+      "evidence_required": [
+        "servo passport, shaft couplers, fastener retainers"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S12_INSTALL_SAFETY_CONTROL",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "CORE_CAVITY",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S11_INSTALL_SERVOS"
+      ],
+      "component_ids": [
+        "safety_MCU",
+        "motor_drivers"
+      ],
+      "output_state": "LOW_LEVEL_MCU_MOTOR_DRIVES",
+      "evidence_required": [
+        "motor current protection, independent E-stop and watchdog"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S13_INSTALL_I3_MODULE",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "DRY_PARTS_SORT",
+      "target_station": "CORE_CAVITY",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S12_INSTALL_SAFETY_CONTROL"
+      ],
+      "component_ids": [
+        "i3_module"
+      ],
+      "output_state": "I3_AS_HOST_CPU_NOT_SAFETY_CONTROLLER",
+      "evidence_required": [
+        "measured board dimensions, mounting+fan clearance, TDP cooling",
+        "ESD safe placement, avoid hot processes"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S14_BATTERY_AND_REGULATORS",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "CORE_CAVITY",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S13_INSTALL_I3_MODULE"
+      ],
+      "component_ids": [
+        "battery_pack"
+      ],
+      "output_state": "PROTECTED_BATTERY_DISTRIBUTION",
+      "evidence_required": [
+        "battery passport, isolation, discharge, BMS and cooling"
+      ],
+      "thermal_risk": "ELECTRONICS_INSTALLED_NO_UNQUALIFIED_HEAT",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S15_HARNESS_AND_SENSORS",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "CABLE_CHANNEL",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S14_BATTERY_AND_REGULATORS"
+      ],
+      "component_ids": [
+        "sensors"
+      ],
+      "output_state": "HARNESS_AND_TENSION_VISION",
+      "evidence_required": [
+        "continuity, polarity, strain relief, encoder and limit sensors"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S16_HEAD_SHELL",
+      "operation": "FDM_DEPOSITION",
+      "source_station": "FDM_FEED",
+      "target_station": "TOP_BODY",
+      "tool_role": "ARM_B_FDM",
+      "depends_on": [
+        "S15_HARNESS_AND_SENSORS"
+      ],
+      "component_ids": [
+        "head_and_case"
+      ],
+      "output_state": "HEAD_SHELL_OR_PREPRINTED_HEAD_ASSEMBLED",
+      "evidence_required": [
+        "electronics protected from hot build",
+        "no heat near i3 battery or cable harness"
+      ],
+      "thermal_risk": "HEAT_AFFECTED_ELECTRONICS_MUST_BE_SHIELDED_OR_PREPRINTED",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S17_VOICE_LED",
+      "operation": "SOURCED_COMPONENT_PLACEMENT",
+      "source_station": "EXTERNAL_PARTS_SHELF",
+      "target_station": "TOP_BODY",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S16_HEAD_SHELL"
+      ],
+      "component_ids": [
+        "speaker_and_LEDs"
+      ],
+      "output_state": "VOICE_LED_WIRING_MAPPED",
+      "evidence_required": [
+        "speaker sound opening and LED interface",
+        "control isolation and connector map"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S18_DRY_ASSEMBLY_INSPECTION",
+      "operation": "INSPECT_AND_MEASURE",
+      "source_station": "TOP_BODY",
+      "target_station": "OPTICAL_METROLOGY",
+      "tool_role": "CAMERA_AND_PROBE",
+      "depends_on": [
+        "S17_VOICE_LED"
+      ],
+      "component_ids": [
+        "i3_module",
+        "motor_left",
+        "motor_right",
+        "servo_pack",
+        "battery_pack",
+        "speaker_and_LEDs"
+      ],
+      "output_state": "DRY_ASSEMBLED_EXCEPT_TRACK_CLOSURE",
+      "evidence_required": [
+        "mechanical tolerances and collision-free closure access",
+        "all sourced hardware enumerated"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [
+        "LEFT_CLOSURE_FIXTURE",
+        "RIGHT_CLOSURE_FIXTURE"
+      ],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S19_MEASURE_FINAL_TRACK_ROUTE",
+      "operation": "INSPECT_AND_MEASURE",
+      "source_station": "LEFT_TRACK_LOWER",
+      "target_station": "OPTICAL_METROLOGY",
+      "tool_role": "CAMERA_AND_PROBE",
+      "depends_on": [
+        "S18_DRY_ASSEMBLY_INSPECTION"
+      ],
+      "component_ids": [
+        "track_links",
+        "sprockets_and_idlers"
+      ],
+      "output_state": "ACTUAL_LEFT_AND_RIGHT_LOOP_LENGTHS_PENDING",
+      "evidence_required": [
+        "link pitch, wheel shaft spacing, tooth engagement",
+        "10% sacrificial stock trimmed to fit",
+        "idler adjustment travel"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S20_PREP_LEFT_TRACK",
+      "operation": "FIXTURE_HOLD",
+      "source_station": "LEFT_TRACK_LOWER",
+      "target_station": "LEFT_CLOSURE_FIXTURE",
+      "tool_role": "ARM_A_HOLD_OR_SAFE_JIG",
+      "depends_on": [
+        "S19_MEASURE_FINAL_TRACK_ROUTE"
+      ],
+      "component_ids": [
+        "track_links"
+      ],
+      "output_state": "LEFT_TENSION_POSITION_HOLD",
+      "evidence_required": [
+        "closed-loop measured force or no-force jig",
+        "tool reach envelope and tension fixture"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "tension_arm": "ARM_A",
+      "joining_arm": "ARM_B",
+      "force_qualified": false
+    },
+    {
+      "id": "S21_CLOSE_LEFT_TRACK",
+      "operation": "LAST_TRACK_CLOSURE",
+      "source_station": "FDM_FEED",
+      "target_station": "LEFT_CLOSURE_FIXTURE",
+      "tool_role": "ARM_B_JOIN_HEAD_OR_GRIPPER",
+      "depends_on": [
+        "S20_PREP_LEFT_TRACK"
+      ],
+      "component_ids": [
+        "track_links",
+        "join_pins"
+      ],
+      "output_state": "LEFT_TRACK_JOINT_CANDIDATE",
+      "evidence_required": [
+        "default mechanical pin or qualified cooled interlock",
+        "thermal weld only if separately qualified for installed electronics"
+      ],
+      "thermal_risk": "HOT_DEPOSITION_HOLD_UNTIL_QUALIFIED",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "tension_arm": "ARM_A",
+      "joining_arm": "ARM_B",
+      "temperature_guard": "NO_UNQUALIFIED_HOT_WELD_NEAR_BATTERY_OR_I3",
+      "toolhead_conflict_guard": true
+    },
+    {
+      "id": "S22_LEFT_COOL_RELAX_INSPECT",
+      "operation": "CONTROLLED_RELEASE_AND_INSPECT",
+      "source_station": "LEFT_CLOSURE_FIXTURE",
+      "target_station": "OPTICAL_METROLOGY",
+      "tool_role": "CAMERA_AND_PROBE",
+      "depends_on": [
+        "S21_CLOSE_LEFT_TRACK"
+      ],
+      "component_ids": [
+        "track_links",
+        "join_pins"
+      ],
+      "output_state": "LEFT_TRACK_QUALITY_GATED",
+      "evidence_required": [
+        "cooled joint or inserted pin retention",
+        "static tension in selected design window",
+        "no exposed sharp pin, visual continuity"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S23_PREP_RIGHT_TRACK",
+      "operation": "FIXTURE_HOLD",
+      "source_station": "RIGHT_TRACK_LOWER",
+      "target_station": "RIGHT_CLOSURE_FIXTURE",
+      "tool_role": "ARM_B_HOLD_OR_SAFE_JIG",
+      "depends_on": [
+        "S22_LEFT_COOL_RELAX_INSPECT"
+      ],
+      "component_ids": [
+        "track_links"
+      ],
+      "output_state": "RIGHT_TENSION_POSITION_HOLD",
+      "evidence_required": [
+        "separate right-side accessible fixture",
+        "arm crossing/collision negative proof"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "tension_arm": "ARM_B",
+      "joining_arm": "ARM_A",
+      "force_qualified": false
+    },
+    {
+      "id": "S24_CLOSE_RIGHT_TRACK",
+      "operation": "LAST_TRACK_CLOSURE",
+      "source_station": "FDM_FEED",
+      "target_station": "RIGHT_CLOSURE_FIXTURE",
+      "tool_role": "ARM_A_JOIN_HEAD_OR_GRIPPER",
+      "depends_on": [
+        "S23_PREP_RIGHT_TRACK"
+      ],
+      "component_ids": [
+        "track_links",
+        "join_pins"
+      ],
+      "output_state": "RIGHT_TRACK_JOINT_CANDIDATE",
+      "evidence_required": [
+        "same qualified closure method and joint material lot",
+        "left already secure and arms can swap"
+      ],
+      "thermal_risk": "HOT_DEPOSITION_HOLD_UNTIL_QUALIFIED",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "tension_arm": "ARM_B",
+      "joining_arm": "ARM_A",
+      "temperature_guard": "NO_UNQUALIFIED_HOT_WELD_NEAR_BATTERY_OR_I3",
+      "toolhead_conflict_guard": true
+    },
+    {
+      "id": "S25_RIGHT_COOL_RELAX_INSPECT",
+      "operation": "CONTROLLED_RELEASE_AND_INSPECT",
+      "source_station": "RIGHT_CLOSURE_FIXTURE",
+      "target_station": "OPTICAL_METROLOGY",
+      "tool_role": "CAMERA_AND_PROBE",
+      "depends_on": [
+        "S24_CLOSE_RIGHT_TRACK"
+      ],
+      "component_ids": [
+        "track_links",
+        "join_pins"
+      ],
+      "output_state": "BOTH_TRACKS_QUALITY_GATED",
+      "evidence_required": [
+        "joint continuity and tension",
+        "no idler bottom-out, no tooth skip"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    },
+    {
+      "id": "S26_FINAL_C0_TEST",
+      "operation": "LOW_SPEED_ELECTRICAL_TEST",
+      "source_station": "CABLE_CHANNEL",
+      "target_station": "ELECTRICAL_TEST",
+      "tool_role": "ISOLATED_CONTROLLER",
+      "depends_on": [
+        "S25_RIGHT_COOL_RELAX_INSPECT"
+      ],
+      "component_ids": [
+        "motor_left",
+        "motor_right",
+        "safety_MCU",
+        "battery_pack",
+        "sensors"
+      ],
+      "output_state": "NON_PROPULSIVE_TEST_CANDIDATE",
+      "evidence_required": [
+        "E-stop, limit switch, current limit",
+        "safe clearance, no human proximity",
+        "track motion sensor readback",
+        "must not energize without physical witness"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false,
+      "hardware_control": false
+    },
+    {
+      "id": "S27_FINISH_AND_PARK",
+      "operation": "INSPECT_AND_PARK",
+      "source_station": "ELECTRICAL_TEST",
+      "target_station": "FINISHED_PARK",
+      "tool_role": "ARM_A_GRIPPER",
+      "depends_on": [
+        "S26_FINAL_C0_TEST"
+      ],
+      "component_ids": [
+        "head_and_case",
+        "track_links"
+      ],
+      "output_state": "UNQUALIFIED_REVIEW_ARTICLE",
+      "evidence_required": [
+        "full photographs, STL/CAD vs scan",
+        "all unresolved parts and unknown power/controller explicitly attached"
+      ],
+      "thermal_risk": "NONE",
+      "required_previous_assembly_access": [],
+      "motion_path_proven": false,
+      "physical_execution_approved": false
+    }
+  ],
+  "access_contract": {
+    "requires_external_intake_station": true,
+    "requires_dual_print_handling_arms": true,
+    "travel_mode": "SYMBOLIC_STATION_CHANGE_NO_CARTESIAN_PATH_OR_SPEED",
+    "all_axes_calibration_and_collision_sweeps_required": true,
+    "operator_pause_between_track_sides": true,
+    "accessible_before_track_closure": [
+      "bearings",
+      "axles",
+      "sprockets",
+      "idler_adjusters",
+      "motor shaft couplers",
+      "power/control harness",
+      "mechanical attachment inspection"
+    ],
+    "closed_track_service_strategy": "ACCESSIBLE_IDLER_ADJUSTER_AND_PIN_REMOVAL_DESIGN_REQUIRED",
+    "all_body_hardware_in_place_before_closure": true,
+    "installed_electronics_near_hot_tools_unqualified": true
+  },
+  "safety": {
+    "simulation_only": true,
+    "physical_process_approved": false,
+    "laser_allowed": false,
+    "remote_energize_allowed": false,
+    "high_voltage_or_electronics_sourced_and_isolated": true,
+    "certified_battery_required": true,
+    "measured_tension_sensor_required_for_two_arm_force_closure": true,
+    "armed_tool_action_allowed": false
+  },
+  "source_evidence": "SCHEMATIC_ROUTE_REQUEST_WITH_UNKNOWN_MODEL_AND_UNMEASURED_DIMENSIONS",
+  "known_limits": [
+    "exact hardware i3 SKU unknown",
+    "actual PrintCeptor tool travel geometry not provided",
+    "original Butter Bot CAD and rights not verified",
+    "motor/track loads and elastic creep unknown",
+    "10% initial stock only, not final strain",
+    "two-arm heated-on-electronics closure is a HOLD until coupons",
+    "source hardware procurement and installation not executed"
+  ]
+}
