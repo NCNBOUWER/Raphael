@@ -427,6 +427,8 @@ def compile_preview(source, *, source_hash=None):
             "battery_capacity_wh":None,"compute_capacity_n":None,
             "motion_candidate":_motion_candidate(v),
             "inverse_source_coverage":_source_dependency_coverage(v),
+            "i3_track_build_route":(compile_i3_track_closure_plan()
+                                    if v["id"]=="BB-SOURCE-DEMO" else None),
             "parts":parts,"frames":frames,
             "unknowns":v["source_caveats"],
             "qualified_fabrication":False,"production_approved":False,
