@@ -81,3 +81,69 @@ This runs only read-only mathematical tests; neither command drives machinery or
 
 ## Next evidence intake
 Load exact supplier lot passports, resolved geometry/tolerances, qualified machine cells and measured property uncertainty, then run X→Y and X→Y→Z comparative coupons. Capture independently verifiable receipt IDs for every stage and inspect predicted-vs-measured residuals before promoting a route beyond candidate-only.
+
+
+## CGX watchable functional build candidate — Butter Bot and wearables (13 October 2026)
+
+Same PrintSpace owner, same CGX offline review lens, no competing renderer or
+source root. Source: CGX/PrintSpace/FUNCTIONAL_TIME_PREVIEW_SEEDS_v0_1.json and
+functional_time_preview.py. Three variants: provisional tracked Butter Bot,
+thicker square-face watch and round-face watch. Geometry and finished colours
+are user choices, NOT gender-specific product classifications.
+
+From a trusted checkout with Python 3.12+, render the playable offline
+schematic stage replay using the existing CGX atlas source:
+
+    python CGX/PrintSpace/cgx_review_lens_compiler.py --print-demo-only --output /tmp/cgx-stage-review
+
+Open index.html in the output directory. It contains isometric 3D-like
+primitive previews, a normalised-time accelerated stage replay (play/pause,
+stage slider and cadence), finish palette, arm pose, bounded battery Wh and
+compute target n inputs, conditional process alternatives and draft review
+export. receipt.json hashes the input seed and generated viewer. No private
+LightSpeed checkout, network, authorised root or connected physical printer
+is needed. The original complete offline CGX atlas still uses its existing
+LightSpeed+Raphael source flags, unchanged.
+
+All shapes are explicit ILLUSTRATIVE mm-frame box/cylinder/link primitives,
+not the original licensed Butter Bot CAD, source-verified motion model,
+material constitutive simulation, actual toolpath/G-code, 3D scan,
+temperature/cure history or as-built article. Phases are ordinal indexes,
+not seconds; battery, torque, compute and all measured performance remain
+unverified. The bounded assess_functional_device_requirements function
+compares angle/arm length with static gravity-only candidate torque, screen
+area with source aperture, and ideal battery Wh / average W arithmetic
+runtime; dynamic/inertial/electrical losses and full computational workloads
+remain explicit holds.
+
+Candidate lithography and laser operations DURING a print are CONDITIONAL:
+* UV-assisted deposition: photo-curable material, dose/cure, oxygen inhibition
+  and controlled exposure/enclosure are required. Optical curing is not a
+  semiconductor transistor.
+* Masked lithography on deposited material: stabilised/coatable compatible
+  substrate, resist, registration, exposure, development/lift-off or etching,
+  chemical containment and feature metrology. A still-hot or flowable region
+  is a separate, evidence-requiring process window, not presumed ready.
+* Focused laser direct-writing, conversion or removal: exact absorption,
+  wavelength, spot size, fluence, material state, thermal/damage accumulation,
+  plume/extraction, machine interlock and microscopic/electrical readback.
+  Converting or marking a conductive layer does not automatically make an
+  integrated circuit or electrochemical cell.
+* Hybrid sourced chips: admit traceable manufactured devices, then qualify
+  printing/deposition interfaces, wiring, thermal and EMC/electrical service
+  tests rather than claiming seed printer can manufacture CPU dies.
+
+Every X-to-Y route retains previous material process history; Y-to-X
+compatibility must be evaluated independently. Conventional '4D printing'
+stimulus/time-dependent material change is separately witnessed, rather than
+equating animation with qualified 4D physical response.
+
+Source reviews: Wang et al. Materials 17:557 (2024) DOI 10.3390/ma17030557;
+Pinheiro et al. Advanced Materials (2024) DOI 10.1002/adma.202402014;
+Zikulnig et al. Advanced Sensor Research (2023) DOI 10.1002/adsr.202200073.
+
+Next gate: exact Butter Bot CAD and sharing rights; dimensioned kinematics,
+power/BOM, rated machine/control envelope, all process-condition witness
+coupons, thermal/kinematic full simulation, render comparison and as-built
+measurement. Demo approval, physical print, hardware actuation, licensing
+and public release remain FALSE / HOLD.
