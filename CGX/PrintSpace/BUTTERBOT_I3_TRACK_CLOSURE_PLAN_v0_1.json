@@ -676,7 +676,7 @@
       "target_station": "TOP_BODY",
       "tool_role": "ARM_A_GRIPPER",
       "depends_on": [
-        "S10_PRINT_ARM_AND_NECK"
+        "S16_HEAD_SHELL"
       ],
       "component_ids": [
         "servo_pack"
@@ -783,17 +783,17 @@
       "target_station": "TOP_BODY",
       "tool_role": "ARM_B_FDM",
       "depends_on": [
-        "S15_HARNESS_AND_SENSORS"
+        "S10_PRINT_ARM_AND_NECK"
       ],
       "component_ids": [
         "head_and_case"
       ],
-      "output_state": "HEAD_SHELL_OR_PREPRINTED_HEAD_ASSEMBLED",
+      "output_state": "HEAD_PREPRINTED_AND_COOLED_BEFORE_ELECTRONICS",
       "evidence_required": [
         "electronics protected from hot build",
         "no heat near i3 battery or cable harness"
       ],
-      "thermal_risk": "HEAT_AFFECTED_ELECTRONICS_MUST_BE_SHIELDED_OR_PREPRINTED",
+      "thermal_risk": "UNPOWERED_PREPRINTED_SHELL_NO_INSTALLED_CORE_NEARBY",
       "required_previous_assembly_access": [],
       "motion_path_proven": false,
       "physical_execution_approved": false
@@ -805,6 +805,7 @@
       "target_station": "TOP_BODY",
       "tool_role": "ARM_A_GRIPPER",
       "depends_on": [
+        "S15_HARNESS_AND_SENSORS",
         "S16_HEAD_SHELL"
       ],
       "component_ids": [
@@ -1115,6 +1116,7 @@
     "motor/track loads and elastic creep unknown",
     "10% initial stock only, not final strain",
     "two-arm heated-on-electronics closure is a HOLD until coupons",
-    "source hardware procurement and installation not executed"
+    "source hardware procurement and installation not executed",
+    "All hot structural FDM must complete before CPU/battery insertion; final track join defaults to cooled mechanical pin, not hot welding near installed core"
   ]
 }
