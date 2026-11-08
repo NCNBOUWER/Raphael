@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0-research",
+  "status": "NOT_A_THEORY_OF_EVERYTHING_PROOF",
+  "golden_ladder": {
+    "phi": 1.618033988749895,
+    "scale_law": "R(slot)=R0*phi^(slot-1)",
+    "origin_R0": null,
+    "metric_selection": "UNPROVED"
+  },
+  "proposed_metric_test": {
+    "name": "illustrative scale-invariant log-radial metric",
+    "spatial_ds2": "L^2*((dr/r)^2 + dOmega_2^2)",
+    "sample_only": true,
+    "not_unique_to_phi": true
+  },
+  "state_space": {
+    "ternary_states": [
+      -1,
+      0,
+      1
+    ],
+    "complex_space": "C^173",
+    "conservation_requires": "Hermitian Hamiltonian",
+    "no_174th_geometry": true
+  },
+  "metric_admissibility": {
+    "pass_count": 0,
+    "required": [
+      "coordinates",
+      "oriented face incidence",
+      "metric tensor",
+      "geodesic edge/angle",
+      "curvature",
+      "holonomy",
+      "gluing",
+      "regularity and uniqueness"
+    ]
+  },
+  "atomic_correspondence": {
+    "status": "HYPOTHESIS",
+    "Z_equals_slot": "indexing convention, not derivation",
+    "Z_137": "point nucleus Dirac-Coulomb critical benchmark",
+    "Z_170_173": "model-dependent extended-nucleus supercritical charge",
+    "element_173_confirmed": false
+  },
+  "pi": {
+    "mathematical_constant_remains_irrational": true,
+    "metric_circle_ratio_can_vary": true
+  },
+  "source_ownership": {
+    "Raphael_master": "unchanged",
+    "N3_EMLF": "linked, not rewritten",
+    "CGX_family": "existing canonical IDs preserved",
+    "mint": "blocked"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "source_tab": "Canon Reuse Crosswalk",
+  "rows": [
+    {
+      "owner": "Raphael / equation",
+      "module": "Raphael Equations",
+      "function": "Five-component solver, scaled displays",
+      "join_key": "Formula/model ID",
+      "use": "Candidate 173 dynamics depend on existing terms",
+      "authority_guard": "Never clone master equations",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / math",
+      "module": "Function Library",
+      "function": "Existing operator vocabulary and formula audit",
+      "join_key": "Function name",
+      "use": "Use referenced operators in metric testing",
+      "authority_guard": "No second function library",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / evidence",
+      "module": "Evidence Matrix",
+      "function": "Claim grade, source and required test",
+      "join_key": "Model sheet / claim",
+      "use": "Use original evidence classifications",
+      "authority_guard": "No second evidence register",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / proof",
+      "module": "Proof Feed Log",
+      "function": "Proof-to-feed links, limitations",
+      "join_key": "Proof ID",
+      "use": "Connect geometry conjectures to proof paths",
+      "authority_guard": "Reference proof ID, never rewrite",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / scientific sources",
+      "module": "Library",
+      "function": "A–Z encyclopedic and data-feed reference",
+      "join_key": "Term ID",
+      "use": "Reuse taxonomy, terms and source URLs",
+      "authority_guard": "No second encyclopaedia",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / validation",
+      "module": "Validation Queue",
+      "function": "Existing limitations/validation tasks",
+      "join_key": "Model and feed ID",
+      "use": "Use for physical tests and falsifiers",
+      "authority_guard": "Avoid parallel open-task queue",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / validation",
+      "module": "Dataset Verification Gates",
+      "function": "Dataset, stress, route eligibility",
+      "join_key": "Dataset/API ID",
+      "use": "Source-quality checks for solid→physical claims",
+      "authority_guard": "Respect gates",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / source handling",
+      "module": "Public Dossier Gate",
+      "function": "Public-facing evidence and redaction control",
+      "join_key": "Release section",
+      "use": "Do not expose conjectural solids as facts",
+      "authority_guard": "No bypass",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / source handling",
+      "module": "Advanced Notebook Gate",
+      "function": "Restricted technical and scientific content",
+      "join_key": "Module ID",
+      "use": "Keep private physical claims in owning source",
+      "authority_guard": "No public spill",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "Raphael / history",
+      "module": "GeoMatrices Update; EMLF Alignment",
+      "function": "N³ and external EML#F alignment summaries",
+      "join_key": "Component/name",
+      "use": "Do not infer proof beyond implementation checks",
+      "authority_guard": "Versioned cross-reference",
+      "read_state": "Read-only mapped",
+      "source_url": "https://drive.google.com/file/d/1NR9dVMB10VCB3I5ImQUrPHyVXEHTWjNR/view"
+    },
+    {
+      "owner": "N³ / geometry",
+      "module": "N³ Fascicles I–III",
+      "function": "Simplex, OBW/MMB, closure-preserving transport",
+      "join_key": "Proof module path",
+      "use": "Mathematical geometry and probability base",
+      "authority_guard": "No rewritten proof",
+      "read_state": "Read-only mapped",
+      "source_url": "https://github.com/NCNBOUWER/Raphael/tree/main/N%5E3"
+    },
+    {
+      "owner": "EML#F / operator",
+      "module": "EML#F/RUN/code",
+      "function": "Nonlinear expression grammar, model tests",
+      "join_key": "Source/operator ID",
+      "use": "Potential response-model reference only",
+      "authority_guard": "External library, no native replacement",
+      "read_state": "Read-only mapped",
+      "source_url": "https://github.com/NCNBOUWER/Raphael/tree/main/EML%23F"
+    },
+    {
+      "owner": "Römer / source authority",
+      "module": "01_Source_Manifest",
+      "function": "Current vs superseded vs duplicate workbooks",
+      "join_key": "SHA-256; version family",
+      "use": "Resolve 101-sheet master source and aliases",
+      "authority_guard": "Do not re-ingest family copies",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / geometrical applications",
+      "module": "27_CGX_Component_Geometry_Atlas_v0_1",
+      "function": "Device archetypes and geometry variables",
+      "join_key": "CGA-* ID",
+      "use": "Connect solid applications after admission",
+      "authority_guard": "Do not replicate device atlas",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / geometric search",
+      "module": "29_Raphael_Component_Geometry_Search_v0_1",
+      "function": "Baseline-controlled geometry candidate search",
+      "join_key": "RGS-* ID",
+      "use": "Raphael metric vs conventional comparator",
+      "authority_guard": "Use existing bounded search procedure",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / material structures",
+      "module": "24_CGX_Solid_State_Catalogue_v0_1",
+      "function": "Technological function catalogue, NOT polyhedra",
+      "join_key": "PT-* ID",
+      "use": "Possible manufacturing application, not solid ID",
+      "authority_guard": "Do not equate PT numbers to slot numbers",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / spatial model",
+      "module": "28_CGX_4D_Field_Slice_Model_v0_1",
+      "function": "x,y,z,t; signed distance; void/material regions",
+      "join_key": "MRI4D-* ID",
+      "use": "Geometry-to-field state interface",
+      "authority_guard": "Reuse time/field slices",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / interactions",
+      "module": "30_CGX_Component_Interaction_Map_v0_1",
+      "function": "Couplings, parasitics, interfaces, constraints",
+      "join_key": "CIM-* ID",
+      "use": "Interdomain physical interaction reference",
+      "authority_guard": "Do not duplicate coupling laws",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / physical instances",
+      "module": "31_CGX_Component_Instance_Register_v0_1",
+      "function": "Instance identity; source lot; geometry revision",
+      "join_key": "CGXI-* ID",
+      "use": "Only bind real instantiations when qualified",
+      "authority_guard": "Never mint slot as measured device",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / model execution",
+      "module": "34_CGX_Type1_Equation_Kernel_v0_1",
+      "function": "Source-bound governing equations and validity gates",
+      "join_key": "T1K-* ID",
+      "use": "Reuse physical solvers; preserve applicability",
+      "authority_guard": "No invented numerical proof",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / experimental checks",
+      "module": "37_CGX_Type1_Witness_Evidence_Kernel_v0_1",
+      "function": "Measurement, calibration, uncertainty and falsifiers",
+      "join_key": "WIT-* ID",
+      "use": "Geometry predictions → independent witness",
+      "authority_guard": "No evidence without instrument receipt",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / functional regions",
+      "module": "38_CGX_Type1_Functional_Voxel_Field_Basis_v0_1",
+      "function": "Region interfaces, constitutive and field state",
+      "join_key": "REG-* ID",
+      "use": "Couple qualified solids to voxel/field regions",
+      "authority_guard": "No duplicate region objects",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / collision control",
+      "module": "89_COLLISION_CONTROLS_v0_9",
+      "function": "Source, archive, collision and publication rules",
+      "join_key": "COL-* ID",
+      "use": "Govern staging and future reconciliation",
+      "authority_guard": "Do not alter canon/archives",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Römer / evidence governance",
+      "module": "81_EVIDENCE_GOV_v0_8",
+      "function": "Known/inferred/speculative, public claims",
+      "join_key": "GOV-* ID",
+      "use": "Maintain scientific status of 173 mapping",
+      "authority_guard": "No automatic claim promotion",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit"
+    },
+    {
+      "owner": "Systems / family",
+      "module": "01_Source_Manifest; twin validation tabs",
+      "function": "Materials, devices and physical twin evidence",
+      "join_key": "Source hash / twin ID",
+      "use": "Downstream only for real devices/processes",
+      "authority_guard": "No second materials database",
+      "read_state": "Metadata scoped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1EhMo0zHROrRhQQJGLJKCRKIh6MXgJVl2cNLI9ofcVko/edit"
+    },
+    {
+      "owner": "Achilles P.A / oversight",
+      "module": "Index Appendix Log",
+      "function": "Authority and P.A scope pointers",
+      "join_key": "IDX-* ID",
+      "use": "Pointer to Raphael project owner only",
+      "authority_guard": "Do not copy private P.A records",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1Z9eEUsp8uDU5U4ZqQd-YOhlxJAC7UoelmByY6EaRfV0/edit"
+    },
+    {
+      "owner": "Achilles P.A / audit",
+      "module": "AI Consolidation Layer",
+      "function": "Source discovery, deduplication and receipt status",
+      "join_key": "AIC-* ID",
+      "use": "Reconciliation pointer; not model owner",
+      "authority_guard": "No source promotion by AI status alone",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1Z9eEUsp8uDU5U4ZqQd-YOhlxJAC7UoelmByY6EaRfV0/edit"
+    },
+    {
+      "owner": "ACR3 / reconciliation",
+      "module": "12_Cross_Corpus_Handoff",
+      "function": "Reconciliation routing, confirmation and conflict handling",
+      "join_key": "CCX-* ID",
+      "use": "Apply existing confirm/update/duplicate rules",
+      "authority_guard": "No last-chat-wins canon",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1AgAhLPNtrO91C_-ea7EdOkOsyXrCCYvFVvmDSGq8uls/edit"
+    },
+    {
+      "owner": "ACR3 / migration",
+      "module": "13_Workbook_Migration_Inventory",
+      "function": "Source sheet → owner/target crosswalk",
+      "join_key": "MIG-* ID",
+      "use": "Crosswalk only; no bulk tab replication",
+      "authority_guard": "Use source workbook identity",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/1AgAhLPNtrO91C_-ea7EdOkOsyXrCCYvFVvmDSGq8uls/edit"
+    },
+    {
+      "owner": "Raphael / finalisation",
+      "module": "03_Raphael_Boundary; 06_Open_Items",
+      "function": "Keep N³/EML#F independent and record open tasks",
+      "join_key": "WB-* / O-*",
+      "use": "Acknowledge owner and release status",
+      "authority_guard": "No premature merge or move",
+      "read_state": "Read-only mapped",
+      "source_url": "https://docs.google.com/spreadsheets/d/19p3Oo6dovuS46DC3LYESRNxd25Sc7C7q0SdSTo944ZA/edit"
+    }
+  ]
+}

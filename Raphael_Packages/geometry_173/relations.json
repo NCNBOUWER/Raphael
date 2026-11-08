@@ -1,0 +1,4200 @@
+{
+  "schema_version": "0.1.0-research",
+  "edge_count": 699,
+  "edges": [
+    {
+      "source": "RAP-SLOT-001",
+      "target": "GEOM:Arch_01",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-001",
+      "target": "ATOMIC-Z:1",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-001",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-001",
+      "target": "RAP-SLOT-002",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-001",
+      "target": "RAP-SLOT-118",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-002",
+      "target": "GEOM:Arch_02",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-002",
+      "target": "ATOMIC-Z:2",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-002",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-002",
+      "target": "RAP-SLOT-003",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-002",
+      "target": "RAP-SLOT-119",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-003",
+      "target": "GEOM:Arch_03",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-003",
+      "target": "ATOMIC-Z:3",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-003",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-003",
+      "target": "RAP-SLOT-004",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-003",
+      "target": "RAP-SLOT-120",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-004",
+      "target": "GEOM:Arch_04",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-004",
+      "target": "ATOMIC-Z:4",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-004",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-004",
+      "target": "RAP-SLOT-005",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-004",
+      "target": "RAP-SLOT-121",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-005",
+      "target": "GEOM:Arch_05",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-005",
+      "target": "ATOMIC-Z:5",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-005",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-005",
+      "target": "RAP-SLOT-006",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-005",
+      "target": "RAP-SLOT-122",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-006",
+      "target": "GEOM:Arch_06",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-006",
+      "target": "ATOMIC-Z:6",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-006",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-006",
+      "target": "RAP-SLOT-007",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-006",
+      "target": "RAP-SLOT-123",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-007",
+      "target": "GEOM:Arch_07",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-007",
+      "target": "ATOMIC-Z:7",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-007",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-007",
+      "target": "RAP-SLOT-008",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-007",
+      "target": "RAP-SLOT-124",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-008",
+      "target": "GEOM:Arch_08",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-008",
+      "target": "ATOMIC-Z:8",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-008",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-008",
+      "target": "RAP-SLOT-009",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-008",
+      "target": "RAP-SLOT-125",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-009",
+      "target": "GEOM:Arch_09",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-009",
+      "target": "ATOMIC-Z:9",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-009",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-009",
+      "target": "RAP-SLOT-010",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-009",
+      "target": "RAP-SLOT-127",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-010",
+      "target": "GEOM:Arch_10",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-010",
+      "target": "ATOMIC-Z:10",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-010",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-010",
+      "target": "RAP-SLOT-011",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-010",
+      "target": "RAP-SLOT-126",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-011",
+      "target": "GEOM:Arch_11",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-011",
+      "target": "ATOMIC-Z:11",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-011",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-011",
+      "target": "RAP-SLOT-012",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-011",
+      "target": "RAP-SLOT-128",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-012",
+      "target": "GEOM:Arch_12",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-012",
+      "target": "ATOMIC-Z:12",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-012",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-012",
+      "target": "RAP-SLOT-013",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-012",
+      "target": "RAP-SLOT-129",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-013",
+      "target": "GEOM:Arch_13",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-013",
+      "target": "ATOMIC-Z:13",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-013",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-013",
+      "target": "RAP-SLOT-014",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-013",
+      "target": "RAP-SLOT-130",
+      "kind": "standard_duality_candidate",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-014",
+      "target": "GEOM:J37",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-014",
+      "target": "ATOMIC-Z:14",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-014",
+      "target": "FAMILY:core",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-014",
+      "target": "RAP-SLOT-015",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-015",
+      "target": "GEOM:RAP_015",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-015",
+      "target": "ATOMIC-Z:15",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-015",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-015",
+      "target": "RAP-SLOT-016",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-016",
+      "target": "GEOM:RAP_016",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-016",
+      "target": "ATOMIC-Z:16",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-016",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-016",
+      "target": "RAP-SLOT-017",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-017",
+      "target": "GEOM:RAP_017",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-017",
+      "target": "ATOMIC-Z:17",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-017",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-017",
+      "target": "RAP-SLOT-018",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-018",
+      "target": "GEOM:RAP_018",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-018",
+      "target": "ATOMIC-Z:18",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-018",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-018",
+      "target": "RAP-SLOT-019",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-019",
+      "target": "GEOM:RAP_019",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-019",
+      "target": "ATOMIC-Z:19",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-019",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-019",
+      "target": "RAP-SLOT-020",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-020",
+      "target": "GEOM:RAP_020",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-020",
+      "target": "ATOMIC-Z:20",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-020",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-020",
+      "target": "RAP-SLOT-021",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-021",
+      "target": "GEOM:RAP_021",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-021",
+      "target": "ATOMIC-Z:21",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-021",
+      "target": "FAMILY:prisms_antiprisms",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-021",
+      "target": "RAP-SLOT-022",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-022",
+      "target": "GEOM:J1",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-022",
+      "target": "ATOMIC-Z:22",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-022",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-022",
+      "target": "RAP-SLOT-023",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-023",
+      "target": "GEOM:J2",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-023",
+      "target": "ATOMIC-Z:23",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-023",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-023",
+      "target": "RAP-SLOT-024",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-024",
+      "target": "GEOM:J3",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-024",
+      "target": "ATOMIC-Z:24",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-024",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-024",
+      "target": "RAP-SLOT-025",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-025",
+      "target": "GEOM:J4",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-025",
+      "target": "ATOMIC-Z:25",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-025",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-025",
+      "target": "RAP-SLOT-026",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-026",
+      "target": "GEOM:J5",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-026",
+      "target": "ATOMIC-Z:26",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-026",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-026",
+      "target": "RAP-SLOT-027",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-027",
+      "target": "GEOM:J6",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-027",
+      "target": "ATOMIC-Z:27",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-027",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-027",
+      "target": "RAP-SLOT-028",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-028",
+      "target": "GEOM:J7",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-028",
+      "target": "ATOMIC-Z:28",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-028",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-028",
+      "target": "RAP-SLOT-029",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-029",
+      "target": "GEOM:J8",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-029",
+      "target": "ATOMIC-Z:29",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-029",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-029",
+      "target": "RAP-SLOT-030",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-030",
+      "target": "GEOM:J9",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-030",
+      "target": "ATOMIC-Z:30",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-030",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-030",
+      "target": "RAP-SLOT-031",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-031",
+      "target": "GEOM:J10",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-031",
+      "target": "ATOMIC-Z:31",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-031",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-031",
+      "target": "RAP-SLOT-032",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-032",
+      "target": "GEOM:J11",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-032",
+      "target": "ATOMIC-Z:32",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-032",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-032",
+      "target": "RAP-SLOT-033",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-033",
+      "target": "GEOM:J12",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-033",
+      "target": "ATOMIC-Z:33",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-033",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-033",
+      "target": "RAP-SLOT-034",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-034",
+      "target": "GEOM:J13",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-034",
+      "target": "ATOMIC-Z:34",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-034",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-034",
+      "target": "RAP-SLOT-035",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-035",
+      "target": "GEOM:J14",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-035",
+      "target": "ATOMIC-Z:35",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-035",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-035",
+      "target": "RAP-SLOT-036",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-036",
+      "target": "GEOM:J15",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-036",
+      "target": "ATOMIC-Z:36",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-036",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-036",
+      "target": "RAP-SLOT-037",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-037",
+      "target": "GEOM:J16",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-037",
+      "target": "ATOMIC-Z:37",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-037",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-037",
+      "target": "RAP-SLOT-038",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-038",
+      "target": "GEOM:J17",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-038",
+      "target": "ATOMIC-Z:38",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-038",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-038",
+      "target": "RAP-SLOT-039",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-039",
+      "target": "GEOM:J18",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-039",
+      "target": "ATOMIC-Z:39",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-039",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-039",
+      "target": "RAP-SLOT-040",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-040",
+      "target": "GEOM:J19",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-040",
+      "target": "ATOMIC-Z:40",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-040",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-040",
+      "target": "RAP-SLOT-041",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-041",
+      "target": "GEOM:J20",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-041",
+      "target": "ATOMIC-Z:41",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-041",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-041",
+      "target": "RAP-SLOT-042",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-042",
+      "target": "GEOM:J21",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-042",
+      "target": "ATOMIC-Z:42",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-042",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-042",
+      "target": "RAP-SLOT-043",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-043",
+      "target": "GEOM:J22",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-043",
+      "target": "ATOMIC-Z:43",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-043",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-043",
+      "target": "RAP-SLOT-044",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-044",
+      "target": "GEOM:J23",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-044",
+      "target": "ATOMIC-Z:44",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-044",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-044",
+      "target": "RAP-SLOT-045",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-045",
+      "target": "GEOM:J24",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-045",
+      "target": "ATOMIC-Z:45",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-045",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-045",
+      "target": "RAP-SLOT-046",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-046",
+      "target": "GEOM:J25",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-046",
+      "target": "ATOMIC-Z:46",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-046",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-046",
+      "target": "RAP-SLOT-047",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-047",
+      "target": "GEOM:J26",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-047",
+      "target": "ATOMIC-Z:47",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-047",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-047",
+      "target": "RAP-SLOT-048",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-048",
+      "target": "GEOM:J27",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-048",
+      "target": "ATOMIC-Z:48",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-048",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-048",
+      "target": "RAP-SLOT-049",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-049",
+      "target": "GEOM:J28",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-049",
+      "target": "ATOMIC-Z:49",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-049",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-049",
+      "target": "RAP-SLOT-050",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-050",
+      "target": "GEOM:J29",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-050",
+      "target": "ATOMIC-Z:50",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-050",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-050",
+      "target": "RAP-SLOT-051",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-051",
+      "target": "GEOM:J30",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-051",
+      "target": "ATOMIC-Z:51",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-051",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-051",
+      "target": "RAP-SLOT-052",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-052",
+      "target": "GEOM:J31",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-052",
+      "target": "ATOMIC-Z:52",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-052",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-052",
+      "target": "RAP-SLOT-053",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-053",
+      "target": "GEOM:J32",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-053",
+      "target": "ATOMIC-Z:53",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-053",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-053",
+      "target": "RAP-SLOT-054",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-054",
+      "target": "GEOM:J33",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-054",
+      "target": "ATOMIC-Z:54",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-054",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-054",
+      "target": "RAP-SLOT-055",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-055",
+      "target": "GEOM:J34",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-055",
+      "target": "ATOMIC-Z:55",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-055",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-055",
+      "target": "RAP-SLOT-056",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-056",
+      "target": "GEOM:J35",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-056",
+      "target": "ATOMIC-Z:56",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-056",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-056",
+      "target": "RAP-SLOT-057",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-057",
+      "target": "GEOM:J36",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-057",
+      "target": "ATOMIC-Z:57",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-057",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-057",
+      "target": "RAP-SLOT-058",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-058",
+      "target": "GEOM:J37",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-058",
+      "target": "ATOMIC-Z:58",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-058",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-058",
+      "target": "RAP-SLOT-059",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-059",
+      "target": "GEOM:J38",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-059",
+      "target": "ATOMIC-Z:59",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-059",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-059",
+      "target": "RAP-SLOT-060",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-060",
+      "target": "GEOM:J39",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-060",
+      "target": "ATOMIC-Z:60",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-060",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-060",
+      "target": "RAP-SLOT-061",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-061",
+      "target": "GEOM:J40",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-061",
+      "target": "ATOMIC-Z:61",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-061",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-061",
+      "target": "RAP-SLOT-062",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-062",
+      "target": "GEOM:J41",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-062",
+      "target": "ATOMIC-Z:62",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-062",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-062",
+      "target": "RAP-SLOT-063",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-063",
+      "target": "GEOM:J42",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-063",
+      "target": "ATOMIC-Z:63",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-063",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-063",
+      "target": "RAP-SLOT-064",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-064",
+      "target": "GEOM:J43",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-064",
+      "target": "ATOMIC-Z:64",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-064",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-064",
+      "target": "RAP-SLOT-065",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-065",
+      "target": "GEOM:J44",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-065",
+      "target": "ATOMIC-Z:65",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-065",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-065",
+      "target": "RAP-SLOT-066",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-066",
+      "target": "GEOM:J45",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-066",
+      "target": "ATOMIC-Z:66",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-066",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-066",
+      "target": "RAP-SLOT-067",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-067",
+      "target": "GEOM:J46",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-067",
+      "target": "ATOMIC-Z:67",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-067",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-067",
+      "target": "RAP-SLOT-068",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-068",
+      "target": "GEOM:J47",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-068",
+      "target": "ATOMIC-Z:68",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-068",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-068",
+      "target": "RAP-SLOT-069",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-069",
+      "target": "GEOM:J48",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-069",
+      "target": "ATOMIC-Z:69",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-069",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-069",
+      "target": "RAP-SLOT-070",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-070",
+      "target": "GEOM:J49",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-070",
+      "target": "ATOMIC-Z:70",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-070",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-070",
+      "target": "RAP-SLOT-071",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-071",
+      "target": "GEOM:J50",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-071",
+      "target": "ATOMIC-Z:71",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-071",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-071",
+      "target": "RAP-SLOT-072",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-072",
+      "target": "GEOM:J51",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-072",
+      "target": "ATOMIC-Z:72",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-072",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-072",
+      "target": "RAP-SLOT-073",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-073",
+      "target": "GEOM:J52",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-073",
+      "target": "ATOMIC-Z:73",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-073",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-073",
+      "target": "RAP-SLOT-074",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-074",
+      "target": "GEOM:J53",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-074",
+      "target": "ATOMIC-Z:74",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-074",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-074",
+      "target": "RAP-SLOT-075",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-075",
+      "target": "GEOM:J54",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-075",
+      "target": "ATOMIC-Z:75",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-075",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-075",
+      "target": "RAP-SLOT-076",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-076",
+      "target": "GEOM:J55",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-076",
+      "target": "ATOMIC-Z:76",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-076",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-076",
+      "target": "RAP-SLOT-077",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-077",
+      "target": "GEOM:J56",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-077",
+      "target": "ATOMIC-Z:77",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-077",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-077",
+      "target": "RAP-SLOT-078",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-078",
+      "target": "GEOM:J57",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-078",
+      "target": "ATOMIC-Z:78",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-078",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-078",
+      "target": "RAP-SLOT-079",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-079",
+      "target": "GEOM:J58",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-079",
+      "target": "ATOMIC-Z:79",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-079",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-079",
+      "target": "RAP-SLOT-080",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-080",
+      "target": "GEOM:J59",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-080",
+      "target": "ATOMIC-Z:80",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-080",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-080",
+      "target": "RAP-SLOT-081",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-081",
+      "target": "GEOM:J60",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-081",
+      "target": "ATOMIC-Z:81",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-081",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-081",
+      "target": "RAP-SLOT-082",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-082",
+      "target": "GEOM:J61",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-082",
+      "target": "ATOMIC-Z:82",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-082",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-082",
+      "target": "RAP-SLOT-083",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-083",
+      "target": "GEOM:J62",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-083",
+      "target": "ATOMIC-Z:83",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-083",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-083",
+      "target": "RAP-SLOT-084",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-084",
+      "target": "GEOM:J63",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-084",
+      "target": "ATOMIC-Z:84",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-084",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-084",
+      "target": "RAP-SLOT-085",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-085",
+      "target": "GEOM:J64",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-085",
+      "target": "ATOMIC-Z:85",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-085",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-085",
+      "target": "RAP-SLOT-086",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-086",
+      "target": "GEOM:J65",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-086",
+      "target": "ATOMIC-Z:86",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-086",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-086",
+      "target": "RAP-SLOT-087",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-087",
+      "target": "GEOM:J66",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-087",
+      "target": "ATOMIC-Z:87",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-087",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-087",
+      "target": "RAP-SLOT-088",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-088",
+      "target": "GEOM:J67",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-088",
+      "target": "ATOMIC-Z:88",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-088",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-088",
+      "target": "RAP-SLOT-089",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-089",
+      "target": "GEOM:J68",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-089",
+      "target": "ATOMIC-Z:89",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-089",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-089",
+      "target": "RAP-SLOT-090",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-090",
+      "target": "GEOM:J69",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-090",
+      "target": "ATOMIC-Z:90",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-090",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-090",
+      "target": "RAP-SLOT-091",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-091",
+      "target": "GEOM:J70",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-091",
+      "target": "ATOMIC-Z:91",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-091",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-091",
+      "target": "RAP-SLOT-092",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-092",
+      "target": "GEOM:J71",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-092",
+      "target": "ATOMIC-Z:92",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-092",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-092",
+      "target": "RAP-SLOT-093",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-093",
+      "target": "GEOM:J72",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-093",
+      "target": "ATOMIC-Z:93",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-093",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-093",
+      "target": "RAP-SLOT-094",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-094",
+      "target": "GEOM:J73",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-094",
+      "target": "ATOMIC-Z:94",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-094",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-094",
+      "target": "RAP-SLOT-095",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-095",
+      "target": "GEOM:J74",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-095",
+      "target": "ATOMIC-Z:95",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-095",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-095",
+      "target": "RAP-SLOT-096",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-096",
+      "target": "GEOM:J75",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-096",
+      "target": "ATOMIC-Z:96",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-096",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-096",
+      "target": "RAP-SLOT-097",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-097",
+      "target": "GEOM:J76",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-097",
+      "target": "ATOMIC-Z:97",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-097",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-097",
+      "target": "RAP-SLOT-098",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-098",
+      "target": "GEOM:J77",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-098",
+      "target": "ATOMIC-Z:98",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-098",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-098",
+      "target": "RAP-SLOT-099",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-099",
+      "target": "GEOM:J78",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-099",
+      "target": "ATOMIC-Z:99",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-099",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-099",
+      "target": "RAP-SLOT-100",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-100",
+      "target": "GEOM:J79",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-100",
+      "target": "ATOMIC-Z:100",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-100",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-100",
+      "target": "RAP-SLOT-101",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-101",
+      "target": "GEOM:J80",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-101",
+      "target": "ATOMIC-Z:101",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-101",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-101",
+      "target": "RAP-SLOT-102",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-102",
+      "target": "GEOM:J81",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-102",
+      "target": "ATOMIC-Z:102",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-102",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-102",
+      "target": "RAP-SLOT-103",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-103",
+      "target": "GEOM:J82",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-103",
+      "target": "ATOMIC-Z:103",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-103",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-103",
+      "target": "RAP-SLOT-104",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-104",
+      "target": "GEOM:J83",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-104",
+      "target": "ATOMIC-Z:104",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-104",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-104",
+      "target": "RAP-SLOT-105",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-105",
+      "target": "GEOM:J84",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-105",
+      "target": "ATOMIC-Z:105",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-105",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-105",
+      "target": "RAP-SLOT-106",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-106",
+      "target": "GEOM:J85",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-106",
+      "target": "ATOMIC-Z:106",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-106",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-106",
+      "target": "RAP-SLOT-107",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-107",
+      "target": "GEOM:J86",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-107",
+      "target": "ATOMIC-Z:107",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-107",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-107",
+      "target": "RAP-SLOT-108",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-108",
+      "target": "GEOM:J87",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-108",
+      "target": "ATOMIC-Z:108",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-108",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-108",
+      "target": "RAP-SLOT-109",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-109",
+      "target": "GEOM:J88",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-109",
+      "target": "ATOMIC-Z:109",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-109",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-109",
+      "target": "RAP-SLOT-110",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-110",
+      "target": "GEOM:J89",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-110",
+      "target": "ATOMIC-Z:110",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-110",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-110",
+      "target": "RAP-SLOT-111",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-111",
+      "target": "GEOM:J90",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-111",
+      "target": "ATOMIC-Z:111",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-111",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-111",
+      "target": "RAP-SLOT-112",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-112",
+      "target": "GEOM:J91",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-112",
+      "target": "ATOMIC-Z:112",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-112",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-112",
+      "target": "RAP-SLOT-113",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-113",
+      "target": "GEOM:J92",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-113",
+      "target": "ATOMIC-Z:113",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-113",
+      "target": "FAMILY:johnson",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-113",
+      "target": "RAP-SLOT-114",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-114",
+      "target": "GEOM:KP_1",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-114",
+      "target": "ATOMIC-Z:114",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-114",
+      "target": "FAMILY:star",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-114",
+      "target": "RAP-SLOT-115",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-115",
+      "target": "GEOM:KP_2",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-115",
+      "target": "ATOMIC-Z:115",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-115",
+      "target": "FAMILY:star",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-115",
+      "target": "RAP-SLOT-116",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-116",
+      "target": "GEOM:KP_3",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-116",
+      "target": "ATOMIC-Z:116",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-116",
+      "target": "FAMILY:star",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-116",
+      "target": "RAP-SLOT-117",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-117",
+      "target": "GEOM:KP_4",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-117",
+      "target": "ATOMIC-Z:117",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-117",
+      "target": "FAMILY:star",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-117",
+      "target": "RAP-SLOT-118",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-118",
+      "target": "GEOM:Catalan_01",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-118",
+      "target": "ATOMIC-Z:118",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-118",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-118",
+      "target": "RAP-SLOT-119",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-119",
+      "target": "GEOM:Catalan_02",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-119",
+      "target": "ATOMIC-Z:119",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-119",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-119",
+      "target": "RAP-SLOT-120",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-120",
+      "target": "GEOM:Catalan_03",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-120",
+      "target": "ATOMIC-Z:120",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-120",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-120",
+      "target": "RAP-SLOT-121",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-121",
+      "target": "GEOM:Catalan_04",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-121",
+      "target": "ATOMIC-Z:121",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-121",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-121",
+      "target": "RAP-SLOT-122",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-122",
+      "target": "GEOM:Catalan_05",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-122",
+      "target": "ATOMIC-Z:122",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-122",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-122",
+      "target": "RAP-SLOT-123",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-123",
+      "target": "GEOM:Catalan_06",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-123",
+      "target": "ATOMIC-Z:123",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-123",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-123",
+      "target": "RAP-SLOT-124",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-124",
+      "target": "GEOM:Catalan_07",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-124",
+      "target": "ATOMIC-Z:124",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-124",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-124",
+      "target": "RAP-SLOT-125",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-125",
+      "target": "GEOM:Catalan_08",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-125",
+      "target": "ATOMIC-Z:125",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-125",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-125",
+      "target": "RAP-SLOT-126",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-126",
+      "target": "GEOM:Catalan_09",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-126",
+      "target": "ATOMIC-Z:126",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-126",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-126",
+      "target": "RAP-SLOT-127",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-127",
+      "target": "GEOM:Catalan_10",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-127",
+      "target": "ATOMIC-Z:127",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-127",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-127",
+      "target": "RAP-SLOT-128",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-128",
+      "target": "GEOM:Catalan_11",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-128",
+      "target": "ATOMIC-Z:128",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-128",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-128",
+      "target": "RAP-SLOT-129",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-129",
+      "target": "GEOM:Catalan_12",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-129",
+      "target": "ATOMIC-Z:129",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-129",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-129",
+      "target": "RAP-SLOT-130",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-130",
+      "target": "GEOM:Catalan_13",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-130",
+      "target": "ATOMIC-Z:130",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-130",
+      "target": "FAMILY:catalan",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-130",
+      "target": "RAP-SLOT-131",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-131",
+      "target": "ATOMIC-Z:131",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-131",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-131",
+      "target": "RAP-SLOT-132",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-132",
+      "target": "ATOMIC-Z:132",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-132",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-132",
+      "target": "RAP-SLOT-133",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-133",
+      "target": "ATOMIC-Z:133",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-133",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-133",
+      "target": "RAP-SLOT-134",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-134",
+      "target": "ATOMIC-Z:134",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-134",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-134",
+      "target": "RAP-SLOT-135",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-135",
+      "target": "ATOMIC-Z:135",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-135",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-135",
+      "target": "RAP-SLOT-136",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-136",
+      "target": "ATOMIC-Z:136",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-136",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-136",
+      "target": "RAP-SLOT-137",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-137",
+      "target": "ATOMIC-Z:137",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-137",
+      "target": "FAMILY:raphael_candidate",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-137",
+      "target": "RAP-SLOT-138",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-138",
+      "target": "GEOM:U16",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-138",
+      "target": "ATOMIC-Z:138",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-138",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-138",
+      "target": "RAP-SLOT-139",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-139",
+      "target": "GEOM:U17",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-139",
+      "target": "ATOMIC-Z:139",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-139",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-139",
+      "target": "RAP-SLOT-140",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-140",
+      "target": "GEOM:U18",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-140",
+      "target": "ATOMIC-Z:140",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-140",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-140",
+      "target": "RAP-SLOT-141",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-141",
+      "target": "GEOM:U19",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-141",
+      "target": "ATOMIC-Z:141",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-141",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-141",
+      "target": "RAP-SLOT-142",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-142",
+      "target": "GEOM:U20",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-142",
+      "target": "ATOMIC-Z:142",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-142",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-142",
+      "target": "RAP-SLOT-143",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-143",
+      "target": "GEOM:U21",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-143",
+      "target": "ATOMIC-Z:143",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-143",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-143",
+      "target": "RAP-SLOT-144",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-144",
+      "target": "GEOM:U22",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-144",
+      "target": "ATOMIC-Z:144",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-144",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-144",
+      "target": "RAP-SLOT-145",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-145",
+      "target": "GEOM:U23",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-145",
+      "target": "ATOMIC-Z:145",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-145",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-145",
+      "target": "RAP-SLOT-146",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-146",
+      "target": "GEOM:U24",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-146",
+      "target": "ATOMIC-Z:146",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-146",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-146",
+      "target": "RAP-SLOT-147",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-147",
+      "target": "GEOM:U25",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-147",
+      "target": "ATOMIC-Z:147",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-147",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-147",
+      "target": "RAP-SLOT-148",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-148",
+      "target": "GEOM:U26",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-148",
+      "target": "ATOMIC-Z:148",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-148",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-148",
+      "target": "RAP-SLOT-149",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-149",
+      "target": "GEOM:U27",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-149",
+      "target": "ATOMIC-Z:149",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-149",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-149",
+      "target": "RAP-SLOT-150",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-150",
+      "target": "GEOM:U28",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-150",
+      "target": "ATOMIC-Z:150",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-150",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-150",
+      "target": "RAP-SLOT-151",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-151",
+      "target": "GEOM:U29",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-151",
+      "target": "ATOMIC-Z:151",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-151",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-151",
+      "target": "RAP-SLOT-152",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-152",
+      "target": "GEOM:U30",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-152",
+      "target": "ATOMIC-Z:152",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-152",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-152",
+      "target": "RAP-SLOT-153",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-153",
+      "target": "GEOM:U31",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-153",
+      "target": "ATOMIC-Z:153",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-153",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-153",
+      "target": "RAP-SLOT-154",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-154",
+      "target": "GEOM:U32",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-154",
+      "target": "ATOMIC-Z:154",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-154",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-154",
+      "target": "RAP-SLOT-155",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-155",
+      "target": "GEOM:U33",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-155",
+      "target": "ATOMIC-Z:155",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-155",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-155",
+      "target": "RAP-SLOT-156",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-156",
+      "target": "GEOM:U34",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-156",
+      "target": "ATOMIC-Z:156",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-156",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-156",
+      "target": "RAP-SLOT-157",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-157",
+      "target": "GEOM:U35",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-157",
+      "target": "ATOMIC-Z:157",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-157",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-157",
+      "target": "RAP-SLOT-158",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-158",
+      "target": "GEOM:U36",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-158",
+      "target": "ATOMIC-Z:158",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-158",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-158",
+      "target": "RAP-SLOT-159",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-159",
+      "target": "GEOM:U37",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-159",
+      "target": "ATOMIC-Z:159",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-159",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-159",
+      "target": "RAP-SLOT-160",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-160",
+      "target": "GEOM:U38",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-160",
+      "target": "ATOMIC-Z:160",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-160",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-160",
+      "target": "RAP-SLOT-161",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-161",
+      "target": "GEOM:U39",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-161",
+      "target": "ATOMIC-Z:161",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-161",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-161",
+      "target": "RAP-SLOT-162",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-162",
+      "target": "GEOM:U40",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-162",
+      "target": "ATOMIC-Z:162",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-162",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-162",
+      "target": "RAP-SLOT-163",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-163",
+      "target": "GEOM:U41",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-163",
+      "target": "ATOMIC-Z:163",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-163",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-163",
+      "target": "RAP-SLOT-164",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-164",
+      "target": "GEOM:U42",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-164",
+      "target": "ATOMIC-Z:164",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-164",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-164",
+      "target": "RAP-SLOT-165",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-165",
+      "target": "GEOM:U43",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-165",
+      "target": "ATOMIC-Z:165",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-165",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-165",
+      "target": "RAP-SLOT-166",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-166",
+      "target": "GEOM:U44",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-166",
+      "target": "ATOMIC-Z:166",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-166",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-166",
+      "target": "RAP-SLOT-167",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-167",
+      "target": "GEOM:U45",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-167",
+      "target": "ATOMIC-Z:167",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-167",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-167",
+      "target": "RAP-SLOT-168",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-168",
+      "target": "GEOM:U46",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-168",
+      "target": "ATOMIC-Z:168",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-168",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-168",
+      "target": "RAP-SLOT-169",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-169",
+      "target": "GEOM:U47",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-169",
+      "target": "ATOMIC-Z:169",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-169",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-169",
+      "target": "RAP-SLOT-170",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-170",
+      "target": "GEOM:U48",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-170",
+      "target": "ATOMIC-Z:170",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-170",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-170",
+      "target": "RAP-SLOT-171",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-171",
+      "target": "GEOM:U49",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-171",
+      "target": "ATOMIC-Z:171",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-171",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-171",
+      "target": "RAP-SLOT-172",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-172",
+      "target": "GEOM:U50",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-172",
+      "target": "ATOMIC-Z:172",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-172",
+      "target": "FAMILY:uniform_selected",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-172",
+      "target": "RAP-SLOT-173",
+      "kind": "golden_scale_successor",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-173",
+      "target": "GEOM:U75",
+      "kind": "references_geometry",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-173",
+      "target": "ATOMIC-Z:173",
+      "kind": "hypothetical_atomic_correspondence",
+      "scope": "NOT_PHYSICALLY_DERIVED"
+    },
+    {
+      "source": "RAP-SLOT-173",
+      "target": "FAMILY:u75_boundary",
+      "kind": "research_family",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-014",
+      "target": "RAP-SLOT-058",
+      "kind": "same_geometry_identity",
+      "scope": "reference_only"
+    },
+    {
+      "source": "RAP-SLOT-137",
+      "target": "RAP-SLOT-011",
+      "kind": "shares_draft_incidence_counts_only",
+      "scope": "UNPROVED_UNIQUENESS"
+    }
+  ]
+}

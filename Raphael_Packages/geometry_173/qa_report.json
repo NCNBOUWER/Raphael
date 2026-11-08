@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0-research",
+  "slots": 173,
+  "zone_counts": {
+    "core": 14,
+    "prisms_antiprisms": 7,
+    "johnson": 92,
+    "star": 4,
+    "catalan": 13,
+    "raphael_candidate": 7,
+    "uniform_selected": 35,
+    "u75_boundary": 1
+  },
+  "source_original_FAIL_count": 55,
+  "reference_count_sets_present": 66,
+  "coordinate_embeddings_supplied": 0,
+  "graph_edges": 699,
+  "Johnson_identity_mapping": "PASS",
+  "selected_uniform_identity_mapping": "PASS",
+  "J37_alias": "PASS",
+  "U75_incidence": "PASS",
+  "position_174": "EMPTY",
+  "Raphael_common_metric": "UNTESTED",
+  "physical_ToE": "UNTESTED"
+}
