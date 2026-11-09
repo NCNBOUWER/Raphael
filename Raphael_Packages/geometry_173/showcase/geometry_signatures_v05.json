@@ -1,0 +1,1753 @@
+{
+  "1": {
+    "V": 12,
+    "E": 18,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "6": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.500000077124722e-09,
+    "fingerprint_sha256": "33074aba14f1563c58df991b0a9e8e53b1f6ec0e5f6fc6352f15b1fb2a557820"
+  },
+  "2": {
+    "V": 12,
+    "E": 24,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.0,
+    "fingerprint_sha256": "743dc600a18a27bcc1c125a60e7e3856c0ef66ee3ac76ddb716cb539b7d4903e"
+  },
+  "3": {
+    "V": 24,
+    "E": 36,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "8": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.5376441903680835e-09,
+    "fingerprint_sha256": "dd06c690ff2d6b4725671ae063903aaab65a8e5c0f52621413d3ca346a8d9524"
+  },
+  "4": {
+    "V": 24,
+    "E": 36,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "4": 6,
+      "6": 8
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.0,
+    "fingerprint_sha256": "43e084abe6ad2263fc20ee7d59a4d74c6d73e3a7d8e5b66a1969d21a0a62792f"
+  },
+  "5": {
+    "V": 24,
+    "E": 48,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 18
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.638180785289824e-10,
+    "fingerprint_sha256": "bfd786881d91e8a3562f3ae86742c9e867e112e33c25e292419c344d3b830f93"
+  },
+  "6": {
+    "V": 48,
+    "E": 72,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "4": 12,
+      "6": 8,
+      "8": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 7.071068175011885e-10,
+    "fingerprint_sha256": "26034048473ac08f71e03d1363e33b5f44a261fc8f0733229cd482b911526610"
+  },
+  "7": {
+    "V": 24,
+    "E": 60,
+    "F": 38,
+    "chi": 2,
+    "faces": {
+      "3": 32,
+      "4": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.138527456313661e-10,
+    "fingerprint_sha256": "7ab7c262f8c7c824956aa28487bc5f058e2d3c9c7a726b234b9304436d710be7"
+  },
+  "8": {
+    "V": 30,
+    "E": 60,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.1920389390876616e-10,
+    "fingerprint_sha256": "94a587e980356dff30b0ca957aa735107c4d8d87f08fa57c8274b4d34db7f419"
+  },
+  "9": {
+    "V": 60,
+    "E": 90,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "5": 12,
+      "6": 20
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.7943213579610148e-09,
+    "fingerprint_sha256": "082665450d5ac9bd8f6297ce625a43e7592b591e8b429d5b5e336151f0b0a580"
+  },
+  "10": {
+    "V": 60,
+    "E": 90,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "10": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 8.567627442405624e-09,
+    "fingerprint_sha256": "b1a465935977645b2ba5b906d7afd1f208de6a5a796ee93aa961ac51e91b43c3"
+  },
+  "11": {
+    "V": 60,
+    "E": 120,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 30,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3981327205527178e-10,
+    "fingerprint_sha256": "63b76413177a3353158d6018e8deb396fec468890e4bf923378a78bbfd0c8b3d"
+  },
+  "12": {
+    "V": 120,
+    "E": 180,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "4": 30,
+      "6": 20,
+      "10": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 7.705436617280375e-10,
+    "fingerprint_sha256": "5bc4f6fc6513c90c89dc62082aa34dc0a4cb8d869c1976e54701745a46bb8f39"
+  },
+  "15": {
+    "V": 6,
+    "E": 9,
+    "F": 5,
+    "chi": 2,
+    "faces": {
+      "3": 2,
+      "4": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.86681559084577e-10,
+    "fingerprint_sha256": "7c5ee736cd0927015eab52016860e335902904a5e63df2333fe5c7a1c0c9c321"
+  },
+  "16": {
+    "V": 10,
+    "E": 15,
+    "F": 7,
+    "chi": 2,
+    "faces": {
+      "4": 5,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.752502836819158e-10,
+    "fingerprint_sha256": "a8a1a14ddcc1712ba089da9dfda87a4e08ca03282028ff08142637676932aa75"
+  },
+  "17": {
+    "V": 12,
+    "E": 18,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "4": 6,
+      "6": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.86681559084577e-10,
+    "fingerprint_sha256": "f90c3676fa4bd253706ed788d8c54fdb266e1efdf87f17cc503d260f884d329d"
+  },
+  "18": {
+    "V": 16,
+    "E": 24,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "4": 8,
+      "8": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 3.117983648399907e-10,
+    "fingerprint_sha256": "41975787e05b6c42ac35279247132cc94879491d8e4bc42b476b811fba647b02"
+  },
+  "19": {
+    "V": 20,
+    "E": 30,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "4": 10,
+      "10": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.0009105483476064e-10,
+    "fingerprint_sha256": "799a6e3bb033fb92d11b8ea1007eb1076998eaa7c7f717bc2d8df635699531a4"
+  },
+  "20": {
+    "V": 8,
+    "E": 16,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 8.527314408196472e-10,
+    "fingerprint_sha256": "110d3705026a1967d2e244c2558fa3d3b5154860a208cbddbcb4e93318546f56"
+  },
+  "21": {
+    "V": 10,
+    "E": 20,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.901938856653754e-10,
+    "fingerprint_sha256": "c085dfa36a4e6acbd89c86bd7407d6169d526d157871229465a1202a8e87c9c5"
+  },
+  "22": {
+    "V": 5,
+    "E": 8,
+    "F": 5,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.0,
+    "fingerprint_sha256": "197b9c45450f872f775e298d82049eec1a605b28b34a9c3054f6874f23737f39"
+  },
+  "23": {
+    "V": 6,
+    "E": 10,
+    "F": 6,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "5": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.752502837291396e-10,
+    "fingerprint_sha256": "6ef62aa3465e2c00f5aab74f0f6970b50f617933dd95b5d3f9f10113fc4bbd96"
+  },
+  "24": {
+    "V": 9,
+    "E": 15,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 3,
+      "6": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.371505214154444e-10,
+    "fingerprint_sha256": "03bf1a275944ca7dc4f6f0876d652f4d72ee9f6f0a49af4cb7adc29374b50d52"
+  },
+  "25": {
+    "V": 12,
+    "E": 20,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 5,
+      "8": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980112373315674e-09,
+    "fingerprint_sha256": "351faa9f27fccd0dc146856fad2f3160c38d7a68d4336a4ba207960aba2fe5f6"
+  },
+  "26": {
+    "V": 15,
+    "E": 25,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "4": 5,
+      "5": 1,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908960326e-10,
+    "fingerprint_sha256": "7b1e56e007b654e5d86789fcf7ccac4a0b2eda965020d05b8660db4f1b7027df"
+  },
+  "27": {
+    "V": 20,
+    "E": 35,
+    "F": 17,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "5": 6,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.87785265021852e-10,
+    "fingerprint_sha256": "d4e27ba15e00a4ff99d7565f8b9edf88c946e2bcaac8fb2d0c2cf92a640191c5"
+  },
+  "28": {
+    "V": 7,
+    "E": 12,
+    "F": 7,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.371506324442732e-10,
+    "fingerprint_sha256": "51044ad9da3101e58500d9daa492a5b836c5f5361b6b3c67e77ade63ee87f8c6"
+  },
+  "29": {
+    "V": 9,
+    "E": 16,
+    "F": 9,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 5
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.6381807854638233e-10,
+    "fingerprint_sha256": "54f9f1b5a56c6a167fe5b4562c97c543bd069863e3c4d7d19457041c626c999b"
+  },
+  "30": {
+    "V": 11,
+    "E": 20,
+    "F": 11,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "4": 5,
+      "5": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.752502836917166e-10,
+    "fingerprint_sha256": "94e01bc0746e59dc91b368b1937ce23379581007f5a13d9562ef7ac2e8b13df4"
+  },
+  "31": {
+    "V": 9,
+    "E": 20,
+    "F": 13,
+    "chi": 2,
+    "faces": {
+      "3": 12,
+      "4": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.638180785486134e-10,
+    "fingerprint_sha256": "81118ed5987412d196ed155a00ce14a2178a5228770e2696aca7629ab8d0165d"
+  },
+  "32": {
+    "V": 11,
+    "E": 25,
+    "F": 16,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "5": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.901938856597562e-10,
+    "fingerprint_sha256": "2fc311bbb2f76553dd9ea839f4150722769f7bea610f1457ceff58b8beaa0873"
+  },
+  "33": {
+    "V": 5,
+    "E": 9,
+    "F": 6,
+    "chi": 2,
+    "faces": {
+      "3": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.3715063243926197e-10,
+    "fingerprint_sha256": "f02d27595f653307b6c039b4b99502a48ba40b4ad3ea4d89e4e044ddc5d94fa3"
+  },
+  "34": {
+    "V": 7,
+    "E": 15,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "3": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.752502837264659e-10,
+    "fingerprint_sha256": "5e67dc88a9148a00bd390ac746114a315d35c8539d5ccc5eb8a5a66464626ceb"
+  },
+  "35": {
+    "V": 8,
+    "E": 15,
+    "F": 9,
+    "chi": 2,
+    "faces": {
+      "3": 6,
+      "4": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.3715063244364975e-10,
+    "fingerprint_sha256": "ed06a6cdb8888bbd51802ed46986fa449e3fb8cf1a471502304cd9c19f758d78"
+  },
+  "36": {
+    "V": 10,
+    "E": 20,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.638180785498624e-10,
+    "fingerprint_sha256": "cd66b19b2b7565c17b731b587368ec34070bee785418bd8faaefce351d27e6e6"
+  },
+  "37": {
+    "V": 12,
+    "E": 25,
+    "F": 15,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 5
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.75250283697597e-10,
+    "fingerprint_sha256": "0e8c80dd5069b5e5d5f43eaaf91da8e9f331cabc3e460463b79da897997cc06c"
+  },
+  "38": {
+    "V": 10,
+    "E": 24,
+    "F": 16,
+    "chi": 2,
+    "faces": {
+      "3": 16
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.6381807854534153e-10,
+    "fingerprint_sha256": "c8af9342f96235a9251c2d12f35c2aeb57a74e87a3de0c7f5d6ec8f0ed6b6360"
+  },
+  "39": {
+    "V": 15,
+    "E": 27,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 9,
+      "6": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.371505214209931e-10,
+    "fingerprint_sha256": "35cb579a9fd0539ed40860ed11bb9d5e49c64f43fcaee0f8226d6beb4f224b0d"
+  },
+  "40": {
+    "V": 20,
+    "E": 36,
+    "F": 18,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 13,
+      "8": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.098011237325055e-09,
+    "fingerprint_sha256": "21635d686540da750456208f2fa111c288fbc155ca1cc585ba4f9e9a51683341"
+  },
+  "41": {
+    "V": 25,
+    "E": 45,
+    "F": 22,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "4": 15,
+      "5": 1,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908922175e-10,
+    "fingerprint_sha256": "b542bd643e47bf5f5a9d87ce324380adaf20f585eadecce6bea839476999fda5"
+  },
+  "42": {
+    "V": 30,
+    "E": 55,
+    "F": 27,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 10,
+      "5": 6,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.877852649782903e-10,
+    "fingerprint_sha256": "55639d505363ff391326b88159bcb1cf6311868b5be8f65cd2cb4e7fb0cfa4ef"
+  },
+  "43": {
+    "V": 15,
+    "E": 33,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 16,
+      "4": 3,
+      "6": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 3.587479202468408e-10,
+    "fingerprint_sha256": "c25f6fc0755348c933158ce37801b4ce72c2b2bca7435ee9da1bb3a0aa5119a8"
+  },
+  "44": {
+    "V": 20,
+    "E": 44,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 5,
+      "8": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980112373868777e-09,
+    "fingerprint_sha256": "405f0d7b2cc499bb8d1d4e8f557c6632e34b49f2640168dea5cc71c790b9d414"
+  },
+  "45": {
+    "V": 25,
+    "E": 55,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 25,
+      "4": 5,
+      "5": 1,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908488505e-10,
+    "fingerprint_sha256": "d3d9deefffcd6c8c4718ad6b72577408a78bc6438429dc2a7714ea6b1c427e35"
+  },
+  "46": {
+    "V": 30,
+    "E": 65,
+    "F": 37,
+    "chi": 2,
+    "faces": {
+      "3": 30,
+      "5": 6,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 6.442674172370345e-10,
+    "fingerprint_sha256": "fad86e0d2f7c8c0291b05239c6e510c1041fc0bbaedf572536d60902ce760fd7"
+  },
+  "47": {
+    "V": 8,
+    "E": 14,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.8668155908015163e-10,
+    "fingerprint_sha256": "bc8ab53b62f920c21e6fe4a29a24bcea20edf56ef59133a007d03954576938b5"
+  },
+  "48": {
+    "V": 12,
+    "E": 24,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.371505214160126e-10,
+    "fingerprint_sha256": "a85ca32d8103ef7d216b7de9f9d751e9d29c856fab19d7d9b49704c157c56968"
+  },
+  "49": {
+    "V": 16,
+    "E": 32,
+    "F": 18,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980112373780248e-09,
+    "fingerprint_sha256": "9ea398bed1b716b9b0dfbc888da653034d9f5997ac419500a7f7e31ef62f21ce"
+  },
+  "50": {
+    "V": 16,
+    "E": 32,
+    "F": 18,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980112373780248e-09,
+    "fingerprint_sha256": "631d9a08a0d1fb3c369f5c70cc0ff0231540898d22087e3651e28e584b878b85"
+  },
+  "51": {
+    "V": 20,
+    "E": 40,
+    "F": 22,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 10,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908993825e-10,
+    "fingerprint_sha256": "d57c432059eaad7054c06e0604e5b3559a249defa129a8553d3a613075c1cce5"
+  },
+  "52": {
+    "V": 20,
+    "E": 40,
+    "F": 22,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 10,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908993825e-10,
+    "fingerprint_sha256": "407d74f5e133dd220662219579f513af8b5eecc71dc015ab5f4906749cb5bd3c"
+  },
+  "53": {
+    "V": 25,
+    "E": 50,
+    "F": 27,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 5,
+      "5": 7
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055910302047e-10,
+    "fingerprint_sha256": "c68ed70e0d5fbd39ac5631981ebfaa84d1dd34df63bbd0ab856e209eb7db60d0"
+  },
+  "54": {
+    "V": 25,
+    "E": 50,
+    "F": 27,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 5,
+      "5": 7
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055910302047e-10,
+    "fingerprint_sha256": "534e50161528849ea6ac39c27f8e39e5edab30824d8f82262ea38bd5e981a715"
+  },
+  "55": {
+    "V": 30,
+    "E": 60,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.877852650423072e-10,
+    "fingerprint_sha256": "a0dc8ce7240edd8e6aeaf4e11702d48bcc40634ab9c01842c44ad710621e612b"
+  },
+  "56": {
+    "V": 18,
+    "E": 36,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.3715052141998466e-10,
+    "fingerprint_sha256": "355bfd510c801ac43b921de698b3b243fb3eb8407a4eca24be7e62e6ab4ef846"
+  },
+  "57": {
+    "V": 18,
+    "E": 36,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.3715052141998466e-10,
+    "fingerprint_sha256": "f01a590f09e06830cea56ca40ebb92eec8637529eaaf66c26f3a11ddf9d7bcad"
+  },
+  "58": {
+    "V": 24,
+    "E": 48,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 18
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980112373576548e-09,
+    "fingerprint_sha256": "44c2bf9dd2c62833674ffff2c408afdc7a60a0966829b4c78533047a223828e7"
+  },
+  "59": {
+    "V": 30,
+    "E": 60,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 20,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908954046e-10,
+    "fingerprint_sha256": "4a800e256870fa0a2272d85a2722d7e6d66292cca6e9a7b97b2892800617c84e"
+  },
+  "60": {
+    "V": 30,
+    "E": 60,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 20,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055908954046e-10,
+    "fingerprint_sha256": "a8bd1ced4f982db7c5928277126435ae3d59124dea665f8f37b346bbefb2ae63"
+  },
+  "61": {
+    "V": 35,
+    "E": 70,
+    "F": 37,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 15,
+      "5": 7
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.63805590989417e-10,
+    "fingerprint_sha256": "4ab49a68ab89fe243fe2f34a18ae34b6e3bf759df000260dd6c50270dadf90fc"
+  },
+  "62": {
+    "V": 35,
+    "E": 70,
+    "F": 37,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 15,
+      "5": 7
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638055909894172e-10,
+    "fingerprint_sha256": "17bef2ef64052740977d7d57a40c7a1a2c6717a338d7644a9f4631d43e90cc48"
+  },
+  "63": {
+    "V": 40,
+    "E": 80,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 10,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.877852650072449e-10,
+    "fingerprint_sha256": "53ce430abe35b55541c4916c70af3d9c8697ead15974508ffd0198bee497581a"
+  },
+  "64": {
+    "V": 40,
+    "E": 80,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 10,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.877852650072449e-10,
+    "fingerprint_sha256": "2577b3822fe327a5e5457cea1e59d992d7a8b345292cf96ec184d15813a31900"
+  },
+  "65": {
+    "V": 18,
+    "E": 42,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 6
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 3.587479202411842e-10,
+    "fingerprint_sha256": "a34ecd0c82f00cd88119e14628af63ee17a0cf9b3728c52df6e3fa24eea2a4d0"
+  },
+  "66": {
+    "V": 24,
+    "E": 56,
+    "F": 34,
+    "chi": 2,
+    "faces": {
+      "3": 24,
+      "4": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.0980110154053442e-09,
+    "fingerprint_sha256": "6a2ca9a3e4b4fee100b29e9e837dacf287a79f012d60e8ee50e6f0a5993288f2"
+  },
+  "67": {
+    "V": 30,
+    "E": 70,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 30,
+      "4": 10,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638057018831772e-10,
+    "fingerprint_sha256": "5db334b60f8d8342b52c231cf18a55770f76831d8634b4cac8a571d924584c1f"
+  },
+  "68": {
+    "V": 35,
+    "E": 80,
+    "F": 47,
+    "chi": 2,
+    "faces": {
+      "3": 35,
+      "4": 5,
+      "5": 7
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 9.638057019697545e-10,
+    "fingerprint_sha256": "03ab94ea75b5518f8f8a12f499c8236eb29d39c39492e672bbb6c48a3795d6f8"
+  },
+  "69": {
+    "V": 40,
+    "E": 90,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 40,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 6.442675282977957e-10,
+    "fingerprint_sha256": "ae86d7b37b87ca577bd302bd51cd365a2df061d9136111340e150c50f43321ae"
+  },
+  "70": {
+    "V": 7,
+    "E": 13,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "3": 6,
+      "4": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.149294323376539e-10,
+    "fingerprint_sha256": "088fa9e21c2dc254979f1a92121d96f8e8ccb503ff1976eb1fc90d3d858d7437"
+  },
+  "71": {
+    "V": 8,
+    "E": 17,
+    "F": 11,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 6.468384716083384e-10,
+    "fingerprint_sha256": "26be719b5f4cabcb61e71698f8c361ea39a6726d085a5e192264077b97507084"
+  },
+  "72": {
+    "V": 9,
+    "E": 21,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 14
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 6.468384715744291e-10,
+    "fingerprint_sha256": "76bdad490ff40bc3d949b6033d3f1b797b54195cba6b9cc93bdef2b70e639d10"
+  },
+  "73": {
+    "V": 11,
+    "E": 19,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 4,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.954077232246706e-10,
+    "fingerprint_sha256": "89da18b2f1eda61d5117fee5f9ec3c4a26e3f72f64c233ae04d187c682461cad"
+  },
+  "74": {
+    "V": 12,
+    "E": 23,
+    "F": 13,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 3,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.954077232210238e-10,
+    "fingerprint_sha256": "e42ba1f8e72e12b34e95ab78222dcfeff6c27796213f1d750820368419caa00a"
+  },
+  "75": {
+    "V": 13,
+    "E": 22,
+    "F": 11,
+    "chi": 2,
+    "faces": {
+      "3": 4,
+      "4": 5,
+      "6": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.896803045432091e-10,
+    "fingerprint_sha256": "cd29960a78a68438200ff32f4a5a34520923f9313470ce16804dde4675e3c506"
+  },
+  "76": {
+    "V": 14,
+    "E": 26,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 4,
+      "6": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.896803045476453e-10,
+    "fingerprint_sha256": "be0e389d66ea7587b82231a5ae2fb7afe28827fa24172bf744f023d53eb142d6"
+  },
+  "77": {
+    "V": 14,
+    "E": 26,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 4,
+      "6": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.896803045476453e-10,
+    "fingerprint_sha256": "819e18359bbbd0a50e64fadb26b004f166003e9e21d868341d572fce4f765e4d"
+  },
+  "78": {
+    "V": 15,
+    "E": 30,
+    "F": 17,
+    "chi": 2,
+    "faces": {
+      "3": 12,
+      "4": 3,
+      "6": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.896803045630941e-10,
+    "fingerprint_sha256": "494c4960e79fd43e784033839a4fc63e9b1ee97c52b5ca346d8c665f86d3f9a1"
+  },
+  "79": {
+    "V": 21,
+    "E": 35,
+    "F": 16,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "5": 11
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.58969870551675e-10,
+    "fingerprint_sha256": "ab2c0eb0b8ba0c145a3b6da4bf240ad8f17df48b5f0e8056d3a3fef07d4f3c34"
+  },
+  "80": {
+    "V": 22,
+    "E": 40,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "5": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.589698705322945e-10,
+    "fingerprint_sha256": "02aa2c733531912b90390272933dc7ae09fab4dca48cbd7ec21f9ac7018ca2c9"
+  },
+  "81": {
+    "V": 22,
+    "E": 40,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "5": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.589698705322943e-10,
+    "fingerprint_sha256": "0149dcefba4a5cfa00f2f49f583193f6a3f0d2ba04777ba77906d740d4d6f2f0"
+  },
+  "82": {
+    "V": 23,
+    "E": 45,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "5": 9
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.589698705172206e-10,
+    "fingerprint_sha256": "858e7cd0eed15ad305df729811092c1f0dc77b907b3588a120a5f15aad825b56"
+  },
+  "83": {
+    "V": 10,
+    "E": 20,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "5": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.398130500106669e-10,
+    "fingerprint_sha256": "fec7c070bae44588be9f102abb5f583d7c0f3e62da2deb056e44648b78b6cba0"
+  },
+  "84": {
+    "V": 9,
+    "E": 15,
+    "F": 8,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "5": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.398130500106669e-10,
+    "fingerprint_sha256": "14dfb080081abb2369491ea3b31dee45af59e1ad92fab0c78ba3eb4b0d96623f"
+  },
+  "85": {
+    "V": 10,
+    "E": 18,
+    "F": 10,
+    "chi": 2,
+    "faces": {
+      "3": 7,
+      "5": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.74995051717866e-10,
+    "fingerprint_sha256": "7b8e0e8492f9611480a6da29631ddd5a3f73c839d37f05048773e63bbd3a156b"
+  },
+  "86": {
+    "V": 15,
+    "E": 27,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 3,
+      "6": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.4142136348674828e-09,
+    "fingerprint_sha256": "f4472f51db7f046942e636ce18aef934372c9216fda5966bfa03677efaf6f1ab"
+  },
+  "87": {
+    "V": 28,
+    "E": 48,
+    "F": 22,
+    "chi": 2,
+    "faces": {
+      "3": 12,
+      "4": 5,
+      "8": 5
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.638180785405824e-10,
+    "fingerprint_sha256": "36bd3070e5de56b836ca5dd4915d4050219367d270cfe1e2064fde7fede7db74"
+  },
+  "88": {
+    "V": 32,
+    "E": 60,
+    "F": 30,
+    "chi": 2,
+    "faces": {
+      "3": 16,
+      "4": 10,
+      "8": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.6381807854058235e-10,
+    "fingerprint_sha256": "7b47d1b12c890b8526be353f619a58e3a1c7cf7ea325b4b47f41ba293860579d"
+  },
+  "89": {
+    "V": 65,
+    "E": 105,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 25,
+      "4": 5,
+      "5": 1,
+      "10": 11
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3944272403051306e-09,
+    "fingerprint_sha256": "0bada5282fe9b36a07e39595330d10845a8e03bd2f20139d85717e12b092b24d"
+  },
+  "90": {
+    "V": 70,
+    "E": 120,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 30,
+      "4": 10,
+      "5": 2,
+      "10": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3944272403246494e-09,
+    "fingerprint_sha256": "a03bc5fb485a9c47c1a2763a067ee60151fd3e6d4f90490df9ec452020e8dfd0"
+  },
+  "91": {
+    "V": 70,
+    "E": 120,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 30,
+      "4": 10,
+      "5": 2,
+      "10": 10
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3944272403246494e-09,
+    "fingerprint_sha256": "23253480c8c7f3dc5c6820cfa53907c0472eb80eefeaea97267ddd1475aca2b7"
+  },
+  "92": {
+    "V": 75,
+    "E": 135,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 35,
+      "4": 15,
+      "5": 3,
+      "10": 9
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3944272403398308e-09,
+    "fingerprint_sha256": "f0b7f57dd52c20b02d9c82473477e0acb2c548d063df72d3474e45e8e3747b20"
+  },
+  "97": {
+    "V": 55,
+    "E": 105,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 25,
+      "5": 11,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.398132720552718e-10,
+    "fingerprint_sha256": "0b42cb84d77ad08ec2216d00696e3506e9c7c3ad5e2ae49c7711b04ba5232966"
+  },
+  "101": {
+    "V": 50,
+    "E": 90,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 20,
+      "5": 10,
+      "10": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3981327205527183e-10,
+    "fingerprint_sha256": "02dfdebfdf534f1cf9c2194cf1925b9ba474bb55971af1ac7021273c7aefa40b"
+  },
+  "102": {
+    "V": 50,
+    "E": 90,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 20,
+      "5": 10,
+      "10": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.398132720552718e-10,
+    "fingerprint_sha256": "a1a8edc0f6e51cf14b0ab81a7e652cf5d6eafd0e4d8c348330c2603060b65dba"
+  },
+  "104": {
+    "V": 45,
+    "E": 75,
+    "F": 32,
+    "chi": 2,
+    "faces": {
+      "3": 5,
+      "4": 15,
+      "5": 9,
+      "10": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3981327205527183e-10,
+    "fingerprint_sha256": "e3f53eb6a938d3315c6fe7da61c5501d4b4ae80472af3e40f87d601f9e4f784e"
+  },
+  "118": {
+    "V": 8,
+    "E": 18,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.5454545454545454,
+    "fingerprint_sha256": "370334eafa38bf53f58ce46c7725f36c9bb949f477619f4dbe9ecf215fbbeb68"
+  },
+  "119": {
+    "V": 14,
+    "E": 24,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "4": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.0,
+    "fingerprint_sha256": "cad1c042b26ab6dc57166c4ac131d1ddd7248eea67323b9ae7347784ab395ba2"
+  },
+  "120": {
+    "V": 14,
+    "E": 36,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "3": 24
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.5722307096391102,
+    "fingerprint_sha256": "6e4fb0160bc64ea97b054d9d59b1c2a9146d9c9293c239cd80568455ed069054"
+  },
+  "121": {
+    "V": 14,
+    "E": 36,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "3": 24
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.29999999964000007,
+    "fingerprint_sha256": "4adc253aaa2cf776f80bbeddf59c80be461ce0cbbb86789dfa16e8f80d1dddc4"
+  },
+  "122": {
+    "V": 26,
+    "E": 48,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "4": 24
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.2554791607393456,
+    "fingerprint_sha256": "36bfdc74f32bd082a18c79e7ff162df307372b50be290a8adb882a8464bbd9e0"
+  },
+  "123": {
+    "V": 26,
+    "E": 72,
+    "F": 48,
+    "chi": 2,
+    "faces": {
+      "3": 48
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.4767282540110291,
+    "fingerprint_sha256": "afaa0191f22f052dc503d2c99c9dfa4db347b9eaa5d69ec7031d39ac83ca5343"
+  },
+  "124": {
+    "V": 38,
+    "E": 60,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "5": 24
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.35932760355815885,
+    "fingerprint_sha256": "8bfb15d28005412d8fea3a359a229914bae881ea90a291cabc72d8f695ead916"
+  },
+  "125": {
+    "V": 32,
+    "E": 60,
+    "F": 30,
+    "chi": 2,
+    "faces": {
+      "4": 30
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.4725030118567734e-16,
+    "fingerprint_sha256": "529be2f4df7b48c35964b9f21cf1d9693be10940c13385461ad5d113930e22af"
+  },
+  "126": {
+    "V": 32,
+    "E": 90,
+    "F": 60,
+    "chi": 2,
+    "faces": {
+      "3": 60
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.1221383732614825,
+    "fingerprint_sha256": "fedc14c7c8b133dfb78224d55624112f0f467b017cefa85c6425b3a07a19b839"
+  },
+  "127": {
+    "V": 32,
+    "E": 90,
+    "F": 60,
+    "chi": 2,
+    "faces": {
+      "3": 60
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.5829886215028361,
+    "fingerprint_sha256": "168dc2a70d4d1c3b2d8aca61a228c36cb229da7131969caf03285acfe3705560"
+  },
+  "128": {
+    "V": 62,
+    "E": 120,
+    "F": 60,
+    "chi": 2,
+    "faces": {
+      "4": 60
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.4247904399770666,
+    "fingerprint_sha256": "511f30646a0bb23a956c1be8ccd2b12f822e4d879140758d81261291af0e58fb"
+  },
+  "129": {
+    "V": 62,
+    "E": 180,
+    "F": 120,
+    "chi": 2,
+    "faces": {
+      "3": 120
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 0.5849985047862506,
+    "fingerprint_sha256": "4ac565803ed31376281df45ccd60d64a7846f6d1647fa25cf85d8fd86632cf08"
+  },
+  "144": {
+    "V": 12,
+    "E": 30,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 20
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.398130500106669e-10,
+    "fingerprint_sha256": "783133f241e9bc734107ce76d6f5fefd1da01250472b9191caf0fb53b7bee1a0"
+  },
+  "145": {
+    "V": 20,
+    "E": 30,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.508843118030372e-09,
+    "fingerprint_sha256": "8067be5811c2e0b9466129c5a4e0a34929e4e4f1632461c47a2effe1d0ec7217"
+  },
+  "93": {
+    "V": 60,
+    "E": 120,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 30,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.88396323333286e-10,
+    "fingerprint_sha256": "b8bb54a5f5fa331d24884ce62a3b3eb10191b55f01c405980ac34b4d68c317fa"
+  },
+  "94": {
+    "V": 60,
+    "E": 120,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 30,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233374888e-10,
+    "fingerprint_sha256": "5b38508bb949edc51d4303e63f47677fa3628b639960871514e5e9ecc0a0276d"
+  },
+  "95": {
+    "V": 60,
+    "E": 120,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 30,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233374888e-10,
+    "fingerprint_sha256": "ca05d183f260004a3b9532c787f44e23013acbd7f65f1ece2850ff58dfc4ed30"
+  },
+  "96": {
+    "V": 60,
+    "E": 120,
+    "F": 62,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 30,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233416916e-10,
+    "fingerprint_sha256": "47859d2cec84021cea160a10e7acb534eba5888d00baf44e51491b3f418e6762"
+  },
+  "98": {
+    "V": 55,
+    "E": 105,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 25,
+      "5": 11,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233338865e-10,
+    "fingerprint_sha256": "50ced8b4940849ecc93261349cccc964ffd4657927f5987847a1b4718f1ce10e"
+  },
+  "99": {
+    "V": 55,
+    "E": 105,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 25,
+      "5": 11,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233338865e-10,
+    "fingerprint_sha256": "689411e8bba4b03a2e204df22c6c949b172f5504e78d2d3df6e99c84cc19747f"
+  },
+  "100": {
+    "V": 55,
+    "E": 105,
+    "F": 52,
+    "chi": 2,
+    "faces": {
+      "3": 15,
+      "4": 25,
+      "5": 11,
+      "10": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.883963233386896e-10,
+    "fingerprint_sha256": "18424d7db7bc593717776300c5a9e4f2773f8d41d08df4d5914935e12219ded9"
+  },
+  "103": {
+    "V": 50,
+    "E": 90,
+    "F": 42,
+    "chi": 2,
+    "faces": {
+      "3": 10,
+      "4": 20,
+      "5": 10,
+      "10": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.88396323334687e-10,
+    "fingerprint_sha256": "60d01e442b8b2fe83612a33e940993f1cd840007ee9fa717bdac1a995c5ef6e1"
+  },
+  "105": {
+    "V": 8,
+    "E": 18,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "3": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 3.638647162171942e-10,
+    "fingerprint_sha256": "747e2d42a95c4750fdbe9af2ab9b543ec0892418bf7111344c4906208a0e984b"
+  },
+  "106": {
+    "V": 16,
+    "E": 40,
+    "F": 26,
+    "chi": 2,
+    "faces": {
+      "3": 24,
+      "4": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.867086816049772e-10,
+    "fingerprint_sha256": "8e305a6fd3c57a6c524ecc21cdc1aeca91b176efd575b6ef14c758706904b6f9"
+  },
+  "107": {
+    "V": 10,
+    "E": 22,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 12,
+      "4": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 6.157168108237627e-10,
+    "fingerprint_sha256": "7172aea159c764cbc49ae2cd58844fe912753d15120fd29a519db20697c2d9f2"
+  },
+  "108": {
+    "V": 11,
+    "E": 26,
+    "F": 17,
+    "chi": 2,
+    "faces": {
+      "3": 16,
+      "4": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 7.007227020837959e-10,
+    "fingerprint_sha256": "e08bdf02cdd693c84056cd1cd454c03ab281b553624770c22fb143ed342b49dc"
+  },
+  "109": {
+    "V": 12,
+    "E": 28,
+    "F": 18,
+    "chi": 2,
+    "faces": {
+      "3": 16,
+      "4": 2
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 2.0510626530413987e-10,
+    "fingerprint_sha256": "e6f83b3d19a56493f210a94b2a320dd825d7b90290d160c48723351fa9ee1264"
+  },
+  "110": {
+    "V": 14,
+    "E": 33,
+    "F": 21,
+    "chi": 2,
+    "faces": {
+      "3": 18,
+      "4": 3
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.586429014618533e-10,
+    "fingerprint_sha256": "849b0ff8a5b0495246527d2fd8112b59040ebc241d485d540f4e95e257530a4b"
+  },
+  "111": {
+    "V": 16,
+    "E": 38,
+    "F": 24,
+    "chi": 2,
+    "faces": {
+      "3": 20,
+      "4": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 3.163402873015894e-10,
+    "fingerprint_sha256": "92ac37289448b4f9d0f25375a13ebd7916625516d2635c94d052c954ce49c0e3"
+  },
+  "112": {
+    "V": 14,
+    "E": 26,
+    "F": 14,
+    "chi": 2,
+    "faces": {
+      "3": 8,
+      "4": 2,
+      "5": 4
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 1.3981305001427574e-10,
+    "fingerprint_sha256": "e17f2f1019ac1b713332688f5b84113bf2fdbbeed8520001d37ee6f8feb20888"
+  },
+  "113": {
+    "V": 18,
+    "E": 36,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 13,
+      "4": 3,
+      "5": 3,
+      "6": 1
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 5.378045786552253e-10,
+    "fingerprint_sha256": "b627d14b03dd176e406e48ab8efc47557c2c34795b3f91e5e51e5046e2e06374"
+  },
+  "13": {
+    "V": 60,
+    "E": 150,
+    "F": 92,
+    "chi": 2,
+    "faces": {
+      "3": 80,
+      "5": 12
+    },
+    "mesh_class": "CONVEX_EUCLIDEAN",
+    "edge_spread": 4.771550808663427e-09,
+    "fingerprint_sha256": "ff66c2dbd8e567e531d55f5bddc8e7f02a3d4bea1aac5e44d4fdb513b7bcb98a"
+  },
+  "130": {
+    "V": 92,
+    "E": 150,
+    "F": 60,
+    "chi": 2,
+    "faces": {
+      "5": 60
+    },
+    "mesh_class": "CONVEX_CATALAN_DUAL_NONREGULAR_FACES",
+    "edge_spread": 0.5768358364322671,
+    "fingerprint_sha256": "06133b84e3a8bd85e35936761427b97c5312b2ce1a24a0c66307f5c10b0beac2"
+  },
+  "114": {
+    "V": 12,
+    "E": 30,
+    "F": 12,
+    "chi": -6,
+    "faces": {
+      "5": 12
+    },
+    "mesh_class": "SELF_INTERSECTING_REGULAR_STAR",
+    "edge_spread": 1.6012167423466598e-10,
+    "fingerprint_sha256": "2f08dc92864a3d137a6bac980b33ecbd0cfabd67ea948ab8074e118d3aabb245"
+  },
+  "115": {
+    "V": 20,
+    "E": 30,
+    "F": 12,
+    "chi": 2,
+    "faces": {
+      "5": 12
+    },
+    "mesh_class": "SELF_INTERSECTING_REGULAR_STAR",
+    "edge_spread": 2.1136438209778794e-10,
+    "fingerprint_sha256": "c31504e74e8f9945edb023c5e4fa871a36939b82c3914c164f7a33f3f61f99ad"
+  },
+  "116": {
+    "V": 12,
+    "E": 30,
+    "F": 12,
+    "chi": -6,
+    "faces": {
+      "5": 12
+    },
+    "mesh_class": "SELF_INTERSECTING_REGULAR_STAR",
+    "edge_spread": 4.1920389396058257e-10,
+    "fingerprint_sha256": "690ffaa5c65af4f1adc37974114eb0204a8ddcf4db3361214a4f1275c992def4"
+  },
+  "117": {
+    "V": 12,
+    "E": 30,
+    "F": 20,
+    "chi": 2,
+    "faces": {
+      "3": 20
+    },
+    "mesh_class": "SELF_INTERSECTING_REGULAR_STAR",
+    "edge_spread": 1.60121674234666e-10,
+    "fingerprint_sha256": "72a56f3678c725a8ab12d1f2719429e8327453cb024ad683ee97405cf070abb6"
+  }
+}

@@ -9,9 +9,9 @@ import numpy as np
 from scipy.optimize import brentq
 from scipy.spatial import ConvexHull
 import networkx as nx
-ROOT=pathlib.Path(__file__).resolve().parent
+ROOT=pathlib.Path(__file__).resolve().parents[3]
 OUT_DIR=ROOT/'Raphael_Packages/geometry_173/showcase'
-spec=importlib.util.spec_from_file_location('geom_seed',ROOT/'build_expansion.py')
+spec=importlib.util.spec_from_file_location('geom_seed',OUT_DIR/'build_expansion.py')
 g=importlib.util.module_from_spec(spec)
 with contextlib.redirect_stdout(io.StringIO()):spec.loader.exec_module(g)
 prior=json.loads((OUT_DIR/'analytic_reference_meshes_v03.json').read_text());source=json.loads((OUT_DIR/'showcase_data_v03.json').read_text())
