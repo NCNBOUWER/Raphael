@@ -1,0 +1,13 @@
+{
+  "version": "0.3.1-research",
+  "positions": 173,
+  "unique_formula_generated_meshes": 108,
+  "shared_geometry_role_aliases": 6,
+  "mesh_backed_positions": 114,
+  "unmodelled_positions": 59,
+  "validated": "Original analytic Euclidean geometry, manifold face incidence, counts, edge consistency, Euler characteristic, published Johnson J62–J71/J76/J80/J81/J83 incidence inventories, browser count-sort test",
+  "unresolved": "Raphael metric, entire 173 exact mesh coverage, per-object independently verified canonical graph equivalence, nonconvex candidate slots, physical mapping",
+  "browser": "Vertices/Edges/Faces cycle ascending -> descending -> Raphael; next/previous and graph align with selected order",
+  "canon": "research only, no mint, 174 empty",
+  "staging_branch": "research/raphael-173-geometry-map-20261109"
+}

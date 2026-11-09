@@ -1,0 +1,599 @@
+{
+  "scope": "remaining 33 geometry roles; bounded read-only research obligations, not completed geometry",
+  "pending": [
+    {
+      "slot": 131,
+      "canonical": null,
+      "label": "Small Stellated Chiral Frame A",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 132,
+      "canonical": null,
+      "label": "Small Stellated Chiral Frame B",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 133,
+      "canonical": null,
+      "label": "Great Stellated Chiral Frame A",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 134,
+      "canonical": null,
+      "label": "Great Stellated Chiral Frame B",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 135,
+      "canonical": null,
+      "label": "Great Dodecahedral Chiral Matrix",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 136,
+      "canonical": null,
+      "label": "Great Icosahedral Chiral Matrix",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 137,
+      "canonical": null,
+      "label": "Pseudo-Great Rhombicosidodecahedron",
+      "category": "RAPHAEL_UNDEFINED_CANDIDATE",
+      "source": null,
+      "blocking_requirement": "founder-defined geometric construction: coordinates, face order and admissibility",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 138,
+      "canonical": "U16",
+      "label": "U16 \u2014 Cubitruncated cuboctahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 139,
+      "canonical": "U17",
+      "label": "U17 \u2014 Nonconvex great rhombicuboctahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 140,
+      "canonical": "U18",
+      "label": "U18 \u2014 Small rhombihexahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 141,
+      "canonical": "U19",
+      "label": "U19 \u2014 Stellated truncated hexahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 142,
+      "canonical": "U20",
+      "label": "U20 \u2014 Great truncated cuboctahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 143,
+      "canonical": "U21",
+      "label": "U21 \u2014 Great rhombihexahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 152,
+      "canonical": "U30",
+      "label": "U30 \u2014 Small ditrigonal icosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 153,
+      "canonical": "U31",
+      "label": "U31 \u2014 Small icosicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 154,
+      "canonical": "U32",
+      "label": "U32 \u2014 Small snub icosicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 155,
+      "canonical": "U33",
+      "label": "U33 \u2014 Small dodecicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 158,
+      "canonical": "U36",
+      "label": "U36 \u2014 Dodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 159,
+      "canonical": "U37",
+      "label": "U37 \u2014 Truncated great dodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 160,
+      "canonical": "U38",
+      "label": "U38 \u2014 Rhombidodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 161,
+      "canonical": "U39",
+      "label": "U39 \u2014 Small rhombidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 162,
+      "canonical": "U40",
+      "label": "U40 \u2014 Snub dodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 163,
+      "canonical": "U41",
+      "label": "U41 \u2014 Ditrigonal dodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 164,
+      "canonical": "U42",
+      "label": "U42 \u2014 Great ditrigonal dodecicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 165,
+      "canonical": "U43",
+      "label": "U43 \u2014 Small ditrigonal dodecicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 166,
+      "canonical": "U44",
+      "label": "U44 \u2014 Icosidodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 167,
+      "canonical": "U45",
+      "label": "U45 \u2014 Icositruncated dodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 168,
+      "canonical": "U46",
+      "label": "U46 \u2014 Snub icosidodecadodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 169,
+      "canonical": "U47",
+      "label": "U47 \u2014 Great ditrigonal icosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 170,
+      "canonical": "U48",
+      "label": "U48 \u2014 Great icosicosidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 171,
+      "canonical": "U49",
+      "label": "U49 \u2014 Small icosihemidodecahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 172,
+      "canonical": "U50",
+      "label": "U50 \u2014 Small dodecicosahedron",
+      "category": "KNOWN_NONCONVEX_UNIFORM",
+      "source": "https://en.wikipedia.org/wiki/List_of_uniform_polyhedra",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    },
+    {
+      "slot": 173,
+      "canonical": "U75",
+      "label": "U75 \u2014 Great dirhombicosidodecahedron",
+      "category": "U75_NONCONVEX_SPECIAL",
+      "source": "https://www.dmccooey.com/polyhedra/GreatDirhombicosidodecahedron.html",
+      "blocking_requirement": "exact non-convex Wythoff/stellation coordinates and oriented face/edge incidence",
+      "required_validation": [
+        "source identification and rights",
+        "vertex coordinate and explicit regular polygon/star order",
+        "face incidence and edge-length checks",
+        "abstract and geometric topology",
+        "symmetry and uniqueness vs existing identities",
+        "common Raphael metric (separate)",
+        "physical role (separate)"
+      ],
+      "admission": "NOT_MINTABLE"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "version": "0.5",
+  "positions": 173,
+  "verified_numeric_reference_meshes": 131,
+  "shared_geometry_aliases": 9,
+  "mesh_backed_roles": 140,
+  "complete_standard_Johnson_library": 92,
+  "remaining_unattached": 33,
+  "remaining_categories": {
+    "RAPHAEL_UNDEFINED_CANDIDATE": 7,
+    "KNOWN_NONCONVEX_UNIFORM": 25,
+    "U75_NONCONVEX_SPECIAL": 1
+  },
+  "nonconvex_Kepler_meshes": 4,
+  "metric_and_ToE": "UNPROVEN",
+  "minting": "DISABLED",
+  "three_state_sort_browser": "PASSED_IN_SEPARATE_BROWSER_TEST",
+  "provenance_hashes": "PASS",
+  "source_graph_isomorphism_distinctions": "PASS"
+}

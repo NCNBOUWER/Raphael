@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0-review",
+  "records": 173,
+  "analytic_euclidean_meshes": 20,
+  "source_relationships": 699,
+  "composition": "UNSIGNED_PREVIEW_ONLY",
+  "metric_status": "NOT_DEFINED_OR_TESTED",
+  "physical_unification": "NOT_PROVEN",
+  "sentinel_174": "EMPTY_NONMINTABLE",
+  "open_geometry_embeddings": 153,
+  "test_scope": [
+    "counts",
+    "abstract incidence",
+    "equal-edge tolerance",
+    "Johnson and uniform numbering",
+    "J37 alias",
+    "U75 counts",
+    "rendered catalogue integrity"
+  ],
+  "no_merge_to_canon": true
+}
