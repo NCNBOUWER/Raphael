@@ -1,0 +1,567 @@
+{
+  "status": "RESEARCH_PROVISIONAL_PENDING_PROOF",
+  "remaining": 33,
+  "positions": [
+    {
+      "slot": 131,
+      "role_id": "RAP-SLOT-131",
+      "name": "Small Stellated Chiral Frame A",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 132,
+      "role_id": "RAP-SLOT-132",
+      "name": "Small Stellated Chiral Frame B",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 133,
+      "role_id": "RAP-SLOT-133",
+      "name": "Great Stellated Chiral Frame A",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 134,
+      "role_id": "RAP-SLOT-134",
+      "name": "Great Stellated Chiral Frame B",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 135,
+      "role_id": "RAP-SLOT-135",
+      "name": "Great Dodecahedral Chiral Matrix",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 136,
+      "role_id": "RAP-SLOT-136",
+      "name": "Great Icosahedral Chiral Matrix",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 137,
+      "role_id": "RAP-SLOT-137",
+      "name": "Pseudo-Great Rhombicosidodecahedron",
+      "canonical_geometry_id": null,
+      "class": "PROPOSED_RAPHAEL_DEFINITION_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 138,
+      "role_id": "RAP-SLOT-138",
+      "name": "U16 — Cubitruncated cuboctahedron",
+      "canonical_geometry_id": "U16",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 139,
+      "role_id": "RAP-SLOT-139",
+      "name": "U17 — Nonconvex great rhombicuboctahedron",
+      "canonical_geometry_id": "U17",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 140,
+      "role_id": "RAP-SLOT-140",
+      "name": "U18 — Small rhombihexahedron",
+      "canonical_geometry_id": "U18",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 141,
+      "role_id": "RAP-SLOT-141",
+      "name": "U19 — Stellated truncated hexahedron",
+      "canonical_geometry_id": "U19",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 142,
+      "role_id": "RAP-SLOT-142",
+      "name": "U20 — Great truncated cuboctahedron",
+      "canonical_geometry_id": "U20",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 143,
+      "role_id": "RAP-SLOT-143",
+      "name": "U21 — Great rhombihexahedron",
+      "canonical_geometry_id": "U21",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 152,
+      "role_id": "RAP-SLOT-152",
+      "name": "U30 — Small ditrigonal icosidodecahedron",
+      "canonical_geometry_id": "U30",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 153,
+      "role_id": "RAP-SLOT-153",
+      "name": "U31 — Small icosicosidodecahedron",
+      "canonical_geometry_id": "U31",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 154,
+      "role_id": "RAP-SLOT-154",
+      "name": "U32 — Small snub icosicosidodecahedron",
+      "canonical_geometry_id": "U32",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 155,
+      "role_id": "RAP-SLOT-155",
+      "name": "U33 — Small dodecicosidodecahedron",
+      "canonical_geometry_id": "U33",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 158,
+      "role_id": "RAP-SLOT-158",
+      "name": "U36 — Dodecadodecahedron",
+      "canonical_geometry_id": "U36",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 159,
+      "role_id": "RAP-SLOT-159",
+      "name": "U37 — Truncated great dodecahedron",
+      "canonical_geometry_id": "U37",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 160,
+      "role_id": "RAP-SLOT-160",
+      "name": "U38 — Rhombidodecadodecahedron",
+      "canonical_geometry_id": "U38",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 161,
+      "role_id": "RAP-SLOT-161",
+      "name": "U39 — Small rhombidodecahedron",
+      "canonical_geometry_id": "U39",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 162,
+      "role_id": "RAP-SLOT-162",
+      "name": "U40 — Snub dodecadodecahedron",
+      "canonical_geometry_id": "U40",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 163,
+      "role_id": "RAP-SLOT-163",
+      "name": "U41 — Ditrigonal dodecadodecahedron",
+      "canonical_geometry_id": "U41",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 164,
+      "role_id": "RAP-SLOT-164",
+      "name": "U42 — Great ditrigonal dodecicosidodecahedron",
+      "canonical_geometry_id": "U42",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 165,
+      "role_id": "RAP-SLOT-165",
+      "name": "U43 — Small ditrigonal dodecicosidodecahedron",
+      "canonical_geometry_id": "U43",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 166,
+      "role_id": "RAP-SLOT-166",
+      "name": "U44 — Icosidodecadodecahedron",
+      "canonical_geometry_id": "U44",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 167,
+      "role_id": "RAP-SLOT-167",
+      "name": "U45 — Icositruncated dodecadodecahedron",
+      "canonical_geometry_id": "U45",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 168,
+      "role_id": "RAP-SLOT-168",
+      "name": "U46 — Snub icosidodecadodecahedron",
+      "canonical_geometry_id": "U46",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 169,
+      "role_id": "RAP-SLOT-169",
+      "name": "U47 — Great ditrigonal icosidodecahedron",
+      "canonical_geometry_id": "U47",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 170,
+      "role_id": "RAP-SLOT-170",
+      "name": "U48 — Great icosicosidodecahedron",
+      "canonical_geometry_id": "U48",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 171,
+      "role_id": "RAP-SLOT-171",
+      "name": "U49 — Small icosihemidodecahedron",
+      "canonical_geometry_id": "U49",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 172,
+      "role_id": "RAP-SLOT-172",
+      "name": "U50 — Small dodecicosahedron",
+      "canonical_geometry_id": "U50",
+      "class": "KNOWN_UNIFORM_STAR_COORDINATES_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    },
+    {
+      "slot": 173,
+      "role_id": "RAP-SLOT-173",
+      "name": "U75 — Great dirhombicosidodecahedron",
+      "canonical_geometry_id": "U75",
+      "class": "KNOWN_U75_STAR_INCIDENCE_REQUIRED",
+      "numeric_mesh_status": "NOT_ATTACHED",
+      "required": [
+        "geometry coordinates",
+        "oriented abstract face incidences",
+        "edge and polygon regularity",
+        "surface symmetry and equivalence",
+        "shared Raphael metric separately",
+        "physical validation separately"
+      ],
+      "mintable": false
+    }
+  ]
+}

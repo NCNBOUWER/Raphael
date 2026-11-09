@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.5.0-research",
+  "exact_geometry_reference_meshes": 131,
+  "shared_geometry_aliases": 9,
+  "role_coverage": 140,
+  "positions": 173,
+  "johnson_positions_with_coordinate_meshes": 92,
+  "kepler_poinso_meshes": 4,
+  "unattached_roles": 33,
+  "all_original_699_relations_preserved": true,
+  "position_174": "EMPTY_NONMINTABLE",
+  "source_qa": "local structural and browser verification PASS; GitHub CI not yet reported",
+  "metric_test": "UNTESTED",
+  "physical_ToE": "UNPROVEN",
+  "mint": "BLOCKED"
+}
