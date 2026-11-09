@@ -1,16 +1,13 @@
 {
-  "version": "0.3.0-research",
-  "verified_at": "2026-11-09",
+  "version": "0.3.1-research",
   "positions": 173,
-  "formula_derived_euclidean_mesh_payloads": 104,
-  "geometry_alias_roles": 6,
-  "roles_with_mesh": 110,
-  "positions_without_attached_mesh": 63,
-  "source_provenance": "original analytic Euclidean construction; no third-party mesh dataset imported",
-  "verified": "finite coordinates, convex face incidence, edge lengths where applicable, Euler=2; published J62–J71 VEF and face inventory comparisons; browser 3-state sort tests",
-  "explicitly_unverified": "global identity graph equivalence for every entry; Raphael common metric; field equation correspondence; physical prediction",
-  "sorting": "Each V/E/F control: Raphael -> ascending -> descending -> Raphael; list, graph, range and navigation share order; ties by slot",
-  "position_174": "INTENTIONALLY_EMPTY_NONMINTABLE",
-  "review_only": true,
-  "parent_pr": 7
+  "unique_formula_generated_meshes": 108,
+  "shared_geometry_role_aliases": 6,
+  "mesh_backed_positions": 114,
+  "unmodelled_positions": 59,
+  "validated": "Original analytic Euclidean geometry, manifold face incidence, counts, edge consistency, Euler characteristic, published Johnson J62–J71/J76/J80/J81/J83 incidence inventories, browser count-sort test",
+  "unresolved": "Raphael metric, entire 173 exact mesh coverage, per-object independently verified canonical graph equivalence, nonconvex candidate slots, physical mapping",
+  "browser": "Vertices/Edges/Faces cycle ascending -> descending -> Raphael; next/previous and graph align with selected order",
+  "canon": "research only, no mint, 174 empty",
+  "staging_branch": "research/raphael-173-geometry-map-20261109"
 }

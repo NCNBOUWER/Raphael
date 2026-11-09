@@ -11,10 +11,10 @@ Status: **research preview**. This package extends the existing `NCNBOUWER/Rapha
 ## Mesh and identity coverage
 
 - 173 original position roles are preserved.
-- 104 distinct role-target Euclidean meshes were generated with analytic formulas and verified computationally for finite coordinates, convex-hull face polygons, edge count, exactly two faces per edge, Euler characteristic 2 and equal edge lengths where applicable. The 13 selected Catalan duals may have unequal edge lengths by definition (duality geometry).
+- 108 distinct role-target Euclidean meshes were generated with analytic formulas and verified computationally for finite coordinates, convex-hull face polygons, edge count, exactly two faces per edge, Euler characteristic 2 and equal edge lengths where applicable. The 13 selected Catalan duals may have unequal edge lengths by definition (duality geometry).
 - 6 role aliases reuse an existing mesh: slot 14 → 58 (J37), and selected U24–U28 mappings to original Archimedean slots; the full alias table in the JSON is authoritative, not this prose summary.
-- 110/173 positions therefore show coordinate meshes; 63/173 need a qualified source and/or mathematical definition.
-- A particularly important correction was choosing cupola phase orientations that reproduce both J65 and J67 published V/E/F and polygonal-face inventories. Generated J62, J63 and J64 also match these external combinatorial references.
+- 114/173 positions therefore show coordinate meshes; 59/173 need a qualified source and/or mathematical definition.
+- A particularly important correction was choosing cupola phase orientations that reproduce both J65 and J67 published V/E/F and polygonal-face inventories. Generated J62, J63, J64, J76, J80, J81 and J83 also match these external combinatorial references.
 - **Caution:** These checks are necessary but not sufficient to prove that every Johnson name is globally graph-isomorphic to the conventional Johnson identifier; remaining distinct-identity comparisons need oriented incidence / geometric symmetry or canonical catalogue matching. No non-convex/imaginary/curved-Raphael embedding is claimed to be validated by the Euclidean convex-hull routine.
 
 ## Reproduce
