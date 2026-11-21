@@ -27,6 +27,17 @@ jobs:
         working-directory: CGX/PrintSpace
         run: python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py test_dimensioned_equation_engine_v0_4.py test_cross_grex_product_atlas_v0_5.py test_type1_utp150_maturation_crosswalk.py test_functional_time_preview.py test_cgx_review_lens_compiler.py
 
+      - name: Checkout pinned Raphael T173 reference review (data-only)
+        uses: actions/checkout@v4
+        with:
+          ref: 4ffebc85b1f945b83359c824c2165a98eb036c86
+          path: t173-review
+          persist-credentials: false
+      - name: Run UniSpace conversion, T173, capability and transport regression suite
+        working-directory: CGX/PrintSpace
+        env:
+          CGX_GEOMETRY_173_PATH: ${{ github.workspace }}/t173-review/Raphael_Packages/geometry_173
+        run: python -m unittest -v test_cgx_convergence_regression.py
       - name: Build offline watchable PrintSpace candidate
         working-directory: CGX/PrintSpace
         run: python cgx_review_lens_compiler.py --print-demo-only --output "$RUNNER_TEMP/cgx-printspace-geometry-preview"
