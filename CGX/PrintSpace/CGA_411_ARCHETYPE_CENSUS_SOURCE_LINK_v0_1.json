@@ -231,5 +231,87 @@
     "no_unqualified_4d_simulation_as_empirical_fact",
     "no_174_mint",
     "no_live_workbook_write"
-  ]
+  ],
+  "functional_umbrella_overlay": {
+    "classification_type": "DERIVED_ONE_PRIMARY_UMBRELLA_PER_OWNER_DOMAIN_NOT_CANONICAL",
+    "original_unchanged": "15 source domains / 22 source family labels / 411 archetypes",
+    "umbrella_count": 6,
+    "umbrellas": [
+      {
+        "id": "F01",
+        "name": "Computation, power and control",
+        "domains": [
+          "Semiconductor",
+          "Electrical",
+          "Power/Control",
+          "Protection/Switching"
+        ],
+        "archetype_count": 121,
+        "domain_count": 4
+      },
+      {
+        "id": "F02",
+        "name": "Sensing, signals and electromagnetic communication",
+        "domains": [
+          "Sensing",
+          "RF/Communications",
+          "Electromagnetic"
+        ],
+        "archetype_count": 111,
+        "domain_count": 3
+      },
+      {
+        "id": "F03",
+        "name": "Structures, interconnects and actuation",
+        "domains": [
+          "Electrical/Packaging",
+          "Mechanical",
+          "Actuation"
+        ],
+        "archetype_count": 95,
+        "domain_count": 3
+      },
+      {
+        "id": "F04",
+        "name": "Energy, thermal and fluid systems",
+        "domains": [
+          "Energy",
+          "Fluid/Thermal"
+        ],
+        "archetype_count": 49,
+        "domain_count": 2
+      },
+      {
+        "id": "F05",
+        "name": "Optical, photonic and acoustic systems",
+        "domains": [
+          "Optical/Display",
+          "Acoustic/Ultrasonic"
+        ],
+        "archetype_count": 28,
+        "domain_count": 2
+      },
+      {
+        "id": "F06",
+        "name": "Chemical and electrochemical systems",
+        "domains": [
+          "Electrochemical/Chemical"
+        ],
+        "archetype_count": 7,
+        "domain_count": 1
+      }
+    ],
+    "interpretation": "Each archetype retains its primary owner domain and family, with optional orthogonal facets for geometry, material, interfaces, functions, environment, evidence, rights and process. These umbrellas are navigational rollups and do not imply physical qualification.",
+    "stack": [
+      "UniSpace",
+      "CGX FileSpace component archetypes",
+      "six proposed functional umbrellas",
+      "15 canonical engineering domains",
+      "22 source family labels",
+      "411 source archetype IDs",
+      "instance/assembly and orthogonal geometry/material/interface/process/evidence facets"
+    ],
+    "T173": "Independent geometry reference role 1..173; slot 174 reserved as non-mintable zero/sentinel. Never equate 411 components with 173 geometry slots.",
+    "dbr": "Existing DBR receipt lineage and source hashes, no new DBR service or source master"
+  }
 }
