@@ -1,0 +1,235 @@
+{
+  "schema": "cgx.printspace.source_linked_archetype_census.review.v0.1",
+  "record_status": "READ_ONLY_DERIVED_CLASSIFICATION_NOT_CANONICAL_OR_HARDWARE_QUALIFIED",
+  "snapshot_date": "2026-11-22",
+  "umbrella": "UniSpace",
+  "source": {
+    "canonical_owner": "Type 1 Romer Cognigrex (owner workbook)",
+    "document_url": "https://docs.google.com/spreadsheets/d/1refNFmebTcmPVojCuZsyILJEWaKz-sVzYLfZtqMl8k8/edit",
+    "source_sha256": "346ddf7ce495d6a3f7124d837c9a40feea457f283002b83990203b324d094bbf",
+    "sheet": "27_CGX_Component_Geometry_Atlas",
+    "range": "A1:V412",
+    "component_key_column": "A",
+    "domain_column": "B",
+    "family_column": "C",
+    "geometry_description_column": "F",
+    "geometry_parameters_column": "G",
+    "ports_interfaces_column": "K",
+    "manufacturing_route_column": "L",
+    "build_class_column": "M",
+    "acceptance_tests_column": "Q",
+    "evidence_column": "S",
+    "upstream_cgx_links_column": "U",
+    "snapshot_scope": "Read-only local XLSX file downloaded from owner Drive; live head/currentness requires rechecking before promotion."
+  },
+  "census": {
+    "component_archetypes": 411,
+    "unique_component_ids": 411,
+    "domains": 15,
+    "family_labels": 22,
+    "print_route_text_mentions": 173,
+    "print_direct_text_mentions": 70,
+    "strict_print_direct": 46,
+    "not_explicitly_print_classified": 238,
+    "counting_note": "PRINT substring within build-class (M); a route label is not a calibrated, printable, qualified machine instruction."
+  },
+  "domain_breakdown": [
+    {
+      "domain": "Semiconductor",
+      "count": 69,
+      "families": [
+        {
+          "family": "Semiconductor",
+          "count": 69
+        }
+      ]
+    },
+    {
+      "domain": "Sensing",
+      "count": 48,
+      "families": [
+        {
+          "family": "Sensor",
+          "count": 48
+        }
+      ]
+    },
+    {
+      "domain": "RF/Communications",
+      "count": 45,
+      "families": [
+        {
+          "family": "RF",
+          "count": 30
+        },
+        {
+          "family": "RF front-end/module",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "domain": "Electrical/Packaging",
+      "count": 36,
+      "families": [
+        {
+          "family": "Interconnect",
+          "count": 20
+        },
+        {
+          "family": "Interconnect/Packaging",
+          "count": 15
+        },
+        {
+          "family": "Dielectric/Isolation",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "domain": "Fluid/Thermal",
+      "count": 31,
+      "families": [
+        {
+          "family": "Fluidic",
+          "count": 21
+        },
+        {
+          "family": "Fluidic/Thermal",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "domain": "Mechanical",
+      "count": 30,
+      "families": [
+        {
+          "family": "Mechanical",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "domain": "Actuation",
+      "count": 29,
+      "families": [
+        {
+          "family": "Electromechanical",
+          "count": 19
+        },
+        {
+          "family": "Electromechanical/Fluidic",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "domain": "Optical/Display",
+      "count": 23,
+      "families": [
+        {
+          "family": "Optical",
+          "count": 12
+        },
+        {
+          "family": "Optical/Photonic",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "domain": "Electrical",
+      "count": 20,
+      "families": [
+        {
+          "family": "Capacitive",
+          "count": 11
+        },
+        {
+          "family": "Resistive",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "domain": "Electromagnetic",
+      "count": 18,
+      "families": [
+        {
+          "family": "Magnetic",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "domain": "Energy",
+      "count": 18,
+      "families": [
+        {
+          "family": "Energy",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "domain": "Power/Control",
+      "count": 18,
+      "families": [
+        {
+          "family": "Power conversion/control",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "domain": "Protection/Switching",
+      "count": 14,
+      "families": [
+        {
+          "family": "Protection",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "domain": "Electrochemical/Chemical",
+      "count": 7,
+      "families": [
+        {
+          "family": "Electrochemical process",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "domain": "Acoustic/Ultrasonic",
+      "count": 5,
+      "families": [
+        {
+          "family": "Acoustic",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "interfaces": {
+    "source_resolution": "Read original workbook by component ID + source hash/range through existing FileSpace/CGX resolver; do not mirror 411 records as authority.",
+    "db_receipt": "Use existing DBR task/run/source and simulation receipts; this census is source evidence input only, not a new DBR receipt service.",
+    "geometry_binding": "Each archetype points to independently hashed vector, boundary-representation solid, implicit/parametric solid or reference mesh; no inferred equivalence or invented assets.",
+    "raphael": "Bind role to pinned T173 catalogue (slots 1..173); role 174 is reserved nonmintable zero/sentinel; no automatic one-to-one mapping from 411 to 173.",
+    "evidence_staging": "SOURCE_BASELINE → DIGITAL_MODEL_DRAFT → NUMERIC_QA → SOLVER_VALIDATED → EXPERIMENT_REQUIRED → PHYSICALLY_QUALIFIED, each promotion evidence gated",
+    "print_path": "Use existing PrintSpace inverse-build and multi-stage planners; preserve directions, interface roughness, coatings, gradients, atmosphere transitions, encapsulation, exposure budgets and machine capability passport.",
+    "binary_ternary_t173": "Compile conventional binary native source first; deterministic reversible ternary carrier when meaningful; T173 role/index and sparse references third; no unproven compression or metrics.",
+    "state": "NO_CAD_ADMISSION_OR_4D_PHYSICS_CLAIM_FROM_CENSUS"
+  },
+  "prohibitions": [
+    "no_automatic_mesh_or_vector_claim",
+    "no_duplicate_canonical_catalogue_or_authority",
+    "no_automatic_dbr_promotion",
+    "no_machine_actuation",
+    "no_unqualified_4d_simulation_as_empirical_fact",
+    "no_174_mint",
+    "no_live_workbook_write"
+  ]
+}
