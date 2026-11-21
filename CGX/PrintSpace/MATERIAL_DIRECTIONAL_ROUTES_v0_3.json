@@ -1,0 +1,2675 @@
+{
+  "schema": "cgx.printspace.material_directed_sequence_seeds.v0.3",
+  "id": "CGX-F4D-MATROUTES-20261008",
+  "status": "UNQUALIFIED_CANDIDATE_ROUTES",
+  "pair_catalog": "CGX-F4D-SEQ-20261008",
+  "material_catalog": "CGX-F4D-MATERIAL-SEEDS-20261008",
+  "source_scope": "Hand-curated first-pass CAN-IF candidate routes, not measured recipes",
+  "route_count": 72,
+  "directional_pair_count": 36,
+  "directional": true,
+  "routes": [
+    {
+      "route_id": "PS-MR-001-AB",
+      "first": "PS-MAT-SS_316L",
+      "second": "PS-MAT-PETG",
+      "from_family": "MT",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-MT-TP",
+      "provisional_class": "T",
+      "intended_function": "metal-polymer body",
+      "can_if": "fabricate and cool metal; clean/roughen and print PETG around interlock",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fabricate and cool metal; clean/roughen and print PETG around interlock",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-3",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "adhesion",
+        "thermal cycling",
+        "residual stress"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-001-BA",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-SS_316L",
+      "from_family": "TP",
+      "to_family": "MT",
+      "pair_catalog_id": "PS-PAIR-TP-MT",
+      "provisional_class": "T",
+      "intended_function": "metal-polymer body",
+      "can_if": "print PETG body; deposit a low-energy metallic surface or insert independently formed metal; avoid hot bulk melt on polymer",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PETG body; deposit a low-energy metallic surface or insert independently formed metal; avoid hot bulk melt on polymer",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "adhesion",
+        "thermal cycling",
+        "residual stress"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-002-AB",
+      "first": "PS-MAT-CU_OFHC",
+      "second": "PS-MAT-DIEL_EPOXY",
+      "from_family": "MT",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-MT-DE",
+      "provisional_class": "T",
+      "intended_function": "insulated conductive bus",
+      "can_if": "prepare copper conductor and deposit electrically insulating epoxy under its cure budget",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare copper conductor and deposit electrically insulating epoxy under its cure budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-3",
+        "ENV-0",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "dielectric breakdown",
+        "adhesion",
+        "leakage",
+        "thermal cycles"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-002-BA",
+      "first": "PS-MAT-DIEL_EPOXY",
+      "second": "PS-MAT-CU_OFHC",
+      "from_family": "DE",
+      "to_family": "MT",
+      "pair_catalog_id": "PS-PAIR-DE-MT",
+      "provisional_class": "T",
+      "intended_function": "insulated conductive bus",
+      "can_if": "prepare fully cured epoxy and add copper by compatible low-energy coating or qualified insert",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare fully cured epoxy and add copper by compatible low-energy coating or qualified insert",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "dielectric breakdown",
+        "adhesion",
+        "leakage",
+        "thermal cycles"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-003-AB",
+      "first": "PS-MAT-AL_6061",
+      "second": "PS-MAT-TPU",
+      "from_family": "MT",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-MT-EL",
+      "provisional_class": "T",
+      "intended_function": "compliant structural join",
+      "can_if": "complete alloy processing; cool; prepare bond area; form compliant TPU over interface",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "complete alloy processing; cool; prepare bond area; form compliant TPU over interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-3",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "peel strength",
+        "fatigue",
+        "bond creep"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-003-BA",
+      "first": "PS-MAT-TPU",
+      "second": "PS-MAT-AL_6061",
+      "from_family": "EL",
+      "to_family": "MT",
+      "pair_catalog_id": "PS-PAIR-EL-MT",
+      "provisional_class": "T",
+      "intended_function": "compliant structural join",
+      "can_if": "form TPU feature; attach cooled aluminium insert or selectively low-energy metallise after isolation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form TPU feature; attach cooled aluminium insert or selectively low-energy metallise after isolation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "peel strength",
+        "fatigue",
+        "bond creep"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-004-AB",
+      "first": "PS-MAT-ALUMINA",
+      "second": "PS-MAT-AG_INK",
+      "from_family": "CR",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-CR-CI",
+      "provisional_class": "T",
+      "intended_function": "ceramic printed conductor",
+      "can_if": "densify ceramic first, surface clean, deposit and locally process silver ink",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "densify ceramic first, surface clean, deposit and locally process silver ink",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-3",
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "continuity",
+        "adhesion",
+        "resistance drift"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-004-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-ALUMINA",
+      "from_family": "CI",
+      "to_family": "CR",
+      "pair_catalog_id": "PS-PAIR-CI-CR",
+      "provisional_class": "T",
+      "intended_function": "ceramic printed conductor",
+      "can_if": "deposit silver feature on carrier, protect/transfer to low-energy ceramic coating or separately attach sintered ceramic",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit silver feature on carrier, protect/transfer to low-energy ceramic coating or separately attach sintered ceramic",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "continuity",
+        "adhesion",
+        "resistance drift"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-005-AB",
+      "first": "PS-MAT-SILICA",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "from_family": "CR",
+      "to_family": "OP",
+      "pair_catalog_id": "PS-PAIR-CR-OP",
+      "provisional_class": "T",
+      "intended_function": "optical glass/polymer interface",
+      "can_if": "finish silica surface and add compatible optical resin using controlled cure",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish silica surface and add compatible optical resin using controlled cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-3",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "optical transmission",
+        "roughness",
+        "adhesion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-005-BA",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-SILICA",
+      "from_family": "OP",
+      "to_family": "CR",
+      "pair_catalog_id": "PS-PAIR-OP-CR",
+      "provisional_class": "T",
+      "intended_function": "optical glass/polymer interface",
+      "can_if": "form and cure optical resin; attach finished silica optics under low-energy encapsulation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and cure optical resin; attach finished silica optics under low-energy encapsulation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "optical transmission",
+        "roughness",
+        "adhesion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-006-AB",
+      "first": "PS-MAT-PLA",
+      "second": "PS-MAT-AG_INK",
+      "from_family": "TP",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-TP-CI",
+      "provisional_class": "S",
+      "intended_function": "polymer printed circuit",
+      "can_if": "print PLA body then low-temperature deposit ink and qualified photonic or thermal activation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PLA body then low-temperature deposit ink and qualified photonic or thermal activation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "sheet resistance",
+        "continuity",
+        "thermal distortion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-006-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-PLA",
+      "from_family": "CI",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-CI-TP",
+      "provisional_class": "S",
+      "intended_function": "polymer printed circuit",
+      "can_if": "deposit and condition ink on substrate; overprint polymer only under trace thermal budget",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit and condition ink on substrate; overprint polymer only under trace thermal budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "sheet resistance",
+        "continuity",
+        "thermal distortion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-007-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-CU_INK",
+      "from_family": "TP",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-TP-CI",
+      "provisional_class": "S",
+      "intended_function": "polymer copper trace",
+      "can_if": "prepare PETG and controlled atmosphere copper print and local activation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare PETG and controlled atmosphere copper print and local activation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "conductivity",
+        "oxidation",
+        "adhesion",
+        "warpage"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-007-BA",
+      "first": "PS-MAT-CU_INK",
+      "second": "PS-MAT-PETG",
+      "from_family": "CI",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-CI-TP",
+      "provisional_class": "S",
+      "intended_function": "polymer copper trace",
+      "can_if": "prepare copper trace or foil; use protected low-energy PETG overmould, avoiding conductor damage",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare copper trace or foil; use protected low-energy PETG overmould, avoiding conductor damage",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "conductivity",
+        "oxidation",
+        "adhesion",
+        "warpage"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-008-AB",
+      "first": "PS-MAT-PA12",
+      "second": "PS-MAT-CARBON_INK",
+      "from_family": "TP",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-TP-CI",
+      "provisional_class": "S",
+      "intended_function": "distributed strain sensor",
+      "can_if": "print PA12 geometry and deposit carbon ink in strain-path; dry/encapsulate",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PA12 geometry and deposit carbon ink in strain-path; dry/encapsulate",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "gauge factor",
+        "hysteresis",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-008-BA",
+      "first": "PS-MAT-CARBON_INK",
+      "second": "PS-MAT-PA12",
+      "from_family": "CI",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-CI-TP",
+      "provisional_class": "S",
+      "intended_function": "distributed strain sensor",
+      "can_if": "stabilise carbon sensor, apply compatible polymer overbuild avoiding drift",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "stabilise carbon sensor, apply compatible polymer overbuild avoiding drift",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "gauge factor",
+        "hysteresis",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-009-AB",
+      "first": "PS-MAT-PEEK",
+      "second": "PS-MAT-POLYIMIDE",
+      "from_family": "TP",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-TP-DE",
+      "provisional_class": "S",
+      "intended_function": "high-temperature insulation",
+      "can_if": "form PEEK at elevated temperature; cool; attach or deposit polyimide dielectric using compatible process",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form PEEK at elevated temperature; cool; attach or deposit polyimide dielectric using compatible process",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "dielectric strength",
+        "creep",
+        "thermo-mechanical cycling"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-009-BA",
+      "first": "PS-MAT-POLYIMIDE",
+      "second": "PS-MAT-PEEK",
+      "from_family": "DE",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-DE-TP",
+      "provisional_class": "S",
+      "intended_function": "high-temperature insulation",
+      "can_if": "prepare polyimide layer; bond formed PEEK part after cooling or maintain qualified common window",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare polyimide layer; bond formed PEEK part after cooling or maintain qualified common window",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "dielectric strength",
+        "creep",
+        "thermo-mechanical cycling"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-010-AB",
+      "first": "PS-MAT-ACRYLATE",
+      "second": "PS-MAT-PEDOT_PSS",
+      "from_family": "RS",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-RS-CI",
+      "provisional_class": "S",
+      "intended_function": "transparent flexible electrode candidate",
+      "can_if": "cure acrylate geometry; deposit PEDOT:PSS; dry under controlled moisture",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure acrylate geometry; deposit PEDOT:PSS; dry under controlled moisture",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "conductivity",
+        "transparency",
+        "humidity stability"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-010-BA",
+      "first": "PS-MAT-PEDOT_PSS",
+      "second": "PS-MAT-ACRYLATE",
+      "from_family": "CI",
+      "to_family": "RS",
+      "pair_catalog_id": "PS-PAIR-CI-RS",
+      "provisional_class": "S",
+      "intended_function": "transparent flexible electrode candidate",
+      "can_if": "deposit conductive polymer and protect from reactive resin cure; laminate already cured optical body",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit conductive polymer and protect from reactive resin cure; laminate already cured optical body",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "conductivity",
+        "transparency",
+        "humidity stability"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-011-AB",
+      "first": "PS-MAT-TPU",
+      "second": "PS-MAT-FERRITE_PASTE",
+      "from_family": "EL",
+      "to_family": "MG",
+      "pair_catalog_id": "PS-PAIR-EL-MG",
+      "provisional_class": "S",
+      "intended_function": "compliant magnetic composite",
+      "can_if": "create TPU flexure; locally apply ferrite paste compatible cure",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "create TPU flexure; locally apply ferrite paste compatible cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "magnetic hysteresis",
+        "flexibility",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-011-BA",
+      "first": "PS-MAT-FERRITE_PASTE",
+      "second": "PS-MAT-TPU",
+      "from_family": "MG",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-MG-EL",
+      "provisional_class": "S",
+      "intended_function": "compliant magnetic composite",
+      "can_if": "print magnet-loaded structure; cool and attach TPU flexure under qualified interface conditions",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print magnet-loaded structure; cool and attach TPU flexure under qualified interface conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "magnetic hysteresis",
+        "flexibility",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-012-AB",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-AG_INK",
+      "from_family": "DE",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-DE-CI",
+      "provisional_class": "S",
+      "intended_function": "printed capacitor stack",
+      "can_if": "cure and inspect dielectric then deposit conductive electrode with low-energy processing",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure and inspect dielectric then deposit conductive electrode with low-energy processing",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "capacitance",
+        "loss tangent",
+        "leakage",
+        "breakdown"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-012-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-DIEL_UV",
+      "from_family": "CI",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-CI-DE",
+      "provisional_class": "S",
+      "intended_function": "printed capacitor stack",
+      "can_if": "stabilise conductive trace then deposit dielectric with cure and pinhole control",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "stabilise conductive trace then deposit dielectric with cure and pinhole control",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "capacitance",
+        "loss tangent",
+        "leakage",
+        "breakdown"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-013-AB",
+      "first": "PS-MAT-DIEL_EPOXY",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "from_family": "DE",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-DE-EC",
+      "provisional_class": "T",
+      "intended_function": "isolated electrochemistry",
+      "can_if": "fully cure electrode enclosure and add gel electrolyte through controlled fill window",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fully cure electrode enclosure and add gel electrolyte through controlled fill window",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leakage",
+        "ionic conduction",
+        "contamination"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-013-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-DIEL_EPOXY",
+      "from_family": "EC",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-EC-DE",
+      "provisional_class": "T",
+      "intended_function": "isolated electrochemistry",
+      "can_if": "form electrolyte away from epoxy cure; encapsulate with separately cured epoxy wall/low-energy seal",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form electrolyte away from epoxy cure; encapsulate with separately cured epoxy wall/low-energy seal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3",
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leakage",
+        "ionic conduction",
+        "contamination"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-014-AB",
+      "first": "PS-MAT-IRON_COMPOSITE",
+      "second": "PS-MAT-CU_OFHC",
+      "from_family": "MG",
+      "to_family": "MT",
+      "pair_catalog_id": "PS-PAIR-MG-MT",
+      "provisional_class": "T",
+      "intended_function": "motor magnetic circuit",
+      "can_if": "manufacture iron composite and add insulated copper winding or insert",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "manufacture iron composite and add insulated copper winding or insert",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "flux map",
+        "coil resistance",
+        "core loss"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-014-BA",
+      "first": "PS-MAT-CU_OFHC",
+      "second": "PS-MAT-IRON_COMPOSITE",
+      "from_family": "MT",
+      "to_family": "MG",
+      "pair_catalog_id": "PS-PAIR-MT-MG",
+      "provisional_class": "T",
+      "intended_function": "motor magnetic circuit",
+      "can_if": "form insulated copper windings, add iron composite with non-destructive processing",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form insulated copper windings, add iron composite with non-destructive processing",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-3",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "flux map",
+        "coil resistance",
+        "core loss"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-015-AB",
+      "first": "PS-MAT-NDFEB_BONDED",
+      "second": "PS-MAT-SILICONE_E",
+      "from_family": "MG",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-MG-EL",
+      "provisional_class": "S",
+      "intended_function": "sealed magnet structure",
+      "can_if": "form and stabilise magnet; coat silicone elastomer and qualify adhesive interface",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and stabilise magnet; coat silicone elastomer and qualify adhesive interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "magnetic force",
+        "seal durability",
+        "ageing"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-015-BA",
+      "first": "PS-MAT-SILICONE_E",
+      "second": "PS-MAT-NDFEB_BONDED",
+      "from_family": "EL",
+      "to_family": "MG",
+      "pair_catalog_id": "PS-PAIR-EL-MG",
+      "provisional_class": "S",
+      "intended_function": "sealed magnet structure",
+      "can_if": "form elastomer shell, insert protected magnet before final seal; magnetise only where feasible",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form elastomer shell, insert protected magnet before final seal; magnetise only where feasible",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "magnetic force",
+        "seal durability",
+        "ageing"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-016-AB",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-LED_PACKAGE",
+      "from_family": "OP",
+      "to_family": "SC",
+      "pair_catalog_id": "PS-PAIR-OP-SC",
+      "provisional_class": "M",
+      "intended_function": "optical emitter integration",
+      "can_if": "form optical waveguide/lens with pocket then place LED package below thermal/ESD limits",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form optical waveguide/lens with pocket then place LED package below thermal/ESD limits",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "optical alignment",
+        "thermal drift",
+        "efficiency"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-016-BA",
+      "first": "PS-MAT-LED_PACKAGE",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "from_family": "SC",
+      "to_family": "OP",
+      "pair_catalog_id": "PS-PAIR-SC-OP",
+      "provisional_class": "M",
+      "intended_function": "optical emitter integration",
+      "can_if": "place LED on qualified carrier then attach separately cured optical lens and protect source",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place LED on qualified carrier then attach separately cured optical lens and protect source",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "optical alignment",
+        "thermal drift",
+        "efficiency"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-017-AB",
+      "first": "PS-MAT-PVA_SUPPORT",
+      "second": "PS-MAT-PETG",
+      "from_family": "FL",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-FL-TP",
+      "provisional_class": "S",
+      "intended_function": "sacrificial cavity",
+      "can_if": "print soluble PVA core; overprint PETG within support thermal envelope; flush via access port",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print soluble PVA core; overprint PETG within support thermal envelope; flush via access port",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-2",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "complete support removal",
+        "flow",
+        "leaks"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-017-BA",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-PVA_SUPPORT",
+      "from_family": "TP",
+      "to_family": "FL",
+      "pair_catalog_id": "PS-PAIR-TP-FL",
+      "provisional_class": "S",
+      "intended_function": "sacrificial cavity",
+      "can_if": "build PETG shell with future port, add local sacrificial material through accessible path if required",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "build PETG shell with future port, add local sacrificial material through accessible path if required",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "complete support removal",
+        "flow",
+        "leaks"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-018-AB",
+      "first": "PS-MAT-WAX_SUPPORT",
+      "second": "PS-MAT-EPOXY",
+      "from_family": "FL",
+      "to_family": "RS",
+      "pair_catalog_id": "PS-PAIR-FL-RS",
+      "provisional_class": "S",
+      "intended_function": "sacrificial channel in resin",
+      "can_if": "place wax template, form compatible epoxy, cure below wax deformation limit, remove template",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place wax template, form compatible epoxy, cure below wax deformation limit, remove template",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-2",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "complete removal",
+        "residuals",
+        "channel integrity"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-018-BA",
+      "first": "PS-MAT-EPOXY",
+      "second": "PS-MAT-WAX_SUPPORT",
+      "from_family": "RS",
+      "to_family": "FL",
+      "pair_catalog_id": "PS-PAIR-RS-FL",
+      "provisional_class": "S",
+      "intended_function": "sacrificial channel in resin",
+      "can_if": "cure epoxy scaffold first, insert wax via accessible opening as staged template",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure epoxy scaffold first, insert wax via accessible opening as staged template",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "complete removal",
+        "residuals",
+        "channel integrity"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-019-AB",
+      "first": "PS-MAT-GRAPHITE_ANODE",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "from_family": "EC",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-EC-EC",
+      "provisional_class": "P",
+      "intended_function": "electrochemical electrode junction",
+      "can_if": "prepare graphite composite electrode; deposit compatible separator/electrolyte with chemical isolation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare graphite composite electrode; deposit compatible separator/electrolyte with chemical isolation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "ionic transport",
+        "impedance",
+        "chemical stability"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-019-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-GRAPHITE_ANODE",
+      "from_family": "EC",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-EC-EC",
+      "provisional_class": "P",
+      "intended_function": "electrochemical electrode junction",
+      "can_if": "form electrolyte film under controlled atmosphere then laminate qualified graphite electrode without damaging interface",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form electrolyte film under controlled atmosphere then laminate qualified graphite electrode without damaging interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "ionic transport",
+        "impedance",
+        "chemical stability"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-020-AB",
+      "first": "PS-MAT-LFP_CATHODE",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "from_family": "EC",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-EC-EC",
+      "provisional_class": "P",
+      "intended_function": "lithium-ion cell candidate",
+      "can_if": "make cathode with chemistry-specific binder, protected drying, then place separator and qualified electrolyte",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "make cathode with chemistry-specific binder, protected drying, then place separator and qualified electrolyte",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "capacity",
+        "cycling",
+        "separator integrity",
+        "abuse safety"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-020-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-LFP_CATHODE",
+      "from_family": "EC",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-EC-EC",
+      "provisional_class": "P",
+      "intended_function": "lithium-ion cell candidate",
+      "can_if": "form separator/electrolyte substrate then add cathode with controlled contamination and structural tests",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form separator/electrolyte substrate then add cathode with controlled contamination and structural tests",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "capacity",
+        "cycling",
+        "separator integrity",
+        "abuse safety"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-021-AB",
+      "first": "PS-MAT-CARBON_SUPERCAP",
+      "second": "PS-MAT-DIEL_UV",
+      "from_family": "EC",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-EC-DE",
+      "provisional_class": "T",
+      "intended_function": "electrode insulation and spacing",
+      "can_if": "deposit porous carbon electrode; apply qualified insulating edge border without blocking active surface",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit porous carbon electrode; apply qualified insulating edge border without blocking active surface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3",
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leakage",
+        "capacitance",
+        "ESR"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-021-BA",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-CARBON_SUPERCAP",
+      "from_family": "DE",
+      "to_family": "EC",
+      "pair_catalog_id": "PS-PAIR-DE-EC",
+      "provisional_class": "T",
+      "intended_function": "electrode insulation and spacing",
+      "can_if": "cure insulator template then deposit selective carbon electrode in exposed area",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure insulator template then deposit selective carbon electrode in exposed area",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leakage",
+        "capacitance",
+        "ESR"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-022-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-SILICON_DIE",
+      "from_family": "TP",
+      "to_family": "SC",
+      "pair_catalog_id": "PS-PAIR-TP-SC",
+      "provisional_class": "M",
+      "intended_function": "hybrid processor enclosure",
+      "can_if": "print and cool electronics pocket; attach interconnect carrier and ESD-safe processor",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print and cool electronics pocket; attach interconnect carrier and ESD-safe processor",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "ESD checks",
+        "functional I/O",
+        "heat dissipation"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-022-BA",
+      "first": "PS-MAT-SILICON_DIE",
+      "second": "PS-MAT-PETG",
+      "from_family": "SC",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-SC-TP",
+      "provisional_class": "T",
+      "intended_function": "hybrid processor enclosure",
+      "can_if": "assemble die on qualified heat-spreading substrate; close with prefabricated PETG enclosure rather than hot melt",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble die on qualified heat-spreading substrate; close with prefabricated PETG enclosure rather than hot melt",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "ESD checks",
+        "functional I/O",
+        "heat dissipation"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-023-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-CAMERA_MODULE",
+      "from_family": "TP",
+      "to_family": "SC",
+      "pair_catalog_id": "PS-PAIR-TP-SC",
+      "provisional_class": "M",
+      "intended_function": "camera integration",
+      "can_if": "print camera pocket/light baffles; insert module under optical and ESD controls",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print camera pocket/light baffles; insert module under optical and ESD controls",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "MTF/optical alignment",
+        "vibration",
+        "contamination"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-023-BA",
+      "first": "PS-MAT-CAMERA_MODULE",
+      "second": "PS-MAT-PETG",
+      "from_family": "SC",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-SC-TP",
+      "provisional_class": "T",
+      "intended_function": "camera integration",
+      "can_if": "place camera module in carrier; assemble cooled polymer aperture and cover",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place camera module in carrier; assemble cooled polymer aperture and cover",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "MTF/optical alignment",
+        "vibration",
+        "contamination"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-024-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-LFP_MODULE",
+      "from_family": "TP",
+      "to_family": "BT",
+      "pair_catalog_id": "PS-PAIR-TP-BT",
+      "provisional_class": "M",
+      "intended_function": "replaceable battery",
+      "can_if": "print serviceable polymer bay, cool, then connect protected battery with fuse and airflow plan",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print serviceable polymer bay, cool, then connect protected battery with fuse and airflow plan",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "voltage protection",
+        "temperature",
+        "access",
+        "drop"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-024-BA",
+      "first": "PS-MAT-LFP_MODULE",
+      "second": "PS-MAT-PETG",
+      "from_family": "BT",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-BT-TP",
+      "provisional_class": "M",
+      "intended_function": "replaceable battery",
+      "can_if": "assemble protected battery in independent module, slide into separately printed cooled polymer frame",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble protected battery in independent module, slide into separately printed cooled polymer frame",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "voltage protection",
+        "temperature",
+        "access",
+        "drop"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-025-AB",
+      "first": "PS-MAT-PA12",
+      "second": "PS-MAT-CAP_BANK",
+      "from_family": "TP",
+      "to_family": "BT",
+      "pair_catalog_id": "PS-PAIR-TP-BT",
+      "provisional_class": "M",
+      "intended_function": "pulse energy storage",
+      "can_if": "print insulated mounting features, install capacitor bank after hot operations",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print insulated mounting features, install capacitor bank after hot operations",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "electrical safety",
+        "discharge",
+        "retention"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-025-BA",
+      "first": "PS-MAT-CAP_BANK",
+      "second": "PS-MAT-PA12",
+      "from_family": "BT",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-BT-TP",
+      "provisional_class": "M",
+      "intended_function": "pulse energy storage",
+      "can_if": "build capacitor module and insert finished polymer support; avoid exposure to deposition",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "build capacitor module and insert finished polymer support; avoid exposure to deposition",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "electrical safety",
+        "discharge",
+        "retention"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-026-AB",
+      "first": "PS-MAT-PDMS",
+      "second": "PS-MAT-SILICON_DIE",
+      "from_family": "EL",
+      "to_family": "SC",
+      "pair_catalog_id": "PS-PAIR-EL-SC",
+      "provisional_class": "M",
+      "intended_function": "soft microfluidic biosensor assembly",
+      "can_if": "cure PDMS microfluidic interface, bond to cooled protected die carrier with compatible plasma/bond conditions",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure PDMS microfluidic interface, bond to cooled protected die carrier with compatible plasma/bond conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leak",
+        "surface chemistry",
+        "sensor response"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-026-BA",
+      "first": "PS-MAT-SILICON_DIE",
+      "second": "PS-MAT-PDMS",
+      "from_family": "SC",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-SC-EL",
+      "provisional_class": "T",
+      "intended_function": "soft microfluidic biosensor assembly",
+      "can_if": "assemble die first, join separately cured PDMS layer under die-specific electrical/thermal controls",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble die first, join separately cured PDMS layer under die-specific electrical/thermal controls",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2",
+        "ENV-0"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "leak",
+        "surface chemistry",
+        "sensor response"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-027-AB",
+      "first": "PS-MAT-ALGINATE",
+      "second": "PS-MAT-PDMS",
+      "from_family": "BV",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-BV-EL",
+      "provisional_class": "T",
+      "intended_function": "aqueous biological microchannel",
+      "can_if": "form alginate hydrogel within sterile PDMS channel using qualified fluidic crosslink",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form alginate hydrogel within sterile PDMS channel using qualified fluidic crosslink",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "viability when relevant",
+        "contamination",
+        "mass transport"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-027-BA",
+      "first": "PS-MAT-PDMS",
+      "second": "PS-MAT-ALGINATE",
+      "from_family": "EL",
+      "to_family": "BV",
+      "pair_catalog_id": "PS-PAIR-EL-BV",
+      "provisional_class": "T",
+      "intended_function": "aqueous biological microchannel",
+      "can_if": "finish/cure PDMS channel then fill alginate under a suitable sterile process",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish/cure PDMS channel then fill alginate under a suitable sterile process",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "viability when relevant",
+        "contamination",
+        "mass transport"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-028-AB",
+      "first": "PS-MAT-GELATIN",
+      "second": "PS-MAT-ALUMINA",
+      "from_family": "BV",
+      "to_family": "CR",
+      "pair_catalog_id": "PS-PAIR-BV-CR",
+      "provisional_class": "R",
+      "intended_function": "hybrid bio-ceramic device",
+      "can_if": "form temperature-sensitive gelatin after all ceramic firing, or bond a separate ceramic insert without heating gelatin",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form temperature-sensitive gelatin after all ceramic firing, or bond a separate ceramic insert without heating gelatin",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "bio-interface stability",
+        "sterility",
+        "temperature sensitivity"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-028-BA",
+      "first": "PS-MAT-ALUMINA",
+      "second": "PS-MAT-GELATIN",
+      "from_family": "CR",
+      "to_family": "BV",
+      "pair_catalog_id": "PS-PAIR-CR-BV",
+      "provisional_class": "M",
+      "intended_function": "hybrid bio-ceramic device",
+      "can_if": "fabricate and densify alumina first; cool and prepare sterile interface for gelatin deposition",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fabricate and densify alumina first; cool and prepare sterile interface for gelatin deposition",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-3",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "bio-interface stability",
+        "sterility",
+        "temperature sensitivity"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-029-AB",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-PHOSPHOR_FILM",
+      "from_family": "OP",
+      "to_family": "OP",
+      "pair_catalog_id": "PS-PAIR-OP-OP",
+      "provisional_class": "P",
+      "intended_function": "spectral optic coating",
+      "can_if": "form optical resin then deposit a low-energy phosphor-containing film and protect from solvent",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form optical resin then deposit a low-energy phosphor-containing film and protect from solvent",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "spectrum",
+        "lifetime",
+        "conversion efficiency"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-029-BA",
+      "first": "PS-MAT-PHOSPHOR_FILM",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "from_family": "OP",
+      "to_family": "OP",
+      "pair_catalog_id": "PS-PAIR-OP-OP",
+      "provisional_class": "P",
+      "intended_function": "spectral optic coating",
+      "can_if": "prepare phosphor film on support, attach fully cured optical component and test optical losses",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare phosphor film on support, attach fully cured optical component and test optical losses",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "spectrum",
+        "lifetime",
+        "conversion efficiency"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-030-AB",
+      "first": "PS-MAT-FERRITE_PASTE",
+      "second": "PS-MAT-AG_INK",
+      "from_family": "MG",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-MG-CI",
+      "provisional_class": "S",
+      "intended_function": "integrated inductive field control",
+      "can_if": "print/stabilise ferrite carrier; deposit and isolate silver coil lines",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print/stabilise ferrite carrier; deposit and isolate silver coil lines",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "inductance",
+        "core loss",
+        "DC resistance"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-030-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-FERRITE_PASTE",
+      "from_family": "CI",
+      "to_family": "MG",
+      "pair_catalog_id": "PS-PAIR-CI-MG",
+      "provisional_class": "S",
+      "intended_function": "integrated inductive field control",
+      "can_if": "print silver coil and insulating layer; deposit ferrite composite under conductor thermal budget",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print silver coil and insulating layer; deposit ferrite composite under conductor thermal budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "inductance",
+        "core loss",
+        "DC resistance"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-031-AB",
+      "first": "PS-MAT-ABS",
+      "second": "PS-MAT-WAX_SUPPORT",
+      "from_family": "TP",
+      "to_family": "FL",
+      "pair_catalog_id": "PS-PAIR-TP-FL",
+      "provisional_class": "S",
+      "intended_function": "moulded complex voids",
+      "can_if": "print ABS cavity for subsequent low-energy wax placement and removal",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print ABS cavity for subsequent low-energy wax placement and removal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "thermal survival",
+        "complete removal",
+        "dimensional accuracy"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-031-BA",
+      "first": "PS-MAT-WAX_SUPPORT",
+      "second": "PS-MAT-ABS",
+      "from_family": "FL",
+      "to_family": "TP",
+      "pair_catalog_id": "PS-PAIR-FL-TP",
+      "provisional_class": "S",
+      "intended_function": "moulded complex voids",
+      "can_if": "print wax template before ABS only if its thermal survival is demonstrated; otherwise substitute PVA or build separately",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print wax template before ABS only if its thermal survival is demonstrated; otherwise substitute PVA or build separately",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-2",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "thermal survival",
+        "complete removal",
+        "dimensional accuracy"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-032-AB",
+      "first": "PS-MAT-SS_316L",
+      "second": "PS-MAT-PARylene",
+      "from_family": "MT",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-MT-DE",
+      "provisional_class": "T",
+      "intended_function": "corrosion barrier",
+      "can_if": "finish metal structure and apply controlled parylene barrier in specialist vapour cell",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish metal structure and apply controlled parylene barrier in specialist vapour cell",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-3",
+        "ENV-0",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "pinholes",
+        "barrier permeability",
+        "adhesion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-032-BA",
+      "first": "PS-MAT-PARylene",
+      "second": "PS-MAT-SS_316L",
+      "from_family": "DE",
+      "to_family": "MT",
+      "pair_catalog_id": "PS-PAIR-DE-MT",
+      "provisional_class": "T",
+      "intended_function": "corrosion barrier",
+      "can_if": "coat separate parylene film over substrate then mechanically join cooled formed metal insert without destroying barrier",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "coat separate parylene film over substrate then mechanically join cooled formed metal insert without destroying barrier",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2",
+        "ENV-3"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "pinholes",
+        "barrier permeability",
+        "adhesion"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-033-AB",
+      "first": "PS-MAT-FUSED_SILICA",
+      "second": "PS-MAT-RF_IC",
+      "from_family": "OP",
+      "to_family": "SC",
+      "pair_catalog_id": "PS-PAIR-OP-SC",
+      "provisional_class": "M",
+      "intended_function": "optical-RF hybrid module",
+      "can_if": "finish silica interface, insert qualified RF packaged IC onto compatible carrier",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish silica interface, insert qualified RF packaged IC onto compatible carrier",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "RF coupling",
+        "optical transmission",
+        "sealing"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-033-BA",
+      "first": "PS-MAT-RF_IC",
+      "second": "PS-MAT-FUSED_SILICA",
+      "from_family": "SC",
+      "to_family": "OP",
+      "pair_catalog_id": "PS-PAIR-SC-OP",
+      "provisional_class": "M",
+      "intended_function": "optical-RF hybrid module",
+      "can_if": "mount RF IC on board and fit finished silica window with low-energy mechanical seal",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "mount RF IC on board and fit finished silica window with low-energy mechanical seal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "RF coupling",
+        "optical transmission",
+        "sealing"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-034-AB",
+      "first": "PS-MAT-GRAPHENE_INK",
+      "second": "PS-MAT-DIEL_UV",
+      "from_family": "CI",
+      "to_family": "DE",
+      "pair_catalog_id": "PS-PAIR-CI-DE",
+      "provisional_class": "S",
+      "intended_function": "carbon electronic isolation",
+      "can_if": "deposit/stabilise graphene ink; overcoat dielectric using verified low-stress cure",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit/stabilise graphene ink; overcoat dielectric using verified low-stress cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "surface resistance",
+        "dielectric leakage",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-034-BA",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-GRAPHENE_INK",
+      "from_family": "DE",
+      "to_family": "CI",
+      "pair_catalog_id": "PS-PAIR-DE-CI",
+      "provisional_class": "S",
+      "intended_function": "carbon electronic isolation",
+      "can_if": "cure dielectric first and add graphene dispersion under controlled surface preparation",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure dielectric first and add graphene dispersion under controlled surface preparation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "surface resistance",
+        "dielectric leakage",
+        "fatigue"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-035-AB",
+      "first": "PS-MAT-LIION_MODULE",
+      "second": "PS-MAT-SILICONE_E",
+      "from_family": "BT",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-BT-EL",
+      "provisional_class": "M",
+      "intended_function": "battery impact isolation",
+      "can_if": "use separate cured silicone protective mounts to cushion protected module without blocking vents",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "use separate cured silicone protective mounts to cushion protected module without blocking vents",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "thermal profile",
+        "vent clearance",
+        "mechanical retention"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-035-BA",
+      "first": "PS-MAT-SILICONE_E",
+      "second": "PS-MAT-LIION_MODULE",
+      "from_family": "EL",
+      "to_family": "BT",
+      "pair_catalog_id": "PS-PAIR-EL-BT",
+      "provisional_class": "M",
+      "intended_function": "battery impact isolation",
+      "can_if": "print/cure silicone isolation mount then insert rated module; no reactive silicone cure inside live cell",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print/cure silicone isolation mount then insert rated module; no reactive silicone cure inside live cell",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "thermal profile",
+        "vent clearance",
+        "mechanical retention"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-036-AB",
+      "first": "PS-MAT-HYDROGEL_E",
+      "second": "PS-MAT-ALGINATE",
+      "from_family": "EL",
+      "to_family": "BV",
+      "pair_catalog_id": "PS-PAIR-EL-BV",
+      "provisional_class": "T",
+      "intended_function": "soft responsive microfluidic scaffold",
+      "can_if": "form and stabilise elastic hydrogel then create alginate interface with controlled osmotic conditions",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and stabilise elastic hydrogel then create alginate interface with controlled osmotic conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-0",
+        "ENV-1",
+        "ENV-2"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "swelling",
+        "diffusion",
+        "dynamic stiffness"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    },
+    {
+      "route_id": "PS-MR-036-BA",
+      "first": "PS-MAT-ALGINATE",
+      "second": "PS-MAT-HYDROGEL_E",
+      "from_family": "BV",
+      "to_family": "EL",
+      "pair_catalog_id": "PS-PAIR-BV-EL",
+      "provisional_class": "T",
+      "intended_function": "soft responsive microfluidic scaffold",
+      "can_if": "form crosslinked alginate first and add compatible elastic hydrogel at bounded hydration",
+      "proposed_stages": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form crosslinked alginate first and add compatible elastic hydrogel at bounded hydration",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "candidate_environment_ids": [
+        "ENV-2",
+        "ENV-0",
+        "ENV-1"
+      ],
+      "unresolved_parameters": [
+        "feedstock or module manufacturer lot and composition",
+        "tool-specific thermal pressure chemical and field history",
+        "interface topology/adhesion and dimensional clearance",
+        "validation of every previous stage after Y operation"
+      ],
+      "acceptance_tests": [
+        "swelling",
+        "diffusion",
+        "dynamic stiffness"
+      ],
+      "alternative_route": "engineered interface, staged atmosphere, reverse sequence or mechanically integrated module",
+      "evidence_state": "NO_MATERIAL_PAIR_PHYSICAL_QUALIFICATION",
+      "production_approved": false
+    }
+  ]
+}

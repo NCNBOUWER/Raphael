@@ -1,0 +1,814 @@
+{
+  "schema": "cgx.printspace.functional_time_preview_seeds.v0.1",
+  "authority": "RAPHAEL_PR6_SOURCE_ONLY_NO_PRODUCTION",
+  "units": "mm",
+  "timeline_units": "NORMALIZED_PHASE_NOT_SECONDS",
+  "disclaimer": "All dimensions and part poses are illustrative interface candidates, NOT original licensed ButterBot CAD, calibrated motion, qualified materials or an as-built 3D print.",
+  "product_variants": [
+    {
+      "id": "BB-SOURCE-DEMO",
+      "name": "Butter Bot — functional geometric demonstration",
+      "family": "Butter Bot",
+      "kind": "tracked_robot",
+      "aesthetic": {
+        "palette": "amber",
+        "finish": "matte",
+        "gendered": false
+      },
+      "design_envelope_mm": [
+        145,
+        110,
+        168
+      ],
+      "parameters": {
+        "arm_left_degrees": [
+          -35,
+          55
+        ],
+        "arm_right_degrees": [
+          -35,
+          55
+        ],
+        "drive_track_count": 2,
+        "servo_count_candidate": 3,
+        "battery_capacity_wh": null,
+        "compute_capacity_n": null,
+        "voltage_v": null,
+        "mechanism_torque_nm": null
+      },
+      "source_caveats": [
+        "CAD rights and exact ButterBot original geometry unverified",
+        "Known tracked/shoulder/neck mechanisms require calibrated power/torque, safety and build evidence"
+      ],
+      "parts": [
+        {
+          "id": "chassis",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            24
+          ],
+          "size_mm": [
+            105,
+            70,
+            48
+          ],
+          "stage": "body",
+          "role": "STRUCTURE",
+          "source_dependency_node_ref": "BB-SHELL"
+        },
+        {
+          "id": "left_track",
+          "primitive": "box",
+          "center_mm": [
+            -58,
+            0,
+            19
+          ],
+          "size_mm": [
+            19,
+            83,
+            38
+          ],
+          "stage": "tracks",
+          "role": "DRIVE",
+          "source_dependency_node_ref": "BB-TRACKS"
+        },
+        {
+          "id": "right_track",
+          "primitive": "box",
+          "center_mm": [
+            58,
+            0,
+            19
+          ],
+          "size_mm": [
+            19,
+            83,
+            38
+          ],
+          "stage": "tracks",
+          "role": "DRIVE",
+          "source_dependency_node_ref": "BB-TRACKS"
+        },
+        {
+          "id": "battery_cavity",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            -15,
+            37
+          ],
+          "size_mm": [
+            48,
+            30,
+            15
+          ],
+          "stage": "power",
+          "role": "RESERVED_BATTERY_VOID",
+          "source_dependency_node_ref": "BB-ENERGY"
+        },
+        {
+          "id": "compute_bay",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            17,
+            34
+          ],
+          "size_mm": [
+            42,
+            20,
+            15
+          ],
+          "stage": "compute",
+          "role": "EXTERNAL_ELECTRONICS",
+          "source_dependency_node_ref": "BB-LOGIC"
+        },
+        {
+          "id": "neck",
+          "primitive": "cylinder",
+          "center_mm": [
+            0,
+            0,
+            78
+          ],
+          "size_mm": [
+            17,
+            17,
+            49
+          ],
+          "stage": "neck",
+          "role": "MECHANISM",
+          "source_dependency_node_ref": "BB-NECK"
+        },
+        {
+          "id": "left_arm",
+          "primitive": "link",
+          "center_mm": [
+            -44,
+            0,
+            95
+          ],
+          "size_mm": [
+            17,
+            15,
+            49
+          ],
+          "stage": "arms",
+          "role": "HINGED_ARM",
+          "source_dependency_node_ref": "BB-HANDS"
+        },
+        {
+          "id": "right_arm",
+          "primitive": "link",
+          "center_mm": [
+            44,
+            0,
+            95
+          ],
+          "size_mm": [
+            17,
+            15,
+            49
+          ],
+          "stage": "arms",
+          "role": "HINGED_ARM",
+          "source_dependency_node_ref": "BB-HANDS"
+        },
+        {
+          "id": "head",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            135
+          ],
+          "size_mm": [
+            73,
+            42,
+            34
+          ],
+          "stage": "head",
+          "role": "SHELL",
+          "source_dependency_node_ref": "BB-SHELL"
+        },
+        {
+          "id": "face",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            -23,
+            137
+          ],
+          "size_mm": [
+            54,
+            3,
+            19
+          ],
+          "stage": "face",
+          "role": "DISPLAY_CANDIDATE"
+        }
+      ],
+      "stages": [
+        {
+          "id": "body",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [],
+          "part_ids": [
+            "chassis"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "tracks",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [
+            "body"
+          ],
+          "part_ids": [
+            "left_track",
+            "right_track"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "power",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "body"
+          ],
+          "part_ids": [
+            "battery_cavity"
+          ],
+          "status": "UNRESOLVED_DEVICE_INPUT"
+        },
+        {
+          "id": "compute",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "power"
+          ],
+          "part_ids": [
+            "compute_bay"
+          ],
+          "status": "UNRESOLVED_DEVICE_INPUT"
+        },
+        {
+          "id": "neck",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [
+            "body"
+          ],
+          "part_ids": [
+            "neck"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "arms",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [
+            "neck",
+            "compute"
+          ],
+          "part_ids": [
+            "left_arm",
+            "right_arm"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "head",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [
+            "arms"
+          ],
+          "part_ids": [
+            "head"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "face",
+          "process": "IN_PROCESS_UV_PATTERN_CANDIDATE",
+          "depends_on": [
+            "head"
+          ],
+          "part_ids": [
+            "face"
+          ],
+          "status": "COUPON_AND_EXPOSURE_REQUIRED"
+        },
+        {
+          "id": "inspect",
+          "process": "INSPECT_AND_FUNCTIONAL_SIM",
+          "depends_on": [
+            "face",
+            "tracks"
+          ],
+          "part_ids": [],
+          "status": "VISUAL_ONLY"
+        }
+      ],
+      "source_goal_node": "BB-FINAL"
+    },
+    {
+      "id": "WATCH-SQUARE",
+      "name": "Rectangular architectural watch — thicker enclosure",
+      "family": "CGX Wearables",
+      "kind": "square_watch",
+      "aesthetic": {
+        "palette": "graphite",
+        "finish": "brushed",
+        "gendered": false
+      },
+      "design_envelope_mm": [
+        49,
+        48,
+        15
+      ],
+      "parameters": {
+        "case_width_mm": 45,
+        "case_height_mm": 45,
+        "case_depth_mm": 13,
+        "display_width_mm": 31,
+        "display_height_mm": 31,
+        "battery_capacity_wh": null,
+        "compute_capacity_n": null,
+        "battery_thickness_mm": null
+      },
+      "source_caveats": [
+        "Dimensions are illustrative and not ergonomic or clinical validation",
+        "Battery and compute area require independently sourced cells and rated thermal/power design"
+      ],
+      "parts": [
+        {
+          "id": "case",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            6.5
+          ],
+          "size_mm": [
+            45,
+            45,
+            13
+          ],
+          "stage": "case",
+          "role": "SHELL"
+        },
+        {
+          "id": "battery",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            3
+          ],
+          "size_mm": [
+            27,
+            25,
+            3
+          ],
+          "stage": "battery",
+          "role": "SOURCED_BATTERY"
+        },
+        {
+          "id": "compute",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            7
+          ],
+          "size_mm": [
+            22,
+            17,
+            2
+          ],
+          "stage": "compute",
+          "role": "SOURCED_COMPUTE"
+        },
+        {
+          "id": "isolation",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            8.5
+          ],
+          "size_mm": [
+            34,
+            34,
+            0.8
+          ],
+          "stage": "dielectric",
+          "role": "DIELECTRIC"
+        },
+        {
+          "id": "traces",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            9.5
+          ],
+          "size_mm": [
+            29,
+            29,
+            0.3
+          ],
+          "stage": "pattern",
+          "role": "CONDUCTOR_PATTERN_CANDIDATE"
+        },
+        {
+          "id": "screen",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            12.3
+          ],
+          "size_mm": [
+            31,
+            31,
+            1.5
+          ],
+          "stage": "screen",
+          "role": "SOURCED_DISPLAY"
+        }
+      ],
+      "stages": [
+        {
+          "id": "case",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [],
+          "part_ids": [
+            "case"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "battery",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "case"
+          ],
+          "part_ids": [
+            "battery"
+          ],
+          "status": "CAPACITY_UNVERIFIED"
+        },
+        {
+          "id": "compute",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "battery"
+          ],
+          "part_ids": [
+            "compute"
+          ],
+          "status": "CAPACITY_UNVERIFIED"
+        },
+        {
+          "id": "dielectric",
+          "process": "UV_CURE_CANDIDATE",
+          "depends_on": [
+            "compute"
+          ],
+          "part_ids": [
+            "isolation"
+          ],
+          "status": "MATERIAL_COUPON_REQUIRED"
+        },
+        {
+          "id": "pattern",
+          "process": "LASER_DIRECT_WRITE_CANDIDATE",
+          "depends_on": [
+            "dielectric"
+          ],
+          "part_ids": [
+            "traces"
+          ],
+          "status": "LASER_INTERLOCK_AND_METROLOGY_REQUIRED"
+        },
+        {
+          "id": "screen",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "pattern"
+          ],
+          "part_ids": [
+            "screen"
+          ],
+          "status": "DISPLAY_INTERFACE_UNVERIFIED"
+        },
+        {
+          "id": "inspect",
+          "process": "INSPECT_AND_FUNCTIONAL_SIM",
+          "depends_on": [
+            "screen"
+          ],
+          "part_ids": [],
+          "status": "VISUAL_ONLY"
+        }
+      ]
+    },
+    {
+      "id": "WATCH-ROUND",
+      "name": "Circular architectural watch — round display",
+      "family": "CGX Wearables",
+      "kind": "round_watch",
+      "aesthetic": {
+        "palette": "sand",
+        "finish": "satin",
+        "gendered": false
+      },
+      "design_envelope_mm": [
+        44,
+        44,
+        12
+      ],
+      "parameters": {
+        "case_diameter_mm": 42,
+        "case_depth_mm": 11,
+        "display_diameter_mm": 32,
+        "battery_capacity_wh": null,
+        "compute_capacity_n": null,
+        "battery_thickness_mm": null
+      },
+      "source_caveats": [
+        "Circular enclosure and watch face are shape options, not a gender specification",
+        "Battery/compute thermal and electromagnetic constraints unresolved"
+      ],
+      "parts": [
+        {
+          "id": "case",
+          "primitive": "cylinder",
+          "center_mm": [
+            0,
+            0,
+            5.5
+          ],
+          "size_mm": [
+            42,
+            42,
+            11
+          ],
+          "stage": "case",
+          "role": "SHELL"
+        },
+        {
+          "id": "battery",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            3
+          ],
+          "size_mm": [
+            27,
+            24,
+            3
+          ],
+          "stage": "battery",
+          "role": "SOURCED_BATTERY"
+        },
+        {
+          "id": "compute",
+          "primitive": "box",
+          "center_mm": [
+            0,
+            0,
+            6.8
+          ],
+          "size_mm": [
+            18,
+            18,
+            2
+          ],
+          "stage": "compute",
+          "role": "SOURCED_COMPUTE"
+        },
+        {
+          "id": "isolation",
+          "primitive": "cylinder",
+          "center_mm": [
+            0,
+            0,
+            8
+          ],
+          "size_mm": [
+            37,
+            37,
+            0.8
+          ],
+          "stage": "dielectric",
+          "role": "DIELECTRIC"
+        },
+        {
+          "id": "traces",
+          "primitive": "cylinder",
+          "center_mm": [
+            0,
+            0,
+            9
+          ],
+          "size_mm": [
+            31,
+            31,
+            0.3
+          ],
+          "stage": "pattern",
+          "role": "CONDUCTOR_PATTERN_CANDIDATE"
+        },
+        {
+          "id": "screen",
+          "primitive": "cylinder",
+          "center_mm": [
+            0,
+            0,
+            10
+          ],
+          "size_mm": [
+            32,
+            32,
+            1.3
+          ],
+          "stage": "screen",
+          "role": "SOURCED_DISPLAY"
+        }
+      ],
+      "stages": [
+        {
+          "id": "case",
+          "process": "FDM_DEPOSITION",
+          "depends_on": [],
+          "part_ids": [
+            "case"
+          ],
+          "status": "SCHEMATIC_ONLY"
+        },
+        {
+          "id": "battery",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "case"
+          ],
+          "part_ids": [
+            "battery"
+          ],
+          "status": "CAPACITY_UNVERIFIED"
+        },
+        {
+          "id": "compute",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "battery"
+          ],
+          "part_ids": [
+            "compute"
+          ],
+          "status": "CAPACITY_UNVERIFIED"
+        },
+        {
+          "id": "dielectric",
+          "process": "UV_CURE_CANDIDATE",
+          "depends_on": [
+            "compute"
+          ],
+          "part_ids": [
+            "isolation"
+          ],
+          "status": "MATERIAL_COUPON_REQUIRED"
+        },
+        {
+          "id": "pattern",
+          "process": "MASKED_PHOTOLITHOGRAPHY_CANDIDATE",
+          "depends_on": [
+            "dielectric"
+          ],
+          "part_ids": [
+            "traces"
+          ],
+          "status": "RESIST_MASK_DEVELOP_ETCHANT_AND_METROLOGY_UNVERIFIED"
+        },
+        {
+          "id": "screen",
+          "process": "SOURCED_COMPONENT_PLACEMENT",
+          "depends_on": [
+            "pattern"
+          ],
+          "part_ids": [
+            "screen"
+          ],
+          "status": "DISPLAY_INTERFACE_UNVERIFIED"
+        },
+        {
+          "id": "inspect",
+          "process": "INSPECT_AND_FUNCTIONAL_SIM",
+          "depends_on": [
+            "screen"
+          ],
+          "part_ids": [],
+          "status": "VISUAL_ONLY"
+        }
+      ]
+    }
+  ],
+  "process_contracts": {
+    "FDM_DEPOSITION": {
+      "kind": "additive",
+      "needs": [
+        "qualified_feedlot",
+        "geometric_fit",
+        "printer_stroke",
+        "temperatures",
+        "layer_adhesion"
+      ],
+      "can_run_physically": false
+    },
+    "SOURCED_COMPONENT_PLACEMENT": {
+      "kind": "hybrid",
+      "needs": [
+        "supplier_passport",
+        "insert_fit",
+        "wiring_clearance",
+        "power_budget",
+        "electrical_test"
+      ],
+      "can_run_physically": false
+    },
+    "UV_CURE_CANDIDATE": {
+      "kind": "photochemical",
+      "needs": [
+        "UV_dose_map",
+        "resin_kinetics",
+        "optical_path",
+        "shielded_interlock",
+        "thermal_history"
+      ],
+      "can_run_physically": false
+    },
+    "IN_PROCESS_UV_PATTERN_CANDIDATE": {
+      "kind": "pattern",
+      "needs": [
+        "photosensitive_material",
+        "mask_alignment",
+        "exposure_dose",
+        "develop_and_rinse_compatibility",
+        "metrology"
+      ],
+      "can_run_physically": false
+    },
+    "MASKED_PHOTOLITHOGRAPHY_CANDIDATE": {
+      "kind": "pattern",
+      "needs": [
+        "photoresist",
+        "registered_mask",
+        "UV_dose",
+        "develop_or_liftoff",
+        "etch_or_deposit_compatibility",
+        "containment",
+        "metrology"
+      ],
+      "can_run_physically": false
+    },
+    "LASER_DIRECT_WRITE_CANDIDATE": {
+      "kind": "pattern",
+      "needs": [
+        "material_optical_constants",
+        "spot_size_and_focus",
+        "fluence_threshold",
+        "thermal_damage_budget",
+        "plume_extraction",
+        "enclosure_interlocks",
+        "inspection"
+      ],
+      "can_run_physically": false
+    },
+    "INSPECT_AND_FUNCTIONAL_SIM": {
+      "kind": "measurement",
+      "needs": [
+        "sensor_calibration",
+        "functional_and_power_measurement",
+        "source_to_result_receipt"
+      ],
+      "can_run_physically": false
+    }
+  },
+  "reuse_sources": [
+    "CGX/PrintSpace/PRINTCEPTOR_INVERSE_BUILD_GRAPH_v0_1.json",
+    "CGX/PrintSpace/PRINTCEPTOR_FIRST_BUTTERBOT_ARTICLE_V0_1.json",
+    "CGX/PrintSpace/PAIRWISE_SEQUENCE_ROUTES_v0_1.json",
+    "CGX/PrintSpace/BOOTSTRAP_4D_PRINTER_AND_PRODUCT_CLASSES_2026-10-08.md"
+  ],
+  "public_rights_status": "PRIVATE_REVIEW_CANDIDATE_ONLY",
+  "hardware_control_enabled": false,
+  "observed_print_hours": null,
+  "validated_3d_cad_mesh": false,
+  "qualified_4d_stimulus_response": false
+}

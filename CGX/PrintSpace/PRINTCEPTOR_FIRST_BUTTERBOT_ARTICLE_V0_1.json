@@ -1,0 +1,95 @@
+{
+  "schema": "cgx.printspace.printceptor_first_butterbot_article.v0.1",
+  "date": "2026-10-09",
+  "state": "SOURCE_REVIEW_DIGITAL_NOT_PHYSICALLY_BUILT",
+  "actual_qualified_hardware": false,
+  "primary_owner": "PrintSpace (derivative to UTP, PMX, CGX, CCC and EMASSC)",
+  "source_design": "PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md",
+  "machine": "PrintCeptor-0 Bootstrap",
+  "enclosure": {
+    "configuration": "one open rectangular volume until job-defined partition",
+    "interchangeable_bays": "0/1/2/3/N as conditions require",
+    "pressure_vacuum_certified": false,
+    "actual_dimensions_mm": null,
+    "tools": "two articulating tool-exchange arms; exact as-built and loads unknown"
+  },
+  "first_article": "Butter Bot",
+  "reference": {
+    "url": "https://github.com/djnugent/ButterBot",
+    "cad_files_readback": false,
+    "cad_redistribution_license": "UNVERIFIED",
+    "commercial_character_rights": "UNVERIFIED",
+    "known_motion": [
+      "two tracked drives",
+      "two shoulder servos",
+      "one neck servo via pulley"
+    ],
+    "known_materials": [
+      "aluminium",
+      "acrylic",
+      "plastic"
+    ],
+    "unknown": [
+      "exact CAD geometry and unit scale",
+      "mechanism loads and stability",
+      "electronics current and power",
+      "motor torque and thermal envelope",
+      "source ownership and share licence"
+    ]
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "step": "digital design, inventories and qualified physical safety basis",
+      "complete": false
+    },
+    {
+      "id": "P1",
+      "step": "manually assemble first safe functional PrintCeptor skeleton using required sourced hardware",
+      "complete": false
+    },
+    {
+      "id": "P2",
+      "step": "first self-printed and verified claws, fixture interfaces, service panels and seed-dependent tools",
+      "complete": false
+    },
+    {
+      "id": "P3",
+      "step": "FIRST complete integrated sealed session article: Butter Bot, with safe powered in-chamber function test",
+      "complete": false
+    },
+    {
+      "id": "P4",
+      "step": "technical universities and industry/SQE collaborator validation",
+      "complete": false
+    },
+    {
+      "id": "P5",
+      "step": "refined purpose-configurable successor PrintCeptor A",
+      "complete": false
+    },
+    {
+      "id": "P6",
+      "step": "state library/university/industrial pilot then general commercial products",
+      "complete": false
+    }
+  ],
+  "first_butterbot_test": {
+    "requires_unchanged_outer_seal": true,
+    "printed_and_sourced_components_separately_receipted": true,
+    "full_bom_source_coverage": "REQUIRED_NOT_VALIDATED",
+    "pre_opening_functional_test": "REQUIRED_WHERE_SAFE",
+    "motors_actuators_control": "REQUIRES_REAL_POWER_MOTION_AND_ELECTRICAL_BUDGET",
+    "environment_material_interfaces": "PMX_CANDIDATE_ONLY_UNTIL_COUPON_MEASURED",
+    "solid_state_redesign": "PLANNED_NOT_PHYSICALLY_PROVEN",
+    "article_qualification": false
+  },
+  "release_holds": [
+    "not a commercially licensed CAD despite public repo",
+    "no proprietary assets uploaded without owner/attribution approval",
+    "source inspection/analysis permitted separately from republishing",
+    "no new CGX root, print share or Dataspace0 standalone service",
+    "C0 safety limits independent of optional cloud/AI",
+    "actual apparatus and state partner placements not confirmed"
+  ]
+}

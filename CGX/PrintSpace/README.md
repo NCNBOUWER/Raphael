@@ -1,0 +1,333 @@
+## FileSpace = CGX product identity (founder lock, 2026-10-10)
+**CGX and FileSpace are one and the same universal filespace product**, not two independent platform layers. `.cgx` is the portable universal filespace extension; `Cognigrex.cgx` is the concrete root/product instance on BouwerBase. `cgx://CGX.cgx` is a founder-preferred discovery address that must be mapped and authenticated via the existing signed namespace + Object_ID + State Root + DBR Root; a URL-like label is not authority. **DataSpace** is the separately tested network interoperation/collaboration capability across individually owned CGX filespaces, not another master object store. **PrintSpace** is the independently qualified digital-to-physical consumer and empirical receipt return path. Full product evidence/proof gates, owner responsibilities and eight DataSpace acceptance fixtures remain in the [existing four-stage bridge projection](CGX_FILESPACE_DATASPACE_PRINTSPACE_TYPE1_BRIDGE_2026-10-10.json), with [static regression tests](test_cgx_four_stage_bridge_projection.py). No S92/carrier/name-authority promotion or separate DataSpace service is implied by this review derivative.
+
+# CGX PrintSpace — Capability-First Functional Manufacturing (Review Branch)
+
+## FileSpace → DataSpace → PrintSpace → Type I integration (2026-10-10)
+[Source-bound four-stage integration projection](CGX_FILESPACE_DATASPACE_PRINTSPACE_TYPE1_BRIDGE_2026-10-10.json) records 14 **interface-level missing proofs** and their existing CGX/LightSpeed/Raphael/Post-Mix/Eco/Römer/EMASSC/CCC owners, native provider boundaries, sparse/deep hydration, typed AI/API routing, a digital-to-empirical return loop, and the minimum owner-safe next changes. It does **not** rebuild the [existing 605-object local inspector](cgx_review_lens_compiler.py), replace the 411-archetype Drive workbook or reproduce the private 16×4K proxies. [Contract tests](test_cgx_four_stage_bridge_projection.py) enforce noncanonical scope, source-owner/gate references and no evidence uplift. Newer LightSpeed Git 4K mesh/hero projections are an **existing implementation**; their per-device deployment and any real CAD/physical claims still need independent readback. The host root matched local LightSpeed at `0884a00` on the stated readback; provider main had advanced to `7d7050d` one commit ahead. These are timestamped observations, not pointers to hardcode into runtime.
+
+
+## Verified local CGX engineering review + private 4K proxies (2026-10-10)
+Bounded BouwerBase execution reused the **existing** [605-object read-only compiler](cgx_review_lens_compiler.py) and produced `C:/Cognigrex/State/Frontier/PrintSpace_CGX_605_Review_20261010/index.html` with **411 component archetypes, 81 technology classes, 80 proposed products, 17 conceptual printer families, and 16 system twins**, checked to source LightSpeed `4dabcb4` and PrintSpace `dfecbd9`. The private [evidence-locked local 4K exporter](export_cgx_review_proxies_4k.py) generated **16 3840×2160 raster previews** from the already-owned, exact-SHA Type-I SVG sources; each output is receipted under `review_4k/receipt.json`. Provenance: **13 INTERACTION_PROXY, 2 SOURCE_DERIVED_GEOMETRY bounded-envelope, 1 SOURCE_DERIVED_PARTIAL**. All 16 image hashes/dimensions/readbacks passed. The local browser was opened. After adding renderer tests, **80 tests ran: 79 pass, one optional integration skip**; the separate exact-source compile previously passed 75 tests. The PNGs are engineering *review artwork*, **not** 16 verified native 3D/4D geometry models or evidence that all 605 entries have 4K images. No root/other owner PR, source SVG, machine controls, public site, LS GO served dist, or DBR approval was modified. Source-currentness must be rechecked before further derivations. This prebuilt work is indexed in the [existing WK42 review plan](NEXT_WEEK_CGX_REVIEW_SPRINT_2026-10-12.json) to prevent duplicate rendering and support subsequent private LS GO/Achilles/Quests integration; it does not close that integration's auth, permissions or final owner acceptance.
+
+## Current local 605-object guided review verification (2026-10-09)
+The live BouwerBase review compiler was run against **LightSpeed source head `4dabcb4647825ab4e7d7cf67e53225a82ee3402c`** and **PrintSpace branch head `731b91b21df3c1a0eabc9c9c87ed37415c7d498f`**, producing **605 source-linked review entries** (411 CGX archetypes, 81 PT classes, 80 products, 17 printer types, 16 system twins). The metadata tuple defect in the existing compiler was fixed and an optional full-source regression added. **75 PrintSpace tests passed** with source roots configured. Compilation produced an offline 480KB-class HTML inspector, 16 inherited/verified technical SVG interaction proxies and a SHA256 receipt in `C:/Cognigrex/State/Frontier/PrintSpace_CGX_605_Review_20261009/`; no live LS GO bundle, CGX root, public website or native CAD was mutated. The source-validated guided review paths now cover **diode→passives→RF→watch/phone**, **PrintCeptor→Butter Bot**, **Solar Hull→Mark→Luke→InterSol**, and **recovery→Eco/civil**. The local browser request was made using `index.html`. Note **the 16 SVGs are interaction/design proxies**, not physically qualified 4K photoreal CAD exports; the earlier GLB session assets are not assumed present on BouwerBase. The bridge was independently confirmed **HTTP 200 at `/api/v1/status`**, while `/` returns the expected 404. Compiled catalogue has no review-approval write-back; shortlist selections remain **NOT_APPROVED** until existing CGX/LightSpeed DBR owner workflow accepts them. Source heads are run-specific, not permanent authority.
+
+## Next-week CGX/PrintCeptor review sprint (12–18 October 2026)
+[Owner-scoped next-week plan](NEXT_WEEK_CGX_REVIEW_SPRINT_2026-10-12.json) consumes the existing [CGX engineering review-lens compiler](cgx_review_lens_compiler.py), [decision/G-gate queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json), [CGX hydration topology](PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json) and the PrintCeptor→Butter Bot first-article plan; it does **not** start a new renderer, master catalogue or scheduler. Target one coherent internally secured source-linked, scrollable family-to-object visual review in the existing LS GO/Achilles/Quests surfaces, with 3840×2160 render derivatives only when actual approved geometry and local rendering are evidenced. Renders are not certified dimensions/materials/physical results. The owner gate and security restrictions remain binding; latest BouwerBase RPC/currentness and any actual render/test are still **unverified for this planning pass**. Daily task packets are conditional and may be advanced by existing Neo/R2/R3/Achilles queues once source currentness is independently re-established; user-facing follow-up is a single Friday afternoon review, not a second execution queue.
+
+
+Status: **PROPOSED / OWNER REVIEW**. Read-only modelling and data/QA package. No machine control or qualified print recipe.
+
+## Current founder build/release ordering (2026-10-09)
+The latest accepted physical sequence is **Bootstrap PrintCeptor manual seed assembly → safe internally fabricated upgrades → Butter Bot as first complete sealed-session integrated print and internal functional test → collaborator validation → PrintCeptor A → proposed state library/university/SQE pilots → broader commercial rollout**. Digital UTP/PMX development may remain concurrent; this does **not** impose a prior Printer-μ reproduction test before the initial Butter Bot. Main chamber defaults to one open print volume with job-created/reused secondary partitions. See [authoritative latest founder decision overlay](PRINTCEPTOR_FOUNDER_PHASE_ORDER_AND_CCC_CYC_HANDOFF_2026-10-09.md) and [current decision queue](TRANSIT_DECISION_GATE_QUEUE_2026-10-08.json). All steps are **planned**, not hardware completion.
+
+## Current cross-lane CGX topology and hydration (2026-10-09)
+[PrintCeptor consumer projection](PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json) links active PrintSpace requirements to the existing S92/Filespace topological query/agent/bridge/DBR contracts, Raphael UTP, PMX, CGX atlas and CCC/CYC. It defines shell/sparse/project-deep/cross-domain-bounded *query scopes* and seven owner-specific frontier records. **Not a separate CGX schema, runtime, catalogue, operating agent, peer identity, canonical promotion or actual machine capability.** Recent live atlas mirror is 411 archetypes, not the former 407; provider and local HEAD observations are rechecked at execution time and should never be hard-coded as current. [Static consumer fixture tests](test_printceptor_cgx_frontier_projection.py) validate this source-binding overlay only. Co-running chat content is not canonical until independently persisted/verified through the owning source lane.
+
+## Digital 3D family review (2026-10-09)
+The [17-platform parametric family registry](PRINTCEPTOR_FAMILY_PARAMETRIC_REGISTRY_v0_1.json) and [digital engineering review](PRINTCEPTOR_4D_FAMILY_DIGITAL_ENGINEERING_REVIEW_2026-10-09.md) provide source-defined **conceptual** envelopes, common process/module roles, and a readable family index. The [LightSpeed/CGX read-only review adapter](PRINTCEPTOR_FAMILY_LSGO_CGX_REVIEW_ADAPTER_v0_1.json) defines how to consume 18 off-repository GLB concept assets, 68 geometric screening cases, an offline interactive HTML viewer, SVG and seven symbolic (not time-calibrated) stages. Binaries are delivered in the relevant ChatGPT review session, **not deployed to LightSpeed**. The [existing PrintCeptor consumer hydration projection](PRINTCEPTOR_CGX_FRONTIER_HYDRATION_PROJECTION_v0_1.json) remains the owner-scoped hydration/query contract; the 3D adapter consumes, not replaces, that contract. The current source atlas is reported as 411 archetypes; type-count evolution and individual physical instances must be rechecked with the Drive owner, not frozen from older numbers. Tests of mesh loading and geometric invariants do not qualify kinematics, pressure/gas isolation, material chemistry or working 4D responses.
+
+## Inverse acquisition / source reuse and Hyper-Tech (2026-10-09)
+**Founder starting equipment (2026-10-09):** [partial inventory](FOUNDER_WORKSHOP_ASSET_BASELINE_2026-10-09.json) confirms an owned Dremel 4300, no FDM printer or pen, other unlisted on-hand parts and a small workbench that can be assembled. The [first-purchase decision matrix](PRINTCEPTOR_FIRST_PURCHASE_INVERSE_DECISION_MATRIX_2026-10-09.md) has been corrected to **avoid rebuying rotary equipment** and to model current owned capacity separately from post-purchase FDM or optional pen conversion. Example scenario commands: `python printceptor_inverse_compiler.py --kit K-FOUNDER-CURRENT --goal BB-SHELL --summary` and `--kit K-FOUNDER-FIRST-FDM`. A proposed printer does **not** exist as a physical installed capability merely because its scenario is selectable.\n\n
+New [PrintCeptor inverse AND/OR build graph](PRINTCEPTOR_INVERSE_BUILD_GRAPH_v0_1.json) decomposes the Butter Bot first integrated article, PrintCeptor bootstrap and candidate Hyper-Tech upgrades into purchased, printed, salvaged, hand-built or hybrid routes, retaining alternative choices and physical evidence holds. [Source-only inverse compiler](printceptor_inverse_compiler.py) and [regression tests](test_printceptor_inverse_compiler_v0_1.py) compare starter tool capability *labels*, not physical readyness. The [first-acquisition decision matrix](PRINTCEPTOR_FIRST_PURCHASE_INVERSE_DECISION_MATRIX_2026-10-09.md) includes the founder's **entry FDM → printed single-arm linkages → repurposed 3D pen toolhead** learning route; disassembly, sourced safety hardware, thermal control and donor qualification remain separately verified. [Hyper-Tech retrofit family](HYPER_TECH_CGX_RETROFIT_FAMILY_v0_1.json) adds 20 candidate legacy-device/benchtop adapter patterns across FileSpace, DataSpace, PrintSpace and WorkSpace. [Cross-domain review](PRINTCEPTOR_INVERSE_BOOTSTRAP_HYPERTECH_HANDOFF_2026-10-09.md) retains original type IDs, sourcing assumptions, provenance, CCC/CYC/share and environmental controls. No actual purchases, installed controls, external device authorization or hardware acceptance implied.
+
+## Offline review lens — catalogue through interplanetary twins (2026-10-09)
+
+[CGX review-lens compiler](cgx_review_lens_compiler.py) plus [source-only tests](test_cgx_review_lens_compiler.py) is a **read-only derivative projection**, not another CGX/Drive master, public LS GO static deployment or a hardware controller. It binds **411** current component archetypes, **81** PT technology records, **80** proposed cross-Grex product entries, **17** PrintCeptor candidate configurations and **16** documented system-twin families; these are distinct *overlapping* namespaces, not 605 unique manufactured objects. Sixteen reference SVGs are copied from the existing 128 source illustrations for scalable review. No new geometry, measurement, qualified machine or simulation claim is invented.
+
+After an exact source/currentness preflight on the local BouwerBase host, from the existing PR #6 review checkout run:
+
+```powershell
+$repo = 'C:\Cognigrex\State\Frontier\PrintSpaceTransit_20261008\Raphael_PR6'
+$light = 'D:\LightSpeed\Repositories\LightSpeed_Canonical'
+$script = Join-Path $repo 'CGX\PrintSpace\cgx_review_lens_compiler.py'
+$python = 'D:\LightSpeed\Environment\Scripts\python.exe'
+& $python $script --lightspeed-root $light --printspace-root $repo --check
+& $python $script --lightspeed-root $light --printspace-root $repo --output 'C:\Cognigrex\State\Frontier\CGX_Review_Exports\current'
+```
+
+Opening the generated **local file** `index.html` does not install a new app or expose material to LS GO's static listener. Filtering, searching and temporary review-shortlisting happen in the browser; the exported shortlist remains **NOT_APPROVED**. The accompanying receipt records source HEADs, source SHA256 and displayed-asset checksums. Avoid running an unattended build if checkout is dirty, owner source mismatch, endpoint/auth/security holds or an unverified source payload is encountered. Renderer → 4K capture/physical twin and permissioned LightSpeed GO integration remain independent release gates. **Current remote generation and visual check have not passed yet due to host RPC timeout.**
+
+## Entry points by responsibility
+- **Capability doctrine:** [CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md](CAPABILITY_FIRST_INTERFACE_ONTOLOGY_2026-10-08.md) — CAN IF philosophy and process opportunities.
+- **Directional process ontology:** [CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md](CROSS_DOMAIN_SEQUENCING_MATRIX_2026-10-08.md) and [PAIRWISE_SEQUENCE_ROUTES_v0_1.json](PAIRWISE_SEQUENCE_ROUTES_v0_1.json) — 14×14 family pairs.
+- **Material population:** [MATERIAL_CANDIDATE_PASSPORTS_v0_3.json](MATERIAL_CANDIDATE_PASSPORTS_v0_3.json) — 59 material/module/void archetypes; [MATERIAL_PAIRWISE_INDEX_v0_3.csv](MATERIAL_PAIRWISE_INDEX_v0_3.csv) — 3,481 directed material-index records (only 72 curated routes).
+- **Function and geometry:** [TECHNOLOGY_MATERIAL_CROSSWALK_v0_3.json](TECHNOLOGY_MATERIAL_CROSSWALK_v0_3.json) — all 70 existing PT IDs; [PARAMETRIC_GEOMETRY_FUNCTION_SEEDS_v0_3.json](PARAMETRIC_GEOMETRY_FUNCTION_SEEDS_v0_3.json) — 30 geometries; [FUNCTIONAL_OPPORTUNITY_WINDOWS_v0_3.json](FUNCTIONAL_OPPORTUNITY_WINDOWS_v0_3.json) — 26 environment/interactions.
+- **Process validation queue:** [COUPON_QUALIFICATION_QUEUE_v0_3.json](COUPON_QUALIFICATION_QUEUE_v0_3.json) — 72 proposed coupon plans; [MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv](MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv) — 531 currently blank material measurement slots.
+- **Equations:** [PHYSICAL_EQUATION_CATALOGUE_v0_4.json](PHYSICAL_EQUATION_CATALOGUE_v0_4.json) — 59 dimensioned analytic models and UTP kernel references.
+- **Equation relationships:** [PHYSICS_FUNCTION_CROSSWALK_v0_4.json](PHYSICS_FUNCTION_CROSSWALK_v0_4.json) — 70 functional types, 30 geometries, 26 environmental opportunities and 72 material routes linked to analytic screens and scale regimes.
+- **Operand provenance:** [PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json](PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json) — 172 named input requirements, no synthetic material measurements.
+- **Explanations:** [PHYSICS_FORMALISATION_AND_VALIDATION_2026-10-08.md](PHYSICS_FORMALISATION_AND_VALIDATION_2026-10-08.md) — core equations, interface calculus, continuum vs simple approximations, scope and evidence gates.
+- **Implementation bridge:** [PRINTSPACE_RUNTIME_CROSSWALK_2026-10-08.md](PRINTSPACE_RUNTIME_CROSSWALK_2026-10-08.md); [PRINTSPACE_RUNTIME_HANDSHAKE_PROPOSAL_v0_2.json](PRINTSPACE_RUNTIME_HANDSHAKE_PROPOSAL_v0_2.json).
+- **Lineage:** [PRINTSPACE_DATASET_LINEAGE_v0_3.json](PRINTSPACE_DATASET_LINEAGE_v0_3.json) — cross references to upstream UTP PR #5, Post-Mix PR #11, local CGX root. No authority transfer.
+
+## Execute synthetic verification only
+From this directory (standard Python, no external dependencies):
+```sh
+python -m unittest -v test_multistage_route_planner.py test_printspace_population_v0_3.py test_dimensioned_equation_engine_v0_4.py
+python dimensioned_equation_engine.py --equation PS-EQ-001 --inputs-json '{"resistivity":1.7e-8,"length":1.0,"area":1e-6}'
+python multistage_route_planner.py --case BUTTER_BOT_HYBRID_SEQUENCE
+```
+This runs only read-only mathematical tests; neither command drives machinery or populates true material values. GitHub Action: `.github/workflows/printspace-data-tests.yml`.
+
+## Scientific and governance limits
+- Source authority: UTP kernel registry in Raphael PR #5. All analytic equations are screening models with stated constitutive assumptions; they do not replace coupled Maxwell/FEM/CFD/semiconductor/chemical kinetics.
+- All unknown or unmeasured material properties remain null; missing evidence cannot be inferred as 0 or safe.
+- Candidate print compatibility is **directional**: X→Y != Y→X. Stage ordering must preserve the full processing history of earlier regions.
+- For environment opportunity: specify actual controllable atmosphere, temperature, pressure, gravity regime and measured dose; protect and qualify sensitive structures before subsequent transitions.
+- Production remains off: every new data record and calculation has `production_approved=false`, with no physical machine-control connector.
+- Prefer human/owner review through the existing CGX and LightSpeed C0/C1/C2 governance and audit gate, not unreviewed binary carrier modification.
+
+## Next evidence intake
+Load exact supplier lot passports, resolved geometry/tolerances, qualified machine cells and measured property uncertainty, then run X→Y and X→Y→Z comparative coupons. Capture independently verifiable receipt IDs for every stage and inspect predicted-vs-measured residuals before promoting a route beyond candidate-only.
+
+
+## CGX watchable functional build candidate — Butter Bot and wearables (13 October 2026)
+
+Same PrintSpace owner, same CGX offline review lens, no competing renderer or
+source root. Source: CGX/PrintSpace/FUNCTIONAL_TIME_PREVIEW_SEEDS_v0_1.json and
+functional_time_preview.py. Three variants: provisional tracked Butter Bot,
+thicker square-face watch and round-face watch. Geometry and finished colours
+are user choices, NOT gender-specific product classifications.
+
+From a trusted checkout with Python 3.12+, render the playable offline
+schematic stage replay using the existing CGX atlas source:
+
+    python CGX/PrintSpace/cgx_review_lens_compiler.py --print-demo-only --output /tmp/cgx-stage-review
+
+Open index.html in the output directory. It contains isometric 3D-like
+primitive previews, a normalised-time accelerated stage replay (play/pause,
+stage slider and cadence), finish palette, arm pose, bounded battery Wh and
+compute target n inputs, conditional process alternatives and draft review
+export. receipt.json hashes the input seed and generated viewer. No private
+LightSpeed checkout, network, authorised root or connected physical printer
+is needed. The original complete offline CGX atlas still uses its existing
+LightSpeed+Raphael source flags, unchanged.
+
+All shapes are explicit ILLUSTRATIVE mm-frame box/cylinder/link primitives,
+not the original licensed Butter Bot CAD, source-verified motion model,
+material constitutive simulation, actual toolpath/G-code, 3D scan,
+temperature/cure history or as-built article. Phases are ordinal indexes,
+not seconds; battery, torque, compute and all measured performance remain
+unverified. The bounded assess_functional_device_requirements function
+compares angle/arm length with static gravity-only candidate torque, screen
+area with source aperture, and ideal battery Wh / average W arithmetic
+runtime; dynamic/inertial/electrical losses and full computational workloads
+remain explicit holds.
+
+Candidate lithography and laser operations DURING a print are CONDITIONAL:
+* UV-assisted deposition: photo-curable material, dose/cure, oxygen inhibition
+  and controlled exposure/enclosure are required. Optical curing is not a
+  semiconductor transistor.
+* Masked lithography on deposited material: stabilised/coatable compatible
+  substrate, resist, registration, exposure, development/lift-off or etching,
+  chemical containment and feature metrology. A still-hot or flowable region
+  is a separate, evidence-requiring process window, not presumed ready.
+* Focused laser direct-writing, conversion or removal: exact absorption,
+  wavelength, spot size, fluence, material state, thermal/damage accumulation,
+  plume/extraction, machine interlock and microscopic/electrical readback.
+  Converting or marking a conductive layer does not automatically make an
+  integrated circuit or electrochemical cell.
+* Hybrid sourced chips: admit traceable manufactured devices, then qualify
+  printing/deposition interfaces, wiring, thermal and EMC/electrical service
+  tests rather than claiming seed printer can manufacture CPU dies.
+
+Every X-to-Y route retains previous material process history; Y-to-X
+compatibility must be evaluated independently. Conventional '4D printing'
+stimulus/time-dependent material change is separately witnessed, rather than
+equating animation with qualified 4D physical response.
+
+Source reviews: Wang et al. Materials 17:557 (2024) DOI 10.3390/ma17030557;
+Pinheiro et al. Advanced Materials (2024) DOI 10.1002/adma.202402014;
+Zikulnig et al. Advanced Sensor Research (2023) DOI 10.1002/adsr.202200073.
+
+Next gate: exact Butter Bot CAD and sharing rights; dimensioned kinematics,
+power/BOM, rated machine/control envelope, all process-condition witness
+coupons, thermal/kinematic full simulation, render comparison and as-built
+measurement. Demo approval, physical print, hardware actuation, licensing
+and public release remain FALSE / HOLD.
+
+### 13 October — process-state and inverse-source closure
+
+The existing preview compiler now publishes source-derived temporal CAN-IF windows
+for UNKNOWN, WET_FLOWABLE, GREEN_PARTIALLY_CURED and STABILIZED states. The viewer's
+Process state selector shows the corresponding requirements for the active
+UV/masked-lithography/laser candidate; all windows retain
+physical_process_verified=false, safety_interlocks_verified=false and
+production_approved=false. The material-to-material transition checker references
+the existing 14-family/196-directional-pair Raphael catalogue by SHA-256,
+rather than treating X-to-Y and Y-to-X as the same route.
+
+Butter Bot preview parts are now linked as *illustrative reference cells* to
+the authoritative 33-component inverse-build graph. In the current source
+model **BB-ACT (actuators) and BB-VOICE (speaker/LED and wiring) are not
+geometrically represented**. Other reference links designate intended
+locations, not functioning parts or proof of placement. This gap appears in
+the existing 3D viewer and source-compiled review output; it remains a HARD
+functional simulation gate alongside calibrated CAD and rights, sourced
+motors/MCU/battery, all environmental process windows, collision and measured
+4D response. The offline replay must not be described as a completely
+simulated functional or production-ready Butter Bot.
+
+## Butter Bot: Intel Core i3 first-article, open track / late-closure workflow
+
+The current Butter Bot source now includes BUTTERBOT_I3_TRACK_CLOSURE_PLAN_v0_1.json,
+compiled by compile_i3_track_closure_plan() in the EXISTING functional_time_preview.py.
+It is ONE extension of the owner PrintCeptor inverse DAG and CGX review lens, not a
+second printer engine. It contains 28 dependency-ordered symbolic manufacturing
+stages, 19 component classes and 14 source/assembly/inspection station labels.
+The offline CGX viewer now offers 'Intel i3: full dual-arm 28-stage route' alongside
+the prior summary mode. Real machine coordinate paths, durations, robot sweeps
+and qualified tension forces are not available; the viewer never issues G-code.
+
+### Sourced Intel i3 core and printed support structures
+
+The Intel Core i3 seed is sourced (not 3D-printed silicon): exact SKU, matching
+socket or assembled BGA module, motherboard, RAM, storage, fan/heatsink, input
+rails and physical assembly passport must precede dimensional acceptance.
+A safety MCU/E-stop and motor-drive power cutoff must be independent of the
+x86 host process; a locked-up i3 must not prevent emergency motor shutdown.
+The source seed's i3 CPU SKU, actual board/heat-sink envelope, mass, continuous
+and peak power, input voltage and battery duration are deliberately null.
+Intel's own examples underscore why: i3-13100 60W processor base / 110W
+maximum turbo (https://www.intel.com/content/www/us/en/products/sku/230575/)
+versus embedded i3-1220PE 28W / 64W
+(https://www.intel.com/content/www/us/en/products/sku/227852/).
+These are ALTERNATIVES, not claims about the user's available donor i3.
+Printed candidates include chassis/cradle, service-access tracks, printed
+sprocket/idler bodies, cable guides, neck/arm linkages and enclosure.
+Motors, shafts, precision bearings, certified battery/BMS, sourced microchips,
+motor drivers, servos, safety MCU, speaker, LEDs, sensors and wear-critical
+fasteners remain sourced unless an exact qualified alternative exists.
+
+### Split track construction, fitting allowance and dual-arm handoff
+
+Open lower left and right track sections are printed first with a proposed
+10% UNTRIMMED FITTING STOCK allowance; this is NOT 10% final belt tension,
+pitch extension, interference, fastener clearance, track strain or motor torque.
+With both tracks open, print remaining case and access geometry, insert wheel
+bearings, shafts, printed sprockets, drive motors, tensioner mounts and
+internal structural/electrical modules. Print head/shell BEFORE installing
+the i3 and battery to avoid avoidable hot-tool access around electronics.
+Inspect the assembled drive path, actual tooth pitch, neutral axis geometry,
+idler stroke and articulation before trimming the stock and closure.
+
+Default final join is a REMOVABLE MECHANICAL PIN + accessible adjustable idler:
+ARM_A can hold LEFT track via controlled fixture while ARM_B positions the
+join; cool/relax/inspect, then swap roles (ARM_B holds RIGHT, ARM_A joins).
+Retain a removable jig and independent force feedback; both arms cannot
+simultaneously occupy each other's swept tool volume. A polymer pin, UV
+bond, cooled interlock or in-situ thermal deposition is only a candidate
+after real coupon fatigue, thermomechanical, material and joint safety proof.
+Do not heat-weld a track near the installed battery/processor by default.
+No unverified printer should control motor actuation, live battery work or
+servo loading in the same chamber without the independent C0 interlock.
+Track closure is a LATE mechanical manufacturing stage; final drive rotation
+requires real joint/wheel inspection and measured low-speed load data.
+
+### Real source-to-source travel acceptance
+
+The 28 stages register bounded symbolic transfers between external parts
+shelf, sorted donor input, FDM feed, chassis datum, L/R open track beds,
+compute cavity, cable channels, upper shell, individual closure fixtures,
+metrology, isolated electrical testing and output park. Every transfer
+has travel_mm=null, cartesian_path=null, workpiece temperature/force/time
+unknown and physical_execution_approved=false until PC01 machine geometry,
+effective tool reach, dual-arm collision sweep, coordinate registration
+and actual supplier dimensions are measured. This makes missing travel
+and machine limits VISIBLE rather than inventing a robot trajectory.
+
+Build/test from source: python -m unittest -v test_functional_time_preview.py
+and the existing .github/workflows/printspace-data-tests.yml. Git Actions
+CI packages the source-only offline viewer as a private review artifact;
+it does not build printer G-code or publish an original Butter Bot CAD.
+
+Next physical acceptance: obtain exact i3 donor model and board+cooler CAD;
+verify original Butter Bot design/character rights and print license;
+freeze source BOM dimensions and thermal envelope; qualify track material,
+bearing fit, idler travel and pinned joint, then simulate real PC01 travel
+using measured axes. End-to-end fully functional 3D printing is NOT claimed.
+
+## Adaptive Butter Bot seeds — Bootstrap, Pro, Industrial (13 October 2026)
+
+Three SOURCE-OWNED, versioned tier policies now extend the original i3 28-stage
+route. They do NOT clone PrintCeptor, make a new UI, auto-publish assets or
+interpret an i5 replacement as categorically better. Tier selectors and
+stage overlay results appear in the original CGX offline PrintSpace viewer.
+
+| Tier | Reference objective | Mechanisms and candidate sequence | Physical status |
+| --- | --- | --- | --- |
+| BOOTSTRAP_EVERYDAY / C0 | minimum new cash, workable ideal runtime, safe first article | existing 28 staged parts, sourced donor i3 or qualifying i5, preloaded components, cooled removable pin/idler closure | HOLD until donor, machine, seal, battery and joint proof |
+| PRO_BALANCED / C1 | required user-defined compute n, energy/runtime and safe modularity | original stages + hypothetical auto-toolchange check before FDM and calibrated vision/tension review before closure (30 phases) | HOLD pending calibrated internal arms/trays/sensors |
+| INDUSTRIAL_CIRCULAR / C2 | maximize **physically qualifiable** printable/repairable proportion | original stages + microprinter/tool-change, shielded optical patterning coupon, sealed preloaded-tray witness and repair metrology (32 phases) | HOLD: silicon, certified battery, motors, bearings and controllers still sourced absent independent process proof |
+
+Authority: BUTTERBOT_ADAPTIVE_SEED_THRESHOLDS_v0_1.json; synthetic data:
+BUTTERBOT_ADAPTIVE_THREE_SCENARIOS_v0_1.json; owner source and algorithms
+remain within functional_time_preview.py. Print seed choice is conditional
+on CPU SKU, complete board/cooler envelope, thermal peak and rails, actual
+battery capacity, measured workload, cost, internal chamber/trays and joint
+safety; no user-requested gender, shape, style or source asset loses rights.
+
+IMPORTANT: The reference fixture has FOUR invented CPU system candidates,
+with deliberately fabricated Watt, Wh, dimensions, dollar cost and workload
+n. They are SOFTWARE BRANCH FIXTURES, NOT Intel specifications or supplier
+price quotes. On that synthetic fixture the best available within each
+separate objective is low-power i3 for Everyday, compact i5 for Pro and
+performance i5 for Industrial. These are 'best-of-tier in a dry run' only;
+their scores are not comparable across tiers. Real purchase/machine
+recommendations remain HOLD. The score uses explicit weighted cost, ideal
+runtime, workload, thermal headroom and candidate print-class coverage.
+The 19 source component classes expose only candidate printability; they
+do not certify actual printed quantities or 100% source independence.
+
+PrintSpace implements the founder's initial AUD $100 bootstrapping constraint
+for Everyday as a candidate acquisition ceiling, with future incremental
+growth (~AUD $50 per week) to be budgeted separately after actual quotes;
+the Pro/Industrial synthetic scenario budgets are NOT founder approvals.
+Salvage/donor components are acceptable only when source, safety, dimensions
+and warranty/rights evidence qualifies them.
+
+One sealed session remains mandatory for ALL tiers: preload any required
+unprintable parts in qualified internal trays before closure; opening the
+machine midway for outside human replacement invalidates that route's
+one-session claim. Everyday may use a smaller set of machine cells, but
+the route is not 'sealed-session proven' merely because a dry-run input says
+the trays exist. Pro mini-printers and Industrial material changes are
+conditional capabilities subject to interlocks and prior print layers.
+
+To examine the exact three simulated best-of-tier outputs without connecting
+a machine, from a trusted checkout run:
+
+    python CGX/PrintSpace/functional_time_preview.py --adaptive-summary
+
+The standard GitHub PrintSpace CI review artifact now packages
+adaptive-three-seed-results.json alongside the offline index.html and
+receipt.json. The simulator never issues machine commands or hidden physical
+actuation and does not represent measured heat, time, mechanics, or circuits.
+
+For ANY later source-confirmed i3-to-i5 substitution (or alternate i3/i5
+model), fill the nullable field template
+BUTTERBOT_CPU_SUBSTITUTION_INTAKE_v0_1.json, then evaluate through
+assess_confirmed_cpu_substitution(tier_id, intake). Missing source/passport,
+module XYZ, peak/cooling, drive/battery, true workload metric, affordability,
+registered machine cells or inside-sealed-tray proof stays HOLD. Failures
+return explicit redesign reasons. Even when arithmetic thresholds clear,
+the function does not digitally validate a manufacturer signature, grant
+purchase approval, start a printer, accept new 4D chemistry, or certify the
+enclosure. Actual part provenance and verified host/print receipts are
+separate required stages.
+
+Example of why compute badge alone is insufficient: Intel i3-13100 specifies
+60W processor base and 110W maximum turbo, whereas i5-13400 specifies
+65W processor base and 148W maximum turbo; whole-system rails, storage,
+cooler, board and battery can differ independently, and these desktop
+examples do NOT imply either model fits Butter Bot. Official Intel sources:
+https://www.intel.com/content/www/us/en/products/sku/230575/intel-core-i313100-processor-12m-cache-up-to-4-50-ghz/specifications.html
+https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html
+
+Next physical qualification and escalation: submit actual donor CPU/board
+specs and geometric margins; C0 measurements; sourced rails/BMS/E-stop;
+source BOM lots, thermal and join coupons, in-chamber manipulator clearance
+and dry-run with preloaded trays; only thereafter claim physical print coverage,
+real performance or one uninterrupted Butter Bot build.

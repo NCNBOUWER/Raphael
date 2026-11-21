@@ -1,0 +1,191 @@
+{
+  "schema": "cgx.printspace.dataset_lineage.v0.3",
+  "id": "CGX-F4D-DATA-LINEAGE-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "created_date": "2026-10-08",
+  "sources": [
+    {
+      "source_id": "UPSTREAM-UTP-001",
+      "repo": "NCNBOUWER/Raphael",
+      "pr": 5,
+      "branch": "feature/universal-tech-printer-multiphysics-20261006",
+      "assets": [
+        "UTP-CATALOGUE-001",
+        "UTP-FEEDS-001",
+        "UTP-ENV-001",
+        "UTP-HYPERGRAPH-001",
+        "UTP-KERNELS-001",
+        "UTP-CGX-DBR-001"
+      ],
+      "state": "OPEN_REVIEW",
+      "policy": "Non-mutating references, no authority transfer"
+    },
+    {
+      "source_id": "UPSTREAM-PMX-001",
+      "repo": "achillesromer-coder/Data",
+      "pr": 11,
+      "branch": "manual/postmix-material-matrix-20261006",
+      "assets": [
+        "PMX-MAT-001",
+        "PMX-GRAPH-001",
+        "INV-018",
+        "INV-019",
+        "INV-020",
+        "BUILD-055"
+      ],
+      "state": "OPEN_REVIEW",
+      "policy": "Link composition and recipe control after review; no duplicate solver"
+    },
+    {
+      "source_id": "UPSTREAM-CGX-ROOT",
+      "local": "C:/Cognigrex/cognigrex.root.json",
+      "assets": [
+        "cgx:root:cognigrex",
+        "cgx:domain:romer",
+        "cgx:domain:emassc",
+        "cgx:domain:lightspeed"
+      ],
+      "state": "READ_ONLY_INSPECTED",
+      "policy": "Promoted carriers not modified"
+    }
+  ],
+  "external_references": [
+    {
+      "url": "https://www.nist.gov/programs-projects/characterization-additive-manufacturing-materials",
+      "usage": "AM process-specific material data, uncertainty, provenance methodology"
+    },
+    {
+      "url": "https://materialsdata.nist.gov/",
+      "usage": "Potential external material records, review individual datasets before use"
+    },
+    {
+      "url": "https://www.iso.org/standard/76911.html",
+      "usage": "ISO/ASTM 52920:2023 general industrial AM qualification planning; not a claim of compliance"
+    },
+    {
+      "url": "https://www.iso.org/standard/84117.html",
+      "usage": "ISO/ASTM 52953:2025 monitoring data registration; narrow normative scope PBF-LB metals NDT; transferable only by considered adaptation"
+    }
+  ],
+  "generated_datasets": [
+    {
+      "artifact": "CGX-F4D-MATERIAL-SEEDS-20261008",
+      "path": "MATERIAL_CANDIDATE_PASSPORTS_v0_3.json",
+      "records": 59
+    },
+    {
+      "artifact": "CGX-F4D-MATROUTES-20261008",
+      "path": "MATERIAL_DIRECTIONAL_ROUTES_v0_3.json",
+      "records": 72
+    },
+    {
+      "artifact": "CGX-F4D-TECHCROSS-20261008",
+      "path": "TECHNOLOGY_MATERIAL_CROSSWALK_v0_3.json",
+      "records": 70
+    },
+    {
+      "artifact": "CGX-F4D-OPPORTUNITY-20261008",
+      "path": "FUNCTIONAL_OPPORTUNITY_WINDOWS_v0_3.json",
+      "records": 26
+    },
+    {
+      "artifact": "CGX-F4D-GEOMETRY-20261008",
+      "path": "PARAMETRIC_GEOMETRY_FUNCTION_SEEDS_v0_3.json",
+      "records": 30
+    },
+    {
+      "artifact": "CGX-F4D-COUPONS-20261008",
+      "path": "COUPON_QUALIFICATION_QUEUE_v0_3.json",
+      "records": 72
+    },
+    {
+      "artifact": "CGX-F4D-MATERIAL-MATRIX-20261008",
+      "path": "MATERIAL_PAIRWISE_INDEX_v0_3.csv",
+      "records": 3481,
+      "curated_routes": 72,
+      "family_class_inherited_only": 3409
+    },
+    {
+      "artifact": "CGX-F4D-MATPROP-20261008",
+      "path": "MATERIAL_PROPERTY_MEASUREMENT_REGISTER_v0_3.csv",
+      "records": 531,
+      "measured_value_count": 0,
+      "distinct_property_types": 110
+    },
+    {
+      "artifact": "CGX-F4D-EQN-20261008",
+      "path": "PHYSICAL_EQUATION_CATALOGUE_v0_4.json",
+      "records": 59,
+      "physical_validation": 0
+    },
+    {
+      "artifact": "CGX-F4D-PHYSCROSS-20261008",
+      "path": "PHYSICS_FUNCTION_CROSSWALK_v0_4.json",
+      "records": 198,
+      "domains": 4,
+      "physical_validation": 0
+    },
+    {
+      "artifact": "CGX-F4D-PHYSINPUT-20261008",
+      "path": "PHYSICS_OPERAND_PROVENANCE_BLUEPRINT_v0_4.json",
+      "records": 172,
+      "equations": 59,
+      "recorded_numeric_values": 0
+    },
+    {
+      "artifact": "CGX-F4D-PRODUCT-ATLAS-20261008",
+      "path": "CROSS_GREX_PRODUCT_ATLAS_v0_5.json",
+      "records": 80,
+      "technology_links": 586,
+      "proposed_stages": 475
+    },
+    {
+      "artifact": "CGX-F4D-GAP-ATLAS-20261008",
+      "path": "CROSS_GREX_GAP_REGISTER_v0_5.json",
+      "records": 220,
+      "verified_closure": 0
+    },
+    {
+      "artifact": "CGX-F4D-SHARED-PRIMITIVES-20261008",
+      "path": "CROSS_GREX_SHARED_PRIMITIVES_v0_5.json",
+      "records": 70
+    },
+    {
+      "artifact": "CGX-F4D-PRODUCT-TAXONOMY-20261008",
+      "path": "PRODUCT_ATLAS_TAXONOMY_v0_5.json",
+      "process_profiles": 17
+    }
+  ],
+  "evidence_policy": {
+    "source_types": [
+      "canonical_upstream_classification",
+      "analytical_candidate",
+      "external_principle_source",
+      "lot_specific_measurement",
+      "tested_coupon",
+      "field_service"
+    ],
+    "numerical_property_policy": "Never promote illustrative or generic numbers into actual material acceptance values.",
+    "measured_property_count": 0,
+    "material_pair_physical_qualification_count": 0,
+    "shopfloor_instruction_authority": false,
+    "provenance_rule": "Every material property needs measured value, units, uncertainty, temperature/regime, specimen geometry, feedstock lot, device calibration, date and attributable source",
+    "state_rule": "All v0.3 records are provisional, no demonstrated 4D printer capability inferred",
+    "material_matrix_physical_qualification_count": 0,
+    "material_property_slots_waiting_for_measurement": 531,
+    "analytic_screeners": 59,
+    "qualified_screeners": 0,
+    "equation_validation": "SI dimension checks + synthetic analytical fixtures only; real material properties remain unpopulated",
+    "operand_requirements": 172,
+    "operand_measurements_populated": 0,
+    "property_schema_gaps": 7,
+    "product_qualifications": 0,
+    "candidate_component_bindings": 586
+  },
+  "qa_tests": [
+    "test_multistage_route_planner.py",
+    "test_printspace_population_v0_3.py",
+    "test_dimensioned_equation_engine_v0_4.py",
+    "test_cross_grex_product_atlas_v0_5.py"
+  ]
+}

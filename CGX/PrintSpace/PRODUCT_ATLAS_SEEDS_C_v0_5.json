@@ -1,0 +1,979 @@
+{
+  "schema": "cgx.printspace.product_seeds.v0.5",
+  "segment": "C",
+  "state": "ARCHITECTURAL_CANDIDATE",
+  "products": [
+    {
+      "category": "romer",
+      "id": "FR-01",
+      "name": "Mark 1P proof-of-concept hardware",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-013",
+        "PT-014",
+        "PT-015",
+        "PT-018",
+        "PT-043",
+        "PT-054"
+      ],
+      "profile": "space",
+      "goal": [
+        "Bench validation of field",
+        " resonance",
+        " mechanical structure"
+      ],
+      "gaps": [
+        "RFS/EMFF proof",
+        " calibrated power balance"
+      ],
+      "hybrid": [
+        "MCU",
+        "instruments"
+      ],
+      "measures": [
+        "force null",
+        "input output",
+        "repeatability"
+      ],
+      "opportunity": [
+        "magnetic_alignment"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-02",
+      "name": "Mark III resource acquisition unit",
+      "tech_ids": [
+        "PT-001",
+        "PT-004",
+        "PT-006",
+        "PT-007",
+        "PT-011",
+        "PT-014",
+        "PT-018",
+        "PT-025",
+        "PT-026",
+        "PT-043",
+        "PT-068"
+      ],
+      "profile": "space",
+      "goal": [
+        "Capture",
+        " manipulate",
+        " survey and process NEO resources"
+      ],
+      "gaps": [
+        "space qualification",
+        " resource yield",
+        " energy"
+      ],
+      "hybrid": [
+        "drive control",
+        "tools",
+        "avionics"
+      ],
+      "measures": [
+        "loads",
+        "yield",
+        "power",
+        "thermal"
+      ],
+      "opportunity": [
+        "microgravity"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-03",
+      "name": "Mark V survey and Solar Hull support",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-015",
+        "PT-018",
+        "PT-023",
+        "PT-033",
+        "PT-043",
+        "PT-058",
+        "PT-068"
+      ],
+      "profile": "skin",
+      "goal": [
+        "Survey",
+        " tag",
+        " power and track material objects"
+      ],
+      "gaps": [
+        "space PV",
+        " optical alignment",
+        " telemetry"
+      ],
+      "hybrid": [
+        "PV cells",
+        "imager",
+        "controller"
+      ],
+      "measures": [
+        "solar yield",
+        "tracking",
+        "temperature"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-04",
+      "name": "Solar Hull graded functional panel",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-010",
+        "PT-011",
+        "PT-033",
+        "PT-039",
+        "PT-058",
+        "PT-059"
+      ],
+      "profile": "skin",
+      "goal": [
+        "Multifunctional structural",
+        " thermal",
+        " optical and solar skin"
+      ],
+      "gaps": [
+        "interlayer fatigue",
+        " PV efficiency",
+        " space dose"
+      ],
+      "hybrid": [
+        "PV cells",
+        "power electronics",
+        "sensors"
+      ],
+      "measures": [
+        "efficiency",
+        "adhesion",
+        "thermal cycling"
+      ],
+      "opportunity": [
+        "interlayer_gradient"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-05",
+      "name": "Free Flow energy field coupon",
+      "tech_ids": [
+        "PT-011",
+        "PT-013",
+        "PT-014",
+        "PT-017",
+        "PT-031",
+        "PT-032",
+        "PT-034"
+      ],
+      "profile": "battery",
+      "goal": [
+        "Quantify field coupling and energy storage"
+      ],
+      "gaps": [
+        "novel energy claims",
+        " insulation",
+        " safety"
+      ],
+      "hybrid": [
+        "meters",
+        "protected cell"
+      ],
+      "measures": [
+        "energy conservation",
+        "field output",
+        "repeatability"
+      ],
+      "opportunity": [
+        "electrical_potential"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-06",
+      "name": "RFS / EMFF field interaction rig",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-014",
+        "PT-024",
+        "PT-025",
+        "PT-043",
+        "PT-054"
+      ],
+      "profile": "space",
+      "goal": [
+        "Test electromagnetic forces and material responses"
+      ],
+      "gaps": [
+        "baseline physics",
+        " force calibration",
+        " losses"
+      ],
+      "hybrid": [
+        "field drivers",
+        "sensors",
+        "controllers"
+      ],
+      "measures": [
+        "force",
+        "power",
+        "null controls"
+      ],
+      "opportunity": [
+        "electromagnetic_induction"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-07",
+      "name": "Luke II orbital brake / relay body",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-010",
+        "PT-011",
+        "PT-014",
+        "PT-015",
+        "PT-024",
+        "PT-068",
+        "PT-069"
+      ],
+      "profile": "space",
+      "goal": [
+        "Orbital fields",
+        " structures",
+        " communications"
+      ],
+      "gaps": [
+        "trajectory physics",
+        " mission rights",
+        " heat"
+      ],
+      "hybrid": [
+        "avionics",
+        "field hardware"
+      ],
+      "measures": [
+        "momentum",
+        "energy",
+        "thermal"
+      ],
+      "opportunity": [
+        "microgravity"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-08",
+      "name": "Luke IV terrestrial magnetic capture structure",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-014",
+        "PT-019",
+        "PT-024",
+        "PT-025",
+        "PT-026",
+        "PT-069"
+      ],
+      "profile": "space",
+      "goal": [
+        "Catch and transfer controlled loads"
+      ],
+      "gaps": [
+        "large forces",
+        " public safety",
+        " alignment"
+      ],
+      "hybrid": [
+        "certified magnetic systems",
+        "controls"
+      ],
+      "measures": [
+        "field",
+        "fail safe",
+        "loads"
+      ],
+      "opportunity": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-09",
+      "name": "InterSol service and relay node",
+      "tech_ids": [
+        "PT-001",
+        "PT-006",
+        "PT-008",
+        "PT-011",
+        "PT-015",
+        "PT-023",
+        "PT-043",
+        "PT-055",
+        "PT-069"
+      ],
+      "profile": "space",
+      "goal": [
+        "Distributed repair",
+        " relay and fabrication"
+      ],
+      "gaps": [
+        "space dose",
+        " network delay",
+        " thermal"
+      ],
+      "hybrid": [
+        "radio",
+        "compute",
+        "manipulator"
+      ],
+      "measures": [
+        "repair",
+        "uplink",
+        "power"
+      ],
+      "opportunity": [
+        "microgravity"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-10",
+      "name": "Asteroid assay and separation node",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-011",
+        "PT-018",
+        "PT-022",
+        "PT-023",
+        "PT-043",
+        "PT-052",
+        "PT-062",
+        "PT-067"
+      ],
+      "profile": "resource",
+      "goal": [
+        "Sample",
+        " characterise",
+        " separate and qualify local feed"
+      ],
+      "gaps": [
+        "resource rights",
+        " purity",
+        " throughput"
+      ],
+      "hybrid": [
+        "assay",
+        "pump",
+        "compute"
+      ],
+      "measures": [
+        "material yield",
+        "mass balance",
+        "purity"
+      ],
+      "opportunity": [
+        "chemical_potential"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-11",
+      "name": "Orbital inspection and servicing robot",
+      "tech_ids": [
+        "PT-001",
+        "PT-008",
+        "PT-011",
+        "PT-015",
+        "PT-018",
+        "PT-023",
+        "PT-026",
+        "PT-043",
+        "PT-053",
+        "PT-068"
+      ],
+      "profile": "space",
+      "goal": [
+        "Inspect and repair authorised assets"
+      ],
+      "gaps": [
+        "docking",
+        " debris",
+        " autonomy"
+      ],
+      "hybrid": [
+        "camera",
+        "drive",
+        "avionics"
+      ],
+      "measures": [
+        "contact forces",
+        "proximity",
+        "safe mode"
+      ],
+      "opportunity": [
+        "microgravity"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-12",
+      "name": "Habitat thermal and radiation panel",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-008",
+        "PT-009",
+        "PT-011",
+        "PT-018",
+        "PT-059",
+        "PT-064",
+        "PT-066"
+      ],
+      "profile": "skin",
+      "goal": [
+        "Habitat support shell",
+        " thermal and service paths"
+      ],
+      "gaps": [
+        "pressure safety",
+        " radiation",
+        " fire"
+      ],
+      "hybrid": [
+        "sensors",
+        "certified penetrations"
+      ],
+      "measures": [
+        "leak",
+        "heat",
+        "dosimetry"
+      ],
+      "opportunity": [
+        "radiation_shielding"
+      ]
+    },
+    {
+      "category": "romer",
+      "id": "FR-13",
+      "name": "Mission 1 capsule / asset interface",
+      "tech_ids": [
+        "PT-001",
+        "PT-006",
+        "PT-008",
+        "PT-011",
+        "PT-015",
+        "PT-018",
+        "PT-023",
+        "PT-043",
+        "PT-068"
+      ],
+      "profile": "space",
+      "goal": [
+        "Carry Mark III and Mark V and deploy safely"
+      ],
+      "gaps": [
+        "fairing",
+        " launch loads",
+        " deploy"
+      ],
+      "hybrid": [
+        "avionics",
+        "separation system"
+      ],
+      "measures": [
+        "vibration",
+        "deployment",
+        "mass"
+      ],
+      "opportunity": [
+        "microgravity"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-01",
+      "name": "Printer-1 multiprocess bench",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-018",
+        "PT-043",
+        "PT-051",
+        "PT-054",
+        "PT-055"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Build and test structure",
+        " trace",
+        " dielectric and inserts"
+      ],
+      "gaps": [
+        "metrology",
+        " contamination",
+        " control"
+      ],
+      "hybrid": [
+        "toolheads",
+        "motion controller",
+        "instruments"
+      ],
+      "measures": [
+        "accuracy",
+        "repeatability",
+        "safe stop"
+      ],
+      "opportunity": [
+        "selective_local_heating"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-02",
+      "name": "Printer-micro precision node",
+      "tech_ids": [
+        "PT-011",
+        "PT-013",
+        "PT-014",
+        "PT-023",
+        "PT-039",
+        "PT-040",
+        "PT-049",
+        "PT-055"
+      ],
+      "profile": "micro",
+      "goal": [
+        "Small-feature functional fabrication and child printer"
+      ],
+      "gaps": [
+        "microstage",
+        " purity",
+        " feature tolerance"
+      ],
+      "hybrid": [
+        "precision actuators",
+        "optic",
+        "metrology"
+      ],
+      "measures": [
+        "registration",
+        "feature size",
+        "yield"
+      ],
+      "opportunity": [
+        "local_photocure"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-03",
+      "name": "Mobile controlled-environment printer",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-018",
+        "PT-043",
+        "PT-051",
+        "PT-054",
+        "PT-055",
+        "PT-070"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Onsite multi-cell repair with local processing envelope"
+      ],
+      "gaps": [
+        "air containment",
+        " calibration",
+        " mobility"
+      ],
+      "hybrid": [
+        "robot chassis",
+        "shroud",
+        "toolhead"
+      ],
+      "measures": [
+        "emissions",
+        "accuracy",
+        "stability"
+      ],
+      "opportunity": [
+        "controlled_oxygen"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-04",
+      "name": "Hermetic chamber functional coupon",
+      "tech_ids": [
+        "PT-005",
+        "PT-006",
+        "PT-011",
+        "PT-013",
+        "PT-018",
+        "PT-039",
+        "PT-054",
+        "PT-036"
+      ],
+      "profile": "gas",
+      "goal": [
+        "Print gas/vacuum cavity and measure sealing"
+      ],
+      "gaps": [
+        "outgassing",
+        " hermetic lifecycle",
+        " gas safety",
+        "investigational gas-discharge behavior requires specialist controls"
+      ],
+      "hybrid": [
+        "vacuum pump",
+        "leak meter",
+        "gas sensor"
+      ],
+      "measures": [
+        "leak",
+        "gas purity",
+        "cycling"
+      ],
+      "opportunity": [
+        "hermetic_internal_void"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-05",
+      "name": "Printed semiconductor and photonic test",
+      "tech_ids": [
+        "PT-011",
+        "PT-013",
+        "PT-023",
+        "PT-038",
+        "PT-039",
+        "PT-040",
+        "PT-041",
+        "PT-042",
+        "PT-037"
+      ],
+      "profile": "micro",
+      "goal": [
+        "Investigate optoelectronic and semiconductor patterned regions"
+      ],
+      "gaps": [
+        "defects",
+        " lithography",
+        " cleanroom"
+      ],
+      "hybrid": [
+        "specialist deposition",
+        "probe station"
+      ],
+      "measures": [
+        "carrier mobility",
+        "optical loss",
+        "yield"
+      ],
+      "opportunity": [
+        "optical_contrast"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-06",
+      "name": "Microfluidic lab-on-chip",
+      "tech_ids": [
+        "PT-005",
+        "PT-007",
+        "PT-018",
+        "PT-022",
+        "PT-049",
+        "PT-052"
+      ],
+      "profile": "resource",
+      "goal": [
+        "Integrate microscale assay channels and sensors"
+      ],
+      "gaps": [
+        "surface wetting",
+        " reagent compatibility"
+      ],
+      "hybrid": [
+        "pump",
+        "microscope",
+        "probe"
+      ],
+      "measures": [
+        "mixing",
+        "leak",
+        "purity"
+      ],
+      "opportunity": [
+        "fluidic_pressure_difference"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-07",
+      "name": "Electrochemical printed cell research",
+      "tech_ids": [
+        "PT-011",
+        "PT-013",
+        "PT-017",
+        "PT-031",
+        "PT-032",
+        "PT-054"
+      ],
+      "profile": "battery",
+      "goal": [
+        "Test electrodes",
+        " separators and cell packaging"
+      ],
+      "gaps": [
+        "chemistry safety",
+        " separation",
+        " thermal"
+      ],
+      "hybrid": [
+        "potentiostat",
+        "controlled lab"
+      ],
+      "measures": [
+        "capacity",
+        "ESR",
+        "abuse"
+      ],
+      "opportunity": [
+        "electrical_potential"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-08",
+      "name": "Post-mix graded material nozzle",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-011",
+        "PT-018",
+        "PT-051",
+        "PT-052",
+        "PT-054"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Meter composition and gradient architecture"
+      ],
+      "gaps": [
+        "reaction nonlinearity",
+        " rheology"
+      ],
+      "hybrid": [
+        "flow meters",
+        "mass scales",
+        "processor"
+      ],
+      "measures": [
+        "composition",
+        "mass balance",
+        "printability"
+      ],
+      "opportunity": [
+        "interlayer_gradient"
+      ]
+    },
+    {
+      "category": "research",
+      "id": "FD-09",
+      "name": "ISRU regolith feed and refining cell",
+      "tech_ids": [
+        "PT-001",
+        "PT-007",
+        "PT-018",
+        "PT-051",
+        "PT-054",
+        "PT-062",
+        "PT-064",
+        "PT-065",
+        "PT-067"
+      ],
+      "profile": "skin",
+      "goal": [
+        "Assay and qualify mineral resources into feed"
+      ],
+      "gaps": [
+        "purity",
+        " energy",
+        " biohazards"
+      ],
+      "hybrid": [
+        "assay",
+        "refinery",
+        "process cell"
+      ],
+      "measures": [
+        "yield",
+        "strength",
+        "contamination"
+      ],
+      "opportunity": [
+        "recycling_purity"
+      ]
+    },
+    {
+      "category": "operations",
+      "id": "FS-01",
+      "name": "Riverlee Rose kit accessories and tools",
+      "tech_ids": [
+        "PT-001",
+        "PT-005",
+        "PT-007",
+        "PT-044",
+        "PT-054"
+      ],
+      "profile": "resource",
+      "goal": [
+        "Reusable measuring",
+        " mixing and branded components"
+      ],
+      "gaps": [
+        "cosmetic hygiene",
+        " safe contact"
+      ],
+      "hybrid": [
+        "certified containers",
+        "labels"
+      ],
+      "measures": [
+        "cleanability",
+        "volume",
+        "trace"
+      ],
+      "opportunity": [
+        "solvent_selectivity"
+      ]
+    },
+    {
+      "category": "operations",
+      "id": "FS-02",
+      "name": "School and community making kit",
+      "tech_ids": [
+        "PT-001",
+        "PT-011",
+        "PT-012",
+        "PT-013",
+        "PT-018",
+        "PT-044",
+        "PT-054"
+      ],
+      "profile": "portable",
+      "goal": [
+        "Teach functional materials and low voltage proof"
+      ],
+      "gaps": [
+        "child safety",
+        " education",
+        " supervision"
+      ],
+      "hybrid": [
+        "benign controller",
+        "meter"
+      ],
+      "measures": [
+        "learning",
+        "safe use",
+        "repeatability"
+      ],
+      "opportunity": [
+        "selective_local_heating"
+      ]
+    },
+    {
+      "category": "operations",
+      "id": "FS-03",
+      "name": "Römer repair and consulting production kit",
+      "tech_ids": [
+        "PT-001",
+        "PT-003",
+        "PT-005",
+        "PT-011",
+        "PT-018",
+        "PT-044",
+        "PT-054"
+      ],
+      "profile": "printer",
+      "goal": [
+        "Deliver evidence-led repair and expertise"
+      ],
+      "gaps": [
+        "liability",
+        " quality",
+        " customer data"
+      ],
+      "hybrid": [
+        "metrology",
+        "service tools"
+      ],
+      "measures": [
+        "fit",
+        "quality",
+        "throughput"
+      ],
+      "opportunity": [
+        "recycling_purity"
+      ]
+    },
+    {
+      "category": "operations",
+      "id": "FS-04",
+      "name": "Citizen ecological field station",
+      "tech_ids": [
+        "PT-018",
+        "PT-021",
+        "PT-022",
+        "PT-023",
+        "PT-031",
+        "PT-043",
+        "PT-044",
+        "PT-045",
+        "PT-050"
+      ],
+      "profile": "resource",
+      "goal": [
+        "Public environmental monitoring and provenance"
+      ],
+      "gaps": [
+        "calibration",
+        " privacy",
+        " weather"
+      ],
+      "hybrid": [
+        "sensors",
+        "MCU",
+        "cell"
+      ],
+      "measures": [
+        "accuracy",
+        "uptime",
+        "data chain"
+      ],
+      "opportunity": [
+        "humidity_gradient"
+      ]
+    }
+  ]
+}

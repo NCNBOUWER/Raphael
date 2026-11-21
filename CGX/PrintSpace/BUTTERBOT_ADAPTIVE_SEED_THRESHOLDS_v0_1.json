@@ -1,0 +1,200 @@
+{
+  "schema": "cgx.printspace.butterbot_adaptive_seed_thresholds.v0.1",
+  "source_owner": "RAPHAEL_PRINTSPACE_PR6",
+  "status": "SOURCE_REVIEW_ONLY_NOT_PRODUCTION",
+  "base_route": "BUTTERBOT_I3_TRACK_CLOSURE_PLAN_v0_1.json",
+  "sealed_session_requires": "ALL_SOURCED_TRAYS_PRELOADED_INTERNALLY_BEFORE_ENCLOSURE_SEALED_NO_EXTERNAL_MANUAL_INTERVENTION",
+  "source_policy": {
+    "cpu": "SOURCED_COMPLETE_INTEL_CORE_BOARD_NOT_PRINTED",
+    "motor_and_battery": "SOURCED_UNTIL_INDIVIDUALLY_QUALIFIED",
+    "safety_mcu": "INDEPENDENT_DETERMINISTIC_C0",
+    "conditional_printed": "PER_OBJECT_LOT_AND_MACHINE_WITNESS_ONLY",
+    "unknown": "HOLD_NOT_ZERO",
+    "hardware_control": false
+  },
+  "cpu_upgrade_gates": [
+    "EXACT_SKU_BOARD_RAM_COOLER",
+    "MODULE_XYZE_AND_CENTER_OF_MASS",
+    "COOLING_RATED_FOR_PEAK_POWER",
+    "ELECTRICAL_BMS_PROTECTION_AND_POWER_RAILS",
+    "MINIMUM_TARGET_WORKLOAD",
+    "MINIMUM_RUNTIME_AT_DUTY_CYCLE",
+    "AVAILABLE_BUDGET_AND_WARRANTY_RIGHTS",
+    "MCU_DRIVER_FIRMWARE_COMPATIBILITY"
+  ],
+  "stage_constraints": [
+    "28_BASE_STAGES_UNCHANGED",
+    "10_PERCENT_IS_TRIMMABLE_STOCK_NOT_TRACK_STRAIN",
+    "SHELL_COOL_BEFORE_BATTERY_CPU",
+    "TWO_ARM_CLOSURE_FORCE_AND_COLLISION_UNQUALIFIED",
+    "PIN_AND_ADJUSTABLE_IDLER_DEFAULT",
+    "WET_LASER_PHOTOLITHOGRAPHY_UNQUALIFIED"
+  ],
+  "dimensions_and_scores": "ILLUSTRATIVE_INPUTS_ONLY_NO_SOURCE_CAD_OR_THROUGHPUT_ASSERTION",
+  "tiers": [
+    {
+      "id": "BOOTSTRAP_EVERYDAY",
+      "display_name": "Everyday / Bootstrap",
+      "pc_gate": "C0",
+      "required_workload_n": 40,
+      "min_ideal_runtime_h": 2,
+      "max_incremental_cost_aud": 100,
+      "preferred_print_fraction": 0.3,
+      "min_i5_gain_ratio": 1.2,
+      "minimum_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS"
+      ],
+      "allowed_cpu_families": [
+        "i3",
+        "i5"
+      ],
+      "weights": {
+        "cost": 0.36,
+        "runtime": 0.28,
+        "compute": 0.12,
+        "thermal": 0.14,
+        "printability": 0.1
+      },
+      "sealed_session_mandatory": true,
+      "candidate_process_policy": "PRINTED_STRUCTURE_MECHANICAL_PIN_SOURCED_ELECTRONICS",
+      "stage_insertions": []
+    },
+    {
+      "id": "PRO_BALANCED",
+      "display_name": "Pro / Performance",
+      "pc_gate": "C1",
+      "required_workload_n": 140,
+      "min_ideal_runtime_h": 1.5,
+      "max_incremental_cost_aud": null,
+      "preferred_print_fraction": 0.45,
+      "min_i5_gain_ratio": 1.3,
+      "minimum_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS",
+        "TOOLCHANGE",
+        "VISION",
+        "SENSOR_FEEDBACK"
+      ],
+      "allowed_cpu_families": [
+        "i3",
+        "i5"
+      ],
+      "weights": {
+        "cost": 0.15,
+        "runtime": 0.22,
+        "compute": 0.38,
+        "thermal": 0.15,
+        "printability": 0.1
+      },
+      "sealed_session_mandatory": true,
+      "candidate_process_policy": "SOURCED_CONTROL_PLUS_MODULAR_PRINTED_PARTS",
+      "stage_insertions": [
+        {
+          "id": "PRO_AUTO_TOOLCHANGE_CHECK",
+          "after": "S01_MACHINE_DATUM",
+          "required_cells": [
+            "TOOLCHANGE",
+            "SEALED_TRAYS"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        },
+        {
+          "id": "PRO_SENSOR_TUNING",
+          "after": "S18_DRY_ASSEMBLY_INSPECTION",
+          "required_cells": [
+            "VISION",
+            "SENSOR_FEEDBACK"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        }
+      ]
+    },
+    {
+      "id": "INDUSTRIAL_CIRCULAR",
+      "display_name": "Industrial / Circular Printception",
+      "pc_gate": "C2",
+      "required_workload_n": 250,
+      "min_ideal_runtime_h": 0.75,
+      "max_incremental_cost_aud": null,
+      "preferred_print_fraction": 0.85,
+      "min_i5_gain_ratio": 1.1,
+      "minimum_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS",
+        "TOOLCHANGE",
+        "VISION",
+        "SENSOR_FEEDBACK",
+        "NESTED_PRINTER",
+        "UV_PATTERN",
+        "LASER_INTERLOCK",
+        "METROLOGY",
+        "REPAIR_HEAD"
+      ],
+      "allowed_cpu_families": [
+        "i3",
+        "i5"
+      ],
+      "weights": {
+        "cost": 0.06,
+        "runtime": 0.12,
+        "compute": 0.29,
+        "thermal": 0.13,
+        "printability": 0.4
+      },
+      "sealed_session_mandatory": true,
+      "candidate_process_policy": "QUALIFY_MORE_INTERNAL_MODULES_INCREMENTALLY_DO_NOT_CLAIM_SILICON_BATTERY_PRINTABLE",
+      "stage_insertions": [
+        {
+          "id": "IND_MICROPRINTER_DRYRUN",
+          "after": "S01_MACHINE_DATUM",
+          "required_cells": [
+            "NESTED_PRINTER",
+            "TOOLCHANGE"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        },
+        {
+          "id": "IND_PATTERNING_COUPON",
+          "after": "S10_PRINT_ARM_AND_NECK",
+          "required_cells": [
+            "UV_PATTERN",
+            "LASER_INTERLOCK",
+            "METROLOGY"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        },
+        {
+          "id": "IND_SEALED_INSERT_AUDIT",
+          "after": "S18_DRY_ASSEMBLY_INSPECTION",
+          "required_cells": [
+            "SEALED_TRAYS",
+            "VISION"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        },
+        {
+          "id": "IND_TRACK_REPAIR_AUDIT",
+          "after": "S25_RIGHT_COOL_RELAX_INSPECT",
+          "required_cells": [
+            "REPAIR_HEAD",
+            "METROLOGY"
+          ],
+          "qualified": false,
+          "kind": "SCHEMATIC_REVIEW_ONLY"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4593 @@
+{
+  "schema": "cgx.printspace.physics_function_crosswalk.v0.4",
+  "id": "CGX-F4D-PHYSCROSS-20261008",
+  "status": "PROPOSED_OWNER_REVIEW",
+  "equation_catalog": "CGX-F4D-EQN-20261008",
+  "upstream": "UTP-KERNELS-001,UTP-CATALOGUE-001",
+  "coverage": {
+    "technology_classes": 70,
+    "parametric_geometries": 30,
+    "environment_opportunities": 26,
+    "curated_material_routes": 72
+  },
+  "caveat": "Each assignment identifies potentially relevant analytical screeners, not a proof that the formula predicts the device or interface. The full parent kernel remains authoritative. Unresolved property data mean UNKNOWN rather than a numeric prediction.",
+  "technology_bindings": [
+    {
+      "technology_id": "PT-001",
+      "canonical_name": "Beam / lattice / shell",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "beam, shell, lattice",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-041"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-002",
+      "canonical_name": "Compliant flexure / spring",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "flexure, hinge, spring",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-003",
+      "canonical_name": "Gear / cam / pulley",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "gear, cam, pulley",
+      "analytic_equation_ids": [
+        "PS-EQ-031",
+        "PS-EQ-032"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-004",
+      "canonical_name": "Bearing/bushing interface",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "bearing, bushing",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-005",
+      "canonical_name": "Seal / gasket",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "gasket, groove",
+      "analytic_equation_ids": [
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-006",
+      "canonical_name": "Pressure/vacuum cavity",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "sealed cavity, valve",
+      "analytic_equation_ids": [
+        "PS-EQ-019",
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-007",
+      "canonical_name": "Fluid/gas manifold",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "channel, manifold",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "technology_id": "PT-008",
+      "canonical_name": "Heat spreader / radiator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "heat fin, spreader",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-042"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-009",
+      "canonical_name": "Thermal insulation / break",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "insulation layer",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-025"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-010",
+      "canonical_name": "EMI / optical / dust shield",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "mesh, shield",
+      "analytic_equation_ids": [
+        "PS-EQ-037",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-011",
+      "canonical_name": "Conductor / bus / trace",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "trace, bus",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-003",
+        "PS-EQ-040"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-012",
+      "canonical_name": "Resistor / heater",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "serpentine resistor",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-013",
+      "canonical_name": "Capacitor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "layered parallel plate",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-014",
+      "canonical_name": "Inductor / transformer / coil",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "spiral coil, solenoid",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-047"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-015",
+      "canonical_name": "Antenna / transmission line / resonator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "antenna, resonator",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-016",
+      "canonical_name": "Contact / connector / pad",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "pad, terminal",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-040"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-017",
+      "canonical_name": "Printed fuse / current limiter",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "fusible trace",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-003"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-018",
+      "canonical_name": "Temperature sensor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "meander sensor",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-011"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-019",
+      "canonical_name": "Strain / force sensor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "strain gauge, flexure",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-020",
+      "canonical_name": "Pressure / capacitive sensor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "membrane capacitor",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-033"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-FLUID-MOM",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-021",
+      "canonical_name": "Humidity / gas sensor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "gas membrane electrode",
+      "analytic_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-023",
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-022",
+      "canonical_name": "Electrochemical water-quality sensor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "electrode microfluidic",
+      "analytic_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-018"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-BV",
+        "K-NP"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-023",
+      "canonical_name": "Optical / photodetector interface",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "aperture, optical window",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-024",
+      "canonical_name": "Magnetic / field sensor interface",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "flux concentrator sensor",
+      "analytic_equation_ids": [
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-025",
+      "canonical_name": "Solenoid",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "coil plunger",
+      "analytic_equation_ids": [
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-031"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-026",
+      "canonical_name": "Motor / stator-rotor assembly",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "stator rotor",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-031",
+        "PS-EQ-032"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-027",
+      "canonical_name": "Voice-coil / linear EM actuator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "coil flexure",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-007",
+        "PS-EQ-032"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-028",
+      "canonical_name": "Pneumatic / hydraulic actuator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "piston chamber",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
+    },
+    {
+      "technology_id": "PT-029",
+      "canonical_name": "Compliant / electrothermal actuator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "thermal flexure",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-042"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-030",
+      "canonical_name": "Piezo / dielectric-elastomer actuator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "thin membrane actuator",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-031",
+      "canonical_name": "Battery cell",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "electrode separator stack",
+      "analytic_equation_ids": [
+        "PS-EQ-026",
+        "PS-EQ-045"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY",
+        "K-BV",
+        "K-NP"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "technology_id": "PT-032",
+      "canonical_name": "Supercapacitor",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "porous electrode",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-026"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "technology_id": "PT-033",
+      "canonical_name": "Photovoltaic layer/device",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "photovoltaic junction interface",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-030"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION",
+        "K-ENERGY",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-034",
+      "canonical_name": "Inductive power transfer",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "inductive receiver coil",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-035",
+      "canonical_name": "Thermoelectric generator/cooler",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "thermoelectric module integration",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-027",
+        "PS-EQ-028"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-036",
+      "canonical_name": "RGB gas-discharge pixel",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "sealed plasma cell",
+      "analytic_equation_ids": [
+        "PS-EQ-019",
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-ENERGY",
+        "K-PLASMA",
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "technology_id": "PT-037",
+      "canonical_name": "Electroluminescent thin-film element",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "luminescent layered stack",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-038",
+      "canonical_name": "Hybrid semiconductor LED",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "semiconductor light package",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-039",
+      "canonical_name": "Waveguide / diffuser / reflector",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "optical guide",
+      "analytic_equation_ids": [
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-040",
+      "canonical_name": "Printed thin-film transistor / active switch",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "thin-film gate channel",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-004"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-041",
+      "canonical_name": "Printed simple logic / oscillator",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "logic gate layout",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-006"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-042",
+      "canonical_name": "Printed memory candidate",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "memory bit candidate",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-SEMI",
+        "K-FREEENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-043",
+      "canonical_name": "Hybrid compute island",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "compute carrier",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-044",
+      "canonical_name": "RFID / NFC identity node",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "NFC antenna",
+      "analytic_equation_ids": [
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-045",
+      "canonical_name": "RF transceiver body/interface",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "RF matching traces",
+      "analytic_equation_ids": [
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-046",
+      "canonical_name": "Optical / IR link",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "IR guide and aperture",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-047",
+      "canonical_name": "Filter / membrane module",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "membrane, filter",
+      "analytic_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023",
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-FLUID-MASS"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "technology_id": "PT-048",
+      "canonical_name": "Catalytic/reactive surface",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "catalytic surface",
+      "analytic_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-018",
+        "PS-EQ-024"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-BV",
+        "K-NP"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "technology_id": "PT-049",
+      "canonical_name": "Microfluidic lab / assay cartridge",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "microfluidic assay",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "technology_id": "PT-050",
+      "canonical_name": "Water-quality / treatment node",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "water-quality electrode channel",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-016",
+        "PS-EQ-017"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "technology_id": "PT-051",
+      "canonical_name": "Post-mix nozzle / mixer head",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "metered mixer nozzle",
+      "analytic_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "technology_id": "PT-052",
+      "canonical_name": "Pump / valve / manifold module",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "microvalve pump",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
+    },
+    {
+      "technology_id": "PT-053",
+      "canonical_name": "Gripper / end effector",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "soft gripper",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-031"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-054",
+      "canonical_name": "Calibration artefact / probe fixture",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "reference coupon",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-055",
+      "canonical_name": "Child printer skeleton and tool bus",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "printer skeleton",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-042"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-056",
+      "canonical_name": "Road/guideway functional coating",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "guideway surface",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-057",
+      "canonical_name": "Building functional coating",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "functional wall surface",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-041"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-058",
+      "canonical_name": "Solar Hull / structural photovoltaic skin",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "solar skin integration",
+      "analytic_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-030"
+      ],
+      "required_full_kernel_ids": [
+        "K-RADIATION",
+        "K-ENERGY",
+        "K-SEMI"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-059",
+      "canonical_name": "Structural-health sensor skin",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "sensor skin",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-040"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY",
+        "K-MAXWELL"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-060",
+      "canonical_name": "Recovered polymer feed",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "recovered polymer feed",
+      "analytic_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-FREEENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-061",
+      "canonical_name": "Recovered graphene conductive feed",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "recovered conductive feed",
+      "analytic_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-FREEENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-062",
+      "canonical_name": "Mineral/regolith composite feed",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "regolith derived feed candidate",
+      "analytic_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES",
+        "K-CH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-063",
+      "canonical_name": "Bio-derived binder/carrier",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "bio-derived binder",
+      "analytic_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "required_full_kernel_ids": [
+        "K-SPECIES"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-064",
+      "canonical_name": "Regolith structural element",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "offworld structural unit",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-065",
+      "canonical_name": "Locally refined metal wire/truss",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "metal wire and truss",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "required_full_kernel_ids": [
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-066",
+      "canonical_name": "Shield / berm / landing-pad construction",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "shield, berm",
+      "analytic_equation_ids": [
+        "PS-EQ-043",
+        "PS-EQ-044"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY",
+        "K-MECH",
+        "K-RADIATION"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "technology_id": "PT-067",
+      "canonical_name": "Beneficiation/refinery machine parts",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "refinery pump and separation",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "required_full_kernel_ids": [
+        "K-FLUID-MASS",
+        "K-FLUID-MOM",
+        "K-MECH",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "technology_id": "PT-068",
+      "canonical_name": "Mark integrated functional body",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "integrated actuator housing",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-031",
+        "PS-EQ-032"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "technology_id": "PT-069",
+      "canonical_name": "Luke / InterSol support module",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "support module",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "required_full_kernel_ids": [
+        "K-ENERGY",
+        "K-MECH"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "technology_id": "PT-070",
+      "canonical_name": "Roaming/mobile UTP",
+      "material_binding_ref": "CGX-F4D-TECHCROSS-20261008",
+      "geometry_candidates": "roaming manufacturing node",
+      "analytic_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042"
+      ],
+      "required_full_kernel_ids": [
+        "K-MAXWELL",
+        "K-ENERGY"
+      ],
+      "validation_note": "Analytical screening only. Final device equations may require nonlinear FEM, circuit, RF, semiconductor, flow, kinetics and stochastic lifecycle models.",
+      "source_authority": "UTP-CATALOGUE-001",
+      "maturity": "UNQUALIFIED_MODEL_CROSSWALK",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    }
+  ],
+  "geometry_bindings": [
+    {
+      "geometry_id": "PS-GEO-001",
+      "slug": "rectilinear_lattice",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-002",
+      "slug": "octet_lattice",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-003",
+      "slug": "gyroid_tpms",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-014",
+        "PS-EQ-015"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-051"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-004",
+      "slug": "serpentine_trace",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-005",
+      "slug": "planar_spiral_coil",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-006",
+      "slug": "solenoid_helix",
+      "analytic_equation_ids": [
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-047"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-007",
+      "slug": "capacitor_parallel_plate",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-008",
+      "slug": "interdigitated_capacitor",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-009",
+      "slug": "patch_antenna",
+      "analytic_equation_ids": [
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-010",
+      "slug": "microstrip_line",
+      "analytic_equation_ids": [
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-011",
+      "slug": "loop_antenna",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-012",
+      "slug": "resonator_cavity",
+      "analytic_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-038"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-013",
+      "slug": "flexure_hinge",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-014",
+      "slug": "ball_socket_joint",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-031"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-015",
+      "slug": "bearing_race",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-031"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-016",
+      "slug": "thermal_heat_spreader",
+      "analytic_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-042"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-017",
+      "slug": "microchannel_serpentine",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-034"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-018",
+      "slug": "tesla_valve_channel",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-019",
+      "slug": "sealed_gas_cell",
+      "analytic_equation_ids": [
+        "PS-EQ-019",
+        "PS-EQ-024"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-020",
+      "slug": "multi_layer_barrier",
+      "analytic_equation_ids": [
+        "PS-EQ-024"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-021",
+      "slug": "graded_interface",
+      "analytic_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-041"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-022",
+      "slug": "auxetic_cell",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-023",
+      "slug": "compliant_gripper",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-031"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-024",
+      "slug": "wedge_coupler",
+      "analytic_equation_ids": [
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-025",
+      "slug": "photonic_waveguide",
+      "analytic_equation_ids": [
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-026",
+      "slug": "membrane_sensor",
+      "analytic_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-012",
+        "PS-EQ-033"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-027",
+      "slug": "battery_compartment",
+      "analytic_equation_ids": [
+        "PS-EQ-026",
+        "PS-EQ-042"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-028",
+      "slug": "fluid_manifold",
+      "analytic_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
+    },
+    {
+      "geometry_id": "PS-GEO-029",
+      "slug": "multi_material_conformal_skin",
+      "analytic_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-012"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "geometry_id": "PS-GEO-030",
+      "slug": "micro_stack_in_macro",
+      "analytic_equation_ids": [
+        "PS-EQ-003",
+        "PS-EQ-043"
+      ],
+      "representative_only": true,
+      "requires_geometry_specific_FEM_or_full_field_model": true,
+      "evidence_state": "GEOMETRY_EQUATION_ASSOCIATION_NOT_SOLUTION",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-053",
+        "PS-EQ-058"
+      ]
+    }
+  ],
+  "environment_bindings": [
+    {
+      "opportunity_id": "PS-OPP-001",
+      "slug": "controlled_oxygen",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-024"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-002",
+      "slug": "deliberate_oxidation",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-045"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-003",
+      "slug": "hermetic_internal_void",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-019",
+        "PS-EQ-024"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-004",
+      "slug": "high_temperature_first",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-005",
+      "slug": "selective_local_heating",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-025"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-006",
+      "slug": "local_photocure",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-003",
+        "PS-EQ-029"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-007",
+      "slug": "humidity_gradient",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-023"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-008",
+      "slug": "electrical_potential",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-045"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-009",
+      "slug": "chemical_potential",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-010",
+      "slug": "solvent_selectivity",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-023"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-011",
+      "slug": "interlayer_gradient",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-041"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-012",
+      "slug": "magnetic_alignment",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-013",
+      "slug": "electromagnetic_induction",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-047"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-014",
+      "slug": "residual_stress_preload",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-041"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-015",
+      "slug": "triboelectric_contact",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-003"
+      ],
+      "model_gap": "Contact electrification and tribology need specialist constitutive model",
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-016",
+      "slug": "piezoelectric_strain",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-003"
+      ],
+      "model_gap": "Piezoelectric constitutive tensor and poling history required",
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-017",
+      "slug": "thermoelectric_gradient",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-027",
+        "PS-EQ-028"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-018",
+      "slug": "optical_contrast",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-019",
+      "slug": "acoustic_impedance_contrast",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-003"
+      ],
+      "model_gap": "Acoustic wave equation and boundary impedance model required",
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-020",
+      "slug": "fluidic_pressure_difference",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-033",
+        "PS-EQ-034"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-021",
+      "slug": "heat_flow_disparity",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-010"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-022",
+      "slug": "earth_gravity",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-020",
+        "PS-EQ-021",
+        "PS-EQ-022",
+        "PS-EQ-044",
+        "PS-EQ-046"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-023",
+      "slug": "microgravity",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-021",
+        "PS-EQ-022"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-024",
+      "slug": "radiation_shielding",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-003",
+        "PS-EQ-043"
+      ],
+      "model_gap": "Spectral attenuation and particle transport require dedicated radiation model",
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "opportunity_id": "PS-OPP-025",
+      "slug": "biological_viability",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "opportunity_id": "PS-OPP-026",
+      "slug": "recycling_purity",
+      "analytic_screening_equation_ids": [
+        "PS-EQ-035",
+        "PS-EQ-036"
+      ],
+      "model_gap": null,
+      "evidence_state": "CONDITIONAL_SCREENING_NO_WINDOW_BOUNDARIES",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054"
+      ]
+    }
+  ],
+  "material_route_bindings": [
+    {
+      "route_id": "PS-MR-001-AB",
+      "first": "PS-MAT-SS_316L",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-MT-TP",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fabricate and cool metal; clean/roughen and print PETG around interlock",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-001-BA",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-SS_316L",
+      "family_pair": "PS-PAIR-TP-MT",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PETG body; deposit a low-energy metallic surface or insert independently formed metal; avoid hot bulk melt on polymer",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-002-AB",
+      "first": "PS-MAT-CU_OFHC",
+      "second": "PS-MAT-DIEL_EPOXY",
+      "family_pair": "PS-PAIR-MT-DE",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare copper conductor and deposit electrically insulating epoxy under its cure budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-002-BA",
+      "first": "PS-MAT-DIEL_EPOXY",
+      "second": "PS-MAT-CU_OFHC",
+      "family_pair": "PS-PAIR-DE-MT",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare fully cured epoxy and add copper by compatible low-energy coating or qualified insert",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-003-AB",
+      "first": "PS-MAT-AL_6061",
+      "second": "PS-MAT-TPU",
+      "family_pair": "PS-PAIR-MT-EL",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "complete alloy processing; cool; prepare bond area; form compliant TPU over interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-003-BA",
+      "first": "PS-MAT-TPU",
+      "second": "PS-MAT-AL_6061",
+      "family_pair": "PS-PAIR-EL-MT",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-009",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form TPU feature; attach cooled aluminium insert or selectively low-energy metallise after isolation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-004-AB",
+      "first": "PS-MAT-ALUMINA",
+      "second": "PS-MAT-AG_INK",
+      "family_pair": "PS-PAIR-CR-CI",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "densify ceramic first, surface clean, deposit and locally process silver ink",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-004-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-ALUMINA",
+      "family_pair": "PS-PAIR-CI-CR",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit silver feature on carrier, protect/transfer to low-energy ceramic coating or separately attach sintered ceramic",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-005-AB",
+      "first": "PS-MAT-SILICA",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "family_pair": "PS-PAIR-CR-OP",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish silica surface and add compatible optical resin using controlled cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-005-BA",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-SILICA",
+      "family_pair": "PS-PAIR-OP-CR",
+      "screening_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and cure optical resin; attach finished silica optics under low-energy encapsulation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-006-AB",
+      "first": "PS-MAT-PLA",
+      "second": "PS-MAT-AG_INK",
+      "family_pair": "PS-PAIR-TP-CI",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PLA body then low-temperature deposit ink and qualified photonic or thermal activation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-006-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-PLA",
+      "family_pair": "PS-PAIR-CI-TP",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit and condition ink on substrate; overprint polymer only under trace thermal budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-007-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-CU_INK",
+      "family_pair": "PS-PAIR-TP-CI",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare PETG and controlled atmosphere copper print and local activation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-007-BA",
+      "first": "PS-MAT-CU_INK",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-CI-TP",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare copper trace or foil; use protected low-energy PETG overmould, avoiding conductor damage",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-008-AB",
+      "first": "PS-MAT-PA12",
+      "second": "PS-MAT-CARBON_INK",
+      "family_pair": "PS-PAIR-TP-CI",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print PA12 geometry and deposit carbon ink in strain-path; dry/encapsulate",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-008-BA",
+      "first": "PS-MAT-CARBON_INK",
+      "second": "PS-MAT-PA12",
+      "family_pair": "PS-PAIR-CI-TP",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "stabilise carbon sensor, apply compatible polymer overbuild avoiding drift",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-009-AB",
+      "first": "PS-MAT-PEEK",
+      "second": "PS-MAT-POLYIMIDE",
+      "family_pair": "PS-PAIR-TP-DE",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form PEEK at elevated temperature; cool; attach or deposit polyimide dielectric using compatible process",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-009-BA",
+      "first": "PS-MAT-POLYIMIDE",
+      "second": "PS-MAT-PEEK",
+      "family_pair": "PS-PAIR-DE-TP",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare polyimide layer; bond formed PEEK part after cooling or maintain qualified common window",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-010-AB",
+      "first": "PS-MAT-ACRYLATE",
+      "second": "PS-MAT-PEDOT_PSS",
+      "family_pair": "PS-PAIR-RS-CI",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure acrylate geometry; deposit PEDOT:PSS; dry under controlled moisture",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-010-BA",
+      "first": "PS-MAT-PEDOT_PSS",
+      "second": "PS-MAT-ACRYLATE",
+      "family_pair": "PS-PAIR-CI-RS",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit conductive polymer and protect from reactive resin cure; laminate already cured optical body",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-011-AB",
+      "first": "PS-MAT-TPU",
+      "second": "PS-MAT-FERRITE_PASTE",
+      "family_pair": "PS-PAIR-EL-MG",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "create TPU flexure; locally apply ferrite paste compatible cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-011-BA",
+      "first": "PS-MAT-FERRITE_PASTE",
+      "second": "PS-MAT-TPU",
+      "family_pair": "PS-PAIR-MG-EL",
+      "screening_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print magnet-loaded structure; cool and attach TPU flexure under qualified interface conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "route_id": "PS-MR-012-AB",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-AG_INK",
+      "family_pair": "PS-PAIR-DE-CI",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure and inspect dielectric then deposit conductive electrode with low-energy processing",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-012-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-DIEL_UV",
+      "family_pair": "PS-PAIR-CI-DE",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "stabilise conductive trace then deposit dielectric with cure and pinhole control",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-013-AB",
+      "first": "PS-MAT-DIEL_EPOXY",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "family_pair": "PS-PAIR-DE-EC",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fully cure electrode enclosure and add gel electrolyte through controlled fill window",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-013-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-DIEL_EPOXY",
+      "family_pair": "PS-PAIR-EC-DE",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form electrolyte away from epoxy cure; encapsulate with separately cured epoxy wall/low-energy seal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-014-AB",
+      "first": "PS-MAT-IRON_COMPOSITE",
+      "second": "PS-MAT-CU_OFHC",
+      "family_pair": "PS-PAIR-MG-MT",
+      "screening_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "manufacture iron composite and add insulated copper winding or insert",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-014-BA",
+      "first": "PS-MAT-CU_OFHC",
+      "second": "PS-MAT-IRON_COMPOSITE",
+      "family_pair": "PS-PAIR-MT-MG",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form insulated copper windings, add iron composite with non-destructive processing",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-015-AB",
+      "first": "PS-MAT-NDFEB_BONDED",
+      "second": "PS-MAT-SILICONE_E",
+      "family_pair": "PS-PAIR-MG-EL",
+      "screening_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and stabilise magnet; coat silicone elastomer and qualify adhesive interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "route_id": "PS-MR-015-BA",
+      "first": "PS-MAT-SILICONE_E",
+      "second": "PS-MAT-NDFEB_BONDED",
+      "family_pair": "PS-PAIR-EL-MG",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form elastomer shell, insert protected magnet before final seal; magnetise only where feasible",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-016-AB",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-LED_PACKAGE",
+      "family_pair": "PS-PAIR-OP-SC",
+      "screening_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039",
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form optical waveguide/lens with pocket then place LED package below thermal/ESD limits",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-016-BA",
+      "first": "PS-MAT-LED_PACKAGE",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "family_pair": "PS-PAIR-SC-OP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038",
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place LED on qualified carrier then attach separately cured optical lens and protect source",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-017-AB",
+      "first": "PS-MAT-PVA_SUPPORT",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-FL-TP",
+      "screening_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print soluble PVA core; overprint PETG within support thermal envelope; flush via access port",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-017-BA",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-PVA_SUPPORT",
+      "family_pair": "PS-PAIR-TP-FL",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "build PETG shell with future port, add local sacrificial material through accessible path if required",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "route_id": "PS-MR-018-AB",
+      "first": "PS-MAT-WAX_SUPPORT",
+      "second": "PS-MAT-EPOXY",
+      "family_pair": "PS-PAIR-FL-RS",
+      "screening_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place wax template, form compatible epoxy, cure below wax deformation limit, remove template",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-018-BA",
+      "first": "PS-MAT-EPOXY",
+      "second": "PS-MAT-WAX_SUPPORT",
+      "family_pair": "PS-PAIR-RS-FL",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure epoxy scaffold first, insert wax via accessible opening as staged template",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "route_id": "PS-MR-019-AB",
+      "first": "PS-MAT-GRAPHITE_ANODE",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "family_pair": "PS-PAIR-EC-EC",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare graphite composite electrode; deposit compatible separator/electrolyte with chemical isolation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-019-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-GRAPHITE_ANODE",
+      "family_pair": "PS-PAIR-EC-EC",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form electrolyte film under controlled atmosphere then laminate qualified graphite electrode without damaging interface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-020-AB",
+      "first": "PS-MAT-LFP_CATHODE",
+      "second": "PS-MAT-GEL_ELECTROLYTE",
+      "family_pair": "PS-PAIR-EC-EC",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "make cathode with chemistry-specific binder, protected drying, then place separator and qualified electrolyte",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-020-BA",
+      "first": "PS-MAT-GEL_ELECTROLYTE",
+      "second": "PS-MAT-LFP_CATHODE",
+      "family_pair": "PS-PAIR-EC-EC",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form separator/electrolyte substrate then add cathode with controlled contamination and structural tests",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-021-AB",
+      "first": "PS-MAT-CARBON_SUPERCAP",
+      "second": "PS-MAT-DIEL_UV",
+      "family_pair": "PS-PAIR-EC-DE",
+      "screening_equation_ids": [
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit porous carbon electrode; apply qualified insulating edge border without blocking active surface",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-021-BA",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-CARBON_SUPERCAP",
+      "family_pair": "PS-PAIR-DE-EC",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-018",
+        "PS-EQ-023",
+        "PS-EQ-045"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure insulator template then deposit selective carbon electrode in exposed area",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-022-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-SILICON_DIE",
+      "family_pair": "PS-PAIR-TP-SC",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-002",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print and cool electronics pocket; attach interconnect carrier and ESD-safe processor",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-022-BA",
+      "first": "PS-MAT-SILICON_DIE",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-SC-TP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble die on qualified heat-spreading substrate; close with prefabricated PETG enclosure rather than hot melt",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-023-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-CAMERA_MODULE",
+      "family_pair": "PS-PAIR-TP-SC",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-002",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print camera pocket/light baffles; insert module under optical and ESD controls",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-023-BA",
+      "first": "PS-MAT-CAMERA_MODULE",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-SC-TP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "place camera module in carrier; assemble cooled polymer aperture and cover",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-024-AB",
+      "first": "PS-MAT-PETG",
+      "second": "PS-MAT-LFP_MODULE",
+      "family_pair": "PS-PAIR-TP-BT",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print serviceable polymer bay, cool, then connect protected battery with fuse and airflow plan",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-024-BA",
+      "first": "PS-MAT-LFP_MODULE",
+      "second": "PS-MAT-PETG",
+      "family_pair": "PS-PAIR-BT-TP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble protected battery in independent module, slide into separately printed cooled polymer frame",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-025-AB",
+      "first": "PS-MAT-PA12",
+      "second": "PS-MAT-CAP_BANK",
+      "family_pair": "PS-PAIR-TP-BT",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print insulated mounting features, install capacitor bank after hot operations",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-025-BA",
+      "first": "PS-MAT-CAP_BANK",
+      "second": "PS-MAT-PA12",
+      "family_pair": "PS-PAIR-BT-TP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "build capacitor module and insert finished polymer support; avoid exposure to deposition",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-026-AB",
+      "first": "PS-MAT-PDMS",
+      "second": "PS-MAT-SILICON_DIE",
+      "family_pair": "PS-PAIR-EL-SC",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure PDMS microfluidic interface, bond to cooled protected die carrier with compatible plasma/bond conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "route_id": "PS-MR-026-BA",
+      "first": "PS-MAT-SILICON_DIE",
+      "second": "PS-MAT-PDMS",
+      "family_pair": "PS-PAIR-SC-EL",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "assemble die first, join separately cured PDMS layer under die-specific electrical/thermal controls",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "route_id": "PS-MR-027-AB",
+      "first": "PS-MAT-ALGINATE",
+      "second": "PS-MAT-PDMS",
+      "family_pair": "PS-PAIR-BV-EL",
+      "screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form alginate hydrogel within sterile PDMS channel using qualified fluidic crosslink",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    },
+    {
+      "route_id": "PS-MR-027-BA",
+      "first": "PS-MAT-PDMS",
+      "second": "PS-MAT-ALGINATE",
+      "family_pair": "PS-PAIR-EL-BV",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish/cure PDMS channel then fill alginate under a suitable sterile process",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-028-AB",
+      "first": "PS-MAT-GELATIN",
+      "second": "PS-MAT-ALUMINA",
+      "family_pair": "PS-PAIR-BV-CR",
+      "screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form temperature-sensitive gelatin after all ceramic firing, or bond a separate ceramic insert without heating gelatin",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-028-BA",
+      "first": "PS-MAT-ALUMINA",
+      "second": "PS-MAT-GELATIN",
+      "family_pair": "PS-PAIR-CR-BV",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "fabricate and densify alumina first; cool and prepare sterile interface for gelatin deposition",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-029-AB",
+      "first": "PS-MAT-OPTICAL_RESIN",
+      "second": "PS-MAT-PHOSPHOR_FILM",
+      "family_pair": "PS-PAIR-OP-OP",
+      "screening_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form optical resin then deposit a low-energy phosphor-containing film and protect from solvent",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-029-BA",
+      "first": "PS-MAT-PHOSPHOR_FILM",
+      "second": "PS-MAT-OPTICAL_RESIN",
+      "family_pair": "PS-PAIR-OP-OP",
+      "screening_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "prepare phosphor film on support, attach fully cured optical component and test optical losses",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-030-AB",
+      "first": "PS-MAT-FERRITE_PASTE",
+      "second": "PS-MAT-AG_INK",
+      "family_pair": "PS-PAIR-MG-CI",
+      "screening_equation_ids": [
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print/stabilise ferrite carrier; deposit and isolate silver coil lines",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-030-BA",
+      "first": "PS-MAT-AG_INK",
+      "second": "PS-MAT-FERRITE_PASTE",
+      "family_pair": "PS-PAIR-CI-MG",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-006",
+        "PS-EQ-007",
+        "PS-EQ-008"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print silver coil and insulating layer; deposit ferrite composite under conductor thermal budget",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-031-AB",
+      "first": "PS-MAT-ABS",
+      "second": "PS-MAT-WAX_SUPPORT",
+      "family_pair": "PS-PAIR-TP-FL",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print ABS cavity for subsequent low-energy wax placement and removal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058",
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053"
+      ]
+    },
+    {
+      "route_id": "PS-MR-031-BA",
+      "first": "PS-MAT-WAX_SUPPORT",
+      "second": "PS-MAT-ABS",
+      "family_pair": "PS-PAIR-FL-TP",
+      "screening_equation_ids": [
+        "PS-EQ-014",
+        "PS-EQ-015",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-024",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print wax template before ABS only if its thermal survival is demonstrated; otherwise substitute PVA or build separately",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-049",
+        "PS-EQ-050",
+        "PS-EQ-053",
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-032-AB",
+      "first": "PS-MAT-SS_316L",
+      "second": "PS-MAT-PARylene",
+      "family_pair": "PS-PAIR-MT-DE",
+      "screening_equation_ids": [
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish metal structure and apply controlled parylene barrier in specialist vapour cell",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-032-BA",
+      "first": "PS-MAT-PARylene",
+      "second": "PS-MAT-SS_316L",
+      "family_pair": "PS-PAIR-DE-MT",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-009",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-041",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "coat separate parylene film over substrate then mechanically join cooled formed metal insert without destroying barrier",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-033-AB",
+      "first": "PS-MAT-FUSED_SILICA",
+      "second": "PS-MAT-RF_IC",
+      "family_pair": "PS-PAIR-OP-SC",
+      "screening_equation_ids": [
+        "PS-EQ-029",
+        "PS-EQ-038",
+        "PS-EQ-039",
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "finish silica interface, insert qualified RF packaged IC onto compatible carrier",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-033-BA",
+      "first": "PS-MAT-RF_IC",
+      "second": "PS-MAT-FUSED_SILICA",
+      "family_pair": "PS-PAIR-SC-OP",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-009",
+        "PS-EQ-010",
+        "PS-EQ-037",
+        "PS-EQ-038",
+        "PS-EQ-029",
+        "PS-EQ-039"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "mount RF IC on board and fit finished silica window with low-energy mechanical seal",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": []
+    },
+    {
+      "route_id": "PS-MR-034-AB",
+      "first": "PS-MAT-GRAPHENE_INK",
+      "second": "PS-MAT-DIEL_UV",
+      "family_pair": "PS-PAIR-CI-DE",
+      "screening_equation_ids": [
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040",
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "deposit/stabilise graphene ink; overcoat dielectric using verified low-stress cure",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-034-BA",
+      "first": "PS-MAT-DIEL_UV",
+      "second": "PS-MAT-GRAPHENE_INK",
+      "family_pair": "PS-PAIR-DE-CI",
+      "screening_equation_ids": [
+        "PS-EQ-004",
+        "PS-EQ-005",
+        "PS-EQ-024",
+        "PS-EQ-001",
+        "PS-EQ-002",
+        "PS-EQ-040"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "cure dielectric first and add graphene dispersion under controlled surface preparation",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-059"
+      ]
+    },
+    {
+      "route_id": "PS-MR-035-AB",
+      "first": "PS-MAT-LIION_MODULE",
+      "second": "PS-MAT-SILICONE_E",
+      "family_pair": "PS-PAIR-BT-EL",
+      "screening_equation_ids": [
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "use separate cured silicone protective mounts to cushion protected module without blocking vents",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-035-BA",
+      "first": "PS-MAT-SILICONE_E",
+      "second": "PS-MAT-LIION_MODULE",
+      "family_pair": "PS-PAIR-EL-BT",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-002",
+        "PS-EQ-026",
+        "PS-EQ-042"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "print/cure silicone isolation mount then insert rated module; no reactive silicone cure inside live cell",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-058"
+      ]
+    },
+    {
+      "route_id": "PS-MR-036-AB",
+      "first": "PS-MAT-HYDROGEL_E",
+      "second": "PS-MAT-ALGINATE",
+      "family_pair": "PS-PAIR-EL-BV",
+      "screening_equation_ids": [
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013",
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form and stabilise elastic hydrogel then create alginate interface with controlled osmotic conditions",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-051",
+        "PS-EQ-052",
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057"
+      ]
+    },
+    {
+      "route_id": "PS-MR-036-BA",
+      "first": "PS-MAT-ALGINATE",
+      "second": "PS-MAT-HYDROGEL_E",
+      "family_pair": "PS-PAIR-BV-EL",
+      "screening_equation_ids": [
+        "PS-EQ-016",
+        "PS-EQ-017",
+        "PS-EQ-023",
+        "PS-EQ-011",
+        "PS-EQ-012",
+        "PS-EQ-013"
+      ],
+      "cumulative_exposure_requirement": true,
+      "environment_transition": [
+        "resolve exact material passports, grades and geometries",
+        "characterise exposed X interfaces and service envelope",
+        "form crosslinked alginate first and add compatible elastic hydrogel at bounded hydration",
+        "perform in-process checks on both materials",
+        "compare measurements to service acceptance contract"
+      ],
+      "source_material_pair": "CGX-F4D-MATROUTES-20261008",
+      "evidence_state": "SELECTED_KERNELS_NOT_VALIDATED_INTERFACE",
+      "production_approved": false,
+      "scale_regime_equation_ids": [
+        "PS-EQ-048",
+        "PS-EQ-054",
+        "PS-EQ-057",
+        "PS-EQ-051",
+        "PS-EQ-052"
+      ]
+    }
+  ],
+  "scale_extension": {
+    "equation_count": 12,
+    "ids": [
+      "PS-EQ-048",
+      "PS-EQ-049",
+      "PS-EQ-050",
+      "PS-EQ-051",
+      "PS-EQ-052",
+      "PS-EQ-053",
+      "PS-EQ-054",
+      "PS-EQ-055",
+      "PS-EQ-056",
+      "PS-EQ-057",
+      "PS-EQ-058",
+      "PS-EQ-059"
+    ],
+    "note": "Only potential regime screens conditional on active process physics; no scalar similarity group is imposed on unrelated optics, acoustic, solids or chemistry. Empty list signals full-native-kernel model instead."
+  }
+}

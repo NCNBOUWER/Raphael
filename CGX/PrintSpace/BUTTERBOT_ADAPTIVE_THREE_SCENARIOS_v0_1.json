@@ -1,0 +1,163 @@
+{
+  "schema": "cgx.printspace.butterbot_adaptive_scenario_fixture.v0.1",
+  "status": "SYNTHETIC_SCENARIO_ONLY_NO_LIVE_SOURCE_ATTESTATION",
+  "disclaimer": "Every watt, Wh, size, cost AUD and workload score is invented for software branch tests. NOT Intel TDP, local price, available board, measured benchmark, real battery or an accepted purchase.",
+  "benchmark_units": "ABSTRACT_SYNTHETIC_WORKLOAD_N",
+  "motherboard_width_order": "module_xyz_mm=[X_length,Y_width,Z_complete_cooling_height]",
+  "margin_mm": [
+    12,
+    12,
+    8
+  ],
+  "candidates": [
+    {
+      "id": "HYPOTHETICAL_RECYCLED_I3",
+      "family": "i3",
+      "exact_cpu_sku": null,
+      "board_and_cooler_passport_verified": false,
+      "cost_aud": 0,
+      "peak_thermal_w": 80,
+      "cooling_capacity_w": 85,
+      "average_system_w": 35,
+      "workload_score_n": 80,
+      "module_xyz_mm": [
+        120,
+        105,
+        45
+      ],
+      "mechanical_fit_verified": false,
+      "source_type": "SYNTHETIC_ONLY_NO_PURCHASING_CLAIM"
+    },
+    {
+      "id": "HYPOTHETICAL_LOW_POWER_I3",
+      "family": "i3",
+      "exact_cpu_sku": null,
+      "board_and_cooler_passport_verified": false,
+      "cost_aud": 90,
+      "peak_thermal_w": 45,
+      "cooling_capacity_w": 60,
+      "average_system_w": 20,
+      "workload_score_n": 90,
+      "module_xyz_mm": [
+        110,
+        95,
+        38
+      ],
+      "mechanical_fit_verified": false,
+      "source_type": "SYNTHETIC_ONLY_NO_PURCHASING_CLAIM"
+    },
+    {
+      "id": "HYPOTHETICAL_COMPACT_I5",
+      "family": "i5",
+      "exact_cpu_sku": null,
+      "board_and_cooler_passport_verified": false,
+      "cost_aud": 235,
+      "peak_thermal_w": 75,
+      "cooling_capacity_w": 90,
+      "average_system_w": 30,
+      "workload_score_n": 220,
+      "module_xyz_mm": [
+        128,
+        108,
+        46
+      ],
+      "mechanical_fit_verified": false,
+      "source_type": "SYNTHETIC_ONLY_NO_PURCHASING_CLAIM"
+    },
+    {
+      "id": "HYPOTHETICAL_PERFORMANCE_I5",
+      "family": "i5",
+      "exact_cpu_sku": null,
+      "board_and_cooler_passport_verified": false,
+      "cost_aud": 700,
+      "peak_thermal_w": 130,
+      "cooling_capacity_w": 150,
+      "average_system_w": 60,
+      "workload_score_n": 400,
+      "module_xyz_mm": [
+        160,
+        145,
+        65
+      ],
+      "mechanical_fit_verified": false,
+      "source_type": "SYNTHETIC_ONLY_NO_PURCHASING_CLAIM"
+    }
+  ],
+  "tier_snapshots": [
+    {
+      "tier_id": "BOOTSTRAP_EVERYDAY",
+      "max_spend_aud": 100,
+      "battery_wh": 60,
+      "provisional_internal_envelope_mm": [
+        170,
+        145,
+        110
+      ],
+      "assumed_process_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS"
+      ],
+      "internally_preloaded_sourced_trays": true,
+      "measured_machine_cell_readiness": false,
+      "real_sealed_session_witness": false,
+      "safety_interlocks_witnessed": false,
+      "all_input_evidence": "HYPOTHETICAL_DRY_RUN_NOT_OWNER_APPROVED"
+    },
+    {
+      "tier_id": "PRO_BALANCED",
+      "max_spend_aud": 400,
+      "battery_wh": 120,
+      "provisional_internal_envelope_mm": [
+        220,
+        175,
+        140
+      ],
+      "assumed_process_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS",
+        "TOOLCHANGE",
+        "VISION",
+        "SENSOR_FEEDBACK"
+      ],
+      "internally_preloaded_sourced_trays": true,
+      "measured_machine_cell_readiness": false,
+      "real_sealed_session_witness": false,
+      "safety_interlocks_witnessed": false,
+      "all_input_evidence": "HYPOTHETICAL_DRY_RUN_NOT_OWNER_APPROVED"
+    },
+    {
+      "tier_id": "INDUSTRIAL_CIRCULAR",
+      "max_spend_aud": 1500,
+      "battery_wh": 200,
+      "provisional_internal_envelope_mm": [
+        330,
+        275,
+        170
+      ],
+      "assumed_process_cells": [
+        "FDM",
+        "PICK",
+        "INSPECT",
+        "SEALED_TRAYS",
+        "TOOLCHANGE",
+        "VISION",
+        "SENSOR_FEEDBACK",
+        "NESTED_PRINTER",
+        "UV_PATTERN",
+        "LASER_INTERLOCK",
+        "METROLOGY",
+        "REPAIR_HEAD"
+      ],
+      "internally_preloaded_sourced_trays": true,
+      "measured_machine_cell_readiness": false,
+      "real_sealed_session_witness": false,
+      "safety_interlocks_witnessed": false,
+      "all_input_evidence": "HYPOTHETICAL_DRY_RUN_NOT_OWNER_APPROVED"
+    }
+  ],
+  "output_all_real_qualification_gates": "HOLD"
+}
